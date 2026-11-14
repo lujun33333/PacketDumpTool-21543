@@ -1,0 +1,81 @@
+# 至尊夺宝 Beta92_Rare_Treasure
+activity:
+  id: 20260501
+  begin: 1777564800
+  end: 1782835199
+  luckBegin: 1767196800
+  luckEnd: 1772294399
+
+DrawCostOne:
+  ItemID: 148390      # 至尊夺宝券
+  ItemNum: 1
+DrawCostTen:
+  ItemID: 148390
+  ItemNum: 10
+
+PlayerItems:
+  BestItemID: 148390           # 至尊夺宝券
+  ItemID: 148391               # 至尊夺宝积分
+  CommonExchangeItemID: 94880  # 夺宝能量
+  BestExchangeItemID: 144343   # 晶石
+  LuckScoreMaxLimitCount: 150
+  ScoreDrawDayLimit: 99999
+  ScoreDrawWeekLimit: 0
+  BestItemTransformScore: 10
+
+# 抽奖奖池：顺序就是客户端显示顺序，不用单独写索引
+AwardCfg:
+  - { ItemID: 98263,  ItemNum: 1, AvailPeriod: -1,  ItemType: 1, specialFlag: 1,  ClientParas: [1, 1], Weight: 10 }
+  - { ItemID: 98263,  ItemNum: 1, AvailPeriod: 168, ItemType: 1, specialFlag: 2,  ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 109563, ItemNum: 1, AvailPeriod: -1,  ItemType: 1, specialFlag: 3,  ClientParas: [1, 5], Weight: 10 }
+  - { ItemID: 109563, ItemNum: 1, AvailPeriod: 168, ItemType: 1, specialFlag: 4,  ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 115166, ItemNum: 1, AvailPeriod: -1,  ItemType: 1, specialFlag: 5,  ClientParas: [1, 2], Weight: 10 }
+  - { ItemID: 115166, ItemNum: 1, AvailPeriod: 168, ItemType: 1, specialFlag: 6,  ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 119059, ItemNum: 1, AvailPeriod: -1,  ItemType: 1, specialFlag: 7,  ClientParas: [1, 6], Weight: 10 }
+  - { ItemID: 119059, ItemNum: 1, AvailPeriod: 168, ItemType: 1, specialFlag: 8,  ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 70046,  ItemNum: 1, AvailPeriod: -1,  ItemType: 1, specialFlag: 9,  ClientParas: [1, 3], Weight: 10 }
+  - { ItemID: 70046,  ItemNum: 1, AvailPeriod: 168, ItemType: 1, specialFlag: 10, ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 80159,  ItemNum: 1, AvailPeriod: -1,  ItemType: 1, specialFlag: 11, ClientParas: [1, 7], Weight: 10 }
+  - { ItemID: 80159,  ItemNum: 1, AvailPeriod: 168, ItemType: 1, specialFlag: 12, ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 124682, ItemNum: 1, AvailPeriod: -1,  ItemType: 0, specialFlag: 13, ClientParas: [1, 4], Weight: 10 }
+  - { ItemID: 124682, ItemNum: 1, AvailPeriod: 168, ItemType: 0, specialFlag: 14, ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 124684, ItemNum: 1, AvailPeriod: -1,  ItemType: 0, specialFlag: 15, ClientParas: [1, 8], Weight: 10 }
+  - { ItemID: 124684, ItemNum: 1, AvailPeriod: 168, ItemType: 0, specialFlag: 16, ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 112184, ItemNum: 1, AvailPeriod: -1,  ItemType: 0, specialFlag: 17, ClientParas: [1, 0], Weight: 10 }
+  - { ItemID: 112184, ItemNum: 1, AvailPeriod: 168, ItemType: 2, specialFlag: 18, ClientParas: [1, 0], Weight: 100 }
+  - { ItemID: 112185, ItemNum: 1, AvailPeriod: -1,  ItemType: 0, specialFlag: 19, ClientParas: [1, 0], Weight: 10 }
+  - { ItemID: 112185, ItemNum: 1, AvailPeriod: 168, ItemType: 2, specialFlag: 20, ClientParas: [1, 0], Weight: 30 }
+  - { ItemID: 144343, ItemNum: 1, AvailPeriod: 0,   ItemType: 1, specialFlag: 21, ClientParas: [1, 0], Weight: 120 }
+  - { ItemID: 69936,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 22, ClientParas: [1, 0], Weight: 120 }
+  - { ItemID: 69937,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 23, ClientParas: [1, 0], Weight: 120 }
+  - { ItemID: 69938,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 24, ClientParas: [1, 0], Weight: 120 }
+  - { ItemID: 21977,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 25, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 21983,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 26, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 21989,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 27, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 22013,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 28, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 22025,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 29, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 22031,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 30, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 22037,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 31, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 22043,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 32, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 12376,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 33, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 12377,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 34, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 12378,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 35, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 12379,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 36, ClientParas: [1, 0], Weight: 150 }
+  - { ItemID: 12380,  ItemNum: 1, AvailPeriod: 0,   ItemType: 2, specialFlag: 37, ClientParas: [1, 0], Weight: 150 }
+
+# 幸运值里程碑：顺序就是领取序号
+Milestones:
+  - { NeedScore: 20,  ItemID: 21978, ItemNum: 1, AvailPeriod: 0,   ItemType: 0 }
+  - { NeedScore: 50,  ItemID: 21978, ItemNum: 1, AvailPeriod: 0,   ItemType: 0 }
+  - { NeedScore: 100, ItemID: 98263, ItemNum: 1, AvailPeriod: 360, ItemType: 0 }
+  - { NeedScore: 200, ItemID: 21978, ItemNum: 2, AvailPeriod: 0,   ItemType: 0 }
+  - { NeedScore: 300, ItemID: 21978, ItemNum: 2, AvailPeriod: 0,   ItemType: 0 }
+
+# 至尊商店：按官方 24465 Type=411 抓包。CostItemID/CostNum 写入 ComsumeItemArray，Limit/TabID/Sort 对齐官方 MoreInfo。
+ExchangeShop:
+  - { Tab: best,  TabID: 1, PosKey: 1, AwardIdx: 1, CostItemID: 144343, CostNum: 30,  ItemID: 98263,  ItemNum: 1,   AvailPeriod: -1, ItemType: 1, Limit: 1,    ResultID: 11498, Sort: 100 }
+  - { Tab: best,  TabID: 1, PosKey: 2, AwardIdx: 2, CostItemID: 144343, CostNum: 30,  ItemID: 109563, ItemNum: 1,   AvailPeriod: -1, ItemType: 1, Limit: 1,    ResultID: 11498, Sort: 96 }
+  - { Tab: best,  TabID: 1, PosKey: 3, AwardIdx: 3, CostItemID: 144343, CostNum: 30,  ItemID: 115166, ItemNum: 1,   AvailPeriod: -1, ItemType: 1, Limit: 1,    ResultID: 11498, Sort: 95 }
+  - { Tab: best,  TabID: 1, PosKey: 4, AwardIdx: 4, CostItemID: 144343, CostNum: 30,  ItemID: 119059, ItemNum: 1,   AvailPeriod: -1, ItemType: 1, Limit: 1,    ResultID: 11498, Sort: 94 }
+  - { Tab: score, TabID: 2, PosKey: 5, AwardIdx: 5, CostItemID: 94880,  CostNum: 100, ItemID: 148391, ItemNum: 500, AvailPeriod: 0,  ItemType: 1, Limit: 9999, ResultID: 11498, Sort: 85 }
+  - { Tab: score, TabID: 2, PosKey: 6, AwardIdx: 6, CostItemID: 94880,  CostNum: 20,  ItemID: 148391, ItemNum: 100, AvailPeriod: 0,  ItemType: 1, Limit: 9999, ResultID: 11498, TailFlag: 2, Sort: 84 }

@@ -1,0 +1,337 @@
+HeadShokItem:
+  - ActivePeriod: -1
+    ActiveHeadId: 2
+    ActiveItemId: 138057
+    Method: "16周年庆活动获得"
+    Desc: "粉紫爱心于顶端闪烁，引人注目，赛博朋克风的幻彩圆环增添活力！"
+    Info: "16周年头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 3
+    ActiveItemId: 138058
+    Method: "2024春节活动获得"
+    Desc: "活力橙与暖红交织透出一股喜庆氛围，2024年愿赛车手们都能心想事成。"
+    Info: "2024春节头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 4
+    ActiveItemId: 138059
+    Method: "参与涂抹大乱斗获得"
+    Desc: "绚烂的色彩不经意交融，看似随意，实则充满艺术感，青春气息扑面而来。"
+    Info: "涂抹大乱斗头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 5
+    ActiveItemId: 138060
+    Method: "巅峰赛季结算获得"
+    Desc: "钛银拼接纯金外框彰显机械感，好似王者登临，立于极速之巅，更显尊贵霸气。"
+    Info: "巅峰赛头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 6
+    ActiveItemId: 138061
+    Method: "参与车王手册获得"
+    Desc: "红色龙头威猛无比，龙目如珠似玉，随风飘飞的金麟象征蒸蒸日上，坚定守护泱泱华夏。"
+    Info: "龙之传人头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 7
+    ActiveItemId: 138062
+    Method: "参与山海神龙获得"
+    Desc: "天地之灵汇聚，神木逐渐生长，风云变幻，雷电交织，神力灌注，神龙诞于山林。"
+    Info: "青龙占星头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 8
+    ActiveItemId: 138063
+    Method: "参与山海神龙获得"
+    Desc: "炽焰在神力的浇灌下现出龙形，凶猛非常，幽色焰火隐隐燃烧，为之蓄力。"
+    Info: "烛龙弄焰头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 9
+    ActiveItemId: 138065
+    Method: "参与山海神龙获得"
+    Desc: "浪涛翻涌呈现一片祥瑞之象，神龙遨游其中掀起层层浪花，惠泽万物。"
+    Info: "冰夷踏浪头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 10
+    ActiveItemId: 138064
+    Method: "参与山海神龙获得"
+    Desc: "风起云涌，迅速汇聚一处幻作龙形，蕴含其中的神力乍现，掀起飓风似焰。"
+    Info: "应龙驭风头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 11
+    ActiveItemId: 138066
+    Method: "参与木兰活动获得"
+    Desc: "持剑可卫国保家，别簪可贤惠持家，以小小身躯凭借坚定意志成就一代传奇。"
+    Info: "极星木兰头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 12
+    ActiveItemId: 138067
+    Method: "参与雷因的装甲车间获得"
+    Desc: "雷诺重工倾力打造而成，专属深绿一眼便知其所属，瞩目的标识置于顶端异常坚定。"
+    Info: "雷诺之力头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 13
+    ActiveItemId: 138068
+    Method: "参与国风四君子获得"
+    Desc: "春风抚落梅花瓣，吹到了坚毅的青竹周围，不知不觉间菊花盛开，兰花于一侧恬静美好。"
+    Info: "国风四君子头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 14
+    ActiveItemId: 138069
+    Method: "2023车王冠军获得"
+    Desc: "深红宝石蕴藏着选手们的热情与心血，金冠稳固戴于顶端，这份荣誉无可磨灭。"
+    Info: "2023车王冠军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 15
+    ActiveItemId: 138070
+    Method: "2023车王亚军获得"
+    Desc: "深蓝宝石象征深不可测的能量，尚未完全被发掘，银冠加冕，亦是对实力的肯定。"
+    Info: "2023车王亚军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 16
+    ActiveItemId: 138071
+    Method: "2023车王季军获得"
+    Desc: "金铜打磨得十分光滑，波光流转间是一次赛事的纪念，亦是对未来生活的勉励。"
+    Info: "2023车王季军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 17
+    ActiveItemId: 138072
+    Method: "参与神龙召唤获得"
+    Desc: "坚毅的眼神令人无处可逃也不敢直视，以大地之力铸成青环，守护一方圣土。"
+    Info: "机械青龙王头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 18
+    ActiveItemId: 138073
+    Method: "参与山海神龙获得"
+    Desc: "山海变换，四龙终汇聚，神力聚集不可抵挡，圣洁的神光引人探究。"
+    Info: "山海四神龙头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 19
+    ActiveItemId: 139768
+    Method: "获得龙腾九霄后获得"
+    Desc: "威赫的机械龙盘旋于头像框上，青色闪电附着，巨龙的眼睛，深邃如宇宙，幽光四射，散发龙族威严霸气。"
+    Info: "龙腾九霄头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 20
+    ActiveItemId: 139769
+    Method: "参与罗小黑活动获得"
+    Desc: "青藤环绕蔓延，生长其上的青绿叶片随之有序分布，一侧绿芽悄然绽放，充满生机，罗小黑与朋友比丢休憩于蘑菇丛旁，一片春意盎然。"
+    Info: "罗小黑头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 21
+    ActiveItemId: 139770
+    Method: "参与神龙召唤获得"
+    Desc: "驾驭风雨，掌控雷电，为世间带来和平与安宁。"
+    Info: "青龙战姬头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 22
+    ActiveItemId: 139771
+    Method: "获得墨影青龙后获得"
+    Desc: "充满了神秘与力量感，呈现出一种优雅的动感，仿佛一条即将腾飞的青龙。"
+    Info: "墨影青龙头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 23
+    ActiveItemId: 139772
+    Method: "获得众神天后-羞花后获得"
+    Desc: "天生丽质，肌肤如雪，眉目如画，一举一动都散发着迷人的魅力。"
+    Info: "羞花头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 24
+    ActiveItemId: 139773
+    Method: "获得终极烈焰新星-孔明后获得"
+    Desc: "运筹帷幄之中，决胜千里之外。"
+    Info: "孔明头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 25
+    ActiveItemId: 139774
+    Method: "参与小樱的风之牌获得"
+    Desc: "开朗可爱，活泼单纯。"
+    Info: "木之本樱头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 26
+    ActiveItemId: 144320
+    Method: "参与冲鸭！冲鸭！获得"
+    Desc: "天蓝与灿烂黄还有蔚蓝的涂料交织在一起，仿佛置身于阳光沙滩，与萌趣的小黄鸭一同戏水，连logo都染上了清凉的气息。"
+    Info: "小黄鸭头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 27
+    ActiveItemId: 144321
+    Method: "参与五行支援获得"
+    Desc: "雾山五行联动专属头像框。"
+    Info: "雾山五行头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 28
+    ActiveItemId: 144516
+    Method: "收集5个北欧众神皮肤后获得"
+    Desc: "神秘符号中心宝石，金紫蓝光环环绕，翅膀星芒映辉煌。"
+    Info: "北欧众神头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 29
+    ActiveItemId: 144515
+    Method: "获得尊爆-诸神黄昏皮肤获得"
+    Desc: "星辰漫天，遨游天地。"
+    Info: "神奥丁头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 30
+    ActiveItemId: 146373
+    Method: "参与指定活动获得"
+    Desc: "在头像框的顶部和底部，各有一个类似叶子形状的设计，颜色为绿色和黄色相间，增添了一种自然和生机勃勃的感觉。"
+    Info: "维舞清歌头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 31
+    ActiveItemId: 147937
+    Method: "参与指定活动获得"
+    Desc: "以彩虹和大耳狗为元素的圆形头像框，色彩鲜艳，风格可爱。"
+    Info: "大耳狗头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 32
+    ActiveItemId: 148306
+    Method: "参与指定活动获得"
+    Desc: "星辰漫天，遨游天地。"
+    Info: "X次元-青龙头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 33
+    ActiveItemId: 148309
+    Method: "参与指定活动获得"
+    Desc: "星辰漫天，遨游天地。"
+    Info: "X次元-白虎头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 34
+    ActiveItemId: 148193
+    Method: "参与指定活动获得"
+    Desc: "专为纪念17周年设计的头像框，其设计灵感来源于庆祝与荣耀的主题。"
+    Info: "17周年庆头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 35
+    ActiveItemId: 150551
+    Method: "参与指定活动获得"
+    Desc: "设计简约而不失优雅，边缘雕刻着细腻的花纹，内嵌淡蓝色宝石，彰显高贵气质。"
+    Info: "金蛇迎春头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 36
+    ActiveItemId: 150552
+    Method: "参与指定活动获得"
+    Desc: "如金色圆环，蛇形图案盘绕，两端点缀星芒，简约而富有神秘色彩，象征着智慧与永恒。"
+    Info: "灵蛇传说头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 37
+    ActiveItemId: 148308
+    Method: "参与指定活动获得"
+    Desc: "星辰漫天，遨游天地。"
+    Info: "X次元-朱雀头像框"   
+  - ActivePeriod: -1
+    ActiveHeadId: 38
+    ActiveItemId: 148307
+    Method: "参与指定活动获得"
+    Desc: "星辰漫天，遨游天地。"
+    Info: "创世女娲头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 39
+    ActiveItemId: 148310
+    Method: "参与指定活动获得"
+    Desc: "星辰漫天，遨游天地。"
+    Info: "X次元-玄武头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 40
+    ActiveItemId: 152562
+    Method: "获得至尊·真武后自动获得"
+    Desc: "该ID未添加商品描述。"
+    Info: "至尊-真武头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 41
+    ActiveItemId: 152561
+    Method: "参与指定活动获得"
+    Desc: "天线宝宝小波洋溢着灿烂的笑容，似乎在向每一个赛车手传达快乐的信息，缤纷的卡通图案点缀其中，增添了无限的生机和活力。"
+    Info: "天线宝宝头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 42
+    ActiveItemId: 152563
+    Method: "参与指定活动获得"
+    Desc: "神威泰坦专属头像框，点击使用即可解锁对应的头像框。"
+    Info: "神威泰坦头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 43
+    ActiveItemId: 153855
+    Method: "参与指定活动获得"
+    Desc: "黑猫警长的卡通猫头绘染在上，炯炯有神的大眼睛搭配认真的小表情，黑色字样围绕成圆，如此可爱的头像框，足以萌化众人。"
+    Info: "黑猫警长头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 44
+    ActiveItemId: 155819
+    Method: "全国公开赛S7冠军获得"
+    Desc: "全国公开赛S7冠军专属头像框，以闪电般的速度征服赛道，每一个弯道都是艺术的漂移，极速狂飙，弯道如舞，冠军之名实至名归！"
+    Info: "全国公开赛S7冠军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 45
+    ActiveItemId: 155821
+    Method: "全国公开赛S7季军获得"
+    Desc: "全国公开赛S7季军专属头像框，当轮胎与地面摩擦出炽热的火花，每一道胎痕都是速度的见证，用竞技刻写传奇，用引擎奏响胜利！"
+    Info: "全国公开赛S7季军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 46
+    ActiveItemId: 155820
+    Method: "全国公开赛S7亚军获得"
+    Desc: "全国公开赛S7亚军专属头像框，用勤奋与汗水铸就更强斗志，每一道轮胎印都是热血的勋章，速度与激情永不褪色，荣耀永不落幕！"
+    Info: "全国公开赛S7亚军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 47
+    ActiveItemId: 155822
+    Method: "全国公开赛S7竞速冠军获得"
+    Desc: "全国公开赛S7竞速冠军专属头像框，引擎的嘶吼声是向胜利冲锋的号角，赛道的弧线将迎来极致车技的洗礼，用胜利定义荣耀！"
+    Info: "全国公开赛S7竞速冠军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 48
+    ActiveItemId: 155823
+    Method: "全国公开赛S7竞速亚军获得"
+    Desc: "全国公开赛S7竞速亚军专属头像框，在传奇竞速中缔造神话，引擎的咆哮如同胜利的号角，在赛道上谱写出一曲热血沸腾的传奇乐章！"
+    Info: "全国公开赛S7竞速亚军头像框" 
+  - ActivePeriod: -1
+    ActiveHeadId: 49
+    ActiveItemId: 155824
+    Method: "全国公开赛S7竞速季军获得"
+    Desc: "全国公开赛S7竞速季军专属头像框，在极限的边缘，用精湛技艺书写赛道传奇，让引擎的咆哮化作胜利的凯歌，荣耀加冕，光芒万丈！"
+    Info: "全国公开赛S7竞速季军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 50
+    ActiveItemId: 155825
+    Method: "全国公开赛S7道具赛冠军获得"
+    Desc: "全国公开赛S7道具冠军专属头像框，在欢笑与策略交织的赛道上，以鬼魅般的走位闪避攻击，用道具箱里的随机奇迹扭转战局！。"
+    Info: "全国公开赛S7道具冠军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 51
+    ActiveItemId: 155826
+    Method: "全国公开赛S7道具赛亚军获得"
+    Desc: "全国公开赛S7道具亚军专属头像框，香蕉皮甩出滑稽陷阱，导弹锁定致命一击，氮气爆发的瞬间如彩虹掠空，策略与欢笑在这里相聚！"
+    Info: "全国公开赛S7道具亚军头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 52
+    ActiveItemId: 155827
+    Method: "全国公开赛S7道具赛季军获得"
+    Desc: "全国公开赛S7道具季军专属头像框，导弹与香蕉齐飞，欢笑与策略齐聚，每一发炸弹都是精准心理学，每一次护盾反杀都引发尖叫！"
+    Info: "全国公开赛S7道具季军头像框"    
+  - ActivePeriod: -1
+    ActiveHeadId: 53
+    ActiveItemId: 155818
+    Method: "和平星争夺战活动获得"
+    Desc: "卡布达专属头像框，铁皮憨憨卡布达降临飞车世界，充电靠太阳，打架靠头铁，变身必卡壳，萌即正义！"
+    Info: "卡布达头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 54
+    ActiveItemId: 158111
+    Method: "获得黑曼巴-饕餮后解锁"
+    Desc: "黑底红焰交织，金色锁链盘绕其间，饕餮兽面狰狞威严。怒焰翻腾如血，铁链铿锵作响，古老图腾镶嵌其中，仿佛要挣脱束缚吞噬万物。"
+    Info: "黑曼巴-饕餮头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 55
+    ActiveItemId: 158112
+    Method: "集齐4个夏日泳装机娘后解锁"
+    Desc: "头像框以翻滚的浪花勾勒出环形轮廓，休闲墨镜与俏皮海鸭子点缀其间，洋溢着浓郁的夏日风情。海星和贝壳的装饰更添海洋趣味。"
+    Info: "夏日海滩头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 56
+    ActiveItemId: 158218
+    Method: "参与限时久久公益节活动获取"
+    Desc: "卡布达专属头像框，铁皮憨憨卡布达降临飞车世界，充电靠太阳，打架靠头铁，变身必卡壳，萌即正义！"
+    Info: "久久公益头像框"
+  - ActivePeriod: -1
+    ActiveHeadId: 57
+    ActiveItemId: 160039
+    Method: "免费获得"
+    Desc: "暂无介绍......"
+    Info: "湖南文创头像框"

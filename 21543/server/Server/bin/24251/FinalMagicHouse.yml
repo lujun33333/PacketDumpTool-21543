@@ -1,0 +1,82 @@
+# FinalMagicHouse / 终极魔法阵 单文件运营配置
+final_magic_house:
+  enabled: true
+  activity_id: 20260501
+  disabled_result_code: 1
+
+  protocol:
+    quickrpc_msgid: 24251
+    cfg_cmd: Co.RequestFinalMagicHhouseCfg
+    cfg_cmd_alias: Co.RequestFinalMagicHouseCfg
+    select_cmd: Co.Beta90_FinalMagicHouseRequestSelectGroupIndex
+    award_cmd: Co.RequestFinalMagicHouseAward
+
+  time:
+    open_date: 20260501
+    open_time: 0
+    close_date: 20260530
+    close_time: 235959
+
+  cost:
+    item_id: 83073
+    once: 1
+    strict_cost: true
+    no_ticket_result_code: 123
+
+  select:
+    # 正确结构：5 个自选页签；每页签有 2 类候选，每类默认选 1 个，所以每页显示“已选择 2/2”。
+    # 当前抓包每页是 8 个候选 = 2 类 * 4 个；如果要扩到更多，继续在对应 items 里加 item_id 即可。
+    # default 是这个类别默认选中的 item_id；items 是这一类可选候选。
+    required_pairs: 10
+    tabs:
+      - tab: 1
+        groups:
+          - group: 1
+            default: 169630
+            items: [169630, 116398, 159208, 151460]
+          - group: 2
+            default: 116406
+            items: [169638, 116406, 159216, 151468]
+      - tab: 2
+        groups:
+          - group: 3
+            default: 166944
+            items: [166944, 119660, 147060, 137787]
+          - group: 4
+            default: 119668
+            items: [166952, 119668, 147068, 137795]
+      - tab: 3
+        groups:
+          - group: 5
+            default: 167127
+            items: [167127, 121383, 117394, 154814]
+          - group: 6
+            default: 121391
+            items: [167135, 121391, 117402, 154822]
+      - tab: 4
+        groups:
+          - group: 7
+            default: 164137
+            items: [164137, 121307, 114408, 155174]
+          - group: 8
+            default: 121315
+            items: [164145, 121315, 114416, 155182]
+      - tab: 5
+        groups:
+          - group: 9
+            default: 164177
+            items: [164177, 132324, 130461, 154734]
+          - group: 10
+            default: 132332
+            items: [164185, 132332, 130469, 154742]
+
+  draw:
+    strict_cost: true
+
+  award_pool:
+    items:
+      - { round: 1, item_index: 49, item_id: 33772, item_num: 2, item_type: 2, avail_period: 0, weight: 100, special_flag: 1 }
+      - { round: 2, item_index: 48, item_id: 33889, item_num: 1, item_type: 2, avail_period: 0, weight: 60, special_flag: 2 }
+      - { round: 3, item_index: 45, item_id: 74729, item_num: 10, item_type: 2, avail_period: 0, weight: 50, special_flag: 3 }
+      - { round: 4, item_index: 47, item_id: 69005, item_num: 1, item_type: 2, avail_period: 0, weight: 50, special_flag: 4 }
+      - { round: 5, item_index: 46, item_id: 34310, item_num: 1, item_type: 2, avail_period: 0, weight: 50, special_flag: 5 }

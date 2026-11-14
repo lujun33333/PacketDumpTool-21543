@@ -1,0 +1,682 @@
+rank:
+  enabled: true # 排位总开关
+
+  matchmaking: # 实际排位队列；原ASpeedConfig.yml的GameConfig.rankset已迁移到这里
+    minimum_players: 2    # 队列达到1人即可开局，即支持单人排位
+    man_machine:
+      enabled: false # 是否启用原排位人机分支
+      wait_seconds: 0 # 等待多少秒后进入人机分支
+
+  season:
+    id: 56 # msg25000赛季ID
+    name: "极速狂飙" # msg25000赛季名称，当前客户端字段固定20字节
+    background_scene_id: 189 # 排位主界面的背景场景ID
+    open_date: 20260702 # 赛季开始日期，格式YYYYMMDD
+    close_date: 20260827 # 赛季结束日期，格式YYYYMMDD
+    open_times: # 每日开放时段，格式HHMMSS；msg25000展示和实际排位入口共用
+      - [90000, 240000] # 09:00:00到24:00:00
+      - [0, 20000] # 次日00:00:00到02:00:00
+
+  maps:
+    # 实际匹配/禁图按房间玩家当前段位选池：单人取本人段位，多人混排取最高段位；技术车神沿用grade 26。
+    grades: # msg25000赛季地图；顺序来自当前21543客户端结构
+      - grade: 20 # 青铜
+        normal: [145, 158, 162, 238, 253, 255, 256, 260, 268, 273, 330, 420, 458, 261, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219] # 普通排位地图
+        super: [] # 超级排位地图
+        factory: [273, 238, 261] # 赛车工厂地图
+        new: [] # 本赛季新地图
+      - grade: 21 # 白银
+        normal: [145, 158, 162, 238, 253, 255, 256, 260, 261, 267, 268, 273, 323, 330, 420, 458, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219]
+        super: []
+        factory: [273, 238, 261]
+        new: []
+      - grade: 22 # 黄金
+        normal: [158, 162, 238, 253, 255, 256, 260, 261, 267, 268, 273, 278, 299, 323, 330, 389, 420, 421, 458, 462, 187, 374, 406, 427, 430, 435, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219]
+        super: []
+        factory: [261, 187, 389, 435]
+        new: [462]
+      - grade: 23 # 铂金
+        normal: [187, 278, 421, 427, 238, 246, 253, 256, 260, 261, 267, 268, 299, 323, 330, 374, 389, 395, 400, 406, 462, 376, 404, 430, 439, 422, 435, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219]
+        super: []
+        factory: [187, 389, 435]
+        new: [462]
+      - grade: 24 # 钻石
+        normal: [283, 396, 397, 429, 430, 376, 404, 415, 439, 466, 246, 261, 267, 278, 299, 323, 374, 389, 395, 400, 406, 421, 422, 427, 462, 438, 185, 189, 254, 262, 187, 435, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219]
+        super: []
+        factory: [187, 389, 435]
+        new: [462, 466]
+      - grade: 25 # 星耀
+        normal: [181, 194, 212, 231, 254, 266, 122, 185, 189, 262, 397, 167, 422, 429, 267, 283, 376, 389, 396, 415, 427, 430, 438, 439, 466, 394, 276, 393, 123, 133, 222, 329, 339, 435, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219]
+        super: [158, 162, 187, 238, 253, 255, 256, 260, 261, 267, 273, 278, 299, 330]
+        factory: [435, 276, 222, 194]
+        new: [466]
+      - grade: 26 # 车神
+        normal: [283, 346, 394, 396, 397, 404, 427, 439, 137, 167, 189, 238, 262, 376, 422, 429, 122, 123, 133, 194, 212, 254, 292, 339, 181, 185, 222, 231, 266, 276, 329, 332, 393, 441, 466, 153, 446, 448, 124, 132, 166, 175, 184, 191, 199, 202, 208, 219]
+        super: []
+        factory: []
+        new: []
+
+  # stages按书写顺序连接；children按书写顺序晋级，例如[3,2,1]表示III -> II -> I。
+  # 普通段位默认进入晋级赛；大师段位mode=direct，达到门槛后直接升段并保留实际GradeScore。
+  progression:
+    stages:
+      - {grade: 20, children: [3, 2, 1], score: 20} # 热血青铜
+      - {grade: 21, children: [3, 2, 1], score: 30} # 迅捷白银
+      - {grade: 22, children: [4, 3, 2, 1], score: 40} # 疾风黄金
+      - {grade: 23, children: [5, 4, 3, 2, 1], score: 50} # 幻影铂金
+      - {grade: 24, children: [5, 4, 3, 2, 1], score: 60} # 流星钻石
+      - {grade: 25, children: [5, 4, 3, 2, 1], score: 60} # 绝影星耀
+
+      # 大师积分为连续实际分数：299分获得+10后按309分晋级，不截断、不清零。
+      - {grade: 26, children: [3], score: 300, mode: direct} # 技术大师：达到300分晋级超凡大师
+      - {grade: 26, children: [2], score: 650, mode: direct} # 超凡大师：达到650分晋级荣耀大师
+      - {grade: 26, children: [1], mode: leaderboard} # 荣耀大师：满足排行榜条件后晋级技术车神
+      - {grade: 27, children: [1], mode: leaderboard_member} # 技术车神
+
+    master_leaderboard:
+      score_field: grade_score # 大师积分使用GradeScore，不使用赛季TotalScore
+      top_rank: 10 # 只有荣耀大师且排名前10才能晋级技术车神
+      demote_when_out: true # 掉出前10后回到荣耀大师，实际积分保持不变
+
+  # 官服Msg513已见实包：完赛第1名RankAdd=4、第2名=3，另有FinishAdd=1；
+  # 未完赛第3名RankAdd=-3、第4名=-4。当前在这些样本的名次分基础上，所有结果统一额外+3分。
+  scoring:
+    minimum_players_for_points: 1 # 设为1时单人排位也正常加分；若要禁止单人刷分可改为2
+    finish_bonus: 1
+    finished: {base: 8, per_rank: -1} # 第1至6名RankAdd依次为7,6,5,4,3,2
+    unfinished: {base: 3, per_rank: -1} # 未完成第1至6名RankAdd依次为2,1,0,-1,-2,-3
+
+  display:
+    feishi_id: 174966 # 排位冲级奖励页飞饰ID
+    feishi_desc: "铂金 30天  钻石 永久\n星耀解锁专属特效"
+    shop_preview: # 排位首页商城预览物品
+      - label: 6
+        item: 174491
+      - label: 5
+        item: 174342
+
+  protocol:
+    weekly_rank_coin_limit: 300 # 每周排位币上限
+    ranked_coin_item_id: 89687 # 当前服务端背包中的排位币物品ID
+    weekly_factory_coin_limit: 400 # 每周赛车工厂币上限
+    special_tip: "达到绝影星耀段位解锁特殊特效" # 段位特殊提示文字
+    new_map_add_date: 20260601 # 新赛季地图加入日期
+    season_new_map_ids: [462, 466] # 赛季新地图ID列表
+    super_race_grade_limit: 23 # 超级排位最低段位
+    next_grade_season_task: 5636 # 下一段位对应的赛季任务ID
+    top_race_min_open_season_id: 41 # 巅峰赛功能允许开放的最小赛季ID
+    top_race_open_date: 20260709 # 本赛季巅峰赛开放日期
+
+  mission:
+    season_tasks: [4726, 4727] # msg25000赛季任务ID
+    rank_tasks: [4723, 4724, 4725] # msg25000排位任务ID
+
+  milestone:
+    total_matches: 80 # 赛季里程碑总参赛场次
+    interval: 4 # 里程碑分段数量
+    award_counts: [600, 300, 600, 300, 800, 300, 300, 600, 300, 800, 300, 300, 600, 300, 800, 300, 300, 600, 300, 600] # 各里程碑奖励数量
+
+  test_drive:
+    kart_ids: [88867, 84870, 23007, 64881, 32409, 65110, 34865, 33261, 13308, 32824, 30894, 18768, 32407] # 赛车工厂试驾车辆
+    show_interval: 2 # 试驾车辆轮播间隔
+    player_item_ids: [0, 0, 0] # 当前结构固定3项的玩家试驾物品
+    refit_level: 15 # 试驾车辆改装等级
+    unlock_suit_nums: [0, 2, 4] # 当前结构固定3项的套装解锁数量
+
+
+  # 以下任务/奖励均由当前21543客户端Lua 5.4结构与官服S56实包反解。
+  daily_first_win:
+    score_increment: 4 # 每日首胜额外排位分
+    daily_score_increment: 0
+    super_money: 50
+    coupons: 50
+    common_box_type: 109 # 点击每日首胜宝箱时请求的24465类型
+    box_rewards:
+      - start_score: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 18550, count: 1, period: 0}]}
+        extra_awards: []
+      - start_score: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 74273, count: 30, period: 0}]}
+        extra_awards: []
+      - start_score: 1
+        award: {super_money: 100, coupons: 0, items: []}
+        extra_awards:
+          - {super_money: 100, coupons: 0, items: []}
+
+  daily_rank_tasks: # 排位首页右侧：每日首胜/乘胜追击/常胜将军
+    - desc: "每日首胜"
+      daily_num: 1
+      score: 4
+      ranked_coin: 0
+      extra_task_id: 1
+      task_infos:
+        - [{type: 1, condition: 2}, {type: 3, condition: 3}]
+        - [{type: 1, condition: 3}, {type: 6, condition: 1}]
+        - [{type: 1, condition: 5}, {type: 3, condition: 2}]
+        - [{type: 1, condition: 6}, {type: 3, condition: 2}]
+    - desc: "乘胜追击"
+      daily_num: 2
+      score: 3
+      ranked_coin: 0
+      extra_task_id: 2
+      task_infos:
+        - [{type: 1, condition: 2}, {type: 3, condition: 3}]
+        - [{type: 1, condition: 3}, {type: 6, condition: 1}]
+        - [{type: 1, condition: 5}, {type: 3, condition: 2}]
+        - [{type: 1, condition: 6}, {type: 3, condition: 2}]
+    - desc: "常胜将军"
+      daily_num: 3
+      score: 3
+      ranked_coin: 0
+      extra_task_id: 3
+      task_infos:
+        - [{type: 1, condition: 2}, {type: 3, condition: 3}]
+        - [{type: 1, condition: 3}, {type: 6, condition: 1}]
+        - [{type: 1, condition: 5}, {type: 3, condition: 2}]
+        - [{type: 1, condition: 6}, {type: 3, condition: 2}]
+
+  # Msg28380 Type=2：排位首页绿色任务箱。鼠标悬停时客户端读取这里对应的奖励。
+  # C++已接入；任务ID必须同时存在于mission.rank_tasks。
+  daily_task_awards:
+    type: 2
+    task_group: "UI.RankedGamePreScreen.DayTask"
+    tasks:
+      - task_id: 4723 # 每日首胜；排位分+4来自上面的daily_rank_tasks
+        finish_need: 1
+        award: {super_money: 118, coupons: 0, items: []}
+      - task_id: 4724 # 乘胜追击；ItemID 89687为排位币
+        finish_need: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 89687, count: 3, period: 0}]}
+      - task_id: 4725 # 常胜将军
+        finish_need: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 89687, count: 3, period: 0}]}
+
+  # Msg25000 RankedMatchSeasonChallengeInfo：勇者勋章。
+  # finish_need_value是每一段新增需求；客户端累计显示为30/90/170/270/400。
+  # 当前进度、完成状态、勋章数量等属于玩家状态，不在YML里复制官服账号数据。
+  season_challenge:
+    honor_defend:
+      need_star_nums: 1
+      award_honor_defend_nums: 1
+      defend_add_score: 2
+    tasks:
+      - {type: 9, index: 1, finish_need_value: 30}  # 累计30
+      - {type: 9, index: 2, finish_need_value: 60}  # 累计90
+      - {type: 9, index: 3, finish_need_value: 80}  # 累计170
+      - {type: 9, index: 4, finish_need_value: 100} # 累计270
+      - {type: 9, index: 5, finish_need_value: 130} # 累计400
+
+  # Msg25000 S56官服配置。训练场按钮使用task 4311，赛季挑战按钮使用task 4312。
+  season_map_challenge:
+    season_id: 56
+    open_date: 20260601
+    close_date: 20260827
+    open_time: 0
+    close_time: 240000
+    maps:
+      - map_id: 462
+        map_index: 1
+        max_finish_time: 138000
+        promotion_extra_score: 0
+        levels:
+          - {level: 1, finish_time: 138000, ranked_score: 2, ranked_coin: 2}
+          - {level: 2, finish_time: 133000, ranked_score: 3, ranked_coin: 3}
+          - {level: 3, finish_time: 129000, ranked_score: 3, ranked_coin: 3}
+      - map_id: 466
+        map_index: 2
+        max_finish_time: 150000
+        promotion_extra_score: 0
+        levels:
+          - {level: 1, finish_time: 150000, ranked_score: 2, ranked_coin: 2}
+          - {level: 2, finish_time: 146000, ranked_score: 3, ranked_coin: 3}
+          - {level: 3, finish_time: 141000, ranked_score: 3, ranked_coin: 3}
+
+  # Msg25000 S56官服计时赛地图、五档目标时间与段位加分配置。
+  time_race:
+    maps:
+      - {index: 1, map_id: 462, grade: 20, target_times: [178000, 158000, 148000, 138000, 134000]}
+      - {index: 2, map_id: 458, grade: 21, target_times: [162000, 146000, 136000, 127000, 122000]}
+      - {index: 3, map_id: 471, grade: 22, target_times: [162000, 150000, 143000, 134000, 129000]}
+      - {index: 4, map_id: 438, grade: 22, target_times: [182000, 168000, 159000, 149000, 139000]}
+      - {index: 5, map_id: 400, grade: 23, target_times: [167000, 158000, 151000, 141000, 129000]}
+      - {index: 6, map_id: 463, grade: 23, target_times: [156000, 142000, 131000, 122000, 114000]}
+      - {index: 7, map_id: 441, grade: 24, target_times: [151000, 142000, 134000, 121000, 110000]}
+      - {index: 8, map_id: 473, grade: 24, target_times: [134000, 124000, 118000, 109000, 100000]}
+    grade_scores:
+      - {grade: 20, scores: [2, 4, 6, 9, 12]}
+      - {grade: 21, scores: [2, 4, 6, 9, 12]}
+      - {grade: 22, scores: [2, 4, 6, 9, 12]}
+      - {grade: 23, scores: [2, 4, 6, 9, 12]}
+      - {grade: 24, scores: [2, 4, 6, 9, 12]}
+      - {grade: 25, scores: [2, 4, 6, 9, 12]}
+      - {grade: 26, scores: [2, 4, 6, 9, 12]}
+
+  rewards:
+    promotion: # 冲级奖励（段位/小段/需冲线场次）
+      - grade: 21
+        child: 3
+        finish_matches: 5
+        award: {super_money: 100, coupons: 2000, items: [{item: 174377, count: 1, period: -1}]}
+      - grade: 21
+        child: 2
+        finish_matches: 5
+        award: {super_money: 0, coupons: 200, items: []}
+      - grade: 21
+        child: 1
+        finish_matches: 5
+        award: {super_money: 0, coupons: 200, items: []}
+      - grade: 22
+        child: 4
+        finish_matches: 10
+        award: {super_money: 300, coupons: 2500, items: [{item: 174180, count: 1, period: -1}, {item: 174170, count: 1, period: -1}]}
+      - grade: 22
+        child: 3
+        finish_matches: 10
+        award: {super_money: 0, coupons: 300, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 22
+        child: 2
+        finish_matches: 15
+        award: {super_money: 0, coupons: 300, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 22
+        child: 1
+        finish_matches: 15
+        award: {super_money: 0, coupons: 300, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 23
+        child: 5
+        finish_matches: 18
+        award: {super_money: 3000, coupons: 500, items: [{item: 174966, count: 1, period: 720}]}
+      - grade: 23
+        child: 4
+        finish_matches: 18
+        award: {super_money: 0, coupons: 400, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 23
+        child: 3
+        finish_matches: 20
+        award: {super_money: 0, coupons: 400, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 23
+        child: 2
+        finish_matches: 20
+        award: {super_money: 0, coupons: 400, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 23
+        child: 1
+        finish_matches: 20
+        award: {super_money: 0, coupons: 400, items: [{item: 138147, count: 2, period: 0}, {item: 160463, count: 2, period: 0}]}
+      - grade: 24
+        child: 5
+        finish_matches: 25
+        award: {super_money: 4000, coupons: 1000, items: [{item: 174966, count: 1, period: -1}]}
+      - grade: 24
+        child: 4
+        finish_matches: 25
+        award: {super_money: 0, coupons: 500, items: [{item: 138147, count: 5, period: 0}, {item: 160463, count: 5, period: 0}]}
+      - grade: 24
+        child: 3
+        finish_matches: 25
+        award: {super_money: 0, coupons: 500, items: [{item: 138147, count: 5, period: 0}, {item: 160463, count: 5, period: 0}]}
+      - grade: 24
+        child: 2
+        finish_matches: 30
+        award: {super_money: 0, coupons: 500, items: [{item: 138147, count: 5, period: 0}, {item: 160463, count: 5, period: 0}]}
+      - grade: 24
+        child: 1
+        finish_matches: 30
+        award: {super_money: 0, coupons: 500, items: [{item: 138147, count: 5, period: 0}, {item: 160463, count: 5, period: 0}]}
+      - grade: 25
+        child: 5
+        finish_matches: 30
+        award: {super_money: 5000, coupons: 4500, items: [{item: 174967, count: 1, period: -1}]}
+      - grade: 25
+        child: 4
+        finish_matches: 30
+        award: {super_money: 400, coupons: 0, items: [{item: 138147, count: 5, period: 0}, {item: 162550, count: 5, period: 0}]}
+      - grade: 25
+        child: 3
+        finish_matches: 30
+        award: {super_money: 400, coupons: 0, items: [{item: 138147, count: 5, period: 0}, {item: 162550, count: 5, period: 0}]}
+      - grade: 25
+        child: 2
+        finish_matches: 30
+        award: {super_money: 400, coupons: 0, items: [{item: 138147, count: 5, period: 0}, {item: 162550, count: 5, period: 0}]}
+      - grade: 25
+        child: 1
+        finish_matches: 30
+        award: {super_money: 400, coupons: 0, items: [{item: 138147, count: 5, period: 0}, {item: 162550, count: 5, period: 0}]}
+      - grade: 26
+        child: 3
+        finish_matches: 30
+        award: {super_money: 6000, coupons: 6000, items: []}
+      - grade: 26
+        child: 2
+        finish_matches: 35
+        award: {super_money: 7000, coupons: 7000, items: []}
+      - grade: 26
+        child: 1
+        finish_matches: 35
+        award: {super_money: 8000, coupons: 8000, items: []}
+    season: # 结算奖励
+      - grade: 20
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 83840, count: 1, period: 1080}, {item: 83847, count: 1, period: 1080}]}
+      - grade: 20
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 83840, count: 1, period: 1080}, {item: 83847, count: 1, period: 1080}]}
+      - grade: 20
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 83840, count: 1, period: 1080}, {item: 83847, count: 1, period: 1080}]}
+      - grade: 21
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 83841, count: 1, period: 1080}, {item: 83848, count: 1, period: 1080}]}
+      - grade: 21
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 83841, count: 1, period: 1080}, {item: 83848, count: 1, period: 1080}]}
+      - grade: 21
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 83841, count: 1, period: 1080}, {item: 83848, count: 1, period: 1080}]}
+      - grade: 22
+        child: 4
+        award: {super_money: 0, coupons: 0, items: [{item: 121999, count: 1, period: 0}, {item: 89801, count: 1, period: 1080}, {item: 89807, count: 1, period: 1080}]}
+      - grade: 22
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 121999, count: 1, period: 0}, {item: 89801, count: 1, period: 1080}, {item: 89807, count: 1, period: 1080}]}
+      - grade: 22
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 121999, count: 1, period: 0}, {item: 89801, count: 1, period: 1080}, {item: 89807, count: 1, period: 1080}]}
+      - grade: 22
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 121999, count: 1, period: 0}, {item: 89801, count: 1, period: 1080}, {item: 89807, count: 1, period: 1080}]}
+      - grade: 23
+        child: 5
+        award: {super_money: 0, coupons: 0, items: [{item: 121998, count: 1, period: 0}, {item: 89802, count: 1, period: 1080}, {item: 89808, count: 1, period: 1080}]}
+      - grade: 23
+        child: 4
+        award: {super_money: 0, coupons: 0, items: [{item: 121998, count: 1, period: 0}, {item: 89802, count: 1, period: 1080}, {item: 89808, count: 1, period: 1080}]}
+      - grade: 23
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 121998, count: 1, period: 0}, {item: 89802, count: 1, period: 1080}, {item: 89808, count: 1, period: 1080}]}
+      - grade: 23
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 121998, count: 1, period: 0}, {item: 89802, count: 1, period: 1080}, {item: 89808, count: 1, period: 1080}]}
+      - grade: 23
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 121998, count: 1, period: 0}, {item: 89802, count: 1, period: 1080}, {item: 89808, count: 1, period: 1080}]}
+      - grade: 24
+        child: 5
+        award: {super_money: 0, coupons: 0, items: [{item: 121997, count: 1, period: 0}, {item: 89803, count: 1, period: 1080}, {item: 89809, count: 1, period: 1080}]}
+      - grade: 24
+        child: 4
+        award: {super_money: 0, coupons: 0, items: [{item: 121997, count: 1, period: 0}, {item: 89803, count: 1, period: 1080}, {item: 89809, count: 1, period: 1080}]}
+      - grade: 24
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 121997, count: 1, period: 0}, {item: 89803, count: 1, period: 1080}, {item: 89809, count: 1, period: 1080}]}
+      - grade: 24
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 121997, count: 1, period: 0}, {item: 89803, count: 1, period: 1080}, {item: 89809, count: 1, period: 1080}]}
+      - grade: 24
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 121997, count: 1, period: 0}, {item: 89803, count: 1, period: 1080}, {item: 89809, count: 1, period: 1080}]}
+      - grade: 25
+        child: 5
+        award: {super_money: 0, coupons: 0, items: [{item: 121996, count: 1, period: 0}, {item: 89804, count: 1, period: 1080}, {item: 89810, count: 1, period: 1080}]}
+      - grade: 25
+        child: 4
+        award: {super_money: 0, coupons: 0, items: [{item: 121996, count: 1, period: 0}, {item: 89804, count: 1, period: 1080}, {item: 89810, count: 1, period: 1080}]}
+      - grade: 25
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 121996, count: 1, period: 0}, {item: 89804, count: 1, period: 1080}, {item: 89810, count: 1, period: 1080}]}
+      - grade: 25
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 121996, count: 1, period: 0}, {item: 89804, count: 1, period: 1080}, {item: 89810, count: 1, period: 1080}]}
+      - grade: 25
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 121996, count: 1, period: 0}, {item: 89804, count: 1, period: 1080}, {item: 89810, count: 1, period: 1080}]}
+      - grade: 26
+        child: 3
+        award: {super_money: 0, coupons: 0, items: [{item: 121995, count: 1, period: 0}, {item: 89805, count: 1, period: 1440}, {item: 89811, count: 1, period: 1440}]}
+      - grade: 26
+        child: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 162984, count: 1, period: 0}, {item: 162998, count: 1, period: 1440}, {item: 163007, count: 1, period: 1440}]}
+      - grade: 26
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 162985, count: 1, period: 0}, {item: 162999, count: 1, period: 1440}, {item: 163008, count: 1, period: 1440}]}
+      - grade: 27
+        child: 3
+        award: {super_money: 0, coupons: 0, items: []}
+      - grade: 27
+        child: 2
+        award: {super_money: 0, coupons: 0, items: []}
+      - grade: 27
+        child: 1
+        award: {super_money: 0, coupons: 0, items: [{item: 121994, count: 1, period: 0}, {item: 89806, count: 1, period: 1440}, {item: 89812, count: 1, period: 1440}]}
+    top_honor: # 顶尖荣誉
+      - grade: 27
+        level: 6
+        rank_range: [1, 1]
+        appellation_type: 64
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165327, count: 1, period: 1440}, {item: 115432, count: 1, period: 1440}, {item: 115435, count: 1, period: 1440}]}
+      - grade: 27
+        level: 5
+        rank_range: [2, 2]
+        appellation_type: 64
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165327, count: 1, period: 1440}, {item: 115433, count: 1, period: 1440}, {item: 115436, count: 1, period: 1440}]}
+      - grade: 27
+        level: 4
+        rank_range: [3, 3]
+        appellation_type: 64
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165327, count: 1, period: 1440}, {item: 115434, count: 1, period: 1440}, {item: 115437, count: 1, period: 1440}]}
+      - grade: 27
+        level: 3
+        rank_range: [4, 10]
+        appellation_type: 64
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165327, count: 1, period: 1440}, {item: 115439, count: 1, period: 1440}, {item: 115443, count: 1, period: 1440}]}
+      - grade: 27
+        level: 2
+        rank_range: [11, 50]
+        appellation_type: 64
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165327, count: 1, period: 1440}, {item: 115438, count: 1, period: 1440}, {item: 115442, count: 1, period: 1440}]}
+      - grade: 27
+        level: 1
+        rank_range: [51, 100]
+        appellation_type: 64
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165327, count: 1, period: 1440}]}
+      - grade: 26
+        level: 3
+        rank_range: [1, 1]
+        appellation_type: 63
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: [{item: 165326, count: 1, period: 1440}]}
+      - grade: 26
+        level: 2
+        rank_range: [2, 2]
+        appellation_type: 63
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: []}
+      - grade: 26
+        level: 1
+        rank_range: [3, 3]
+        appellation_type: 63
+        difficulty: 2
+        award: {super_money: 0, coupons: 0, items: []}
+      - grade: 25
+        level: 1
+        rank_range: [0, 0]
+        appellation_type: 62
+        difficulty: 1
+        award: {super_money: 0, coupons: 0, items: []}
+      - grade: 24
+        level: 1
+        rank_range: [0, 0]
+        appellation_type: 61
+        difficulty: 1
+        award: {super_money: 0, coupons: 0, items: []}
+
+  suit:
+    name: "S56-极速狂飙" # 24251排位套装预览名称
+    parts:
+      - name: "发饰"
+        item: 174172 # 当前抓包套装部件ID；item表示男女共用同一ID
+        show: true
+        tip: "完成赛季首胜任务"
+      - name: "服饰"
+        item: 174180
+        show: true
+        tip: "冲级奖励获得（黄金段位+冲线15场）"
+      - name: "背饰"
+        item: 174343
+        show: true
+        tip: "完成首次晋级任务"
+      - name: "炫光"
+        item: 174491
+        show: true
+        tip: "排位商城兑换（钻石段位+240排位币）"
+      - name: "飞饰"
+        item: 174966
+        show: false
+        tip: "冲级奖励获得（30天-铂金段位+冲线20场；永久-钻石段位+冲线30场）"
+      - name: "飞饰(专属特效)"
+        item: 174967
+        show: true
+        tip: "冲级奖励获得（永久-星耀段位+冲线30场）"
+      - name: "手饰"
+        item: 174377
+        show: true
+        tip: "冲级奖励获得（白银段位+冲线5场）"
+
+  shop:
+    type: 69 # 排位商城的CommonBox类型
+    items: # item=物品ID，count=数量，period=期限小时/永久，cost_item=货币ID，cost=价格
+      - item: 81293
+        count: 1
+        period: 120
+        cost_item: 89687
+        cost: 180
+      - item: 155364
+        count: 1
+        period: 120
+        cost_item: 89687
+        cost: 10
+      - item: 30890
+        count: 1
+        period: 120
+        cost_item: 89687
+        cost: 100
+      - item: 72740
+        count: 1
+        period: 120
+        cost_item: 89687
+        cost: 90
+      - item: 33895
+        count: 1
+        period: 120
+        cost_item: 89687
+        cost: 100
+      - item: 72277
+        count: 1
+        period: 120
+        cost_item: 89687
+        cost: 90
+      - item: 105696
+        count: 1
+        period: 0
+        cost_item: 105695
+        cost: 10
+      - item: 96595
+        count: 1
+        period: 0
+        cost_item: 105695
+        cost: 5
+      - item: 12380
+        count: 1
+        period: 0
+        cost_item: 105695
+        cost: 5
+      - item: 12378
+        count: 1
+        period: 0
+        cost_item: 105695
+        cost: 5
+      - item: 12376
+        count: 1
+        period: 0
+        cost_item: 105695
+        cost: 5
+      - item: 12377
+        count: 1
+        period: 0
+        cost_item: 105695
+        cost: 5
+      - item: 168433
+        count: 1
+        period: 永久
+        cost_item: 89687
+        cost: 240
+      - item: 155365
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 80
+      - item: 155366
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 40
+      - item: 13708
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 10
+      - item: 19756
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 10
+      - item: 21984
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 50
+      - item: 21978
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 50
+      - item: 22026
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 50
+      - item: 21983
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 10
+      - item: 21977
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 10
+      - item: 22025
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 10
+      - item: 96593
+        count: 1
+        period: 0
+        cost_item: 89687
+        cost: 10
+      - item: 84544
+        count: 1
+        period: 168
+        cost_item: 89687
+        cost: 50
+      - item: 84871
+        count: 1
+        period: 168
+        cost_item: 89687
+        cost: 50

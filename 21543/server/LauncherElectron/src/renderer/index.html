@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' https://qq.com https://*.qq.com https://q3.qlogo.cn https://gtimg.com https://*.gtimg.com https://gtimg.cn https://*.gtimg.cn https://qpic.cn https://*.qpic.cn https://iips.speed.qq.com; media-src 'self' https://qq.com https://*.qq.com https://gtimg.com https://*.gtimg.com https://gtimg.cn https://*.gtimg.cn https://qpic.cn https://*.qpic.cn; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-src 'none';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QQ飞车登录器</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="shell" data-view="login">
+      <div class="launcher-background" aria-hidden="true">
+        <video
+          id="launcherBackgroundVideo"
+          class="launcher-background-video"
+          autoplay
+          loop
+          playsinline
+          preload="auto"
+          src="../../assets/launcher-background.mp4"
+        ></video>
+        <div id="launcherMediaFallback" class="launcher-media-fallback hidden"></div>
+      </div>
+      <p id="launcherMediaStatus" class="launcher-media-status hidden" role="status">
+        背景视频暂不可用，登录和启动功能仍可继续使用。
+      </p>
+      <section id="loginView" class="login-view">
+        <main class="login-stage">
+          <aside class="login-panel crystal-surface">
+            <div class="login-method-switch" aria-label="账号登录">
+              <span class="login-method-icon method-qqspeed">
+                <img
+                  id="loginAccountAvatar"
+                  class="login-account-avatar hidden"
+                  alt="账号头像"
+                  referrerpolicy="no-referrer"
+                  draggable="false"
+                />
+                <span id="loginMethodFallback" class="login-method-fallback" aria-hidden="true">飞</span>
+              </span>
+            </div>
+
+            <div id="qqLoginContent" class="login-content">
+              <h1 class="login-heading">密码登录</h1>
+
+              <form id="loginForm" class="login-form">
+                <label class="login-row">
+                  <span class="login-row-label">号码</span>
+                  <div class="account-combo login-input-shell">
+                    <input
+                      id="username"
+                      autocomplete="username"
+                      inputmode="numeric"
+                      placeholder="请输入账号"
+                      maxlength="64"
+                    />
+                    <button id="accountDropdownBtn" class="combo-toggle" type="button" aria-label="选择登录过的账号"></button>
+                    <div id="accountDropdown" class="account-dropdown hidden"></div>
+                  </div>
+                </label>
+                <label class="login-row">
+                  <span class="login-row-label">密码</span>
+                  <span class="login-input-shell">
+                    <input
+                      id="password"
+                      autocomplete="current-password"
+                      type="password"
+                      placeholder="请输入密码"
+                      maxlength="64"
+                    />
+                  </span>
+                </label>
+
+                <div class="login-options">
+                  <label><input id="remember" type="checkbox" /><span>记住密码</span></label>
+                  <label><input id="autoLogin" type="checkbox" /><span>自动登录</span></label>
+                  <button id="forgotPasswordBtn" type="button">忘记密码?</button>
+                </div>
+
+                <button class="login-primary" id="loginBtn" type="submit">登录</button>
+                <button id="scanLoginBtn" class="login-secondary scan-login" type="button">
+                  <i aria-hidden="true"></i><span>扫码登录</span>
+                </button>
+                <button id="quickLoginBtn" class="login-secondary quick-login" type="button" disabled>快捷登录</button>
+              </form>
+            </div>
+
+            <label class="agreement">
+              <input id="agreementCheck" type="checkbox" checked />
+              <span>
+                我已详细阅读并同意
+                <em>《腾讯游戏许可及服务协议》</em><em>《隐私保护指引》</em>
+                <em>《儿童隐私保护指引》</em><em>《第三方信息共享清单》</em>
+              </span>
+            </label>
+          </aside>
+        </main>
+      </section>
+
+      <section id="homeView" class="home-view hidden">
+        <main class="home-stage">
+          <section class="home-live-copy">
+            <h1 id="homeHeroTitle">QQ飞车</h1>
+            <p id="homeHeroSubtitle">正在同步活动与版本内容</p>
+          </section>
+
+          <button
+            id="homeAnnouncementTicker"
+            class="home-announcement-ticker"
+            type="button"
+            aria-controls="homeActivityPopover"
+            aria-expanded="false"
+          >
+            <span>公告</span>
+            <strong id="homeTickerText">活动与公告加载中…</strong>
+            <small>查看详情</small>
+          </button>
+
+          <section
+            id="homeActivityPopover"
+            class="home-activity-popover crystal-surface hidden"
+            aria-label="活动与公告"
+          >
+            <header>
+              <div>
+                <strong>活动中心</strong>
+                <span>活动、公告与版本进度</span>
+              </div>
+              <button id="homeActivityCloseBtn" type="button" aria-label="关闭活动中心">×</button>
+            </header>
+            <div class="home-content-deck">
+              <div class="home-banner-shell">
+                <div id="homeBannerTrack" class="home-banner-track" aria-live="polite">
+                  <div class="home-content-empty">活动内容加载中...</div>
+                </div>
+                <div id="homeBannerDots" class="home-banner-dots" aria-label="切换活动"></div>
+              </div>
+              <div id="homeSecondaryBanner" class="home-secondary-banner" aria-label="版本更新">
+                <div class="home-content-empty">版本内容加载中...</div>
+              </div>
+              <div class="home-bulletins">
+                <div id="bulletinTabs" class="bulletin-tabs" aria-label="资讯分类">
+                  <button class="active" type="button" data-bulletin-category="公告" aria-pressed="true">公告</button>
+                  <button type="button" data-bulletin-category="赛事" aria-pressed="false">赛事</button>
+                </div>
+                <ul id="homeBulletinList">
+                  <li class="home-content-empty">公告加载中...</li>
+                </ul>
+              </div>
+              <div class="home-activity-timeline">
+                <div id="releaseTimeline" class="release-timeline" aria-label="版本进度">
+                  <div class="timeline-item active"><i></i><span>版本内容加载中...</span></div>
+                </div>
+                <div class="timeline-progress"><span id="timelineProgressValue"></span></div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </section>
+
+      <header class="top-bar shared-top-bar">
+        <span class="top-bar-logo" aria-label="QQ飞车">QQ飞车</span>
+        <nav id="homeLinks" class="home-links home-only" aria-label="快捷入口">
+          <span id="dynamicHomeLinks" class="dynamic-home-links"></span>
+        </nav>
+
+        <div class="account home-only">
+          <span class="account-avatar-shell">
+            <img
+              id="accountAvatar"
+              class="account-avatar hidden"
+              alt="账号头像"
+              referrerpolicy="no-referrer"
+              draggable="false"
+            />
+            <span id="accountAvatarFallback" class="avatar-dot" aria-hidden="true"></span>
+          </span>
+          <strong id="accountName">未登录</strong>
+          <button id="accountBtn" type="button" title="退出当前账号">登出 ›</button>
+        </div>
+
+        <aside id="mediaControls" class="media-controls" aria-label="背景声音设置">
+          <div id="videoControlItem" class="media-control-item">
+            <button
+              id="videoMuteBtn"
+              class="media-toggle"
+              type="button"
+              aria-pressed="false"
+              aria-label="关闭背景声音"
+            ></button>
+            <label class="media-volume-popover" title="背景音量">
+              <span>背景音量</span>
+              <input id="videoVolume" type="range" min="0" max="100" step="1" value="70" />
+            </label>
+          </div>
+        </aside>
+
+        <div class="window-actions">
+          <button class="window-btn window-menu" id="homeMenuBtn" type="button" title="登录器设置" aria-label="登录器设置" aria-expanded="false"></button>
+          <button class="window-btn window-min" id="minimizeBtn" type="button" title="最小化" aria-label="最小化"></button>
+          <button class="window-btn window-close" id="closeBtn" type="button" title="关闭" aria-label="关闭"></button>
+        </div>
+      </header>
+
+      <footer class="bottom-control-box">
+        <section class="home-dock-summary home-only" aria-label="客户端摘要">
+          <div>
+            <span>当前账号</span>
+            <strong id="homeDockAccountName">未登录</strong>
+          </div>
+          <div>
+            <span>客户端状态</span>
+            <strong id="homeStatusText" role="status" aria-live="polite">账号已就绪，可以开始游戏。</strong>
+          </div>
+          <div class="home-dock-path">
+            <span>游戏目录</span>
+            <strong id="gameRootText">未定位 QQ飞车主目录</strong>
+          </div>
+        </section>
+
+        <nav class="home-dock-actions home-only" aria-label="游戏操作">
+          <button id="gmItemBrowserBtn" class="home-dock-button hidden" type="button">GM 道具查询</button>
+          <button
+            id="homeActivityBtn"
+            class="home-dock-button"
+            type="button"
+            aria-controls="homeActivityPopover"
+            aria-expanded="false"
+          >活动</button>
+          <button id="multiOpenBtn" class="home-dock-button multi-open-btn" type="button"
+            aria-haspopup="dialog" aria-controls="multiInstanceModal" aria-expanded="false">
+            <span class="multi-open-label">多开</span>
+            <b id="multiOpenCount" class="multi-open-count hidden">0</b>
+          </button>
+          <div class="server-select-wrapper">
+            <button id="serverSelectTrigger" class="server-select-trigger" type="button"
+              aria-haspopup="dialog" aria-controls="serverModal" aria-expanded="false">
+              <span id="serverSelectLabel" class="server-select-label">大区加载中</span>
+            </button>
+            <select id="serverSelect" class="server-native-select sr-only"
+              tabindex="-1" aria-hidden="true"></select>
+          </div>
+          <button id="selectGameRootBtn" class="home-dock-button" type="button">选择目录</button>
+          <button class="start-btn" id="startBtn" type="button"
+            data-state="disabled" style="--start-progress: 0%;" disabled>
+            <span class="start-btn-spinner" aria-hidden="true"></span>
+            <span id="startBtnText" class="start-btn-title">登录后开始游戏</span>
+            <small id="startBtnDesc" class="start-btn-desc"></small>
+          </button>
+        </nav>
+      </footer>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <div id="launcherMenu" class="launcher-menu hidden" role="menu" aria-label="登录器设置">
+        <button id="selectGameRootMenuBtn" type="button" role="menuitem">
+          <strong>选择游戏目录</strong>
+          <span>定位包含 Releasephysx27_64\\GameApp.exe 的 QQ飞车主目录</span>
+        </button>
+      </div>
+
+      <div
+        id="gmItemBrowserModal"
+        class="gm-item-modal hidden"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gmItemBrowserTitle"
+      >
+        <section class="gm-item-panel">
+          <header class="gm-item-header">
+            <h2 id="gmItemBrowserTitle">GM道具查询</h2>
+            <button id="gmModalCloseBtn" class="gm-item-close" type="button" aria-label="关闭 GM 道具查询">×</button>
+          </header>
+
+          <div class="gm-item-body">
+            <nav id="gmPrimaryCategories" class="gm-primary-categories" aria-label="一级分类"></nav>
+
+            <section class="gm-item-main" aria-label="道具查询结果">
+              <form id="gmFilterForm" class="gm-filter-form">
+                <label class="gm-search-field">
+                  <span class="sr-only">名称或 ID</span>
+                  <input id="gmKeyword" type="search" maxlength="80" autocomplete="off" placeholder="输入道具名称或 ID" />
+                </label>
+                <label>
+                  <span class="sr-only">性别</span>
+                  <select id="gmGender">
+                    <option value="">全部性别</option>
+                    <option value="通用">通用</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                    <option value="未知">未知</option>
+                  </select>
+                </label>
+                <label>
+                  <span class="sr-only">ID 排序</span>
+                  <select id="gmSortDirection">
+                    <option value="asc">ID 从小到大</option>
+                    <option value="desc">ID 从大到小</option>
+                  </select>
+                </label>
+                <button id="gmQueryBtn" class="gm-query-button" type="submit">查询</button>
+                <button id="gmResetBtn" class="gm-reset-button" type="button">重置</button>
+              </form>
+
+              <div class="gm-secondary-row">
+                <span>二级分类</span>
+                <nav
+                  id="gmSecondaryCategories"
+                  class="gm-secondary-categories"
+                  aria-label="二级分类"
+                ></nav>
+                <select id="gmSecondaryCategory" class="sr-only" disabled tabindex="-1" aria-hidden="true">
+                  <option value="">全部二级分类</option>
+                </select>
+              </div>
+
+              <div id="gmLiveStatus" class="gm-live-status" role="status" aria-live="polite"></div>
+              <div id="gmResultsViewport" class="gm-results-viewport">
+                <div id="gmItemGrid" class="gm-item-grid" aria-live="polite"></div>
+              </div>
+
+              <footer class="gm-item-footer">
+                <span id="gmResultSummary">共 0 条</span>
+                <div class="gm-pagination" aria-label="GM 道具分页">
+                  <button id="gmPrevPageBtn" type="button" aria-label="上一页">‹</button>
+                  <span id="gmPageIndicator">0 / 0</span>
+                  <button id="gmNextPageBtn" type="button" aria-label="下一页">›</button>
+                </div>
+                <span id="gmPageSizeLabel">30 条/页</span>
+              </footer>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div id="serverModal" class="server-modal hidden" role="dialog" aria-modal="true" aria-labelledby="serverModalTitle">
+        <section class="server-modal-panel">
+          <header class="server-modal-header">
+            <h2 id="serverModalTitle">区服状态</h2>
+            <button id="serverModalCloseBtn" class="server-modal-close" type="button" aria-label="关闭大区选择">×</button>
+          </header>
+
+          <div class="server-modal-body">
+            <ul class="server-status-legend" aria-label="大区状态图例">
+              <li><i class="is-smooth" aria-hidden="true"></i>流畅</li>
+              <li><i class="is-busy" aria-hidden="true"></i>繁忙</li>
+              <li><i class="is-full" aria-hidden="true"></i>爆满</li>
+              <li><i class="is-maintenance" aria-hidden="true"></i>维护</li>
+            </ul>
+
+            <section id="serverRecentSection" class="server-modal-section hidden" aria-labelledby="serverRecentTitle">
+              <h3 id="serverRecentTitle">上次登录</h3>
+              <div id="serverRecentList" class="server-grid server-recent-list"></div>
+            </section>
+
+            <section class="server-modal-section server-all-section" aria-labelledby="serverListTitle">
+              <h3 id="serverListTitle">选择大区</h3>
+              <div id="serverList" class="server-grid" aria-live="polite"></div>
+            </section>
+          </div>
+
+          <footer class="server-modal-actions">
+            <button id="serverModalCancelBtn" class="server-modal-cancel" type="button">取消</button>
+            <button id="serverModalConfirmBtn" class="server-modal-confirm" type="button">确认</button>
+          </footer>
+        </section>
+      </div>
+
+      <div id="multiInstanceModal" class="multi-instance-modal hidden" role="dialog" aria-modal="true" aria-labelledby="multiInstanceTitle">
+        <section class="multi-instance-panel">
+          <header class="multi-instance-header">
+            <h2 id="multiInstanceTitle">多开管理</h2>
+            <button id="multiInstanceCloseBtn" class="multi-instance-close" type="button" aria-label="关闭多开管理">×</button>
+          </header>
+
+          <div class="multi-instance-body">
+            <div id="multiMainAccount" class="multi-main-account" aria-live="polite"></div>
+
+            <section class="multi-bound-section" aria-labelledby="multiBoundTitle">
+              <h3 id="multiBoundTitle">多开账号</h3>
+              <p>请勿与主界面已登录的账号和区服重复开启！绑定信息会自动保存，下次打开可直接启动。</p>
+              <div id="multiInstanceList" class="multi-instance-list" aria-live="polite"></div>
+
+              <button id="bindAccountBtn" class="bind-account-btn" type="button">+ 绑定账号</button>
+              <form id="bindAccountForm" class="bind-account-form hidden" autocomplete="off">
+                <label>
+                  <span>账号</span>
+                  <input id="bindAccountUser" name="username" maxlength="64" inputmode="numeric" autocomplete="username" placeholder="请输入账号" required />
+                </label>
+                <label>
+                  <span>密码</span>
+                  <input id="bindAccountPassword" name="password" type="password" maxlength="64" autocomplete="new-password" placeholder="请输入密码" required />
+                </label>
+                <div class="bind-account-actions">
+                  <button id="bindAccountCancelBtn" type="button">取消</button>
+                  <button id="bindAccountSubmitBtn" type="submit">确认绑定</button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div
+        id="closeConfirmModal"
+        class="close-confirm-modal hidden"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="closeConfirmTitle"
+        aria-describedby="closeConfirmDescription"
+      >
+        <section id="closeConfirmPanel" class="close-confirm-panel">
+          <header class="close-confirm-header">
+            <h2 id="closeConfirmTitle">提示</h2>
+            <button id="closeConfirmDismiss" class="close-confirm-dismiss" type="button" aria-label="关闭提示">×</button>
+          </header>
+
+          <div class="close-confirm-body">
+            <p id="closeConfirmDescription">您点击了【关闭】，您希望：</p>
+            <div class="close-confirm-actions" role="radiogroup" aria-label="关闭启动器时">
+              <label class="close-confirm-action">
+                <input id="closeActionTray" name="closeAction" type="radio" value="tray" checked />
+                <span class="close-confirm-radio" aria-hidden="true"></span>
+                <span>最小化系统托盘</span>
+              </label>
+              <label class="close-confirm-action">
+                <input id="closeActionQuit" name="closeAction" type="radio" value="quit" />
+                <span class="close-confirm-radio" aria-hidden="true"></span>
+                <span>退出启动器</span>
+              </label>
+            </div>
+
+            <button id="closeConfirmBtn" class="close-confirm-button" type="button">确定</button>
+
+            <label class="close-confirm-remember">
+              <input id="closeRemember" type="checkbox" />
+              <span class="close-confirm-checkbox" aria-hidden="true"></span>
+              <span>不再提醒</span>
+            </label>
+          </div>
+        </section>
+      </div>
+
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

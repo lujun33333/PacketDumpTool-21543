@@ -1,0 +1,535 @@
+ForbidMaps: []
+NewMaps:
+  - MapID: 474
+    WordTxt: "本月3星新赛道：/C03【猫梦浮屋】/C00"
+  - MapID: 477
+    WordTxt: "本月3星新赛道：/C03【八闽山海】/C00"
+
+MapChallengeOpenMain:
+  Msg: "完成比赛并使用CW喷{tc}次"
+  Maps:
+    - Mapid: 273
+      Num: 3
+      firsttime: 116544
+      secondtime: 112544
+      thirdtime: 108544
+      assess:
+        type: cw_jet
+        assess_type: 22
+        count: 3
+        msg: "完成比赛并使用CW喷{tc}次"
+        msg_game: "使用CW喷{tc}次："
+    - Mapid: 187
+      Num: 3
+      firsttime: 105427
+      secondtime: 101427
+      thirdtime: 97427
+      assess:
+        type: cw_jet
+        assess_type: 22
+        count: 3
+        msg: "完成比赛并使用CW喷{tc}次"
+        msg_game: "使用CW喷{tc}次："
+    - Mapid: 299
+      Num: 3
+      firsttime: 122943
+      secondtime: 118943
+      thirdtime: 114943
+      assess:
+        type: cw_jet
+        assess_type: 22
+        count: 3
+        msg: "完成比赛并使用CW喷{tc}次"
+        msg_game: "使用CW喷{tc}次："
+    - Mapid: 346
+      Num: 3
+      firsttime: 107230
+      secondtime: 103230
+      thirdtime: 99230
+      assess:
+        type: cw_jet
+        assess_type: 22
+        count: 3
+        msg: "完成比赛并使用CW喷{tc}次"
+        msg_game: "使用CW喷{tc}次："
+    - Mapid: 441
+      Num: 3
+      firsttime: 186000
+      secondtime: 182000
+      thirdtime: 178000
+      assess:
+        type: cw_jet
+        assess_type: 22
+        count: 3
+        msg: "完成比赛并使用CW喷{tc}次"
+        msg_game: "使用CW喷{tc}次："
+    - Mapid: 222
+      Num: 3
+      firsttime: 92842
+      secondtime: 88842
+      thirdtime: 84842
+      assess:
+        type: cw_jet
+        assess_type: 22
+        count: 3
+        msg: "完成比赛并使用CW喷{tc}次"
+        msg_game: "使用CW喷{tc}次："
+  MapsCreate: []
+
+
+##打榜地图
+ChallengeMaps:
+  - Mapid: 381
+    Open: 1
+    IsNew: 0
+  - Mapid: 204
+    Open: 1
+    IsNew: 0
+  - Mapid: 246
+    Open: 1
+    IsNew: 0
+  - Mapid: 145
+    Open: 1
+    IsNew: 0
+  - Mapid: 446
+    Open: 1
+    IsNew: 0
+  - Mapid: 430
+    Open: 1
+    IsNew: 1
+  - Mapid: 343
+    Open: 1
+    IsNew: 1
+  - Mapid: 367
+    Open: 1
+    IsNew: 0
+  - Mapid: 373
+    Open: 1
+    IsNew: 0
+  - Mapid: 364
+    Open: 1
+    IsNew: 1
+  - Mapid: 319
+    Open: 1
+    IsNew: 0
+  - Mapid: 329
+    Open: 1
+    IsNew: 0
+  - Mapid: 258
+    Open: 1
+    IsNew: 0
+  - Mapid: 359
+    Open: 1
+    IsNew: 0
+  - Mapid: 275
+    Open: 1
+    IsNew: 0
+  - Mapid: 441
+    Open: 1
+    IsNew: 1
+  - Mapid: 395
+    Open: 1
+    IsNew: 0
+  - Mapid: 435
+    Open: 1
+    IsNew: 1
+  - Mapid: 371
+    Open: 1
+    IsNew: 1
+  - Mapid: 238
+    Open: 1
+    IsNew: 0
+  - Mapid: 342
+    Open: 1
+    IsNew: 0
+  - Mapid: 365
+    Open: 1
+    IsNew: 0
+  - Mapid: 250
+    Open: 1
+    IsNew: 0
+  - Mapid: 292
+    Open: 1
+    IsNew: 0
+  - Mapid: 345
+    Open: 1
+    IsNew: 0
+  - Mapid: 422
+    Open: 1
+    IsNew: 0
+  - Mapid: 382
+    Open: 1
+    IsNew: 0
+  - Mapid: 234
+    Open: 1
+    IsNew: 0
+  - Mapid: 168
+    Open: 1
+    IsNew: 0
+  - Mapid: 404
+    Open: 1
+    IsNew: 0
+  - Mapid: 137
+    Open: 1
+    IsNew: 0
+  - Mapid: 185
+    Open: 1
+    IsNew: 0
+  - Mapid: 349
+    Open: 1
+    IsNew: 0
+  - Mapid: 361
+    Open: 1
+    IsNew: 0
+  - Mapid: 376
+    Open: 1
+    IsNew: 0
+  - Mapid: 374
+    Open: 1
+    IsNew: 0
+  - Mapid: 295
+    Open: 1
+    IsNew: 0
+  - Mapid: 356
+    Open: 1
+    IsNew: 0
+  - Mapid: 222
+    Open: 1
+    IsNew: 0
+  - Mapid: 358
+    Open: 1
+    IsNew: 0
+  - Mapid: 439
+    Open: 1
+    IsNew: 0
+  - Mapid: 186
+    Open: 1
+    IsNew: 0
+  - Mapid: 158
+    Open: 1
+    IsNew: 0
+  - Mapid: 122
+    Open: 1
+    IsNew: 0
+  - Mapid: 190
+    Open: 1
+    IsNew: 0
+  - Mapid: 379
+    Open: 1
+    IsNew: 0
+  - Mapid: 386
+    Open: 1
+    IsNew: 0
+  - Mapid: 208
+    Open: 1
+    IsNew: 0
+  - Mapid: 369
+    Open: 1
+    IsNew: 0
+  - Mapid: 153
+    Open: 1
+    IsNew: 0
+  - Mapid: 370
+    Open: 1
+    IsNew: 0
+  - Mapid: 239
+    Open: 1
+    IsNew: 0
+  - Mapid: 105
+    Open: 1
+    IsNew: 0
+  - Mapid: 123
+    Open: 1
+    IsNew: 0
+  - Mapid: 227
+    Open: 1
+    IsNew: 0
+  - Mapid: 393
+    Open: 1
+    IsNew: 0
+  - Mapid: 429
+    Open: 1
+    IsNew: 0
+  - Mapid: 283
+    Open: 1
+    IsNew: 0
+  - Mapid: 253
+    Open: 1
+    IsNew: 0
+  - Mapid: 328
+    Open: 1
+    IsNew: 0
+  - Mapid: 191
+    Open: 1
+    IsNew: 0
+  - Mapid: 237
+    Open: 1
+    IsNew: 0
+  - Mapid: 143
+    Open: 1
+    IsNew: 0
+  - Mapid: 325
+    Open: 1
+    IsNew: 0
+  - Mapid: 427
+    Open: 1
+    IsNew: 0
+  - Mapid: 400
+    Open: 1
+    IsNew: 0
+  - Mapid: 302
+    Open: 1
+    IsNew: 0
+  - Mapid: 118
+    Open: 1
+    IsNew: 0
+  - Mapid: 187
+    Open: 1
+    IsNew: 0
+  - Mapid: 276
+    Open: 1
+    IsNew: 0
+  - Mapid: 316
+    Open: 1
+    IsNew: 0
+  - Mapid: 399
+    Open: 1
+    IsNew: 0
+  - Mapid: 130
+    Open: 1
+    IsNew: 0
+  - Mapid: 166
+    Open: 1
+    IsNew: 0
+  - Mapid: 142
+    Open: 1
+    IsNew: 0
+  - Mapid: 178
+    Open: 1
+    IsNew: 0
+  - Mapid: 159
+    Open: 1
+    IsNew: 0
+  - Mapid: 255
+    Open: 1
+    IsNew: 0
+  - Mapid: 447
+    Open: 1
+    IsNew: 0
+  - Mapid: 262
+    Open: 1
+    IsNew: 0
+  - Mapid: 181
+    Open: 1
+    IsNew: 0
+  - Mapid: 151
+    Open: 1
+    IsNew: 0
+  - Mapid: 219
+    Open: 1
+    IsNew: 0
+  - Mapid: 152
+    Open: 1
+    IsNew: 0
+  - Mapid: 136
+    Open: 1
+    IsNew: 0
+  - Mapid: 385
+    Open: 1
+    IsNew: 0
+  - Mapid: 333
+    Open: 1
+    IsNew: 0
+  - Mapid: 341
+    Open: 1
+    IsNew: 0
+  - Mapid: 214
+    Open: 1
+    IsNew: 0
+  - Mapid: 154
+    Open: 1
+    IsNew: 0
+  - Mapid: 160
+    Open: 1
+    IsNew: 0
+  - Mapid: 307
+    Open: 1
+    IsNew: 0
+  - Mapid: 299
+    Open: 1
+    IsNew: 0
+  - Mapid: 231
+    Open: 1
+    IsNew: 0
+  - Mapid: 394
+    Open: 1
+    IsNew: 0
+  - Mapid: 397
+    Open: 1
+    IsNew: 0
+  - Mapid: 391
+    Open: 1
+    IsNew: 0
+  - Mapid: 192
+    Open: 1
+    IsNew: 0
+  - Mapid: 194
+    Open: 1
+    IsNew: 0
+  - Mapid: 332
+    Open: 1
+    IsNew: 0
+  - Mapid: 268
+    Open: 1
+    IsNew: 0
+  - Mapid: 212
+    Open: 1
+    IsNew: 0
+  - Mapid: 200
+    Open: 1
+    IsNew: 0
+  - Mapid: 228
+    Open: 1
+    IsNew: 1
+  - Mapid: 189
+    Open: 1
+    IsNew: 0
+  - Mapid: 111
+    Open: 1
+    IsNew: 0
+  - Mapid: 396
+    Open: 1
+    IsNew: 0
+  - Mapid: 161
+    Open: 1
+    IsNew: 0
+  - Mapid: 162
+    Open: 1
+    IsNew: 0
+  - Mapid: 167
+    Open: 1
+    IsNew: 0
+  - Mapid: 438
+    Open: 1
+    IsNew: 1
+  - Mapid: 124
+    Open: 1
+    IsNew: 0
+  - Mapid: 420
+    Open: 1
+    IsNew: 0
+  - Mapid: 351
+    Open: 1
+    IsNew: 0
+  - Mapid: 273
+    Open: 1
+    IsNew: 0
+  - Mapid: 230
+    Open: 1
+    IsNew: 0
+  - Mapid: 235
+    Open: 1
+    IsNew: 0
+  - Mapid: 139
+    Open: 1
+    IsNew: 0
+  - Mapid: 132
+    Open: 1
+    IsNew: 0
+  - Mapid: 392
+    Open: 1
+    IsNew: 0
+  - Mapid: 350
+    Open: 1
+    IsNew: 1
+  - Mapid: 380
+    Open: 1
+    IsNew: 0
+  - Mapid: 377
+    Open: 1
+    IsNew: 0
+  - Mapid: 368
+    Open: 1
+    IsNew: 0
+  - Mapid: 229
+    Open: 1
+    IsNew: 0
+  - Mapid: 196
+    Open: 1
+    IsNew: 0
+  - Mapid: 202
+    Open: 1
+    IsNew: 0
+  - Mapid: 266
+    Open: 1
+    IsNew: 0
+  - Mapid: 384
+    Open: 1
+    IsNew: 0
+  - Mapid: 389
+    Open: 1
+    IsNew: 0
+  - Mapid: 378
+    Open: 1
+    IsNew: 0
+  - Mapid: 260
+    Open: 1
+    IsNew: 0
+  - Mapid: 327
+    Open: 1
+    IsNew: 0
+  - Mapid: 421
+    Open: 1
+    IsNew: 0
+  - Mapid: 199
+    Open: 1
+    IsNew: 0
+  - Mapid: 278
+    Open: 1
+    IsNew: 0
+  - Mapid: 339
+    Open: 1
+    IsNew: 0
+  - Mapid: 256
+    Open: 1
+    IsNew: 0
+  - Mapid: 346
+    Open: 1
+    IsNew: 0
+  - Mapid: 108
+    Open: 1
+    IsNew: 0
+  - Mapid: 324
+    Open: 1
+    IsNew: 0
+  - Mapid: 434
+    Open: 1
+    IsNew: 1
+  - Mapid: 133
+    Open: 1
+    IsNew: 0
+  - Mapid: 121
+    Open: 1
+    IsNew: 0
+  - Mapid: 264
+    Open: 1
+    IsNew: 0
+  - Mapid: 355
+    Open: 1
+    IsNew: 0
+  - Mapid: 146
+    Open: 1
+    IsNew: 0
+  - Mapid: 267
+    Open: 1
+    IsNew: 0
+  - Mapid: 198
+    Open: 1
+    IsNew: 0
+  - Mapid: 261
+    Open: 1
+    IsNew: 0
+  - Mapid: 254
+    Open: 1
+    IsNew: 0
+

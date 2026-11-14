@@ -1,0 +1,76 @@
+﻿- ItemId: 11450 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 10306 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 11641 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 77671 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 99060 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 99070 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 117727 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 89443 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 89453 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 110710 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 109563 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 127616 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 129099 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 18554 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 10595 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 10020 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 28279 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 138313 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久
+- ItemId: 127758 #道具id
+  ItemNum: 1 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: -1 #0显示数量 -1显示永久

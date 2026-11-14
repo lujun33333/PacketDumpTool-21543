@@ -1,0 +1,194 @@
+# 服装幻生 / 变身配置
+# 来源：
+#   F:\PacketDumpTool\PacketDumpTool\x64\Release\packet_dumps_14420\payloads\network_bin_14420_3771_special28346_before_inner_body_at12_msg24251_len2007.bin
+# 协议：
+#   msgid: 24251
+#   request:  Co.Beta84GetIllusionSuitCfg
+#   response: DispatchCoResponse initial=14
+# 说明：
+#   官服包里统一叫 IllusionSuit，UI 上显示“幻生”还是“变身”不是这个配置包直接给的文本。
+#   本文件把官服下发的 suitid / subsuitid 映射落盘；tag_hint 只标当前 dump/截图已经确认的 UI 标签。
+
+illusion_suit_cfg:
+  enabled: true
+  protocol:
+    msgid: 24251
+    get_cfg_cmd: "Co.Beta84GetIllusionSuitCfg"
+    get_info_cmd: "Co.Beta84GetIllusionSuitInfo"
+    set_info_cmd: "Co.Beta84SetIllusionSuitInfo"
+    set_info_args:
+      - item_id
+      - shape_idx
+    official_response_initial: 14
+    official_status_initial: 20
+
+  records:
+    - group_id: 1
+      group_name: "稀世·海洋之心"
+      tag_hint: "unknown"
+      male_suits:
+        - suitid: 155313
+          name: "稀世·海洋之心套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 155333, name: "稀世·海洋之心套装" }
+            - { shape_idx: 2, item_id: 155353, name: "稀世·海洋之心套装" }
+      female_suits:
+        - suitid: 155323
+          name: "稀世·海洋之心套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 155343, name: "稀世·海洋之心套装" }
+            - { shape_idx: 2, item_id: 155363, name: "稀世·海洋之心套装" }
+      nonbinary_suits: []
+
+    - group_id: 2
+      group_name: "稀世·穹梦韶宇"
+      tag_hint: "幻生"
+      male_suits:
+        - suitid: 149982
+          name: "稀世·穹梦韶宇套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 149996, name: "稀世·穹梦韶宇套装" }
+            - { shape_idx: 2, item_id: 150013, name: "稀世·星夜神话套装" }
+            - { shape_idx: 3, item_id: 150045, name: "稀世·星瀚幻宇套装" }
+      female_suits:
+        - suitid: 149989
+          name: "稀世·穹梦韶宇套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 150006, name: "稀世·穹梦韶宇套装" }
+            - { shape_idx: 2, item_id: 150020, name: "稀世·星夜神话套装" }
+            - { shape_idx: 3, item_id: 150052, name: "稀世·星瀚幻宇套装" }
+      nonbinary_suits: []
+
+    - group_id: 3
+      group_name: "稀世·荧荧潮汐 / 稀世·夜海镜音"
+      tag_hint: "unknown"
+      male_suits:
+        - suitid: 139776
+          name: "稀世·荧荧潮汐套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 136371, name: "稀世·夜海镜音套装" }
+            - { shape_idx: 2, item_id: 136411, name: "稀世·荧荧潮汐套装" }
+      female_suits:
+        - suitid: 139777
+          name: "稀世·荧荧潮汐套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 136381, name: "稀世·夜海镜音套装" }
+            - { shape_idx: 2, item_id: 136421, name: "稀世·荧荧潮汐套装" }
+      nonbinary_suits: []
+
+    - group_id: 4
+      group_name: "稀世·夜染天国 / 稀世·天国幻羽"
+      tag_hint: "unknown"
+      male_suits:
+        - suitid: 146183
+          name: "稀世·夜染天国套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 146026, name: "稀世·天国幻羽套装" }
+            - { shape_idx: 2, item_id: 146046, name: "稀世·夜染天国套装" }
+      female_suits:
+        - suitid: 146184
+          name: "稀世·夜染天国套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 146036, name: "稀世·天国幻羽套装" }
+            - { shape_idx: 2, item_id: 146056, name: "稀世·夜染天国套装" }
+      nonbinary_suits: []
+
+    - group_id: 5
+      group_name: "风花雪月"
+      tag_hint: "unknown"
+      male_suits:
+        - suitid: 165337
+          name: "风花雪月-男"
+          subsuitid:
+            - { shape_idx: 1, item_id: 165355, name: "风华雪月_男手套 -1(套装)" }
+            - { shape_idx: 2, item_id: 165373, name: "风华雪月_男手套 -2(套装)" }
+            - { shape_idx: 3, item_id: 165391, name: "风华雪月_男手套 -3(套装)" }
+            - { shape_idx: 4, item_id: 165409, name: "风华雪月_男手套 -4(套装)" }
+      female_suits:
+        - suitid: 165346
+          name: "风花雪月-女"
+          subsuitid:
+            - { shape_idx: 1, item_id: 165364, name: "风华雪月_女手套 - 1(套装)" }
+            - { shape_idx: 2, item_id: 165382, name: "风华雪月_女手套 - 2(套装)" }
+            - { shape_idx: 3, item_id: 165400, name: "风华雪月_女手套 -3(套装)" }
+            - { shape_idx: 4, item_id: 165418, name: "风华雪月_女手套 -4(套装)" }
+      nonbinary_suits: []
+
+    - group_id: 6
+      group_name: "雪月风花"
+      tag_hint: "变身"
+      male_suits:
+        - suitid: 167909
+          name: "雪月风花套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 167987, name: "雪月风花-雪套装" }
+            - { shape_idx: 2, item_id: 168013, name: "雪月风花-月套装" }
+            - { shape_idx: 3, item_id: 167935, name: "雪月风花-风套装" }
+            - { shape_idx: 4, item_id: 167961, name: "雪月风花-花套装" }
+        - suitid: 167908
+          name: "雪月风花服饰"
+          subsuitid:
+            - { shape_idx: 1, item_id: 167986, name: "雪月风花-雪服饰" }
+            - { shape_idx: 2, item_id: 168012, name: "雪月风花-月服饰" }
+            - { shape_idx: 3, item_id: 167934, name: "雪月风花-风服饰" }
+            - { shape_idx: 4, item_id: 167960, name: "雪月风花-花服饰" }
+      female_suits:
+        - suitid: 167922
+          name: "雪月风花套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 168000, name: "雪月风花-雪套装" }
+            - { shape_idx: 2, item_id: 168026, name: "雪月风花-月套装" }
+            - { shape_idx: 3, item_id: 167948, name: "雪月风花-风套装" }
+            - { shape_idx: 4, item_id: 167974, name: "雪月风花-花套装" }
+        - suitid: 167921
+          name: "雪月风花服饰"
+          subsuitid:
+            - { shape_idx: 1, item_id: 167999, name: "雪月风花-雪服饰" }
+            - { shape_idx: 2, item_id: 168025, name: "雪月风花-月服饰" }
+            - { shape_idx: 3, item_id: 167947, name: "雪月风花-风服饰" }
+            - { shape_idx: 4, item_id: 167973, name: "雪月风花-花服饰" }
+      nonbinary_suits: []
+
+    - group_id: 7
+      group_name: "四时之约"
+      tag_hint: "unknown"
+      male_suits:
+        - suitid: 170886
+          name: "四时之约服饰"
+          subsuitid:
+            - { shape_idx: 1, item_id: 170912, name: "春樱漫纱服饰" }
+            - { shape_idx: 2, item_id: 170938, name: "夏茉清漾服饰" }
+            - { shape_idx: 3, item_id: 170964, name: "秋枫蝶舞服饰" }
+            - { shape_idx: 4, item_id: 170990, name: "冬雪星澜服饰" }
+        - suitid: 170887
+          name: "四时之约套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 170913, name: "春樱漫纱套装" }
+            - { shape_idx: 2, item_id: 170939, name: "夏茉清漾套装" }
+            - { shape_idx: 3, item_id: 170965, name: "秋枫蝶舞套装" }
+            - { shape_idx: 4, item_id: 170991, name: "冬雪星澜套装" }
+      female_suits:
+        - suitid: 170899
+          name: "四时之约服饰"
+          subsuitid:
+            - { shape_idx: 1, item_id: 170925, name: "春樱漫纱服饰" }
+            - { shape_idx: 2, item_id: 170951, name: "夏茉清漾服饰" }
+            - { shape_idx: 3, item_id: 170977, name: "秋枫蝶舞服饰" }
+            - { shape_idx: 4, item_id: 171003, name: "冬雪星澜服饰" }
+        - suitid: 170900
+          name: "四时之约套装"
+          subsuitid:
+            - { shape_idx: 1, item_id: 170926, name: "春樱漫纱套装" }
+            - { shape_idx: 2, item_id: 170952, name: "夏茉清漾套装" }
+            - { shape_idx: 3, item_id: 170978, name: "秋枫蝶舞套装" }
+            - { shape_idx: 4, item_id: 171004, name: "冬雪星澜套装" }
+      nonbinary_suits: []
+
+  # 当前 packet_dumps_14420 里的个人状态样本：
+  # DispatchCoResponse initial=20 / ItemNum=5
+  official_status_sample:
+    - { item_id: 139777, name: "稀世·荧荧潮汐套装", shape_idx: 0 }
+    - { item_id: 155323, name: "稀世·海洋之心套装", shape_idx: 1 }
+    - { item_id: 146184, name: "稀世·夜染天国套装", shape_idx: 0 }
+    - { item_id: 149989, name: "稀世·穹梦韶宇套装", shape_idx: 1 }
+    - { item_id: 167921, name: "雪月风花服饰", shape_idx: 1 }

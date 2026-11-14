@@ -1,0 +1,52 @@
+# 口令红包奖励模板。运行时只读取“数字.yml”，本文件不会被自动加载。
+Experience: 0
+
+# 固定点券写法：SuperMoney: 500
+# 随机点券写法（Min/Max 均包含在随机范围内）：
+SuperMoney:
+  Min: 100000
+  Max: 500000
+
+Charm: 0
+TotalHonor: 0
+
+# true：兑换成功后显示实际抽到的奖励；false：不显示文字提醒。
+# 道具名称自动读取玩家数据库 ItemAllNew.Name，不需要在这里填写。
+NotifyReward: true
+
+# 固定获得的道具。整个 Items 段可以不写。
+Items:
+  - ItemId: 129099
+    ItemNum: 1
+    ObtainTime: 1
+    AvailPeriod: -1
+
+  # ItemNum 也支持随机；数量随机建议只用于 EAIT_PROP / EAIT_STONE 可叠加道具。
+  - ItemId: 99662
+    ItemNum:
+      Min: 2
+      Max: 5
+    ObtainTime: 1
+    AvailPeriod: 0
+
+# 随机道具池。完全不需要随机道具时，删除整个 RandomItems 段即可。
+# Pick 表示从 Pool 中等概率、不重复抽取几个条目。
+RandomItems:
+  Pick: 1
+  Pool:
+    - ItemId: 21982
+      ItemNum:
+        Min: 1
+        Max: 3
+      ObtainTime: 1
+      AvailPeriod: 0
+
+    - ItemId: 21988
+      ItemNum: 1
+      ObtainTime: 1
+      AvailPeriod: 0
+
+    - ItemId: 21994
+      ItemNum: 1
+      ObtainTime: 1
+      AvailPeriod: 0

@@ -1,0 +1,111 @@
+# MsgID 25116 / NotifyTopUIItemInfo 完整合并配置。
+# 旧 20448 项保留；同 ID 使用 23592 字段；23592 独有项追加到末尾。
+schema: 1
+msg_id: 25116
+source:
+  base_profile: 20448
+  update_profile: 23592
+  sample_uin: 924496061
+  verified_copies: 5
+  official_23592_wire_body_len: 2609
+  official_23592_payload_len: 2607
+  ignored_overread_bytes: 17
+merge:
+  policy: "base_order_replace_same_id_append_new"
+  keep_base_only: true
+expected:
+  top_items: 2
+  recommend_modes: 2
+  entry_list: 33
+  entry_sets: 1
+  entry_set_0: 43
+  mouseover_tips: 2
+  payload_len: 3424
+  wire_body_len: 3426
+top_items:
+  - { type: 0, id: 599, tag: 0, name: "共创空间", name_hex: "B9B2B4B4BFD5BCE4", prompt: "你的飞车你定义！", prompt_hex: "C4E3B5C4B7C9B3B5C4E3B6A8D2E5A3A1", tail_hex: "00" }
+  - { type: 1, id: 43, tag: 32, name: "排位赛", name_hex: "C5C5CEBBC8FC", prompt: "荣耀排位赛", prompt_hex: "C8D9D2ABC5C5CEBBC8FC", tail_hex: "03000000000000000500000004" }
+recommend_modes:
+  - { id: 46, status: 2, privilege: 4, prompt: "23:59结束", prompt_hex: "32333A3539BDE1CAF8", tail_hex: "" }
+  - { id: 4, status: 2, privilege: 2, prompt: "22:00结束", prompt_hex: "32323A3030BDE1CAF8", tail_hex: "" }
+entry_list:
+  - { id: 101, status: 2, prompt: "奇妙珍品屋", prompt_hex: "C6E6C3EED5E4C6B7CEDD", tail_hex: "00010101000002000000000000000000000000000000" }
+  - { id: 442, status: 2, prompt: "极速通行证", prompt_hex: "BCABCBD9CDA8D0D0D6A4", tail_hex: "00010101000000000000000000000000000000000000" }
+  - { id: 465, status: 2, prompt: "热卖中心", prompt_hex: "C8C8C2F4D6D0D0C4", tail_hex: "00010101000000000000000000000000000000000000" }
+  - { id: 458, status: 2, prompt: "剧情模式-千面心渊！", prompt_hex: "BEE7C7E9C4A3CABD2DC7A7C3E6D0C4D4A8A3A1", tail_hex: "01010262000000000000000000000000000000000000" }
+  - { id: 384, status: 2, prompt: "至尊夺宝", prompt_hex: "D6C1D7F0B6E1B1A6", tail_hex: "00000164000000000000000000000000000000000000" }
+  - { id: 436, status: 2, prompt: "狂欢夺宝", prompt_hex: "BFF1BBB6B6E1B1A6", tail_hex: "00000164000000000000000000000000000000000000" }
+  - { id: 551, status: 2, prompt: "空天神鹰首发", prompt_hex: "BFD5CCECC9F1D3A5CAD7B7A2", tail_hex: "0100010100000000000001D10000000000070000004C" }
+  - { id: 474, status: 2, prompt: "6666限时飞车币免费领~", prompt_hex: "36363636CFDECAB1B7C9B3B5B1D2C3E2B7D1C1EC7E", tail_hex: "0100015000000000000001DE00060001000000000000" }
+  - { id: 421, status: 2, prompt: "限时飞车币商城", prompt_hex: "CFDECAB1B7C9B3B5B1D2C9CCB3C7", tail_hex: "0100014E00000000000001DE00060002000000000000" }
+  - { id: 399, status: 2, prompt: "百亿补贴", prompt_hex: "B0D9D2DAB2B9CCF9", tail_hex: "0100010100000000000001D10000000000070000003C" }
+  - { id: 459, status: 2, prompt: "臻藏-摇滚传奇", prompt_hex: "D5E9B2D82DD2A1B9F6B4ABC6E6", tail_hex: "0000010100000000000001D100000000000700000077" }
+  - { id: 535, status: 2, prompt: "王者四驱夺宝", prompt_hex: "CDF5D5DFCBC4C7FDB6E1B1A6", tail_hex: "0100010100000000000001D10000000000070000004B" }
+  - { id: 470, status: 2, prompt: "至尊·逐日&至尊-踏月", prompt_hex: "D6C1D7F0A1A4D6F0C8D526D6C1D7F02DCCA4D4C2", tail_hex: "02000101000000000000000000000000000000000000" }
+  - { id: 499, status: 0, prompt: "麒麟-招财·玉如意", prompt_hex: "F7E8F7EB2DD5D0B2C6A1A4D3F1C8E7D2E2", tail_hex: "02000101000000000000000000000000000000000000" }
+  - { id: 584, status: 2, prompt: "起源四驱车部件盲盒", prompt_hex: "C6F0D4B4CBC4C7FDB3B5B2BFBCFEC3A4BAD0", tail_hex: "0100010100000000000001D100000000000700000039" }
+  - { id: 527, status: 2, prompt: "废土集结令", prompt_hex: "B7CFCDC1BCAFBDE1C1EE", tail_hex: "01000101000000000000000000000000000000000000" }
+  - { id: 443, status: 2, prompt: "QS晶匣", prompt_hex: "5153BEA7CFBB", tail_hex: "0000014E000000010000000000000000000000000000" }
+  - { id: 342, status: 2, prompt: "至美芳华-四大美人来临！", prompt_hex: "D6C1C3C0B7BCBBAA2DCBC4B4F3C3C0C8CBC0B4C1D9A3A1", tail_hex: "00000101000000000000000000000000000000000000" }
+  - { id: 128, status: 2, prompt: "神车图鉴收集令", prompt_hex: "C9F1B3B5CDBCBCF8CAD5BCAFC1EE", tail_hex: "00000101000000000000000000000000000000000000" }
+  - { id: 190, status: 2, prompt: "七日福利", prompt_hex: "C6DFC8D5B8A3C0FB", tail_hex: "0200010100000000000001D100000000000700000023" }
+  - { id: 586, status: 2, prompt: "夏日好运卡", prompt_hex: "CFC4C8D5BAC3D4CBBFA8", tail_hex: "0000010100000000000001D100000000000700000047" }
+  - { id: 364, status: 2, prompt: "终极魔法阵自选", prompt_hex: "D6D5BCABC4A7B7A8D5F3D7D4D1A1", tail_hex: "0000010100000000000001D100000000000700000033" }
+  - { id: 104, status: 2, prompt: "赛车换购", prompt_hex: "C8FCB3B5BBBBB9BA", tail_hex: "00000101000000000000000000000000000000000000" }
+  - { id: 278, status: 2, prompt: "超值充值返利限时抢购", prompt_hex: "B3ACD6B5B3E4D6B5B7B5C0FBCFDECAB1C7C0B9BA", tail_hex: "0000010100000000000001D100000000000700000025" }
+  - { id: 538, status: 2, prompt: "机甲风暴", prompt_hex: "BBFABCD7B7E7B1A9", tail_hex: "01010163000000010000000000000000000000000000" }
+  - { id: 571, status: 2, prompt: "机甲狂欢夺宝", prompt_hex: "BBFABCD7BFF1BBB6B6E1B1A6", tail_hex: "01000164000000000000000000000000000000000000" }
+  - { id: 572, status: 2, prompt: "至臻·龙游汐海", prompt_hex: "D6C1D5E9A1A4C1FAD3CECFABBAA3", tail_hex: "0100016300000000000001D100000000000700000058" }
+  - { id: 537, status: 2, prompt: "机甲风暴", prompt_hex: "BBFABCD7B7E7B1A9", tail_hex: "0100016300000000000001D10000000000070000004E" }
+  - { id: 575, status: 2, prompt: "红魔鬼降临", prompt_hex: "BAECC4A7B9EDBDB5C1D9", tail_hex: "0100016200000000000001D100000000000700000050" }
+  - { id: 574, status: 2, prompt: "未来已至", prompt_hex: "CEB4C0B4D2D1D6C1", tail_hex: "0100016200000000000001D100000000000700000051" }
+  - { id: 545, status: 2, prompt: "永久T1机甲免费送", prompt_hex: "D3C0BEC35431BBFABCD7C3E2B7D1CBCD", tail_hex: "0100015500000000000001DE00050001000000000000" }
+  - { id: 569, status: 2, prompt: "体验高改T1T2机甲", prompt_hex: "CCE5D1E9B8DFB8C454315432BBFABCD7", tail_hex: "0100015200000000000001DE00050002000000000000" }
+  - { id: 544, status: 2, prompt: "车王观赛，领永久限定A车", prompt_hex: "B3B5CDF5B9DBC8FCA3ACC1ECD3C0BEC3CFDEB6A841B3B5", tail_hex: "0100010100000000000001DE00030027000000000000" }
+entry_set_0:
+  - { id: 459, status: 2, prompt: "臻藏-摇滚传奇", prompt_hex: "D5E9B2D82DD2A1B9F6B4ABC6E6", tail_hex: "0101016300000100000001D100000000000700000077" }
+  - { id: 527, status: 2, prompt: "废土集结令", prompt_hex: "B7CFCDC1BCAFBDE1C1EE", tail_hex: "00010163000001000000000000000000000000000000" }
+  - { id: 470, status: 2, prompt: "至尊·逐日&至尊-踏月", prompt_hex: "D6C1D7F0A1A4D6F0C8D526D6C1D7F02DCCA4D4C2", tail_hex: "02010163000001000000000000000000000000000000" }
+  - { id: 499, status: 2, prompt: "麒麟-招财·玉如意", prompt_hex: "F7E8F7EB2DD5D0B2C6A1A4D3F1C8E7D2E2", tail_hex: "02010163000001000000000000000000000000000000" }
+  - { id: 465, status: 2, prompt: "热卖中心", prompt_hex: "C8C8C2F4D6D0D0C4", tail_hex: "0001016300000100000001D100000000000700000001" }
+  - { id: 406, status: 2, prompt: "摇滚传奇系列皮肤-首发登场", prompt_hex: "D2A1B9F6B4ABC6E6CFB5C1D0C6A4B7F42DCAD7B7A2B5C7B3A1", tail_hex: "0101010D000001000000000000000000000000000000" }
+  - { id: 436, status: 2, prompt: "夏日狂欢夺宝", prompt_hex: "CFC4C8D5BFF1BBB6B6E1B1A6", tail_hex: "0101010B000001000000000000000000000000000000" }
+  - { id: 586, status: 2, prompt: "夏日好运卡", prompt_hex: "CFC4C8D5BAC3D4CBBFA8", tail_hex: "0201010A00000100000001D100000000000700000047" }
+  - { id: 420, status: 2, prompt: "山海九州行", prompt_hex: "C9BDBAA3BEC5D6DDD0D0", tail_hex: "0101010A000001000000000000000000000000000000" }
+  - { id: 362, status: 2, prompt: "墨影江湖", prompt_hex: "C4ABD3B0BDADBAFE", tail_hex: "0201010A00000100003E7265732F75697265732F436172536B696E54726561737572652F7265732F696D6167652F456E7472792F456E7472795F6D6F79696E675F4269672E677361000000000000000000000000" }
+  - { id: 363, status: 2, prompt: "泱泱华夏", prompt_hex: "E3F3E3F3BBAACFC4", tail_hex: "0201010A0000010000407265732F75697265732F436172536B696E54726561737572652F7265732F696D6167652F456E7472792F456E7472795F79616E6779616E675F4269672E677361000000000000000000000000" }
+  - { id: 190, status: 2, prompt: "七日福利", prompt_hex: "C6DFC8D5B8A3C0FB", tail_hex: "0001010A00000100000001D100000000000700000023" }
+  - { id: 551, status: 2, prompt: "空天神鹰首发", prompt_hex: "BFD5CCECC9F1D3A5CAD7B7A2", tail_hex: "0101010100000100000001D10000000000070000004C" }
+  - { id: 535, status: 2, prompt: "王者四驱夺宝", prompt_hex: "CDF5D5DFCBC4C7FDB6E1B1A6", tail_hex: "0101010100000100000001D10000000000070000004B" }
+  - { id: 584, status: 2, prompt: "起源四驱部件盲盒", prompt_hex: "C6F0D4B4CBC4C7FDB2BFBCFEC3A4BAD0", tail_hex: "0101010100000100000001D100000000000700000039" }
+  - { id: 433, status: 2, prompt: "钢铁少女心系列", prompt_hex: "B8D6CCFAC9D9C5AED0C4CFB5C1D0", tail_hex: "0B010101000001000000000000000000000000000000" }
+  - { id: 399, status: 2, prompt: "百亿补贴", prompt_hex: "B0D9D2DAB2B9CCF9", tail_hex: "0101010100000100000001D10000000000070000003C" }
+  - { id: 364, status: 2, prompt: "终极魔法阵自选", prompt_hex: "D6D5BCABC4A7B7A8D5F3D7D4D1A1", tail_hex: "0001010100000100000001D100000000000700000033" }
+  - { id: 384, status: 2, prompt: "至尊夺宝", prompt_hex: "D6C1D7F0B6E1B1A6", tail_hex: "00010101000001000000000000000000000000000000" }
+  - { id: 342, status: 2, prompt: "至美芳华-四大美人来临！", prompt_hex: "D6C1C3C0B7BCBBAA2DCBC4B4F3C3C0C8CBC0B4C1D9A3A1", tail_hex: "01010101000001000000000000000000000000000000" }
+  - { id: 516, status: 2, prompt: "酷洛米剧场", prompt_hex: "BFE1C2E5C3D7BEE7B3A1", tail_hex: "0101010100000100000001D100000000000700000037" }
+  - { id: 332, status: 2, prompt: "封神演义", prompt_hex: "B7E2C9F1D1DDD2E5", tail_hex: "01010101000001000000000000000000000000000000" }
+  - { id: 278, status: 2, prompt: "超值充值返利限时抢购", prompt_hex: "B3ACD6B5B3E4D6B5B7B5C0FBCFDECAB1C7C0B9BA", tail_hex: "0001010100000100000001D100000000000700000025" }
+  - { id: 255, status: 2, prompt: "霓裳阁", prompt_hex: "C4DEC9D1B8F3", tail_hex: "01010101000001000000000000000000000000000000" }
+  - { id: 130, status: 2, prompt: "秘宝罗盘", prompt_hex: "C3D8B1A6C2DEC5CC", tail_hex: "0001010100000100000001D100000000000700000031" }
+  - { id: 188, status: 2, prompt: "六芒星阵", prompt_hex: "C1F9C3A2D0C7D5F3", tail_hex: "0001010100000100000001D100000000000700000035" }
+  - { id: 104, status: 2, prompt: "赛车换购计划", prompt_hex: "C8FCB3B5BBBBB9BABCC6BBAE", tail_hex: "00010101000001000000000000000000000000000000" }
+  - { id: 65, status: 2, prompt: "每日一抽", prompt_hex: "C3BFC8D5D2BBB3E9", tail_hex: "0001010100000100000001D100000000000700000032" }
+  - { id: 60, status: 2, prompt: "商城狂欢", prompt_hex: "C9CCB3C7BFF1BBB6", tail_hex: "00000101000001000000000000000000000000000000" }
+  - { id: 124, status: 2, prompt: "机甲激活", prompt_hex: "BBFABCD7BCA4BBEE", tail_hex: "00000101000001000000000000000000000000000000" }
+  - { id: 102, status: 2, prompt: "占卜屋", prompt_hex: "D5BCB2B7CEDD", tail_hex: "00000101000001000000000000000000000000000000" }
+  - { id: 68, status: 2, prompt: "奇迹阁", prompt_hex: "C6E6BCA3B8F3", tail_hex: "00000101000001000000000000000000000000000000" }
+  - { id: 537, status: 2, prompt: "机甲风暴", prompt_hex: "BBFABCD7B7E7B1A9", tail_hex: "0101016300000100000001D10000000000070000004E" }
+  - { id: 572, status: 2, prompt: "至臻·龙游汐海", prompt_hex: "D6C1D5E9A1A4C1FAD3CECFABBAA3", tail_hex: "0101016300000100000001D100000000000700000058" }
+  - { id: 571, status: 2, prompt: "机甲狂欢夺宝", prompt_hex: "BBFABCD7BFF1BBB6B6E1B1A6", tail_hex: "0101010B000001000000000000000000000000000000" }
+  - { id: 373, status: 2, prompt: "每日充值送豪礼", prompt_hex: "C3BFC8D5B3E4D6B5CBCDBAC0C0F1", tail_hex: "0201010A00000100000001D10000000000070000003B" }
+  - { id: 539, status: 2, prompt: "萌动启程", prompt_hex: "C3C8B6AFC6F4B3CC", tail_hex: "0101010100000100000001D10000000000070000004A" }
+  - { id: 534, status: 2, prompt: "萌趣小卖部", prompt_hex: "C3C8C8A4D0A1C2F4B2BF", tail_hex: "0101010100000100000001D100000000000700000049" }
+  - { id: 575, status: 2, prompt: "红魔鬼降临", prompt_hex: "BAECC4A7B9EDBDB5C1D9", tail_hex: "0101010100000100000001D100000000000700000050" }
+  - { id: 574, status: 2, prompt: "未来已至", prompt_hex: "CEB4C0B4D2D1D6C1", tail_hex: "0101010100000100000001D100000000000700000051" }
+  - { id: 444, status: 2, prompt: "爆天雪-小雪闪耀来袭", prompt_hex: "B1ACCCECD1A92DD0A1D1A9C9C1D2ABC0B4CFAE", tail_hex: "00010101000001000000000000000000000000000000" }
+  - { id: 423, status: 2, prompt: "龙年年限车联携六人骑宠", prompt_hex: "C1FAC4EAC4EACFDEB3B5C1AAD0AFC1F9C8CBC6EFB3E8", tail_hex: "0B010101000001000000000000000000000000000000" }
+  - { id: 340, status: 2, prompt: "山海神龙-龙年限定", prompt_hex: "C9BDBAA3C9F1C1FA2DC1FAC4EACFDEB6A8", tail_hex: "00010101000001000000000000000000000000000000" }
+mouseover_tips:
+  - { id: 171, prompt: "绝命车王", prompt_hex: "BEF8C3FCB3B5CDF5", tail_hex: "" }
+  - { id: 162, prompt: "星火长夜", prompt_hex: "D0C7BBF0B3A4D2B9", tail_hex: "" }

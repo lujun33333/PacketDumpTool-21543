@@ -1,0 +1,230 @@
+ ##游戏配置
+GameConfig:
+  allmaplimit: 00000 ##全图限制最短过线时间，单位毫秒
+  rankstone: 1 ##开启关闭排位宝石 
+  borderset:
+    on: 1 ##边境开启
+    man-machineon: 
+      on: 0 ##边境人机开启
+      time: 0 #0是及时匹配，大于0是等待时间 单位秒 这段时间没有真人就匹配人机
+    exp: 10000 ##边境获得经验
+    honor: 10000 ##边境荣誉 加入车队三倍  
+    supermoeny: 1500 ##边境点卷注意：当前 C++ 加载器仍只认识旧的 progression.grades，现在不要重启服务端；下一步需要对接新 stages 结构。
+
+
+    number: 2 ##最低多少人开启
+  bordertime:
+    on: 1 ##边境倍数是否开启
+    multiple: 3 ##边境倍数 
+    start: 0 ##20代表晚上八点
+    end: 0 ##代表到晚上10点结束
+  addexp: 10000 ##房间对局增加经验
+  raceAdd: 0 ##边境排位是否给盲盒
+  isinvite: 0
+  mode28346: 1 ##1是走EncryptKart，2是走Kart28346
+  fps60: 0
+  cars: ##强制走Kart28346
+    - itemid: 98830
+    - itemid: 21901
+    - itemid: 91957
+    - itemid: 98263
+    - itemid: 124680
+    - itemid: 110709
+    - itemid: 74362
+    - itemid: 127616
+    - itemid: 140032
+    - itemid: 144521
+    - itemid: 144522
+    - itemid: 144523
+    - itemid: 144524
+    - itemid: 144526
+  BorderTeam: 1 ##组队边境
+  rankadd:
+    on: 0 ##排位是否加点卷
+    supermoeny: 1 ##排位加点卷
+  notice:
+    on: 0 ##是否开启
+    big: "进群改好自己对应的皇族ID+游戏名字"
+    small: ""
+  broadcast:
+    on: 1 ##全服广播 可以写消息
+    news:
+      - new: "/C00佩戴/C03【奶糖】/C00可以全车四级宝石"
+      - new: "/C00改成禁止向外转发登录器、禁止借号"
+      - new: "/C00禁止开挂、自动跑 发现封号删档"
+      - new: "/C03商城入口/C00：/<http_ex=https://v1.zhiyjs.com/shop/SYX0KYU8>点击进入商城>>>"
+      - new: "/C03商城入口/C00：/<http_ex=https://v1.zhiyjs.com/shop/SYX0KYU8>点击进入商城>>>"
+  topnews:
+    on: 0 #顶部消息
+    time: 10 #每隔多久发送一次 单位分钟
+    new: "全服人数"  ##设置全服人数即可打印 全服人数名字 可打印所有人的名字， 或者随意设置
+  isMinimum: 0 ##抽奖强制走保底 不走运气
+  isRealTime: 
+    on: 0 ##对局实时加载 
+    loop: 2 ##循环次数 模式特性，对局实时加载开启 循环可以设置少一点 不要设置0
+  ranknotice:  
+    on: 0 ##点击排位界面是否提示
+    text: "排位奖励提醒:第一名10组言盒，第二名9组依次递减到第十名，每月月底结算，排位奖励联系群主或者领取，排位赛禁止使用自动跑等一切外挂，发现直接永久封号" ##提示内容
+  gm: ##玩家gm使用时间
+    on: 0 ##是否有限制时间
+    week: 2,3,5 ##星期几开
+    start: 13 ##20代表晚上八点
+    end: 23 ##代表到晚上10点结束
+    time: 0 ##gm到时间不续费封号 单位天 大于0是开启 0是不开启
+    Mess: ##不配置不影响 配置了gm用户只能刷这些道具类型
+  skipDanceTime: 3000 ##skipflag设置1 房间输入 关闭跳舞颁奖 即可跳过颁奖，跳舞需要有不然卡起步 抢跑 可以设置低一点
+  mapLimit: 0 ##地图时间限制
+  SwitchFlag1: 0x0003BC27 ##0x0073bc27 更新  //0x0003BC27  原始  0x00B1BC27 // 0x01B1BC25 马夫最新这个是马服最新的好像
+  BeiginMode: 5 ##5官服结构直发509，4旧509；0-3旧路径
+  GameBegin509Use28346: 1 ## 0 = 明文直发（当前能开局），1 = 走 safe/28346（原有行为）
+  obs: 1
+  passEncryp: 1
+  Log: 1 ##日志开启
+  deleteflag: 0 ##不允许删除
+  IpBan: 0 ##开启封禁IP
+  raceid: 10020 ##开启比赛模式用车
+  GuildAdd: 6 ##边境排位车队加分
+  AutoClsTCP: 0 ##是否自动清理多余tcp连接
+  tcpLimit: ##防火墙策略  以下意思是一秒内单个IP出现超过3次即 是访问频率异常会封禁ip
+    on: 1 ##是否开启
+    milliseconds: 1000 ##单位毫秒
+    frequency: 6 ##一次
+  StoneLimit: 0 ##是否可以覆盖三角
+  NewKart: 0 ##新车改装宝石获得模式 1是自动获取，2是刷新频道重新登录获取，0是抽奖即可获取
+  Stake:
+    on: 0 ###是否开启赌注
+    Itemid: 127748 ##赌注消耗道具
+  PreventSDP:
+    on: 1 ##防止发包
+    keyType: 1 ###1是转换不了string，录像文件看不了，0是正常字符串转换字节数组
+  LoginMode: 0 ##0是原始，1背包实时刷新
+  BottomGame: ##垫底赛配置
+    on: 1 #是否开启 命令：开启垫底赛
+    itemid: 84900  #扣除道具
+    itemnum: 2 #扣除数量
+    number: 1 ##扣除人数
+    fourNumberNum: 40 #命令：开启四人垫底，  四人垫底数量 赢比例4.5：3.5：2
+    sixNumberNum: 60 #命令：开启六人垫底 ， 六人人垫底数量  赢比例4：3：2：1 输比例4：6
+    superMoney: # 点券垫底赛（新增配置，需C++接入后生效）
+      on: 1
+      feePercent: 20 # 手续费百分比，20表示20%
+      sameIpPolicy: deny # 同房间多名玩家登录IP相同则禁止参赛
+      anonymousKartId: 10020 # 匿名车ID，垫底赛隐藏真实车型
+      four:
+        totalCost: 50000 # 最后一名合计扣除点券
+        loserPercent: [100] # 最后一名全部扣除
+        rewardPercent: [45, 35, 20] # 第一、第二、第三名
+      six:
+        totalCost: 60000 # 第五、第六名合计扣除点券
+        loserPercent: [40, 60] # 第五名40%，第六名60%
+        rewardPercent: [40, 30, 20, 10] # 第一到第四名
+  HeadUrl: https://q.qlogo.cn/headimg_dl?dst_uin=QQ号&spec=100&img_type=1
+  LimitTalk: 0 ##设置1 只能gm和管理员房间输入指令
+  ChallengeCfg: 
+    ForbidKart:
+      - kartid: 15225
+    interval1: 0-2 ##0到2点 开启打榜时间
+    interval2: 0-24 ##15-24点
+    News:
+      - new: "第1届S15服将于20240926正式开启，20241029开始结算，20241030正式结束!"
+      - new: "挑战待收复的榜位记录无需越级，您可以直接挑战上一次榜上的成绩!"
+      - new: "欢迎大家对妨碍竞赛公平的不良行为进行监督和举报，您可以在观看模式下举报您认为可疑的对象!GC当您发现有的榜位的记录成绩没有您的成绩棒，还等什么？立刻发起挑战吧!"
+      - new: "合理的使用推荐赛道，会让您快速找到合适的对手，祝您早日上榜，成就辉煌!"
+      - new: "当您发现有的榜位的记录成绩没有您的成绩棒，还等什么？立刻发起挑战吧!"
+      - new: "车神争霸还有练习模式和观看模式，任何人都可以查看每个排名上的影子录像，是您学习技术的好帮手哦!"
+      - new: "带领车队获得车神争霸排名的英雄，将获得车队先锋的头衔，在车队休闲区树立雕像来表彰哦!"
+    Url: http://192.168.1.191:8096/  #http://221.236.22.57:8096/download/ #打榜地址
+    File: 1 #是否保存到服务器
+    FilePath: F:\PacketDumpTool\21543\server\Server\bin\ChallengeFiles\ #路径
+  AdvertisingUrl: http://speed.qq.com/home/client_gg_2012.html  #https://speed.qq.com/home/client_gg_2012.html  #广告url
+  Mantissa:
+    on: 1 ##赌尾数是否开启 命令：开启尾数
+    minimum: 1000 ##最低下注
+    maximum: 30000 ##最高下注
+    itemid: 133671 ##下注道具
+  AutoReplyGuild: 1 ##自动审批进入车队
+  LuckyMatch:
+    on: 0 #是否开启大奖赛
+    number: 32 #最低多少人
+MsgID: ##防发包过滤判断
+  - MsgID: 1
+  - MsgID: 2
+  - MsgID: 90
+  - MsgID: 91
+  - MsgID: 100
+  - MsgID: 153
+  - MsgID: 187
+  - MsgID: 373
+  - MsgID: 112
+  - MsgID: 11200
+  - MsgID: 11213
+  - MsgID: 11411
+  - MsgID: 15399
+  - MsgID: 20002
+  - MsgID: 20001
+  - MsgID: 20000
+  - MsgID: 20007
+  - MsgID: 20008
+  - MsgID: 20031
+  - MsgID: 20097
+  - MsgID: 24028
+  - MsgID: 28412
+  - MsgID: 538
+  - MsgID: 562
+LimitMsgID: ##禁止运行
+  - MsgID: 538
+    INFO: 0
+  - MsgID: 562
+    INFO: 0
+##开始游戏配置
+GameBegin:
+  ReportDataFlag: 1
+  CheckDataNum: 5
+  P2PMode: 1
+  TcpFrequence: 0
+  MultiInfo: 1 
+  FeedBackEnabled: 0 
+  SpeedSectionNum: 8
+  NormalSpeedSectionNum: 8
+  EnableAntiDriftCheat: 1
+  GameSeq: 0x00884301 
+  GameSeqIDHigh: 0x0124b17e
+  GameSeqIDLow: 2938796198
+  MonitorCheckPointBegin: 0x000a
+  MonitorCheckPointEnd: 0x000b
+  MonitorLapCnt: 1
+  ReportAntiCollisionDataTime: 2560
+  MoveFreq: 0x00000f00
+  RecordCheckCondNum: 3
+  IsCrossNoCollision: 0
+  GameBeginSwitchFlag: 0x000087b3
+  AnonymousMode: 1
+  HasJiJia: 1
+##小橘子点灯配置MagicLampCfg.yml
+MagicLampCfg:
+  Itemid: 127748 ##消耗道具ID
+  ItemNum: 100 ##消耗道具数量
+  LuckyValue: 10000 ##点亮一个灯消耗道具数量
+  Seed: 1 ##小橘子点亮概率
+  
+##魔力圣杯配置在 宝箱24726里
+MagicCupTempBox:
+  Itemid: 127748 ##消耗道具ID
+  ItemNum: 50 ##消耗道具数量
+  
+##每日一抽配置DayRaffle.yml
+DayRaffle:
+  SuperMoney: 200000000 ##抽一次消耗点卷
+ 
+##终极魔法阵配置MagicFormation.yml 
+MagicFormation:
+  Itemid: 127748 ##消耗道具ID
+  ItemNum: 300 ##消耗道具数量
+##终极魔法阵兑换商店配置MagicExchangeShop.yml
+MagicExchangeShop:
+  Itemid: 1277480 ##消耗道具ID
+
+  
+  
+
+

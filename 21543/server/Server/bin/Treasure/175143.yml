@@ -1,0 +1,107 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 175143；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00861%；1 件，每件 0.00861%
+  - Seed: 861
+    ItemType: 2
+    Items:
+      - ItemId: 163038 # 八方来财·天禄
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.07805%；5 件，每件 0.01561%
+  - Seed: 8666
+    ItemType: 2
+    Items:
+      - ItemId: 27206 # 黑暗风暴
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 27219 # 光明骑士
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 30118 # 复仇天使
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 30890 # 雷霆机甲
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 32408 # 铁甲巨龙
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.12488%；4 件，每件 0.03122%
+  - Seed: 21154
+    ItemType: 1
+    Items:
+      - ItemId: 112571 # 香蕉猴套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 112558 # 香蕉猴套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 126189 # 灵猫警长套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 126198 # 灵猫警长套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.74928%；4 件，每件 0.18732%
+  - Seed: 96082
+    ItemType: 1
+    Items:
+      - ItemId: 112571 # 香蕉猴套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 112558 # 香蕉猴套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 126189 # 灵猫警长套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 126198 # 灵猫警长套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.03918%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

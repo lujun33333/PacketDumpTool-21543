@@ -1,0 +1,359 @@
+﻿##魔力圣杯分解配置
+MagicCupExchange:
+  EAIT_CAR: 1 #赛车
+  EAIT_SKIN: 1 #皮肤
+  EAIT_CLOTHES: 2 #装扮
+  EAIT_PROP: 1 #道具
+  EAIT_PET: 2 #宠物
+  EAIT_STONE: 1 #宝石
+##奇迹阁兑换配置
+MiracleCfg:
+  - ItemId: 175141  # 金刚水晶
+    ItemNum: 100
+    AvailPeriod: 0
+    ItemType: 2
+    ComsumeItemId: 100083 # 飞车点券，服务端实际扣除 BaseInfo.SuperMoney
+    ComsumeItemNum: 50000
+    MinBuyNum: 10 # 一次最低购买数量，无固定上限；总消耗和总奖励需在 32 位整数范围内
+  - ItemId: 175143  # 金刚水晶
+    ItemNum: 100
+    AvailPeriod: 0
+    ItemType: 2
+    ComsumeItemId: 100083 # 飞车点券，服务端实际扣除 BaseInfo.SuperMoney
+    ComsumeItemNum: 50000
+    MinBuyNum: 10 # 一次最低购买数量，无固定上限；总消耗和总奖励需在 32 位整数范围内
+  - ItemId: 131937 # 积分
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 160462 # 飞车点券，服务端实际扣除 BaseInfo.SuperMoney
+    ComsumeItemNum: 200
+  - ItemId: 171047 # 积分
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 160462
+    ComsumeItemNum: 100
+  - ItemId: 21988 # 重生宝珠LV6
+    ItemNum: 1
+    AvailPeriod: 0
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 21982 # 效率宝珠LV6
+    ItemNum: 1
+    AvailPeriod: 1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 21994 # 坚韧宝珠LV6
+    ItemNum: 1
+    AvailPeriod: 1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 22018 # 后发宝珠LV6
+    ItemNum: 1
+    AvailPeriod: 1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+
+
+  - ItemId: 157760 # 青龙-海滩派对
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157761 # 朱雀-海滩派对
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157762 # 白虎-海滩派对
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157763 # 玄武-海滩派对
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157766 # 战争之神-阿瑞斯
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157767 # 镇海之戟-申公豹
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157768 # 众神天后-孙尚香
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157771 # 雷诺之力-莉莉
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157773 # 奈雪战神
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157775 # 雷神之怒-露露
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 157774 # 爆天甲-甜甜
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 158403 # 孙悟空-白猿仙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 7
+  - ItemId: 146554 # 终麦屠龙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 146555 # 屠龙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 152475 # 神威泰坦-福睦舰长
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153688 # 暗影龙骑-杨戬
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153689 # 毁灭者-混沌
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153746 # 神影-寒冰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153748 # S白金剃刀Remake
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153751 # 银天使-嫦娥
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153752 # 异形杀戮-穷奇
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153753 # 地狱火-梼杌
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153754 # 黑曼巴-饕餮
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153755 # 暴风雪-世界
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153756 # 炼狱之刃-曜日
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 153757 # 智慧之神-幻月
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157739 # S黄金剃刀Remake
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157740 # S黑金剃刀Remake
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157745 # 流火·众神麒麟
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157746 # 虹光·众神麒麟
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157747 # 紫夜·众神麒麟
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157748 # 玄甲·众神麒麟
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157749 # 流火·镇海敖丙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157750 # 虹光·镇海敖丙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157751 # 紫夜·镇海敖丙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157752 # 玄甲·镇海敖丙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157753 # 流火·众神吕布
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157754 # 虹光·众神吕布
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157755 # 紫夜·众神吕布
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157756 # 玄甲·众神吕布
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 157768 # 众神天后-孙尚香
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 4
+  - ItemId: 165441 # 贵族皇冠女
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 165437 # 超核·鎏光御墨皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 165099 # 皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 165098 # 超核·鎏光御墨皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 160057 # S20车王亚军皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 160058 # S20车王季军皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 160058 # S20车王季军皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+  - ItemId: 154039 # S19车王季军皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 136687
+    ComsumeItemNum: 1
+
+
+  

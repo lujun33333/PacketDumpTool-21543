@@ -1,0 +1,74 @@
+god_war_box:
+  enabled: true
+  disabled_result_code: 1
+  activity_id: 20260417
+
+  time:
+    open_date: 20260417
+    open_time: 0
+    close_date: 20260517
+    close_time: 235959
+
+  base:
+    season_id: 25
+    theme_idx: 7
+    callon_item_id: 115241
+    num_b: 12
+    round_trigger_a: 10
+    trigger_num_n: 4
+    current_mul_award_index: 0
+    god_war_box_receive_status: 0
+    treasure_award_has_got_status: 0
+    god_war_box_trigger_num: 0
+    total_treasure_award_num: 0
+    curr_round_num: 1
+    treasure_award_num_after_draw: 6
+    triggerbox_after_draw: 0
+
+  cost:
+    item_id: 115241
+    curve: [1, 2, 4]
+    double_after_curve: true
+    max_cost: 9999
+
+  draw:
+    replay_draws:
+      - draw_no: 1
+        award_index: 14
+        item_id: 69938
+        item_num: 3
+        item_type: 0
+        avail_period: 0
+      - draw_no: 2
+        award_index: 16
+        item_id: 96593
+        item_num: 1
+        item_type: 0
+        avail_period: 0
+
+  award_pool:
+    defaults:
+      item_num: 1
+      item_type: 0
+      avail_period: -1
+      fenjie_num: 0
+      conpous_num: 0
+      super_money_num: 0
+      probability: 100
+    items:
+      - { idx: 1,  item_id: 106675, item_type: 1, avail_period: -1, fenjie_num: 1080, probability: 1 }
+      - { idx: 2,  item_id: 130778, item_type: 1, avail_period: -1, fenjie_num: 450,  probability: 3 }
+      - { idx: 3,  item_id: 116733, item_type: 0, avail_period: -1, fenjie_num: 175,  probability: 5 }
+      - { idx: 4,  item_id: 124684, item_type: 0, avail_period: -1, fenjie_num: 115,  probability: 8 }
+      - { idx: 5,  item_id: 102101, item_type: 0, avail_period: -1, fenjie_num: 90,   probability: 10 }
+      - { idx: 6,  item_id: 127762, item_type: 0, avail_period: -1, fenjie_num: 50,   probability: 12 }
+      - { idx: 7,  item_id: 127840, item_type: 0, avail_period: -1, fenjie_num: 27,   probability: 15 }
+      - { idx: 8,  item_id: 122444, item_type: 0, avail_period: -1, fenjie_num: 20,   probability: 18 }
+      - { idx: 9,  item_id: 127820, item_type: 0, avail_period: -1, fenjie_num: 17,   probability: 20 }
+      - { idx: 10, item_id: 127832, item_type: 0, avail_period: -1, fenjie_num: 5,    probability: 30 }
+      - { idx: 11, item_id: 122436, item_type: 0, avail_period: -1, fenjie_num: 4,    probability: 35 }
+      - { idx: 12, item_id: 127812, item_type: 0, avail_period: -1, fenjie_num: 3,    probability: 40 }
+      - { idx: 13, item_id: 95624,  item_type: 0, avail_period: -1, fenjie_num: 2,    probability: 50 }
+      - { idx: 14, item_id: 69938,  item_num: 3, item_type: 0, avail_period: 0, fenjie_num: 0, probability: 100 }
+      - { idx: 15, item_id: 21977,  item_num: 1, item_type: 0, avail_period: 0, fenjie_num: 0, probability: 100 }
+      - { idx: 16, item_id: 96593,  item_num: 1, item_type: 0, avail_period: 0, fenjie_num: 0, probability: 100 }

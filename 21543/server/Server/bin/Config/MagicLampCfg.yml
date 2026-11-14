@@ -1,0 +1,25 @@
+﻿##小橘子点灯奖励
+- ItemId: 144523 #道具id
+  ItemNum: 1 #数量
+  AvailPeriod: -1 #0显示数量 -1显示永久
+  ItemType: 2 #稀有属性
+- ItemId: 144524 #道具id
+  ItemNum: 1 #数量
+  AvailPeriod: -1 #0显示数量 -1显示永久
+  ItemType: 2 #稀有属性
+- ItemId: 144525 #道具id
+  ItemNum: 1 #数量
+  AvailPeriod: -1 #0显示数量 -1显示永久
+  ItemType: 2 #稀有属性
+- ItemId: 144526 #道具id
+  ItemNum: 1 #数量
+  AvailPeriod: -1 #0显示数量 -1显示永久
+  ItemType: 2 #稀有属性
+- ItemId: 144527 #道具id
+  ItemNum: 1 #数量
+  AvailPeriod: -1 #0显示数量 -1显示永久
+  ItemType: 2 #稀有属性
+- ItemId: 144521 #道具id
+  ItemNum: 1 #数量
+  AvailPeriod: -1 #0显示数量 -1显示永久
+  ItemType: 2 #稀有属性

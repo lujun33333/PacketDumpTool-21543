@@ -1,0 +1,119 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 138374；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00830%；1 件，每件 0.00830%
+  - Seed: 830
+    ItemType: 2
+    Items:
+      - ItemId: 126428 # 仙兽-麒麟
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.05490%；3 件，每件 0.01830%
+  - Seed: 6320
+    ItemType: 2
+    Items:
+      - ItemId: 106676 # 至尊·盘龙
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 146554 # 终麦-屠龙
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 74362 # 爆天甲
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.25620%；7 件，每件 0.03660%
+  - Seed: 31940
+    ItemType: 1
+    Items:
+      - ItemId: 174393 # 光头强手持
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 129366 # SSC23春冠军发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 129374 # SSC23春冠军服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 129375 # SSC23春冠军套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 129376 # SSC23春冠军发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 129384 # SSC23春冠军服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 129385 # SSC23春冠军套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 1.53720%；7 件，每件 0.21960%
+  - Seed: 185660
+    ItemType: 1
+    Items:
+      - ItemId: 174393 # 光头强手持
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 129366 # SSC23春冠军发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 129374 # SSC23春冠军服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 129375 # SSC23春冠军套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 129376 # SSC23春冠军发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 129384 # SSC23春冠军服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 129385 # SSC23春冠军套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 98.14340%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

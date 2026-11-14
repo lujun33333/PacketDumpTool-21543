@@ -1,0 +1,707 @@
+# ZhiYao Gods / Fashion runtime config for QuickRPC 24251
+# Runtime truth is this YAML; server falls back to built-in defaults only if loading fails.
+enabled: 1
+activity_id: 20260518
+entry_id: 518
+fashion_entry_id: 530
+cost_item_id: 168332
+cost_one_time: 1
+base_cfg:
+  showItemId: 168551
+  iCostNum50Time: 50
+  CostItemNum: 0
+  iOpenTime: 0
+  iCloseTime: 235959
+  url: "https://speed.qq.com/home/contcheng/chunjiehuodong5.html"
+  AccuScore: 0
+  iCostItemID: 168332
+  iCostNumOneTime: 1
+  ActivityName: "神来之笔 至曜·众神之神"
+  desc: "锋刃撕裂风阻，雷霆之势，踏碎赛场"
+  iCloseDate: 20260621
+  theme_idx: 1
+  iCostNum10Time: 10
+  background: ""
+  iSeasonId: 1
+  iOpenDate: 20260501
+score_awards:
+  - _index: 1
+    specialFlag: 1
+    needScore: 20
+    status: 0
+    AccuAwardIdxRecord: 0
+    items:
+      - _index: 1
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+      - _index: 2
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+  - _index: 2
+    specialFlag: 1
+    needScore: 50
+    status: 0
+    AccuAwardIdxRecord: 0
+    items:
+      - _index: 1
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+      - _index: 2
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+  - _index: 3
+    specialFlag: 1
+    needScore: 100
+    status: 0
+    AccuAwardIdxRecord: 0
+    items:
+      - _index: 1
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+      - _index: 2
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+  - _index: 4
+    specialFlag: 1
+    needScore: 200
+    status: 0
+    AccuAwardIdxRecord: 0
+    items:
+      - _index: 1
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+      - _index: 2
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+  - _index: 5
+    specialFlag: 1
+    needScore: 400
+    status: 0
+    AccuAwardIdxRecord: 0
+    items:
+      - _index: 1
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+      - _index: 2
+        m_iAvailPeriod: 0
+        alreadyGot: "<F9>"
+        m_ushItemType: 0
+        m_iItemNum: 2
+        m_iItemID: 66647
+        _name: "角色经验卡+100"
+award_pool:
+  - _index: 1
+    itemid: 168551
+    itemnum: 1
+    item_type: 3
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 1
+    _name: "至曜·众神之神"
+    m_aiClientParas: [1, 1]
+  - _index: 2
+    itemid: 168551
+    itemnum: 1
+    item_type: 3
+    availperiod: 720
+    supermoney: 0
+    coupons: 0
+    award_idx: 2
+    _name: "至曜·众神之神"
+    m_aiClientParas: []
+  - _index: 3
+    itemid: 168331
+    itemnum: 1
+    item_type: 3
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 3
+    _name: "初代·众神之神"
+    m_aiClientParas: []
+  - _index: 4
+    itemid: 106675
+    itemnum: 1
+    item_type: 3
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 4
+    _name: "玉玺神虎"
+    m_aiClientParas: [1, 1]
+  - _index: 5
+    itemid: 106675
+    itemnum: 1
+    item_type: 3
+    availperiod: 720
+    supermoney: 0
+    coupons: 0
+    award_idx: 5
+    _name: "玉玺神虎"
+    m_aiClientParas: []
+  - _index: 6
+    itemid: 90945
+    itemnum: 1
+    item_type: 3
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 6
+    _name: "末界神王"
+    m_aiClientParas: [1, 1]
+  - _index: 7
+    itemid: 90945
+    itemnum: 1
+    item_type: 3
+    availperiod: 720
+    supermoney: 0
+    coupons: 0
+    award_idx: 7
+    _name: "末界神王"
+    m_aiClientParas: []
+  - _index: 8
+    itemid: 102220
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 8
+    _name: "源极之星EXA 流火"
+    m_aiClientParas: []
+  - _index: 9
+    itemid: 170040
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 9
+    _name: "奥莉娜赛车皮肤"
+    m_aiClientParas: [1, 1]
+  - _index: 10
+    itemid: 168158
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 10
+    _name: "决斗小青龙"
+    m_aiClientParas: []
+  - _index: 11
+    itemid: 168077
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 11
+    _name: "陆雪琪"
+    m_aiClientParas: []
+  - _index: 12
+    itemid: 75356
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 12
+    _name: "瑶台仙子套装"
+    m_aiClientParas: []
+  - _index: 13
+    itemid: 87195
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 13
+    _name: "玉玺神虎套装"
+    m_aiClientParas: []
+  - _index: 14
+    itemid: 168346
+    itemnum: 1
+    item_type: 2
+    availperiod: -1
+    supermoney: 0
+    coupons: 0
+    award_idx: 14
+    _name: "至曜神兵套装"
+    m_aiClientParas: []
+  - _index: 15
+    itemid: 22025
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 15
+    _name: "尾挂幻生碎片"
+    m_aiClientParas: []
+  - _index: 16
+    itemid: 22043
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 16
+    _name: "悬挂冰魄碎片"
+    m_aiClientParas: []
+  - _index: 17
+    itemid: 22037
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 17
+    _name: "悬挂神魂碎片"
+    m_aiClientParas: []
+  - _index: 18
+    itemid: 22031
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 18
+    _name: "悬挂寒芒碎片"
+    m_aiClientParas: []
+  - _index: 19
+    itemid: 22013
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 19
+    _name: "小喷冰晶碎片"
+    m_aiClientParas: []
+  - _index: 20
+    itemid: 21989
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 20
+    _name: "小喷神威碎片"
+    m_aiClientParas: []
+  - _index: 21
+    itemid: 21983
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 21
+    _name: "小喷锋芒碎片"
+    m_aiClientParas: []
+  - _index: 22
+    itemid: 21977
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 22
+    _name: "小喷光翎碎片"
+    m_aiClientParas: []
+  - _index: 23
+    itemid: 12390
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 23
+    _name: "引擎+2"
+    m_aiClientParas: []
+  - _index: 24
+    itemid: 12389
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 24
+    _name: "悬挂+2"
+    m_aiClientParas: []
+  - _index: 25
+    itemid: 12388
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 25
+    _name: "燃料+2"
+    m_aiClientParas: []
+  - _index: 26
+    itemid: 12387
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 26
+    _name: "点火+2"
+    m_aiClientParas: []
+  - _index: 27
+    itemid: 12386
+    itemnum: 4
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 27
+    _name: "进气+2"
+    m_aiClientParas: []
+  - _index: 28
+    itemid: 12380
+    itemnum: 10
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 28
+    _name: "引擎+1"
+    m_aiClientParas: []
+  - _index: 29
+    itemid: 12379
+    itemnum: 10
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 29
+    _name: "悬挂+1"
+    m_aiClientParas: []
+  - _index: 30
+    itemid: 12378
+    itemnum: 10
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 30
+    _name: "燃料+1"
+    m_aiClientParas: []
+  - _index: 31
+    itemid: 12377
+    itemnum: 10
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 31
+    _name: "点火+1"
+    m_aiClientParas: []
+  - _index: 32
+    itemid: 12376
+    itemnum: 10
+    item_type: 1
+    availperiod: 0
+    supermoney: 0
+    coupons: 0
+    award_idx: 32
+    _name: "进气+1"
+    m_aiClientParas: []
+draw_default:
+  m_sItemNum: 1
+  m_iSuperMoney: 0
+  m_iCoupons: 0
+  m_iSpeedCoin: 0
+  m_astItemInfo:
+    - _index: 1
+      m_iAvailPeriod: 0
+      award_idx: 29
+      m_ushItemType: 1
+      m_iItemID: 12379
+      m_iItemNum: 10
+      _name: "悬挂系统+1"
+fashion:
+  entryID: 530
+  baseCfg:
+    BgPicPath: "https://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/4-MonetizationPaymentTemplate/zhiyaofuli_3feb9a22.zip"
+    DateEndStr: "2026-06-21 23-59-59"
+    HuodongName: "至曜时尚福利"
+    SeasonID: 1
+    EndTime: 1782057599
+    Describe: "活动期间完成指定至曜任务即可领取附赠奖励！"
+    HuodongRule: "https://speed.qq.com/home/blakepeng/zhiyao.html"
+    BeginTime: 1777564800
+    DateBeginStr: "2026-05-01 00-00-00"
+  buyAward:
+    - _index: 1
+      taskID: 100
+      awards:
+        - _index: 1
+          type: 1
+          m_iSuperMoney: 0
+          m_iCoupons: 0
+          item:
+            - _index: 1
+              m_iAvailPeriod: 0
+              m_ushItemType: 1
+              m_iItemNum: 1
+              m_iItemID: 163236
+              _name: "荣耀勋章"
+  taskAward:
+    - _index: 1
+      taskAwardCycle: 0
+      taskID: 1
+      groups:
+        - _index: 1
+          groupID: 1
+          BeginTime: 1777564800
+          EndTime: 1782057599
+          awards:
+            - _index: 1
+              type: 1
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+              item:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 1
+                  m_iItemID: 170018
+                  _name: "灵狐九尾发饰"
+                - _index: 2
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 1
+                  m_iItemID: 170026
+                  _name: "冰狐九尾发饰"
+    - _index: 2
+      taskAwardCycle: 0
+      taskID: 2
+      groups:
+        - _index: 1
+          groupID: 1
+          BeginTime: 1777564800
+          EndTime: 1782057599
+          awards:
+            - _index: 1
+              type: 1
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+              item:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 1
+                  m_iItemID: 170031
+                  _name: "灵狐九尾手杖"
+                - _index: 2
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 1
+                  m_iItemID: 170039
+                  _name: "冰狐九尾手杖"
+    - _index: 3
+      taskAwardCycle: 0
+      taskID: 3
+      groups:
+        - _index: 1
+          groupID: 1
+          BeginTime: 1777564800
+          EndTime: 1782057599
+          awards:
+            - _index: 1
+              type: 1
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+              item:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 10
+                  m_iItemID: 168357
+                  _name: "全新35级飞饰：灵狐九尾"
+    - _index: 4
+      taskAwardCycle: 0
+      taskID: 4
+      groups:
+        - _index: 1
+          groupID: 1
+          BeginTime: 1777564800
+          EndTime: 1782057599
+          awards:
+            - _index: 1
+              type: 1
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+              item:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 1
+                  m_iItemID: 168393
+                  _name: "至曜服饰宝箱"
+    - _index: 5
+      taskAwardCycle: 0
+      taskID: 5
+      groups:
+        - _index: 1
+          groupID: 1
+          BeginTime: 1777564800
+          EndTime: 1782057599
+          awards:
+            - _index: 1
+              type: 1
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+              item:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 1
+                  m_iItemNum: 1
+                  m_iItemID: 168682
+                  _name: "灵狐九尾套装"
+  taskInfo:
+    - _index: 1
+      m_ucTaskID: 1
+      taskType: 3
+      EndTime: 1782057599
+      m_uiProcessRate: 0
+      m_uiTaskFinishNums: 1
+      finishLogic: 0
+      taskAwardStatus: [1, 0]
+      BeginTime: 1777564800
+      taskStatus: 0
+      taskCycle: 1
+      m_auiChildTask:
+        - _index: 1
+          m_ucTaskID: 3734
+          m_uiAlreadyAwardNums: 0
+          taskType: 0
+          m_uiProcessRate: 0
+          m_uiTaskFinishNums: 1
+          ExecutePeriod: 0
+          childTaskType: 0
+          groupId: 1
+    - _index: 2
+      m_ucTaskID: 2
+      taskType: 3
+      EndTime: 1782057599
+      m_uiProcessRate: 0
+      m_uiTaskFinishNums: 1
+      finishLogic: 0
+      taskAwardStatus: [1, 0]
+      BeginTime: 1777564800
+      taskStatus: 0
+      taskCycle: 1
+      m_auiChildTask:
+        - _index: 1
+          m_ucTaskID: 3735
+          m_uiAlreadyAwardNums: 0
+          taskType: 0
+          m_uiProcessRate: 0
+          m_uiTaskFinishNums: 1
+          ExecutePeriod: 0
+          childTaskType: 0
+          groupId: 1
+    - _index: 3
+      m_ucTaskID: 3
+      taskType: 3
+      EndTime: 1782057599
+      m_uiProcessRate: 0
+      m_uiTaskFinishNums: 1
+      finishLogic: 0
+      taskAwardStatus: [1, 0]
+      BeginTime: 1777564800
+      taskStatus: 0
+      taskCycle: 1
+      m_auiChildTask:
+        - _index: 1
+          m_ucTaskID: 3736
+          m_uiAlreadyAwardNums: 0
+          taskType: 3
+          m_uiProcessRate: 1
+          m_uiTaskFinishNums: 2
+          ExecutePeriod: 0
+          childTaskType: 0
+          groupId: 1
+    - _index: 4
+      m_ucTaskID: 4
+      taskType: 3
+      EndTime: 1782057599
+      m_uiProcessRate: 0
+      m_uiTaskFinishNums: 1
+      finishLogic: 0
+      taskAwardStatus: [1, 0]
+      BeginTime: 1777564800
+      taskStatus: 0
+      taskCycle: 1
+      m_auiChildTask:
+        - _index: 1
+          m_ucTaskID: 3737
+          m_uiAlreadyAwardNums: 0
+          taskType: 3
+          m_uiProcessRate: 1
+          m_uiTaskFinishNums: 15
+          ExecutePeriod: 0
+          childTaskType: 0
+          groupId: 1
+    - _index: 5
+      m_ucTaskID: 5
+      taskType: 3
+      EndTime: 1782057599
+      m_uiProcessRate: 0
+      m_uiTaskFinishNums: 1
+      finishLogic: 0
+      taskAwardStatus: [1, 0]
+      BeginTime: 1777564800
+      taskStatus: 0
+      taskCycle: 1
+      m_auiChildTask:
+        - _index: 1
+          m_ucTaskID: 3738
+          m_uiAlreadyAwardNums: 0
+          taskType: 3
+          m_uiProcessRate: 1
+          m_uiTaskFinishNums: 80
+          ExecutePeriod: 0
+          childTaskType: 0
+          groupId: 1

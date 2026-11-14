@@ -1,0 +1,93 @@
+# 摇滚派对完整运营配置
+# 数据链：商城购买摇滚传奇宝箱 -> 使用宝箱抽奖 -> 发放奖品 -> 刷新累计抽数。
+
+rock_party:
+  enabled: true
+
+  activity:
+    season_id: 1
+    hotbox_act_id: 12
+    entry_id: 459
+    gift_box_id: 5
+    open_date: 20260711
+    close_date: 20260919
+    begin_time: 1783699200
+    end_time: 1789833599
+
+  display:
+    base_kart_id: 157778         # 至臻·爆天甲
+    main_skin_id: 162917         # 臻藏-摇滚传奇
+    crystal_item_id: 165273
+
+  shop:
+    enabled: true
+    commodity_id: 165328         # 摇滚传奇宝箱
+    currency: speedcoin          # 官服购买请求 PayType=5（飞车币）
+    pay_type: 5
+    price_index: 0
+    price: 10                    # 运营价格，后续可直接调整
+    give_num: 1
+
+  draw:
+    enabled: true
+    box_item_id: 165328
+    ten_enabled: true
+    common_event_msg_id: 24028
+    common_event_id: 1182
+    once_operation: 4
+    state_rpc: "Co.Beta99_Anime_Skin_MainDlg"
+
+  Preview:
+    ExtraItemID: 0
+    ExtraItemNum: 0
+    ExtraItemPeriod: 0
+    ExtraItemType: 2
+
+  # 官服 msg299 对 165328 下发的完整30项奖池。
+  # msg299 不包含概率；weight 按活动概率公示折算，合计10000（1=0.01%）。
+  pool:
+    enabled: true
+    mode: weighted
+    items:
+      - { item_id: 12376,  name: "点火装置+1",     item_num: 20, item_type: 0, period: 0,   weight: 622 }
+      - { item_id: 12377,  name: "进气系统+1",     item_num: 20, item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 12378,  name: "燃料系统+1",     item_num: 20, item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 12379,  name: "悬挂系统+1",     item_num: 20, item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 12380,  name: "引擎装置+1",     item_num: 20, item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 12386,  name: "点火装置+2",     item_num: 8,  item_type: 0, period: 0,   weight: 311 }
+      - { item_id: 12387,  name: "进气系统+2",     item_num: 8,  item_type: 0, period: 0,   weight: 311 }
+      - { item_id: 12388,  name: "燃料系统+2",     item_num: 8,  item_type: 0, period: 0,   weight: 311 }
+      - { item_id: 12389,  name: "悬挂系统+2",     item_num: 8,  item_type: 0, period: 0,   weight: 311 }
+      - { item_id: 12390,  name: "引擎装置+2",     item_num: 8,  item_type: 0, period: 0,   weight: 310 }
+      - { item_id: 21977,  name: "效率宝珠LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 622 }
+      - { item_id: 21983,  name: "重生宝珠LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 622 }
+      - { item_id: 21989,  name: "坚韧宝珠LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 622 }
+      - { item_id: 22013,  name: "后发宝珠LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 622 }
+      - { item_id: 22031,  name: "闪电之钻LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 22037,  name: "攻击之钻LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 22043,  name: "复制之钻LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 22025,  name: "复仇之钻LV1",    item_num: 8,  item_type: 0, period: 0,   weight: 621 }
+      - { item_id: 133585, name: "广寒霄音戒指",   item_num: 1,  item_type: 1, period: 0,   weight: 77 }
+      - { item_id: 157778, name: "至臻·爆天甲",    item_num: 1,  item_type: 2, period: 720, weight: 8 }
+      - { item_id: 157778, name: "至臻·爆天甲",    item_num: 1,  item_type: 2, period: -1,  weight: 2 }
+      - { item_id: 162917, name: "臻藏-摇滚传奇",  item_num: 1,  item_type: 2, period: 720, weight: 4 }
+      - { item_id: 162917, name: "臻藏-摇滚传奇",  item_num: 1,  item_type: 2, period: -1,  weight: 1 }
+      - { item_id: 106674, name: "至尊·爆天甲",    item_num: 1,  item_type: 2, period: -1,  weight: 4 }
+      - { item_id: 74362,  name: "爆天甲",         item_num: 1,  item_type: 2, period: -1,  weight: 8 }
+      - { item_id: 108908, name: "水色迷迭服饰",   item_num: 1,  item_type: 2, period: -1,  weight: 16 }
+      - { item_id: 108900, name: "水色迷迭发饰",   item_num: 1,  item_type: 2, period: -1,  weight: 78 }
+      - { item_id: 32525,  name: "月圆希煦礼裙",   item_num: 1,  item_type: 2, period: -1,  weight: 15 }
+      - { item_id: 32522,  name: "月圆希煦发饰",   item_num: 1,  item_type: 2, period: -1,  weight: 77 }
+      - { item_id: 88878,  name: "炫音铭华背饰",   item_num: 1,  item_type: 2, period: -1,  weight: 78 }
+
+  # Co.Beta99_Anime_Skin_MainDlg 下发的累计抽数奖励。
+  milestones:
+    enabled: true
+    grant_mode: auto_once
+    rewards:
+      - { draws: 10,   item_id: 69938,  name: "普通能量源",   item_num: 10, item_type: 0, period: 0 }
+      - { draws: 30,   item_id: 69936,  name: "至尊能量源",   item_num: 10, item_type: 0, period: 0 }
+      - { draws: 50,   item_id: 164934, name: "终极摇滚套装", item_num: 1,  item_type: 0, period: -1 }
+      - { draws: 600,  item_id: 122196, name: "心悦·至尊帝王", item_num: 1, item_type: 0, period: -1 }
+      - { draws: 800,  item_id: 165323, name: "爆天摇滚颁奖台", item_num: 1, item_type: 0, period: -1 }
+      - { draws: 1000, item_id: 165322, name: "爆天摇滚启幕", item_num: 1,  item_type: 0, period: -1 }

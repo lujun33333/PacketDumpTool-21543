@@ -1,0 +1,2612 @@
+Source: official packet_dumps_24948 msg20103
+SampleUin: 1030921579
+TailBytes:
+- 0
+- 0
+- 200
+- 0
+- 0
+- 0
+- 1
+- 0
+- 10
+- 0
+- 13
+- 3
+SynthesisComm:
+  LowSynItemId: 33889
+  LowSynItemProb: 200
+  LowClientProb: 500
+  MiddSynItemId: 33890
+  MiddSynItemProb: 700
+  MiddClientProb: 1000
+  HighSynItemId: 33891
+  HighSynItemProb: 2000
+  HighClientProb: 3000
+  PetLowSynId: 34310
+  PetLowSynProb: 2328
+  PetLowClientProb: 100
+  PetMiddSynId: 34311
+  PetMiddSynProb: 2328
+  PetMiddClientProb: 200
+  PetHighSynId: 34312
+  PetHighSynProb: 2328
+  PetHighClientProb: 500
+  LuckyStoneId: 33892
+  MaxLuckyStoneNum: 3
+  LuckyStoneProb: 5
+  LuckyStoneClientProb: 10
+  AdvanceConsItemId: 33893
+  BlackList:
+  - 127758
+  - 109553
+  - 108456
+  - 118970
+  - 126429
+  - 109556
+  - 112896
+  - 112107
+  - 113906
+  - 124851
+  - 126428
+  - 126434
+  - 104738
+  - 104739
+  - 106558
+  - 104078
+  - 104079
+  - 104088
+  - 104089
+  - 104116
+  - 104123
+  - 99070
+  - 99060
+  - 100465
+  - 100473
+  - 100474
+  - 100475
+  - 100483
+  - 100484
+  - 102437
+  - 102445
+  - 102446
+  - 102447
+  - 102455
+  - 102456
+  - 101722
+  - 101730
+  - 101731
+  - 101732
+  - 101740
+  - 101741
+  - 102195
+  - 102196
+  - 102197
+  - 102200
+  - 102937
+  - 98790
+  - 98791
+  - 99451
+  - 99461
+  - 99450
+  - 99460
+  - 98340
+  - 92224
+  - 92232
+  - 92233
+  - 92243
+  - 92242
+  - 92234
+  - 91329
+  - 91337
+  - 91338
+  - 91339
+  - 91347
+  - 91348
+  - 10021
+  - 10025
+  - 10026
+  - 10027
+  - 10042
+  - 10043
+  - 10044
+  - 10050
+  - 10051
+  - 10838
+  - 10934
+  - 11116
+  - 11240
+  - 11241
+  - 11242
+  - 11243
+  - 11605
+  - 11691
+  - 11965
+  - 11966
+  - 12119
+  - 12120
+  - 12355
+  - 12359
+  - 17919
+  - 18643
+  - 18934
+  - 20125
+  - 20664
+  - 21597
+  - 22345
+  - 22346
+  - 23020
+  - 23227
+  - 23380
+  - 23647
+  - 24328
+  - 25336
+  - 25337
+  - 25861
+  - 26077
+  - 26111
+  - 26323
+  - 26613
+  - 26900
+  - 26901
+  - 27128
+  - 27129
+  - 27130
+  - 27178
+  - 27179
+  - 27180
+  - 27190
+  - 27191
+  - 27192
+  - 27449
+  - 28094
+  - 28095
+  - 28097
+  - 28712
+  - 28713
+  - 29426
+  - 29427
+  - 30430
+  - 30458
+  - 30459
+  - 30460
+  - 30838
+  - 31179
+  - 31905
+  - 31906
+  - 32266
+  - 32267
+  - 32268
+  - 32269
+  - 32401
+  - 32422
+  - 32423
+  - 33226
+  - 33227
+  - 33738
+  - 33739
+  - 33740
+  - 33741
+  - 34299
+  - 34300
+  - 34834
+  - 34835
+  - 34836
+  - 34837
+  - 60059
+  - 60425
+  - 60426
+  - 62747
+  - 62748
+  - 62750
+  - 62751
+  - 63391
+  - 63392
+  - 63393
+  - 63642
+  - 63643
+  - 63664
+  - 63689
+  - 63691
+  - 64870
+  - 65096
+  - 65098
+  - 65099
+  - 65100
+  - 65849
+  - 66525
+  - 66585
+  - 66586
+  - 66587
+  - 66588
+  - 67487
+  - 67488
+  - 67489
+  - 67490
+  - 67491
+  - 67492
+  - 68114
+  - 68124
+  - 68713
+  - 68714
+  - 68715
+  - 68716
+  - 68717
+  - 69194
+  - 69195
+  - 69196
+  - 69197
+  - 70017
+  - 70018
+  - 70019
+  - 70020
+  - 70021
+  - 71549
+  - 71550
+  - 71551
+  - 71552
+  - 71553
+  - 71554
+  - 71555
+  - 71556
+  - 72266
+  - 72267
+  - 72719
+  - 72720
+  - 72721
+  - 73674
+  - 73675
+  - 73677
+  - 74153
+  - 74348
+  - 74349
+  - 74350
+  - 74733
+  - 74959
+  - 74960
+  - 74961
+  - 74965
+  - 75771
+  - 75772
+  - 75773
+  - 76467
+  - 76483
+  - 76484
+  - 77192
+  - 77193
+  - 78274
+  - 78275
+  - 78276
+  - 78277
+  - 78278
+  - 78279
+  - 78280
+  - 78281
+  - 78900
+  - 78901
+  - 80148
+  - 80149
+  - 80502
+  - 80503
+  - 81279
+  - 81280
+  - 81281
+  - 82211
+  - 82212
+  - 82238
+  - 82239
+  - 83027
+  - 83028
+  - 83977
+  - 83976
+  - 83975
+  - 84782
+  - 84783
+  - 84784
+  - 85919
+  - 85920
+  - 85922
+  - 85923
+  - 85924
+  - 85925
+  - 85926
+  - 85927
+  - 85928
+  - 85933
+  - 86697
+  - 86987
+  - 86988
+  - 86989
+  - 88072
+  - 89732
+  - 89733
+  - 91945
+  - 92809
+  - 92810
+  - 92811
+  - 90932
+  - 90933
+  - 91946
+  - 93549
+  - 93550
+  - 93555
+  - 94811
+  - 94812
+  - 94813
+  - 94814
+  - 94815
+  - 94816
+  - 94827
+  - 94912
+  - 95671
+  - 95672
+  - 116904
+  - 117718
+  - 117726
+  - 117727
+  - 117728
+  - 117736
+  - 117737
+  - 118207
+  - 118215
+  - 118216
+  - 118217
+  - 118225
+  - 118226
+  - 118187
+  - 118195
+  - 118196
+  - 118197
+  - 118205
+  - 118206
+  - 119290
+  - 119298
+  - 119299
+  - 119300
+  - 119308
+  - 119309
+  - 119590
+  - 119598
+  - 119599
+  - 119600
+  - 119608
+  - 119609
+  - 119610
+  - 119618
+  - 119619
+  - 119620
+  - 119628
+  - 120160
+  - 120168
+  - 120169
+  - 120170
+  - 120178
+  - 120179
+  - 118423
+  - 118430
+  - 118451
+  - 118458
+  - 119077
+  - 120991
+  - 120999
+  - 121000
+  - 121001
+  - 121009
+  - 121010
+  - 121711
+  - 121719
+  - 121720
+  - 121724
+  - 121732
+  - 121733
+  - 121836
+  - 121844
+  - 121845
+  - 121849
+  - 121857
+  - 121858
+  - 120639
+  - 120640
+  - 120641
+  - 122192
+  - 122193
+  - 122194
+  - 122195
+  - 123396
+  - 123397
+  - 123398
+  - 123399
+  - 123400
+  - 123401
+  - 123402
+  - 123873
+  - 123881
+  - 123882
+  - 123883
+  - 123891
+  - 123892
+  - 123893
+  - 123901
+  - 123902
+  - 123903
+  - 123911
+  - 123912
+  - 129871
+  - 129879
+  - 129880
+  - 129881
+  - 129889
+  - 129890
+  - 129762
+  - 129770
+  - 129771
+  - 129772
+  - 129780
+  - 129781
+  - 130495
+  - 129608
+  - 130638
+  - 130639
+  - 130640
+  - 131007
+  - 131015
+  - 131016
+  - 131017
+  - 131025
+  - 131026
+  - 131861
+  - 131869
+  - 131870
+  - 131871
+  - 131879
+  - 131880
+  - 131157
+  - 131165
+  - 131166
+  - 131170
+  - 131178
+  - 131179
+  - 131901
+  - 131902
+  - 131903
+  - 133391
+  - 133180
+  - 133188
+  - 133189
+  - 133190
+  - 133198
+  - 133199
+  - 132201
+  - 132202
+  - 132996
+  - 133004
+  - 133005
+  - 133006
+  - 133014
+  - 133015
+  - 133240
+  - 133248
+  - 133249
+  - 133250
+  - 133258
+  - 133259
+  - 133220
+  - 133228
+  - 133229
+  - 133230
+  - 133238
+  - 133239
+  - 133286
+  - 133294
+  - 133295
+  - 133299
+  - 133307
+  - 133308
+  - 134117
+  - 134125
+  - 134126
+  - 134127
+  - 134135
+  - 134136
+  - 133309
+  - 133317
+  - 133318
+  - 133319
+  - 133327
+  - 133328
+  - 134406
+  - 134414
+  - 134415
+  - 134416
+  - 134424
+  - 134425
+  - 134718
+  - 134726
+  - 134727
+  - 134728
+  - 134736
+  - 134737
+  - 135079
+  - 136350
+  - 136351
+  - 136360
+  - 136361
+  - 136390
+  - 136391
+  - 136400
+  - 136401
+  - 136410
+  - 136411
+  - 136420
+  - 136421
+  - 136370
+  - 136371
+  - 136380
+  - 136381
+  - 136436
+  - 136437
+  - 136271
+  - 136272
+  - 136281
+  - 136282
+  - 136291
+  - 136292
+  - 136304
+  - 136305
+  - 136314
+  - 136315
+  - 136327
+  - 136328
+  - 136340
+  - 136341
+  - 136604
+  - 139714
+  - 139722
+  - 139723
+  - 139724
+  - 139732
+  - 139733
+  - 139542
+  - 139550
+  - 139551
+  - 139552
+  - 139560
+  - 139561
+  - 139588
+  - 139596
+  - 139597
+  - 139598
+  - 139606
+  - 139607
+  - 139694
+  - 139702
+  - 139703
+  - 139704
+  - 139712
+  - 139713
+  - 139300
+  - 139308
+  - 139309
+  - 139310
+  - 139318
+  - 139319
+  - 138317
+  - 140729
+  - 140737
+  - 140738
+  - 140739
+  - 140747
+  - 140748
+  - 141226
+  - 141234
+  - 141235
+  - 141239
+  - 141247
+  - 141248
+  - 136607
+  - 144426
+  - 144429
+  - 144430
+  - 144431
+  - 145489
+  - 145497
+  - 145498
+  - 145499
+  - 145507
+  - 145508
+  - 145509
+  - 145517
+  - 145518
+  - 145519
+  - 145527
+  - 145528
+  - 145753
+  - 145761
+  - 145762
+  - 145763
+  - 145771
+  - 145772
+  - 146017
+  - 146025
+  - 146026
+  - 146027
+  - 146035
+  - 146036
+  - 146037
+  - 146045
+  - 146046
+  - 146047
+  - 146055
+  - 146056
+  - 145733
+  - 145741
+  - 145742
+  - 145743
+  - 145751
+  - 145752
+  - 102091
+  - 102093
+  - 102095
+  - 103230
+  - 104497
+  - 104537
+  - 104538
+  - 104539
+  - 107074
+  - 107094
+  - 108374
+  - 108375
+  - 108376
+  - 111287
+  - 111288
+  - 11198
+  - 112754
+  - 112755
+  - 112756
+  - 114333
+  - 114334
+  - 114335
+  - 114336
+  - 114337
+  - 11771
+  - 117811
+  - 118881
+  - 120395
+  - 123188
+  - 123189
+  - 123190
+  - 124647
+  - 124782
+  - 127339
+  - 127340
+  - 127341
+  - 129123
+  - 130495
+  - 131901
+  - 131902
+  - 131903
+  - 133391
+  - 134830
+  - 135425
+  - 135426
+  - 135427
+  - 135434
+  - 137115
+  - 137116
+  - 137117
+  - 138446
+  - 140302
+  - 140303
+  - 140304
+  - 146166
+  - 146582
+  - 147431
+  - 147439
+  - 147440
+  - 147444
+  - 147452
+  - 147453
+  - 147701
+  - 147709
+  - 147710
+  - 147711
+  - 147719
+  - 147720
+  - 147784
+  - 147792
+  - 147793
+  - 147797
+  - 147805
+  - 147806
+  - 147875
+  - 147882
+  - 146445
+  - 146446
+  - 146447
+  - 146448
+  - 146449
+  - 146450
+  - 149982
+  - 149989
+  - 148200
+  - 148201
+  - 148202
+  - 148203
+  - 148204
+  - 148205
+  - 148206
+  - 148854
+  - 148862
+  - 148863
+  - 148864
+  - 148872
+  - 148873
+  - 149766
+  - 149774
+  - 149775
+  - 149776
+  - 149784
+  - 149785
+  - 149794
+  - 149803
+  - 149804
+  - 149812
+  - 149813
+  - 149814
+  - 149822
+  - 149823
+  - 149922
+  - 149930
+  - 149931
+  - 149932
+  - 149940
+  - 149941
+  - 150053
+  - 150054
+  - 150055
+  - 150521
+  - 150522
+  - 150523
+  - 150524
+  - 152071
+  - 152079
+  - 152080
+  - 152084
+  - 152092
+  - 152093
+  - 152048
+  - 152056
+  - 152057
+  - 152058
+  - 152066
+  - 152067
+  - 152028
+  - 152036
+  - 152037
+  - 152038
+  - 152046
+  - 152047
+  - 152008
+  - 152016
+  - 152017
+  - 152018
+  - 152026
+  - 152027
+  - 152156
+  - 152164
+  - 152165
+  - 152169
+  - 152177
+  - 152178
+  - 152242
+  - 152250
+  - 152251
+  - 151964
+  - 151972
+  - 151973
+  - 151988
+  - 151996
+  - 151997
+  - 151998
+  - 152006
+  - 152007
+  - 152206
+  - 152207
+  - 153421
+  - 153429
+  - 153430
+  - 153431
+  - 153439
+  - 153440
+  - 153661
+  - 153669
+  - 153670
+  - 153674
+  - 153682
+  - 153683
+  - 153601
+  - 153609
+  - 153610
+  - 153611
+  - 153619
+  - 153620
+  - 108454
+  - 153711
+  - 154037
+  - 154038
+  - 154039
+  - 157126
+  - 157135
+  - 156995
+  - 157004
+  - 157072
+  - 157081
+  - 157108
+  - 157117
+  - 157144
+  - 157153
+  - 157162
+  - 157171
+  - 156919
+  - 156926
+  - 156927
+  - 156935
+  - 156936
+  - 156937
+  - 156945
+  - 156946
+  - 156947
+  - 156955
+  - 156956
+  - 156957
+  - 156965
+  - 156966
+  - 156967
+  - 156975
+  - 156976
+  - 156977
+  - 156985
+  - 156986
+  - 157028
+  - 157035
+  - 157042
+  - 157049
+  - 157056
+  - 157063
+  - 157405
+  - 157412
+  - 157419
+  - 157426
+  - 157433
+  - 157440
+  - 157321
+  - 157328
+  - 157335
+  - 157342
+  - 157349
+  - 157356
+  - 157363
+  - 157370
+  - 157377
+  - 157384
+  - 157391
+  - 157398
+  - 157235
+  - 157243
+  - 157244
+  - 157245
+  - 157253
+  - 157254
+  - 157255
+  - 157263
+  - 157264
+  - 157265
+  - 157273
+  - 157274
+  - 157195
+  - 157203
+  - 157204
+  - 157205
+  - 157213
+  - 157214
+  - 157215
+  - 157223
+  - 157224
+  - 157225
+  - 157233
+  - 157234
+  - 157275
+  - 157283
+  - 157284
+  - 157285
+  - 157293
+  - 157294
+  - 157295
+  - 157303
+  - 157304
+  - 157305
+  - 157313
+  - 157314
+  - 156070
+  - 156071
+  - 156072
+  - 156073
+  - 156074
+  - 157806
+  - 159470
+  - 159478
+  - 159479
+  - 159480
+  - 159488
+  - 159489
+  - 159401
+  - 159409
+  - 159410
+  - 159414
+  - 159422
+  - 159423
+  - 159427
+  - 159435
+  - 159436
+  - 159440
+  - 159448
+  - 159449
+  - 159450
+  - 159458
+  - 159459
+  - 159460
+  - 159468
+  - 159469
+  - 159493
+  - 159501
+  - 159502
+  - 159506
+  - 159514
+  - 159515
+  - 160056
+  - 160057
+  - 160058
+  - 159470
+  - 162426
+  - 162434
+  - 162435
+  - 162436
+  - 162444
+  - 162445
+  - 162446
+  - 162454
+  - 162455
+  - 162456
+  - 162464
+  - 162465
+  - 162466
+  - 162474
+  - 162475
+  - 162476
+  - 162484
+  - 162486
+  - 162494
+  - 162495
+  - 162496
+  - 162504
+  - 162505
+  - 162326
+  - 162334
+  - 162335
+  - 162336
+  - 162344
+  - 162345
+  - 162346
+  - 162354
+  - 162355
+  - 162356
+  - 162364
+  - 162365
+  - 162306
+  - 162314
+  - 162315
+  - 162316
+  - 162324
+  - 162325
+  - 162366
+  - 162374
+  - 162375
+  - 162376
+  - 162384
+  - 162385
+  - 162386
+  - 162394
+  - 162395
+  - 162396
+  - 162404
+  - 162405
+  - 162406
+  - 162414
+  - 162415
+  - 162416
+  - 162424
+  - 162425
+  - 163033
+  - 165313
+  - 165313
+  - 165314
+  - 165315
+  - 165438
+  - 165439
+  - 165440
+  - 165446
+  - 165098
+  - 165100
+  - 165437
+  - 163367
+  - 164874
+  - 164884
+  - 164592
+  - 164602
+  - 164652
+  - 164662
+  - 164672
+  - 164682
+  - 164934
+  - 164944
+  - 164894
+  - 164904
+  - 165044
+  - 165054
+  - 164914
+  - 164924
+  - 164853
+  - 164864
+  - 164998
+  - 165011
+  - 164975
+  - 164988
+  - 165021
+  - 165034
+  - 164954
+  - 164964
+  LowSynTempProbCfg:
+    Probality: 300
+    ShowProbality: 550
+    BeginDate: 20260619
+    BeginTime: 0
+    EndDate: 20260621
+    EndTime: 235959
+  MidSynTempProbCfg:
+    Probality: 1000
+    ShowProbality: 1500
+    BeginDate: 20260619
+    BeginTime: 0
+    EndDate: 20260621
+    EndTime: 235959
+  HighSynTempProbCfg:
+    Probality: 3000
+    ShowProbality: 4000
+    BeginDate: 20260619
+    BeginTime: 0
+    EndDate: 20260621
+    EndTime: 235959
+  LowPetTempProbCfg:
+    Probality: 150
+    ShowProbality: 30
+    BeginDate: 20200125
+    BeginTime: 140000
+    EndDate: 20200304
+    EndTime: 170000
+  MidPetTempProbCfg:
+    Probality: 150
+    ShowProbality: 120
+    BeginDate: 20200125
+    BeginTime: 140000
+    EndDate: 20200304
+    EndTime: 170000
+  HighPetTempProbCfg:
+    Probality: 150
+    ShowProbality: 1000
+    BeginDate: 20200125
+    BeginTime: 140000
+    EndDate: 20200304
+    EndTime: 170000
+SynAvatars:
+- DstItemId: 99451
+  AdvancedItemId: 99468
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 99442
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 99444
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 99447
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 98763
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 98725
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 99461
+  AdvancedItemId: 99475
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 99452
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 99460
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 98763
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 98727
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 93274
+  AdvancedItemId: 93291
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 93265
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 93273
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 92781
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 92751
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 93284
+  AdvancedItemId: 93298
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 93275
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 93283
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 92781
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 92752
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 90493
+  AdvancedItemId: 90510
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 90484
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 90492
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 89900
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 89894
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 90503
+  AdvancedItemId: 90517
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 90494
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 90502
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 89900
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 89895
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 87485
+  AdvancedItemId: 87502
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 87476
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 87484
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 87510
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 87513
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 87495
+  AdvancedItemId: 87509
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 87486
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 87494
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 87510
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 87514
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 83506
+  AdvancedItemId: 83526
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 83497
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 83505
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 83003
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 82965
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 83516
+  AdvancedItemId: 83536
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 83507
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 83515
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 83003
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 82966
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 80937
+  AdvancedItemId: 80954
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80928
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80930
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80933
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80537
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80447
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 80947
+  AdvancedItemId: 80961
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80938
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 80946
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80537
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 80448
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 79321
+  AdvancedItemId: 79338
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 79312
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 79314
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 79317
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 78875
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 78836
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 79331
+  AdvancedItemId: 79345
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 79322
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 79330
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 78875
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 78837
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 77710
+  AdvancedItemId: 77727
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77706
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77703
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77701
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77166
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77160
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 77720
+  AdvancedItemId: 77734
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 77719
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77711
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77166
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 77161
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 74635
+  AdvancedItemId: 74652
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74631
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74628
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74626
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74321
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74292
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 74645
+  AdvancedItemId: 74659
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 74644
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74636
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74321
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 74293
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 72088
+  AdvancedItemId: 72105
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72084
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72081
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72079
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72243
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72211
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 72098
+  AdvancedItemId: 72112
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72089
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 72097
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72243
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 72214
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 70565
+  AdvancedItemId: 70582
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 70561
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 70558
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 70556
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 70002
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 69967
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 70575
+  AdvancedItemId: 70589
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 70566
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 70574
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 70002
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 69968
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 68061
+  AdvancedItemId: 68078
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 68057
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 68054
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 68052
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 67471
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 67439
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 68071
+  AdvancedItemId: 68085
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 68062
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 68070
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 67471
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 67440
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 66395
+  AdvancedItemId: 66412
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 66391
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 66388
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 66386
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 65824
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 65792
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 66405
+  AdvancedItemId: 66419
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 66396
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 66404
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 65824
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 65793
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 63324
+  AdvancedItemId: 63341
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63320
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63317
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63315
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63383
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63358
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 63334
+  AdvancedItemId: 63348
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 63333
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63325
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63383
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 63360
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 34415
+  AdvancedItemId: 34220
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 100
+  Components:
+  - ComponentType: 262
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34208
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 262
+      - 1793
+  - ComponentType: 265
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34207
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 265
+      - 1793
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34206
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34454
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34452
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 34416
+  AdvancedItemId: 34224
+  AdvanceConsNum: 1
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 1793
+    SuccProb: 280
+    ClientProb: 100
+    ProduceSynItemId: 34215
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 1793
+    - SrcItemNum: 4
+      TypeList:
+      - 265
+      - 262
+  - ComponentType: 266
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34214
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 266
+  - ComponentType: 287
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34454
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 287
+  - ComponentType: 277
+    SuccProb: 320
+    ClientProb: 100
+    ProduceSynItemId: 34453
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 277
+- DstItemId: 32267
+  AdvancedItemId: 32267
+  AdvanceConsNum: 20
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 2328
+    SuccProb: 5
+    ClientProb: 20
+    ProduceSynItemId: 32267
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 2328
+- DstItemId: 34834
+  AdvancedItemId: 34834
+  AdvanceConsNum: 10
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 2328
+    SuccProb: 40
+    ClientProb: 80
+    ProduceSynItemId: 34834
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 2328
+- DstItemId: 63391
+  AdvancedItemId: 63391
+  AdvanceConsNum: 10
+  AdvanceSuperMoney: 1000
+  ReduceProb: 200
+  Components:
+  - ComponentType: 2328
+    SuccProb: 40
+    ClientProb: 80
+    ProduceSynItemId: 63391
+    AvailPeriod: 4294967295
+    Formulas:
+    - SrcItemNum: 2
+      TypeList:
+      - 2328

@@ -1,0 +1,323 @@
+Meta:
+  Name: 爆天雪-小雪
+  WireID: 115166
+Plain551:
+  KartID: 157776
+  name: 爆天雪-小雪
+  WireScalars:
+    Field26F4: 115166
+    TopScalar: 976925434
+  PhysInfo:
+  - PID: 1
+    AffectID: 100
+    Param: 6000
+    LifeTime: 3138
+    CommonPara: []
+    Extra84Values: [0, 0]
+  - PID: 2001
+    AffectID: 100
+    Param: 6000
+    LifeTime: 597
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - PID: 2002
+    AffectID: 100
+    Param: 6000
+    LifeTime: 4300
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - PID: 99999
+    AffectID: 100
+    Param: 81600
+    LifeTime: 5000
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0]
+  - PID: 781
+    AffectID: 167
+    Param: 6850
+    LifeTime: 3350
+    CommonPara:
+    - 16700
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 782
+    Extra84Values: [0]
+  CompensateParam:
+  - Percent: 2
+    Value: 1010
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Percent: 10
+    Value: 1010
+    ExtraValues: [0, 0]
+  - Percent: 20
+    Value: 1020
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Percent: 60
+    Value: 1080
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Percent: 120
+    Value: 1160
+    ExtraValues: [0, 0, 0, 0, 0, 0]
+  - Percent: 240
+    Value: 1200
+    ExtraValues: [0, 0, 0, 0, 0]
+  - Percent: 900
+    Value: 1200
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  CollisionBoxParam:
+    BoxLength: 300
+    BoxWidth: 170
+    BoxHeight: 240
+    AdjustOffset: 240
+    AdjustPickGap: 200
+    AdjustRemoteOffset: 200
+    AdjustBevelOffset: 200
+    ControllerOffset: -30
+    Extra20Values: [0, 0, 0]
+    ExtraD4Values: [0, 0, 0, 0]
+  CarToCarCollisionParam:
+    CollisionRadius: 300
+    CollisionLength: 300
+    CollisionWidth: 200
+    CollisionHeight: 250
+    CollisionLostCtrlTime: 100000
+    ExtraValues: [0, 0]
+  Scalars:
+    BaseTurnRate: 1120
+    VolatileTurnRate: 1150
+    MaxTurnSpeed: 12200
+    MinTurnSpeed: 5700
+    MaxAccuTime: 500
+    BaseAccuRate: 150
+    MaxAffectSpeed: 19000
+    Gravity: -15000
+    AdditionalLocalZSpeed: -2760
+    StartVec: 20000
+    EndVecFist: 50000
+    EndVecSecon: 18000
+    DirKeyForce: 1500
+    DirKeyTwist: 9023
+    BannerTwist: 4300
+    BannerKeyTwist: 6200
+    BannerVecForce: 6200
+    BannerHeadForce: 5500
+    SlidFricForce: 2680
+    RollFricForce: 1000
+    StartWec: 800
+    MaxWec: 3500
+    SuaiJianTwist: 5000
+    DirUpKeyForce: 10240
+  AccelStatus:
+  - 1200
+  - 1200
+  - 800
+  - 300
+  - 2000
+  - 1900
+  ForwardAccel:
+  - Key: 0
+    Value: 4600
+    ExtraValues: [0, 0, 0]
+  - Key: 5000
+    Value: 4600
+    ExtraValues: [0, 0]
+  - Key: 5700
+    Value: 5150
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 9000
+    Value: 5650
+    ExtraValues: [0, 0, 0, 0, 0, 0]
+  - Key: 9300
+    Value: 6050
+    ExtraValues: [0, 0, 0]
+  - Key: 11000
+    Value: 6700
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 11800
+    Value: 6900
+    ExtraValues: [0, 0, 0]
+  - Key: 15000
+    Value: 6785
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 16000
+    Value: 6885
+    ExtraValues: [0, 0]
+  - Key: 20000
+    Value: 6735
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 25000
+    Value: 7750
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 30000
+    Value: 7750
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 35000
+    Value: 7750
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ForwardDecel:
+  - Key: 0
+    Value: -8000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 2000
+    Value: -7000
+    ExtraValues: [0, 0, 0, 0, 0]
+  - Key: 4000
+    Value: -6000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 6000
+    Value: -5000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 18000
+    Value: -4000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  BackwardAccel:
+  - Key: 0
+    Value: -5000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 3000
+    Value: -5000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 6000
+    Value: -5000
+    ExtraValues: [0, 0, 0, 0]
+  - Key: 10000
+    Value: -5500
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 12000
+    Value: -5500
+    ExtraValues: [0, 0, 0, 0, 0, 0]
+  BackwardDecel:
+  - Key: 0
+    Value: 16000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 2000
+    Value: 16000
+    ExtraValues: [0]
+  - Key: 4000
+    Value: 16000
+    ExtraValues: [0, 0, 0, 0]
+  - Key: 6000
+    Value: 15000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 10000
+    Value: 15000
+    ExtraValues: [0, 0, 0, 0, 0]
+  Tail:
+    CrashCompensatePower: 0
+    DefenseRate: 0
+    Uin: 1045335392
+    SpeedupCardGenRate: 0
+    ExtraFuncFlag: 0
+    EnergyConvert: 0
+    SuperN2ORate: 0
+    CollisionLoseRate: 0
+    NotInterruptDrift: 0
+    DirUpKeyForceParamA: 0
+    DirUpKeyForceParamB: 0
+  AddWeight: []
+  Weight: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  AntiCollisionCfg: []
+  BoatParam:
+  - DirKeyForceParamC: 82
+    DirKeyForceParamD: 0
+    DTFLimitAngle: 0
+    DTFRatio: 0
+    UpKeyVecForce: 10000
+    UpKeyVecForceParamA: 5000
+    UpKeyVecForceParamB: -800
+    LRKeyVecForce: 0
+    LRKeyVecForceParamA: 2000
+    LRKeyVecForceParamB: 70
+    VecForce: 1000
+    VecForceParamA: 0
+    VecForceParamB: 300
+    BoatShape:
+    - 250
+    - 250
+    - 1000
+    WecEffect: 2
+    BannerKeyTwist: 4500
+    BannerKeyTwistParamA: 0
+    BannerKeyTwistParamB: 2000
+    BoatHeighRatio: 600
+    BannerTwist: 5200
+    BannerTwistParamA: 16398969
+    DirUpKeyForce: 4000
+    DirUpKeyForceParamA: 3500
+    DirUpKeyForceParamB: 0
+    DirKeyForce: 0
+    DirKeyForceParamA: 0
+    DirKeyForceParamB: 1000000
+    AddNO2PerSec: 350000
+    BoatAirValue: 375
+    ifSlidFricForce: 3000
+    List10: [0, 0, 0, 0, 0, 0, 0, 0]
+    ArrayBC: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array168: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array214: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array2C0: [0, 0, 0, 0, 0]
+    Array36C: [0, 0, 0, 0]
+    Array430: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  BoatForwardAccel:
+  - Key: 0
+    Value: 5100
+    ExtraValues: [0]
+  - Key: 5000
+    Value: 5100
+    ExtraValues: [0]
+  - Key: 5700
+    Value: 5600
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 9000
+    Value: 6100
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 9300
+    Value: 6600
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 11000
+    Value: 7000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 11800
+    Value: 7100
+    ExtraValues: [0]
+  - Key: 15000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 16000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 20000
+    Value: 9350
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 25000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 30000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 35000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0]
+  ZeroArrays:
+    List1398: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List2700: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List28C4: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List35F0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List3CD0: [0, 0, 0, 0, 0, 0]
+    Array4C34: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array4CE8: [0, 0, 0, 0]
+    Array7460: [0]
+    Array750C: [0, 0, 0, 0, 0, 0, 0]
+    Array7700: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array8A58: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    TopSmallList: [0, 0, 0, 0, 0, 0, 0, 0]
+    TopFinalList: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  TopFinalScalar: 0
+  Group0Elements: []
+  Group2Elements: []

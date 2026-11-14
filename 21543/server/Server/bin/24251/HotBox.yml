@@ -1,0 +1,3977 @@
+# HotBox / 热卖中心结构化配置。
+# 已移除原始十六进制回放字段；旧数据保留，同语义 ID 使用 23592 字段，23592 新项加入。
+# HotBox 主体保持抓包结构；phantom_skin 为当前客户端静态 RPC 字段与本地 174804 奖池接入。
+enabled: true
+schema_version: 3
+capture_network_build: known-21446 + 23592
+default_act_id: 2
+default_gift_box_id: 53
+merge_summary:
+  main_activity_tabs: 21
+  main_act_id_map: 61
+  entry_list: 43
+  policy: 23592 first; same semantic ID uses 23592; old-only rows append
+phantom_skin:
+  enabled: true
+  source: current T3UltimateSkin client bytecode + packet_dumps_18964 related activity schedule + local Treasure/174804.yml
+  entry_id: 550
+  season_id: 1
+  open_date: 20260801
+  open_time: 0
+  close_date: 20261007
+  close_time: 235959
+  cost_item_id: 174804
+  show_item_id: 171070
+  cost_one: 1
+  cost_ten: 10
+  cost_fifty: 50
+  theme_idx: 1
+  invalid_result_code: 1
+  insufficient_result_code: 123
+  activity_name: 终极幻影-重生
+  description: 使用终影重生宝箱抽取活动奖励
+  background: ''
+  help_url: https://speed.qq.com/cp/a20260714fc/index.html
+main_dlg:
+  method: Co.Beta99_Business_HotBox_MainDlg
+  source: merged old HotBox + packet_dumps_23592 seq 8591
+  response:
+    ActIDMap:
+      _entries:
+      - _index: 1
+        _scalars:
+        - 1
+        - 2
+        - 2
+        - 0
+      - _index: 4
+        _scalars:
+        - 1
+        - 18
+        - 2
+        - 1
+      - _index: 26
+        _scalars:
+        - 1
+        - 12
+        - 2
+        - 5
+      - _index: 121
+        _scalars:
+        - 1
+        - 29
+        - 2
+        - 3
+      - _index: 37
+        _scalars:
+        - 1
+        - 18
+        - 2
+        - 4
+      - _index: 45
+        _scalars:
+        - 1
+        - 14
+        - 2
+        - 2
+      - _index: 53
+        _scalars:
+        - 1
+        - 20
+        - 2
+        - 5
+      - _index: 75
+        _scalars:
+        - 1
+        - 27
+        - 2
+        - 0
+      - _index: 91
+        _scalars:
+        - 1
+        - 34
+        - 2
+        - 2
+      - _index: 90
+        _scalars:
+        - 1
+        - 34
+        - 2
+        - 1
+      - _index: 107
+        _scalars:
+        - 1
+        - 30
+        - 2
+        - 5
+      - _index: 76
+        _scalars:
+        - 1
+        - 25
+        - 2
+        - 1
+      - _index: 11
+        _scalars:
+        - 1
+        - 5
+        - 2
+        - 0
+      - _index: 108
+        _scalars:
+        - 1
+        - 30
+        - 2
+        - 6
+      - _index: 23
+        _scalars:
+        - 1
+        - 12
+        - 2
+        - 2
+      - _index: 109
+        _scalars:
+        - 1
+        - 34
+        - 2
+        - 3
+      - _index: 125
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 15
+      - _index: 78
+        _scalars:
+        - 1
+        - 28
+        - 2
+        - 0
+      - _index: 47
+        _scalars:
+        - 1
+        - 14
+        - 2
+        - 4
+      - _index: 55
+        _scalars:
+        - 1
+        - 22
+        - 2
+        - 1
+      - _index: 126
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 7
+      - _index: 111
+        _scalars:
+        - 1
+        - 32
+        - 2
+        - 3
+      - _index: 80
+        _scalars:
+        - 1
+        - 33
+        - 2
+        - 0
+      - _index: 48
+        _scalars:
+        - 1
+        - 14
+        - 2
+        - 5
+      - _index: 112
+        _scalars:
+        - 1
+        - 34
+        - 2
+        - 4
+      - _index: 20
+        _scalars:
+        - 1
+        - 11
+        - 2
+        - 0
+      - _index: 24
+        _scalars:
+        - 1
+        - 12
+        - 2
+        - 3
+      - _index: 110
+        _scalars:
+        - 1
+        - 35
+        - 2
+        - 3
+      - _index: 81
+        _scalars:
+        - 1
+        - 35
+        - 2
+        - 1
+      - _index: 49
+        _scalars:
+        - 1
+        - 20
+        - 2
+        - 1
+      - _index: 57
+        _scalars:
+        - 1
+        - 21
+        - 2
+        - 4
+      - _index: 88
+        _scalars:
+        - 1
+        - 32
+        - 2
+        - 1
+      - _index: 100
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 4
+      - _index: 106
+        _scalars:
+        - 1
+        - 30
+        - 2
+        - 4
+      - _index: 115
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 6
+      - _index: 98
+        _scalars:
+        - 1
+        - 14
+        - 2
+        - 6
+      - _index: 102
+        _scalars:
+        - 1
+        - 31
+        - 2
+        - 5
+      - _index: 50
+        _scalars:
+        - 1
+        - 20
+        - 2
+        - 2
+      - _index: 116
+        _scalars:
+        - 1
+        - 31
+        - 2
+        - 32
+      - _index: 105
+        _scalars:
+        - 1
+        - 30
+        - 2
+        - 3
+      - _index: 74
+        _scalars:
+        - 1
+        - 30
+        - 2
+        - 1
+      - _index: 25
+        _scalars:
+        - 1
+        - 12
+        - 2
+        - 4
+      - _index: 117
+        _scalars:
+        - 1
+        - 31
+        - 2
+        - 33
+      - _index: 120
+        _scalars:
+        - 1
+        - 29
+        - 2
+        - 2
+      - _index: 104
+        _scalars:
+        - 1
+        - 25
+        - 2
+        - 2
+      - _index: 51
+        _scalars:
+        - 1
+        - 20
+        - 2
+        - 3
+      - _index: 118
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 2
+      - _index: 71
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 3
+      - _index: 59
+        _scalars:
+        - 1
+        - 18
+        - 2
+        - 5
+      - _index: 103
+        _scalars:
+        - 1
+        - 31
+        - 2
+        - 6
+      - _index: 119
+        _scalars:
+        - 1
+        - 29
+        - 2
+        - 1
+      - _index: 72
+        _scalars:
+        - 1
+        - 19
+        - 2
+        - 3
+      - _index: 44
+        _scalars:
+        - 1
+        - 14
+        - 2
+        - 1
+      - _index: 52
+        _scalars:
+        - 1
+        - 20
+        - 2
+        - 4
+      - _index: 60
+        _scalars:
+        - 1
+        - 1
+        - 2
+        - 5
+      - _index: 73
+        _scalars:
+        - 1
+        - 30
+        - 2
+        - 2
+      - _index: 22
+        _scalars:
+        - 1
+        - 12
+        - 2
+        - 1
+      - _index: 46
+        _scalars:
+        - 1
+        - 14
+        - 2
+        - 3
+      - _index: 61
+        _scalars:
+        - 1
+        - 22
+        - 2
+        - 2
+      - _index: 101
+        _scalars:
+        - 1
+        - 31
+        - 2
+        - 4
+      - _index: 35
+        _scalars:
+        - 1
+        - 18
+        - 2
+        - 2
+    ActivityCfg:
+      _entries:
+      - _index: 1
+        TabAct:
+          EntryID: 2
+          Index: 1
+          ActName: 热卖专区
+          ActID: 0
+          UniqActID: 1
+          EntryPara: 1
+          Priority: 999
+          ActType: 2
+        TabBackGround: remaizhuanqu_2.png
+        TabName: 热卖专区
+        TabCfg: {}
+        TabID: 2
+        TabPriority: 999
+      - _index: 2
+        TabBackGround: xrth.png
+        TabName: 夏日特惠
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 2
+            Index: 5
+            ActName: 福利合集
+            ActID: 2
+            UniqActID: 118
+            EntryPara: 1
+            Priority: 10
+            ActType: 4
+          - _index: 2
+            EntryID: 586
+            Index: 2
+            ActName: 夏日好运卡
+            ActID: 3
+            UniqActID: 71
+            EntryPara: 1
+            Priority: 9
+            ActType: 1
+          - _index: 3
+            EntryID: 587
+            Index: 3
+            ActName: 消费积分兑S
+            ActID: 4
+            UniqActID: 100
+            EntryPara: 1
+            Priority: 8
+            ActType: 1
+          - _index: 4
+            EntryID: 39
+            Index: 6
+            ActName: 夏日带货专场
+            ActID: 15
+            UniqActID: 125
+            EntryPara: 1
+            Priority: 8
+            ActType: 3
+          - _index: 5
+            EntryID: 399
+            Index: 1
+            ActName: 百亿补贴
+            ActID: 5
+            UniqActID: 60
+            EntryPara: 1
+            Priority: 7
+            ActType: 1
+          - _index: 6
+            EntryID: 397
+            Index: 4
+            ActName: 6块交个朋友
+            ActID: 6
+            UniqActID: 115
+            EntryPara: 1
+            Priority: 6
+            ActType: 1
+          - _index: 7
+            EntryID: 35
+            Index: 7
+            ActName: 紫钻组队
+            ActID: 7
+            UniqActID: 126
+            EntryPara: 1
+            Priority: 5
+            ActType: 3
+        TabID: 1
+        TabPriority: 114
+      - _index: 3
+        TabAct:
+          EntryID: 537
+          Index: 1
+          ActName: 机甲风暴
+          ActID: 0
+          UniqActID: 78
+          EntryPara: 1
+          Priority: 2
+          ActType: 1
+        TabBackGround: yq-jjfb.png
+        TabName: 机甲风暴
+        TabCfg: {}
+        TabID: 28
+        TabPriority: 111
+      - _index: 4
+        TabBackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/1-LeftTab/202608zjhy_cb913611.png
+        TabName: 终极幻影-重生
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 566
+            Index: 3
+            ActName: 终极幻影福利
+            ActID: 4
+            UniqActID: 112
+            EntryPara: 1
+            Priority: 3
+            ActType: 1
+          - _index: 2
+            EntryID: 40
+            Index: 1
+            ActName: 终极幻影-重生
+            ActID: 2
+            UniqActID: 91
+            EntryPara: 1
+            Priority: 2
+            ActType: 3
+          - _index: 3
+            EntryID: 563
+            Index: 2
+            ActName: 终极幻影福利
+            ActID: 3
+            UniqActID: 109
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 4
+            EntryID: 550
+            Index: 4
+            ActName: 终极幻影-重生
+            ActID: 1
+            UniqActID: 90
+            EntryPara: 1
+            Priority: 4
+            ActType: 1
+        TabID: 34
+        TabPriority: 110
+      - _index: 5
+        TabBackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/1-LeftTab/202608ZZXS-LYXH_a578d6d8.png
+        TabName: 至臻·龙游汐海
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 572
+            Index: 1
+            ActName: 至臻稀世首发
+            ActID: 1
+            UniqActID: 88
+            EntryPara: 1
+            Priority: 3
+            ActType: 1
+          - _index: 2
+            EntryID: 565
+            Index: 2
+            ActName: 龙游汐海福利
+            ActID: 3
+            UniqActID: 111
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 32
+        TabPriority: 109
+      - _index: 6
+        TabBackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/1-LeftTab/202608wlyz_4c81a76c.png
+        TabName: 寰宇终结者
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 574
+            Index: 1
+            ActName: 寰宇终结者
+            ActID: 1
+            UniqActID: 81
+            EntryPara: 1
+            Priority: 3
+            ActType: 1
+          - _index: 2
+            EntryID: 564
+            Index: 2
+            ActName: 未来已至福利
+            ActID: 3
+            UniqActID: 110
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 35
+        TabPriority: 108
+      - _index: 7
+        TabAct:
+          EntryID: 575
+          Index: 1
+          ActName: 红魔鬼降临
+          ActID: 0
+          UniqActID: 80
+          EntryPara: 1
+          Priority: 2
+          ActType: 1
+        TabBackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/1-LeftTab/202608hmg_43d30f49.png
+        TabName: 红魔鬼降临
+        TabCfg: {}
+        TabID: 33
+        TabPriority: 107
+      - _index: 8
+        TabAct:
+          EntryID: 3
+          Index: 1
+          ActName: T3天禄返场
+          ActID: 0
+          UniqActID: 11
+          EntryPara: 1
+          Priority: 1
+          ActType: 3
+        TabBackGround: 1bafanglaicai.png
+        TabName: 八方来财
+        TabCfg: {}
+        TabID: 5
+        TabPriority: 107
+      - _index: 9
+        TabBackGround: mdqc.png
+        TabName: 萌动启程
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 539
+            Index: 2
+            ActName: 萌动启程得A车
+            ActID: 1
+            UniqActID: 74
+            EntryPara: 1
+            Priority: 5
+            ActType: 1
+          - _index: 2
+            EntryID: 534
+            Index: 1
+            ActName: 萌趣小卖部
+            ActID: 2
+            UniqActID: 73
+            EntryPara: 1
+            Priority: 4
+            ActType: 1
+          - _index: 3
+            EntryID: 560
+            Index: 4
+            ActName: 绒茸心语特惠
+            ActID: 4
+            UniqActID: 106
+            EntryPara: 1
+            Priority: 3
+            ActType: 1
+          - _index: 4
+            EntryID: 559
+            Index: 3
+            ActName: 瓷梦甜裙特惠
+            ActID: 3
+            UniqActID: 105
+            EntryPara: 1
+            Priority: 2
+            ActType: 1
+          - _index: 5
+            EntryID: 561
+            Index: 5
+            ActName: 线条小狗福利
+            ActID: 5
+            UniqActID: 107
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 6
+            EntryID: 562
+            Index: 6
+            ActName: 绒绒甜心福利
+            ActID: 6
+            UniqActID: 108
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 30
+        TabPriority: 106
+      - _index: 10
+        TabBackGround: 2026006ktsy.png
+        TabName: 空天神鹰首发
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 551
+            Index: 1
+            ActName: 空天神鹰首发
+            ActID: 1
+            UniqActID: 76
+            EntryPara: 1
+            Priority: 2
+            ActType: 1
+          - _index: 2
+            EntryID: 558
+            Index: 2
+            ActName: S车首发福利
+            ActID: 2
+            UniqActID: 104
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 25
+        TabPriority: 105
+      - _index: 11
+        TabBackGround: btjszn.png
+        TabName: 爆天甲10周年
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 12
+            Index: 1
+            ActName: 臻藏皮肤返场
+            ActID: 1
+            UniqActID: 119
+            EntryPara: 1
+            Priority: 1
+            ActType: 3
+          - _index: 2
+            EntryID: 16
+            Index: 2
+            ActName: 火热节拍返场
+            ActID: 2
+            UniqActID: 120
+            EntryPara: 1
+            Priority: 1
+            ActType: 3
+          - _index: 3
+            EntryID: 34
+            Index: 3
+            ActName: 十周年特辑
+            ActID: 3
+            UniqActID: 121
+            EntryPara: 1
+            Priority: 1
+            ActType: 3
+        TabID: 29
+        TabPriority: 104
+      - _index: 12
+        TabAct:
+          EntryID: 9
+          Index: 1
+          ActName: 年限祈福
+          ActID: 0
+          UniqActID: 20
+          EntryPara: 1
+          Priority: 1
+          ActType: 3
+        TabBackGround: 1nianxianqifu.png
+        TabName: 年限祈福
+        TabCfg: {}
+        TabID: 11
+        TabPriority: 103
+      - _index: 13
+        TabBackGround: 1tianguancifu.png
+        TabName: 天官赐福
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 4
+            Index: 1
+            ActName: 招财·玉如意
+            ActID: 1
+            UniqActID: 22
+            EntryPara: 1
+            Priority: 5
+            ActType: 3
+          - _index: 2
+            EntryID: 6
+            Index: 3
+            ActName: 纳福·绘春生
+            ActID: 3
+            UniqActID: 24
+            EntryPara: 1
+            Priority: 4
+            ActType: 3
+          - _index: 3
+            EntryID: 5
+            Index: 2
+            ActName: 祈福·饴糖仙
+            ActID: 2
+            UniqActID: 23
+            EntryPara: 1
+            Priority: 3
+            ActType: 3
+          - _index: 4
+            EntryID: 7
+            Index: 4
+            ActName: 合欢·琉璃主
+            ActID: 4
+            UniqActID: 25
+            EntryPara: 1
+            Priority: 2
+            ActType: 3
+          - _index: 5
+            EntryID: 8
+            Index: 5
+            ActName: 守岁·暖炉娘
+            ActID: 5
+            UniqActID: 26
+            EntryPara: 1
+            Priority: 1
+            ActType: 3
+        TabID: 12
+        TabPriority: 102
+      - _index: 14
+        TabAct:
+          EntryID: 535
+          Index: 1
+          ActName: 王者四驱夺宝
+          ActID: 0
+          UniqActID: 75
+          EntryPara: 1
+          Priority: 1
+          ActType: 1
+        TabBackGround: sqdb.png
+        TabName: 四驱夺宝
+        TabCfg: {}
+        TabID: 27
+        TabPriority: 101
+      - _index: 15
+        TabBackGround: Konomi1.png
+        TabName: 库洛米秘典
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 517
+            Index: 1
+            ActName: 极星之翼-酷洛米
+            ActID: 1
+            UniqActID: 55
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 22
+        TabPriority: 100
+      - _index: 16
+        TabBackGround: qymh.png
+        TabName: 起源系统
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 584
+            Index: 2
+            ActName: 起源四驱车
+            ActID: 4
+            UniqActID: 57
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 21
+        TabPriority: 100
+      - _index: 17
+        TabBackGround: yftts.png
+        TabName: 废土集结令
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 527
+            Index: 1
+            ActName: 爆天雷诺-熔炉
+            ActID: 1
+            UniqActID: 44
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 2
+            EntryID: 527
+            Index: 2
+            ActName: 终极猛兽-狂斧
+            ActID: 2
+            UniqActID: 45
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 3
+            EntryID: 527
+            Index: 3
+            ActName: 特洛伊之眼-冥锯
+            ActID: 3
+            UniqActID: 46
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 4
+            EntryID: 527
+            Index: 4
+            ActName: 烈焰新星-源刃
+            ActID: 4
+            UniqActID: 47
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 5
+            EntryID: 527
+            Index: 5
+            ActName: 紫电神驹-毒液
+            ActID: 5
+            UniqActID: 48
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+          - _index: 6
+            EntryID: 554
+            Index: 6
+            ActName: 源·废土集结福利
+            ActID: 6
+            UniqActID: 98
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 14
+        TabPriority: 100
+      - _index: 18
+        TabBackGround: thfl.png
+        TabName: 特惠福利
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 278
+            Index: 4
+            ActName: 超值充值返利
+            ActID: 4
+            UniqActID: 37
+            EntryPara: 1
+            Priority: 10
+            ActType: 1
+          - _index: 2
+            EntryID: 373
+            Index: 5
+            ActName: 每日充值好礼
+            ActID: 5
+            UniqActID: 59
+            EntryPara: 1
+            Priority: 10
+            ActType: 1
+          - _index: 3
+            EntryID: 471
+            Index: 1
+            ActName: 生涯直购礼包
+            ActID: 1
+            UniqActID: 4
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 18
+        TabPriority: 6
+      - _index: 19
+        TabBackGround: myfl.png
+        TabName: 美衣福利
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 557
+            Index: 5
+            ActName: 鎏音入梦特惠
+            ActID: 6
+            UniqActID: 103
+            EntryPara: 1
+            Priority: 14
+            ActType: 1
+          - _index: 2
+            EntryID: 556
+            Index: 4
+            ActName: 风动珠华特惠
+            ActID: 5
+            UniqActID: 102
+            EntryPara: 1
+            Priority: 13
+            ActType: 1
+          - _index: 3
+            EntryID: 32
+            Index: 6
+            ActName: 极光宝藏
+            ActID: 32
+            UniqActID: 116
+            EntryPara: 1
+            Priority: 12
+            ActType: 3
+          - _index: 4
+            EntryID: 33
+            Index: 7
+            ActName: 动作美衣首发
+            ActID: 33
+            UniqActID: 117
+            EntryPara: 1
+            Priority: 12
+            ActType: 3
+        TabID: 31
+        TabPriority: 5
+      - _index: 20
+        TabBackGround: jdhd.png
+        TabName: 经典活动
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 65
+            Index: 2
+            ActName: 每日一抽
+            ActID: 2
+            UniqActID: 50
+            EntryPara: 1
+            Priority: 10
+            ActType: 1
+          - _index: 2
+            EntryID: 188
+            Index: 5
+            ActName: 六芒星阵
+            ActID: 5
+            UniqActID: 53
+            EntryPara: 1
+            Priority: 9
+            ActType: 1
+          - _index: 3
+            EntryID: 364
+            Index: 3
+            ActName: 终极魔法阵
+            ActID: 3
+            UniqActID: 51
+            EntryPara: 1
+            Priority: 8
+            ActType: 1
+          - _index: 4
+            EntryID: 515
+            Index: 4
+            ActName: 高级魔法阵
+            ActID: 4
+            UniqActID: 52
+            EntryPara: 1
+            Priority: 7
+            ActType: 1
+          - _index: 5
+            EntryID: 130
+            Index: 1
+            ActName: 秘宝罗盘
+            ActID: 1
+            UniqActID: 49
+            EntryPara: 1
+            Priority: 6
+            ActType: 1
+        TabID: 20
+        TabPriority: 4
+      - _index: 21
+        TabBackGround: xfsl.png
+        TabName: 消费送礼
+        TabCfg:
+          _entries:
+          - _index: 1
+            EntryID: 536
+            Index: 1
+            ActName: 每月消费送礼
+            ActID: 3
+            UniqActID: 72
+            EntryPara: 1
+            Priority: 1
+            ActType: 1
+        TabID: 19
+        TabPriority: 3
+activity_entry_cdn_cfg:
+  method: Co.GetActivityEntryCdnCfg
+  entry_id: 539
+  source: packet_dumps_15588 seq 60903 (network_bin_15588_60903_special28346_after_full_msg24251_co.DispatchCoResponse_len32272.bin)
+  response:
+    entryID: 539
+    version: '2026060401'
+    enable: 0
+    cdnBase: ''
+    minClientVersion: 0
+activity_info:
+  method: Co.Beta99_Business_HotBox_GetActivityInfo
+  act_id: 2
+  source: packet_dumps_15588 seq 91956 (network_bin_15588_91956_special28346_after_full_msg24251_co.DispatchCoResponse_len32272.bin)
+  response:
+    Act:
+      SelectGiftBoxID: 53
+      RightActList:
+        _entries:
+        - _index: 1
+          ActItemID: 163263
+          ActAwardName: 至尊·逐日
+          Index: 1
+          GiftBoxID: 2
+          EndTime: 1789315199
+          GiftBoxName: 年限祈福
+          Desc: 祈愿灵符
+          BannerColor: 2
+          SelectPriority: 3000
+          BeginTime: 1783699200
+          TitleColor: 2
+          Priority: 3000
+        - _index: 2
+          ActItemID: 146543
+          ActAwardName: 天官赐福
+          Index: 2
+          GiftBoxID: 3
+          EndTime: 1789315199
+          GiftBoxName: 天官赐福
+          Desc: X次元原石
+          BannerColor: 2
+          SelectPriority: 3000
+          BeginTime: 1783699200
+          TitleColor: 2
+          Priority: 3000
+        - _index: 3
+          ActItemID: 165328
+          ActAwardName: 臻藏-摇滚传奇
+          Index: 3
+          GiftBoxID: 5
+          EndTime: 1789833599
+          GiftBoxName: 臻藏-摇滚传奇
+          Desc: 摇滚传奇宝箱
+          BannerColor: 1
+          SelectPriority: 3000
+          BeginTime: 1783699200
+          TitleColor: 1
+          Priority: 3000
+        - _index: 4
+          ActItemID: 163260
+          ActAwardName: 火热节拍
+          Index: 4
+          GiftBoxID: 6
+          EndTime: 1789833599
+          GiftBoxName: 火热节拍
+          Desc: 音符
+          BannerColor: 2
+          SelectPriority: 1000
+          BeginTime: 1783699200
+          TitleColor: 2
+          Priority: 1000
+        - _index: 5
+          ActItemID: 168220
+          ActAwardName: 酷洛米剧场
+          Index: 9
+          GiftBoxID: 87
+          EndTime: 1786895999
+          GiftBoxName: 酷洛米剧场
+          Desc: 酷洛米币
+          BannerColor: 2
+          SelectPriority: 1000
+          BeginTime: 1780243200
+          TitleColor: 2
+          Priority: 1000
+        - _index: 6
+          ActItemID: 168226
+          ActAwardName: 源废土集结令
+          Index: 10
+          GiftBoxID: 88
+          EndTime: 1785686399
+          GiftBoxName: 源废土集结令
+          Desc: 废土徽章
+          BannerColor: 2
+          SelectPriority: 1000
+          BeginTime: 1780243200
+          TitleColor: 2
+          Priority: 1000
+        - _index: 7
+          ActItemID: 148390
+          ActAwardName: 至尊夺宝
+          Index: 5
+          GiftBoxID: 10
+          EndTime: 1788191999
+          GiftBoxName: 至尊夺宝
+          Desc: 至尊夺宝券
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1772294400
+          TitleColor: 2
+          Priority: 500
+        - _index: 8
+          ActItemID: 99662
+          ActAwardName: 狂欢夺宝
+          Index: 6
+          GiftBoxID: 11
+          EndTime: 1785513599
+          GiftBoxName: 狂欢夺宝
+          Desc: 夺宝券
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1783094400
+          TitleColor: 2
+          Priority: 500
+        - _index: 9
+          ActItemID: 138381
+          ActAwardName: 至美芳华
+          Index: 7
+          GiftBoxID: 53
+          EndTime: 1784476799
+          GiftBoxName: 至美芳华
+          Desc: 芳华录
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1781798400
+          TitleColor: 2
+          Priority: 500
+        - _index: 10
+          ActItemID: 144339
+          ActAwardName: 封神演义
+          Index: 8
+          GiftBoxID: 62
+          EndTime: 1784476799
+          GiftBoxName: 封神演义
+          Desc: 封神榜
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1781798400
+          TitleColor: 2
+          Priority: 500
+        - _index: 11
+          ActItemID: 156044
+          ActAwardName: 元气石
+          Index: 17
+          GiftBoxID: 100
+          EndTime: 1787500799
+          GiftBoxName: 钢铁少女心
+          Desc: 元气石
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1783699200
+          TitleColor: 2
+          Priority: 500
+        - _index: 12
+          ActItemID: 174994
+          ActAwardName: 至尊·奥丁
+          Index: 18
+          GiftBoxID: 101
+          EndTime: 1787500799
+          GiftBoxName: 至尊·奥丁
+          Desc: 至尊·奥丁
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1783699200
+          TitleColor: 2
+          Priority: 500
+        - _index: 13
+          ActItemID: 174821
+          ActAwardName: 空天神鹰
+          Index: 20
+          GiftBoxID: 103
+          EndTime: 1789919999
+          GiftBoxName: 空天神鹰
+          Desc: 空天神鹰
+          BannerColor: 2
+          SelectPriority: 500
+          BeginTime: 1783699200
+          TitleColor: 2
+          Priority: 500
+        - _index: 14
+          ActItemID: 168312
+          ActAwardName: 酷洛米雷诺宝箱
+          Index: 12
+          GiftBoxID: 90
+          EndTime: 1784476799
+          GiftBoxName: 酷洛米雷诺宝箱
+          Desc: 酷洛米雷诺宝箱
+          BannerColor: 2
+          SelectPriority: 400
+          BeginTime: 1780243200
+          TitleColor: 2
+          Priority: 400
+        - _index: 15
+          ActItemID: 174780
+          ActAwardName: 王者四驱夺宝
+          Index: 16
+          GiftBoxID: 99
+          EndTime: 1787759999
+          GiftBoxName: 王者四驱夺宝
+          Desc: 王者四驱夺宝券
+          BannerColor: 2
+          SelectPriority: 102
+          BeginTime: 1782921600
+          TitleColor: 2
+          Priority: 102
+        - _index: 16
+          ActItemID: 168283
+          ActAwardName: 甜梦酷洛米礼盒
+          Index: 11
+          GiftBoxID: 89
+          EndTime: 1785686399
+          GiftBoxName: 甜梦酷洛米礼盒
+          Desc: 甜梦酷洛米礼盒
+          BannerColor: 2
+          SelectPriority: 101
+          BeginTime: 1780243200
+          TitleColor: 2
+          Priority: 101
+        - _index: 17
+          ActItemID: 168284
+          ActAwardName: 酷洛米魅影礼盒
+          Index: 14
+          GiftBoxID: 97
+          EndTime: 1786895999
+          GiftBoxName: 酷洛米魅影礼盒
+          Desc: 酷洛米魅影礼盒
+          BannerColor: 5
+          SelectPriority: 101
+          BeginTime: 1781798400
+          TitleColor: 5
+          Priority: 101
+        - _index: 18
+          ActItemID: 156041
+          ActAwardName: 山海九州行
+          Index: 15
+          GiftBoxID: 98
+          EndTime: 1785081599
+          GiftBoxName: 山海九州行
+          Desc: 山海九州令
+          BannerColor: 2
+          SelectPriority: 101
+          BeginTime: 1782403200
+          TitleColor: 2
+          Priority: 101
+        - _index: 19
+          ActItemID: 166063
+          ActAwardName: 鎏音入梦礼盒
+          Index: 19
+          GiftBoxID: 102
+          EndTime: 1787500799
+          GiftBoxName: 鎏音入梦礼盒
+          Desc: 鎏音入梦礼盒
+          BannerColor: 5
+          SelectPriority: 101
+          BeginTime: 1783699200
+          TitleColor: 5
+          Priority: 101
+        - _index: 20
+          ActItemID: 166084
+          ActAwardName: 狐兔秘语礼盒
+          Index: 13
+          GiftBoxID: 93
+          EndTime: 1785081599
+          GiftBoxName: 狐兔秘语礼盒
+          Desc: 狐兔秘语礼盒
+          BannerColor: 5
+          SelectPriority: 105
+          BeginTime: 1781280000
+          TitleColor: 5
+          Priority: 100
+      ActID: 2
+entry_list:
+  method: Co.Beta99_Business_HotBox_EntryList
+  source: merged old HotBox + packet_dumps_23592 seq 8604
+  response:
+    _entries:
+    - _index: 1
+      bNewLabel: <F9>
+      Index: 44
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 459
+      EntryPic: res/uires/ClothingChronicle/res/image/Default/EntryIcon_Big.gsa
+      Priority: 111
+      EntryName: 臻藏-摇滚传奇
+      Desc: 臻藏-摇滚传奇
+    - _index: 2
+      bNewLabel: <F9>
+      Index: 41
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 11
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 464
+      EntryPic: Res/uires/SpringMecha/Res/image/Theme1/EntryIcon_Big.gsa
+      Priority: 103
+      EntryName: 八方来财·天禄
+      Desc: 八方来财·天禄
+    - _index: 3
+      bNewLabel: <F9>
+      Index: 42
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 470
+      EntryPic: ''
+      Priority: 102
+      EntryName: 年限祈福
+      Desc: 年限祈福
+    - _index: 4
+      bNewLabel: <F9>
+      Index: 16
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 384
+      EntryPic: ''
+      Priority: 100
+      EntryName: 至尊夺宝
+      Desc: 至尊夺宝
+    - _index: 5
+      bNewLabel: <F8>
+      Index: 69
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 571
+      EntryPic: res/uires/MechaTreasureHunt/res/image/EntryIcon_Big.gsa
+      Priority: 100
+      EntryName: 机甲狂欢
+      Desc: 机甲狂欢
+    - _index: 6
+      bNewLabel: <F9>
+      Index: 20
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 436
+      EntryPic: ''
+      Priority: 99
+      EntryName: 狂欢夺宝
+      Desc: 狂欢夺宝
+    - _index: 7
+      bNewLabel: <F9>
+      Index: 40
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 26
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 503
+      EntryPic: Res/uires/SpringMecha/Res/image/Theme6/EntryIcon_Big.gsa
+      Priority: 94
+      EntryName: 守岁·暖炉娘
+      Desc: 守岁·暖炉娘
+    - _index: 8
+      bNewLabel: <F9>
+      Index: 39
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 25
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 502
+      EntryPic: Res/uires/SpringMecha/Res/image/Theme5/EntryIcon_Big.gsa
+      Priority: 93
+      EntryName: 合欢·琉璃主
+      Desc: 合欢·琉璃主
+    - _index: 9
+      bNewLabel: <F9>
+      Index: 38
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 23
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 501
+      EntryPic: Res/uires/SpringMecha/Res/image/Theme4/EntryIcon_Big.gsa
+      Priority: 92
+      EntryName: 祈福·饴糖仙
+      Desc: 祈福·饴糖仙
+    - _index: 10
+      bNewLabel: <F9>
+      Index: 37
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 24
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 500
+      EntryPic: Res/uires/SpringMecha/Res/image/Theme3/EntryIcon_Big.gsa
+      Priority: 91
+      EntryName: 纳福·绘春生
+      Desc: 纳福·绘春生
+    - _index: 11
+      bNewLabel: <F9>
+      Index: 36
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 22
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 499
+      EntryPic: Res/uires/SpringMecha/Res/image/Theme2/EntryIcon_Big.gsa
+      Priority: 90
+      EntryName: 招财·玉如意
+      Desc: 招财·玉如意
+    - _index: 12
+      bNewLabel: <F8>
+      Index: 66
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 88
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 572
+      EntryPic: res/uires/OceanSuiteLottery/res/image/EntryIcon_Big.gsa
+      Priority: 90
+      EntryName: 至臻·龙游汐海
+      Desc: 至臻·龙游汐海
+    - _index: 13
+      bNewLabel: <F9>
+      Index: 57
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 444
+      EntryPic: ''
+      Priority: 80
+      EntryName: 冰魄甜心
+      Desc: 冰魄甜心
+    - _index: 14
+      bNewLabel: <F8>
+      Index: 67
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 81
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 574
+      EntryPic: res/uires/UniTreeLottery/res/image/EntryIcon_Big.gsa
+      Priority: 80
+      EntryName: 未来已至
+      Desc: 未来已至
+    - _index: 15
+      bNewLabel: <F8>
+      Index: 68
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 80
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 575
+      EntryPic: res/uires/HumanoidCar/res/image/Entry_YiXing.gsa
+      Priority: 80
+      EntryName: 红魔鬼降临
+      Desc: 红魔鬼降临
+    - _index: 16
+      bNewLabel: <F9>
+      Index: 63
+      Jump:
+        JumpTab2: 551
+        JumpTab1: 76
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: Res/uires/NorthDoor/Res/image/EntryIcon_Big.gsa
+      Priority: 70
+      EntryName: 空天神鹰
+      Desc: 空天神鹰
+    - _index: 17
+      bNewLabel: <F9>
+      Index: 60
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 75
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 535
+      EntryPic: Res/uires/WheelsTreasure/Res/image/EntryIcon_Big.gsa
+      Priority: 60
+      EntryName: 王者四驱夺宝
+      Desc: 王者四驱夺宝
+    - _index: 18
+      bNewLabel: <F9>
+      Index: 32
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 406
+      EntryPic: ''
+      Priority: 55
+      EntryName: 火热节拍
+      Desc: 火热节拍
+    - _index: 19
+      bNewLabel: <F9>
+      Index: 61
+      Jump:
+        JumpTab2: 586
+        JumpTab1: 71
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: Res/uires/SummerLuckyCardMain/Res/image/EntryIcon_Big.gsa
+      Priority: 50
+      EntryName: 夏日好运卡
+      Desc: 夏日好运卡
+    - _index: 20
+      bNewLabel: <F9>
+      Index: 5
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 59
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: res/uires/DailyRecharge/res/image/EntryIcon_Big.gsa
+      Priority: 40
+      EntryName: 每日充值豪礼
+      Desc: 每日充值豪礼
+    - _index: 21
+      bNewLabel: <F9>
+      Index: 6
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 340
+      EntryPic: ''
+      Priority: 40
+      EntryName: 山海神龙
+      Desc: 山海神龙
+    - _index: 22
+      bNewLabel: <F9>
+      Index: 62
+      Jump:
+        JumpTab2: 584
+        JumpTab1: 57
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: Res/uires/OriginCarSys/Res/image/CompBlindBoxLottery/entry_alien_fourwheel.gsa
+      Priority: 40
+      EntryName: 起源盲盒
+      Desc: 起源盲盒
+    - _index: 23
+      bNewLabel: <F9>
+      Index: 64
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 74
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 539
+      EntryPic: Res/uires/LineLittleDog/Res/image/EntryIcon_Big.gsa
+      Priority: 40
+      EntryName: 萌动启程
+      Desc: 萌动启程
+    - _index: 24
+      bNewLabel: <F9>
+      Index: 65
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 73
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 534
+      EntryPic: Res/uires/LineDogBlindBox/Res/image/EntryIcon_Big.gsa
+      Priority: 40
+      EntryName: 萌趣小卖部
+      Desc: 萌趣小卖部
+    - _index: 25
+      bNewLabel: <F9>
+      Index: 18
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 423
+      EntryPic: ''
+      Priority: 30
+      EntryName: 我就是那条龙
+      Desc: 我就是那条龙
+    - _index: 26
+      bNewLabel: <F9>
+      Index: 19
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 433
+      EntryPic: ''
+      Priority: 30
+      EntryName: 钢铁少女心
+      Desc: 钢铁少女心
+    - _index: 27
+      bNewLabel: <F9>
+      Index: 4
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 60
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: res/uires/TenBillionsSubsidy/res/image/EntryIcon_Big.gsa
+      Priority: 25
+      EntryName: 百亿补贴
+      Desc: 百亿补贴
+    - _index: 28
+      bNewLabel: <F9>
+      Index: 8
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 104
+      EntryPic: ''
+      Priority: 10
+      EntryName: 赛车换购
+      Desc: 赛车换购
+    - _index: 29
+      bNewLabel: <F9>
+      Index: 7
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 68
+      EntryPic: ''
+      Priority: 2
+      EntryName: 奇迹阁
+      Desc: 奇迹阁
+    - _index: 30
+      bNewLabel: <F9>
+      Index: 9
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 124
+      EntryPic: ''
+      Priority: 2
+      EntryName: 机甲激活
+      Desc: 机甲激活
+    - _index: 31
+      bNewLabel: <F9>
+      Index: 10
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 102
+      EntryPic: ''
+      Priority: 2
+      EntryName: 小橘子占卜屋
+      Desc: 小橘子占卜屋
+    - _index: 32
+      bNewLabel: <F9>
+      Index: 11
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 255
+      EntryPic: ''
+      Priority: 2
+      EntryName: 霓裳阁
+      Desc: 霓裳阁
+    - _index: 33
+      bNewLabel: <F9>
+      Index: 1
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 50
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: res/uires/DailyExtract/Res/image/EntryIcon_Big.gsa
+      Priority: 1
+      EntryName: 每日一抽
+      Desc: 每日一抽
+    - _index: 34
+      bNewLabel: <F9>
+      Index: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 49
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: res/uires/SecretTreasureCompass/res/EntryIcon_Big.gsa
+      Priority: 1
+      EntryName: 秘宝罗盘
+      Desc: 秘宝罗盘
+    - _index: 35
+      bNewLabel: <F9>
+      Index: 3
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 53
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+      EntryPic: res/uires/LobbyUI/Config/RecommandMenu/Res/RecommandMenuBig_Hexagram.gsa
+      Priority: 1
+      EntryName: 六芒星阵
+      Desc: 六芒星阵
+    - _index: 36
+      bNewLabel: <F9>
+      Index: 15
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 51
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 364
+      EntryPic: res/uires/UltimateMagicCircle/res/image/EntryIcon_Big.gsa
+      Priority: 1
+      EntryName: 终极自选魔法阵
+      Desc: 终极自选魔法阵
+    - _index: 37
+      bNewLabel: <F9>
+      Index: 58
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 420
+      EntryPic: ''
+      Priority: 60
+      EntryName: 山海九州行
+      Desc: 山海九州行
+    - _index: 38
+      bNewLabel: <F9>
+      Index: 30
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 35
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 190
+      EntryPic: res/uires/LobbyUI/Config/RecommandMenu/Res/RecommandMenuBig_OpenSendGift.gsa
+      Priority: 50
+      EntryName: 七日福利
+      Desc: 七日福利
+    - _index: 39
+      bNewLabel: <F9>
+      Index: 35
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 60
+      EntryPic: ''
+      Priority: 40
+      EntryName: 商城狂欢
+      Desc: 商城狂欢
+    - _index: 40
+      bNewLabel: <F9>
+      Index: 13
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 362
+      EntryPic: ''
+      Priority: 30
+      EntryName: 皮肤夺宝
+      Desc: 皮肤夺宝
+    - _index: 41
+      bNewLabel: <F9>
+      Index: 14
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 363
+      EntryPic: ''
+      Priority: 30
+      EntryName: 皮肤夺宝
+      Desc: 皮肤夺宝
+    - _index: 42
+      bNewLabel: <F9>
+      Index: 46
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 342
+      EntryPic: ''
+      Priority: 30
+      EntryName: 至美芳华
+      Desc: 至美芳华
+    - _index: 43
+      bNewLabel: <F9>
+      Index: 49
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 332
+      EntryPic: ''
+      Priority: 30
+      EntryName: 封神演义
+      Desc: 封神演义
+benefits_collection:
+  method: Co.Beta99_Business_HotBox_GetBenefitsCollectionInfo
+  activities:
+  - act_id: 2
+    source: packet_dumps_15588 seq 93956 (network_bin_15588_93956_special28346_after_full_msg24251_co.DispatchCoResponse_len32272.bin)
+    response:
+      EntryList:
+        _entries:
+        - _index: 1
+          bNewLabel: <F9>
+          Index: 1
+          Jump:
+            JumpTab2: 0
+            JumpTab1: 71
+            JumpURL: ''
+            JumpBuyCommodityID: 0
+            JumpShopTab1: ''
+            JumpType: 7
+            JumpFunc: ''
+            JumpShopTab2: 0
+            JumpEntryID: 586
+          Status: 1
+          BeginTime: 1783094400
+          EntryName: 夏日好运卡
+          EntryPic: Res/uires/SummerLuckyCardMain/Res/image/EntryIcon_Big.gsa
+      Act:
+        CDNCfg:
+          MidBackURL3: ''
+          ParticipateURL: ''
+          BackURL: ''
+          TitleURL: ''
+          BaseURL: https://down.speed.qq.com/CDNRes/Monetization/Activity/B102shuqiyingxiao/
+          ShopURL: ''
+          MidBackURL1: ''
+          BackMP4URL: ''
+          MidBackURL2: ''
+          MidDefaultURL: ''
+        DescURL: https://speed.qq.com/main.shtml
+        EndTime: 1788191999
+        BeginTime: 1783094400
+        MidActList:
+          _entries:
+          - _index: 1
+            SmallActName: 燃了！狂欢夺宝！
+            Index: 1
+            Jump:
+              JumpTab2: ''
+              JumpTab1: ''
+              JumpURL: ''
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 1
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: 436
+            EndTime: 1785513599
+            ShowAwardList: {}
+            Desc: 燃了！狂欢夺宝！
+            Status: 1
+            SmallActID: 2
+            TopLeftLabel: 2
+            bNewAct: <F9>
+            ActDesc: '狂欢夺宝限时加码
+
+              抽车送晶石！'
+            BeginTime: 1783094400
+            MidBackCDNURL: duobao_804a3d85.png
+            Style: ENUMSAS_NOITEM
+          - _index: 2
+            SmallActName: 紫钻狂欢
+            Index: 2
+            Jump:
+              JumpTab2: ''
+              JumpTab1: ''
+              JumpURL: https://speed.qq.com/cp/a20260616xrzz/index.html
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 3
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: ''
+            EndTime: 1788191999
+            ShowAwardList: {}
+            Desc: 紫钻狂欢
+            Status: 1
+            SmallActID: 3
+            TopLeftLabel: 2
+            bNewAct: <F9>
+            ActDesc: 组队共享超低折扣
+            BeginTime: 1783094400
+            MidBackCDNURL: zudui_60b5bb17.png
+            Style: ENUMSAS_NOITEM
+          - _index: 3
+            SmallActName: 6块钱交个朋友
+            Index: 3
+            Jump:
+              JumpTab2: ''
+              JumpTab1: 115
+              JumpURL: ''
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 7
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: 397
+            EndTime: 1788191999
+            ShowAwardList: {}
+            Desc: 6块钱交个朋友
+            Status: 1
+            SmallActID: 4
+            TopLeftLabel: 4
+            bNewAct: <F9>
+            ActDesc: '万件极品道具
+
+              仅此一次
+
+              必得永久'
+            BeginTime: 1783094400
+            MidBackCDNURL: pengyou_6657a92d.png
+            Style: ENUMSAS_NOITEM
+          - _index: 4
+            SmallActName: 百亿补贴
+            Index: 4
+            Jump:
+              JumpTab2: ''
+              JumpTab1: 60
+              JumpURL: ''
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 7
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: 399
+            EndTime: 1788191999
+            ShowAwardList: {}
+            Desc: 百亿补贴
+            Status: 1
+            SmallActID: 5
+            TopLeftLabel: 1
+            bNewAct: <F9>
+            ActDesc: '全场9折！
+
+              全场9折！'
+            BeginTime: 1783094400
+            MidBackCDNURL: baiyibu_8e5539d9.png
+            Style: ENUMSAS_NOITEM
+          - _index: 5
+            SmallActName: 超值充值返利
+            Index: 5
+            Jump:
+              JumpTab2: ''
+              JumpTab1: 37
+              JumpURL: ''
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 7
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: 278
+            EndTime: 1784822399
+            ShowAwardList: {}
+            Desc: 超值充值返利
+            Status: 1
+            SmallActID: 7
+            TopLeftLabel: 2
+            bNewAct: <F9>
+            ActDesc: '开通100%飞车币返还
+
+              登录领更多'
+            BeginTime: 1783094400
+            MidBackCDNURL: yuek_480b2809.png
+            Style: ENUMSAS_NOITEM
+          - _index: 6
+            SmallActName: 至尊夺宝
+            Index: 6
+            Jump:
+              JumpTab2: ''
+              JumpTab1: ''
+              JumpURL: ''
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 1
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: 384
+            EndTime: 1788191999
+            ShowAwardList: {}
+            Desc: 至尊夺宝晶石暴击UP
+            Status: 1
+            SmallActID: 8
+            TopLeftLabel: 2
+            bNewAct: <F9>
+            ActDesc: 晶石进度额外暴击UP
+            BeginTime: 1783094400
+            MidBackCDNURL: zhizun_f2a8d197.png
+            Style: ENUMSAS_NOITEM
+          - _index: 7
+            SmallActName: 夏日好运卡
+            Index: 7
+            Jump:
+              JumpTab2: 0
+              JumpTab1: 71
+              JumpURL: ''
+              JumpBuyCommodityID: ''
+              JumpShopTab1: ''
+              JumpType: 7
+              JumpFunc: ''
+              JumpShopTab2: ''
+              JumpEntryID: 586
+            EndTime: 1788710399
+            ShowAwardList: {}
+            Desc: 夏日好运卡
+            Status: 1
+            SmallActID: 9
+            TopLeftLabel: 2
+            bNewAct: <F9>
+            ActDesc: 夏日好运卡，好运一整夏
+            BeginTime: 1783094400
+            MidBackCDNURL: haoyunka_0b87ebbb.png
+            Style: 2
+          - _index: 8
+            Status: 3
+            BeginTime: 0
+            Index: 0
+        ActID: 2
+outer_entries:
+  method: Co.Beta99_Business_HotBox_GetOuterEntryInfo
+  entries:
+  - entry_id: 8
+    source: packet_dumps_15588 seq 91805 (network_bin_15588_91805_special28346_before_inner_body_at12_msg24251_len384.bin)
+    response:
+      Act:
+        EntryID: 464
+        EntryPara: 6
+        ActID: 8
+        MidJump:
+          JumpTab2: 0
+          JumpTab1: 0
+          JumpURL: ''
+          JumpBuyCommodityID: 0
+          JumpShopTab1: ''
+          JumpType: 1
+          JumpFunc: ''
+          JumpShopTab2: 0
+          JumpEntryID: 503
+        BackURL: ''
+        BackGround: nuanluniang1
+  - entry_id: 9
+    source: packet_dumps_15588 seq 78594 (network_bin_15588_78594_special28346_before_inner_body_at12_msg24251_len382.bin)
+    response:
+      Act:
+        EntryID: 470
+        EntryPara: 0
+        ActID: 9
+        MidJump:
+          JumpTab2: 0
+          JumpTab1: 0
+          JumpURL: ''
+          JumpBuyCommodityID: 0
+          JumpShopTab1: ''
+          JumpType: 1
+          JumpFunc: ''
+          JumpShopTab2: 0
+          JumpEntryID: 470
+        BackURL: ''
+        BackGround: nianxianqifu
+  - entry_id: 12
+    source: packet_dumps_15588 seq 99247 (network_bin_15588_99247_special28346_after_full_msg24251_co.DispatchCoResponse_len32272.bin)
+    response:
+      Act:
+        EntryID: 459
+        EntryPara: 0
+        ActID: 12
+        MidJump:
+          JumpTab2: 0
+          JumpTab1: 0
+          JumpURL: ''
+          JumpBuyCommodityID: 0
+          JumpShopTab1: ''
+          JumpType: 1
+          JumpFunc: ''
+          JumpShopTab2: 0
+          JumpEntryID: 459
+        BackURL: ''
+        BackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/2-LargeImageRedirect/yaogunchuanqi_bab61a67.png
+  - entry_id: 16
+    source: packet_dumps_15588 seq 78154 (network_bin_15588_78154_special28346_before_inner_body_at12_msg24251_len461.bin)
+    response:
+      Act:
+        EntryID: 406
+        EntryPara: 0
+        ActID: 16
+        MidJump:
+          JumpTab2: 0
+          JumpTab1: 0
+          JumpURL: ''
+          JumpBuyCommodityID: 0
+          JumpShopTab1: ''
+          JumpType: 1
+          JumpFunc: ''
+          JumpShopTab2: 0
+          JumpEntryID: 406
+        BackURL: ''
+        BackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/2-LargeImageRedirect/HRJP_b7919660.zip
+  - entry_id: 34
+    source: packet_dumps_15588 seq 78304 (network_bin_15588_78304_special28346_before_inner_body_at12_msg24251_len576.bin)
+    response:
+      Act:
+        EntryID: 0
+        RightJump:
+          JumpTab2: 0
+          JumpTab1: 0
+          JumpURL: https://speed.qq.com/webplat/info/news_version3/147/14551/14572/14578/m22624/202607/988372.shtml
+          JumpBuyCommodityID: 0
+          JumpShopTab1: ''
+          JumpType: 3
+          JumpFunc: ''
+          JumpShopTab2: 0
+          JumpEntryID: 0
+        EntryPara: 0
+        ActID: 34
+        BackURL: ''
+        BackGround: http://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/4-MonetizationPaymentTemplate/20260711Mini_90af1ffb.zip
+  - entry_id: 40
+    source: packet_dumps_18964 seq 5051 (network_bin_18964_5051_special28346_before_inner_body_at12_msg24251_len463.bin)
+    response:
+      Act:
+        EntryID: 0
+        RightJump:
+          JumpTab2: 0
+          JumpTab1: 0
+          JumpURL: https://speed.qq.com/cp/a20260714fc/index.html
+          JumpBuyCommodityID: 0
+          JumpShopTab1: ''
+          JumpType: 3
+          JumpFunc: ''
+          JumpShopTab2: 0
+          JumpEntryID: 0
+        EntryPara: 0
+        ActID: 40
+        BackURL: https://speed.qq.com/cp/a20260727sfdc/index.html
+        BackGround: ''
+task_entries:
+  method: Co.Beta100_Task_Base_MainDlg
+  entries:
+  - entry_id: 566
+    source: packet_dumps_18964 seq 5031 (network_bin_18964_5031_special28346_before_inner_body_at12_msg24251_len2297.bin)
+    response:
+      entryID: 566
+      buyAward:
+        _entries:
+        - _index: 1
+          taskID: 1
+          awards:
+            _entries:
+            - _index: 1
+              type: 1
+              item:
+                _entries:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 5
+                  m_iItemID: 174804
+                  m_iItemNum: 5
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+        - _index: 2
+          taskID: 2
+          awards:
+            _entries:
+            - _index: 1
+              type: 1
+              item:
+                _entries:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 5
+                  m_iItemID: 174804
+                  m_iItemNum: 15
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+        - _index: 3
+          taskID: 3
+          awards:
+            _entries:
+            - _index: 1
+              type: 1
+              item:
+                _entries:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 5
+                  m_iItemID: 174804
+                  m_iItemNum: 30
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+      baseCfg:
+        BgPicPath: https://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/4-MonetizationPaymentTemplate/202608T3_e1114b62.zip
+        DateEndStr: 2026-10-07 23-59-59
+        HuodongName: 终极幻影福利
+        SeasonID: 1
+        EndTime: 1791388799
+        Describe: 终影重生宝箱限时特惠!更多请前往商城购买！
+        HuodongRule: https://speed.qq.com/cp/a20260714fc/index.html?PcacheTime=1785340275
+        BeginTime: 1785513600
+        DateBeginStr: 2026-08-01 0-0-0
+      taskAward:
+        _entries:
+        - _index: 1
+          taskAwardCycle: 0
+          groups:
+            _entries:
+            - _index: 1
+              awards:
+                _entries:
+                - _index: 1
+                  type: 1
+                  m_iSuperMoney: 1
+                  m_iCoupons: 0
+              EndTime: 1749916799
+              BeginTime: 1746028800
+              groupID: 1
+          taskID: 999
+      taskInfo:
+        _entries:
+        - _index: 1
+          m_ucTaskID: 1
+          taskType: 2
+          EndTime: 1791388799
+          m_uiProcessRate: 0
+          m_auiChildTask:
+            _entries:
+            - _index: 1
+              isBuyTask: <F8>
+              m_uiAlreadyAwardNums: 0
+              groupId: 1
+              price: 496
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              originalPrice: 1240
+              childTaskType: 3
+              TaskDescribe: /C03终影重生宝箱(5个)/C00飞车币直购礼包
+              m_ucTaskID: 1
+          m_uiTaskFinishNums: 1
+          finishLogic: 0
+          taskAwardStatus: {}
+          BeginTime: 1785513600
+          taskStatus: 0
+          taskCycle: 1
+        - _index: 2
+          m_ucTaskID: 2
+          taskType: 2
+          EndTime: 1791388799
+          m_uiProcessRate: 0
+          m_auiChildTask:
+            _entries:
+            - _index: 1
+              isBuyTask: <F8>
+              m_uiAlreadyAwardNums: 0
+              groupId: 1
+              price: 1860
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              originalPrice: 3720
+              childTaskType: 3
+              TaskDescribe: /C03终影重生宝箱(15个)/C00飞车币直购礼包
+              m_ucTaskID: 2
+          m_uiTaskFinishNums: 1
+          finishLogic: 0
+          taskAwardStatus: {}
+          BeginTime: 1785513600
+          taskStatus: 0
+          taskCycle: 1
+        - _index: 3
+          m_ucTaskID: 3
+          taskType: 2
+          EndTime: 1791388799
+          m_uiProcessRate: 0
+          m_auiChildTask:
+            _entries:
+            - _index: 1
+              isBuyTask: <F8>
+              m_uiAlreadyAwardNums: 0
+              groupId: 1
+              price: 4460
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              originalPrice: 7440
+              childTaskType: 3
+              TaskDescribe: /C03终影重生宝箱(30个)/C00飞车币直购礼包
+              m_ucTaskID: 3
+          m_uiTaskFinishNums: 1
+          finishLogic: 0
+          taskAwardStatus: {}
+          BeginTime: 1785513600
+          taskStatus: 0
+          taskCycle: 1
+  - entry_id: 563
+    source: packet_dumps_18964 seq 5078 (network_bin_18964_5078_special28346_before_inner_body_at12_msg24251_len3076.bin)
+    response:
+      entryID: 563
+      buyAward:
+        _entries:
+        - _index: 1
+          taskID: 1
+          awards:
+            _entries:
+            - _index: 1
+              type: 1
+              item:
+                _entries:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 5
+                  m_iItemID: 163190
+                  m_iItemNum: 10
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+        - _index: 2
+          taskID: 2
+          awards:
+            _entries:
+            - _index: 1
+              type: 1
+              item:
+                _entries:
+                - _index: 1
+                  m_iAvailPeriod: 0
+                  m_ushItemType: 5
+                  m_iItemID: 163190
+                  m_iItemNum: 100
+              m_iSuperMoney: 0
+              m_iCoupons: 0
+      baseCfg:
+        BgPicPath: https://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/4-MonetizationPaymentTemplate/202608T3_e1114b62.zip
+        DateEndStr: 2026-10-07 23-59-59
+        HuodongName: 终极幻影福利
+        SeasonID: 1
+        EndTime: 1791388799
+        Describe: 活动期间完成指定任务即可领取奖励！
+        HuodongRule: https://speed.qq.com/cp/a20260714fc/index.html?PcacheTime=1785340275
+        BeginTime: 1785513600
+        DateBeginStr: 2026-08-01 0-0-0
+      taskAward:
+        _entries:
+        - _index: 1
+          taskAwardCycle: 0
+          groups:
+            _entries:
+            - _index: 1
+              awards:
+                _entries:
+                - _index: 1
+                  type: 1
+                  item:
+                    _entries:
+                    - _index: 1
+                      m_iAvailPeriod: 0
+                      m_ushItemType: 6
+                      m_iItemID: 174611
+                      m_iItemNum: 1
+                  m_iSuperMoney: 0
+                  m_iCoupons: 0
+              EndTime: 1791388799
+              BeginTime: 1785513600
+              groupID: 1
+          taskID: 1
+        - _index: 2
+          taskAwardCycle: 0
+          groups:
+            _entries:
+            - _index: 1
+              awards:
+                _entries:
+                - _index: 1
+                  type: 1
+                  item:
+                    _entries:
+                    - _index: 1
+                      m_iAvailPeriod: -1
+                      m_ushItemType: 6
+                      m_iItemID: 172461
+                      m_iItemNum: 1
+                  m_iSuperMoney: 0
+                  m_iCoupons: 0
+              EndTime: 1791388799
+              BeginTime: 1785513600
+              groupID: 1
+          taskID: 2
+        - _index: 3
+          taskAwardCycle: 0
+          groups:
+            _entries:
+            - _index: 1
+              awards:
+                _entries:
+                - _index: 1
+                  type: 1
+                  item:
+                    _entries:
+                    - _index: 1
+                      m_iAvailPeriod: -1
+                      m_ushItemType: 6
+                      m_iItemID: 172451
+                      m_iItemNum: 1
+                  m_iSuperMoney: 0
+                  m_iCoupons: 0
+              EndTime: 1791388799
+              BeginTime: 1785513600
+              groupID: 1
+          taskID: 3
+      taskInfo:
+        _entries:
+        - _index: 1
+          m_ucTaskID: 1
+          taskType: 1
+          EndTime: 1791388799
+          m_uiProcessRate: 0
+          m_auiChildTask:
+            _entries:
+            - _index: 1
+              m_ucTaskID: 1
+              m_uiAlreadyAwardNums: 0
+              ownItemList:
+                _entries:
+                - _index: 1
+                  isOwned: 0
+                  itemId: 171070
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              isOwnItemTask: <F8>
+              childTaskType: 0
+              TaskDescribe: /C00拥有永久/C03 T3机甲皮肤「终极幻影-重生」
+              groupId: 1
+          m_uiTaskFinishNums: 1
+          finishLogic: 0
+          taskAwardStatus:
+            _scalars:
+            - 1
+            - 0
+          BeginTime: 1785513600
+          taskStatus: 0
+          taskCycle: 1
+        - _index: 2
+          m_ucTaskID: 2
+          taskType: 1
+          EndTime: 1791388799
+          m_uiProcessRate: 0
+          m_auiChildTask:
+            _entries:
+            - _index: 1
+              m_ucTaskID: 2
+              m_uiAlreadyAwardNums: 0
+              ownItemList:
+                _entries:
+                - _index: 1
+                  isOwned: 0
+                  itemId: 172460
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              isOwnItemTask: <F8>
+              childTaskType: 0
+              TaskDescribe: /C00拥有永久/C03女「珠纱雅韵服饰」
+              groupId: 1
+            - _index: 2
+              m_ucTaskID: 2
+              m_uiAlreadyAwardNums: 0
+              ownItemList:
+                _entries:
+                - _index: 1
+                  isOwned: 0
+                  itemId: 172452
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              isOwnItemTask: <F8>
+              childTaskType: 0
+              TaskDescribe: /C00拥有永久/C03女「珠纱雅韵发饰」
+              groupId: 2
+          m_uiTaskFinishNums: 2
+          finishLogic: 0
+          taskAwardStatus:
+            _scalars:
+            - 1
+            - 0
+          BeginTime: 1785513600
+          taskStatus: 0
+          taskCycle: 1
+        - _index: 3
+          m_ucTaskID: 3
+          taskType: 1
+          EndTime: 1791388799
+          m_uiProcessRate: 0
+          m_auiChildTask:
+            _entries:
+            - _index: 1
+              m_ucTaskID: 3
+              m_uiAlreadyAwardNums: 0
+              ownItemList:
+                _entries:
+                - _index: 1
+                  isOwned: 0
+                  itemId: 172450
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              isOwnItemTask: <F8>
+              childTaskType: 0
+              TaskDescribe: /C00拥有永久/C03男「珠纱雅韵服饰」
+              groupId: 1
+            - _index: 2
+              m_ucTaskID: 3
+              m_uiAlreadyAwardNums: 0
+              ownItemList:
+                _entries:
+                - _index: 1
+                  isOwned: 0
+                  itemId: 172442
+              m_uiProcessRate: 0
+              m_uiTaskFinishNums: 1
+              isOwnItemTask: <F8>
+              childTaskType: 0
+              TaskDescribe: /C00拥有永久/C03男「珠纱雅韵发饰」
+              groupId: 2
+          m_uiTaskFinishNums: 2
+          finishLogic: 0
+          taskAwardStatus:
+            _scalars:
+            - 1
+            - 0
+          BeginTime: 1785513600
+          taskStatus: 0
+          taskCycle: 1
+
+battle_pass_entry:
+  method: Co.Beta97_Battle_Pass_Entry
+  source: official open_hot response idx10 captured for evidence; current server still handles this in SpeedPass code path
+  response:
+    PlayerInfo:
+      CurLevel: 44
+      CurExp: 5
+      NeedExp: 100
+    AwardInfo:
+      m_iAvailPeriod: -1
+      m_ushItemType: 1
+      m_iItemID: 168660
+      m_iItemNum: 1
+    AwardStatus: 1
+gift_boxes:
+  method: Co.Beta99_Business_HotBox_GetGiftBoxInfo
+  boxes:
+  - act_id: 2
+    gift_box_id: 2
+    source: packet_dumps_15588 seq 92038 (network_bin_15588_92038_special28346_before_inner_body_at12_msg24251_len1030.bin)
+    response:
+      ActItemID: 163263
+      ActAwardName: 至尊·逐日
+      GiftBoxID: 2
+      EndTime: 1789315199
+      GiftBoxName: 年限祈福
+      Desc: 祈愿灵符
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 1
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163043
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 1
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163044
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 14107
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 13703
+          GroupID: 4
+          BackGround: ''
+        - _index: 5
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 14106
+          GroupID: 5
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 20
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 3000
+      BeginTime: 1783699200
+      TitleColor: 2
+      Priority: 3000
+  - act_id: 2
+    gift_box_id: 3
+    source: packet_dumps_15588 seq 92083 (network_bin_15588_92083_special28346_before_inner_body_at12_msg24251_len1007.bin)
+    response:
+      ActItemID: 146543
+      ActAwardName: 天官赐福
+      GiftBoxID: 3
+      EndTime: 1789315199
+      GiftBoxName: 天官赐福
+      Desc: X次元原石
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163037
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163039
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163041
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163040
+          GroupID: 4
+          BackGround: ''
+        - _index: 5
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 37
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163042
+          GroupID: 5
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 22
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 3000
+      BeginTime: 1783699200
+      TitleColor: 2
+      Priority: 3000
+  - act_id: 2
+    gift_box_id: 5
+    source: packet_dumps_15588 seq 92191 (network_bin_15588_92191_special28346_before_inner_body_at12_msg24251_len767.bin)
+    response:
+      ActItemID: 165328
+      ActAwardName: 臻藏-摇滚传奇
+      GiftBoxID: 5
+      EndTime: 1789833599
+      GiftBoxName: 臻藏-摇滚传奇
+      Desc: 摇滚传奇宝箱
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 1
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 162917
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 1
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 157778
+          GroupID: 2
+          BackGround: ''
+      BannerColor: 1
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 459
+      SelectPriority: 3000
+      BeginTime: 1783699200
+      TitleColor: 1
+      Priority: 3000
+  - act_id: 2
+    gift_box_id: 6
+    source: packet_dumps_15588 seq 92130 (network_bin_15588_92130_special28346_before_inner_body_at12_msg24251_len908.bin)
+    response:
+      ActItemID: 163260
+      ActAwardName: 火热节拍
+      GiftBoxID: 6
+      EndTime: 1789833599
+      GiftBoxName: 火热节拍
+      Desc: 音符
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163048
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163047
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163049
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 163046
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 406
+      SelectPriority: 1000
+      BeginTime: 1783699200
+      TitleColor: 2
+      Priority: 1000
+  - act_id: 2
+    gift_box_id: 87
+    source: packet_dumps_15588 seq 92283 (network_bin_15588_92283_special28346_before_inner_body_at12_msg24251_len875.bin)
+    response:
+      ActItemID: 168220
+      ActAwardName: 酷洛米剧场
+      GiftBoxID: 87
+      EndTime: 1786895999
+      GiftBoxName: 酷洛米剧场
+      Desc: 酷洛米币
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 168663
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 168558
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 106673
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 126347
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 61
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 516
+      SelectPriority: 1000
+      BeginTime: 1780243200
+      TitleColor: 2
+      Priority: 1000
+  - act_id: 2
+    gift_box_id: 88
+    source: packet_dumps_15588 seq 92323 (network_bin_15588_92323_special28346_before_inner_body_at12_msg24251_len890.bin)
+    response:
+      ActItemID: 168226
+      ActAwardName: 源废土集结令
+      GiftBoxID: 88
+      EndTime: 1785686399
+      GiftBoxName: 源废土集结令
+      Desc: 废土徽章
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 168552
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 168554
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 171082
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 168553
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 44
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 527
+      SelectPriority: 1000
+      BeginTime: 1780243200
+      TitleColor: 2
+      Priority: 1000
+  - act_id: 2
+    gift_box_id: 10
+    source: packet_dumps_15588 seq 92370 (network_bin_15588_92370_special28346_before_inner_body_at12_msg24251_len933.bin)
+    response:
+      ActItemID: 148390
+      ActAwardName: 至尊夺宝
+      GiftBoxID: 10
+      EndTime: 1788191999
+      GiftBoxName: 至尊夺宝
+      Desc: 至尊夺宝券
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 129099
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 98830
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 106676
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 107370
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 384
+      SelectPriority: 500
+      BeginTime: 1772294400
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 11
+    source: packet_dumps_15588 seq 92485 (network_bin_15588_92485_special28346_before_inner_body_at12_msg24251_len926.bin)
+    response:
+      ActItemID: 99662
+      ActAwardName: 狂欢夺宝
+      GiftBoxID: 11
+      EndTime: 1785513599
+      GiftBoxName: 狂欢夺宝
+      Desc: 夺宝券
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 150525
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 119059
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 88865
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          Subscript: 85
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 150537
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 436
+      SelectPriority: 500
+      BeginTime: 1783094400
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 53
+    source: packet_dumps_15588 seq 91976 (network_bin_15588_91976_special28346_after_full_msg24251_co.DispatchCoResponse_len32272.bin)
+    response:
+      ActItemID: 138381
+      ActAwardName: 至美芳华
+      GiftBoxID: 53
+      EndTime: 1784476799
+      GiftBoxName: 至美芳华
+      Desc: 芳华录
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 138421
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 138417
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 83039
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 138423
+          GroupID: 4
+          BackGround: ''
+        - _index: 5
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 16
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 139550
+          GroupID: 5
+          BackGround: ''
+        - _index: 6
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 16
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 139542
+          GroupID: 5
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 342
+      SelectPriority: 500
+      BeginTime: 1781798400
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 62
+    source: packet_dumps_15588 seq 92525 (network_bin_15588_92525_special28346_before_inner_body_at12_msg24251_len870.bin)
+    response:
+      ActItemID: 144339
+      ActAwardName: 封神演义
+      GiftBoxID: 62
+      EndTime: 1784476799
+      GiftBoxName: 封神演义
+      Desc: 封神榜
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 146548
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 81293
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 88683
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 116737
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 332
+      SelectPriority: 500
+      BeginTime: 1781798400
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 100
+    source: packet_dumps_15588 seq 92565 (network_bin_15588_92565_special28346_before_inner_body_at12_msg24251_len800.bin)
+    response:
+      ActItemID: 156044
+      ActAwardName: 元气石
+      GiftBoxID: 100
+      EndTime: 1787500799
+      GiftBoxName: 钢铁少女心
+      Desc: 元气石
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 157774
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 157775
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 157771
+          GroupID: 3
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 433
+      SelectPriority: 500
+      BeginTime: 1783699200
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 101
+    source: packet_dumps_15588 seq 92640 (network_bin_15588_92640_special28346_before_inner_body_at12_msg24251_len788.bin)
+    response:
+      ActItemID: 174994
+      ActAwardName: 至尊·奥丁
+      GiftBoxID: 101
+      EndTime: 1787500799
+      GiftBoxName: 至尊·奥丁
+      Desc: 至尊·奥丁
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 144521
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 106674
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 123507
+          GroupID: 3
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 174994
+        JumpShopTab1: ''
+        JumpType: 5
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 500
+      BeginTime: 1783699200
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 103
+    source: packet_dumps_15588 seq 92685 (network_bin_15588_92685_special28346_before_inner_body_at12_msg24251_len795.bin)
+    response:
+      ActItemID: 174821
+      ActAwardName: 空天神鹰
+      GiftBoxID: 103
+      EndTime: 1789919999
+      GiftBoxName: 空天神鹰
+      Desc: 空天神鹰
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 171048
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 171049
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 96787
+          GroupID: 3
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 76
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 551
+      SelectPriority: 500
+      BeginTime: 1783699200
+      TitleColor: 2
+      Priority: 500
+  - act_id: 2
+    gift_box_id: 90
+    source: packet_dumps_15588 seq 92746 (network_bin_15588_92746_special28346_before_inner_body_at12_msg24251_len741.bin)
+    response:
+      ActItemID: 168312
+      ActAwardName: 酷洛米雷诺宝箱
+      GiftBoxID: 90
+      EndTime: 1784476799
+      GiftBoxName: 酷洛米雷诺宝箱
+      Desc: 酷洛米雷诺宝箱
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 168557
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 167287
+          GroupID: 2
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 168312
+        JumpShopTab1: ''
+        JumpType: 5
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 400
+      BeginTime: 1780243200
+      TitleColor: 2
+      Priority: 400
+  - act_id: 2
+    gift_box_id: 99
+    source: packet_dumps_15588 seq 92786 (network_bin_15588_92786_special28346_before_inner_body_at12_msg24251_len734.bin)
+    response:
+      ActItemID: 174780
+      ActAwardName: 王者四驱夺宝
+      GiftBoxID: 99
+      EndTime: 1787759999
+      GiftBoxName: 王者四驱夺宝
+      Desc: 王者四驱夺宝券
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 171047
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 130776
+          GroupID: 2
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 75
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 7
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 535
+      SelectPriority: 102
+      BeginTime: 1782921600
+      TitleColor: 2
+      Priority: 102
+  - act_id: 2
+    gift_box_id: 89
+    source: packet_dumps_15588 seq 92833 (network_bin_15588_92833_special28346_before_inner_body_at12_msg24251_len938.bin)
+    response:
+      ActItemID: 168283
+      ActAwardName: 甜梦酷洛米礼盒
+      GiftBoxID: 89
+      EndTime: 1785686399
+      GiftBoxName: 甜梦酷洛米礼盒
+      Desc: 甜梦酷洛米礼盒
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 170093
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 149587
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 153176
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 139066
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 168283
+        JumpShopTab1: ''
+        JumpType: 5
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 101
+      BeginTime: 1780243200
+      TitleColor: 2
+      Priority: 101
+  - act_id: 2
+    gift_box_id: 97
+    source: packet_dumps_15588 seq 92853 (network_bin_15588_92853_special28346_before_inner_body_at12_msg24251_len842.bin)
+    response:
+      ActItemID: 168284
+      ActAwardName: 酷洛米魅影礼盒
+      GiftBoxID: 97
+      EndTime: 1786895999
+      GiftBoxName: 酷洛米魅影礼盒
+      Desc: 酷洛米魅影礼盒
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 16
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 171212
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 170050
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 166038
+          GroupID: 1
+          BackGround: ''
+      BannerColor: 5
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 168284
+        JumpShopTab1: ''
+        JumpType: 5
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 101
+      BeginTime: 1781798400
+      TitleColor: 5
+      Priority: 101
+  - act_id: 2
+    gift_box_id: 98
+    source: packet_dumps_15588 seq 92901 (network_bin_15588_92901_special28346_before_inner_body_at12_msg24251_len732.bin)
+    response:
+      ActItemID: 156041
+      ActAwardName: 山海九州行
+      GiftBoxID: 98
+      EndTime: 1785081599
+      GiftBoxName: 山海九州行
+      Desc: 山海九州令
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 153754
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 2
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 98263
+          GroupID: 2
+          BackGround: ''
+      BannerColor: 2
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 0
+        JumpShopTab1: ''
+        JumpType: 1
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 420
+      SelectPriority: 101
+      BeginTime: 1782403200
+      TitleColor: 2
+      Priority: 101
+  - act_id: 2
+    gift_box_id: 102
+    source: packet_dumps_15588 seq 92948 (network_bin_15588_92948_special28346_before_inner_body_at12_msg24251_len841.bin)
+    response:
+      ActItemID: 166063
+      ActAwardName: 鎏音入梦礼盒
+      GiftBoxID: 102
+      EndTime: 1787500799
+      GiftBoxName: 鎏音入梦礼盒
+      Desc: 鎏音入梦礼盒
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 4
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 167623
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 172191
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 166036
+          GroupID: 1
+          BackGround: ''
+      BannerColor: 5
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 166063
+        JumpShopTab1: ''
+        JumpType: 5
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 101
+      BeginTime: 1783699200
+      TitleColor: 5
+      Priority: 101
+  - act_id: 2
+    gift_box_id: 93
+    source: packet_dumps_15588 seq 92975 (network_bin_15588_92975_special28346_before_inner_body_at12_msg24251_len923.bin)
+    response:
+      ActItemID: 166084
+      ActAwardName: 狐兔秘语礼盒
+      GiftBoxID: 93
+      EndTime: 1785081599
+      GiftBoxName: 狐兔秘语礼盒
+      Desc: 狐兔秘语礼盒
+      ShowAwardList:
+        _entries:
+        - _index: 1
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 166645
+          GroupID: 1
+          BackGround: ''
+        - _index: 2
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 155153
+          GroupID: 2
+          BackGround: ''
+        - _index: 3
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 155193
+          GroupID: 3
+          BackGround: ''
+        - _index: 4
+          ItemNum: 1
+          ItemLevel: 5
+          Subscript: 32
+          bShowModel: <F8>
+          AvailPeriod: -1
+          ItemID: 156862
+          GroupID: 4
+          BackGround: ''
+      BannerColor: 5
+      Jump:
+        JumpTab2: 0
+        JumpTab1: 0
+        JumpURL: ''
+        JumpBuyCommodityID: 166084
+        JumpShopTab1: ''
+        JumpType: 5
+        JumpFunc: ''
+        JumpShopTab2: 0
+        JumpEntryID: 0
+      SelectPriority: 105
+      BeginTime: 1781280000
+      TitleColor: 5
+      Priority: 100

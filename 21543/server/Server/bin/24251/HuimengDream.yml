@@ -1,0 +1,2822 @@
+﻿# 绘梦人生 / Beta101 DrawDream 运营配置（单文件版）
+# 说明：你不想拆文件，所以活动规则、奖池、兑换、礼包全部合并在这一份。
+# 改法：先改上面的 cost/draw；下面三块就是三张运营表：award_pool、exchange_shop、gift_packs。
+# 完整官方解码大文件保留：24251/HuimengDream.full.official_20260519_1719.yml
+
+huimeng_dream:
+  enabled: true
+  activity_id: 20260501
+  prefer_official_raw: true  # UI 继续用官方 raw 防白屏；业务逻辑走下面配置
+  disabled_result_code: 1
+
+  business:
+    title: "绘梦人生"
+    owner_note: "单文件商业运营版：不要找别的 YML，奖池/兑换/礼包都在本文件下面。"
+    ticket: { item_id: 168306, name: "绘梦卡券" }
+    piece:  { item_id: 168308, name: "绘梦积分" }
+
+  protocol:
+    quickrpc_msgid: 24251
+    info_cmd: Co.ReqBeta101DrawDreamInfo
+    award_cmd: Co.ReqBeta101DrawDreamAwardOpt
+
+  time:
+    open_date: 20260501
+    open_time: 0
+    close_date: 20260630
+    close_time: 235959
+    award_close_date: 20260630
+    award_close_time: 235959
+
+  cost:
+    item_id: 168306        # 绘梦卡券
+    piece_item_id: 168308  # 绘梦积分/兑换消耗
+    fenjie_item_id: 168308 # 分解返还积分
+    once: 1              # 单抽消耗几张卡券
+    ten: 10
+    fifty: 50
+    strict_draw_cost: true # true=卡券不足不能抽
+    buy_card_free: false   # false=购买礼包扣 BaseInfo.SuperMoney 点券；true=免费发卡券
+    charge_currency: supermoney # 当前源码的“点券”字段是 BaseInfo.SuperMoney / Client->SuperMoney
+
+  ops:
+    draw_once: 1
+    decompose: 2
+    claim: 3
+    progress_claim: 4   # 进度奖励领取
+    exchange: 5
+    temp_box: 6
+    gift: 9
+    buy_card: 10
+
+  draw:
+    store_to_temp: true # 抽中先进入暂存箱
+    guarantee_final_at: 50 # 保底预留
+    baoji_base_count: 50  # 每 50 次累计 1 个绘梦画笔/展台次数
+    use_replay_draws: false # false=不固定首抽，按奖池权重随机
+    replay_draws:
+      # 固定首抽/前几抽；不想固定就删掉列表。
+      - draw_no: 1
+        name: "潮动足球发饰"
+        award_idx: 79
+        item_id: 141197
+        item_num: 1
+        item_type: 1
+        avail_period: 168 # 168天
+
+  # ========================
+  # 展台/进度奖励配置
+  # base_cfg 给主界面用；score_awards 是抽奖次数进度奖励；other_awards 是绘梦展台展示池。
+  # ========================
+  base_cfg:
+    ShowItemIdByFemale: 164642
+    ShowItemIdByMale: 164632
+    iCostNum50Time: 50
+    iAwardCloseTime: 235959
+    iOpenTime: 0
+    ExchangePieceID: 168308
+    ActivityDesc: 1元即有机会赢首发稀世时装！
+    iCloseTime: 235959
+    iAwardCloseDate: 20260630
+    iCostItemID: 168306
+    iCloseDate: 20260630
+    ActivityName: 绘梦人生
+    SplBaoJiAwardCount: 0
+    DrawCount: 0
+    ExchangeItemNum: 0
+    CostItemNum: 0
+    iCostNumOneTime: 1
+    iOpenDate: 20260501
+    iCostNum10Time: 10
+    iFenJieItemID: 168308
+    iSeasonId: 1
+    BaoJiBaseCount: 50
+    AccuScore: 0
+  score_awards:
+  - _index: 1
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 165950
+    status: 0
+    needScore: 10
+    specialFlag: 1
+  - _index: 2
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 166027
+    status: 0
+    needScore: 20
+    specialFlag: 2
+  - _index: 3
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 165951
+    status: 0
+    needScore: 30
+    specialFlag: 3
+  - _index: 4
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 165902
+    status: 0
+    needScore: 40
+    specialFlag: 4
+  - _index: 5
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 164493
+    status: 0
+    needScore: 50
+    specialFlag: 5
+  - _index: 6
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 166010
+    status: 0
+    needScore: 75
+    specialFlag: 6
+  - _index: 7
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 164501
+    status: 0
+    needScore: 100
+    specialFlag: 7
+  - _index: 8
+    item:
+    - _index: 1
+      m_iAvailPeriod: 0
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 165934
+    status: 0
+    needScore: 130
+    specialFlag: 8
+  - _index: 9
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 165865
+    status: 0
+    needScore: 150
+    specialFlag: 9
+  - _index: 10
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 165963
+    status: 0
+    needScore: 180
+    specialFlag: 10
+  - _index: 11
+    item:
+    - _index: 1
+      m_iAvailPeriod: 0
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 168374
+    status: 0
+    needScore: 200
+    specialFlag: 11
+  - _index: 12
+    item:
+    - _index: 1
+      m_iAvailPeriod: -1
+      m_ushItemType: 0
+      m_iSuperMoney: 0
+      m_iItemNum: 1
+      m_iCoupons: 0
+      m_iItemID: 170865
+    status: 0
+    needScore: 250
+    specialFlag: 12
+  other_awards:
+  - _index: 1
+    '1':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 1
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 155908
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '2':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 2
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 155916
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '3':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 3
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 158282
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '4':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 4
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 60413
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 60412
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '5':
+    - _index: availperiod
+      value: 0
+    - _index: award_idx
+      value: 5
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 0
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 168308
+    - _index: itemnum
+      value: 3
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '6':
+    - _index: availperiod
+      value: 0
+    - _index: award_idx
+      value: 6
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 0
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 168308
+    - _index: itemnum
+      value: 4
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '7':
+    - _index: availperiod
+      value: 0
+    - _index: award_idx
+      value: 7
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 0
+    - _index: item_type
+      value: 1
+    - _index: itemid
+      value: 168308
+    - _index: itemnum
+      value: 5
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+  - _index: 2
+    '1':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 1
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 164573
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 164563
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '2':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 2
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 158436
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 158426
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '3':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 3
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 82512
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 82502
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '4':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 4
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 128824
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 128818
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '5':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 5
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 134005
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 133999
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '6':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 6
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 141197
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 141191
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '7':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 7
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 155908
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '8':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 8
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 155916
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '9':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 9
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 158282
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '10':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 10
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 5
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 60413
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 60412
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+  - _index: 3
+    '1':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 1
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 156527
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 156517
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '2':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 2
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 149146
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 149136
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '3':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 3
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 151282
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 151272
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '4':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 4
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 154682
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 154672
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '5':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 5
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 137191
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 137181
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '6':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 6
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 145929
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 145919
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '7':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 7
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 25
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 164581
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 164571
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '8':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 8
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 25
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 158444
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 158434
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '9':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 9
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 25
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 82520
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 82510
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '10':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 10
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 25
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 128829
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 128823
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '11':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 11
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 25
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 134010
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 134004
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '12':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 12
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 25
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 141202
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 141196
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '13':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 13
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 167414
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 167404
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '14':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 14
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 156977
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 156967
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '15':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 15
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 153661
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 153674
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '16':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 16
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 156519
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 156509
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '17':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 17
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 149138
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 149128
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '18':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 18
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 151274
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 151264
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '19':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 19
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 154674
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 154664
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '20':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 20
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 137183
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 137173
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '21':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 21
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 145921
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 145911
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '22':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 22
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 155871
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 155870
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '23':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 23
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 15
+    - _index: item_type
+      value: 2
+    - _index: itemid
+      value: 155869
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 155868
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+  - _index: 4
+    '1':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 1
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 130
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 132176
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '2':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 2
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 75
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 103339
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '3':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 3
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 75
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 81208
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '4':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 4
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 85
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 167422
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 167412
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '5':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 5
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 85
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 156985
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 156975
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '6':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 6
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 85
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 153669
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 153682
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '7':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 7
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 157953
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 157951
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '8':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 8
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 158114
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 158113
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '9':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 9
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 156527
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 156517
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '10':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 10
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 149146
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 149136
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '11':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 11
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 151282
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 151272
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '12':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 12
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 154682
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 154672
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '13':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 13
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 137191
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 137181
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '14':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 14
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 145929
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 145919
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+  - _index: 5
+    '1':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 1
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 300
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 164642
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 164632
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '2':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 2
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 300
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 133199
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 133189
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '3':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 3
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 130
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 132176
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '4':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 4
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 75
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 103339
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '5':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 5
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 75
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 81208
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 0
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '6':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 6
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 85
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 167422
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 167412
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '7':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 7
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 85
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 156985
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 156975
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '8':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 8
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 85
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 153669
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 153682
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+    '9':
+    - _index: availperiod
+      value: -1
+    - _index: award_idx
+      value: 9
+    - _index: coupons
+      value: 0
+    - _index: fenjie_num
+      value: 35
+    - _index: item_type
+      value: 3
+    - _index: itemid
+      value: 157953
+    - _index: itemnum
+      value: 1
+    - _index: otheritemid
+      value: 157951
+    - _index: specialType
+      value: 1
+    - _index: supermoney
+      value: 0
+
+  # ========================
+  # 表1：抽奖奖池
+  # weight=概率权重；fenjie_num=分解返还积分；avail_period=-1永久。
+  # ========================
+  award_pool:
+    defaults:
+      item_num: 1
+      item_type: 1
+      avail_period: -1 # 永久
+      fenjie_num: 1
+      weight: 100
+      direct_to_bag: false
+    items:
+      - idx: 1
+        name: "稀世·绘梦人生套装"
+        item_id: 164642
+        fenjie_num: 300
+        other_item_id: 164632
+      - idx: 2
+        name: "稀世·浮世凌霄套装"
+        item_id: 133199
+        fenjie_num: 300
+        other_item_id: 133189
+      - idx: 3
+        name: "稀世·浮世凌霄座椅"
+        item_id: 132176
+        fenjie_num: 130
+      - idx: 4
+        name: "漫游仙境座椅"
+        item_id: 103339
+        fenjie_num: 75
+      - idx: 5
+        name: "童语小黄鸭座椅"
+        item_id: 81208
+        fenjie_num: 75
+      - idx: 6
+        name: "幻海鳞歌服饰"
+        item_id: 167422
+        fenjie_num: 85
+        other_item_id: 167412
+      - idx: 7
+        name: "烈风灼龙服饰"
+        item_id: 156985
+        fenjie_num: 85
+        other_item_id: 156975
+      - idx: 8
+        name: "魅果夜影服饰"
+        item_id: 153669
+        fenjie_num: 85
+        other_item_id: 153682
+      - idx: 9
+        name: "水碧荷芳服饰"
+        item_id: 156527
+        fenjie_num: 35
+        other_item_id: 156517
+      - idx: 10
+        name: "虹映银辉服饰"
+        item_id: 149146
+        fenjie_num: 35
+        other_item_id: 149136
+      - idx: 11
+        name: "花绘晨谣服饰"
+        item_id: 151282
+        fenjie_num: 35
+        other_item_id: 151272
+      - idx: 12
+        name: "次元魅影服饰"
+        item_id: 154682
+        fenjie_num: 35
+        other_item_id: 154672
+      - idx: 13
+        name: "夜色红玫服饰"
+        item_id: 137191
+        fenjie_num: 35
+        other_item_id: 137181
+      - idx: 14
+        name: "神域幻想服饰"
+        item_id: 145929
+        fenjie_num: 35
+        other_item_id: 145919
+      - idx: 15
+        name: "烈风灼龙轮滑"
+        item_id: 157953
+        fenjie_num: 35
+        other_item_id: 157951
+      - idx: 16
+        name: "水碧荷芳手饰"
+        item_id: 158114
+        fenjie_num: 35
+        other_item_id: 158113
+      - idx: 17
+        name: "漫游仙境座椅"
+        item_id: 103339
+        avail_period: 168 # 168天
+        fenjie_num: 8
+      - idx: 18
+        name: "童语小黄鸭座椅"
+        item_id: 81208
+        avail_period: 168 # 168天
+        fenjie_num: 8
+      - idx: 19
+        name: "幻海鳞歌服饰"
+        item_id: 167422
+        avail_period: 168 # 168天
+        fenjie_num: 8
+        other_item_id: 167412
+      - idx: 20
+        name: "烈风灼龙服饰"
+        item_id: 156985
+        avail_period: 168 # 168天
+        fenjie_num: 8
+        other_item_id: 156975
+      - idx: 21
+        name: "魅果夜影服饰"
+        item_id: 153669
+        avail_period: 168 # 168天
+        fenjie_num: 8
+        other_item_id: 153682
+      - idx: 22
+        name: "水碧荷芳服饰"
+        item_id: 156527
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 156517
+      - idx: 23
+        name: "虹映银辉服饰"
+        item_id: 149146
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 149136
+      - idx: 24
+        name: "花绘晨谣服饰"
+        item_id: 151282
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 151272
+      - idx: 25
+        name: "次元魅影服饰"
+        item_id: 154682
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 154672
+      - idx: 26
+        name: "夜色红玫服饰"
+        item_id: 137191
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 137181
+      - idx: 27
+        name: "神域幻想服饰"
+        item_id: 145929
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 145919
+      - idx: 28
+        name: "烈风灼龙轮滑"
+        item_id: 157953
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 157951
+      - idx: 29
+        name: "水碧荷芳手饰"
+        item_id: 158114
+        avail_period: 168 # 168天
+        fenjie_num: 3
+        other_item_id: 158113
+      - idx: 30
+        name: "冬日手记服饰"
+        item_id: 164581
+        fenjie_num: 25
+        other_item_id: 164571
+      - idx: 31
+        name: "白茶记事服饰"
+        item_id: 158444
+        fenjie_num: 25
+        other_item_id: 158434
+      - idx: 32
+        name: "金魅海军服饰"
+        item_id: 82520
+        fenjie_num: 25
+        other_item_id: 82510
+      - idx: 33
+        name: "清幽白鸽服饰"
+        item_id: 128829
+        fenjie_num: 25
+        other_item_id: 128823
+      - idx: 34
+        name: "萌熊庆典服饰"
+        item_id: 134010
+        fenjie_num: 25
+        other_item_id: 134004
+      - idx: 35
+        name: "潮动足球服饰"
+        item_id: 141202
+        fenjie_num: 25
+        other_item_id: 141196
+      - idx: 36
+        name: "幻海鳞歌发饰"
+        item_id: 167414
+        fenjie_num: 15
+        other_item_id: 167404
+      - idx: 37
+        name: "烈风灼龙发饰"
+        item_id: 156977
+        fenjie_num: 15
+        other_item_id: 156967
+      - idx: 38
+        name: "魅果夜影发饰"
+        item_id: 153661
+        fenjie_num: 15
+        other_item_id: 153674
+      - idx: 39
+        name: "水碧荷芳发饰"
+        item_id: 156519
+        fenjie_num: 15
+        other_item_id: 156509
+      - idx: 40
+        name: "虹映银辉发饰"
+        item_id: 149138
+        fenjie_num: 15
+        other_item_id: 149128
+      - idx: 41
+        name: "花绘晨谣发饰"
+        item_id: 151274
+        fenjie_num: 15
+        other_item_id: 151264
+      - idx: 42
+        name: "次元魅影发饰"
+        item_id: 154674
+        fenjie_num: 15
+        other_item_id: 154664
+      - idx: 43
+        name: "夜色红玫发饰"
+        item_id: 137183
+        fenjie_num: 15
+        other_item_id: 137173
+      - idx: 44
+        name: "神域幻想发饰"
+        item_id: 145921
+        fenjie_num: 15
+        other_item_id: 145911
+      - idx: 45
+        name: "烈风灼龙背饰"
+        item_id: 155871
+        fenjie_num: 15
+        other_item_id: 155870
+      - idx: 46
+        name: "水碧荷芳背饰"
+        item_id: 155869
+        fenjie_num: 15
+        other_item_id: 155868
+      - idx: 47
+        name: "冬日手记服饰"
+        item_id: 164581
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 164571
+      - idx: 48
+        name: "白茶记事服饰"
+        item_id: 158444
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 158434
+      - idx: 49
+        name: "金魅海军服饰"
+        item_id: 82520
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 82510
+      - idx: 50
+        name: "清幽白鸽服饰"
+        item_id: 128829
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 128823
+      - idx: 51
+        name: "萌熊庆典服饰"
+        item_id: 134010
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 134004
+      - idx: 52
+        name: "潮动足球服饰"
+        item_id: 141202
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 141196
+      - idx: 53
+        name: "幻海鳞歌发饰"
+        item_id: 167414
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 167404
+      - idx: 54
+        name: "烈风灼龙发饰"
+        item_id: 156977
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 156967
+      - idx: 55
+        name: "魅果夜影发饰"
+        item_id: 153661
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 153674
+      - idx: 56
+        name: "水碧荷芳发饰"
+        item_id: 156519
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 156509
+      - idx: 57
+        name: "虹映银辉发饰"
+        item_id: 149138
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 149128
+      - idx: 58
+        name: "花绘晨谣发饰"
+        item_id: 151274
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 151264
+      - idx: 59
+        name: "次元魅影发饰"
+        item_id: 154674
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 154664
+      - idx: 60
+        name: "夜色红玫发饰"
+        item_id: 137183
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 137173
+      - idx: 61
+        name: "神域幻想发饰"
+        item_id: 145921
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 145911
+      - idx: 62
+        name: "烈风灼龙背饰"
+        item_id: 155871
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 155870
+      - idx: 63
+        name: "水碧荷芳背饰"
+        item_id: 155869
+        avail_period: 168 # 168天
+        fenjie_num: 2
+        other_item_id: 155868
+      - idx: 64
+        name: "冬日手记发饰"
+        item_id: 164573
+        fenjie_num: 5
+        other_item_id: 164563
+      - idx: 65
+        name: "白茶记事发饰"
+        item_id: 158436
+        fenjie_num: 5
+        other_item_id: 158426
+      - idx: 66
+        name: "金魅海军发饰"
+        item_id: 82512
+        fenjie_num: 5
+        other_item_id: 82502
+      - idx: 67
+        name: "清幽白鸽发饰"
+        item_id: 128824
+        fenjie_num: 5
+        other_item_id: 128818
+      - idx: 68
+        name: "萌熊庆典发饰"
+        item_id: 134005
+        fenjie_num: 5
+        other_item_id: 133999
+      - idx: 69
+        name: "潮动足球发饰"
+        item_id: 141197
+        fenjie_num: 5
+        other_item_id: 141191
+      - idx: 70
+        name: "烈风灼龙头饰"
+        item_id: 155908
+        fenjie_num: 5
+      - idx: 71
+        name: "烈风灼龙尾饰"
+        item_id: 155916
+        fenjie_num: 5
+      - idx: 72
+        name: "白茶记事尾饰"
+        item_id: 158282
+        fenjie_num: 5
+      - idx: 73
+        name: "深海梦境面饰"
+        item_id: 60413
+        fenjie_num: 5
+        other_item_id: 60412
+      - idx: 74
+        name: "冬日手记发饰"
+        item_id: 164573
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 164563
+      - idx: 75
+        name: "白茶记事发饰"
+        item_id: 158436
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 158426
+      - idx: 76
+        name: "金魅海军发饰"
+        item_id: 82512
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 82502
+      - idx: 77
+        name: "清幽白鸽发饰"
+        item_id: 128824
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 128818
+      - idx: 78
+        name: "萌熊庆典发饰"
+        item_id: 134005
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 133999
+      - idx: 79
+        name: "潮动足球发饰"
+        item_id: 141197
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 141191
+      - idx: 80
+        name: "烈风灼龙头饰"
+        item_id: 155908
+        avail_period: 168 # 168天
+        fenjie_num: 1
+      - idx: 81
+        name: "烈风灼龙尾饰"
+        item_id: 155916
+        avail_period: 168 # 168天
+        fenjie_num: 1
+      - idx: 82
+        name: "白茶记事尾饰"
+        item_id: 158282
+        avail_period: 168 # 168天
+        fenjie_num: 1
+      - idx: 83
+        name: "深海梦境面饰"
+        item_id: 60413
+        avail_period: 168 # 168天
+        fenjie_num: 1
+        other_item_id: 60412
+      - idx: 84
+        name: "钻石玫瑰"
+        item_id: 30774
+        item_num: 5
+        item_type: 0
+        avail_period: 0 # 普通/客户端默认
+        fenjie_num: 0
+      - idx: 85
+        name: "对战币"
+        item_id: 74273
+        item_num: 150
+        item_type: 0
+        avail_period: 0 # 普通/客户端默认
+        fenjie_num: 0
+      - idx: 86
+        name: "点火装置+1"
+        item_id: 12376
+        item_type: 0
+        avail_period: 0 # 普通/客户端默认
+        fenjie_num: 0
+      - idx: 87
+        name: "引擎装置+1"
+        item_id: 12380
+        item_type: 0
+        avail_period: 0 # 普通/客户端默认
+        fenjie_num: 0
+
+  # ========================
+  # 表2：兑换商店
+  # need_piece=需要绘梦积分；max_buy=每个玩家限兑次数。
+  # ========================
+  exchange_shop:
+    - idx: 1
+      name: "稀世·绘梦人生套装"
+      item_id: 164642
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 1100
+      max_buy: 2
+      award_idx: 1
+      gender_items:
+        male: 164642
+        female: 164632
+    - idx: 2
+      name: "稀世·浮世凌霄套装"
+      item_id: 133199
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 1100
+      max_buy: 2
+      award_idx: 2
+      gender_items:
+        male: 133199
+        female: 133189
+    - idx: 3
+      name: "稀世·浮世凌霄座椅"
+      item_id: 132176
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 450
+      max_buy: 1
+      award_idx: 3
+      gender_items:
+        male: 132176
+    - idx: 4
+      name: "漫游仙境座椅"
+      item_id: 103339
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 210
+      max_buy: 1
+      award_idx: 4
+      gender_items:
+        male: 103339
+    - idx: 5
+      name: "童语小黄鸭座椅"
+      item_id: 81208
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 210
+      max_buy: 1
+      award_idx: 5
+      gender_items:
+        male: 81208
+    - idx: 6
+      name: "幻海鳞歌服饰"
+      item_id: 167422
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 240
+      max_buy: 2
+      award_idx: 6
+      gender_items:
+        male: 167422
+        female: 167412
+    - idx: 7
+      name: "烈风灼龙服饰"
+      item_id: 156985
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 240
+      max_buy: 2
+      award_idx: 7
+      gender_items:
+        male: 156985
+        female: 156975
+    - idx: 8
+      name: "魅果夜影服饰"
+      item_id: 153669
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 240
+      max_buy: 2
+      award_idx: 8
+      gender_items:
+        male: 153669
+        female: 153682
+    - idx: 9
+      name: "烈风灼龙轮滑"
+      item_id: 157953
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 9
+      gender_items:
+        male: 157953
+        female: 157951
+    - idx: 10
+      name: "水碧荷芳手饰"
+      item_id: 158114
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 10
+      gender_items:
+        male: 158114
+        female: 158113
+    - idx: 11
+      name: "水碧荷芳服饰"
+      item_id: 156527
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 11
+      gender_items:
+        male: 156527
+        female: 156517
+    - idx: 12
+      name: "虹映银辉服饰"
+      item_id: 149146
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 12
+      gender_items:
+        male: 149146
+        female: 149136
+    - idx: 13
+      name: "花绘晨谣服饰"
+      item_id: 151282
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 13
+      gender_items:
+        male: 151282
+        female: 151272
+    - idx: 14
+      name: "次元魅影服饰"
+      item_id: 154682
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 14
+      gender_items:
+        male: 154682
+        female: 154672
+    - idx: 15
+      name: "夜色红玫服饰"
+      item_id: 137191
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 15
+      gender_items:
+        male: 137191
+        female: 137181
+    - idx: 16
+      name: "神域幻想服饰"
+      item_id: 145929
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 100
+      max_buy: 2
+      award_idx: 16
+      gender_items:
+        male: 145929
+        female: 145919
+    - idx: 17
+      name: "冰雪倾恋套装"
+      item_id: 33189
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 80
+      max_buy: 2
+      award_idx: 17
+      gender_items:
+        male: 33189
+        female: 33183
+    - idx: 18
+      name: "水明碧溪套装"
+      item_id: 34780
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 80
+      max_buy: 2
+      award_idx: 18
+      gender_items:
+        male: 34780
+        female: 34774
+    - idx: 19
+      name: "瑕梦抒晴套装"
+      item_id: 64246
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 80
+      max_buy: 2
+      award_idx: 19
+      gender_items:
+        male: 64246
+        female: 64236
+    - idx: 20
+      name: "神女之意套装"
+      item_id: 64183
+      item_num: 1
+      item_type: 3
+      avail_period: -1 # 永久
+      need_piece: 80
+      max_buy: 2
+      award_idx: 20
+      gender_items:
+        male: 64183
+        female: 64173
+    - idx: 21
+      name: "冬日手记服饰"
+      item_id: 164581
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 70
+      max_buy: 2
+      award_idx: 21
+      gender_items:
+        male: 164581
+        female: 164571
+    - idx: 22
+      name: "白茶记事服饰"
+      item_id: 158444
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 70
+      max_buy: 2
+      award_idx: 22
+      gender_items:
+        male: 158444
+        female: 158434
+    - idx: 23
+      name: "金魅海军服饰"
+      item_id: 82520
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 70
+      max_buy: 2
+      award_idx: 23
+      gender_items:
+        male: 82520
+        female: 82510
+    - idx: 24
+      name: "清幽白鸽服饰"
+      item_id: 128829
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 70
+      max_buy: 2
+      award_idx: 24
+      gender_items:
+        male: 128829
+        female: 128823
+    - idx: 25
+      name: "萌熊庆典服饰"
+      item_id: 134010
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 70
+      max_buy: 2
+      award_idx: 25
+      gender_items:
+        male: 134010
+        female: 134004
+    - idx: 26
+      name: "潮动足球服饰"
+      item_id: 141202
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 70
+      max_buy: 2
+      award_idx: 26
+      gender_items:
+        male: 141202
+        female: 141196
+    - idx: 27
+      name: "幻海鳞歌发饰"
+      item_id: 167414
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 27
+      gender_items:
+        male: 167414
+        female: 167404
+    - idx: 28
+      name: "烈风灼龙发饰"
+      item_id: 156977
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 28
+      gender_items:
+        male: 156977
+        female: 156967
+    - idx: 29
+      name: "魅果夜影发饰"
+      item_id: 153661
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 29
+      gender_items:
+        male: 153661
+        female: 153674
+    - idx: 30
+      name: "水碧荷芳发饰"
+      item_id: 156519
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 30
+      gender_items:
+        male: 156519
+        female: 156509
+    - idx: 31
+      name: "虹映银辉发饰"
+      item_id: 149138
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 31
+      gender_items:
+        male: 149138
+        female: 149128
+    - idx: 32
+      name: "花绘晨谣发饰"
+      item_id: 151274
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 32
+      gender_items:
+        male: 151274
+        female: 151264
+    - idx: 33
+      name: "次元魅影发饰"
+      item_id: 154674
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 33
+      gender_items:
+        male: 154674
+        female: 154664
+    - idx: 34
+      name: "夜色红玫发饰"
+      item_id: 137183
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 34
+      gender_items:
+        male: 137183
+        female: 137173
+    - idx: 35
+      name: "神域幻想发饰"
+      item_id: 145921
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 35
+      gender_items:
+        male: 145921
+        female: 145911
+    - idx: 36
+      name: "烈风灼龙背饰"
+      item_id: 155871
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 36
+      gender_items:
+        male: 155871
+        female: 155870
+    - idx: 37
+      name: "水碧荷芳背饰"
+      item_id: 155869
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 45
+      max_buy: 2
+      award_idx: 37
+      gender_items:
+        male: 155869
+        female: 155868
+    - idx: 38
+      name: "冬日手记发饰"
+      item_id: 164573
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 38
+      gender_items:
+        male: 164573
+        female: 164563
+    - idx: 39
+      name: "白茶记事发饰"
+      item_id: 158436
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 39
+      gender_items:
+        male: 158436
+        female: 158426
+    - idx: 40
+      name: "金魅海军发饰"
+      item_id: 82512
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 40
+      gender_items:
+        male: 82512
+        female: 82502
+    - idx: 41
+      name: "清幽白鸽发饰"
+      item_id: 128824
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 41
+      gender_items:
+        male: 128824
+        female: 128818
+    - idx: 42
+      name: "萌熊庆典发饰"
+      item_id: 134005
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 42
+      gender_items:
+        male: 134005
+        female: 133999
+    - idx: 43
+      name: "潮动足球发饰"
+      item_id: 141197
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 43
+      gender_items:
+        male: 141197
+        female: 141191
+    - idx: 44
+      name: "稀世·浮世凌霄尾饰"
+      item_id: 132164
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 50
+      max_buy: 1
+      award_idx: 44
+      gender_items:
+        male: 132164
+    - idx: 45
+      name: "稀世·浮世凌霄背饰"
+      item_id: 132101
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 50
+      max_buy: 2
+      award_idx: 45
+      gender_items:
+        male: 132101
+        female: 132100
+    - idx: 46
+      name: "稀世·浮世凌霄宝剑"
+      item_id: 132144
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 30
+      max_buy: 1
+      award_idx: 46
+      gender_items:
+        male: 132144
+    - idx: 47
+      name: "稀世·浮世凌霄面饰"
+      item_id: 132157
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 25
+      max_buy: 2
+      award_idx: 47
+      gender_items:
+        male: 132157
+        female: 132156
+    - idx: 48
+      name: "稀世·浮世凌霄头饰"
+      item_id: 132152
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 25
+      max_buy: 1
+      award_idx: 48
+      gender_items:
+        male: 132152
+    - idx: 49
+      name: "稀世·浮世凌霄戒指"
+      item_id: 132128
+      item_num: 1
+      item_type: 2
+      avail_period: 0 # 普通/客户端默认
+      need_piece: 25
+      max_buy: 999
+      award_idx: 49
+      gender_items:
+        male: 132128
+    - idx: 50
+      name: "烈风灼龙头饰"
+      item_id: 155908
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 10
+      max_buy: 1
+      award_idx: 50
+      gender_items:
+        male: 155908
+    - idx: 51
+      name: "烈风灼龙尾饰"
+      item_id: 155916
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 10
+      max_buy: 1
+      award_idx: 51
+      gender_items:
+        male: 155916
+    - idx: 52
+      name: "白茶记事尾饰"
+      item_id: 158282
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 10
+      max_buy: 1
+      award_idx: 52
+      gender_items:
+        male: 158282
+    - idx: 53
+      name: "烈风灼龙戒指"
+      item_id: 155892
+      item_num: 1
+      item_type: 2
+      avail_period: 0 # 普通/客户端默认
+      need_piece: 10
+      max_buy: 999
+      award_idx: 53
+      gender_items:
+        male: 155892
+    - idx: 54
+      name: "深海梦境面饰"
+      item_id: 60413
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 10
+      max_buy: 2
+      award_idx: 54
+      gender_items:
+        male: 60413
+        female: 60412
+    - idx: 55
+      name: "琥珀甜眸表情"
+      item_id: 166043
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 15
+      max_buy: 2
+      award_idx: 55
+      gender_items:
+        male: 166043
+        female: 166042
+    - idx: 56
+      name: "馋嘴吃货表情"
+      item_id: 146440
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 10
+      max_buy: 2
+      award_idx: 56
+      gender_items:
+        male: 146440
+        female: 146439
+    - idx: 57
+      name: "一见倾心表情"
+      item_id: 158291
+      item_num: 1
+      item_type: 2
+      avail_period: -1 # 永久
+      need_piece: 10
+      max_buy: 2
+      award_idx: 57
+      gender_items:
+        male: 158291
+        female: 158290
+    - idx: 58
+      name: "钻石玫瑰"
+      item_id: 30774
+      item_num: 1
+      item_type: 1
+      avail_period: 0 # 普通/客户端默认
+      need_piece: 1
+      max_buy: 999
+      award_idx: 58
+      gender_items:
+        male: 30774
+    - idx: 59
+      name: "点火装置+1"
+      item_id: 12376
+      item_num: 1
+      item_type: 1
+      avail_period: 0 # 普通/客户端默认
+      need_piece: 1
+      max_buy: 9999
+      award_idx: 59
+      gender_items:
+        male: 12376
+    - idx: 60
+      name: "引擎装置+1"
+      item_id: 12380
+      item_num: 1
+      item_type: 1
+      avail_period: 0 # 普通/客户端默认
+      need_piece: 1
+      max_buy: 9999
+      award_idx: 60
+      gender_items:
+        male: 12380
+
+  # ========================
+  # 表3：卡券礼包
+  # cost.buy_card_free=false 时按 cost_speed_coin 扣 BaseInfo.SuperMoney 点券；true 时才免费发卡券。
+  # ========================
+  gift_packs:
+    - idx: 1
+      name: "1张绘梦卡券礼包"
+      give_card_num: 1
+      cost_speed_coin: 9999
+      show_original_price: 60
+      max_buy: 1
+      status: 1
+      special_flag: 1
+      item:
+        - item_id: 168306 # 绘梦卡券
+          item_num: 1
+          item_type: 0
+          avail_period: 0
+    - idx: 2
+      name: "10张绘梦卡券礼包"
+      give_card_num: 10
+      cost_speed_coin: 99999
+      show_original_price: 600
+      max_buy: 1
+      status: 1
+      special_flag: 2
+      item:
+        - item_id: 168306 # 绘梦卡券
+          item_num: 10
+          item_type: 0
+          avail_period: 0
+    - idx: 3
+      name: "50张绘梦卡券礼包"
+      give_card_num: 50
+      cost_speed_coin: 499995
+      show_original_price: 3000
+      max_buy: 1
+      status: 1
+      special_flag: 3
+      item:
+        - item_id: 168306 # 绘梦卡券
+          item_num: 50
+          item_type: 0
+          avail_period: 0
+    - idx: 4
+      name: "100张绘梦卡券礼包"
+      give_card_num: 100
+      cost_speed_coin: 999990
+      show_original_price: 6000
+      max_buy: 2
+      status: 1
+      special_flag: 4
+      item:
+        - item_id: 168306 # 绘梦卡券
+          item_num: 100
+          item_type: 0
+          avail_period: 0

@@ -1,0 +1,1926 @@
+Source: official packet_dumps_24948 msg24073
+StrengthenCardID: 69005
+TailBytes:
+- 10
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+Pets:
+- ID: 26111
+  HuanHuaItemID: 81294
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 26613
+  HuanHuaItemID: 80544
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 20190707
+    BeginTime: 140000
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 20190707
+    BeginTime: 140000
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 20190707
+    BeginTime: 140000
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 20190707
+    BeginTime: 140000
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 74733
+  HuanHuaItemID: 80163
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 10000
+    BonusProbBeginDate: 20240801
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20240801
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 20170528
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 23647
+  HuanHuaItemID: 78913
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 20170303
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 20170303
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 20170303
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 20170303
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 17919
+  HuanHuaItemID: 68647
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 240
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 10000
+    BonusProbBeginDate: 20240801
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20240801
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 600
+    BaojiInc: 100
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 1500
+    BaojiInc: 100
+- ID: 27449
+  HuanHuaItemID: 70046
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 3000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 24
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1000
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 300
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 240
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 50
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 2000
+    BaojiInc: 100
+  - Level: 5
+    SuccProb: 20
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 4000
+    BaojiInc: 100
+- ID: 65100
+  HuanHuaItemID: 73696
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 600
+    BaojiInc: 100
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 1500
+    BaojiInc: 100
+- ID: 25337
+  HuanHuaItemID: 74895
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 26900
+  HuanHuaItemID: 75811
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 23379
+  HuanHuaItemID: 76479
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 31905
+  HuanHuaItemID: 77237
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 20664
+  HuanHuaItemID: 78293
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 3000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 24
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1000
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 300
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 240
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 50
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 2000
+    BaojiInc: 100
+  - Level: 5
+    SuccProb: 20
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 4000
+    BaojiInc: 100
+- ID: 18643
+  HuanHuaItemID: 78294
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 3000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 24
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1000
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 300
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 240
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 20220131
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20220603
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 50
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 2000
+    BaojiInc: 100
+  - Level: 5
+    SuccProb: 20
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 4000
+    BaojiInc: 100
+- ID: 20125
+  HuanHuaItemID: 78298
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 66587
+  HuanHuaItemID: 82251
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 10000
+    BonusProbBeginDate: 20240801
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20240801
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 28095
+  HuanHuaItemID: 83039
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 20171001
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+- ID: 21597
+  HuanHuaItemID: 85943
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 3000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 24
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1000
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 300
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 240
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 50
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 2000
+    BaojiInc: 100
+  - Level: 5
+    SuccProb: 20
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 0
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 4000
+    BaojiInc: 100
+- ID: 74961
+  HuanHuaItemID: 89943
+  TailBytes:
+  - 0
+  - 0
+  Levels:
+  - Level: 1
+    SuccProb: 7000
+    ConsCardNum: 1
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 72
+    BeginDate: 20180721
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 2
+    SuccProb: 1500
+    ConsCardNum: 2
+    ConsSuperMoney: 150
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 168
+    BeginDate: 20180721
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 3
+    SuccProb: 500
+    ConsCardNum: 2
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 1
+    Type: 1
+    HuanHuaItemPeriod: 360
+    BeginDate: 20180721
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 4
+    SuccProb: 100
+    ConsCardNum: 3
+    ConsSuperMoney: 200
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 720
+    BeginDate: 20180721
+    BeginTime: 0
+    BonusProb: 0
+    BonusProbBeginDate: 0
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 0
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0
+  - Level: 5
+    SuccProb: 50
+    ConsCardNum: 5
+    ConsSuperMoney: 300
+    Skills:
+    - SkillID: 15
+      Status: 3
+      Active: 1
+      Value: 2
+    Type: 1
+    HuanHuaItemPeriod: 4294967295
+    BeginDate: 20180721
+    BeginTime: 0
+    BonusProb: 80
+    BonusProbBeginDate: 20260619
+    BonusProbBeginTime: 0
+    BonusProbEndDate: 20260622
+    BonusProbEndTime: 0
+    BaojiBeginNum: 0
+    BaojiInc: 0

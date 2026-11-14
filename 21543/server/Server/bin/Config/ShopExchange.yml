@@ -1,0 +1,41 @@
+Shop:                          # 点券购买
+  - ItemId: 126463
+    Price: 500                 # 单价（点券）
+    MinBuy: 200                  # 最低购买数量
+    MaxBuyPerPlayer: 0        # 每人限购，0=不限
+    MaxBuyTotal: 0          # 全服限购，0=不限
+
+  - ItemId: 103316
+    Price: 500                 # 单价（点券）
+    MinBuy: 100                  # 最低购买数量
+    MaxBuyPerPlayer: 0        # 每人限购，0=不限
+    MaxBuyTotal: 0          # 全服限购，0=不限
+
+  - ItemId: 18270
+    Price: 200000                 # 单价（点券）
+    MinBuy: 1                 # 最低购买数量
+    MaxBuyPerPlayer: 0        # 每人限购，0=不限
+    MaxBuyTotal: 0          # 全服限购，0=不限
+
+  - ItemId: 119040
+    Price: 3000                 # 单价（点券）
+    MinBuy: 100                  # 最低购买数量
+    MaxBuyPerPlayer: 0        # 每人限购，0=不限
+    MaxBuyTotal: 0          # 全服限购，0=不限
+
+  - ItemId: 106763
+    Price: 3000                 # 单价（点券）
+    MinBuy: 100                  # 最低购买数量
+    MaxBuyPerPlayer: 0        # 每人限购，0=不限
+    MaxBuyTotal: 0          # 全服限购，0=不限
+
+
+
+Exchange:                      # 以物换物
+  - ItemId: 126463	      # 获得的道具
+    CostItemId: 133671          # 消耗的道具
+    CostItemNum: 10             # 每次消耗数量（换1个目标道具）
+    Price: 100                 # 每次额外消耗点券，0=不需要点券
+    MinBuy: 1                  # 最低购买数量
+    MaxBuyPerPlayer: 20        # 每人限购，0=不限
+    MaxBuyTotal: 500           # 全服限购，0=不限

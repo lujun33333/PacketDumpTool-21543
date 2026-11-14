@@ -1,0 +1,133 @@
+{
+  "name": "qqspeed-launcher-electron",
+  "productName": "QQSpeedLauncher",
+  "author": "QQSpeedLauncher",
+  "companyName": "QQSpeedLauncher",
+  "description": "QQSpeed launcher with game directory selection and native game startup.",
+  "version": "1.0.6",
+  "private": true,
+  "type": "module",
+  "main": "src/main/bootstrap.js",
+  "engines": {
+    "node": ">=20.18.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check src/main/bootstrap.js && node --check src/main/startup-log.js && node --check src/main/index.js && node --check src/main/gm-item-query-service.js && node --check src/main/launcher-updater.js && node --check src/main/game-loading-visibility.js && node --check src/main/game-instance-manager.js && node --check src/main/credential-policy.js && node --check src/main/credential-vault.js && node --check src/main/windows-dpapi.js && node --check src/main/install-key-vault.js && node --check src/main/runtime-material-envelope.js && node --check src/main/executable-runtime-resource.js && node --check src/main/launcher-content-service.js && node --check src/main/session-state-machine.js && node --check src/main/transient-secret-redactor.js && node --check src/main/preload-fallback-policy.js && node --check src/main/login/qq-tea.js && node --check src/main/login/private-protocol.js && node --check src/main/login/private-login-client.js && node --check src/main/game-process-monitor.js && node --check src/main/ipc-trust.js && node --check src/main/locked-endpoint.js && node --check src/main/native-core.js && node --check src/main/native-worker.js && node --check src/preload/preload.cjs && node --check src/preload/update-preload.cjs && node --check src/renderer/official-launcher-state.js && node --check src/renderer/close-preference.js && node --check src/renderer/gm-item-browser.js && node --check src/renderer/logout-focus.js && node --check src/renderer/update-progress.js && node --check src/renderer/update.js && node --check src/renderer/app.js && node --check src/renderer/content-view.js && node --check src/renderer/media-controller.js && node --check src/shared/account-avatar.js && node --check src/shared/customer-error-message.js && node --check src/shared/gm-item-catalog.js && node --check src/shared/gm-item-database.js && node --check src/shared/native-runtime-bundle.js && node --check src/build/after-pack.cjs && node --check src/build/pe-runtime-resource.cjs && node --check src/scripts/build-gm-item-database.mjs && node --check src/scripts/build-native.cjs && node --check src/scripts/build-runtime-bundle.cjs && node --check src/scripts/offline-release-material.cjs && node --check src/scripts/build-portable-x64.cjs && node --check src/scripts/generate-update-key.cjs && node --check src/scripts/publish-update.cjs && node --check src/scripts/verify-hook.cjs && node --check src/scripts/packaged-smoke-main.cjs && node --check src/scripts/smoke-credentials.cjs && node --check src/scripts/smoke-fuses.cjs && node --check src/scripts/smoke-ipc-trust.mjs && node --check src/scripts/smoke-lifecycle.mjs && node --check src/scripts/smoke-locked-endpoint.cjs && node --check src/scripts/smoke-native-boundary.cjs && node --check src/scripts/smoke-portable-runtime-x64.cjs && node --check src/scripts/smoke-portable-x64.cjs && node --check src/scripts/smoke-renderer-flow.cjs && node --check src/scripts/smoke-packaged.cjs && node --check src/scripts/smoke-release.cjs && node --check src/scripts/smoke-startup-diagnostics.cjs",
+    "test": "npm run test:unit",
+    "test:unit": "node --test \"test/unit/*.test.js\" \"test/unit/*.test.mjs\"",
+    "update:keygen": "node src/scripts/generate-update-key.cjs",
+    "update:publish": "node src/scripts/publish-update.cjs",
+    "build:native": "node src/scripts/build-native.cjs",
+    "build:server": "node src/scripts/build-native.cjs --server-only",
+    "rotate:runtime-release": "node src/scripts/build-native.cjs --rotate-release",
+    "verify:hook": "node src/scripts/verify-hook.cjs",
+    "verify:native": "node src/scripts/build-native.cjs --verify-only",
+    "verify:runtime-bundle": "node src/scripts/build-runtime-bundle.cjs --verify-only",
+    "verify:runtime": "npm run verify:native && npm run verify:hook && npm run verify:runtime-bundle",
+    "check:native-build": "node src/scripts/build-native.cjs --dry-run",
+    "check:native-boundary": "node src/scripts/smoke-native-boundary.cjs",
+    "check:renderer-flow": "node src/scripts/smoke-renderer-flow.cjs",
+    "check:credentials": "node src/scripts/smoke-credentials.cjs",
+    "check:lifecycle": "node src/scripts/smoke-lifecycle.mjs",
+    "check:endpoint": "node src/scripts/smoke-locked-endpoint.cjs",
+    "check:fuses": "node src/scripts/smoke-fuses.cjs",
+    "check:ipc-trust": "node src/scripts/smoke-ipc-trust.mjs",
+    "check:startup-diagnostics": "node src/scripts/smoke-startup-diagnostics.cjs",
+    "check:portable-x64": "node src/scripts/smoke-portable-x64.cjs",
+    "check:portable-runtime-x64": "node src/scripts/smoke-portable-runtime-x64.cjs",
+    "check:packaged": "node src/scripts/smoke-packaged.cjs",
+    "check:release": "node src/scripts/smoke-release.cjs",
+    "prepack": "npm run verify:runtime",
+    "predist": "npm run verify:runtime",
+    "predist:portable": "npm run verify:runtime",
+    "predist:all": "npm run verify:runtime",
+    "pack": "electron-builder --dir --x64",
+    "dist": "electron-builder --win nsis --x64",
+    "build:portable:x64": "node src/scripts/build-portable-x64.cjs",
+    "dist:portable": "electron-builder --dir --x64 && node src/scripts/build-portable-x64.cjs && node src/scripts/smoke-portable-x64.cjs",
+    "dist:all": "electron-builder --win nsis --x64 && node src/scripts/build-portable-x64.cjs && node src/scripts/smoke-portable-x64.cjs",
+    "postdist:all": "npm run check:release"
+  },
+  "dependencies": {
+    "koffi": "2.11.0"
+  },
+  "devDependencies": {
+    "@electron/asar": "3.4.1",
+    "@electron/fuses": "1.8.0",
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "local.qqspeed.launcher",
+    "productName": "QQSpeedLauncher",
+    "directories": {
+      "output": "dist"
+    },
+    "asar": {
+      "smartUnpack": false
+    },
+    "asarUnpack": [
+      "node_modules/koffi/build/koffi/win32_x64/koffi.node",
+      "assets/launcher-background.mp4"
+    ],
+    "compression": "normal",
+    "electronLanguages": [
+      "zh-CN"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/gm-items.sqlite3",
+        "to": "gm-items.sqlite3"
+      }
+    ],
+    "files": [
+      "package.json",
+      "src/**/*",
+      "assets/**/*",
+      "resources/update-public-key.pem",
+      "!src/build/**/*",
+      "!src/scripts/**/*",
+      "!node_modules/koffi/doc/**/*",
+      "!node_modules/koffi/src/**/*",
+      "!node_modules/koffi/vendor/**/*",
+      "!node_modules/koffi/build/koffi/darwin_*/**/*",
+      "!node_modules/koffi/build/koffi/freebsd_*/**/*",
+      "!node_modules/koffi/build/koffi/linux_*/**/*",
+      "!node_modules/koffi/build/koffi/musl_*/**/*",
+      "!node_modules/koffi/build/koffi/openbsd_*/**/*",
+      "!node_modules/koffi/build/koffi/win32_arm64/**/*",
+      "!node_modules/koffi/build/koffi/win32_ia32/**/*",
+      "!node_modules/koffi/build/koffi/win32_x64/*.exp",
+      "!node_modules/koffi/build/koffi/win32_x64/*.lib"
+    ],
+    "afterPack": "src/build/after-pack.cjs",
+    "win": {
+      "icon": "assets/app.ico",
+      "executableName": "QQSpeedLauncher",
+      "requestedExecutionLevel": "asInvoker",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "artifactName": "${productName}-Setup-${version}-${arch}.${ext}",
+      "differentialPackage": false,
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "QQSpeedLauncher",
+      "uninstallDisplayName": "QQSpeedLauncher",
+      "runAfterFinish": false,
+      "include": "src/build/installer.nsh"
+    }
+  }
+}

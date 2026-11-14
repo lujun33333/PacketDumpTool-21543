@@ -1,0 +1,103 @@
+{
+  "packets": [
+    {
+      "file": "network_bin_2620_1039_parser_queue_dispatch_body_msg317_len13818.bin",
+      "sha256": "0c9c9bec336599c12992c0ce534b6c7610251f363326eeeadfd31703b175b27f",
+      "msg": 317,
+      "body_len": 13808,
+      "captured_len": 13818,
+      "suits": 50,
+      "legends": 5,
+      "colors": 14,
+      "has_more": 1,
+      "origin_count": 2,
+      "buffer_count": 1,
+      "unparsed_extension_hex": "000200e400027cd20a001100000e00027d7e0000000100000000001101000e00027d7e0000000100000000001102000e00027d7e0000000200000000001103000e00027d7e0000000200000000001104000e00027d7e0000000500000000001105000e00027d7e0000000500000000001106000e00027d7e0000000500000000001107000e00027d7e0000000a00000000001108000e00027d7e0000000a00000000001109000e00027d7e0000000a00000000000e00027d800000000100000000010000000000010002000efffffed40000012c000000c8000effffff06000000fa0000006400e400027cd30a001100000e00027d7f0000000100000000001101000e00027d7f0000000100000000001102000e00027d7f0000000200000000001103000e00027d7f0000000200000000001104000e00027d7f0000000500000000001105000e00027d7f0000000500000000001106000e00027d7f0000000500000000001107000e00027d7f0000000a00000000001108000e00027d7f0000000a00000000001109000e00027d7f0000000a00000000000e00027d810000000100000000010000000000010002000efffffed40000012c000000c8000effffff06000000fa00000064",
+      "prefix": "35 f0 00 00 00 32 00 6f 00 02 b6 fe"
+    },
+    {
+      "file": "network_bin_2620_1040_parser_queue_dispatch_body_msg714_len10170.bin",
+      "sha256": "79606e8bd424a3bc16930ef20a63fc5fea6f79c443c4e7b1444e910d2cb1c7e6",
+      "msg": 714,
+      "body_len": 10160,
+      "captured_len": 10170,
+      "suits": 50,
+      "legends": 5,
+      "colors": 0,
+      "has_more": 1,
+      "origin_count": 0,
+      "buffer_count": 0,
+      "unparsed_extension_hex": "",
+      "prefix": "27 b0 00 00 00 32 00 a4 00 01 d7 50"
+    },
+    {
+      "file": "network_bin_2620_1041_parser_queue_dispatch_body_msg714_len8794.bin",
+      "sha256": "0ee4881f4a3cb286e327aaf30bd5679e5745fe5a5e6aed34c916c729ce318ee7",
+      "msg": 714,
+      "body_len": 8779,
+      "captured_len": 8794,
+      "suits": 50,
+      "legends": 3,
+      "colors": 0,
+      "has_more": 1,
+      "origin_count": 0,
+      "buffer_count": 0,
+      "unparsed_extension_hex": "",
+      "prefix": "22 4b 00 00 00 32 00 3d 00 01 82 0e"
+    },
+    {
+      "file": "network_bin_2620_1042_parser_queue_dispatch_body_msg714_len5266.bin",
+      "sha256": "8504b848253513b7831942fcd7b55d42ee5f54b5380595929fa43e56be1154e2",
+      "msg": 714,
+      "body_len": 5252,
+      "captured_len": 5266,
+      "suits": 36,
+      "legends": 0,
+      "colors": 0,
+      "has_more": 0,
+      "origin_count": 0,
+      "buffer_count": 0,
+      "unparsed_extension_hex": "",
+      "prefix": "14 84 00 00 00 24 00 77 00 01 ed 89"
+    }
+  ],
+  "configs": {
+    "ShapeRefitCfg.yml": {
+      "captured": 186,
+      "existing": 189,
+      "encoding": "gb18030",
+      "added": [],
+      "changed": [],
+      "existing_not_captured": [
+        [
+          116734,
+          171073
+        ],
+        [
+          115160,
+          171074
+        ],
+        [
+          106674,
+          171073
+        ]
+      ]
+    },
+    "LegendarySkin.yml": {
+      "captured": 13,
+      "existing": 13,
+      "encoding": "gb18030",
+      "added": [],
+      "changed": [],
+      "existing_not_captured": []
+    },
+    "ShapeColorCfg.yml": {
+      "captured": 14,
+      "existing": 14,
+      "encoding": "gb18030",
+      "added": [],
+      "changed": [],
+      "existing_not_captured": []
+    }
+  }
+}

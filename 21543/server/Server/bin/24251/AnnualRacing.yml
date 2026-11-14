@@ -1,0 +1,707 @@
+# =============================================================================
+# 年限祈福 / Annual Racing（官服抓包还原版）
+# =============================================================================
+# 对应客户端：
+#   Co.RequestGetBeta99Annual_RacingCfg
+#   Co.RequestBeta99Annual_RacingDrawAward
+#
+# 官服字段、奖池和协议仍以抓包为准。唯独抓包缺失的升/降星概率，
+# 在 star_transition.custom_* 中明确标记为私服自定义补全，可直接调整。
+#
+# 字段说明：
+#   1. normal_weight/advanced_weight 是官服响应中的原始权重。
+#   2. avail_period 单位为小时：-1=永久，0=数量型道具，168=7天。
+#   3. item_type 是客户端协议字段，保持抓包原值。
+#
+# 抓包中已确认：
+#   - 星级范围 0~6，共 6 次升星。
+#   - 普通祈福可能降星；高级祈福不降星。
+#   - 操作码：0普通、1高级、2暂存领取、3暂存分解、4首次开启、
+#             5领取/选择升星奖励、6查询礼包、7购买礼包。
+#   - 兑换商店类型：446、447。
+#   - 官服具体升/降星概率未能由当前样本推导，本文件明确留为 unknown。
+# =============================================================================
+
+annual_racing:
+  enabled: true
+  season_id: 1
+  activity_name: "年限祈福"
+
+  protocol:
+    quickrpc_msg_id: 24251
+    config_command: "Co.RequestGetBeta99Annual_RacingCfg"
+    operation_command: "Co.RequestBeta99Annual_RacingDrawAward"
+    exchange_preview_msg_id: 24465
+    exchange_claim_msg_id: 24466
+    exchange_batch_claim_msg_id: 28321
+    exchange_shop_type_main: 446
+    exchange_shop_type_other: 447
+
+    operations:
+      normal_prayer: 0
+      advanced_prayer: 1
+      storage_claim: 2
+      storage_decompose: 3
+      first_open_prayer: 4
+      star_reward_claim: 5
+      package_list: 6
+      package_buy: 7
+
+  time:
+    open_date: 20260711
+    open_time: 0
+    close_date: 20260913
+    close_time: 235959
+    freeze_date: 20260914
+    freeze_time: 0
+
+  error_codes:
+    disabled: 1
+    item_not_enough: 123
+    speed_coin_not_enough: 12295
+    package_limit_reached: 11497
+    package_sold_out: 666
+    activity_not_open: 12376
+    activity_frozen: 2704
+    permanent_item_owned: 12176
+    pending_select_reward: 11770
+    invalid_request: 12690
+    internal_error: 11119
+
+  # ---------------------------------------------------------------------------
+  # 核心物品
+  # ---------------------------------------------------------------------------
+  currencies:
+    normal_ticket:
+      item_id: 163262
+      item_name: "祈愿签"
+
+    advanced_ticket:
+      item_id: 163263
+      item_name: "祈愿灵符"
+
+    decompose_token:
+      item_id: 163288
+      item_name: "新春上上签"
+
+    blessing_stone:
+      item_id: 163289
+      item_name: "福运灵石"
+
+  display:
+    final_show_item_id: 163044
+    final_show_item_name: "至尊·踏月"
+    base_kart_item_id: 163043
+    base_kart_item_name: "至尊·逐日"
+    max_star_level: 6
+    normal_prayer_level_limit: 6
+    # 满星后普通祈福关闭，高级祈福继续抽6级奖池。
+    # 福运灵石是3~6级奖池的随机奖励，不是每抽必送；累计最多获得60个。
+    max_blessing_stone_get_num: 60
+    exchange_skin_need_stone_num: 30
+    confirm_switch: 3
+
+  # ---------------------------------------------------------------------------
+  # 消耗规则
+  # current_star 表示抽奖前星级。
+  # 抓包原始映射为 1:1、2:1、3:2、4:3、5:4、6:5、7:6，
+  # 转成运营更容易理解的 current_star 0~6。
+  # ---------------------------------------------------------------------------
+  costs:
+    # 操作码4。礼包购买获得1个祈愿灵符后，首次祈福成功；
+    # 随后操作码1返回123，结合客户端脚本可确认首次祈福使用祈愿灵符。
+    first_open:
+      item_id: 163263
+      item_name: "祈愿灵符"
+      item_num: 1
+
+    normal_prayer:
+      item_id: 163262
+      item_name: "祈愿签"
+      by_current_star:
+        0: 1
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+
+    advanced_prayer:
+      item_id: 163263
+      item_name: "祈愿灵符"
+      by_current_star:
+        0: 1
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+
+  # ---------------------------------------------------------------------------
+  # 星级变化规则
+  # 客户端脚本只确认普通祈福可能降星、高级祈福不降星；
+  # 当前抓包没有成功的普通/高级祈福样本，无法还原具体升降概率。
+  # ---------------------------------------------------------------------------
+  star_transition:
+    min_level: 0
+    max_level: 6
+    normal_can_down: true
+    advanced_can_down: false
+    normal_disabled_at_max_level: true
+    official_probability_status: unknown
+
+    # 私服自定义补全：不是官服概率。
+    # up/same/down 是相对权重；每级当前合计为 100，便于运营阅读。
+    fallback_mode: custom
+    custom_transition_weights:
+      normal:
+        - { level: 0, up: 35, same: 65, down: 0 }
+        - { level: 1, up: 30, same: 65, down: 5 }
+        - { level: 2, up: 25, same: 65, down: 10 }
+        - { level: 3, up: 20, same: 65, down: 15 }
+        - { level: 4, up: 15, same: 65, down: 20 }
+        - { level: 5, up: 10, same: 65, down: 25 }
+        - { level: 6, up: 0,  same: 100, down: 0 }
+      advanced:
+        - { level: 0, up: 60, same: 40, down: 0 }
+        - { level: 1, up: 50, same: 50, down: 0 }
+        - { level: 2, up: 40, same: 60, down: 0 }
+        - { level: 3, up: 30, same: 70, down: 0 }
+        - { level: 4, up: 20, same: 80, down: 0 }
+        - { level: 5, up: 10, same: 90, down: 0 }
+        - { level: 6, up: 0,  same: 100, down: 0 }
+
+    # 高级祈福连续 2 次未升星后，第 3 次强制升星；满星时不触发。
+    custom_advanced_pity:
+      enabled: true
+      misses_before_force_up: 2
+
+    # 官服配置响应的初始值；启用 custom_advanced_pity 后也作为剩余次数初值。
+    official_pity_state:
+      bao_di_left_num: 2
+      bao_di_type: 0
+
+  # ---------------------------------------------------------------------------
+  # 满6星后的高级祈福。
+  #
+  # 视频样本中灵石的表观命中率约为10%；官服公告未公开精确概率，
+  # 因此这里明确作为可调整的私服参数。没有连续未中保底。
+  #
+  # 命中时轮盘主奖励为福运灵石（LotteryInfo），并把同级奖池中
+  # 额外抽取的一件非灵石奖励放入 SpecialInfo.extraaward。
+  # ---------------------------------------------------------------------------
+  max_star_advanced:
+    blessing_stone:
+      enabled: true
+      chance_per_10000: 1000
+      grant_non_stone_extra_on_hit: true
+
+  # ---------------------------------------------------------------------------
+  # 抽奖奖池
+  #
+  # normal_weight   -> 普通祈福权重（抓包字段 iProbability）
+  # advanced_weight -> 高级祈福权重（抓包字段 iRareProbability）
+  # pool_indexes    -> 该奖励所属的当前星级奖池（协议字段 poll_index）
+  #
+  # 0级、6级为现有官服包逐字段还原；1~5级当前没有完整成功包，
+  # 页面只公开了“部分奖励”，未展示项使用同活动已确认道具补齐到8格。
+  # 这部分只补齐私服可运行配置，不冒充未抓到的官服概率。
+  # ---------------------------------------------------------------------------
+  award_pool:
+    defaults:
+      item_num: 1
+      item_type: 0
+      avail_period: 0
+      normal_weight: 0
+      advanced_weight: 0
+      decompose_piece_num: 0
+      control_type: 0
+      pool_indexes: [0]
+      super_money: 0
+      coupons: 0
+
+    items:
+      # 0级：官服包（男性角色包为 89847，女性对应 89848）。
+      - idx: 1
+        pool_indexes: [0]
+        item_id: 23674
+        item_name: "未来"
+        item_num: 1
+        item_type: 1
+        avail_period: -1
+        normal_weight: 1
+        advanced_weight: 1
+        decompose_piece_num: 20
+        control_type: 1
+
+      - idx: 2
+        pool_indexes: [0]
+        item_id: 23373
+        item_name: "圣殿骑士"
+        item_num: 1
+        item_type: 0
+        avail_period: 168
+        normal_weight: 1000
+        advanced_weight: 100
+
+      - idx: 3
+        pool_indexes: [0]
+        item_id: 23056
+        item_name: "劲霸"
+        item_num: 1
+        item_type: 0
+        avail_period: 168
+        normal_weight: 1000
+        advanced_weight: 100
+
+      - idx: 4
+        pool_indexes: [0]
+        item_id: 89848
+        item_id_1: 89847
+        item_name: "明丽之语羽翼（女/男）"
+        item_num: 1
+        item_type: 0
+        avail_period: 168
+        normal_weight: 3000
+        advanced_weight: 300
+
+      - idx: 5
+        pool_indexes: [0]
+        item_id: 112212
+        item_name: "淑女手提包"
+        item_num: 1
+        item_type: 0
+        avail_period: 168
+        normal_weight: 5000
+        advanced_weight: 500
+
+      - idx: 6
+        pool_indexes: [0]
+        item_id: 12376
+        item_name: "点火装置+1"
+        item_num: 1
+        item_type: 0
+        avail_period: 0
+        normal_weight: 100000
+        advanced_weight: 1000
+
+      - idx: 7
+        pool_indexes: [0]
+        item_id: 12378
+        item_name: "燃料系统+1"
+        item_num: 1
+        item_type: 0
+        avail_period: 0
+        normal_weight: 100000
+        advanced_weight: 1000
+
+      - idx: 8
+        pool_indexes: [0]
+        item_id: 12380
+        item_name: "引擎装置+1"
+        item_num: 1
+        item_type: 0
+        avail_period: 0
+        normal_weight: 100000
+        advanced_weight: 1000
+
+      # 1级：页面确认 S黄金剃刀、银闪；其余槽位为本地补齐。
+      - idx: 1
+        pool_indexes: [1]
+        item_id: 14107
+        item_name: "S黄金剃刀"
+        item_type: 1
+        avail_period: -1
+        normal_weight: 1
+        advanced_weight: 1
+        decompose_piece_num: 500
+        control_type: 1
+
+      - idx: 2
+        pool_indexes: [1]
+        item_id: 28658
+        item_name: "银闪"
+        avail_period: 168
+        normal_weight: 1000
+        advanced_weight: 100
+
+      - idx: 3
+        pool_indexes: [1]
+        item_id: 23373
+        item_name: "圣殿骑士"
+        avail_period: 168
+        normal_weight: 1000
+        advanced_weight: 100
+
+      - idx: 4
+        pool_indexes: [1]
+        item_id: 23056
+        item_name: "劲霸"
+        avail_period: 168
+        normal_weight: 3000
+        advanced_weight: 300
+
+      - idx: 5
+        pool_indexes: [1]
+        item_id: 112212
+        item_name: "淑女手提包"
+        avail_period: 168
+        normal_weight: 5000
+        advanced_weight: 500
+
+      # 2级：页面公开的五项奖励。
+      - idx: 1
+        pool_indexes: [2]
+        item_id: 80542
+        item_name: "雷瑟之光"
+        item_type: 1
+        avail_period: -1
+        normal_weight: 1
+        advanced_weight: 1
+        decompose_piece_num: 500
+        control_type: 1
+
+      - idx: 2
+        pool_indexes: [2]
+        item_id: 102226
+        item_name: "狱火啸天"
+        avail_period: 168
+        normal_weight: 1000
+        advanced_weight: 100
+
+      - idx: 3
+        pool_indexes: [2]
+        item_id: 104134
+        item_name: "恋羽之翼"
+        avail_period: 720
+        normal_weight: 1000
+        advanced_weight: 100
+
+      - idx: 4
+        pool_indexes: [2]
+        item_id: 30809
+        item_name: "枪骑兵"
+        avail_period: 720
+        normal_weight: 3000
+        advanced_weight: 300
+
+      - idx: 5
+        pool_indexes: [2]
+        item_id: 87375
+        item_id_1: 87365
+        item_name: "千禧如锦套装（女/男）"
+        avail_period: 360
+        normal_weight: 5000
+        advanced_weight: 500
+
+      # 3~6级共用的两个大奖；[3,4,5,6] 来自官服 poll_index。
+      - idx: 1
+        pool_indexes: [3, 4, 5, 6]
+        item_id: 98263
+        item_name: "黑曼巴"
+        item_type: 1
+        avail_period: -1
+        normal_weight: 1
+        advanced_weight: 1
+        decompose_piece_num: 500
+        control_type: 1
+
+      - idx: 2
+        pool_indexes: [3, 4, 5, 6]
+        item_id: 163289
+        item_name: "福运灵石"
+        item_type: 1
+        item_num: 1
+        avail_period: 0
+        normal_weight: 1
+        advanced_weight: 1
+
+      # 3级：页面公开的其余三项奖励。
+      - idx: 3
+        pool_indexes: [3]
+        item_id: 63705
+        item_name: "银魂捷豹"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 4
+        pool_indexes: [3]
+        item_id: 88863
+        item_name: "裂风机械兽"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 5
+        pool_indexes: [3]
+        item_id: 96043
+        item_id_1: 96033
+        item_name: "清雪云寒服饰（女/男）"
+        avail_period: 360
+        normal_weight: 5000
+        advanced_weight: 500
+        decompose_piece_num: 15
+
+      # 4级：页面公开的其余三项奖励。
+      - idx: 3
+        pool_indexes: [4]
+        item_id: 117935
+        item_name: "战争之神"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 4
+        pool_indexes: [4]
+        item_id: 66598
+        item_name: "紫铭"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 5
+        pool_indexes: [4]
+        item_id: 101382
+        item_id_1: 101372
+        item_name: "金耀蝶心套装（女/男）"
+        avail_period: 360
+        normal_weight: 5000
+        advanced_weight: 500
+        decompose_piece_num: 15
+
+      # 5级：页面公开的其余三项奖励。
+      - idx: 3
+        pool_indexes: [5]
+        item_id: 74884
+        item_name: "金甲狮王"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 4
+        pool_indexes: [5]
+        item_id: 63482
+        item_name: "黑暗骑士"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 5
+        pool_indexes: [5]
+        item_id: 118206
+        item_id_1: 118196
+        item_name: "昼宇星辰套装（女/男）"
+        avail_period: 720
+        normal_weight: 5000
+        advanced_weight: 500
+        decompose_piece_num: 8
+
+      # 1~5级未公开的三个低档槽位，保持每级完整8格。
+      - idx: 6
+        pool_indexes: [1, 2, 3, 4, 5]
+        item_id: 12376
+        item_name: "点火装置+1"
+        normal_weight: 100000
+        advanced_weight: 1000
+
+      - idx: 7
+        pool_indexes: [1, 2, 3, 4, 5]
+        item_id: 12378
+        item_name: "燃料系统+1"
+        normal_weight: 100000
+        advanced_weight: 1000
+
+      - idx: 8
+        pool_indexes: [1, 2, 3, 4, 5]
+        item_id: 12380
+        item_name: "引擎装置+1"
+        normal_weight: 100000
+        advanced_weight: 1000
+
+      # 6级：官服包逐字段还原。
+      - idx: 3
+        pool_indexes: [6]
+        item_id: 106674
+        item_name: "至尊·爆天甲"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 4
+        pool_indexes: [6]
+        item_id: 107370
+        item_name: "至尊·麦凯伦"
+        avail_period: 360
+        normal_weight: 1000
+        advanced_weight: 100
+        decompose_piece_num: 15
+
+      - idx: 5
+        pool_indexes: [6]
+        item_id: 82248
+        item_name: "雷霆霸主"
+        avail_period: 720
+        normal_weight: 3000
+        advanced_weight: 300
+        decompose_piece_num: 8
+
+      - idx: 6
+        pool_indexes: [6]
+        item_id: 88684
+        item_name: "战争之主"
+        avail_period: 720
+        normal_weight: 3000
+        advanced_weight: 300
+        decompose_piece_num: 8
+
+      - idx: 7
+        pool_indexes: [6]
+        item_id: 27137
+        item_name: "皇权宝石"
+        item_num: 1
+        normal_weight: 5000
+        advanced_weight: 500
+
+      - idx: 8
+        pool_indexes: [6]
+        item_id: 69936
+        item_name: "至尊能量源"
+        item_num: 3
+        normal_weight: 100000
+        advanced_weight: 1000
+
+  # ---------------------------------------------------------------------------
+  # 六级升星奖励
+  # 客户端模板注明升星奖励自动发放，不需要点击领取；每个节点只在
+  # 首次点亮时发一次，普通祈福降级后再次升回该级不重复发放。
+  # ---------------------------------------------------------------------------
+  star_level_rewards:
+    defaults:
+      item_num: 1
+      item_type: 1
+      avail_period: -1
+      decompose_piece_num: 0
+
+    levels:
+      - level: 1
+        items:
+          - { item_id: 155938, item_name: "紫霄宸龙胎印", decompose_piece_num: 1 }
+
+      - level: 2
+        items:
+          - { item_id: 164097, item_id_1: 164087, item_name: "银焰惊鸿发饰（女/男）", decompose_piece_num: 1 }
+
+      - level: 3
+        items:
+          - { item_id: 164105, item_id_1: 164095, item_name: "银焰惊鸿服饰（女/男）", decompose_piece_num: 3 }
+
+      - level: 4
+        items:
+          - { item_id: 158397, item_name: "瓷彩湘韵", decompose_piece_num: 10 }
+
+      - level: 5
+        items:
+          - { item_id: 109562, item_name: "红莲骑士", decompose_piece_num: 50 }
+
+      - level: 6
+        items:
+          - { item_id: 163043, item_name: "至尊·逐日", decompose_piece_num: 0 }
+
+  # ---------------------------------------------------------------------------
+  # 暂存箱。当前抓包中的 ZancunItemList 为空；
+  # 客户端脚本确认操作码2领取、操作码3分解，以及下列请求字段。
+  # ---------------------------------------------------------------------------
+  storage_box:
+    enabled: true
+    # 私服自定义：
+    # equipment_only=赛车/皮肤/服饰/宠物进暂存箱，道具和宝石直接入背包；
+    # official_controlled=仅官服 iCtrlType=1 的受控大奖进暂存箱。
+    draw_reward_policy: equipment_only
+    decompose_output_item_id: 163288
+    decompose_output_item_name: "新春上上签"
+    request_fields:
+      - ItemId
+      - ItemId1
+      - ItemNum
+      - ItemType
+      - Available
+      - iExchangePieceNum
+    official_non_empty_response_status: not_captured
+
+  # ---------------------------------------------------------------------------
+  # 特惠礼包（操作码 6/7）
+  # base_price_speed_coin 只用于显示原价，sale_price_speed_coin 才是真实扣费。
+  # status/get_num 由数据库动态生成，不在配置中手写。
+  # ---------------------------------------------------------------------------
+  special_packages:
+    enabled: true
+    packages:
+      - special_flag: 1
+        package_name: "祈愿灵符×1"
+        base_price_speed_coin: 50
+        sale_price_speed_coin: 10
+        max_purchase_count: 1
+        rewards:
+          - { item_id: 163263, item_name: "祈愿灵符", item_num: 1, item_type: 0, avail_period: 0 }
+
+      - special_flag: 2
+        package_name: "祈愿灵符×10"
+        base_price_speed_coin: 500
+        sale_price_speed_coin: 150
+        max_purchase_count: 1
+        rewards:
+          - { item_id: 163263, item_name: "祈愿灵符", item_num: 10, item_type: 0, avail_period: 0 }
+
+      - special_flag: 3
+        package_name: "祈愿灵符×30"
+        base_price_speed_coin: 1500
+        sale_price_speed_coin: 750
+        max_purchase_count: 1
+        rewards:
+          - { item_id: 163263, item_name: "祈愿灵符", item_num: 30, item_type: 0, avail_period: 0 }
+
+  # ---------------------------------------------------------------------------
+  # 主兑换商店：CommonBox Type=446
+  # 抓包共 13 项。每项可以使用不同兑换材料。
+  # ---------------------------------------------------------------------------
+  exchange_shops:
+    main:
+      enabled: true
+      type: 446
+      result_id: 11498
+      items:
+        - { pos: 1,  award_idx: 1,  item_id: 163044, item_name: "至尊·踏月",      item_num: 1,  item_type: 1, avail_period: -1, cost_item_id: 163289, cost_item_name: "福运灵石",   cost_num: 30,  max_get_num: 1 }
+        - { pos: 2,  award_idx: 2,  item_id: 163289, item_name: "福运灵石",        item_num: 1,  item_type: 1, avail_period: 0,  cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 60,  max_get_num: 5 }
+        - { pos: 3,  award_idx: 3,  item_id: 14107,  item_name: "S黄金剃刀",        item_num: 1,  item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 600, max_get_num: 1 }
+        - { pos: 4,  award_idx: 4,  item_id: 13703,  item_name: "S白金剃刀",        item_num: 1,  item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 600, max_get_num: 1 }
+        - { pos: 5,  award_idx: 5,  item_id: 14106,  item_name: "S黑金剃刀",        item_num: 1,  item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 600, max_get_num: 1 }
+        - { pos: 6,  award_idx: 6,  item_id: 118206, item_name: "昼宇星辰套装(男)", item_num: 1, item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 150, max_get_num: 1 }
+        - { pos: 7,  award_idx: 7,  item_id: 118196, item_name: "昼宇星辰套装(女)", item_num: 1, item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 150, max_get_num: 1 }
+        - { pos: 8,  award_idx: 8,  item_id: 137393, item_name: "仙琼飘花发饰(男)", item_num: 1, item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 50,  max_get_num: 1 }
+        - { pos: 9,  award_idx: 9,  item_id: 137403, item_name: "仙琼飘花发饰(女)", item_num: 1, item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 50,  max_get_num: 1 }
+        - { pos: 10, award_idx: 10, item_id: 137401, item_name: "仙琼飘花服饰(男)", item_num: 1, item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 100, max_get_num: 1 }
+        - { pos: 11, award_idx: 11, item_id: 137411, item_name: "仙琼飘花服饰(女)", item_num: 1, item_type: 1, avail_period: -1, cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 100, max_get_num: 1 }
+        - { pos: 12, award_idx: 12, item_id: 69936,  item_name: "至尊能量源",        item_num: 30, item_type: 1, avail_period: 0,  cost_item_id: 163289, cost_item_name: "福运灵石",   cost_num: 1,   max_get_num: 100 }
+        - { pos: 13, award_idx: 13, item_id: 69938,  item_name: "普通能量源",        item_num: 1,  item_type: 0, avail_period: 0,  cost_item_id: 163288, cost_item_name: "新春上上签", cost_num: 1,   max_get_num: 9999 }
+
+    # 其他活动材料转换商店：CommonBox Type=447
+    other:
+      enabled: true
+      type: 447
+      result_id: 11498
+      items:
+        - { pos: 1, award_idx: 1, item_id: 156043, item_name: "饕餮灵牌", item_num: 1, item_type: 1, avail_period: 0, cost_item_id: 127624, cost_item_name: "至尊晶石", cost_num: 1, max_get_num: 5 }
+        - { pos: 2, award_idx: 2, item_id: 156043, item_name: "饕餮灵牌", item_num: 1, item_type: 1, avail_period: 0, cost_item_id: 132089, cost_item_name: "爆雷合金", cost_num: 1, max_get_num: 5 }
+        - { pos: 3, award_idx: 3, item_id: 156043, item_name: "饕餮灵牌", item_num: 1, item_type: 1, avail_period: 0, cost_item_id: 146212, cost_item_name: "彩虹石",   cost_num: 1, max_get_num: 5 }
+        - { pos: 4, award_idx: 4, item_id: 156043, item_name: "饕餮灵牌", item_num: 1, item_type: 1, avail_period: 0, cost_item_id: 127627, cost_item_name: "至尊·翡翠", cost_num: 1, max_get_num: 5 }
+        - { pos: 5, award_idx: 5, item_id: 156043, item_name: "饕餮灵牌", item_num: 1, item_type: 1, avail_period: 0, cost_item_id: 136699, cost_item_name: "神龙晶石", cost_num: 1, max_get_num: 5 }

@@ -1,0 +1,114 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 106606；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00058%；1 件，每件 0.00058%
+  - Seed: 58
+    ItemType: 2
+    Items:
+      - ItemId: 171075 # 至臻·黑曼巴
+        ItemNum: 1
+        AvailPeriod: -1
+        ServerLimit: 3
+
+  # 稀有永久池合计 0.00654%；3 件，每件 0.00218%
+  - Seed: 712
+    ItemType: 2
+    Items:
+      - ItemId: 171049 # 玄瞳谍隼
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171048 # 空天神鹰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171047 # 天驭圣翼
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.02616%；6 件，每件 0.00436%
+  - Seed: 3328
+    ItemType: 1
+    Items:
+      - ItemId: 100465 # 稀世·水龙吟发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 100473 # 稀世·水龙吟服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 100474 # 稀世·水龙吟套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 100475 # 稀世·水龙吟发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 100483 # 稀世·水龙吟服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 100484 # 稀世·水龙吟套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.15696%；6 件，每件 0.02616%
+  - Seed: 19024
+    ItemType: 1
+    Items:
+      - ItemId: 100465 # 稀世·水龙吟发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 100473 # 稀世·水龙吟服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 100474 # 稀世·水龙吟套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 100475 # 稀世·水龙吟发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 100483 # 稀世·水龙吟服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 100484 # 稀世·水龙吟套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.80976%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

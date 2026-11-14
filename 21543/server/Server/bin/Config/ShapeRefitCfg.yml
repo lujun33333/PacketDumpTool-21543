@@ -1,0 +1,4117 @@
+ShapeRefitLefend:
+  - KartID: 116734
+    ShapeSuitID: 171073
+    KarNameLen: 天蓬元帅
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Epic
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 115160
+    ShapeSuitID: 171074
+    KarNameLen: 卷帘大将
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Epic
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106674
+    ShapeSuitID: 171073
+    KarNameLen: 齐天大圣
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Epic
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 177918
+    ShapeSuitID: 177927
+    KarNameLen: 木舸逐风-玉舟
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: fjwc
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 63429
+    ShapeSuitID: 171070
+    KarNameLen: 终极幻影-重生
+    Grade: 3
+    DressPoint: 15
+    CarLibraryCollectValue: 1000
+    GradeResourceLen: jjfb
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 171060
+    ShapeSuitID: 171061
+    KarNameLen: 寰宇使者-悠然夏日
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: yushu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 171060
+    ShapeSuitID: 171062
+    KarNameLen: 寰宇使者-复古潮流
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: yushu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 171060
+    ShapeSuitID: 171063
+    KarNameLen: 寰宇使者-喜气连连
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: yushu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 171056
+    ShapeSuitID: 171057
+    KarNameLen: 熊出没皮卡-丛林双雄
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: xcm
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 171056
+    ShapeSuitID: 171058
+    KarNameLen: 熊出没皮卡-森林天团
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: xcm
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 171051
+    ShapeSuitID: 171052
+    KarNameLen: 惊雷终结者-紫霆破风者
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: auldey
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 12720
+    ShapeSuitID: 171050
+    KarNameLen: 雷诺-线条小狗
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: xiantiao
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 21593
+    ShapeSuitID: 152473
+    KarNameLen: 星之精灵-芒星
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: mingyuntaluo
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 11376
+    ShapeSuitID: 153755
+    KarNameLen: 暴风雪-世界
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: mingyuntaluo
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 123499
+    ShapeSuitID: 153756
+    KarNameLen: 炼狱之刃-曜日
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: mingyuntaluo
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 153757
+    KarNameLen: 智慧之神-幻月
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: mingyuntaluo
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 78296
+    ShapeSuitID: 153689
+    KarNameLen: 毁灭者-混沌
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: shanhaiyiwenlu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 71588
+    ShapeSuitID: 153752
+    KarNameLen: 异形杀戮-穷奇
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: shanhaiyiwenlu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 80161
+    ShapeSuitID: 153753
+    KarNameLen: 地狱火-梼杌
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: shanhaiyiwenlu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 98263
+    ShapeSuitID: 153754
+    KarNameLen: '黑曼巴-饕餮 '
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: shanhaiyiwenlu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 13703
+    ShapeSuitID: 153748
+    KarNameLen: S白金剃刀Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 70047
+    ShapeSuitID: 146554
+    KarNameLen: 终麦-屠龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: chuanshishenbing
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 107370
+    ShapeSuitID: 146555
+    KarNameLen: 至尊-神·屠龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: chuanshishenbing
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 84869
+    ShapeSuitID: 153688
+    KarNameLen: 暗影龙骑-杨戬
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 91957
+    ShapeSuitID: 153751
+    KarNameLen: 银天使-嫦娥
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: xiyouxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 34393
+    ShapeSuitID: 153746
+    KarNameLen: 神影-寒冰
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 148404
+    ShapeSuitID: 148405
+    KarNameLen: 序列未来LYR-燃冰球手
+    Grade: 2
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Epic
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 150525
+    ShapeSuitID: 150527
+    KarNameLen: 至尊-真武
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: shenianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126347
+    ShapeSuitID: 148406
+    KarNameLen: 极星之翼-落雁
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fourbeauty
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 26931
+    ShapeSuitID: 150526
+    KarNameLen: 雷神之怒-游龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: moyingjianghu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 88865
+    ShapeSuitID: 150528
+    KarNameLen: 终极爆天甲-逍遥
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: moyingjianghu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 90945
+    ShapeSuitID: 150529
+    KarNameLen: 众神之神-幽兰
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: moyingjianghu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 80542
+    ShapeSuitID: 150530
+    KarNameLen: 雷瑟之光-无悔
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: moyingjianghu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 150537
+    ShapeSuitID: 150531
+    KarNameLen: 终极镇海之戟-螣蛇
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: yingzhichuanshuo
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 12720
+    ShapeSuitID: 150533
+    KarNameLen: 雷诺-樱花
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: qingrenjie
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 109569
+    ShapeSuitID: 150532
+    KarNameLen: 裁决者-无境
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: qingrenjie
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 130538
+    ShapeSuitID: 146560
+    KarNameLen: 奥莉娜-妲己
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127618
+    ShapeSuitID: 138413
+    KarNameLen: X次元-青龙
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuan
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157760]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 150525
+    ShapeSuitID: 146559
+    KarNameLen: X次元-玄武
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuan
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157763]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 119059
+    ShapeSuitID: 146556
+    KarNameLen: X次元-白虎
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuan
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157762]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 109563
+    ShapeSuitID: 146558
+    KarNameLen: X次元-朱雀
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuan
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157761]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 96785
+    ShapeSuitID: 146557
+    KarNameLen: 光明之神-阿波罗
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: aolinpisi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 83042
+    ShapeSuitID: 146553
+    KarNameLen: 终极变形销魂-孔雀翎
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: chuanshishenbing
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 74363
+    ShapeSuitID: 146552
+    KarNameLen: 终极鬼战刀-凌霄
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: chuanshishenbing
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 68643
+    ShapeSuitID: 146551
+    KarNameLen: 终极暴风雪-流星
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: chuanshishenbing
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106675
+    ShapeSuitID: 146550
+    KarNameLen: 终极众神-倚天
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: chuanshishenbing
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 98829
+    ShapeSuitID: 146549
+    KarNameLen: 海洋之神-波塞冬
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: aolinpisi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 81293
+    ShapeSuitID: 146548
+    KarNameLen: 黑域电魔-雷震子
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 90945
+    ShapeSuitID: 146546
+    KarNameLen: 众神之神-宙斯
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: aolinpisi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 120646
+    ShapeSuitID: 146547
+    KarNameLen: 镇海之戟-孙策
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 21901
+    ShapeSuitID: 146233
+    KarNameLen: 穿梭者-影之刃
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 120656
+    ShapeSuitID: 144520
+    KarNameLen: 镇魔天王-魔礼海
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 120656
+    ShapeSuitID: 144519
+    KarNameLen: 镇魔天王-魔礼青
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 120656
+    ShapeSuitID: 144518
+    KarNameLen: 镇魔天王-魔礼寿
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 120656
+    ShapeSuitID: 144517
+    KarNameLen: 镇魔天王-魔礼红
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 144530
+    KarNameLen: 智慧之神-大耳狗
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Daergou
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 105425
+    ShapeSuitID: 144529
+    KarNameLen: 魅影M20-闭月
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fourbeauty
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 12948
+    ShapeSuitID: 144528
+    KarNameLen: 风行者Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106674
+    ShapeSuitID: 144521
+    KarNameLen: 至尊-神·奥丁
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: Winnerofgodwar
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 140029
+    ShapeSuitID: 140030
+    KarNameLen: 云逍-火浣
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Wswx
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 140032
+    KarNameLen: 智慧之神-沉鱼
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fourbeauty
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 129287
+    ShapeSuitID: 144527
+    KarNameLen: 阿尔法之芯-海姆达尔
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Warofgod
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 136722
+    ShapeSuitID: 144526
+    KarNameLen: 雷诺之力-索尔
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Warofgod
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126347
+    ShapeSuitID: 144525
+    KarNameLen: 极星之翼-芙蕾雅
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Warofgod
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 119067
+    ShapeSuitID: 144524
+    KarNameLen: 特洛伊之眼-洛基
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Warofgod
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 74362
+    ShapeSuitID: 144523
+    KarNameLen: 爆天甲-奥丁
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Warofgod
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 77236
+    ShapeSuitID: 144522
+    KarNameLen: 终极猛兽-典韦
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126352
+    ShapeSuitID: 144534
+    KarNameLen: 冰魂-釉龙
+    Grade: 3
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Yyhx
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127524
+    ShapeSuitID: 144535
+    KarNameLen: 时序使者-金禄
+    Grade: 3
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Yyhx
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 124685
+    ShapeSuitID: 144533
+    KarNameLen: 星煌-纸丹
+    Grade: 3
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Yyhx
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 136730
+    ShapeSuitID: 144532
+    KarNameLen: 天穹-般黛
+    Grade: 3
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Yyhx
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 116739
+    ShapeSuitID: 144531
+    KarNameLen: 天行者-润泽
+    Grade: 3
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Yyhx
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 129287
+    ShapeSuitID: 140033
+    KarNameLen: 阿尔法之芯-黑客
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Alpha
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 138417
+    ShapeSuitID: 138421
+    KarNameLen: 众神天后-羞花
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fourbeauty
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 89936
+    ShapeSuitID: 138418
+    KarNameLen: 终极烈焰新星-孔明
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 13902
+    ShapeSuitID: 138407
+    KarNameLen: 圣骑士Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 136712
+    ShapeSuitID: 136713
+    KarNameLen: 龙行八荒
+    Grade: 4
+    DressPoint: 15
+    CarLibraryCollectValue: 1000
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 136722
+    ShapeSuitID: 136723
+    KarNameLen: 雷诺之力-龙城飞将
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Longzhichuanren
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126347
+    ShapeSuitID: 136725
+    KarNameLen: 极星之翼-木兰
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Longzhichuanren
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127618
+    ShapeSuitID: 135165
+    KarNameLen: 至尊-青龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127618
+    ShapeSuitID: 135166
+    KarNameLen: 至尊-应龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127618
+    ShapeSuitID: 135167
+    KarNameLen: 至尊-烛龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127618
+    ShapeSuitID: 135168
+    KarNameLen: 至尊-冰夷
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106676
+    ShapeSuitID: 138124
+    KarNameLen: 至尊-青龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106676
+    ShapeSuitID: 138125
+    KarNameLen: 至尊-应龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106676
+    ShapeSuitID: 138126
+    KarNameLen: 至尊-烛龙
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106676
+    ShapeSuitID: 138127
+    KarNameLen: 至尊-冰夷
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: longnianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 11376
+    ShapeSuitID: 136721
+    KarNameLen: 暴风雪Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 22526
+    ShapeSuitID: 135170
+    KarNameLen: 紫电神驹-梅
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: meilanzhuju
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 101885
+    ShapeSuitID: 135171
+    KarNameLen: 终极黑域电魔-曹操
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 133689
+    KarNameLen: 智慧之神-魅惑女巫
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 28110
+    ShapeSuitID: 133688
+    KarNameLen: 烈焰新星-菊
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: meilanzhuju
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 34393
+    ShapeSuitID: 132221
+    KarNameLen: 神影-剑尊
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 132225
+    ShapeSuitID: 132226
+    KarNameLen: 玛莎拉蒂-溢彩
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: mashaladi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 132225
+    ShapeSuitID: 132227
+    KarNameLen: 玛莎拉蒂-无界
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: mashaladi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 132225
+    ShapeSuitID: 132228
+    KarNameLen: 玛莎拉蒂-拾樱
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: mashaladi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 12720
+    ShapeSuitID: 132220
+    KarNameLen: 雷诺-千机变
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 88865
+    ShapeSuitID: 132210
+    KarNameLen: 终极爆天甲-刘备
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 33789
+    ShapeSuitID: 132211
+    KarNameLen: 御剑游侠-竹
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: meilanzhuju
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 98830
+    ShapeSuitID: 130791
+    KarNameLen: 爆天雷诺-鸿钧
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 130792
+    KarNameLen: 爆天雷诺-千里
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 130793
+    KarNameLen: 爆天雷诺-澄明
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 130794
+    KarNameLen: 爆天雷诺-阳焱
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 130795
+    KarNameLen: 爆天雷诺-碧渊
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 130796
+    KarNameLen: 爆天雷诺-玄隐
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 130797
+    KarNameLen: 爆天雷诺-紫夜
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 131937
+    KarNameLen: 爆天雷诺-金刚
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: huluwa
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126345
+    ShapeSuitID: 129286
+    KarNameLen: 源极-帝皇侠
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Herolegend
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106675
+    ShapeSuitID: 130778
+    KarNameLen: 终极众神-吕布
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157753, 157754, 157755, 157756]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 119067
+    ShapeSuitID: 130777
+    KarNameLen: 特洛伊-冰霜骑士
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: TROY
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 115160
+    ShapeSuitID: 127617
+    KarNameLen: 至曜-地狱火
+    Grade: 2
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: Epic
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 24410
+    ShapeSuitID: 129288
+    KarNameLen: 风之使者-兰
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: meilanzhuju
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127438
+    ShapeSuitID: 127441
+    KarNameLen: 六道魔尊
+    Grade: 4
+    DressPoint: 15
+    CarLibraryCollectValue: 1000
+    GradeResourceLen: tunianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 129099
+    ShapeSuitID: 127616
+    KarNameLen: 至尊-玉麒麟
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: tunianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126352
+    ShapeSuitID: 124686
+    KarNameLen: 冰魂-樱寒
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 10020
+    ShapeSuitID: 126358
+    KarNameLen: 新手赛车-黑爵
+    Grade: 4
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    GradeResourceLen: 15zhounian
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 77236
+    ShapeSuitID: 126356
+    KarNameLen: 终极猛兽-幽冥骑士
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: 15zhounian
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 81293
+    ShapeSuitID: 126357
+    KarNameLen: 黑域电魔-玄冥
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: SiJiZhiShen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 91957
+    ShapeSuitID: 124680
+    KarNameLen: 银天使-蓐收
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: SiJiZhiShen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 12720
+    ShapeSuitID: 123506
+    KarNameLen: 雷诺-车王盾铠
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 86998
+    ShapeSuitID: 123502
+    KarNameLen: M18-祝融
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: SiJiZhiShen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 98263
+    ShapeSuitID: 123501
+    KarNameLen: 至尊-火鲤
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: S13chewnag
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 90945
+    ShapeSuitID: 122199
+    KarNameLen: 众神之神-哪吒
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: 86xiyou
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 120646
+    ShapeSuitID: 122200
+    KarNameLen: 镇海之戟-敖丙
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: xiyouxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157749, 157750, 157751, 157752]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 120657
+    KarNameLen: 智慧之神-句芒
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: SiJiZhiShen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 98830
+    ShapeSuitID: 119064
+    KarNameLen: 爆天雷诺-黑金
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 119065
+    KarNameLen: 爆天雷诺-绯红
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 98830
+    ShapeSuitID: 119066
+    KarNameLen: 爆天雷诺-冰蓝
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 90945
+    ShapeSuitID: 117941
+    KarNameLen: 众神之神-星云
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 2
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 119059
+    ShapeSuitID: 119063
+    KarNameLen: 至曜-耀虎
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: hunianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 75808
+    ShapeSuitID: 119062
+    KarNameLen: 针尖王者-马超
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: WuHuShangJiang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [168547]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 70047
+    ShapeSuitID: 117934
+    KarNameLen: 终麦-赵云
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: WuHuShangJiang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [168545]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 74362
+    ShapeSuitID: 116735
+    KarNameLen: 爆天甲-黄忠
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: WuHuShangJiang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [168548]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 17661
+    ShapeSuitID: 116740
+    KarNameLen: 黑夜传说-曜影
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 2
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 81293
+    ShapeSuitID: 115159
+    KarNameLen: 黑域电魔-张飞
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: WuHuShangJiang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [168546]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 113415
+    KarNameLen: 智慧之神-kitty限定
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: HelloKitty
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 13703
+    ShapeSuitID: 113413
+    KarNameLen: S青龙偃月刀-关羽
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: WuHuShangJiang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [168544]
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 112183
+    ShapeSuitID: 113414
+    KarNameLen: 射手座-艾俄罗斯
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 2
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 95683
+    ShapeSuitID: 112178
+    KarNameLen: 暗黑波塞冬
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 2
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 74362
+    ShapeSuitID: 110709
+    KarNameLen: 爆天甲-朋克
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 2
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 109563
+    ShapeSuitID: 110710
+    KarNameLen: 至尊-冰凤
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: niunianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 90945
+    ShapeSuitID: 110711
+    KarNameLen: 众神之神-麒麟
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [157745, 157746, 157747, 157748]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 117935
+    ShapeSuitID: 157766
+    KarNameLen: 战争之神-阿瑞斯
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: aolinpisi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 120646
+    ShapeSuitID: 157767
+    KarNameLen: 镇海之戟-申公豹
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Fengshen
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 138417
+    ShapeSuitID: 157768
+    KarNameLen: 众神天后-孙尚香
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: threekingdomhero
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 146567
+    ShapeSuitID: 157773
+    KarNameLen: 幻星-雪顶抹茶
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: naixue
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 136722
+    ShapeSuitID: 157771
+    KarNameLen: 雷诺之力-莉莉
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: shaonvxin
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 74362
+    ShapeSuitID: 157774
+    KarNameLen: 爆天甲-甜甜
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: shaonvxin
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 26931
+    ShapeSuitID: 157775
+    KarNameLen: 雷神之怒-露露
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: shaonvxin
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 115166
+    ShapeSuitID: 157776
+    KarNameLen: 爆天雪-小雪
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: shaonvxin
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 15456
+    ShapeSuitID: 158401
+    KarNameLen: 追魂者Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 16572
+    ShapeSuitID: 158400
+    KarNameLen: 逐魂者Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 123512
+    ShapeSuitID: 158403
+    KarNameLen: 悟空-尘猿
+    Grade: 4
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: wuxiafenghua
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126345
+    ShapeSuitID: 158404
+    KarNameLen: 源极之星-幻螳
+    Grade: 2
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: wuxiafenghua
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 158402
+    ShapeSuitID: 160268
+    KarNameLen: 魅娅-缘汐
+    Grade: 2
+    DressPoint: 5
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Epic
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 14107
+    ShapeSuitID: 157739
+    KarNameLen: S黄金剃刀Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 14106
+    ShapeSuitID: 157740
+    KarNameLen: S黑金剃刀Remake
+    Grade: 4
+    DressPoint: 0
+    CarLibraryCollectValue: 0
+    GradeResourceLen: Remake
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 162508
+    ShapeSuitID: 162517
+    KarNameLen: 极光律动-瞬影
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 157778
+    ShapeSuitID: 162917
+    KarNameLen: 臻藏-摇滚传奇
+    Grade: 4
+    DressPoint: 30
+    CarLibraryCollectValue: 1500
+    GradeResourceLen: yaogunchuanqizhencang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 20157778
+    ShapeSuitID: 162917
+    KarNameLen: 臻藏-摇滚传奇
+    Grade: 4
+    DressPoint: 30
+    CarLibraryCollectValue: 1500
+    GradeResourceLen: yaogunchuanqizhencang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 30157778
+    ShapeSuitID: 162917
+    KarNameLen: 臻藏-摇滚传奇
+    Grade: 4
+    DressPoint: 30
+    CarLibraryCollectValue: 1500
+    GradeResourceLen: yaogunchuanqizhencang
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects: []
+  - KartID: 163025
+    ShapeSuitID: 163024
+    KarNameLen: 幻耀流光-绘梦
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 12720
+    ShapeSuitID: 163036
+    KarNameLen: 雷诺-幻梦
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 109563
+    ShapeSuitID: 163041
+    KarNameLen: 朱雀-祈福·饴糖仙
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuanmnxd
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 129099
+    ShapeSuitID: 163037
+    KarNameLen: 麒麟-招财·玉如意
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuanmnxd
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [171055]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 119059
+    ShapeSuitID: 163040
+    KarNameLen: 白虎-合欢·琉璃主
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuanmnxd
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 127618
+    ShapeSuitID: 163039
+    KarNameLen: 青龙-纳福·绘春生
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuanmnxd
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: [171076]
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 150525
+    ShapeSuitID: 163042
+    KarNameLen: 玄武-守岁·暖炉娘
+    Grade: 4
+    DressPoint: 20
+    CarLibraryCollectValue: 500
+    GradeResourceLen: xciyuanmnxd
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 163043
+    ShapeSuitID: 163044
+    KarNameLen: 至尊-踏月
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: manianxianding
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106675
+    ShapeSuitID: 163046
+    KarNameLen: 终极众神-霹雳和弦
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: yaogunchuanqi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 88865
+    ShapeSuitID: 163047
+    KarNameLen: 终极爆天甲-狂野节拍
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: yaogunchuanqi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 85949
+    ShapeSuitID: 163048
+    KarNameLen: 终极紫电-超载脉冲
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: yaogunchuanqi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 75808
+    ShapeSuitID: 163049
+    KarNameLen: 终极针尖-极限电音
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: yaogunchuanqi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 163029
+    ShapeSuitID: 163030
+    KarNameLen: 星辰幻象-璀璨
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: jueyingguizu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 167863
+    ShapeSuitID: 167864
+    KarNameLen: 精灵之森-余烬
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 167865
+    ShapeSuitID: 167866
+    KarNameLen: 花之精灵-幽夜
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: ""
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 129287
+    ShapeSuitID: 167868
+    KarNameLen: 阿尔法之芯-浮生
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: moyingjianghu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 138417
+    ShapeSuitID: 167867
+    KarNameLen: 众神天后-倾城
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: moyingjianghu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 168664
+    ShapeSuitID: 170862
+    KarNameLen: 竹蜻蜓-玫瑰
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 168664
+    ShapeSuitID: 170863
+    KarNameLen: 竹蜻蜓-四叶草
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 168664
+    ShapeSuitID: 170864
+    KarNameLen: 竹蜻蜓-飞虎王
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 168559
+    ShapeSuitID: 168660
+    KarNameLen: 蜜糖行星-脉冲
+    Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    GradeResourceLen: Rare
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 98830
+    ShapeSuitID: 168552
+    KarNameLen: 爆天雷诺-熔炉
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 200
+    GradeResourceLen: feitu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 77236
+    ShapeSuitID: 168553
+    KarNameLen: 终极猛兽-狂斧
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: feitu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 119067
+    ShapeSuitID: 168554
+    KarNameLen: 特洛伊之眼-冥锯
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: feitu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 28110
+    ShapeSuitID: 171082
+    KarNameLen: 烈焰新星-源刃
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: feitu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 22526
+    ShapeSuitID: 168556
+    KarNameLen: 紫电神驹-毒液
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: feitu
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 126347
+    ShapeSuitID: 168558
+    KarNameLen: 极星之翼-酷洛米
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Kuromi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0
+  - KartID: 106673
+    ShapeSuitID: 168663
+    KarNameLen: 智慧之神-酷洛米
+    Grade: 4
+    DressPoint: 10
+    CarLibraryCollectValue: 100
+    GradeResourceLen: Kuromi
+    RefitItemList: []
+    RefitAdditionList: [0, 0, 0, 0]
+    SimilarShapeList: []
+    RefitEffects:
+      - EffectID: 0
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/Car/CarEff.nif
+        EffectRes: ""
+        Grade: 0
+      - EffectID: 1
+        Level: 3
+        Value1: 0
+        Value2: 0
+        Resource: KartAvatarEffect/SuperJet/JetEff.nif
+        EffectRes: ""
+        Grade: 0

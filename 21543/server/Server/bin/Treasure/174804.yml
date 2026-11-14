@@ -1,0 +1,128 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 174804；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00089%；1 件，每件 0.00089%
+  - Seed: 89
+    ItemType: 2
+    Items:
+      - ItemId: 171070 # 终极幻影-重生
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.10445%；5 件，每件 0.02089%
+  - Seed: 10534
+    ItemType: 2
+    Items:
+      - ItemId: 63429 # 终极幻影
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 15456 # 追魂者
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 33895 # 紫焰战神
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 66598 # 紫铭
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174595 # 终影重生名片
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.33424%；8 件，每件 0.04178%
+  - Seed: 43958
+    ItemType: 1
+    Items:
+      - ItemId: 172442 # 珠纱雅韵发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 172450 # 珠纱雅韵服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 172451 # 珠纱雅韵套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 172452 # 珠纱雅韵发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 172460 # 珠纱雅韵服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 172461 # 珠纱雅韵套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174577 # 终影重生胎印
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174565 # 终影重生车牌
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 1.75476%；7 件，每件 0.25068%
+  - Seed: 219434
+    ItemType: 1
+    Items:
+      - ItemId: 172442 # 珠纱雅韵发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 172450 # 珠纱雅韵服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 172451 # 珠纱雅韵套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 172452 # 珠纱雅韵发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 172460 # 珠纱雅韵服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 172461 # 珠纱雅韵套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 174565 # 终影重生车牌
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 97.80566%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

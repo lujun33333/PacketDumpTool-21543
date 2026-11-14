@@ -1,0 +1,18 @@
+{
+  "original_files_hashes_unchanged": true,
+  "yaml_readback": true,
+  "cross_table_ids_and_orders": true,
+  "card_id_matches_runtime_rules": true,
+  "pk_transport_matches_merged_table": true,
+  "uin_sanitized": true,
+  "existing_pk_values_preserved": 106,
+  "merged_existing_pk_changed_ids": [
+    174753
+  ],
+  "new_pets": [
+    177557,
+    177692
+  ],
+  "source_audit": "AST and manual source review",
+  "runtime_tested": false
+}

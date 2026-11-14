@@ -1,0 +1,1468 @@
+- KartID: 74362
+  KarName: 爆天-曜影
+  Grade: 3
+  GradeResource: Legend
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 118727
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 3
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 120247
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 100
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 120248
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 200
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 118728
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 300
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/118728/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/118728/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 118728
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 400
+      ItemPeriod: 0
+  - Level: 6
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/118728/MODEL/cheqianguangzhaoHUANGse.nif
+      EffectRes: Avatar/kart_new/118728/MODEL/cheqianguangzhaoHUANGse.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 118728
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 500
+      ItemPeriod: 0
+  - Level: 7
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 118729
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 600
+      ItemPeriod: 0
+  - Level: 8
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/118729/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/118729/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 118729
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 700
+      ItemPeriod: 0
+  - Level: 9
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/118729/MODEL/cheqianguangzhaoHUANGse.nif
+      EffectRes: Avatar/kart_new/118729/MODEL/cheqianguangzhaoHUANGse.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 118729
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 800
+      ItemPeriod: 0
+  - Level: 10
+    RefitEffectsInfo:
+    - EffectID: 4
+      Level: 4
+      Value1: 4001
+      Value2: 1750
+      Resource: KartAvatarEffect/SuperJet/JetEff.nif
+      EffectRes: Avatar/kart_new/118729/MODEL/startshow.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 110
+    ShapeSuitID: 118729
+    ConsumInfo:
+    - ItemID: 116759
+      ItemNum: 30
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 1400
+      ItemPeriod: 0
+  ShapeSuitID: 120246
+  MaxConsumInfo:
+    ItemID: 121593
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 0
+- KartID: 123512
+  KarName: 悟空-齐天大圣
+  Grade: 3
+  GradeResource: 86xiyou
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 123237
+    ConsumInfo:
+    - ItemID: 124596
+      ItemNum: 1000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 123237
+    ConsumInfo:
+    - ItemID: 124596
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 123237
+    ConsumInfo:
+    - ItemID: 124596
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/123237/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/123237/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 123237
+    ConsumInfo:
+    - ItemID: 124596
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/123238/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/123238/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 123238
+    ConsumInfo:
+    - ItemID: 124596
+      ItemNum: 5000
+      ItemPeriod: 0
+  ShapeSuitID: 123513
+  MaxConsumInfo:
+    ItemID: 124597
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1
+- KartID: 12720
+  KarName: 雷诺-幻夜
+  Grade: 3
+  GradeResource: Legend
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 126533
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 3
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 126534
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 100
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 126535
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 200
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 126536
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 10
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 300
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/126536/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/126536/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 126536
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 10
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 400
+      ItemPeriod: 0
+  - Level: 6
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/126536/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/126536/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 126536
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 10
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 500
+      ItemPeriod: 0
+  - Level: 7
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 126537
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 20
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 600
+      ItemPeriod: 0
+  - Level: 8
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/126537/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/126537/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 126537
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 20
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 700
+      ItemPeriod: 0
+  - Level: 9
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/126537/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/126537/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 126537
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 20
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 800
+      ItemPeriod: 0
+  - Level: 10
+    RefitEffectsInfo:
+    - EffectID: 4
+      Level: 4
+      Value1: 4001
+      Value2: 1750
+      Resource: KartAvatarEffect/SuperJet/JetEff.nif
+      EffectRes: Avatar/kart_new/126537/MODEL/startshow.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 110
+    ShapeSuitID: 126537
+    ConsumInfo:
+    - ItemID: 126538
+      ItemNum: 35
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 1400
+      ItemPeriod: 0
+  ShapeSuitID: 127359
+  MaxConsumInfo:
+    ItemID: 127349
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 0
+- KartID: 90945
+  KarName: 众神-乾坤
+  Grade: 3
+  GradeResource: Legend
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 127361
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 3
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 127362
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 100
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 127363
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 200
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 127364
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 300
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/127364/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/127364/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 127364
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 400
+      ItemPeriod: 0
+  - Level: 6
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/127364/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/127364/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 127364
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 500
+      ItemPeriod: 0
+  - Level: 7
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 127365
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 600
+      ItemPeriod: 0
+  - Level: 8
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/127365/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/127365/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 127365
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 700
+      ItemPeriod: 0
+  - Level: 9
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/127365/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/127365/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 127365
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 800
+      ItemPeriod: 0
+  - Level: 10
+    RefitEffectsInfo:
+    - EffectID: 4
+      Level: 4
+      Value1: 4001
+      Value2: 1750
+      Resource: KartAvatarEffect/SuperJet/JetEff.nif
+      EffectRes: Avatar/kart_new/127365/MODEL/startshow.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 110
+    ShapeSuitID: 127365
+    ConsumInfo:
+    - ItemID: 127350
+      ItemNum: 30
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 1400
+      ItemPeriod: 0
+  ShapeSuitID: 127360
+  MaxConsumInfo:
+    ItemID: 127352
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 0
+- KartID: 126345
+  KarName: 源极-大河神卫
+  Grade: 4
+  GradeResource: huanghexianding
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 127436
+    ConsumInfo:
+    - ItemID: 129141
+      ItemNum: 1000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 127436
+    ConsumInfo:
+    - ItemID: 129141
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 127436
+    ConsumInfo:
+    - ItemID: 129141
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/127436/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/127436/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 127436
+    ConsumInfo:
+    - ItemID: 129141
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/127437/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/127437/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 127437
+    ConsumInfo:
+    - ItemID: 129141
+      ItemNum: 5000
+      ItemPeriod: 0
+  ShapeSuitID: 126355
+  MaxConsumInfo:
+    ItemID: 129142
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1
+- KartID: 130538
+  KarName: 奥莉娜-天穹战音
+  Grade: 2
+  GradeResource: Epic
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 130798
+    ConsumInfo:
+    - ItemID: 129601
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 130798
+    ConsumInfo:
+    - ItemID: 129601
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 130799
+    ConsumInfo:
+    - ItemID: 129601
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/130799/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/130799/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 130799
+    ConsumInfo:
+    - ItemID: 129601
+      ItemNum: 6000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/130800/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/130800/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 130800
+    ConsumInfo:
+    - ItemID: 129601
+      ItemNum: 8000
+      ItemPeriod: 0
+  ShapeSuitID: 130539
+  MaxConsumInfo:
+    ItemID: 129602
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1
+- KartID: 133722
+  KarName: 哈雷特-炽焰龙骑
+  Grade: 2
+  GradeResource: Epic
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 133724
+    ConsumInfo:
+    - ItemID: 133718
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 133724
+    ConsumInfo:
+    - ItemID: 133718
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 133725
+    ConsumInfo:
+    - ItemID: 133718
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/133725/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/133725/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 133725
+    ConsumInfo:
+    - ItemID: 133718
+      ItemNum: 6000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/133726/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/133726/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 133726
+    ConsumInfo:
+    - ItemID: 133718
+      ItemNum: 8000
+      ItemPeriod: 0
+  ShapeSuitID: 133723
+  MaxConsumInfo:
+    ItemID: 133719
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1
+- KartID: 126345
+  KarName: 源极-烟雨天青
+  Grade: 2
+  GradeResource: jiangxi
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 133684
+    ConsumInfo:
+    - ItemID: 133680
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 133684
+    ConsumInfo:
+    - ItemID: 133680
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 133685
+    ConsumInfo:
+    - ItemID: 133680
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/133686/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/133686/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 133685
+    ConsumInfo:
+    - ItemID: 133680
+      ItemNum: 6000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/133686/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/133686/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 133686
+    ConsumInfo:
+    - ItemID: 133680
+      ItemNum: 8000
+      ItemPeriod: 0
+  ShapeSuitID: 133683
+  MaxConsumInfo:
+    ItemID: 133681
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1
+- KartID: 70047
+  KarName: 终麦-天行
+  Grade: 3
+  GradeResource: Legend
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 132204
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 3
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 132205
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 100
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 132206
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 200
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 132207
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 300
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/132207/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/132207/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 132207
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 400
+      ItemPeriod: 0
+  - Level: 6
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/132207/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/132207/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 132207
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 500
+      ItemPeriod: 0
+  - Level: 7
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 132208
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 600
+      ItemPeriod: 0
+  - Level: 8
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/132208/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/132208/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 132208
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 700
+      ItemPeriod: 0
+  - Level: 9
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/132208/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/132208/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 132208
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 800
+      ItemPeriod: 0
+  - Level: 10
+    RefitEffectsInfo:
+    - EffectID: 4
+      Level: 4
+      Value1: 4001
+      Value2: 1750
+      Resource: KartAvatarEffect/SuperJet/JetEff.nif
+      EffectRes: Avatar/kart_new/132208/MODEL/startshow.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 110
+    ShapeSuitID: 132208
+    ConsumInfo:
+    - ItemID: 136705
+      ItemNum: 30
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 1400
+      ItemPeriod: 0
+  ShapeSuitID: 132203
+  MaxConsumInfo:
+    ItemID: 136707
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 0
+- KartID: 11376
+  KarName: 暴风雪-极光
+  Grade: 3
+  GradeResource: Legend
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 136716
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 3
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 136717
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 100
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 136718
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 200
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 136719
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 300
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/136719/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/136719/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 136719
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 400
+      ItemPeriod: 0
+  - Level: 6
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/136719/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/136719/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 136719
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 6
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 500
+      ItemPeriod: 0
+  - Level: 7
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 136720
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 600
+      ItemPeriod: 0
+  - Level: 8
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/136720/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/136720/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 136720
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 700
+      ItemPeriod: 0
+  - Level: 9
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/136720/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/136720/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 136720
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 15
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 800
+      ItemPeriod: 0
+  - Level: 10
+    RefitEffectsInfo:
+    - EffectID: 4
+      Level: 4
+      Value1: 4001
+      Value2: 1750
+      Resource: KartAvatarEffect/SuperJet/JetEff.nif
+      EffectRes: Avatar/kart_new/136720/MODEL/startshow.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 110
+    ShapeSuitID: 136720
+    ConsumInfo:
+    - ItemID: 136709
+      ItemNum: 30
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 1400
+      ItemPeriod: 0
+  ShapeSuitID: 136715
+  MaxConsumInfo:
+    ItemID: 136711
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 0
+- KartID: 138412
+  KarName: 墨影青龙-敖丙
+  Grade: 2
+  GradeResource: Epic
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 138409
+    ConsumInfo:
+    - ItemID: 138388
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 138409
+    ConsumInfo:
+    - ItemID: 138388
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 138410
+    ConsumInfo:
+    - ItemID: 138388
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/138410/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/138410/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 138410
+    ConsumInfo:
+    - ItemID: 138388
+      ItemNum: 6000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/138411/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/138411/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 138411
+    ConsumInfo:
+    - ItemID: 138388
+      ItemNum: 8000
+      ItemPeriod: 0
+  ShapeSuitID: 138408
+  MaxConsumInfo:
+    ItemID: 138389
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1
+- KartID: 12720
+  KarName: 雷诺-弑神
+  Grade: 3
+  GradeResource: Legend
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 144537
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 3
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 144538
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 100
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 10
+    ShapeSuitID: 144539
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 3
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 200
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 144540
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 10
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 300
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/144540/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/144540/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 144540
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 10
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 400
+      ItemPeriod: 0
+  - Level: 6
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 2
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/144540/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/144540/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 144540
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 10
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 500
+      ItemPeriod: 0
+  - Level: 7
+    RefitEffectsInfo: []
+    DressPoint: 5
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 144541
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 20
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 600
+      ItemPeriod: 0
+  - Level: 8
+    RefitEffectsInfo:
+    - EffectID: 0
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/144541/MODEL/zishen.nif
+      EffectRes: Avatar/kart_new/144541/MODEL/zishen.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 144541
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 20
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 700
+      ItemPeriod: 0
+  - Level: 9
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/144541/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/144541/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 2
+    CarLibraryCollectValue: 50
+    ShapeSuitID: 144541
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 20
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 800
+      ItemPeriod: 0
+  - Level: 10
+    RefitEffectsInfo:
+    - EffectID: 4
+      Level: 4
+      Value1: 4001
+      Value2: 1750
+      Resource: KartAvatarEffect/SuperJet/JetEff.nif
+      EffectRes: Avatar/kart_new/144542/MODEL/startshow.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 110
+    ShapeSuitID: 144541
+    ConsumInfo:
+    - ItemID: 148382
+      ItemNum: 35
+      ItemPeriod: 0
+    - ItemID: 116761
+      ItemNum: 1400
+      ItemPeriod: 0
+  ShapeSuitID: 144536
+  MaxConsumInfo:
+    ItemID: 148385
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 0
+- KartID: 152474
+  KarName: 神威泰坦-福睦舰长
+  Grade: 2
+  GradeResource: Epic
+  LevelInfo:
+  - Level: 1
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 152476
+    ConsumInfo:
+    - ItemID: 153719
+      ItemNum: 2000
+      ItemPeriod: 0
+  - Level: 2
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 152476
+    ConsumInfo:
+    - ItemID: 153719
+      ItemNum: 3000
+      ItemPeriod: 0
+  - Level: 3
+    RefitEffectsInfo: []
+    DressPoint: 2
+    CarLibraryCollectValue: 20
+    ShapeSuitID: 152477
+    ConsumInfo:
+    - ItemID: 153719
+      ItemNum: 4000
+      ItemPeriod: 0
+  - Level: 4
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/152477/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/152477/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 3
+    CarLibraryCollectValue: 40
+    ShapeSuitID: 152477
+    ConsumInfo:
+    - ItemID: 153719
+      ItemNum: 6000
+      ItemPeriod: 0
+  - Level: 5
+    RefitEffectsInfo:
+    - EffectID: 1
+      Level: 3
+      Value1: 0
+      Value2: 0
+      Resource: Avatar/kart_new/152478/MODEL/dapentexiao.nif
+      EffectRes: Avatar/kart_new/152478/MODEL/dapentexiao.nif
+      Grade: 1
+    DressPoint: 5
+    CarLibraryCollectValue: 60
+    ShapeSuitID: 152478
+    ConsumInfo:
+    - ItemID: 153719
+      ItemNum: 8000
+      ItemPeriod: 0
+  ShapeSuitID: 152475
+  MaxConsumInfo:
+    ItemID: 153720
+    ItemNum: 1
+    ItemPeriod: 0
+  LegendSkinType: 1

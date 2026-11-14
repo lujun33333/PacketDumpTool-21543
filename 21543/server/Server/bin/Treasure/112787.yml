@@ -1,0 +1,126 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 112787；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00148%；2 件，每件 0.00074%
+  - Seed: 148
+    ItemType: 2
+    Items:
+      - ItemId: 162917 # 臻藏-摇滚传奇
+        ItemNum: 1
+        AvailPeriod: -1
+        ServerLimit: 3
+      - ItemId: 157778 # 至臻·爆天甲
+        ItemNum: 1
+        AvailPeriod: -1
+        ServerLimit: 3
+
+  # 稀有永久池合计 0.00528%；2 件，每件 0.00264%
+  - Seed: 676
+    ItemType: 2
+    Items:
+      - ItemId: 163321 # 终极摇滚名片
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 168398 # 终极摇滚名片底板
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有限时池合计 0.03168%；2 件，每件 0.01584%
+  - Seed: 3844
+    ItemType: 2
+    Items:
+      - ItemId: 163321 # 终极摇滚名片
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 168398 # 终极摇滚名片底板
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 极品永久池合计 0.03168%；6 件，每件 0.00528%
+  - Seed: 7012
+    ItemType: 1
+    Items:
+      - ItemId: 164925 # 终极摇滚发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 164933 # 终极摇滚服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 164935 # 终极摇滚发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 164943 # 终极摇滚服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 164944 # 终极摇滚套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 164934 # 终极摇滚套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.19008%；6 件，每件 0.03168%
+  - Seed: 26020
+    ItemType: 1
+    Items:
+      - ItemId: 164925 # 终极摇滚发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 164933 # 终极摇滚服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 164935 # 终极摇滚发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 164943 # 终极摇滚服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 164944 # 终极摇滚套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 164934 # 终极摇滚套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.73980%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

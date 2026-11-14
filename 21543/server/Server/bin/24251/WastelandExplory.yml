@@ -1,0 +1,5890 @@
+enabled: true
+schema: wasteland_explory_struct_v1
+source: F:/抓包/202606021733/废土集结令 official 24251 captures; structured protocol config, no runtime hex replay path
+wasteland_explory:
+  activities:
+  - activity_type: 1
+    name: 爆天雷诺-熔炉
+    sub_title: 全新废土主题，爆天雷诺-熔炉登场！
+    cost_item_id: 168226
+    cost_one: 3
+    cost_ten: 30
+    cost_fifty: 150
+    exchange_best_item_id: 168224
+    fenjie_item_id: 168225
+    remind_item_id: 168552
+    open_date: 20260601
+    open_time: 0
+    close_date: 20260802
+    close_time: 235959
+    season_id: 1
+    burst_baoji: 1
+    spl_need_exchange_item_num: 1250
+  - activity_type: 2
+    name: 终极猛兽-狂斧
+    sub_title: 全新废土主题，终极猛兽-狂斧登场！
+    cost_item_id: 168226
+    cost_one: 1
+    cost_ten: 10
+    cost_fifty: 50
+    exchange_best_item_id: 168313
+    fenjie_item_id: 168314
+    remind_item_id: 168553
+    open_date: 20260601
+    open_time: 0
+    close_date: 20260802
+    close_time: 235959
+    season_id: 1
+    burst_baoji: 1
+    spl_need_exchange_item_num: 700
+  - activity_type: 3
+    name: 特洛伊之眼-冥锯
+    sub_title: 全新废土主题，特洛伊之眼-冥锯登场！
+    cost_item_id: 168226
+    cost_one: 1
+    cost_ten: 10
+    cost_fifty: 50
+    exchange_best_item_id: 168317
+    fenjie_item_id: 168316
+    remind_item_id: 168554
+    open_date: 20260601
+    open_time: 0
+    close_date: 20260802
+    close_time: 235959
+    season_id: 1
+    burst_baoji: 1
+    spl_need_exchange_item_num: 700
+  - activity_type: 4
+    name: 烈焰新星-源刃
+    sub_title: 全新废土主题，烈焰新星-源刃登场！
+    cost_item_id: 168226
+    cost_one: 1
+    cost_ten: 10
+    cost_fifty: 50
+    exchange_best_item_id: 168333
+    fenjie_item_id: 168334
+    remind_item_id: 171082
+    open_date: 20260601
+    open_time: 0
+    close_date: 20260802
+    close_time: 235959
+    season_id: 1
+    burst_baoji: 1
+    spl_need_exchange_item_num: 700
+  - activity_type: 5
+    name: 紫电神驹-毒液
+    sub_title: 全新废土主题，紫电神驹-毒液登场！
+    cost_item_id: 168226
+    cost_one: 1
+    cost_ten: 10
+    cost_fifty: 50
+    exchange_best_item_id: 168335
+    fenjie_item_id: 168336
+    remind_item_id: 168556
+    open_date: 20260601
+    open_time: 0
+    close_date: 20260802
+    close_time: 235959
+    season_id: 1
+    burst_baoji: 1
+    spl_need_exchange_item_num: 700
+  info_awards:
+  - activity_type: 1
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168552
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168552
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 98830
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 120
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 98830
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 8
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 5
+      award_idx: 5
+      itemid: 63431
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 60
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 6
+      itemid: 63431
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 6
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 7
+      award_idx: 7
+      itemid: 66600
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 60
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 8
+      itemid: 66600
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 6
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 9
+      award_idx: 9
+      itemid: 109562
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 30
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 10
+      itemid: 109562
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 4
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 11
+      award_idx: 11
+      itemid: 95660
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 15
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 12
+      itemid: 95660
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 2
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 13
+      award_idx: 13
+      itemid: 91960
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 15
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 14
+      award_idx: 14
+      itemid: 91960
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 2
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 15
+      award_idx: 15
+      itemid: 92843
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 15
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 16
+      award_idx: 16
+      itemid: 92843
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 2
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 17
+      award_idx: 17
+      itemid: 168224
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 18
+      award_idx: 18
+      itemid: 168225
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 19
+      award_idx: 19
+      itemid: 168225
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 20
+      award_idx: 20
+      itemid: 168225
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 21
+      award_idx: 21
+      itemid: 168225
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 22
+      award_idx: 22
+      itemid: 168225
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 23
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 24
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 25
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 26
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 27
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 28
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 29
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 30
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 31
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 32
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 33
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 34
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 35
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 36
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 37
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+  - activity_type: 2
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168553
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168553
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 77236
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 77236
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 85945
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 85945
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 80545
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 80545
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 87965
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 87965
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 75809
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 75809
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168313
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168314
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168314
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168314
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168314
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168314
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+  - activity_type: 3
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168554
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168554
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 119067
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 119067
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 102951
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 102951
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 63703
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 63703
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 31920
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 31920
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 102230
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 102230
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168317
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168316
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168316
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168316
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168316
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168316
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+  - activity_type: 4
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 171082
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 171082
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 28110
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 28110
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 71455
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 71455
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 70715
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 70715
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 71463
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 71463
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 74894
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 74894
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168333
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168334
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168334
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168334
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168334
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168334
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+  - activity_type: 5
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168556
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168556
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 22526
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 22526
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 78295
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 78295
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 95683
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 95683
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 78302
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 78302
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 89943
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 89943
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168335
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168336
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168336
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168336
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168336
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168336
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 1
+      to_tempbox: false
+  draw_pool:
+  - activity_type: 1
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168552
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168552
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 98830
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 120
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 98830
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 8
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 5
+      award_idx: 5
+      itemid: 63431
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 60
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 6
+      itemid: 63431
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 6
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 7
+      award_idx: 7
+      itemid: 66600
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 60
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 8
+      itemid: 66600
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 6
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 9
+      award_idx: 9
+      itemid: 109562
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 30
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 10
+      itemid: 109562
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 4
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 11
+      award_idx: 11
+      itemid: 95660
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 15
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 12
+      itemid: 95660
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 2
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 13
+      award_idx: 13
+      itemid: 91960
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 15
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 14
+      award_idx: 14
+      itemid: 91960
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 2
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 15
+      award_idx: 15
+      itemid: 92843
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 15
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 16
+      award_idx: 16
+      itemid: 92843
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 2
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 17
+      award_idx: 17
+      itemid: 168224
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 18
+      award_idx: 18
+      itemid: 168225
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 19
+      award_idx: 19
+      itemid: 168225
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 20
+      award_idx: 20
+      itemid: 168225
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 21
+      award_idx: 21
+      itemid: 168225
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 22
+      award_idx: 22
+      itemid: 168225
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 23
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 24
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 25
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 26
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 27
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 28
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 29
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 30
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 31
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 32
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 33
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 34
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 35
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 36
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 37
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+  - activity_type: 2
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168553
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168553
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 77236
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 77236
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 85945
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 85945
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 80545
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 80545
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 87965
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 87965
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 75809
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 75809
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168313
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168314
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168314
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168314
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168314
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168314
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+  - activity_type: 3
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168554
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168554
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 119067
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 119067
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 102951
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 102951
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 63703
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 63703
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 31920
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 31920
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 102230
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 102230
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168317
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168316
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168316
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168316
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168316
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168316
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+  - activity_type: 4
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 171082
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 171082
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 28110
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 28110
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 71455
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 71455
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 70715
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 70715
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 71463
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 71463
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 74894
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 74894
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168333
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168334
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168334
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168334
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168334
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168334
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+  - activity_type: 5
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168556
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 80
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 2
+      award_idx: 2
+      itemid: 168556
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 7
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 3
+      award_idx: 3
+      itemid: 22526
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 150
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 4
+      award_idx: 4
+      itemid: 22526
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 10
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 5
+      award_idx: 9
+      itemid: 78295
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 45
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 6
+      award_idx: 10
+      itemid: 78295
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 5
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 7
+      award_idx: 11
+      itemid: 95683
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 8
+      award_idx: 12
+      itemid: 95683
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 9
+      award_idx: 13
+      itemid: 78302
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 10
+      award_idx: 14
+      itemid: 78302
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 11
+      award_idx: 15
+      itemid: 89943
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 20
+      exchangeNeedNum: 1
+      weight: 1
+      to_tempbox: true
+    - index: 12
+      award_idx: 16
+      itemid: 89943
+      itemnum: 1
+      item_type: 1
+      availperiod: 72
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 3
+      exchangeNeedNum: 0
+      weight: 4
+      to_tempbox: true
+    - index: 13
+      award_idx: 17
+      itemid: 168335
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 14
+      award_idx: 18
+      itemid: 168336
+      itemnum: 5
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 15
+      award_idx: 19
+      itemid: 168336
+      itemnum: 4
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 16
+      award_idx: 20
+      itemid: 168336
+      itemnum: 3
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 17
+      award_idx: 21
+      itemid: 168336
+      itemnum: 2
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 18
+      award_idx: 22
+      itemid: 168336
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 19
+      award_idx: 23
+      itemid: 12386
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 20
+      award_idx: 24
+      itemid: 12387
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 21
+      award_idx: 25
+      itemid: 12388
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 22
+      award_idx: 26
+      itemid: 12389
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 23
+      award_idx: 27
+      itemid: 12390
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 24
+      award_idx: 28
+      itemid: 21978
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 25
+      award_idx: 29
+      itemid: 21984
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 26
+      award_idx: 30
+      itemid: 21990
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 27
+      award_idx: 31
+      itemid: 22014
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 28
+      award_idx: 32
+      itemid: 21977
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 29
+      award_idx: 33
+      itemid: 21983
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 30
+      award_idx: 34
+      itemid: 12376
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 31
+      award_idx: 35
+      itemid: 12377
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 32
+      award_idx: 36
+      itemid: 12378
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+    - index: 33
+      award_idx: 37
+      itemid: 12380
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      coupons: 0
+      supermoney: 0
+      fenjie_num: 0
+      exchangeNeedNum: 0
+      weight: 10
+      to_tempbox: false
+  exchange_shop:
+  - activity_type: 1
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168552
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 1
+      fenjie_num: 1250
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 1250
+    - index: 2
+      award_idx: 2
+      itemid: 98830
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 830
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 830
+    - index: 3
+      award_idx: 3
+      itemid: 63431
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 420
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 420
+    - index: 4
+      award_idx: 4
+      itemid: 66600
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 420
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 420
+    - index: 5
+      award_idx: 5
+      itemid: 109562
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 200
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 200
+    - index: 6
+      award_idx: 6
+      itemid: 95660
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 130
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 130
+    - index: 7
+      award_idx: 7
+      itemid: 91960
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 130
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 130
+    - index: 8
+      award_idx: 8
+      itemid: 92843
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 130
+      exchange_items:
+      - piece_id: 168224
+        need_num: 1
+      - piece_id: 168225
+        need_num: 130
+    - index: 9
+      award_idx: 9
+      itemid: 168678
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 175
+    - index: 10
+      award_idx: 10
+      itemid: 170840
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 10
+    - index: 11
+      award_idx: 11
+      itemid: 170848
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 40
+    - index: 12
+      award_idx: 12
+      itemid: 168179
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 10
+    - index: 13
+      award_idx: 13
+      itemid: 168156
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 14
+      award_idx: 14
+      itemid: 170827
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 10
+    - index: 15
+      award_idx: 15
+      itemid: 170835
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 40
+    - index: 16
+      award_idx: 16
+      itemid: 168178
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 10
+    - index: 17
+      award_idx: 17
+      itemid: 168155
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 18
+      award_idx: 18
+      itemid: 168121
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 19
+      award_idx: 19
+      itemid: 168138
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 20
+      award_idx: 20
+      itemid: 168349
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 21
+      award_idx: 21
+      itemid: 168356
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 22
+      award_idx: 22
+      itemid: 69938
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 25
+    - index: 23
+      award_idx: 23
+      itemid: 69938
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 5
+    - index: 24
+      award_idx: 24
+      itemid: 33772
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 15
+    - index: 25
+      award_idx: 25
+      itemid: 33772
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168224
+        need_num: 9999
+      - piece_id: 168225
+        need_num: 2
+  - activity_type: 2
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168553
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 1
+      fenjie_num: 700
+      exchange_items:
+      - piece_id: 168313
+        need_num: 1
+      - piece_id: 168314
+        need_num: 700
+    - index: 2
+      award_idx: 2
+      itemid: 77236
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 1300
+      exchange_items:
+      - piece_id: 168313
+        need_num: 1
+      - piece_id: 168314
+        need_num: 1300
+    - index: 3
+      award_idx: 3
+      itemid: 85945
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 500
+      exchange_items:
+      - piece_id: 168313
+        need_num: 1
+      - piece_id: 168314
+        need_num: 500
+    - index: 4
+      award_idx: 4
+      itemid: 80545
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168313
+        need_num: 1
+      - piece_id: 168314
+        need_num: 300
+    - index: 5
+      award_idx: 5
+      itemid: 87965
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168313
+        need_num: 1
+      - piece_id: 168314
+        need_num: 300
+    - index: 6
+      award_idx: 6
+      itemid: 75809
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168313
+        need_num: 1
+      - piece_id: 168314
+        need_num: 300
+    - index: 7
+      award_idx: 7
+      itemid: 167334
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 20
+    - index: 8
+      award_idx: 8
+      itemid: 167342
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 110
+    - index: 9
+      award_idx: 9
+      itemid: 165859
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 20
+    - index: 10
+      award_idx: 10
+      itemid: 167321
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 20
+    - index: 11
+      award_idx: 11
+      itemid: 167329
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 110
+    - index: 12
+      award_idx: 12
+      itemid: 165858
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 20
+    - index: 13
+      award_idx: 13
+      itemid: 168350
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 30
+    - index: 14
+      award_idx: 14
+      itemid: 168356
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 30
+    - index: 15
+      award_idx: 15
+      itemid: 69938
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 80
+    - index: 16
+      award_idx: 16
+      itemid: 69938
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 10
+    - index: 17
+      award_idx: 17
+      itemid: 33772
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 40
+    - index: 18
+      award_idx: 18
+      itemid: 33772
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168313
+        need_num: 9999
+      - piece_id: 168314
+        need_num: 5
+  - activity_type: 3
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168554
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 1
+      fenjie_num: 700
+      exchange_items:
+      - piece_id: 168317
+        need_num: 1
+      - piece_id: 168316
+        need_num: 700
+    - index: 2
+      award_idx: 2
+      itemid: 119067
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 1300
+      exchange_items:
+      - piece_id: 168317
+        need_num: 1
+      - piece_id: 168316
+        need_num: 1300
+    - index: 3
+      award_idx: 3
+      itemid: 102951
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 500
+      exchange_items:
+      - piece_id: 168317
+        need_num: 1
+      - piece_id: 168316
+        need_num: 500
+    - index: 4
+      award_idx: 4
+      itemid: 63703
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168317
+        need_num: 1
+      - piece_id: 168316
+        need_num: 300
+    - index: 5
+      award_idx: 5
+      itemid: 31920
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168317
+        need_num: 1
+      - piece_id: 168316
+        need_num: 300
+    - index: 6
+      award_idx: 6
+      itemid: 102230
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168317
+        need_num: 1
+      - piece_id: 168316
+        need_num: 300
+    - index: 7
+      award_idx: 7
+      itemid: 167334
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 20
+    - index: 8
+      award_idx: 8
+      itemid: 167342
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 110
+    - index: 9
+      award_idx: 9
+      itemid: 165859
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 20
+    - index: 10
+      award_idx: 10
+      itemid: 167321
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 20
+    - index: 11
+      award_idx: 11
+      itemid: 167329
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 110
+    - index: 12
+      award_idx: 12
+      itemid: 165858
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 20
+    - index: 13
+      award_idx: 13
+      itemid: 168351
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 30
+    - index: 14
+      award_idx: 14
+      itemid: 168356
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 30
+    - index: 15
+      award_idx: 15
+      itemid: 69938
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 80
+    - index: 16
+      award_idx: 16
+      itemid: 69938
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 10
+    - index: 17
+      award_idx: 17
+      itemid: 33772
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 40
+    - index: 18
+      award_idx: 18
+      itemid: 33772
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168317
+        need_num: 9999
+      - piece_id: 168316
+        need_num: 5
+  - activity_type: 4
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 171082
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 1
+      fenjie_num: 700
+      exchange_items:
+      - piece_id: 168333
+        need_num: 1
+      - piece_id: 168334
+        need_num: 700
+    - index: 2
+      award_idx: 2
+      itemid: 28110
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 1300
+      exchange_items:
+      - piece_id: 168333
+        need_num: 1
+      - piece_id: 168334
+        need_num: 1300
+    - index: 3
+      award_idx: 3
+      itemid: 71455
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 500
+      exchange_items:
+      - piece_id: 168333
+        need_num: 1
+      - piece_id: 168334
+        need_num: 500
+    - index: 4
+      award_idx: 4
+      itemid: 70715
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168333
+        need_num: 1
+      - piece_id: 168334
+        need_num: 300
+    - index: 5
+      award_idx: 5
+      itemid: 71463
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168333
+        need_num: 1
+      - piece_id: 168334
+        need_num: 300
+    - index: 6
+      award_idx: 6
+      itemid: 74894
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168333
+        need_num: 1
+      - piece_id: 168334
+        need_num: 300
+    - index: 7
+      award_idx: 7
+      itemid: 167334
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 20
+    - index: 8
+      award_idx: 8
+      itemid: 167342
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 110
+    - index: 9
+      award_idx: 9
+      itemid: 165859
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 20
+    - index: 10
+      award_idx: 10
+      itemid: 167321
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 20
+    - index: 11
+      award_idx: 11
+      itemid: 167329
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 110
+    - index: 12
+      award_idx: 12
+      itemid: 165858
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 20
+    - index: 13
+      award_idx: 13
+      itemid: 168352
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 30
+    - index: 14
+      award_idx: 14
+      itemid: 168356
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 30
+    - index: 15
+      award_idx: 15
+      itemid: 69938
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 80
+    - index: 16
+      award_idx: 16
+      itemid: 69938
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 10
+    - index: 17
+      award_idx: 17
+      itemid: 33772
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 40
+    - index: 18
+      award_idx: 18
+      itemid: 33772
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168333
+        need_num: 9999
+      - piece_id: 168334
+        need_num: 5
+  - activity_type: 5
+    rows:
+    - index: 1
+      award_idx: 1
+      itemid: 168556
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 1
+      fenjie_num: 700
+      exchange_items:
+      - piece_id: 168335
+        need_num: 1
+      - piece_id: 168336
+        need_num: 700
+    - index: 2
+      award_idx: 2
+      itemid: 22526
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 1300
+      exchange_items:
+      - piece_id: 168335
+        need_num: 1
+      - piece_id: 168336
+        need_num: 1300
+    - index: 3
+      award_idx: 3
+      itemid: 78295
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 500
+      exchange_items:
+      - piece_id: 168335
+        need_num: 1
+      - piece_id: 168336
+        need_num: 500
+    - index: 4
+      award_idx: 4
+      itemid: 95683
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168335
+        need_num: 1
+      - piece_id: 168336
+        need_num: 300
+    - index: 5
+      award_idx: 5
+      itemid: 78302
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168335
+        need_num: 1
+      - piece_id: 168336
+        need_num: 300
+    - index: 6
+      award_idx: 6
+      itemid: 89943
+      itemnum: 1
+      item_type: 1
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 300
+      exchange_items:
+      - piece_id: 168335
+        need_num: 1
+      - piece_id: 168336
+        need_num: 300
+    - index: 7
+      award_idx: 7
+      itemid: 167334
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 20
+    - index: 8
+      award_idx: 8
+      itemid: 167342
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 110
+    - index: 9
+      award_idx: 9
+      itemid: 165859
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 20
+    - index: 10
+      award_idx: 10
+      itemid: 167321
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 20
+    - index: 11
+      award_idx: 11
+      itemid: 167329
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 110
+    - index: 12
+      award_idx: 12
+      itemid: 165858
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 20
+    - index: 13
+      award_idx: 13
+      itemid: 168353
+      itemnum: 1
+      item_type: 0
+      availperiod: -1
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 30
+    - index: 14
+      award_idx: 14
+      itemid: 168356
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 1
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 30
+    - index: 15
+      award_idx: 15
+      itemid: 69938
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 80
+    - index: 16
+      award_idx: 16
+      itemid: 69938
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 10
+    - index: 17
+      award_idx: 17
+      itemid: 33772
+      itemnum: 100
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 40
+    - index: 18
+      award_idx: 18
+      itemid: 33772
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      errid: 11498
+      maxGetNum: 9999
+      remindFlag: 0
+      fenjie_num: 0
+      exchange_items:
+      - piece_id: 168335
+        need_num: 9999
+      - piece_id: 168336
+        need_num: 5
+  tempbox_rules:
+    to_tempbox_item_types:
+    - 1
+    - 2
+    direct_bag_item_types:
+    - 0
+    - 5
+    - 6
+    note: 赛车/皮肤进废土暂存箱；普通道具直接进背包。
+  progress_rewards:
+  - activity_type: 1
+    rows:
+    - index: 1
+      specialFlag: 1
+      needScore: 1
+      itemid: 168225
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 2
+      specialFlag: 2
+      needScore: 20
+      itemid: 168225
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 3
+      specialFlag: 3
+      needScore: 80
+      itemid: 168225
+      itemnum: 20
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 4
+      specialFlag: 4
+      needScore: 150
+      itemid: 168225
+      itemnum: 25
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 5
+      specialFlag: 5
+      needScore: 300
+      itemid: 168225
+      itemnum: 30
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+  - activity_type: 2
+    rows:
+    - index: 1
+      specialFlag: 1
+      needScore: 1
+      itemid: 168314
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 2
+      specialFlag: 2
+      needScore: 20
+      itemid: 168314
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 3
+      specialFlag: 3
+      needScore: 80
+      itemid: 168314
+      itemnum: 20
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 4
+      specialFlag: 4
+      needScore: 150
+      itemid: 168314
+      itemnum: 25
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 5
+      specialFlag: 5
+      needScore: 300
+      itemid: 168314
+      itemnum: 30
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+  - activity_type: 3
+    rows:
+    - index: 1
+      specialFlag: 1
+      needScore: 1
+      itemid: 168316
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 2
+      specialFlag: 2
+      needScore: 20
+      itemid: 168316
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 3
+      specialFlag: 3
+      needScore: 80
+      itemid: 168316
+      itemnum: 20
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 4
+      specialFlag: 4
+      needScore: 150
+      itemid: 168316
+      itemnum: 25
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 5
+      specialFlag: 5
+      needScore: 300
+      itemid: 168316
+      itemnum: 30
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+  - activity_type: 4
+    rows:
+    - index: 1
+      specialFlag: 1
+      needScore: 1
+      itemid: 168334
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 2
+      specialFlag: 2
+      needScore: 20
+      itemid: 168334
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 3
+      specialFlag: 3
+      needScore: 80
+      itemid: 168334
+      itemnum: 20
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 4
+      specialFlag: 4
+      needScore: 150
+      itemid: 168334
+      itemnum: 25
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 5
+      specialFlag: 5
+      needScore: 300
+      itemid: 168334
+      itemnum: 30
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+  - activity_type: 5
+    rows:
+    - index: 1
+      specialFlag: 1
+      needScore: 1
+      itemid: 168336
+      itemnum: 1
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 2
+      specialFlag: 2
+      needScore: 20
+      itemid: 168336
+      itemnum: 10
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 3
+      specialFlag: 3
+      needScore: 80
+      itemid: 168336
+      itemnum: 20
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 4
+      specialFlag: 4
+      needScore: 150
+      itemid: 168336
+      itemnum: 25
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+    - index: 5
+      specialFlag: 5
+      needScore: 300
+      itemid: 168336
+      itemnum: 30
+      item_type: 0
+      availperiod: 0
+      supermoney: 0
+      coupons: 0
+  task_base:
+    entryID: 554
+    BgPicPath: https://down.speed.qq.com/CDNRes/Monetization/MonetizationHub/4-MonetizationPaymentTemplate/feitu_530975cf.png
+    DateBeginStr: 2026-06-01 00-00-00
+    DateEndStr: 2026-08-02 23-59-59
+    HuodongName: 源·废土集结令
+    Describe: 收集源废土系列皮肤领取专属主题头像框、名片！
+    HuodongRule: https://speed.qq.com/home/contcheng/chunjiehuodong6.html
+    SeasonID: 1
+    BeginTime: 1780243200
+    EndTime: 1785686399

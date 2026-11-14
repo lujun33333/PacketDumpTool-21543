@@ -1,0 +1,101 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 91692；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00110%；1 件，每件 0.00110%
+  - Seed: 110
+    ItemType: 2
+    Items:
+      - ItemId: 177929 # 至曜-神迹
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.00630%；3 件，每件 0.00210%
+  - Seed: 740
+    ItemType: 2
+    Items:
+      - ItemId: 123501 # 至尊-火鲤
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 123502 # M18-祝融
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 124680 # 银天使-蓐收
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.02520%；4 件，每件 0.00630%
+  - Seed: 3260
+    ItemType: 1
+    Items:
+      - ItemId: 176788 # 霜糖彩绘服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 176789 # 霜糖彩绘套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 176790 # 绯夜神域发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 176800 # 绯夜神域发饰
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.19120%；4 件，每件 0.04780%
+  - Seed: 22380
+    ItemType: 1
+    Items:
+      - ItemId: 176788 # 霜糖彩绘服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 176789 # 霜糖彩绘套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 176790 # 绯夜神域发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 176800 # 绯夜神域发饰
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.77620%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

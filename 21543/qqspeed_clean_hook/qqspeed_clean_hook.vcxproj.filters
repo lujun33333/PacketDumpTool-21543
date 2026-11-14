@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09C46329-C4CC-4C82-9996-8261B481C849}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;ixx;cppm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EF8D64AE-A837-40EB-9DCE-3576582E5611}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{98DCD92F-E938-4F6B-B971-669737C476CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{85F93AC3-F4D9-48AE-B54E-73D23463AA57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{9CCBD8AE-4629-4687-B992-AE27EC61E152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="topkart">
+      <UniqueIdentifier>{D61F78E2-0D4D-4A25-A55D-6910F7909B06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="diagnostics">
+      <UniqueIdentifier>{9D17FB08-BC39-4517-8F38-61A8E2A3D791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="production">
+      <UniqueIdentifier>{C09014D0-88C6-4F57-A0BE-15197B51E2F4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="diagnostics\process_exception_trace.h">
+      <Filter>diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_runtime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="manual_fls_slot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logging\hook_log.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="network\code_patch.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\connect_redirect.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\kart_refit_shadow.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\msg100_login_plain.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\network_gate_commands.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\network_hooks.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\protected_network_profile.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\serializer_body.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\protected_topkart_profile.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\topkart_551_feed.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\topkart_change_item_probe.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\topkart_exit_trace_probe.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\topkart_lua_table_guard.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\topkart_mapid_probe.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+    <ClInclude Include="topkart\topkart_worldbound_guard.h">
+      <Filter>topkart</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="diagnostics\process_exception_trace.cpp">
+      <Filter>diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logging\hook_log.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="network\code_patch.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\connect_redirect.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\kart_refit_shadow.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\msg100_login_plain.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\network_gate_commands.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\network_hooks.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\protected_network_profile.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\serializer_body.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="production\connect_redirect_mfc.cpp">
+      <Filter>production</Filter>
+    </ClCompile>
+    <ClCompile Include="production\hook_runtime_minimal.cpp">
+      <Filter>production</Filter>
+    </ClCompile>
+    <ClCompile Include="production\protected_topkart_profile_minimal.cpp">
+      <Filter>production</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\protected_topkart_profile.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\topkart_551_feed.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\topkart_change_item_probe.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\topkart_exit_trace_probe.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\topkart_lua_table_guard.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\topkart_mapid_probe.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+    <ClCompile Include="topkart\topkart_worldbound_guard.cpp">
+      <Filter>topkart</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

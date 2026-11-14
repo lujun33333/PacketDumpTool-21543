@@ -1,0 +1,96 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 103286；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00856%；4 件，每件 0.00214%
+  - Seed: 856
+    ItemType: 2
+    Items:
+      - ItemId: 177917 # 海上丝路
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177918 # 木舸逐风
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177919 # 团圞雷诺
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177921 # 月娘映海
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.01712%；4 件，每件 0.00428%
+  - Seed: 2568
+    ItemType: 1
+    Items:
+      - ItemId: 177331 # 瑰梦花阶座椅
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177332 # 镜水莲华座椅
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177333 # 一羽浮华座椅
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177334 # 圣白骑士手饰
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.10272%；4 件，每件 0.02568%
+  - Seed: 12840
+    ItemType: 1
+    Items:
+      - ItemId: 177331 # 瑰梦花阶座椅
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 177332 # 镜水莲华座椅
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 177333 # 一羽浮华座椅
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 177334 # 圣白骑士手饰
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.87160%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

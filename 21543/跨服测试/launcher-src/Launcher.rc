@@ -1,0 +1,200 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Simplified Chinese resources.
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LAUNCHER            ICON                    "Launcher.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_LAUNCHER ACCELERATORS
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LOGIN, DIALOG
+    BEGIN
+        MOCKUP, 1, 80, 0, 0, ".\loader.bmp"
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 451
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGIN DIALOGEX 0, 0, 461, 237
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Launcher"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITUN,159,217,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPWD,235,217,70,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Account",IDC_TEXTUN,160,206,36,8
+    LTEXT           "Password",IDC_TEXTPWD,236,206,46,8
+    PUSHBUTTON      "Login",IDOK,312,205,60,25
+    PUSHBUTTON      "Register",IDC_BUTTONREGISTER,377,205,59,25
+    CONTROL         "32-bit",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_FLAT | NOT WS_VISIBLE,15,135,36,10,WS_EX_TRANSPARENT
+    CONTROL         "64-bit",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,16,121,36,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Restore",IDC_EDIT1,7,103,44,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO1,7,150,70,30,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Bitness",IDC_TEXTUN2,7,80,36,8,NOT WS_VISIBLE
+END
+
+IDD_REGISTER DIALOGEX 0, 0, 257, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Account",IDC_TEXTUN,7,7,177,8
+    LTEXT           "Password",IDC_TEXTPWD,7,39,177,8
+    EDITTEXT        IDC_EDITUN,7,20,243,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPWD,7,50,243,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "CDK",IDC_TEXTUN2,7,66,177,8
+    EDITTEXT        IDC_EDIT1,7,75,243,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Register Account",IDOK,7,121,243,16
+    LTEXT           "Invite Code",IDC_TEXTUN3,7,91,177,8
+    EDITTEXT        IDC_EDIT2,7,103,243,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGIN               BITMAP                  "loader.bmp"
+
+IDB_BITMAP1             BITMAP                  "loginButton.bmp"
+
+IDB_BITMAP2             BITMAP                  "regButton.bmp"
+
+IDB_BITMAP3            BITMAP                  "text_account.bmp"
+
+IDB_BITMAP4             BITMAP                  "text_pwd.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DB
+//
+
+IDR_DB2                 DB                      "User.db"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "Speed"
+END
+
+#endif    // Simplified Chinese resources.
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,128 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 174991；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00301%；1 件，每件 0.00301%
+  - Seed: 30111
+    ItemType: 2
+    Items:
+      - ItemId: 171076 # 甜酷CP-青龙
+        ItemNum: 1
+        AvailPeriod: -1
+        ServerLimit: 3
+
+  # 稀有永久池合计 0.02103%；3 件，每件 0.00701%
+  - Seed: 2404
+    ItemType: 2
+    Items:
+      - ItemId: 21263 # 乘风
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 21264 # 电掣
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 21087 # 展翅
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有限时池合计 0.12618%；3 件，每件 0.04206%
+  - Seed: 15022
+    ItemType: 2
+    Items:
+      - ItemId: 21263 # 乘风
+        ItemNum: 1
+        AvailPeriod: 24
+      - ItemId: 21264 # 电掣
+        ItemNum: 1
+        AvailPeriod: 24
+      - ItemId: 21087 # 展翅
+        ItemNum: 1
+        AvailPeriod: 24
+
+  # 极品永久池合计 0.08412%；6 件，每件 0.01402%
+  - Seed: 23434
+    ItemType: 1
+    Items:
+      - ItemId: 170084 # 甜梦酷洛米发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 170092 # 甜梦酷洛米服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 170093 # 甜梦酷洛米套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 170094 # 甜梦酷洛米发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 170102 # 甜梦酷洛米服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 170103 # 甜梦酷洛米套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.50472%；6 件，每件 0.08412%
+  - Seed: 73906
+    ItemType: 1
+    Items:
+      - ItemId: 170084 # 甜梦酷洛米发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 170092 # 甜梦酷洛米服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 170093 # 甜梦酷洛米套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 170094 # 甜梦酷洛米发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 170102 # 甜梦酷洛米服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 170103 # 甜梦酷洛米套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.26094%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

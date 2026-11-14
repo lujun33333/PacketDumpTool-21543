@@ -1,0 +1,102 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 91693；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00844%；4 件，每件 0.00211%
+  - Seed: 844
+    ItemType: 2
+    Items:
+      - ItemId: 171082 # 烈焰新星-源刃
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177920 # 雷诺-S1精英车队冠军
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 132215 # 大福芦
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 132216 # 夜月幻影
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.03165%；5 件，每件 0.00633%
+  - Seed: 4009
+    ItemType: 1
+    Items:
+      - ItemId: 174356 # 光头强背饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174357 # 光头强背饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174358 # 稀世·笼中鸟手杖
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174360 # 绿荫勇者手饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 174359 # 超核·星铭夏夜手杖
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.58775%；5 件，每件 0.11755%
+  - Seed: 62784
+    ItemType: 1
+    Items:
+      - ItemId: 174356 # 光头强背饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 174357 # 光头强背饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 174358 # 稀世·笼中鸟手杖
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 174360 # 绿荫勇者手饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 174359 # 超核·星铭夏夜手杖
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.37216%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

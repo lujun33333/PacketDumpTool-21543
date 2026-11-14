@@ -1,0 +1,160 @@
+# 魅力达人 / Beta95 VIP v8
+# 命令：Co.Beta95_VIP_MainDlg / Co.Beta95_VIP_AwardOpt / Co.Beta95_VIP_RedPoint
+
+charm_vip:
+  enabled: true
+  activity_id: 20260516
+  monthly_period: 202605
+  default_vip_level: 1
+  charm_to_growth_ratio: 100
+  disabled_result_code: 1
+
+  base_cfg:
+    # 官服基础成长等级只到 V10；绝影/璀璨通过 SupremeVipLevel 派生。
+    base_vip_max_level: 10
+    base_car_library_collect_value: 0
+    month_gift_flag: 1
+    supreme_vip2_base_rank: 100
+    supreme_vip_refresh_sec: 31536000
+    dec_lev_time_base: "2026-01-01 0-0-0"
+    base_bright_score: 5000
+
+  # need_score 用于 V1-V10 基础成长判定；growth_number 用于 MainDlg 展示。
+  # V11(绝影)与 V12(璀璨)分别由 TotalBrightScore 和 CharmCareerRank 派生，
+  # 不能继续把最高 9 级的月消费贵族或 GrowthAccuValue 直接当作这两档身份。
+  growth_levels:
+    - { vip_level: 1,  need_score: 1,      growth_number: 1,      consume_need_score: 1,   auto_level: true,  consume_awards: [ { item_id: 138147, item_num: 1 }, { item_id: 160463, item_num: 1 } ] }
+    - { vip_level: 2,  need_score: 19,     growth_number: 19,     consume_need_score: 9,   auto_level: true,  consume_awards: [ { item_id: 165577, item_num: 1 }, { item_id: 160463, item_num: 1 }, { item_id: 138147, item_num: 1 } ] }
+    - { vip_level: 3,  need_score: 69,     growth_number: 69,     consume_need_score: 29,  auto_level: true,  consume_awards: [ { item_id: 160464, item_num: 1 }, { item_id: 162550, item_num: 1 } ] }
+    - { vip_level: 4,  need_score: 200,    growth_number: 200,    consume_need_score: 49,  auto_level: true,  consume_awards: [ { item_id: 165578, item_num: 1 }, { item_id: 160464, item_num: 1 }, { item_id: 162550, item_num: 1 } ] }
+    - { vip_level: 5,  need_score: 500,    growth_number: 500,    consume_need_score: 99,  auto_level: true,  consume_awards: [ { item_id: 160464, item_num: 2 }, { item_id: 162550, item_num: 2 } ] }
+    - { vip_level: 6,  need_score: 1500,   growth_number: 1500,   consume_need_score: 199, auto_level: true,  consume_awards: [ { item_id: 165579, item_num: 1 }, { item_id: 160464, item_num: 2 }, { item_id: 162550, item_num: 2 } ] }
+    - { vip_level: 7,  need_score: 4500,   growth_number: 4500,   consume_need_score: 299, auto_level: true,  consume_awards: [ { item_id: 160464, item_num: 2 }, { item_id: 162550, item_num: 2 } ] }
+    - { vip_level: 8,  need_score: 12000,  growth_number: 12000,  consume_need_score: 399, auto_level: true,  consume_awards: [ { item_id: 165580, item_num: 1 }, { item_id: 160464, item_num: 3 }, { item_id: 162550, item_num: 3 } ] }
+    - { vip_level: 9,  need_score: 35000,  growth_number: 35000,  consume_need_score: 499, auto_level: true,  consume_awards: [ { item_id: 160464, item_num: 3 }, { item_id: 162550, item_num: 3 } ] }
+    - { vip_level: 10, need_score: 100000, growth_number: 100000, consume_need_score: 699, auto_level: true,  consume_awards: [ { item_id: 165581, item_num: 1 }, { item_id: 160464, item_num: 3 }, { item_id: 162550, item_num: 3 } ] }
+    - { vip_level: 11, need_score: 0,      growth_number: 0,      consume_need_score: 0, auto_level: false, consume_awards: [] }
+    - { vip_level: 12, need_score: 0,      growth_number: 0,      consume_need_score: 0, auto_level: false, consume_awards: [] }
+
+  # AwardOpt(5, level)：每月贵族礼，换月只需要改 monthly_period。
+  monthly_rewards:
+    - { opt: 5, vip_level: 1,  super_money: 1000,  coupons: 0, items: [] }
+    - { opt: 5, vip_level: 2,  super_money: 2000,  coupons: 0, items: [] }
+    - { opt: 5, vip_level: 3,  super_money: 3000,  coupons: 0, items: [] }
+    - { opt: 5, vip_level: 4,  super_money: 4000,  coupons: 0, items: [] }
+    - { opt: 5, vip_level: 5,  super_money: 5000,  coupons: 0, items: [ { item_id: 160275, item_num: 1, item_type: 0, avail_period: 0 } ] }
+    - { opt: 5, vip_level: 6,  super_money: 6000,  coupons: 0, items: [ { item_id: 160275, item_num: 2, item_type: 0, avail_period: 0 } ] }
+    - { opt: 5, vip_level: 7,  super_money: 7000,  coupons: 0, items: [ { item_id: 160275, item_num: 3, item_type: 0, avail_period: 0 } ] }
+    - { opt: 5, vip_level: 8,  super_money: 8000,  coupons: 0, items: [ { item_id: 160275, item_num: 4, item_type: 0, avail_period: 0 } ] }
+    - { opt: 5, vip_level: 9,  super_money: 9000,  coupons: 0, items: [ { item_id: 160275, item_num: 5, item_type: 0, avail_period: 0 } ] }
+    - { opt: 5, vip_level: 10, super_money: 10000, coupons: 0, items: [ { item_id: 160275, item_num: 5, item_type: 0, avail_period: 0 } ] }
+    - { opt: 5, vip_level: 11, super_money: 0,     coupons: 0, items: [] }
+    - { opt: 5, vip_level: 12, super_money: 0,     coupons: 0, items: [] }
+
+  # AwardOpt(1, level)：贵族特权/等级奖励，默认永久一次。
+  privilege_rewards:
+    - opt: 1
+      vip_level: 1
+      items:
+        - { item_id: 165275, item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 160463, item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 160464, item_num: 3, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 163314, item_num: 1, item_type: 0, avail_period: 0, client_para: 2 }
+    - opt: 1
+      vip_level: 2
+      items:
+        - { item_id: 165276, item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 160463, item_num: 2, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 160464, item_num: 5, item_type: 0, avail_period: 0, client_para: 1 }
+    - opt: 1
+      vip_level: 3
+      items:
+        - { item_id: 165278, item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 162550, item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 33772,  item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 160464, item_num: 7, item_type: 0, avail_period: 0, client_para: 1 }
+    - opt: 1
+      vip_level: 4
+      items:
+        - { item_id: 165279, item_num: 1, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 165066, item_num: 1, item_type: 0, avail_period: -1, client_para: 2 }
+        - { item_id: 162550, item_num: 2, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 33772,  item_num: 3, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 69938,  item_num: 1, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 160464, item_num: 10,item_type: 0, avail_period: 0,  client_para: 1 }
+    - opt: 1
+      vip_level: 5
+      items:
+        - { item_id: 165280, item_num: 1, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 162550, item_num: 4, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 33772,  item_num: 5, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 69938,  item_num: 3, item_type: 0, avail_period: 0, client_para: 1 }
+        - { item_id: 160464, item_num: 15,item_type: 0, avail_period: 0, client_para: 1 }
+    - opt: 1
+      vip_level: 6
+      items:
+        - { item_id: 162550, item_num: 8, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 33772,  item_num: 5, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 69938,  item_num: 3, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 96595,  item_num: 3, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 22082,  item_num: 1, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 164802, item_num: 1, item_type: 0, avail_period: -1, client_para: 2 }
+    - opt: 1
+      vip_level: 7
+      items:
+        - { item_id: 163279, item_num: 2,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 33772,  item_num: 10, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 69938,  item_num: 1,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 96595,  item_num: 5,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 22082,  item_num: 1,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 163371, item_num: 1,  item_type: 0, avail_period: -1, client_para: 2 }
+    - opt: 1
+      vip_level: 8
+      items:
+        - { item_id: 163279, item_num: 4, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 100602, item_num: 1, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 69938,  item_num: 3, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 96595,  item_num: 7, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 22082,  item_num: 1, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 163031, item_num: 1, item_type: 0, avail_period: -1, client_para: 2 }
+    - opt: 1
+      vip_level: 9
+      items:
+        - { item_id: 163279, item_num: 8,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 115360, item_num: 1,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 69938,  item_num: 5,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 96595,  item_num: 10, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 100602, item_num: 1,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 164964, item_num: 1,  item_type: 0, avail_period: -1, client_para: 2 }
+    - opt: 1
+      vip_level: 10
+      items:
+        - { item_id: 163279, item_num: 16, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 115360, item_num: 1,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 69936,  item_num: 10, item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 100602, item_num: 1,  item_type: 0, avail_period: 0,  client_para: 1 }
+        - { item_id: 163029, item_num: 1,  item_type: 0, avail_period: -1, client_para: 2 }
+        - { item_id: 163315, item_num: 1,  item_type: 0, avail_period: 0,  client_para: 2 }
+    - opt: 1
+      vip_level: 11
+      items:
+        - { item_id: 162922, item_num: 1, item_type: 0, avail_period: 8760, client_para: 2 }
+        - { item_id: 165271, item_num: 1, item_type: 0, avail_period: 0,    client_para: 2 }
+        - { item_id: 163030, item_num: 1, item_type: 0, avail_period: 8760, client_para: 2 }
+        - { item_id: 163325, item_num: 1, item_type: 0, avail_period: 8760, client_para: 2 }
+        - { item_id: 162923, item_num: 1, item_type: 0, avail_period: 8760, client_para: 2 }
+        - { item_id: 163280, item_num: 1, item_type: 0, avail_period: 0 }
+        - { item_id: 69936,  item_num: 1, item_type: 0, avail_period: 0 }
+        - { item_id: 100602, item_num: 1, item_type: 0, avail_period: 0 }
+        - { item_id: 115360, item_num: 1, item_type: 0, avail_period: 0 }
+    - opt: 1
+      vip_level: 12
+      items:
+        - { item_id: 163316, item_num: 1, item_type: 0, avail_period: 0,   client_para: 2 }
+        - { item_id: 162924, item_num: 1, item_type: 0, avail_period: 720, client_para: 2 }
+        - { item_id: 165063, item_num: 1, item_type: 0, avail_period: 720, client_para: 2 }
+        - { item_id: 163279, item_num: 1, item_type: 0, avail_period: 0 }
+        - { item_id: 160464, item_num: 5, item_type: 0, avail_period: 0 }
+        - { item_id: 160040, item_num: 1, item_type: 0, avail_period: 720, client_para: 2 }
+        - { item_id: 160041, item_num: 1, item_type: 0, avail_period: 720, client_para: 2 }
+        - { item_id: 165065, item_num: 1, item_type: 0, avail_period: 720, client_para: 2 }

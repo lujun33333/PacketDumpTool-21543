@@ -1,0 +1,118 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 120547；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00205%；1 件，每件 0.00205%
+  - Seed: 205
+    ItemType: 2
+    Items:
+      - ItemId: 163043 # 至尊·逐日
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.00505%；1 件，每件 0.00505%
+  - Seed: 710
+    ItemType: 2
+    Items:
+      - ItemId: 163044 # 至尊-踏月
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.01410%；2 件，每件 0.00705%
+  - Seed: 2120
+    ItemType: 2
+    Items:
+      - ItemId: 136738 # L-龙之传人
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 136722 # 雷诺之力
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.12690%；6 件，每件 0.02115%
+  - Seed: 14810
+    ItemType: 1
+    Items:
+      - ItemId: 151937 # 潆潆星海发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 151945 # 潆潆星海服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 151946 # 潆潆星海套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 151947 # 潆潆星海发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 151955 # 潆潆星海服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 151956 # 潆潆星海套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.76140%；6 件，每件 0.12690%
+  - Seed: 90950
+    ItemType: 1
+    Items:
+      - ItemId: 151937 # 潆潆星海发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 151945 # 潆潆星海服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 151946 # 潆潆星海套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 151947 # 潆潆星海发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 151955 # 潆潆星海服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 151956 # 潆潆星海套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.09050%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

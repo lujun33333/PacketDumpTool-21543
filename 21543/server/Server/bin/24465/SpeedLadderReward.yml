@@ -1,0 +1,621 @@
+# 赛道天梯奖励配置：24465 Type=449 / 25206 展示 + 28321 领取共用
+# need_trophy 是领取所需奖杯；当前已有奖杯由服务器实时读取当前赛季 SpeedLadderPlayerMap RecordSource=2。
+speed_ladder_reward:
+  enabled: true
+  rewards:
+    - pos: 1
+      need_trophy: 10
+      award:
+        super_money: 500
+    - pos: 2
+      need_trophy: 20
+      award:
+        coupons: 500
+    - pos: 3
+      need_trophy: 30
+      award:
+        super_money: 500
+    - pos: 4
+      need_trophy: 40
+      award:
+        coupons: 500
+    - pos: 5
+      need_trophy: 50
+      award:
+        super_money: 500
+    - pos: 6
+      need_trophy: 60
+      award:
+        coupons: 500
+    - pos: 7
+      need_trophy: 70
+      award:
+        super_money: 500
+    - pos: 8
+      need_trophy: 80
+      award:
+        coupons: 500
+    - pos: 9
+      need_trophy: 90
+      award:
+        super_money: 500
+    - pos: 10
+      need_trophy: 100
+      award:
+        coupons: 500
+    - pos: 11
+      need_trophy: 110
+      award:
+        super_money: 500
+    - pos: 12
+      need_trophy: 120
+      award:
+        coupons: 500
+    - pos: 13
+      need_trophy: 130
+      award:
+        super_money: 500
+    - pos: 14
+      need_trophy: 140
+      award:
+        coupons: 500
+    - pos: 15
+      need_trophy: 150
+      award:
+        super_money: 500
+    - pos: 16
+      need_trophy: 160
+      award:
+        coupons: 500
+    - pos: 17
+      need_trophy: 170
+      award:
+        super_money: 500
+    - pos: 18
+      need_trophy: 180
+      award:
+        coupons: 500
+    - pos: 19
+      need_trophy: 190
+      award:
+        super_money: 500
+    - pos: 20
+      need_trophy: 200
+      award:
+        items:
+          - item_id: 137124
+            item_num: 1
+            avail_period: -1
+            item_type: 0
+          - item_id: 137118
+            item_num: 1
+            avail_period: -1
+            item_type: 0
+    - pos: 21
+      need_trophy: 210
+      award:
+        super_money: 500
+    - pos: 22
+      need_trophy: 220
+      award:
+        coupons: 500
+    - pos: 23
+      need_trophy: 230
+      award:
+        super_money: 500
+    - pos: 24
+      need_trophy: 240
+      award:
+        coupons: 500
+    - pos: 25
+      need_trophy: 250
+      award:
+        super_money: 500
+    - pos: 26
+      need_trophy: 260
+      award:
+        coupons: 500
+    - pos: 27
+      need_trophy: 270
+      award:
+        super_money: 500
+    - pos: 28
+      need_trophy: 280
+      award:
+        coupons: 500
+    - pos: 29
+      need_trophy: 290
+      award:
+        super_money: 500
+    - pos: 30
+      need_trophy: 300
+      award:
+        coupons: 500
+    - pos: 31
+      need_trophy: 310
+      award:
+        super_money: 600
+    - pos: 32
+      need_trophy: 320
+      award:
+        coupons: 600
+    - pos: 33
+      need_trophy: 330
+      award:
+        super_money: 600
+    - pos: 34
+      need_trophy: 340
+      award:
+        coupons: 600
+    - pos: 35
+      need_trophy: 350
+      award:
+        super_money: 600
+    - pos: 36
+      need_trophy: 360
+      award:
+        coupons: 600
+    - pos: 37
+      need_trophy: 370
+      award:
+        super_money: 600
+    - pos: 38
+      need_trophy: 380
+      award:
+        coupons: 600
+    - pos: 39
+      need_trophy: 390
+      award:
+        super_money: 600
+    - pos: 40
+      need_trophy: 400
+      award:
+        items:
+          - item_id: 137129
+            item_num: 1
+            avail_period: -1
+            item_type: 0
+          - item_id: 137123
+            item_num: 1
+            avail_period: -1
+            item_type: 0
+    - pos: 41
+      need_trophy: 410
+      award:
+        super_money: 600
+    - pos: 42
+      need_trophy: 420
+      award:
+        coupons: 600
+    - pos: 43
+      need_trophy: 430
+      award:
+        super_money: 600
+    - pos: 44
+      need_trophy: 440
+      award:
+        coupons: 600
+    - pos: 45
+      need_trophy: 450
+      award:
+        super_money: 600
+    - pos: 46
+      need_trophy: 460
+      award:
+        coupons: 600
+    - pos: 47
+      need_trophy: 470
+      award:
+        super_money: 600
+    - pos: 48
+      need_trophy: 480
+      award:
+        coupons: 600
+    - pos: 49
+      need_trophy: 490
+      award:
+        super_money: 600
+    - pos: 50
+      need_trophy: 500
+      award:
+        coupons: 600
+    - pos: 51
+      need_trophy: 510
+      award:
+        super_money: 600
+    - pos: 52
+      need_trophy: 520
+      award:
+        coupons: 600
+    - pos: 53
+      need_trophy: 530
+      award:
+        super_money: 600
+    - pos: 54
+      need_trophy: 540
+      award:
+        coupons: 600
+    - pos: 55
+      need_trophy: 550
+      award:
+        super_money: 600
+    - pos: 56
+      need_trophy: 560
+      award:
+        coupons: 600
+    - pos: 57
+      need_trophy: 570
+      award:
+        super_money: 600
+    - pos: 58
+      need_trophy: 580
+      award:
+        coupons: 600
+    - pos: 59
+      need_trophy: 590
+      award:
+        super_money: 600
+    - pos: 60
+      need_trophy: 600
+      award:
+        coupons: 600
+    - pos: 61
+      need_trophy: 610
+      award:
+        super_money: 700
+    - pos: 62
+      need_trophy: 620
+      award:
+        coupons: 700
+    - pos: 63
+      need_trophy: 630
+      award:
+        super_money: 700
+    - pos: 64
+      need_trophy: 640
+      award:
+        coupons: 700
+    - pos: 65
+      need_trophy: 650
+      award:
+        super_money: 700
+    - pos: 66
+      need_trophy: 660
+      award:
+        coupons: 700
+    - pos: 67
+      need_trophy: 670
+      award:
+        super_money: 700
+    - pos: 68
+      need_trophy: 680
+      award:
+        coupons: 700
+    - pos: 69
+      need_trophy: 690
+      award:
+        super_money: 700
+    - pos: 70
+      need_trophy: 700
+      award:
+        coupons: 700
+    - pos: 71
+      need_trophy: 710
+      award:
+        super_money: 700
+    - pos: 72
+      need_trophy: 720
+      award:
+        coupons: 700
+    - pos: 73
+      need_trophy: 730
+      award:
+        super_money: 700
+    - pos: 74
+      need_trophy: 740
+      award:
+        coupons: 700
+    - pos: 75
+      need_trophy: 750
+      award:
+        super_money: 700
+    - pos: 76
+      need_trophy: 760
+      award:
+        coupons: 700
+    - pos: 77
+      need_trophy: 770
+      award:
+        super_money: 700
+    - pos: 78
+      need_trophy: 780
+      award:
+        coupons: 700
+    - pos: 79
+      need_trophy: 790
+      award:
+        super_money: 700
+    - pos: 80
+      need_trophy: 800
+      award:
+        coupons: 700
+    - pos: 81
+      need_trophy: 810
+      award:
+        super_money: 700
+    - pos: 82
+      need_trophy: 820
+      award:
+        coupons: 700
+    - pos: 83
+      need_trophy: 830
+      award:
+        super_money: 700
+    - pos: 84
+      need_trophy: 840
+      award:
+        coupons: 700
+    - pos: 85
+      need_trophy: 850
+      award:
+        super_money: 700
+    - pos: 86
+      need_trophy: 860
+      award:
+        coupons: 700
+    - pos: 87
+      need_trophy: 870
+      award:
+        super_money: 700
+    - pos: 88
+      need_trophy: 880
+      award:
+        coupons: 700
+    - pos: 89
+      need_trophy: 890
+      award:
+        super_money: 700
+    - pos: 90
+      need_trophy: 900
+      award:
+        coupons: 700
+    - pos: 91
+      need_trophy: 910
+      award:
+        super_money: 800
+    - pos: 92
+      need_trophy: 920
+      award:
+        coupons: 800
+    - pos: 93
+      need_trophy: 930
+      award:
+        super_money: 800
+    - pos: 94
+      need_trophy: 940
+      award:
+        coupons: 800
+    - pos: 95
+      need_trophy: 950
+      award:
+        super_money: 800
+    - pos: 96
+      need_trophy: 960
+      award:
+        coupons: 800
+    - pos: 97
+      need_trophy: 970
+      award:
+        super_money: 800
+    - pos: 98
+      need_trophy: 980
+      award:
+        coupons: 800
+    - pos: 99
+      need_trophy: 990
+      award:
+        super_money: 800
+    - pos: 100
+      need_trophy: 1000
+      award:
+        coupons: 800
+    - pos: 101
+      need_trophy: 1010
+      award:
+        super_money: 800
+    - pos: 102
+      need_trophy: 1020
+      award:
+        coupons: 800
+    - pos: 103
+      need_trophy: 1030
+      award:
+        super_money: 800
+    - pos: 104
+      need_trophy: 1040
+      award:
+        coupons: 800
+    - pos: 105
+      need_trophy: 1050
+      award:
+        super_money: 800
+    - pos: 106
+      need_trophy: 1060
+      award:
+        coupons: 800
+    - pos: 107
+      need_trophy: 1070
+      award:
+        super_money: 800
+    - pos: 108
+      need_trophy: 1080
+      award:
+        coupons: 800
+    - pos: 109
+      need_trophy: 1090
+      award:
+        super_money: 800
+    - pos: 110
+      need_trophy: 1100
+      award:
+        coupons: 800
+    - pos: 111
+      need_trophy: 1110
+      award:
+        super_money: 800
+    - pos: 112
+      need_trophy: 1120
+      award:
+        coupons: 800
+    - pos: 113
+      need_trophy: 1130
+      award:
+        super_money: 800
+    - pos: 114
+      need_trophy: 1140
+      award:
+        coupons: 800
+    - pos: 115
+      need_trophy: 1150
+      award:
+        super_money: 800
+    - pos: 116
+      need_trophy: 1160
+      award:
+        coupons: 800
+    - pos: 117
+      need_trophy: 1170
+      award:
+        super_money: 800
+    - pos: 118
+      need_trophy: 1180
+      award:
+        coupons: 800
+    - pos: 119
+      need_trophy: 1190
+      award:
+        super_money: 800
+    - pos: 120
+      need_trophy: 1200
+      award:
+        coupons: 800
+    - pos: 121
+      need_trophy: 1210
+      award:
+        super_money: 900
+    - pos: 122
+      need_trophy: 1220
+      award:
+        coupons: 900
+    - pos: 123
+      need_trophy: 1230
+      award:
+        super_money: 900
+    - pos: 124
+      need_trophy: 1240
+      award:
+        coupons: 900
+    - pos: 125
+      need_trophy: 1250
+      award:
+        super_money: 900
+    - pos: 126
+      need_trophy: 1260
+      award:
+        coupons: 900
+    - pos: 127
+      need_trophy: 1270
+      award:
+        super_money: 900
+    - pos: 128
+      need_trophy: 1280
+      award:
+        coupons: 900
+    - pos: 129
+      need_trophy: 1290
+      award:
+        super_money: 900
+    - pos: 130
+      need_trophy: 1300
+      award:
+        coupons: 900
+    - pos: 131
+      need_trophy: 1310
+      award:
+        super_money: 900
+    - pos: 132
+      need_trophy: 1320
+      award:
+        coupons: 900
+    - pos: 133
+      need_trophy: 1330
+      award:
+        super_money: 900
+    - pos: 134
+      need_trophy: 1340
+      award:
+        coupons: 900
+    - pos: 135
+      need_trophy: 1350
+      award:
+        super_money: 900
+    - pos: 136
+      need_trophy: 1360
+      award:
+        coupons: 900
+    - pos: 137
+      need_trophy: 1370
+      award:
+        super_money: 900
+    - pos: 138
+      need_trophy: 1380
+      award:
+        coupons: 900
+    - pos: 139
+      need_trophy: 1390
+      award:
+        super_money: 900
+    - pos: 140
+      need_trophy: 1400
+      award:
+        coupons: 900
+    - pos: 141
+      need_trophy: 1410
+      award:
+        super_money: 900
+    - pos: 142
+      need_trophy: 1420
+      award:
+        coupons: 900
+    - pos: 143
+      need_trophy: 1430
+      award:
+        super_money: 900
+    - pos: 144
+      need_trophy: 1440
+      award:
+        coupons: 900
+    - pos: 145
+      need_trophy: 1450
+      award:
+        super_money: 900
+    - pos: 146
+      need_trophy: 1460
+      award:
+        coupons: 900
+    - pos: 147
+      need_trophy: 1470
+      award:
+        super_money: 900
+    - pos: 148
+      need_trophy: 1480
+      award:
+        coupons: 900
+    - pos: 149
+      need_trophy: 1490
+      award:
+        super_money: 900
+    - pos: 150
+      need_trophy: 1500
+      award:
+        coupons: 900

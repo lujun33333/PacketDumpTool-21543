@@ -1,0 +1,197 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 174920；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00945%；1 件，每件 0.00945%
+  - Seed: 945
+    ItemType: 2
+    Items:
+      - ItemId: 163028 # 至臻·璀璨爵士
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.03490%；2 件，每件 0.01745%
+  - Seed: 4435
+    ItemType: 2
+    Items:
+      - ItemId: 150527 # 至尊-真武
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 146559 # X次元-玄武
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.01245%；1 件，每件 0.01245%
+  - Seed: 5680
+    ItemType: 2
+    Items:
+      - ItemId: 157763 # 玄武-海滩派对
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.03090%；2 件，每件 0.01545%
+  - Seed: 8770
+    ItemType: 2
+    Items:
+      - ItemId: 15225 # 飞碟
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 10993 # 傀儡
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.01945%；1 件，每件 0.01945%
+  - Seed: 10715
+    ItemType: 2
+    Items:
+      - ItemId: 150525 # 至尊·玄冥
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.83760%；16 件，每件 0.05235%
+  - Seed: 94475
+    ItemType: 1
+    Items:
+      - ItemId: 171182 # 魅影紫韵套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171181 # 魅影紫韵服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171173 # 魅影紫韵发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171172 # 魅影紫韵套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171171 # 魅影紫韵服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 171163 # 魅影紫韵发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 169476 # 朋克烬火发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 169484 # 朋克烬火服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 169485 # 朋克烬火套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 169486 # 朋克烬火发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 169494 # 朋克烬火服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 169495 # 朋克烬火套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 168195 # 朋克烬火表情
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 168196 # 朋克狂想表情
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 168197 # 朋克狂想表情
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 168194 # 朋克烬火表情
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 8.37600%；16 件，每件 0.52350%
+  - Seed: 932075
+    ItemType: 1
+    Items:
+      - ItemId: 171182 # 魅影紫韵套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 171181 # 魅影紫韵服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 171173 # 魅影紫韵发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 171172 # 魅影紫韵套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 171171 # 魅影紫韵服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 171163 # 魅影紫韵发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 169476 # 朋克烬火发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 169484 # 朋克烬火服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 169485 # 朋克烬火套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 169486 # 朋克烬火发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 169494 # 朋克烬火服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 169495 # 朋克烬火套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 168195 # 朋克烬火表情
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 168196 # 朋克狂想表情
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 168197 # 朋克狂想表情
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 168194 # 朋克烬火表情
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 90.67925%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

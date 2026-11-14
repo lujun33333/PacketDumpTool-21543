@@ -1,0 +1,15 @@
+﻿void LoadMechTreasureInfoConfig();
+void LoadAppellationConfig();
+void LoadRandomMapPool();//随机地图池配置
+void LoadMapPool();
+void LoadCarTreasure();
+int LoadTreasureBox();
+void LoadMagicLampCfg();
+void LoadAuctionCfg();
+void LoadRegisterBox();
+void LoadDayRaffleBox();
+void LoadMagicFormationBoxs();
+void LoadMagicExchangeShopBoxs();
+void LoadMiracleCfg();
+void LoadUserPermissionsConfig();
+void LoadHeadAndHeadShokConfig();

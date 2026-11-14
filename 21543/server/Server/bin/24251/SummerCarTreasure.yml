@@ -1,0 +1,206 @@
+# 狂欢夺宝（24251 新版）
+# YAML 只保留每期会调整的业务数据。协议名、操作码、客户端固定字段由 C++ 结构体提供。
+# awards 未写字段使用 SummerTreasureAward 默认值；列表顺序保持官服奖池顺序。
+summer_car_treasure:
+  enabled: true # 活动总开关
+  activity_id: 202607 # 活动期ID；隔离玩家自选和进度记录
+
+  date:
+    open: 20260704 # 开始日期，时间固定00:00:00
+    close: 20260831 # 结束日期，时间固定23:59:59
+
+  ticket:
+    id: 99662 # 夺宝券物品ID
+    piece: 94880 # 赛车分解碎片/能量物品ID
+
+  select:
+    s: 3 # 首次选择3辆S车
+    t: 2 # 首次选择2辆T车
+    a: 7 # 首次选择7辆A车
+
+  progress:
+    luck: 800 # 满值随机获得一辆已选永久S车，然后清零
+    crystal: 450 # 满值获得1个晶石，然后清零
+    crystal_item: 144343 # 晶石物品ID
+    crystal_times: 5 # 最多获得5次晶石
+
+  crystal_shop: # 晶石商店商品；433分发及首包26项是C++协议常量
+    - {id: 150528, cost: 5} # 01
+    - {id: 132210, cost: 5} # 02
+    - {id: 157768, cost: 5} # 03
+    - {id: 146550, cost: 5} # 04
+    - {id: 130778, cost: 5} # 05
+    - {id: 144523, cost: 5} # 06
+    - {id: 116735, cost: 5} # 07
+    - {id: 110709, cost: 3} # 08
+    - {id: 146554, cost: 5} # 09
+    - {id: 117934, cost: 5} # 10
+    - {id: 150531, cost: 5} # 11
+    - {id: 150529, cost: 5} # 12
+    - {id: 146546, cost: 5} # 13
+    - {id: 122199, cost: 5} # 14
+    - {id: 117941, cost: 5} # 15
+    - {id: 110711, cost: 5} # 16
+    - {id: 133688, cost: 5} # 17
+    - {id: 132211, cost: 5} # 18
+    - {id: 146552, cost: 5} # 19
+    - {id: 146553, cost: 5} # 20
+    - {id: 150530, cost: 5} # 21
+    - {id: 153688, cost: 5} # 22
+    - {id: 138418, cost: 5} # 23
+    - {id: 123502, cost: 5} # 24
+    - {id: 140032, cost: 5} # 25
+    - {id: 133689, cost: 5} # 26
+    - {id: 120657, cost: 5} # 27
+    - {id: 113415, cost: 5} # 28
+    - {id: 146547, cost: 5} # 29
+    - {id: 135171, cost: 5} # 30
+    - {id: 112178, cost: 2} # 31
+    - {id: 113414, cost: 2} # 32
+    - {id: 116740, cost: 2} # 33
+    - {id: 132227, cost: 2} # 34
+    - {id: 132228, cost: 2} # 35
+
+  # 24465/24466 只读取以上结构，不共用老版 CarTreasure.yml，也不读取或回放抓包 BIN。
+  normal:
+    cost: [1, 10] # [单抽券数, 十连券数]
+    # 默认：num=1、type=1、period=-1、group=0、exchange=0、attr=1、piece=0、shop=0、weight=1、select=0
+    # piece=抽中赛车后分解所得能量；shop=432兑换商店价格，每个永久/限时奖励可单独设置
+    awards: # 普通奖池，共70项
+      - {id: 119059, piece: 1500} # 01 至曜·影虎（永久）
+      - {id: 119059, period: 360, piece: 20, weight: 10} # 02 至曜·影虎（15天）
+      - {id: 150525, piece: 1500} # 03 至尊·玄冥（永久）
+      - {id: 150525, period: 360, piece: 20, weight: 10} # 04 至尊·玄冥（15天）
+      - {id: 88865, group: 1, exchange: 1, piece: 2000, shop: 2000, select: 1} # 05 终极爆天甲（永久，S自选1）
+      - {id: 88865, period: 360, group: 1, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 06 终极爆天甲（15天，S自选1）
+      - {id: 106675, group: 2, exchange: 1, piece: 1500, shop: 1500, select: 1} # 07 终极众神之神（永久，S自选2）
+      - {id: 106675, period: 360, group: 2, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 08 终极众神之神（15天，S自选2）
+      - {id: 74362, group: 3, exchange: 1, piece: 1500, shop: 1500, select: 1} # 09 爆天甲（永久，S自选3）
+      - {id: 74362, period: 360, group: 3, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 10 爆天甲（15天，S自选3）
+      - {id: 90945, group: 4, exchange: 1, piece: 1500, shop: 1500, select: 1} # 11 众神之神（永久，S自选4）
+      - {id: 90945, period: 360, group: 4, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 12 众神之神（15天，S自选4）
+      - {id: 85949, group: 5, exchange: 1, piece: 1500, shop: 1500, select: 1} # 13 终极紫电神驹（永久，S自选5）
+      - {id: 85949, period: 360, group: 5, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 14 终极紫电神驹（15天，S自选5）
+      - {id: 70047, group: 6, exchange: 1, piece: 1500, shop: 1500, select: 1} # 15 终极麦凯伦（永久，S自选6）
+      - {id: 70047, period: 360, group: 6, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 16 终极麦凯伦（15天，S自选6）
+      - {id: 150537, group: 7, exchange: 1, piece: 1500, shop: 1500, select: 1} # 17 终极镇海之戟（永久，S自选7）
+      - {id: 150537, period: 360, group: 7, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 18 终极镇海之戟（15天，S自选7）
+      - {id: 132209, group: 8, exchange: 1, piece: 1500, shop: 1500, select: 1} # 19 天行·穿梭者（永久，S自选8）
+      - {id: 132209, period: 360, group: 8, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 20 天行·穿梭者（15天，S自选8）
+      - {id: 144544, group: 9, exchange: 1, piece: 1500, shop: 1500, select: 1} # 21 勇者之心（永久，S自选9）
+      - {id: 144544, period: 360, group: 9, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 22 勇者之心（15天，S自选9）
+      - {id: 138417, group: 10, exchange: 1, piece: 1500, shop: 1500, select: 1} # 23 众神天后（永久，S自选10）
+      - {id: 138417, period: 360, group: 10, exchange: 1, piece: 20, shop: 100, weight: 30, select: 1} # 24 众神天后（15天，S自选10）
+      - {id: 116733, group: 11, exchange: 1, piece: 180, shop: 550, weight: 2, select: 3} # 25 速战先锋（永久，T自选11）
+      - {id: 116733, period: 720, group: 11, exchange: 1, piece: 5, shop: 55, weight: 400, select: 3} # 26 速战先锋（30天，T自选11）
+      - {id: 109562, group: 12, exchange: 1, piece: 180, shop: 550, weight: 2, select: 3} # 27 红莲骑士（永久，T自选12）
+      - {id: 109562, period: 720, group: 12, exchange: 1, piece: 5, shop: 55, weight: 400, select: 3} # 28 红莲骑士（30天，T自选12）
+      - {id: 106678, group: 13, exchange: 1, piece: 180, shop: 550, weight: 2, select: 3} # 29 黄蜂特警（永久，T自选13）
+      - {id: 106678, period: 720, group: 13, exchange: 1, piece: 5, shop: 55, weight: 400, select: 3} # 30 黄蜂特警（30天，T自选13）
+      - {id: 93573, group: 14, exchange: 1, piece: 180, shop: 550, weight: 2, select: 3} # 31 凌云战机（永久，T自选14）
+      - {id: 93573, period: 720, group: 14, exchange: 1, piece: 5, shop: 55, weight: 400, select: 3} # 32 凌云战机（30天，T自选14）
+      - {id: 136727, group: 15, exchange: 1, piece: 50, shop: 550, weight: 2, select: 2} # 33 祥龙雷诺（永久，A自选15）
+      - {id: 136727, period: 720, group: 15, exchange: 1, piece: 5, shop: 55, weight: 500, select: 2} # 34 祥龙雷诺（30天，A自选15）
+      - {id: 148401, group: 16, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 35 霆光（永久，A自选16）
+      - {id: 148401, period: 720, group: 16, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 36 霆光（30天，A自选16）
+      - {id: 116736, group: 17, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 37 踏云鹿灵（永久，A自选17）
+      - {id: 116736, period: 720, group: 17, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 38 踏云鹿灵（30天，A自选17）
+      - {id: 109569, group: 18, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 39 裁决者（永久，A自选18）
+      - {id: 109569, period: 720, group: 18, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 40 裁决者（30天，A自选18）
+      - {id: 105427, group: 19, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 41 彩虹独角兽（永久，A自选19）
+      - {id: 105427, period: 720, group: 19, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 42 彩虹独角兽（30天，A自选19）
+      - {id: 119076, group: 20, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 43 缤纷神驹（永久，A自选20）
+      - {id: 119076, period: 720, group: 20, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 44 缤纷神驹（30天，A自选20）
+      - {id: 157757, group: 21, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 45 幻蝶（永久，A自选21）
+      - {id: 157757, period: 720, group: 21, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 46 幻蝶（30天，A自选21）
+      - {id: 150542, group: 22, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 47 幽夜迷途（永久，A自选22）
+      - {id: 150542, period: 720, group: 22, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 48 幽夜迷途（30天，A自选22）
+      - {id: 102230, group: 23, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 49 紫晶穿梭者（永久，A自选23）
+      - {id: 102230, period: 720, group: 23, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 50 紫晶穿梭者（30天，A自选23）
+      - {id: 106684, group: 24, exchange: 1, piece: 30, shop: 350, weight: 2, select: 2} # 51 星辰之语（永久，A自选24）
+      - {id: 106684, period: 720, group: 24, exchange: 1, piece: 3, shop: 20, weight: 500, select: 2} # 52 星辰之语（30天，A自选24）
+      - {id: 138425, type: 0, period: 168, attr: 0, piece: 1, weight: 8000} # 53 梦之星辉（7天）
+      - {id: 140035, type: 0, period: 168, attr: 0, piece: 1, weight: 8000} # 54 星河之恋（7天）
+      - {id: 138423, type: 0, period: 168, attr: 0, piece: 1, weight: 8000} # 55 贵妃·羞花（7天）
+      - {id: 136729, type: 0, period: 168, attr: 0, piece: 1, weight: 8000} # 56 玄月（7天）
+      - {id: 136730, type: 0, period: 168, attr: 0, piece: 1, weight: 8000} # 57 天穹（7天）
+      - {id: 136726, type: 0, period: 168, attr: 0, piece: 1, weight: 8000} # 58 灼冰龙舞（7天）
+      - {id: 65869, type: 0, period: 168, attr: 0, piece: 1, weight: 12000} # 59 蓝翱海域（7天）
+      - {id: 65870, type: 0, period: 168, attr: 0, piece: 1, weight: 12000} # 60 炽焰展飞（7天）
+      - {id: 66607, type: 0, period: 168, attr: 0, piece: 1, weight: 12000} # 61 速鲨（7天）
+      - {id: 68101, type: 0, period: 168, attr: 0, piece: 1, weight: 12000} # 62 绝迹（7天）
+      - {id: 68103, type: 0, period: 168, attr: 0, piece: 1, weight: 12000} # 63 青蜂勇士（7天）
+      - {id: 68648, type: 0, period: 168, attr: 0, piece: 1, weight: 12000} # 64 风驰（7天）
+      - {id: 21978, num: 4, type: 0, period: 0, attr: 0, weight: 14000} # 65 效率宝珠LV2（数量道具）
+      - {id: 12376, num: 40, type: 0, period: 0, attr: 0, weight: 18000} # 66 点火装置+1（数量道具）
+      - {id: 12377, num: 40, type: 0, period: 0, attr: 0, weight: 18000} # 67 进气系统+1（数量道具）
+      - {id: 12378, num: 40, type: 0, period: 0, attr: 0, weight: 18000} # 68 燃料系统+1（数量道具）
+      - {id: 12380, num: 40, type: 0, period: 0, attr: 0, weight: 18000} # 69 引擎装置+1（数量道具）
+      - {id: 96597, num: 40, type: 0, period: 0, attr: 0, weight: 18000} # 70 防护装置+1（数量道具）
+
+  carnival:
+    cost: [3, 30] # [狂欢单抽券数, 狂欢十连券数]
+    # 奖励默认值同普通池；summer=1 根据所属奖池自动生成，不写入每条奖励
+    awards: # 狂欢奖池，共62项
+      - {id: 88865, piece: 2000} # 01 终极爆天甲（永久）
+      - {id: 88865, period: 180, piece: 10, weight: 2900} # 02 终极爆天甲（界面7天）
+      - {id: 106675, piece: 1500} # 03 终极众神之神（永久）
+      - {id: 106675, period: 180, piece: 10, weight: 2900} # 04 终极众神之神（界面7天）
+      - {id: 74362, piece: 1500} # 05 爆天甲（永久）
+      - {id: 74362, period: 180, piece: 10, weight: 2900} # 06 爆天甲（界面7天）
+      - {id: 90945, piece: 1500} # 07 众神之神（永久）
+      - {id: 90945, period: 180, piece: 10, weight: 2900} # 08 众神之神（界面7天）
+      - {id: 85949, piece: 1500} # 09 终极紫电神驹（永久）
+      - {id: 85949, period: 180, piece: 10, weight: 2900} # 10 终极紫电神驹（界面7天）
+      - {id: 70047, piece: 1500} # 11 终极麦凯伦（永久）
+      - {id: 70047, period: 180, piece: 10, weight: 2900} # 12 终极麦凯伦（界面7天）
+      - {id: 150537, piece: 1500} # 13 终极镇海之戟（永久）
+      - {id: 150537, period: 180, piece: 10, weight: 2900} # 14 终极镇海之戟（界面7天）
+      - {id: 132209, piece: 1500} # 15 天行·穿梭者（永久）
+      - {id: 132209, period: 180, piece: 10, weight: 2900} # 16 天行·穿梭者（界面7天）
+      - {id: 144544, piece: 1500} # 17 勇者之心（永久）
+      - {id: 144544, period: 180, piece: 10, weight: 2900} # 18 勇者之心（界面7天）
+      - {id: 138417, piece: 1500} # 19 众神天后（永久）
+      - {id: 138417, period: 180, piece: 10, weight: 2900} # 20 众神天后（界面7天）
+      - {id: 144543, piece: 1500} # 21 大漠孤烟（永久）
+      - {id: 144543, period: 180, piece: 10, weight: 2900} # 22 大漠孤烟（界面7天）
+      - {id: 28110, piece: 1500} # 23 烈焰新星（永久）
+      - {id: 28110, period: 180, piece: 10, weight: 2900} # 24 烈焰新星（界面7天）
+      - {id: 33789, piece: 1500} # 25 御剑游侠（永久）
+      - {id: 33789, period: 180, piece: 10, weight: 2900} # 26 御剑游侠（界面7天）
+      - {id: 21593, piece: 1500} # 27 星之精灵（永久）
+      - {id: 21593, period: 180, piece: 10, weight: 2900} # 28 星之精灵（界面7天）
+      - {id: 74363, piece: 1500} # 29 终极鬼战刀（永久）
+      - {id: 74363, period: 180, piece: 10, weight: 2900} # 30 终极鬼战刀（界面7天）
+      - {id: 83042, piece: 1500} # 31 终极变形销魂（永久）
+      - {id: 83042, period: 180, piece: 10, weight: 2900} # 32 终极变形销魂（界面7天）
+      - {id: 123499, piece: 1500} # 33 炼狱之刃（永久）
+      - {id: 123499, period: 180, piece: 10, weight: 2900} # 34 炼狱之刃（界面7天）
+      - {id: 80161, piece: 1500} # 35 地狱火（永久）
+      - {id: 80161, period: 180, piece: 10, weight: 2900} # 36 地狱火（界面7天）
+      - {id: 80542, piece: 1500} # 37 雷瑟之光（永久）
+      - {id: 80542, period: 180, piece: 10, weight: 2900} # 38 雷瑟之光（界面7天）
+      - {id: 84869, piece: 1500} # 39 暗影龙骑（永久）
+      - {id: 84869, period: 180, piece: 10, weight: 2900} # 40 暗影龙骑（界面7天）
+      - {id: 89936, piece: 1500} # 41 终极烈焰新星（永久）
+      - {id: 89936, period: 180, piece: 10, weight: 2900} # 42 终极烈焰新星（界面7天）
+      - {id: 86998, piece: 1500} # 43 疾影M18（永久）
+      - {id: 86998, period: 180, piece: 10, weight: 2900} # 44 疾影M18（界面7天）
+      - {id: 106673, piece: 1500} # 45 智慧之神（永久）
+      - {id: 106673, period: 180, piece: 10, weight: 2900} # 46 智慧之神（界面7天）
+      - {id: 120646, piece: 1500} # 47 镇海之戟（永久）
+      - {id: 120646, period: 180, piece: 10, weight: 2900} # 48 镇海之戟（界面7天）
+      - {id: 101885, piece: 1500} # 49 终极黑域电魔（永久）
+      - {id: 101885, period: 180, piece: 10, weight: 2900} # 50 终极黑域电魔（界面7天）
+      - {id: 21978, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 51 效率宝珠LV2（数量道具）
+      - {id: 21984, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 52 重生宝珠LV2（数量道具）
+      - {id: 21990, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 53 坚韧宝珠LV2（数量道具）
+      - {id: 22014, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 54 后发宝珠LV2（数量道具）
+      - {id: 22026, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 55 复仇之钻LV2（数量道具）
+      - {id: 22032, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 56 闪电之钻LV2（数量道具）
+      - {id: 22038, num: 6, type: 0, period: 0, attr: 0, piece: 0, weight: 6000} # 57 攻击之钻LV2（数量道具）
+      - {id: 12376, num: 60, type: 0, period: 0, attr: 0, piece: 0, weight: 8000} # 58 点火装置+1（数量道具）
+      - {id: 12377, num: 60, type: 0, period: 0, attr: 0, piece: 0, weight: 8000} # 59 进气系统+1（数量道具）
+      - {id: 12378, num: 60, type: 0, period: 0, attr: 0, piece: 0, weight: 8000} # 60 燃料系统+1（数量道具）
+      - {id: 12380, num: 60, type: 0, period: 0, attr: 0, piece: 0, weight: 8000} # 61 引擎装置+1（数量道具）
+      - {id: 96597, num: 60, type: 0, period: 0, attr: 0, piece: 0, weight: 8000} # 62 防护装置+1（数量道具）

@@ -1,0 +1,18 @@
+Experience: 1 #奖励经验
+SuperMoney: 1 #奖励点券
+Charm: 1 #奖励魅力
+TotalHonor: 1 #奖励荣誉
+Items:
+  - ItemId: 21988 #道具id
+    ItemNum: 3 #数量
+    ObtainTime: 1 #时间
+    AvailPeriod: 0  #0显示数量 -1显示永久
+  - ItemId: 21982 #道具id
+    ItemNum: 3 #数量
+    ObtainTime: 1 #时间
+    AvailPeriod: 0  #0显示数量 -1显示永久
+  - ItemId: 21994 #道具id
+    ItemNum: 3 #数量
+    ObtainTime: 1 #时间
+    AvailPeriod: 0  #0显示数量 -1显示永久
+

@@ -1,0 +1,120 @@
+﻿# 神龙召唤 / Beta87 Summon Dragon
+# 命令：Co.Beta87_Summon_Dragon_MainDlg / Co.Beta87_Summon_Dragon_AwardOpt
+
+summon_dragon:
+  enabled: true
+  activity_id: 20260516
+
+  cost:
+    item_id: 136687
+    once: 1
+    ten: 10
+    strict_draw_cost: true
+
+  player:
+    exchange_item_id: 136688
+    draw_item_id: 136687
+
+  time:
+    begin_time: 1777564800
+    end_time: 1780243199
+    season_id: 1
+
+  draw:
+    replay_draws:
+      - draw_no: 1
+        award_idx: 42
+        item_id: 13709
+        item_num: 1
+        item_type: 0
+        avail_period: 0
+
+  gift_cfg:
+    - { idx: 1, pet_id: 71549,  gift_status: 0, give_item_num: 50 }
+    - { idx: 2, pet_id: 74959,  gift_status: 0, give_item_num: 50 }
+    - { idx: 3, pet_id: 83975,  gift_status: 0, give_item_num: 50 }
+    - { idx: 4, pet_id: 92811,  gift_status: 0, give_item_num: 50 }
+    - { idx: 5, pet_id: 102937, gift_status: 0, give_item_num: 50 }
+    - { idx: 6, pet_id: 123401, gift_status: 0, give_item_num: 50 }
+    - { idx: 7, pet_id: 136604, gift_status: 0, give_item_num: 50 }
+
+  exchange_shop:
+    enabled: true
+    type: 366
+    cost_item_id: 136688
+    result_id: 11498
+    no_fallback: true
+    defaults: { item_num: 1, item_type: 1, avail_period: -1, max_get_num: 1, label_status: 0, show_priority: 100 }
+    items:
+      - { pos: 1,  award_idx: 1,  item_id: 71549,  cost: 1000 }
+      - { pos: 2,  award_idx: 2,  item_id: 74959,  cost: 1000 }
+      - { pos: 3,  award_idx: 3,  item_id: 83975,  cost: 1000 }
+      - { pos: 4,  award_idx: 4,  item_id: 92811,  cost: 1000 }
+      - { pos: 5,  award_idx: 5,  item_id: 102937, cost: 1000 }
+      - { pos: 6,  award_idx: 6,  item_id: 123401, cost: 1000 }
+      - { pos: 7,  award_idx: 7,  item_id: 136604, cost: 1000 }
+      - { pos: 8,  award_idx: 8,  item_id: 72719,  cost: 400 }
+      - { pos: 9,  award_idx: 9,  item_id: 66585,  cost: 400 }
+      - { pos: 10, award_idx: 10, item_id: 71285,  cost: 40 }
+      - { pos: 11, award_idx: 11, item_id: 71275,  cost: 40 }
+      - { pos: 12, award_idx: 12, item_id: 102847, cost: 40 }
+      - { pos: 13, award_idx: 13, item_id: 102837, cost: 40 }
+      - { pos: 14, award_idx: 14, item_id: 123860, cost: 40 }
+      - { pos: 15, award_idx: 15, item_id: 123850, cost: 40 }
+      - { pos: 16, award_idx: 16, item_id: 71293,  cost: 200 }
+      - { pos: 17, award_idx: 17, item_id: 71283,  cost: 200 }
+      - { pos: 18, award_idx: 18, item_id: 102855, cost: 200 }
+      - { pos: 19, award_idx: 19, item_id: 102845, cost: 200 }
+      - { pos: 20, award_idx: 20, item_id: 123868, cost: 200 }
+      - { pos: 21, award_idx: 21, item_id: 123858, cost: 200 }
+      - { pos: 22, award_idx: 22, item_id: 71294,  cost: 240 }
+      - { pos: 23, award_idx: 23, item_id: 71284,  cost: 240 }
+      - { pos: 24, award_idx: 24, item_id: 102856, cost: 240 }
+      - { pos: 25, award_idx: 25, item_id: 102846, cost: 240 }
+      - { pos: 26, award_idx: 26, item_id: 123869, cost: 240 }
+
+  award_cfg:
+    defaults: { item_num: 1, item_type: 0, avail_period: -1, show_priority: 0, coupons: 0, weight: 100 }
+    items:
+      - { idx: 1,  item_id: 71549,  client_paras: [1, 1] }
+      - { idx: 2,  item_id: 74959,  client_paras: [1, 2] }
+      - { idx: 3,  item_id: 83975,  client_paras: [1, 3] }
+      - { idx: 4,  item_id: 92811,  client_paras: [1, 4] }
+      - { idx: 5,  item_id: 102937, client_paras: [1, 5] }
+      - { idx: 6,  item_id: 123401, client_paras: [1, 6] }
+      - { idx: 7,  item_id: 136604, client_paras: [1, 7] }
+      - { idx: 8,  item_id: 72719,  client_paras: [1, 8] }
+      - { idx: 9,  item_id: 66585,  client_paras: [1, 9] }
+      - { idx: 10, item_id: 71285,  client_paras: [1, 10] }
+      - { idx: 11, item_id: 102847, client_paras: [1, 12] }
+      - { idx: 12, item_id: 123860, client_paras: [1, 14] }
+      - { idx: 13, item_id: 71293,  client_paras: [1, 16] }
+      - { idx: 14, item_id: 102855, client_paras: [1, 18] }
+      - { idx: 15, item_id: 123868, client_paras: [1, 20] }
+      - { idx: 16, item_id: 71294,  client_paras: [1, 22] }
+      - { idx: 17, item_id: 102856, client_paras: [1, 24] }
+      - { idx: 18, item_id: 123869, client_paras: [1, 26] }
+      - { idx: 19, item_id: 71285,  avail_period: 168, client_paras: [1, 28] }
+      - { idx: 20, item_id: 102847, avail_period: 168, client_paras: [1, 30] }
+      - { idx: 21, item_id: 123860, avail_period: 168, client_paras: [1, 32] }
+      - { idx: 22, item_id: 71293,  avail_period: 168, client_paras: [1, 34] }
+      - { idx: 23, item_id: 102855, avail_period: 168, client_paras: [1, 36] }
+      - { idx: 24, item_id: 123868, avail_period: 168, client_paras: [1, 38] }
+      - { idx: 25, item_id: 71294,  avail_period: 168, client_paras: [1, 40] }
+      - { idx: 26, item_id: 102856, avail_period: 168, client_paras: [1, 42] }
+      - { idx: 27, item_id: 123869, avail_period: 168, client_paras: [1, 44] }
+      - { idx: 28, item_id: 71493,  client_paras: [1, 46] }
+      - { idx: 29, item_id: 71493,  avail_period: 168, client_paras: [1, 48] }
+      - { idx: 30, item_id: 123335, client_paras: [1, 50] }
+      - { idx: 31, item_id: 123335, avail_period: 168, client_paras: [1, 52] }
+      - { idx: 32, item_id: 71531,  client_paras: [1, 54] }
+      - { idx: 33, item_id: 71531,  avail_period: 168, client_paras: [1, 55] }
+      - { idx: 34, item_id: 123374, client_paras: [1, 56] }
+      - { idx: 35, item_id: 123374, avail_period: 168, client_paras: [1, 57] }
+      - { idx: 36, item_id: 71516,  avail_period: 0, client_paras: [1, 58] }
+      - { idx: 37, item_id: 123363, avail_period: 0, client_paras: [1, 59] }
+      - { idx: 38, item_id: 74273,  item_num: 100, avail_period: 0, client_paras: [1, 60] }
+      - { idx: 39, item_id: 74728,  item_num: 2, avail_period: 0, client_paras: [1, 61] }
+      - { idx: 40, item_id: 33772,  item_num: 2, avail_period: 0, client_paras: [1, 62] }
+      - { idx: 41, item_id: 13788,  avail_period: 0, client_paras: [1, 63] }
+      - { idx: 42, item_id: 13709,  avail_period: 0, client_paras: [1, 64] }

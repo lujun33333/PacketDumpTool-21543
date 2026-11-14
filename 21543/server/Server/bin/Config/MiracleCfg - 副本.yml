@@ -1,0 +1,2967 @@
+﻿##魔力圣杯分解配置
+MagicCupExchange:
+  EAIT_CAR: 1 #赛车
+  EAIT_SKIN: 1 #皮肤
+  EAIT_CLOTHES: 2 #装扮
+  EAIT_PROP: 1 #道具
+  EAIT_PET: 2 #宠物
+  EAIT_STONE: 1 #宝石
+##奇迹阁兑换配置
+MiracleCfg:
+
+
+
+
+
+  - ItemId: 151412 # 幻蝶恋曲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151422 # 幻蝶恋曲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151402 # 一生之约服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151392 # 一生之约服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151383 # 糖果星喵套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151373 # 糖果星喵套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151252 # 柔云雅梦服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151242 # 万千星河服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151232 # 万千星河服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151222 # 蝶恋光影服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151212 # 蝶恋光影服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151203 # 霜雪金月套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151192 # 霜雪金月套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151162 # 映夜繁星服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 151060 # 红玫之诗服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150914 # 苹安喜乐服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+
+  - ItemId: 150899 # 神秘木乃伊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150908 # 神秘木乃伊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150850 # 灵蛇幻梦套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150813 # 24年度车王服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150823 # 24年度车王服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150793 # 灵蛇传说服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150727 # 瑞韵新春服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150687 # 盛夏之约服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150648 # 鸿运财神套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 153629 # 鹤羽墨翎服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 153639 # 鹤羽墨翎服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 153683 # 魅果夜影套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 153730 # 迪西角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 153737 # 小波角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154088 # 岚心执守服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154098 # 岚心执守服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154128 # 月桂花神服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154168 # TJ警官服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154178 # TJ警官服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+
+  - ItemId: 154198 # 夜巡先锋服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154230 # 一只耳角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154237 # 一只耳角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154244 # 黑猫警长角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154251 # 黑猫警长角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154329 # 旋风快餐服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154335 # 旋风快餐服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154341 # 绒暖街头服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154347 # 绒暖街头服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+
+  - ItemId: 154413 # 黑兔萌语服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154419 # 黑兔萌语服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154482 # 漫香蝶舞服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154472 # 漫香蝶舞服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154672 # 次元魅影服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154682 # 次元魅影服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+
+  - ItemId: 154912 # 琉璃纪元服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154922 # 琉璃纪元服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154952 # 流光星语服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154962 # 流光星语服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 155042 # 汐月幻蝶服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 155052 # 织星绘梦服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 127180 # 帝皇铠甲套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 127167 # 帝皇铠甲套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 152469 # 宝宝巴士
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 40000
+
+  - ItemId: 146558 # X次元-朱雀
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 60000
+
+  - ItemId: 153748 # S白金剃刀Remake
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 40000
+
+  - ItemId: 146549 # 海洋之神-波塞冬
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 50000
+
+  - ItemId: 132220 # 雷诺-千机变
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 40000
+
+  - ItemId: 144534 # 冰魂-釉龙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 40000
+
+  - ItemId: 152763 # 丁丁角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 152770 # 拉拉角色套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154982 # 赤蕴心缘服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154972 # 赤蕴心缘套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154963 # 流光星语套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154962 # 流光星语套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154952 # 流光星语服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154942 # 冰霜蓝玫服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154932 # 冰霜蓝玫服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154923 # 琉璃纪元套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154922 # 琉璃纪元套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154912 # 琉璃纪元服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154903 # 玄域幽影套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154892 # 玄域幽影套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154883 # 战争之神套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154873 # 战争之神套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154862 # 莲韵芳华服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154852 # 莲韵芳华服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154842 # 花漫清歌服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+
+  - ItemId: 154823 # 愈梦天使套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154812 # 愈梦天使套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154792 # 花露晨光服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 154763 # 云染羽歌套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 127618 #太妃糖
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 133671
+    ComsumeItemNum: 1
+
+
+  - ItemId: 18553 #太妃糖
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 50000
+
+  - ItemId: 148400 # 玄武幻形卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 10000
+
+  - ItemId: 148399 # 朱雀幻形卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 10000
+
+  - ItemId: 148398 # 白虎幻形卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 10000
+
+  - ItemId: 148397 # 青龙幻形卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 10000
+
+  - ItemId: 135163 # 懒羊羊幻形卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 10000
+
+  - ItemId: 148410 # 小新小白幻形卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 81012
+    ComsumeItemNum: 10000
+
+  - ItemId: 117727 # 稀世·创世死神套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 117737 # 稀世·创世之神套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 115166 # 爆天雪
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+  - ItemId: 119299 # 稀世·墨龙套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 116734 # 爆天电魔
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+  - ItemId: 119309 # 稀世·墨龙套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 123003 # 稀世·梁祝化蝶套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 123013 # 稀世·梁祝化蝶套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 123902 # 稀世·精灵幻境套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 123912 # 稀世·精灵幻境套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 126934 # 稀世·拂光掠影白套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 126954 # 稀世·拂光掠影白套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 126974 # 稀世·拂光掠影黑套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 126964 # 稀世·拂光掠影黑套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 127236 # 稀世·梦幻国度服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 131166 # 稀世·合金装甲套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 131179 # 稀世·合金装甲套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 133189 # 稀世·浮世凌霄套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 133199 # 稀世·浮世凌霄套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 134726 # 稀世·永夜之吻服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 134737 # 稀世·永夜之吻套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 136370 # 稀世·夜海镜音服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 136381 # 稀世·夜海镜音套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 136410 # 稀世·荧荧潮汐服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 136421 # 稀世·荧荧潮汐套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 100474 # 稀世·水龙吟套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 141235 # 稀世·闻人翊悬套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 100484 # 稀世·水龙吟套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 141248 # 稀世·闻人翊悬套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 106797 # 稀世·星辰之语套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 33109 # 千颂伊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 106807 # 稀世·星辰之语套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 33104 # 都教授套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 109380 # 稀世·至尊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 82809 # 黑猫女郎服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 109390 # 稀世·至尊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 83102 # 雅B戏
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 110140 # 稀世·良辰美景套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 145508 # 诸天神王套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 110150 # 稀世·良辰美景套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 145498 # 诸天神王套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 115002 # 稀世·明日之诗服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 82192 # 滑稽宝宝发饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 115013 # 稀世·明日之诗套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 82193 # 滑稽宝宝发饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 121858 # 巧樱兔娘套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 138840 # 稀世·春意满园套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 127246 # 稀世·梦幻国度套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 138850 # 稀世·春意满园套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 134076 # 童趣耀兔套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 139722 # 稀世·月服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 147806 # 萌兔先森套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 139733 # 稀世·百变小樱套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 99060 # 稀世·鸿运锦鲤套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 139777 # 稀世·荧荧潮汐套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 99070 # 稀世·鸿运锦鲤套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+  - ItemId: 139776 # 稀世·荧荧潮汐套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 147972 # X次元-青龙套装 
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 138313 # 小贵妃
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 50000
+  - ItemId: 138412  #墨影青龙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 140033 # 阿尔法之芯-黑客
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150053 # S18车王冠军皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 148409  # 春日部之影
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 135181 # 羊羊得意 
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150532  # 裁决者-无境
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150529  # 众神之神-幽兰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150531  # 终极镇海-腾蛇
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150530  # 雷瑟之光-无悔
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150526  # 雷神之怒-游龙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 150528  # 终极爆天甲-逍遥
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 146551  # 终极暴风雪-流星
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 146552  # 终极鬼战刀-凌霄
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 146553  # 终极变形销魂-孔雀翎
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 148406  # 极星之翼-落雁
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 148405  # 序列未来LYR-燃冰球手
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 146550  # 终极众神-倚天
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 138413  # X次元-青龙
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 152207  # 全国公开赛S6冠军皇冠
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 30000
+
+  - ItemId: 70047  # 终极麦凯伦
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 106673  # 智慧之神
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150543  # 起源·爆天甲
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150534  # 灵蛇雷诺
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 148407  # 昭君·落雁
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 148402  # 天外之星
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 148401  # 霆光
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150082  # 货拉拉
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 109569  # 裁决者
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 90945  # 众神之神
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150537  # 终极镇海之戟
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 80542  # 雷瑟之光
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 68643  # 终极暴风雪
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 74363  # 终极鬼战刀
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 83042  # 终极变形销魂
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 81293  # 黑域电魔
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150539  # 超核·时空战舰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 150538  # L-影之传说
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 144544  # 勇者之心
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 98829  # 海洋之神
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 96785  # 光明之神
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 148404  # 序列未来LYR
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 20000
+
+  - ItemId: 151658  # 花落芳菲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149243  # 玫瑰婚约套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151628  # 璃光鸢尾服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149233  # 玫瑰婚约套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151618  # 璃光鸢尾服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149075  # 麋鹿雪歌套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151422  # 幻蝶恋曲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149065  # 麋鹿雪歌套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151412  # 幻蝶恋曲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148846  # 野原广志套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151402  # 一生之约服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148853  # 野原美伢套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151392  # 一生之约服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148042  # X次元-朱雀套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151182  # 铃兰蝶舞服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148015  # X次元-女娲套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151172  # 铃兰蝶舞服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148024  # X次元-玄武套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148033  # X次元-白虎套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148042  # X次元-朱雀套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 147882  # 稀世·青丘九尾套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 147875  # 稀世·鸣剑曳影套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152006  # 天降良缘服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149961  # 小新角色卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151996  # 天降良缘服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149951  # 小新角色卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151956  # 潆潆星海套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149941  # 漆夜特工套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151946  # 潆潆星海套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149803  # 童话梦境套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151935  # 灵蛇雅韵服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149794  # 童话梦境套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151922  # 灵蛇雅韵服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149784  # 幻雪夕光服
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151909  # 糖果星球服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149774  # 幻雪夕光服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151899  # 糖果星球服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149534  # 天光浮梦套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151869  # 星动旋律服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149525  # 天光浮梦套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151859  # 星动旋律服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149498  # 沧海灵溟套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151769  # 云梦之翼服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149489  # 沧海灵溟套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151748  # 绚翎舞曲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149298  # 蝶恋晴空套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151668  # 花落芳菲服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149288  # 蝶恋晴空套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152164  # 影之传说服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151019  # 柔软心情服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152152  # 凋零之梦套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150908  # 神秘木乃伊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152142  # 凋零之梦套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150899  # 神秘木乃伊套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152132  # 未来主义套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150813  # 24年度车王服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152119  # 未来主义套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150648  # 鸿运财神套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152105  # 暗夜行者服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150052  # 稀世·星瀚幻宇套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152099  # 暗夜行者服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150045  # 稀世·星瀚幻宇套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152092  # 风动珠华服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150038  # 焰之夜噬套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152079  # 风动珠华服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150029  # 焰之夜噬套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152066  # 蝶恋玫香服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150013  # 稀世·星夜神话套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152056  # 蝶恋玫香服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150020  # 稀世·星夜神话套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152046  # 花醉仙蓉服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150006  # 稀世·穹梦韶宇套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152036  # 花醉仙蓉服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149996  # 稀世·穹梦韶宇套装
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152026  # 夜月流星服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149975  # 动感超人角色卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152016  # 夜月流星服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 149968  # 动感超人角色卡
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152212  # 凋零之梦面饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152213  # 凋零之梦面饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148303  # 稀世·穹梦韶宇表情
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 148137  # 时之祈愿表情
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150379  # 泫然欲泣表情
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 150380  # 泫然欲泣表情
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152197  # 天禄华裳服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151039  # 萌萌奶牛服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152187  # 天禄华裳服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151033  # 萌萌奶牛服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 152177  # 影之传说服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 151027  # 柔软心情服饰
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemId: 94880
+    ComsumeItemNum: 10000
+
+  - ItemId: 146035  # 稀世·天国幻羽服饰 女
+    ItemNum: 1      # 数量
+    AvailPeriod: -1 # -1显示永久，0显示数量
+    ItemType: 2     # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000  # 消耗数量
+
+  - ItemId: 146055  # 稀世·夜染天国服饰 女
+    ItemNum: 1      # 数量
+    AvailPeriod: -1 # -1显示永久，0显示数量
+    ItemType: 2     # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000  # 消耗数量
+
+  - ItemId: 146045  # 稀世·夜染天国服饰
+    ItemNum: 1      # 数量
+    AvailPeriod: -1 # -1显示永久，0显示数量
+    ItemType: 2     # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000  # 消耗数量
+
+  - ItemId: 146025  # 稀世·天国幻羽服饰 男
+    ItemNum: 1      # 数量
+    AvailPeriod: -1 # -1显示永久，0显示数量
+    ItemType: 2     # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000  # 消耗数量
+
+  - ItemId: 145527  # 星梦大耳服饰 女
+    ItemNum: 1      # 数量
+    AvailPeriod: -1 # -1显示永久，0显示数量
+    ItemType: 2     # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000  # 消耗数量
+
+  - ItemId: 145517  # 星梦大耳服饰 男
+    ItemNum: 1      # 数量
+    AvailPeriod: -1 # -1显示永久，0显示数量
+    ItemType: 2     # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000  # 消耗数量
+
+  - ItemId: 28110  # 烈焰新星
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 101885  # 终极黑域电魔
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 20471  # 沙皇
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 26931  # 雷神之怒
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 105425  # 魅影M20
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 126347  # 极星之翼
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 119067  # 特洛伊之眼
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 136722  # 雷诺之力
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 129287  # 阿尔法之芯
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 77236  # 终极猛兽
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 106675  # 终极众神之神
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 136738  # L-龙之传人
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 138419  # 爆天甲Mini
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 136724  # 超核玩家·雷蛇
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 122196  # 至尊帝王·心悦会员
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 63429  # 终极幻影
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 71452  # 神谕天尊
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 136712  # 龙腾九霄
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 127438  # 六道神尊
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 141235  # 稀世·闻人翊悬套装
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 13704  # 浴血羽翼
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 91862  # 圣洁大天使翅膀
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 139596  # 云镜龙缘服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 139606  # 云镜龙缘服饰女
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 144850  # 嗔兽孔雀套装
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 146712  # 暮色幽灵套装
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 81025  # 像素眼镜
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 81850  # 牛逼扇子
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 81026  # 像素眼镜女
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 146036  # 稀世·天国幻羽套装
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 116426  # 绘梦天鹅服饰 女
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 116416  # 绘梦天鹅服饰 男
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 69187  # 紫夜楚楚
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 98771  # 梦幻绮角头饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 146431  # 天穹狐灵尾饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 74152  # 黄金圣狐尾饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 102775  # 夜之幽兰服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 21089  # 名人堂车手
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 67341  # 炫风专属乘风
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 118885  # 魔法城堡座椅
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 141323  # 迪斯椅
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 119085  # 古梦侠缘（五级
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 110725  # 熊猫女宝5级
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 94826  # 冬季萌宝（五级
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 102213  # 纯真宝宝（五级）
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 119090  # 古梦侠缘（五级）
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 23016  # 小绵羊
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 90944  # 吕布·奉先
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 27206  # 黑暗风暴
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 74361  # 孙悟空
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 82248  # 雷霆霸主
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 98261  # 武圣·关云长
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 98826  # 猪八戒
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 104130  # 无双·赵子龙
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 107369  # 恶灵骑士
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 113412  # 沙悟净
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 115157  # 暗黑孙悟空
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 13310  # 公牛
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 10000 # 消耗数量
+
+  - ItemId: 22797  # ssc亚军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 21478  # 小橘子皇冠（银）
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 12948  # 风行者
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 144528  # 风行者Remake
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 138407  # 圣骑士Remake
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 127441  # 六道魔尊 皮
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 11376  # 暴风雪
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 147938  # 大耳狗雷诺
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 146566  # 科技先锋
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 146565  # 沙漠之舟
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 127524  # 时序使者
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 116739  # 天行者
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 124685  # 星煌
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 126352  # 冰魄
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 98830  # 爆天雷诺
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+    
+  - ItemId: 74362  # 爆天甲
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 88865  # 终极爆天甲
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 126345  # 源极之星EXA
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 123512  # 悟空
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 133722  # 哈雷特车
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 119063  # 至曜-耀虎
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 98263  # 黑曼巴
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 123501  # 至尊-火鲤
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 109563  # 至尊·涅槃
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 110710  # 至尊-冰凤
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 107370  # 至尊·麦凯伦
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 106674  # 至尊·爆天甲
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 150000 # 消耗数量
+
+  - ItemId: 146547  # 镇海之戟-孙策
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 146548  # 黑域电魔-雷震子
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 140032  # 智慧之神-沉鱼
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 130538  # 奥莉娜
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 146560  # 奥莉娜-妲己
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 144530  # 智慧之神-大耳狗
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 144529  # 魅影M20-闭月
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 144431  # 玉麒麟 宠物
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 50000 # 消耗数量
+
+  - ItemId: 146582  # 秋季冠军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 90547  # 季度冠军皇冠 男
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 90548  # 季度冠军皇冠 女
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 96668  # 季度冠军皇冠 男
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 96669  # 季度冠军皇冠 女
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 14331  # 挑战赛亚军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 26879  # 中国区冠军皇冠 男
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 26882  # 中国区冠军皇冠 女
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 150055  # 车王季军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 146166  # 公开赛S5冠军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 140302  # S17车王冠军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 138446  # 24春个人冠军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 96700  # 谁是车王S7冠军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+  - ItemId: 32468  # 个人亚军皇冠
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 94880   # 消耗物品
+    ComsumeItemNum: 20000 # 消耗数量
+
+
+#------------------------------------------- 戒指兑换
+  - ItemId: 102010  # 超核玩家T恤
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 124670  # 超核玩家背景
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 63504  # 测试团专属背景动态版
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 124459  # 猪八戒发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149932  # 漆夜特工发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149776  # 幻雪夕光发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149736  # 星梦酷比发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149724  # 迷夜轻舞发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149608  # 初悦甜颜发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149214  # 盈盈紫梦发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149175  # 温煦茶会发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 148588  # 雷霆奇兵发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 60128  # 云粉喵喵发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149180  # 温煦茶会服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149107  # 呆萌小鲨套装
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 148925  # 随心风尚服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 32986  # 睡衣派对服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 145956  # 大耳狗睡衣服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+  - ItemId: 94973  # 安梦沁语服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 94967  # 安梦沁语服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 149850  # 玉绘山河发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 93913  # 殷红嫣浓礼服
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 93923  # 殷红嫣浓礼服
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 147760  # 烟梦夜纱套装
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 146015  # 流光沧海服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 147394  # 猪光宝气发饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 147399  # 猪光宝气服饰
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 133613  # 俏皮虎牙表情
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 138310  # 星瞳璀璨表情
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 118970  # 雪凝公主
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量
+
+  - ItemId: 136604  # 机械青龙王
+    ItemNum: 1 # 数量
+    AvailPeriod: -1 # 0显示数量 -1显示永久
+    ItemType: 2 # 稀有属性
+    ComsumeItemId: 133671   # 消耗物品
+    ComsumeItemNum: 100000 # 消耗数量

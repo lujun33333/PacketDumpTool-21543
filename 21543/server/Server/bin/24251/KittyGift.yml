@@ -1,0 +1,76 @@
+# KittyGift.yml - 大耳狗礼盒 / Beta72 KittyGift QuickRPC 配置
+# 来源: F:\新建文件夹 (3)\1\大耳朵狗礼盒 抓包
+# 说明: 奖励、首抽、消耗、折扣均由此文件控制；源码不硬编码奖池。
+enabled: true
+strict_cost: false
+consume_if_present: true
+disabled_result_code: 11498
+cost_item_id: 146539
+exchange_piece_item_id: 146540
+draw_cost: 1
+draw_cost_10: 10
+draw_cost_50: 50
+i_theme_idx: 2
+i_open_date: 20260501
+i_open_time: 0
+i_close_date: 20260519
+i_close_time: 235959
+
+# 抓包 discountCfg: [1,20,2,50,3,100,4,200,5,300,6,500]
+discount_cfg:
+  - { idx: 1, round: 20 }
+  - { idx: 2, round: 50 }
+  - { idx: 3, round: 100 }
+  - { idx: 4, round: 200 }
+  - { idx: 5, round: 300 }
+  - { idx: 6, round: 500 }
+
+# 抓包 discountCfgExtra: (discount, round) = (3,20),(5,50),(8,100),(12,200),(15,300),(20,500)
+discount_cfg_extra:
+  - { idx: 1, discount: 3, round: 20 }
+  - { idx: 2, discount: 5, round: 50 }
+  - { idx: 3, discount: 8, round: 100 }
+  - { idx: 4, discount: 12, round: 200 }
+  - { idx: 5, discount: 15, round: 300 }
+  - { idx: 6, discount: 20, round: 500 }
+
+# 抽奖一次抓包结果: 普通能量 x1 / ItemID=69938
+# 想固定单抽显示什么，直接改这里。
+first_draw_award:
+  item_id: 69938
+  item_num: 1
+  item_type: 0
+  avail_period: 0
+  other_attribute: 0
+
+# award_poll_cfg：按打开大耳狗礼盒抓包恢复的 28 行。
+# item_ids 两个值时按客户端性别/下标 1、2 写入 itemId 子表。
+reward_pool:
+  - { idx: 1, item_ids: [106673], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 0, exchange_piece_num: 900, baoji_type: 1, probability: 1 }
+  - { idx: 2, item_ids: [144530], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 0, exchange_piece_num: 900, baoji_type: 1, probability: 1 }
+  - { idx: 3, item_ids: [145547, 145537], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 100, baoji_type: 1, probability: 20 }
+  - { idx: 4, item_ids: [145547, 145537], item_num: 1, item_type: 1, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 10, baoji_type: 1, probability: 500 }
+  - { idx: 5, item_ids: [145567, 145557], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 100, baoji_type: 1, probability: 20 }
+  - { idx: 6, item_ids: [145567, 145557], item_num: 1, item_type: 1, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 10, baoji_type: 1, probability: 500 }
+  - { idx: 7, item_ids: [146738, 146728], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 50, baoji_type: 1, probability: 50 }
+  - { idx: 8, item_ids: [146738, 146728], item_num: 1, item_type: 1, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 5, baoji_type: 1, probability: 1000 }
+  - { idx: 9, item_ids: [145539, 145529], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 15, baoji_type: 1, probability: 40 }
+  - { idx: 10, item_ids: [145539, 145529], item_num: 1, item_type: 1, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 5, baoji_type: 1, probability: 800 }
+  - { idx: 11, item_ids: [145559, 145549], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 15, baoji_type: 1, probability: 50 }
+  - { idx: 12, item_ids: [145559, 145549], item_num: 1, item_type: 1, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 5, baoji_type: 1, probability: 800 }
+  - { idx: 13, item_ids: [146730, 146720], item_num: 1, item_type: 1, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 8, baoji_type: 1, probability: 100 }
+  - { idx: 14, item_ids: [146730, 146720], item_num: 1, item_type: 1, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 1, baoji_type: 1, probability: 1000 }
+  - { idx: 15, item_ids: [146272], item_num: 1, item_type: 0, avail_period: 0, can_exchange: 0, other_attribute: 0, exchange_piece_num: 0, baoji_type: 0, probability: 100 }
+  - { idx: 16, item_ids: [144459, 144458], item_num: 1, item_type: 0, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 8, baoji_type: 0, probability: 100 }
+  - { idx: 17, item_ids: [144459, 144458], item_num: 1, item_type: 0, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 1, baoji_type: 0, probability: 2200 }
+  - { idx: 18, item_ids: [146282], item_num: 1, item_type: 0, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 5, baoji_type: 0, probability: 120 }
+  - { idx: 19, item_ids: [146282], item_num: 1, item_type: 0, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 1, baoji_type: 0, probability: 2500 }
+  - { idx: 20, item_ids: [139961, 139960], item_num: 1, item_type: 0, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 3, baoji_type: 0, probability: 120 }
+  - { idx: 21, item_ids: [139961, 139960], item_num: 1, item_type: 0, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 1, baoji_type: 0, probability: 2500 }
+  - { idx: 22, item_ids: [146299], item_num: 1, item_type: 0, avail_period: -1, can_exchange: 1, other_attribute: 1, exchange_piece_num: 3, baoji_type: 0, probability: 150 }
+  - { idx: 23, item_ids: [146299], item_num: 1, item_type: 0, avail_period: 168, can_exchange: 1, other_attribute: 1, exchange_piece_num: 1, baoji_type: 0, probability: 2500 }
+  - { idx: 24, item_ids: [21977], item_num: 1, item_type: 0, avail_period: 0, can_exchange: 0, other_attribute: 0, exchange_piece_num: 0, baoji_type: 0, probability: 4500 }
+  - { idx: 25, item_ids: [12376], item_num: 1, item_type: 0, avail_period: 0, can_exchange: 0, other_attribute: 0, exchange_piece_num: 0, baoji_type: 0, probability: 6500 }
+  - { idx: 26, item_ids: [12377], item_num: 1, item_type: 0, avail_period: 0, can_exchange: 0, other_attribute: 0, exchange_piece_num: 0, baoji_type: 0, probability: 6500 }
+  - { idx: 27, item_ids: [12378], item_num: 1, item_type: 0, avail_period: 0, can_exchange: 0, other_attribute: 0, exchange_piece_num: 0, baoji_type: 0, probability: 6500 }
+  - { idx: 28, item_ids: [69938], item_num: 1, item_type: 0, avail_period: 0, can_exchange: 0, other_attribute: 0, exchange_piece_num: 0, baoji_type: 0, probability: 2000 }

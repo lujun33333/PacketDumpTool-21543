@@ -1,0 +1,419 @@
+# 天官赐福 / SpringMecha 官服抓包数据。
+# 官服响应未下发概率/权重；不包含概率、保底、固定首抽等自定义逻辑。
+# 时间：[日期 YYYYMMDD, 时间 HHMMSS]；period=-1 为永久，0 为无时限，正数单位为小时。
+# pool：idx=行号，award=奖池编号，item=道具ID，num=数量，kind=官服类型，need=兑换需求，pieces=分解数量。
+# scores：flag=累计奖励档位，score=所需抽数；shop：items=奖励ID，max=兑换上限，err=失败码。
+# shop.costs 为官服兑换材料档；num=9999 表示该材料档不可用，max=9999 表示无实际次数限制。
+schema: spring_mecha_official_v1
+cmds:
+  entries: Co.ReqBeta99SpringMechaEntrys
+  info: Co.ReqBeta99SpringMechaInfo
+  opt: Co.ReqBeta99SpringMechaAwardOpt
+ops:
+  draw: 1
+  score: 2 # 累计抽取奖励领取
+  claim: 3 # 暂存箱领取（同 Activity AwardOpt 协议）
+  decompose: 4 # 暂存箱分解（同 Activity AwardOpt 协议）
+  shop: 5
+  temp: 6
+result:
+  reject: 123
+common:
+  cost: 146543
+  notify: [1, 146543]
+acts:
+  - id: 1
+    name: "天官赐福-天禄"
+    active: false
+    from: [20260216, 0]
+    to: [20260412, 235959]
+    season: 1
+    cost: [14, 140]
+    piece: 163292
+    entry: Actions.Mechaforge.Entry(1)
+    burst: 1
+  - id: 2
+    name: "天官赐福-麒麟"
+    active: true
+    from: [20260711, 0]
+    to: [20260913, 235959]
+    season: 1
+    cost: [7, 70]
+    piece: 163290
+    entry: Actions.Mechaforge.Entry(2)
+    burst: 1
+    pool:
+      - {idx: 1, award: 1, item: 129099, num: 1, kind: 1, period: -1, need: 1, pieces: 100}
+      - {idx: 2, award: 2, item: 129099, num: 1, kind: 1, period: 72, need: 0, pieces: 10}
+      - {idx: 3, award: 3, item: 163037, num: 1, kind: 1, period: -1, need: 1, pieces: 30}
+      - {idx: 4, award: 4, item: 163037, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 5, award: 5, item: 71588, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 6, award: 6, item: 71588, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 7, award: 7, item: 92841, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 8, award: 8, item: 92841, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 9, award: 9, item: 27520, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 10, award: 10, item: 27520, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 11, award: 11, item: 123498, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 12, award: 12, item: 123498, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 13, award: 13, item: 133693, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 14, award: 14, item: 133693, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 15, award: 15, item: 14101, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 16, award: 16, item: 14101, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 17, award: 17, item: 163291, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 18, award: 18, item: 163290, num: 5, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 19, award: 19, item: 163290, num: 4, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 20, award: 20, item: 163290, num: 3, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 21, award: 21, item: 163290, num: 2, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 22, award: 22, item: 163290, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 23, award: 23, item: 133692, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 24, award: 24, item: 129290, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 25, award: 25, item: 127409, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 26, award: 26, item: 123509, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 27, award: 27, item: 123504, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 28, award: 28, item: 21977, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 29, award: 29, item: 21983, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 30, award: 30, item: 12376, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 31, award: 31, item: 12377, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 32, award: 32, item: 12378, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 33, award: 33, item: 12380, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 34, award: 34, item: 13708, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+    scores:
+      - {idx: 1, flag: 1, score: 20, item: 163290, num: 2, kind: 0, period: 0}
+      - {idx: 2, flag: 2, score: 50, item: 163290, num: 5, kind: 0, period: 0}
+      - {idx: 3, flag: 3, score: 100, item: 163290, num: 7, kind: 0, period: 0}
+      - {idx: 4, flag: 4, score: 200, item: 163290, num: 12, kind: 0, period: 0}
+      - {idx: 5, flag: 5, score: 400, item: 163290, num: 20, kind: 0, period: 0}
+      - {idx: 6, flag: 6, score: 600, item: 163290, num: 30, kind: 0, period: 0}
+      - {idx: 7, flag: 7, score: 1000, item: 163290, num: 100, kind: 0, period: 0}
+      - {idx: 8, flag: 8, score: 1400, item: 163290, num: 200, kind: 0, period: 0}
+      - {idx: 9, flag: 9, score: 1800, item: 165602, num: 1, kind: 0, period: -1}
+    shop:
+      - {idx: 1, award: 1, items: [163037], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 1}, {item: 163290, num: 2000}]}
+      - {idx: 2, award: 2, items: [129099], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 1}, {item: 163290, num: 1000}]}
+      - {idx: 3, award: 3, items: [31570], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 400}]}
+      - {idx: 4, award: 4, items: [71588], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 400}]}
+      - {idx: 5, award: 5, items: [92841], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 400}]}
+      - {idx: 6, award: 6, items: [27520], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 200}]}
+      - {idx: 7, award: 7, items: [123498], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 200}]}
+      - {idx: 8, award: 8, items: [133693], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 200}]}
+      - {idx: 9, award: 9, items: [133692], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 100}]}
+      - {idx: 10, award: 10, items: [129290], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 100}]}
+      - {idx: 11, award: 11, items: [14101], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 100}]}
+      - {idx: 12, award: 12, items: [127409], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 100}]}
+      - {idx: 13, award: 13, items: [123509], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 100}]}
+      - {idx: 14, award: 14, items: [123504], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 100}]}
+      - {idx: 15, award: 15, items: [74961], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 50}]}
+      - {idx: 16, award: 16, items: [120641], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 50}]}
+      - {idx: 17, award: 17, items: [69938], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 20}]}
+      - {idx: 18, award: 18, items: [69938], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 2}]}
+      - {idx: 19, award: 19, items: [33772], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 10}]}
+      - {idx: 20, award: 20, items: [33772], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 163291, num: 9999}, {item: 163290, num: 1}]} # 1个163290兑换10张宠物强化卡；163291档不可用
+    temp: [163290]
+  - id: 3
+    name: "天官赐福-青龙"
+    active: true
+    from: [20260711, 0]
+    to: [20260913, 235959]
+    season: 1
+    cost: [7, 70]
+    piece: 132093
+    entry: Actions.Mechaforge.Entry(3)
+    burst: 1
+    pool:
+      - {idx: 1, award: 1, item: 127618, num: 1, kind: 1, period: -1, need: 1, pieces: 100}
+      - {idx: 2, award: 2, item: 127618, num: 1, kind: 1, period: 72, need: 0, pieces: 10}
+      - {idx: 3, award: 3, item: 163039, num: 1, kind: 1, period: -1, need: 1, pieces: 30}
+      - {idx: 4, award: 4, item: 163039, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 5, award: 5, item: 19618, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 6, award: 6, item: 19618, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 7, award: 7, item: 98261, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 8, award: 8, item: 98261, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 9, award: 9, item: 65859, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 10, award: 10, item: 65859, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 11, award: 11, item: 33257, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 12, award: 12, item: 33257, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 13, award: 13, item: 93574, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 14, award: 14, item: 93574, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 15, award: 15, item: 102220, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 16, award: 16, item: 102220, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 17, award: 17, item: 132091, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 18, award: 18, item: 132093, num: 5, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 19, award: 19, item: 132093, num: 4, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 20, award: 20, item: 132093, num: 3, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 21, award: 21, item: 132093, num: 2, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 22, award: 22, item: 132093, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 23, award: 23, item: 100050, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 24, award: 24, item: 98833, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 25, award: 25, item: 98264, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 26, award: 26, item: 96786, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 27, award: 27, item: 95685, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 28, award: 28, item: 21977, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 29, award: 29, item: 21983, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 30, award: 30, item: 12376, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 31, award: 31, item: 12377, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 32, award: 32, item: 12378, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 33, award: 33, item: 12380, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 34, award: 34, item: 13708, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+    scores:
+      - {idx: 1, flag: 1, score: 20, item: 132093, num: 2, kind: 0, period: 0}
+      - {idx: 2, flag: 2, score: 50, item: 132093, num: 5, kind: 0, period: 0}
+      - {idx: 3, flag: 3, score: 100, item: 132093, num: 7, kind: 0, period: 0}
+      - {idx: 4, flag: 4, score: 200, item: 132093, num: 12, kind: 0, period: 0}
+      - {idx: 5, flag: 5, score: 400, item: 132093, num: 20, kind: 0, period: 0}
+      - {idx: 6, flag: 6, score: 600, item: 132093, num: 30, kind: 0, period: 0}
+      - {idx: 7, flag: 7, score: 1000, item: 132093, num: 100, kind: 0, period: 0}
+      - {idx: 8, flag: 8, score: 1400, item: 132093, num: 200, kind: 0, period: 0}
+      - {idx: 9, flag: 9, score: 1800, item: 165611, num: 1, kind: 0, period: -1}
+    shop:
+      - {idx: 1, award: 1, items: [138413], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 1}, {item: 132093, num: 2000}]}
+      - {idx: 2, award: 2, items: [127618], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 1}, {item: 132093, num: 1000}]}
+      - {idx: 3, award: 3, items: [163039], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 1}, {item: 132093, num: 2000}]}
+      - {idx: 4, award: 4, items: [19618], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 400}]}
+      - {idx: 5, award: 5, items: [98261], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 400}]}
+      - {idx: 6, award: 6, items: [65859], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 200}]}
+      - {idx: 7, award: 7, items: [33257], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 200}]}
+      - {idx: 8, award: 8, items: [102220], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 200}]}
+      - {idx: 9, award: 9, items: [93574], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 200}]}
+      - {idx: 10, award: 10, items: [100050], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 100}]}
+      - {idx: 11, award: 11, items: [98833], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 100}]}
+      - {idx: 12, award: 12, items: [98264], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 100}]}
+      - {idx: 13, award: 13, items: [96786], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 100}]}
+      - {idx: 14, award: 14, items: [95685], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 100}]}
+      - {idx: 15, award: 15, items: [126431], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 50}]}
+      - {idx: 16, award: 16, items: [82212], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 50}]}
+      - {idx: 17, award: 17, items: [69938], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 20}]}
+      - {idx: 18, award: 18, items: [69938], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 2}]}
+      - {idx: 19, award: 19, items: [33772], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 10}]}
+      - {idx: 20, award: 20, items: [33772], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 132091, num: 9999}, {item: 132093, num: 1}]}
+    temp: [132093]
+  - id: 4
+    name: "天官赐福-朱雀"
+    active: true
+    from: [20260711, 0]
+    to: [20260913, 235959]
+    season: 1
+    cost: [7, 70]
+    piece: 152268
+    entry: Actions.Mechaforge.Entry(4)
+    burst: 1
+    pool:
+      - {idx: 1, award: 1, item: 109563, num: 1, kind: 1, period: -1, need: 1, pieces: 100}
+      - {idx: 2, award: 2, item: 109563, num: 1, kind: 1, period: 72, need: 0, pieces: 10}
+      - {idx: 3, award: 3, item: 163041, num: 1, kind: 1, period: -1, need: 1, pieces: 30}
+      - {idx: 4, award: 4, item: 163041, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 5, award: 5, item: 104129, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 6, award: 6, item: 104129, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 7, award: 7, item: 105423, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 8, award: 8, item: 105423, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 9, award: 9, item: 116733, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 10, award: 10, item: 116733, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 11, award: 11, item: 28778, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 12, award: 12, item: 28778, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 13, award: 13, item: 123507, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 14, award: 14, item: 123507, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 15, award: 15, item: 71458, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 16, award: 16, item: 71458, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 17, award: 17, item: 152267, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 18, award: 18, item: 152268, num: 5, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 19, award: 19, item: 152268, num: 4, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 20, award: 20, item: 152268, num: 3, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 21, award: 21, item: 152268, num: 2, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 22, award: 22, item: 152268, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 23, award: 23, item: 109569, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 24, award: 24, item: 122202, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 25, award: 25, item: 83987, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 26, award: 26, item: 86999, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 27, award: 27, item: 21087, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 28, award: 28, item: 21977, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 29, award: 29, item: 21983, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 30, award: 30, item: 12376, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 31, award: 31, item: 12377, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 32, award: 32, item: 12378, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 33, award: 33, item: 12380, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 34, award: 34, item: 13708, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+    scores:
+      - {idx: 1, flag: 1, score: 20, item: 152268, num: 2, kind: 0, period: 0}
+      - {idx: 2, flag: 2, score: 50, item: 152268, num: 5, kind: 0, period: 0}
+      - {idx: 3, flag: 3, score: 100, item: 152268, num: 7, kind: 0, period: 0}
+      - {idx: 4, flag: 4, score: 200, item: 152268, num: 12, kind: 0, period: 0}
+      - {idx: 5, flag: 5, score: 400, item: 152268, num: 20, kind: 0, period: 0}
+      - {idx: 6, flag: 6, score: 600, item: 152268, num: 30, kind: 0, period: 0}
+      - {idx: 7, flag: 7, score: 1000, item: 152268, num: 100, kind: 0, period: 0}
+      - {idx: 8, flag: 8, score: 1400, item: 152268, num: 200, kind: 0, period: 0}
+      - {idx: 9, flag: 9, score: 1800, item: 165647, num: 1, kind: 0, period: -1}
+    shop:
+      - {idx: 1, award: 1, items: [146558], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 1}, {item: 152268, num: 2000}]}
+      - {idx: 2, award: 2, items: [109563], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 1}, {item: 152268, num: 1000}]}
+      - {idx: 3, award: 3, items: [163041], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 1}, {item: 152268, num: 2000}]}
+      - {idx: 4, award: 4, items: [104129], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 400}]}
+      - {idx: 5, award: 5, items: [105423], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 400}]}
+      - {idx: 6, award: 6, items: [116733], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 200}]}
+      - {idx: 7, award: 7, items: [28778], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 200}]}
+      - {idx: 8, award: 8, items: [123507], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 200}]}
+      - {idx: 9, award: 9, items: [71458], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 200}]}
+      - {idx: 10, award: 10, items: [109569], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 100}]}
+      - {idx: 11, award: 11, items: [122202], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 100}]}
+      - {idx: 12, award: 12, items: [83987], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 100}]}
+      - {idx: 13, award: 13, items: [86999], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 100}]}
+      - {idx: 14, award: 14, items: [21087], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 100}]}
+      - {idx: 15, award: 15, items: [78278], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 50}]}
+      - {idx: 16, award: 16, items: [112895], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 50}]}
+      - {idx: 17, award: 17, items: [69938], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 20}]}
+      - {idx: 18, award: 18, items: [69938], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 2}]}
+      - {idx: 19, award: 19, items: [33772], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 10}]}
+      - {idx: 20, award: 20, items: [33772], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152267, num: 9999}, {item: 152268, num: 1}]}
+    temp: [152268]
+  - id: 5
+    name: "天官赐福-白虎"
+    active: true
+    from: [20260711, 0]
+    to: [20260913, 235959]
+    season: 1
+    cost: [7, 70]
+    piece: 152266
+    entry: Actions.Mechaforge.Entry(5)
+    burst: 1
+    pool:
+      - {idx: 1, award: 1, item: 119059, num: 1, kind: 1, period: -1, need: 1, pieces: 100}
+      - {idx: 2, award: 2, item: 119059, num: 1, kind: 1, period: 72, need: 0, pieces: 10}
+      - {idx: 3, award: 3, item: 163040, num: 1, kind: 1, period: -1, need: 1, pieces: 30}
+      - {idx: 4, award: 4, item: 163040, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 5, award: 5, item: 23015, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 6, award: 6, item: 23015, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 7, award: 7, item: 102221, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 8, award: 8, item: 102221, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 9, award: 9, item: 66598, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 10, award: 10, item: 66598, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 11, award: 11, item: 76477, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 12, award: 12, item: 76477, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 13, award: 13, item: 113416, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 14, award: 14, item: 113416, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 15, award: 15, item: 98637, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 16, award: 16, item: 98637, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 17, award: 17, item: 152265, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 18, award: 18, item: 152266, num: 5, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 19, award: 19, item: 152266, num: 4, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 20, award: 20, item: 152266, num: 3, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 21, award: 21, item: 152266, num: 2, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 22, award: 22, item: 152266, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 23, award: 23, item: 94396, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 24, award: 24, item: 100051, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 25, award: 25, item: 95683, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 26, award: 26, item: 104134, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 27, award: 27, item: 109568, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 28, award: 28, item: 21977, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 29, award: 29, item: 21983, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 30, award: 30, item: 12376, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 31, award: 31, item: 12377, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 32, award: 32, item: 12378, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 33, award: 33, item: 12380, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 34, award: 34, item: 13708, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+    scores:
+      - {idx: 1, flag: 1, score: 20, item: 152266, num: 2, kind: 0, period: 0}
+      - {idx: 2, flag: 2, score: 50, item: 152266, num: 5, kind: 0, period: 0}
+      - {idx: 3, flag: 3, score: 100, item: 152266, num: 7, kind: 0, period: 0}
+      - {idx: 4, flag: 4, score: 200, item: 152266, num: 12, kind: 0, period: 0}
+      - {idx: 5, flag: 5, score: 400, item: 152266, num: 20, kind: 0, period: 0}
+      - {idx: 6, flag: 6, score: 600, item: 152266, num: 30, kind: 0, period: 0}
+      - {idx: 7, flag: 7, score: 1000, item: 152266, num: 100, kind: 0, period: 0}
+      - {idx: 8, flag: 8, score: 1400, item: 152266, num: 200, kind: 0, period: 0}
+      - {idx: 9, flag: 9, score: 1800, item: 165638, num: 1, kind: 0, period: -1}
+    shop:
+      - {idx: 1, award: 1, items: [146556], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 1}, {item: 152266, num: 2000}]}
+      - {idx: 2, award: 2, items: [119059], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 1}, {item: 152266, num: 1000}]}
+      - {idx: 3, award: 3, items: [163040], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 1}, {item: 152266, num: 2000}]}
+      - {idx: 4, award: 4, items: [23015], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 400}]}
+      - {idx: 5, award: 5, items: [102221], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 400}]}
+      - {idx: 6, award: 6, items: [66598], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 200}]}
+      - {idx: 7, award: 7, items: [76477], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 200}]}
+      - {idx: 8, award: 8, items: [113416], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 200}]}
+      - {idx: 9, award: 9, items: [98637], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 200}]}
+      - {idx: 10, award: 10, items: [94396], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 100}]}
+      - {idx: 11, award: 11, items: [100051], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 100}]}
+      - {idx: 12, award: 12, items: [95683], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 100}]}
+      - {idx: 13, award: 13, items: [104134], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 100}]}
+      - {idx: 14, award: 14, items: [109568], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 100}]}
+      - {idx: 15, award: 15, items: [85924], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 50}]}
+      - {idx: 16, award: 16, items: [102199], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 50}]}
+      - {idx: 17, award: 17, items: [69938], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 20}]}
+      - {idx: 18, award: 18, items: [69938], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 2}]}
+      - {idx: 19, award: 19, items: [33772], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 10}]}
+      - {idx: 20, award: 20, items: [33772], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152265, num: 9999}, {item: 152266, num: 1}]}
+    temp: [152266]
+  - id: 6
+    name: "天官赐福-玄武"
+    active: true
+    from: [20260711, 0]
+    to: [20260913, 235959]
+    season: 1
+    cost: [7, 70]
+    piece: 152270
+    entry: Actions.Mechaforge.Entry(6)
+    burst: 1
+    pool:
+      - {idx: 1, award: 1, item: 150525, num: 1, kind: 1, period: -1, need: 1, pieces: 100}
+      - {idx: 2, award: 2, item: 150525, num: 1, kind: 1, period: 72, need: 0, pieces: 10}
+      - {idx: 3, award: 3, item: 163042, num: 1, kind: 1, period: -1, need: 1, pieces: 30}
+      - {idx: 4, award: 4, item: 163042, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 5, award: 5, item: 60430, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 6, award: 6, item: 60430, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 7, award: 7, item: 91958, num: 1, kind: 1, period: -1, need: 9999, pieces: 30}
+      - {idx: 8, award: 8, item: 91958, num: 1, kind: 1, period: 72, need: 0, pieces: 5}
+      - {idx: 9, award: 9, item: 112175, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 10, award: 10, item: 112175, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 11, award: 11, item: 78911, num: 1, kind: 1, period: -1, need: 9999, pieces: 10}
+      - {idx: 12, award: 12, item: 78911, num: 1, kind: 1, period: 72, need: 0, pieces: 2}
+      - {idx: 13, award: 13, item: 85950, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 14, award: 14, item: 85950, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 15, award: 15, item: 129292, num: 1, kind: 1, period: -1, need: 9999, pieces: 5}
+      - {idx: 16, award: 16, item: 129292, num: 1, kind: 1, period: 72, need: 0, pieces: 1}
+      - {idx: 17, award: 17, item: 152269, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 18, award: 18, item: 152270, num: 5, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 19, award: 19, item: 152270, num: 4, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 20, award: 20, item: 152270, num: 3, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 21, award: 21, item: 152270, num: 2, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 22, award: 22, item: 152270, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 23, award: 23, item: 112182, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 24, award: 24, item: 115168, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 25, award: 25, item: 117938, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 26, award: 26, item: 119076, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 27, award: 27, item: 132214, num: 1, kind: 0, period: 72, need: 0, pieces: 0}
+      - {idx: 28, award: 28, item: 21977, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 29, award: 29, item: 21983, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 30, award: 30, item: 12376, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 31, award: 31, item: 12377, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 32, award: 32, item: 12378, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 33, award: 33, item: 12380, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+      - {idx: 34, award: 34, item: 13708, num: 1, kind: 0, period: 0, need: 0, pieces: 0}
+    scores:
+      - {idx: 1, flag: 1, score: 20, item: 152270, num: 2, kind: 0, period: 0}
+      - {idx: 2, flag: 2, score: 50, item: 152270, num: 5, kind: 0, period: 0}
+      - {idx: 3, flag: 3, score: 100, item: 152270, num: 7, kind: 0, period: 0}
+      - {idx: 4, flag: 4, score: 200, item: 152270, num: 12, kind: 0, period: 0}
+      - {idx: 5, flag: 5, score: 400, item: 152270, num: 20, kind: 0, period: 0}
+      - {idx: 6, flag: 6, score: 600, item: 152270, num: 30, kind: 0, period: 0}
+      - {idx: 7, flag: 7, score: 1000, item: 152270, num: 100, kind: 0, period: 0}
+      - {idx: 8, flag: 8, score: 1400, item: 152270, num: 200, kind: 0, period: 0}
+      - {idx: 9, flag: 9, score: 1800, item: 165629, num: 1, kind: 0, period: -1}
+    shop:
+      - {idx: 1, award: 1, items: [146559], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 1}, {item: 152270, num: 2000}]}
+      - {idx: 2, award: 2, items: [150525], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 1}, {item: 152270, num: 1000}]}
+      - {idx: 3, award: 3, items: [163042], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 1}, {item: 152270, num: 2000}]}
+      - {idx: 4, award: 4, items: [60430], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 400}]}
+      - {idx: 5, award: 5, items: [91958], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 400}]}
+      - {idx: 6, award: 6, items: [78911], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 200}]}
+      - {idx: 7, award: 7, items: [112175], num: 1, kind: 1, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 200}]}
+      - {idx: 8, award: 8, items: [85950], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 200}]}
+      - {idx: 9, award: 9, items: [129292], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 200}]}
+      - {idx: 10, award: 10, items: [112182], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 100}]}
+      - {idx: 11, award: 11, items: [115168], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 100}]}
+      - {idx: 12, award: 12, items: [117938], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 100}]}
+      - {idx: 13, award: 13, items: [119076], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 100}]}
+      - {idx: 14, award: 14, items: [132214], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 100}]}
+      - {idx: 15, award: 15, items: [100036], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 50}]}
+      - {idx: 16, award: 16, items: [83976], num: 1, kind: 0, period: -1, max: 1, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 50}]}
+      - {idx: 17, award: 17, items: [69938], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 20}]}
+      - {idx: 18, award: 18, items: [69938], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 2}]}
+      - {idx: 19, award: 19, items: [33772], num: 100, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 10}]}
+      - {idx: 20, award: 20, items: [33772], num: 10, kind: 0, period: 0, max: 9999, err: 11498, costs: [{item: 152269, num: 9999}, {item: 152270, num: 1}]}
+    temp: [152270]

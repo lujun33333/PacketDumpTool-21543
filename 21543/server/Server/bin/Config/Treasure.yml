@@ -1,0 +1,23 @@
+﻿on: 0 ##具体时间点加倍
+multiple: 0 ##倍数
+start: 20 ##八点
+end: 22 ##十点
+Items: 
+  - ItemId: 133671 
+    ItemNum: 50
+    AvailPeriod: 0
+    ItemType: 0
+  - ItemId: 133671 
+    ItemNum: 50
+    AvailPeriod: 0
+    ItemType: 0
+  - ItemId: 133671 
+    ItemNum: 50
+    AvailPeriod: 0
+    ItemType: 0
+Uins:  ##单独账号
+  - Uin: 10001
+    ItemId: 127748
+    ItemNum: 688
+    AvailPeriod: 0
+    ItemType: 0

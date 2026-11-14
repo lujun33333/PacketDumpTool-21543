@@ -1,0 +1,9 @@
+﻿##在线半小时获得如下奖励
+Experience: 0  #经验
+SuperMoney: 0 #点卷
+Money: 5000 #酷比
+Items:
+  - ItemId: 62787 #道具id
+    ItemNum: 30 #数量
+    ObtainTime: 1 #时间
+    AvailPeriod: 0 #0显示数量 -1显示永久

@@ -1,0 +1,24 @@
+大体链路：
+收包方向:
+socket 原始包
+  -> Unpack
+  -> SpecialDecode(只针对 28346 wrapper)
+  -> InnerDispatch
+  -> ParserQueueDispatch / Lua 层处理
+
+发包方向:
+客户端对象/参数
+  -> SerializeBody
+  -> SafePacketBuilder(构造 28346 安全包时用)
+  -> Pack
+  -> socket 发出
+逐个作用：
+名称	作用
+Unpack 0x2F66F0	入包解包核心。把网络收到的加密/封装包拆成 CSHEAD / MSGHEAD / body，是看明文入包的第一关键点。
+Pack 0x2F5750	出包封包核心。把明文 body、msgid、seq、key 等组装成最终网络包。看客户端最终发了什么、Pack result=0/1 主要靠它。
+SpecialDecode 0x346520	专门处理 28346 加密 wrapper。把外层 28346 还原/拆到内层真实 msg。
+InnerDispatch 0x1F88E0	解包后的客户端内部分发。判断某个 msg 是否被客户端接受、是否转成内部对象、是否继续给 Lua/队列。
+SafePacketBuilder 0x322CF0	构造安全/加密消息体，主要跟 28346 出包 wrapper 有关。你要看客户端自己怎么生成 28346，就看这里。
+SerializeBody 0x2EECA0	把客户端 C++ 对象序列化成协议 body。比如发 103/110/120 前，body 是这里生成的。
+ParserQueueDispatch 0x3BF7D0	parser 队列/Lua 网络分发入口。用于确认解出来的消息有没有进客户端逻辑层。
+LoginCacheDecode 0x3AFE80	登录初始化缓存/登录参数的解码函数，不是普通网络包解密。主要用于看登录链路里 cache decode 前后数据。

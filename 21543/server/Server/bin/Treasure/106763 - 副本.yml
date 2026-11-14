@@ -1,0 +1,82 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 106763；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.01448%；8 件，每件 0.00181%
+  - Seed: 1448
+    ItemType: 2
+    Items:
+      - ItemId: 163046 # 终极众神-霹雳和弦
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 106675 # 终极众神之神
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 90945 # 众神之神
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 167867 # 众神天后-倾城
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 150529 # 众神之神-幽兰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 146550 # 终极众神-倚天
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 110711 # 众神之神-麒麟
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 138417 # 众神天后
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有限时池合计 0.01086%；1 件，每件 0.01086%
+  - Seed: 2534
+    ItemType: 2
+    Items:
+      - ItemId: 138417 # 众神天后
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.97466%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

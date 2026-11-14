@@ -1,0 +1,107 @@
+- ItemId: 129141 
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 2000
+
+- ItemId: 144325 
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 20000
+
+- ItemId: 144326 
+  AvailPeriod: 0
+  ItemNum: 100
+  PieceNum: 50000
+
+- ItemId: 144521
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 140031
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 144523
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 144524
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 144525
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 144526
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 144527
+  AvailPeriod: -1
+  ItemNum: 1
+  PieceNum: 25000
+
+- ItemId: 144522
+  AvailPeriod: -1 
+  ItemNum: 1
+  PieceNum: 25000
+- ItemId: 138417
+  AvailPeriod: -1 
+  ItemNum: 1
+  PieceNum: 20000
+- ItemId: 138421
+  AvailPeriod: -1 
+  ItemNum: 1
+  PieceNum: 15000
+- ItemId: 136705    #终麦-天行
+  AvailPeriod: 0
+  ItemNum: 10
+  PieceNum: 1300
+- ItemId: 136709    #暴风雪-极光
+  AvailPeriod: 0
+  ItemNum: 10
+  PieceNum: 1300
+- ItemId: 127350    #众神·乾坤
+  AvailPeriod: 0
+  ItemNum: 10
+  PieceNum: 1300
+- ItemId: 116759    #爆天-曜影
+  AvailPeriod: 0
+  ItemNum: 10
+  PieceNum: 1300
+- ItemId: 126538    #雷诺-幻夜
+  AvailPeriod: 0
+  ItemNum: 10
+  PieceNum: 1300
+- ItemId: 116761    #传奇能源
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 3000
+- ItemId: 124596    #机甲升级结晶
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 1800
+- ItemId: 129601    #奥莉娜升级结晶
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 1800
+- ItemId: 133718    #哈雷特升级结晶
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 1800  
+- ItemId: 133680    #青花升级结晶
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 1800  
+
+- ItemId: 138388 #青花升级结晶
+  AvailPeriod: 0
+  ItemNum: 1000
+  PieceNum: 1800  

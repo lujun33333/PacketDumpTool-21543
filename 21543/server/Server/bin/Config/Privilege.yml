@@ -1,0 +1,146 @@
+# CharmValue: 达到该等级所需魅力值
+# SearchTreasure: 寻宝次数
+# GetTreasure: 获取宝藏次数 (默认0)
+# CritCard: 暴击卡次数 (默认0)
+# MechLarger: 机械放大卡次数 (默认0)
+# MallBuy: 商城购买等级 (默认=等级序号)
+# Items: 达到等级可领取的奖品列表
+#   ItemId: 道具ID
+#   ItemNum: 道具数量
+#   AvailPeriod: 有效期(天), 0=永久
+
+Levels:
+  # ===== 1级 =====
+  - CharmValue: 1
+    SearchTreasure: 0
+    MallBuy: 1
+    Items:
+      - ItemId: 66631    # 奖品1
+        ItemNum: 1
+        AvailPeriod: 720 # 720天
+      - ItemId: 12376    # 奖品2
+        ItemNum: 1
+        AvailPeriod: 0   # 永久
+      - ItemId: 13708    # 奖品3
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 2级 =====
+  - CharmValue: 9
+    SearchTreasure: 0
+    MallBuy: 2
+    Items:
+      - ItemId: 66632
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 33772
+        ItemNum: 2
+        AvailPeriod: 0
+      - ItemId: 13787
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 3级 =====
+  - CharmValue: 29
+    SearchTreasure: 0
+    MallBuy: 3
+    Items:
+      - ItemId: 66633
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 34340
+        ItemNum: 1
+        AvailPeriod: 0
+      - ItemId: 12380
+        ItemNum: 2
+        AvailPeriod: 0
+
+  # ===== 4级 =====
+  - CharmValue: 49
+    SearchTreasure: 1
+    MallBuy: 4
+    Items:
+      - ItemId: 66634
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 67310
+        ItemNum: 1
+        AvailPeriod: 0
+      - ItemId: 34337
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 5级 =====
+  - CharmValue: 99
+    SearchTreasure: 1
+    MallBuy: 5
+    Items:
+      - ItemId: 66635
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 67311
+        ItemNum: 1
+        AvailPeriod: 0
+      - ItemId: 34343
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 6级 =====
+  - CharmValue: 199
+    SearchTreasure: 2
+    MallBuy: 6
+    Items:
+      - ItemId: 66636
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 67311
+        ItemNum: 2
+        AvailPeriod: 0
+      - ItemId: 34341
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 7级 =====
+  - CharmValue: 299
+    SearchTreasure: 2
+    MallBuy: 7
+    Items:
+      - ItemId: 66637
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 67311
+        ItemNum: 3
+        AvailPeriod: 0
+      - ItemId: 34338
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 8级 =====
+  - CharmValue: 499
+    SearchTreasure: 3
+    MallBuy: 8
+    Items:
+      - ItemId: 66638
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 67313
+        ItemNum: 3
+        AvailPeriod: 0
+      - ItemId: 34344
+        ItemNum: 1
+        AvailPeriod: 0
+
+  # ===== 9级 =====
+  - CharmValue: 999
+    SearchTreasure: 4
+    MallBuy: 9
+    Items:
+      - ItemId: 66639
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 67314
+        ItemNum: 3
+        AvailPeriod: 0
+      - ItemId: 65702
+        ItemNum: 1
+        AvailPeriod: 0

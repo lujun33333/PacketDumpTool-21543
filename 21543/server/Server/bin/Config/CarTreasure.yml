@@ -1,0 +1,1333 @@
+car_treasure: # 赛车夺宝活动总配置，服务端启动或热更新时读取这一层
+  enabled: false # 是否启用赛车夺宝活动
+  config_version: 20260501 # 配置版本号，建议用活动开始日期，方便热更判断
+  source_pcap_group: "dll/pcaps/9" # 数据来源说明，方便追踪这份配置来自哪组抓包
+  protocol: # 当前客户端协议方法名配置
+    quickrpc_msgid: 24251 # QuickRPC 内层 MsgID，十进制 24251，十六进制 0x5EBB
+    response_method: "DispatchCoResponse" # 服务端响应客户端时使用的方法名
+    cfg_method: "Co.RequestGetCarTreasureCfg" # 客户端请求赛车夺宝配置的方法名，当前实包真实值
+    award_method: "Co.RequestGetCarTreasureAward" # 客户端请求抽奖或分解的方法名，当前实包真实值
+    select_method: "Co.Beta80_RequestSelectGroupIndex" # 客户端提交自选车组的方法名，当前实包真实值
+
+  activity_time: # 活动时间配置，对应配置响应里的 iOpenDate/iOpenTime/iCloseDate/iCloseTime
+    open_date: 20260501 # 活动开始日期，格式 yyyymmdd，写入客户端字段 iOpenDate
+    open_time: 0 # 活动开始时间，格式 hhmmss，写入客户端字段 iOpenTime
+    close_date: 20260531 # 活动结束日期，格式 yyyymmdd，写入客户端字段 iCloseDate
+    close_time: 235959 # 活动结束时间，格式 hhmmss，写入客户端字段 iCloseTime
+
+  cost: # 抽奖消耗配置，对应客户端消耗字段
+    item_id: 99662 # 夺宝券道具 ID，写入 iCostItemID
+    once_cost: 1 # 单抽消耗夺宝券数量，写入 iCostNumOneTime
+    ten_cost: 10 # 十连抽消耗夺宝券数量，写入 iCaostNumTenTime，字段名沿用客户端拼写 Caost
+    ten_cost_after_discount: 10 # 折扣后十连抽消耗数量，写入 iCaostNumTenTimeAfterDiscount
+    no_ticket_result_code: 123 # 夺宝券不足时返回的 DispatchCoResponse 结果码，实包为 123
+
+  discount: # 折扣配置，当前实包有字段但 UseDiscountNum 为 0
+    begin_date: 20230528 # 折扣开始日期，写入 iDiscountBeginDate
+    begin_time: 155959 # 折扣开始时间，写入 iDiscountBeginTime
+    close_date: 20230528 # 折扣结束日期，写入 iDiscountCloseDate
+    close_time: 160000 # 折扣结束时间，写入 iDiscountCloseTime
+    ten_cost: 8 # 折扣十连消耗数量，写入 iDiscountCostNumTenTime
+    used_count: 0 # 玩家已使用折扣次数，默认写 0，动态字段可按玩家覆盖
+    score_discount_cfg: [] # 积分折扣配置表，当前实包为空数组
+
+  exchange: # 分解/兑换能量配置
+    piece_item_id: 94880 # 分解后获得的能量/碎片道具 ID，写入 iExchangePieceItemID，当前为 94880
+    ret_com_table_from_db: true # RetComItemTable 是否从玩家暂存箱数据库动态生成
+    ret_decp_table_from_db: true # RetDecpItemTable 是否从玩家分解记录数据库动态生成
+    ret_rec_table_from_db: true # RetRecItemTable 是否从玩家领取记录数据库动态生成，当前实包为空
+
+  select_car: # 自选车配置，当前新版实包需要这一块，老 NoSelfSelect 没有
+    enabled: true # 是否启用自选车流程，当前实包存在 Co.Beta80_RequestSelectGroupIndex
+    need_to_select_default: true # 未选择车辆时是否要求先选车，写入 iNeedToSelectCar，首次打开实包为 1
+    need_to_select_after_selected: false # 玩家已提交选择后是否还需要选车，选车后实包为 0
+    s_car_can_select_num: 2 # S 车可选数量，写入 iSCarCanSelectNum
+    t_car_can_select_num: 2 # T 车可选数量，写入 iTCarCanSelectNum
+    a_car_can_select_num: 7 # A 车可选数量，写入 iACarCanSelectNum
+    can_reset_select: 0 # 是否允许重置选择，写入 iCanResetSelect
+    already_select_from_db: true # iAlreadySelectCarGroupIndex 是否从玩家已选组数据库动态生成
+    sample_selected_groups: # 当前抓包里的选车请求样本，服务端实装时按玩家提交保存
+      - slot: 1 # 第 1 个选择槽位
+        group_index: 1 # 该槽位选择的奖池组索引
+      - slot: 2 # 第 2 个选择槽位
+        group_index: 2 # 该槽位选择的奖池组索引
+      - slot: 3 # 第 3 个选择槽位
+        group_index: 14 # 该槽位选择的奖池组索引
+      - slot: 4 # 第 4 个选择槽位
+        group_index: 13 # 该槽位选择的奖池组索引
+      - slot: 5 # 第 5 个选择槽位
+        group_index: 15 # 该槽位选择的奖池组索引
+      - slot: 6 # 第 6 个选择槽位
+        group_index: 16 # 该槽位选择的奖池组索引
+      - slot: 7 # 第 7 个选择槽位
+        group_index: 17 # 该槽位选择的奖池组索引
+      - slot: 8 # 第 8 个选择槽位
+        group_index: 18 # 该槽位选择的奖池组索引
+      - slot: 9 # 第 9 个选择槽位
+        group_index: 19 # 该槽位选择的奖池组索引
+      - slot: 10 # 第 10 个选择槽位
+        group_index: 20 # 该槽位选择的奖池组索引
+      - slot: 11 # 第 11 个选择槽位
+        group_index: 21 # 该槽位选择的奖池组索引
+
+  client_flags: # 客户端显示/开关字段，当前实包需要返回
+    can_open_summer_car_treasure: 0 # 是否打开夏日赛车夺宝入口，写入 iCanOpenSummerCarTreasure
+    skin1_is_open: 12376 # 皮肤入口 1 开关值，按实包原样返回
+    skin2_is_open: 12376 # 皮肤入口 2 开关值，按实包原样返回
+    skin3_is_open: 12376 # 皮肤入口 3 开关值，按实包原样返回
+    coupons_index: 0 # 点券/券索引字段，按实包原样返回
+
+  operations: # RequestGetCarTreasureAward 的操作码配置
+    draw_op: 0 # 抽奖操作码，当前实包请求 [0, 10]
+    decompose_op: 2 # 分解操作码，当前实包请求 [2, itemArray]
+    draw_count_once: 1 # 单抽次数，服务端可支持 [0, 1]
+    draw_count_ten: 10 # 十连次数，当前实包使用 [0, 10]
+    decompose_allow_batch: true # 是否允许批量分解，当前实包已验证批量分解成功
+
+  response_tables: # 配置响应中的动态表开关
+    ret_com_item_table: "db_player_car_treasure_temp_box" # 暂存箱表 RetComItemTable 的数据来源
+    ret_decp_item_table: "db_player_car_treasure_decompose_log" # 分解记录表 RetDecpItemTable 的数据来源
+    ret_rec_item_table: "db_player_car_treasure_receive_log" # 领取记录表 RetRecItemTable 的数据来源
+
+  award_pool: # award_poll_cfg 完整奖池配置，客户端展示和服务端抽奖都可以使用
+    - idx: 1 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 98830 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 2 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 98830 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 10 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 3 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 88865 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 1 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 4 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 88865 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 1 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 5 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 86998 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 2 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 6 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 86998 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 2 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 7 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 123499 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 3 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 8 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 123499 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 3 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 9 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 101885 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 4 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 10 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 101885 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 4 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 11 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 85949 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 5 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 12 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 85949 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 5 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 13 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 112176 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 6 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 14 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 112176 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 6 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 15 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 109299 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 7 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 16 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 109299 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 7 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 17 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 72741 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 8 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 18 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 72741 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 8 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 19 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 32408 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 9 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 20 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 32408 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 9 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 21 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 74884 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 10 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1500 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 1 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 22 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 74884 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 360 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 10 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 1 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 20 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 30 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 23 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 100047 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 11 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 180 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 24 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 100047 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 11 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 5 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 400 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 25 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 63705 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 12 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 180 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 26 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 63705 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 12 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 5 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 400 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 27 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 81292 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 13 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 180 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 28 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 81292 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 13 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 5 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 400 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 29 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 83039 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 14 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 180 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 30 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 83039 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 14 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 3 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 5 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 400 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 31 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 150534 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 15 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 50 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 32 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 150534 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 15 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 5 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 33 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136818 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 16 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 34 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136818 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 16 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 35 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136819 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 17 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 36 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136819 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 17 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 37 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136820 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 18 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 38 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136820 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 18 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 39 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136821 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 19 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 40 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 136821 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 19 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 41 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 116736 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 20 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 42 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 116736 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 20 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 43 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 119076 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 21 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 44 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 119076 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 21 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 45 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 153693 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 22 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 46 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 153693 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 22 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 47 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 132224 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 23 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 48 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 132224 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 23 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 49 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 132214 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: -1 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 24 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 30 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 2 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 50 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 132214 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 1 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 720 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 24 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 2 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 1 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 3 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 500 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 1 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 51 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 123508 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 8000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 52 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 126350 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 8000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 53 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 126351 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 8000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 54 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 126352 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 8000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 55 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 127409 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 8000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 56 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 127524 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 8000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 57 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 66605 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 12000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 58 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 66606 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 12000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 59 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 66607 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 12000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 60 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 68101 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 12000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 61 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 68102 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 12000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 62 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 68103 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 168 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 1 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 12000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 63 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 21977 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 0 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 0 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 14000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 64 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 12376 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 0 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 0 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 18000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 65 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 12377 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 0 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 0 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 18000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 66 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 12378 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 0 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 0 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 18000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 67 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 12380 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 0 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 0 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 18000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+    - idx: 68 # 奖池配置序号，对应 award_poll_cfg 的 idx
+      item_id: 96597 # 奖励道具 ID，对应 itemId
+      item_num: 1 # 奖励道具数量，对应 itemNum
+      item_type: 0 # 道具类型，对应 itemType，赛车通常为 1，普通道具通常为 0
+      avail_period: 0 # 有效期，对应 iAvailPeriod，-1 表示永久，168/360/720 通常按小时解释
+      group_index: 0 # 自选车组索引，对应 iGroupIndex，没有该字段时为 0
+      select_car_type: 0 # 自选车类型，对应 iSelectCarType，1=A，2=T，3=S，0=非自选车
+      can_exchange: 0 # 是否可兑换或可分解兑换，对应 iCanExchange
+      exchange_piece_num: 0 # 分解/兑换获得或需要的能量数量，对应 iExchangePieceNum
+      probability: 18000 # 抽奖权重或概率字段，对应 iProbability，服务端抽奖可按权重使用
+      other_attribute: 0 # 其他属性字段，对应 iOtherAttribute，按实包原样返回
+
+  draw_sample: # 十连抽样本结果，仅用于对照抓包；正式服应由 award_pool 随机生成
+    enabled_as_fixed_result: false # 是否固定使用下面样本作为抽奖结果，正式使用建议 false
+    fixed_result_items: # 固定抽奖样本列表，仅测试时使用
+      - idx: 1 # 十连抽样本结果序号
+        item_id: 136819 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 1 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 720 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 2 # 十连抽样本结果序号
+        item_id: 68103 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 168 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 3 # 十连抽样本结果序号
+        item_id: 126351 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 168 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 4 # 十连抽样本结果序号
+        item_id: 126352 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 168 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 5 # 十连抽样本结果序号
+        item_id: 127524 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 168 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 6 # 十连抽样本结果序号
+        item_id: 12380 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 0 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 7 # 十连抽样本结果序号
+        item_id: 96597 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 0 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 8 # 十连抽样本结果序号
+        item_id: 12378 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 0 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 9 # 十连抽样本结果序号
+        item_id: 66607 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 168 # 抽到道具有效期，对应 m_iAvailPeriod
+      - idx: 10 # 十连抽样本结果序号
+        item_id: 12378 # 抽到的道具 ID，对应 m_iItemID
+        item_num: 1 # 抽到的道具数量，对应 m_iItemNum
+        item_type: 0 # 抽到的道具类型，对应 m_ushItemType
+        avail_period: 0 # 抽到道具有效期，对应 m_iAvailPeriod
+
+  decompose_samples: # 分解样本，仅用于验证字段含义
+    one_item: # 单个分解样本
+      response_piece_item_id: 94880 # 单个分解响应返回的能量道具 ID
+      response_piece_num: 1 # 单个分解响应返回的能量数量
+      input_items: # 单个分解输入物品列表
+        - item_id: 66607 # 被分解道具 ID，单个样本
+          item_num: 1 # 被分解道具数量，单个样本
+          item_type: 0 # 被分解道具类型，单个样本
+          avail_period: 168 # 被分解道具有效期，单个样本
+    batch_items: # 批量分解样本
+      response_piece_item_id: 94880 # 批量分解响应返回的能量道具 ID
+      response_piece_num: 7 # 批量分解响应返回的能量总数量，当前样本为 7
+      input_items: # 批量分解输入物品列表
+        - item_id: 136819 # 批量分解输入道具 ID
+          item_num: 1 # 批量分解输入道具数量
+          item_type: 1 # 批量分解输入道具类型
+          avail_period: 720 # 批量分解输入道具有效期
+        - item_id: 127524 # 批量分解输入道具 ID
+          item_num: 1 # 批量分解输入道具数量
+          item_type: 0 # 批量分解输入道具类型
+          avail_period: 168 # 批量分解输入道具有效期
+        - item_id: 126352 # 批量分解输入道具 ID
+          item_num: 1 # 批量分解输入道具数量
+          item_type: 0 # 批量分解输入道具类型
+          avail_period: 168 # 批量分解输入道具有效期
+        - item_id: 126351 # 批量分解输入道具 ID
+          item_num: 1 # 批量分解输入道具数量
+          item_type: 0 # 批量分解输入道具类型
+          avail_period: 168 # 批量分解输入道具有效期
+        - item_id: 68103 # 批量分解输入道具 ID
+          item_num: 1 # 批量分解输入道具数量
+          item_type: 0 # 批量分解输入道具类型
+          avail_period: 168 # 批量分解输入道具有效期
+
+  cmd24465_display: # 外层 24465/0x5F91 展示配置，非 QuickRPC，可按需接入
+    enabled: true # 是否启用 24465 展示配置响应
+    exchange_shop_type: 125 # 兑换商店展示 type，当前实包为 125/0x007D
+    select_car_type: 365 # 选车展示 type，当前实包为 365/0x016D
+    score_item_id: 94880 # 24465 MoreInfo 中显示的能量道具 ID
+    current_score_from_db: true # 24465 footer.score 是否从玩家 94880 数量动态读取
+    exchange_shop: # 24465 type=125 的兑换商店配置
+      - idx: 1 # 兑换商店行序号
+        start_score: 2000 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 88865 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 1 # 展示位置键 PosKey
+        award_idx: 1 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 2 # 兑换商店行序号
+        start_score: 1500 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 86998 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11506 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 2 # 展示位置键 PosKey
+        award_idx: 2 # 展示奖励索引 AwardIdx
+        label_status: 1 # 标签状态 LabelStatus
+      - idx: 3 # 兑换商店行序号
+        start_score: 100 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 86998 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11506 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 3 # 展示位置键 PosKey
+        award_idx: 3 # 展示奖励索引 AwardIdx
+        label_status: 1 # 标签状态 LabelStatus
+      - idx: 4 # 兑换商店行序号
+        start_score: 550 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 81292 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 24 # 展示位置键 PosKey
+        award_idx: 24 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 5 # 兑换商店行序号
+        start_score: 55 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 81292 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 25 # 展示位置键 PosKey
+        award_idx: 25 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 6 # 兑换商店行序号
+        start_score: 550 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 83039 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 26 # 展示位置键 PosKey
+        award_idx: 26 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 7 # 兑换商店行序号
+        start_score: 55 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 83039 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 27 # 展示位置键 PosKey
+        award_idx: 27 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 8 # 兑换商店行序号
+        start_score: 550 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 150534 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 28 # 展示位置键 PosKey
+        award_idx: 28 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 9 # 兑换商店行序号
+        start_score: 55 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 150534 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 29 # 展示位置键 PosKey
+        award_idx: 29 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 10 # 兑换商店行序号
+        start_score: 350 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136818 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 30 # 展示位置键 PosKey
+        award_idx: 30 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 11 # 兑换商店行序号
+        start_score: 20 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136818 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 31 # 展示位置键 PosKey
+        award_idx: 31 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 12 # 兑换商店行序号
+        start_score: 350 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136819 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 32 # 展示位置键 PosKey
+        award_idx: 32 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 13 # 兑换商店行序号
+        start_score: 20 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136819 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 33 # 展示位置键 PosKey
+        award_idx: 33 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 14 # 兑换商店行序号
+        start_score: 350 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136820 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 34 # 展示位置键 PosKey
+        award_idx: 34 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 15 # 兑换商店行序号
+        start_score: 20 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136820 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 35 # 展示位置键 PosKey
+        award_idx: 35 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 16 # 兑换商店行序号
+        start_score: 350 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136821 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 36 # 展示位置键 PosKey
+        award_idx: 36 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 17 # 兑换商店行序号
+        start_score: 20 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 136821 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 37 # 展示位置键 PosKey
+        award_idx: 37 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 18 # 兑换商店行序号
+        start_score: 350 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 116736 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 38 # 展示位置键 PosKey
+        award_idx: 38 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 19 # 兑换商店行序号
+        start_score: 20 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 116736 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 39 # 展示位置键 PosKey
+        award_idx: 39 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 20 # 兑换商店行序号
+        start_score: 350 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 119076 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: -1 # 兑换目标道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 40 # 展示位置键 PosKey
+        award_idx: 40 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 21 # 兑换商店行序号
+        start_score: 20 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 119076 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 41 # 展示位置键 PosKey
+        award_idx: 41 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 22 # 兑换商店行序号
+        start_score: 100 # 兑换需要的能量或展示积分，对应 start_score
+        item_id: 88865 # 兑换目标道具 ID
+        item_num: 1 # 兑换目标道具数量
+        avail_period: 720 # 兑换目标道具有效期，4294967295 表示永久
+        item_type: 0 # 兑换目标道具类型
+        result_id: 11498 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 0 # 展示位置键 PosKey
+        award_idx: 0 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+    select_car_display: # 24465 type=365 的选车展示配置
+      - idx: 1 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 120657 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 0 # 展示位置键 PosKey
+        award_idx: 0 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 2 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 113415 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 1 # 展示位置键 PosKey
+        award_idx: 1 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 3 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 133689 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 2 # 展示位置键 PosKey
+        award_idx: 2 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 4 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 117941 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 3 # 展示位置键 PosKey
+        award_idx: 3 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 5 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 110711 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 4 # 展示位置键 PosKey
+        award_idx: 4 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 6 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 122199 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 5 # 展示位置键 PosKey
+        award_idx: 5 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 7 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 123502 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 6 # 展示位置键 PosKey
+        award_idx: 6 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 8 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 124680 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 7 # 展示位置键 PosKey
+        award_idx: 7 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 9 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 126357 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 8 # 展示位置键 PosKey
+        award_idx: 8 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 10 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 115159 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 9 # 展示位置键 PosKey
+        award_idx: 9 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 11 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 113413 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 10 # 展示位置键 PosKey
+        award_idx: 10 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 12 # 选车展示行序号
+        start_score: 700 # 展示所需分数或兑换值，对应 start_score
+        item_id: 119062 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 11 # 展示位置键 PosKey
+        award_idx: 11 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 13 # 选车展示行序号
+        start_score: 200 # 展示所需分数或兑换值，对应 start_score
+        item_id: 124686 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 12 # 展示位置键 PosKey
+        award_idx: 12 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus
+      - idx: 14 # 选车展示行序号
+        start_score: 200 # 展示所需分数或兑换值，对应 start_score
+        item_id: 113414 # 选车展示道具 ID
+        item_num: 1 # 选车展示道具数量
+        avail_period: -1 # 选车展示道具有效期，-1 表示永久；写 24465 二进制时转为 0xFFFFFFFF
+        item_type: 0 # 选车展示道具类型
+        result_id: 11503 # 24465 结果/展示 ID，按实包原样返回
+        piece_item_id: 94880 # MoreInfo 中的能量道具 ID，当前为 94880
+        pos_key: 13 # 展示位置键 PosKey
+        award_idx: 13 # 展示奖励索引 AwardIdx
+        label_status: 0 # 标签状态 LabelStatus

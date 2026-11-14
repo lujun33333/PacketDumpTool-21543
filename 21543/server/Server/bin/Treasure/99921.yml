@@ -1,0 +1,96 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 99921；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00874%；1 件，每件 0.00874%
+  - Seed: 874
+    ItemType: 2
+    Items:
+      - ItemId: 174965 # 全国公开赛S9冠军皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.09392%；8 件，每件 0.01174%
+  - Seed: 10266
+    ItemType: 2
+    Items:
+      - ItemId: 137116 # QQ飞车荣誉皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 135434 # 年度车王冠军皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 137115 # QQ飞车荣誉皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 99680 # 谁是车王S7亚军皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 99681 # 谁是车王S7季军皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 102091 # 冠军车王皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 102093 # 亚军车王皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 102095 # 季军车王皇冠
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有限时池合计 0.21132%；3 件，每件 0.07044%
+  - Seed: 31398
+    ItemType: 2
+    Items:
+      - ItemId: 102091 # 冠军车王皇冠
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 102093 # 亚军车王皇冠
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 102095 # 季军车王皇冠
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.68602%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

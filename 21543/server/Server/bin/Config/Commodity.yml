@@ -1,0 +1,1210 @@
+﻿- CommodityID: 136687  #神龙珠
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 500000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2500000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 12500000 #价格 点券 
+      BuyNum: 25 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 100 #购买数量
+      
+- CommodityID: 96599 #防护装置+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 500 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 25000 #价格 点券
+      BuyNum: 50 #购买数量
+      
+- CommodityID: 96597 #防护装置+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 2500 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1250 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 250 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 12500 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 26082 #快乐幸运彩盒
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 50000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 9999999 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 9999999 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 9999999 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 10595 #更名卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 50000 #价格 点券
+      BuyNum: 1 #购买数量 
+      Value: 9999999 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 9999999 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 9999999 #价格 点券
+      BuyNum: 1 #购买数量
+      
+- CommodityID: 22082 #宝石拆除刀
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3000 #价格 点券
+      BuyNum: 2 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1800 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 250 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3300 #价格 点券
+      BuyNum: 3 #购买数量
+
+- CommodityID: 21984 #二级重生
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 11700 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 8100 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 4410 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 15290 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 21983 #重生宝珠LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 2340 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1620 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 890 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 3050 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 22014 #后发宝珠LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 11700 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 8100 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 4410 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 15290 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 21990 #坚韧宝珠LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 11700 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 8100 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 4410 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 15290 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 21978 #效率宝珠LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 11700 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 8100 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 4410 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 15290 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 22038 #攻击之钻LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22044 #复制之钻LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22032 #闪电之钻LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22026 #复仇之钻LV2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22013 #后发宝珠LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 2340 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1620 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 890 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 3050 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 21989 #坚韧宝珠LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 2340 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1620 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 890 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 3050 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 21977 #效率宝珠LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 2340 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1620 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 890 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 3050 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 22037 #攻击之钻LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22043 #复制之钻LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22031 #闪电之钻LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22025 #复仇之钻LV1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1000000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 22076 #粗糙的幸运石
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 4860 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 3420 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1790 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 6120 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 22073 #粗糙的祝福石
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 4860 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 3420 #价格 点券
+      BuyNum: 2 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 1790 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 6120 #价格 点券
+      BuyNum: 4 #购买数量
+
+- CommodityID: 95456 #能量碎片
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 666666 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 666666 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 666666 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 666666 #价格 点券
+      BuyNum: 1 #购买数量
+      
+- CommodityID: 10207 #小喇叭
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 810 #价格 点券
+      BuyNum: 20 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 230 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 3580 #价格 点券 
+      BuyNum: 100 #购买数量 
+
+- CommodityID: 14727 #祝福小喇叭
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 810 #价格 点券
+      BuyNum: 20 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 230 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 3580 #价格 点券 
+      BuyNum: 100 #购买数量 
+
+- CommodityID: 14728 #表白小喇叭
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 810 #价格 点券
+      BuyNum: 20 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 230 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 3580 #价格 点券 
+      BuyNum: 100 #购买数量 
+
+- CommodityID: 18817 #新年小喇叭
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 810 #价格 点券
+      BuyNum: 20 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 230 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 3580 #价格 点券 
+      BuyNum: 100 #购买数量
+
+- CommodityID: 66641 #全服大喇叭
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 810 #价格 点券
+      BuyNum: 20 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 230 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 3580 #价格 点券 
+      BuyNum: 100 #购买数量
+
+- CommodityID: 65025 #精良粒子推进+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3230 #价格 点券
+      BuyNum: 5 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2020 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 690 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 30100 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 65026 #普通粒子推进+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3230 #价格 点券
+      BuyNum: 5 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2020 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 690 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 30100 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 65029 #精良阿尔法离合+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3230 #价格 点券
+      BuyNum: 5 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2020 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 690 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 30100 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 65028 #普通阿尔法离合+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3230 #价格 点券
+      BuyNum: 5 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2020 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 690 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 30100 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 65032 #精良增压平衡+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3230 #价格 点券
+      BuyNum: 5 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2020 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 690 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 30100 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 65031 #普通增压平衡+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 3230 #价格 点券
+      BuyNum: 5 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 2020 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 690 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 30100 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12390 #引擎装置+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 50000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12388 #燃料系统+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 50000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12387 #进气系统+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 50000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12386 #点火装置+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 50000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12380 #引擎装置+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3750 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12376 #点火装置+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3750 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12378 #燃料装置+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3750 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12377 #进气装置+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3750 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12379 #悬挂系统+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3750 #价格 点券
+      BuyNum: 50 #购买数量
+
+- CommodityID: 12378 #燃料装置+1
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 3750 #价格 点券
+      BuyNum: 50 #购买数量
+
+      
+- CommodityID: 27517 #普通摇号卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 1500 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量         
+    - PriceIdx: 2 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量  
+      
+- CommodityID: 27518 #普通摇号卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 9000 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量         
+    - PriceIdx: 2 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量  
+      
+- CommodityID: 12375 #砸蛋卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 720 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 90 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 3150 #价格 点券 
+      BuyNum: 50 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量 
+      
+- CommodityID: 60465 #宠物变形卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 150000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 99999999 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量  
+      
+- CommodityID: 33772 #宠物强化卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 76500 #价格 点券
+      BuyNum: 100 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 40500 #价格 点券
+      BuyNum: 50 #购买数量    
+    - PriceIdx: 2 #价格索引
+      Value: 9000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 3 #价格索引
+      Value: 180000 #价格 点券
+      BuyNum: 250 #购买数量   
+
+- CommodityID: 18269 #如意银骰子
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 16000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 48000 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 80000 #价格 点券
+      BuyNum: 5 #购买数量 
+      
+- CommodityID: 18270 #如意金骰子
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 100000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 300000 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 2 #价格索引
+      Value: 500000 #价格 点券
+      BuyNum: 5 #购买数量        
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量  
+      
+- CommodityID: 31986 #新手礼包
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 7500 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 150000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 2 #价格索引
+      Value: 230000 #价格 点券
+      BuyNum: 1 #购买数量        
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 1 #购买数量  
+
+- CommodityID: 11450 #忧郁悲伤脸
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量        
+
+- CommodityID: 11362 #车队徽章
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 20000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 20000000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 2 #价格索引
+      Value: 20000000 #价格 点券
+      BuyNum: 1 #购买数量       
+    - PriceIdx: 3 #价格索引
+      Value: 2000000 #价格 点券
+      BuyNum: 1 #购买数量     
+
+- CommodityID: 63555 #钻皇宝石
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 10000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 200000 #价格 点券
+      BuyNum: 20 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 500000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 31964 #情侣宝石
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 10000 #价格 点券
+      BuyNum: 2 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 30000 #价格 点券 
+      BuyNum: 6 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量      
+ 
+- CommodityID: 30450 #贵族宝石
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 20000 #价格 点券
+      BuyNum: 4 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 35000 #价格 点券 
+      BuyNum: 7 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量  
+
+- CommodityID: 27137 #皇权宝石
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 10000 #价格 点券
+      BuyNum: 2 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 35000 #价格 点券 
+      BuyNum: 7 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量     
+  
+- CommodityID: 63505 #后花园钥匙
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 10000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500000 #价格 点券
+      BuyNum: 50 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 500000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 25380 #闪婚卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 588888 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 500000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 25387 #离婚卡
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 688888 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 50000000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 500000000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 28279 #黑色迷你墨镜
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+- CommodityID: 11450 #忧郁悲伤脸
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量
+     
+
+- CommodityID: 10306 #楚楚动人脸
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量     
+
+- CommodityID: 25587 #雷诺龙头
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量   
+
+- CommodityID: 10261 #紫色火焰漂移特效
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量   
+
+- CommodityID: 11641 #幽暗骑士发型
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量         
+
+- CommodityID: 11641 #幽暗骑士发型
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量         
+      
+- CommodityID: 93562 #纯然萌心表情
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量  
+
+- CommodityID: 93561 #纯然萌心表情
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量 
+
+- CommodityID: 72259 #迷离樱绯表情
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量  
+
+- CommodityID: 72257 #先驱者表情
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量    
+
+- CommodityID: 69191 #紫夜楚楚
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 17455
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量          
+
+
+- CommodityID: 11241 #白色短裤
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000 #价格 点券
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量       
+      
+- CommodityID: 75643 #神灯券
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 130000000 #价格 点券
+      BuyNum: 1000 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 65000000 #价格 点券
+      BuyNum: 500 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 50000000 #价格 点券 
+      BuyNum: 100 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 325000000 #价格 点券
+      BuyNum: 2500 #购买数量   
+
+- CommodityID: 25858 #幸运盲盒
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 200000 #价格 点券
+      BuyNum: 2 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 500000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 100000 #价格 点券 
+      BuyNum: 1 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 1000000 #价格 点券
+      BuyNum: 1 #购买数量
+
+
+- CommodityID: 99662 #夺宝券
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 500000 #价格 点券
+      BuyNum: 10 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 100 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 5000000 #价格 点券 
+      BuyNum: 100 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 5000000 #价格 点券
+      BuyNum: 100 #购买数量
+
+- CommodityID: 148352 #防护装置+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 16000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 48000 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 80000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量  
+- CommodityID: 146504 #防护装置+2
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 16000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 48000 #价格 点券
+      BuyNum: 3 #购买数量 
+    - PriceIdx: 2 #价格索引
+      Value: 80000 #价格 点券
+      BuyNum: 5 #购买数量 
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量  
+
+- CommodityID: 148353 #如意金骰子
+  Price:
+    - PriceIdx: 0 #价格索引
+      Value: 100000 #价格 点券
+      BuyNum: 1 #购买数量    
+    - PriceIdx: 1 #价格索引
+      Value: 300000 #价格 点券
+      BuyNum: 3 #购买数量    
+    - PriceIdx: 2 #价格索引
+      Value: 500000 #价格 点券
+      BuyNum: 5 #购买数量        
+    - PriceIdx: 3 #价格索引
+      Value: 500000000 #价格 点券
+      BuyNum: 1 #购买数量  

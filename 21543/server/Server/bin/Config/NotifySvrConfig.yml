@@ -1,0 +1,458 @@
+# Select exactly one wire profile. Valid values: 3 or 4.
+SelectedVersion: 4
+
+# Reusable effect tables. YAML aliases only remove duplicated configuration;
+# every card is still serialized as an independent official wire record.
+EffectSets:
+  Standard20: &Standard20
+    - { RefitID: 1, ModifyValue: 20 }
+    - { RefitID: 2, ModifyValue: 20 }
+    - { RefitID: 3, ModifyValue: 20 }
+    - { RefitID: 4, ModifyValue: 20 }
+    - { RefitID: 8, ModifyValue: 20 }
+    - { RefitID: 5, ModifyValue: 20 }
+    - { RefitID: 6, ModifyValue: 20 }
+    - { RefitID: 7, ModifyValue: 20 }
+  Standard29: &Standard29
+    - { RefitID: 1, ModifyValue: 29 }
+    - { RefitID: 2, ModifyValue: 29 }
+    - { RefitID: 3, ModifyValue: 29 }
+    - { RefitID: 4, ModifyValue: 29 }
+    - { RefitID: 8, ModifyValue: 29 }
+    - { RefitID: 5, ModifyValue: 29 }
+    - { RefitID: 6, ModifyValue: 29 }
+    - { RefitID: 7, ModifyValue: 29 }
+  FirstFive20: &FirstFive20
+    - { RefitID: 1, ModifyValue: 20 }
+    - { RefitID: 2, ModifyValue: 20 }
+    - { RefitID: 3, ModifyValue: 20 }
+    - { RefitID: 4, ModifyValue: 20 }
+    - { RefitID: 8, ModifyValue: 20 }
+  FirstFive20LastZero: &FirstFive20LastZero
+    - { RefitID: 1, ModifyValue: 20 }
+    - { RefitID: 2, ModifyValue: 20 }
+    - { RefitID: 3, ModifyValue: 20 }
+    - { RefitID: 4, ModifyValue: 20 }
+    - { RefitID: 8, ModifyValue: 20 }
+    - { RefitID: 5, ModifyValue: 0 }
+    - { RefitID: 6, ModifyValue: 0 }
+    - { RefitID: 7, ModifyValue: 0 }
+  Official29And40: &Official29And40
+    - { RefitID: 1, ModifyValue: 29 }
+    - { RefitID: 2, ModifyValue: 29 }
+    - { RefitID: 3, ModifyValue: 29 }
+    - { RefitID: 4, ModifyValue: 29 }
+    - { RefitID: 8, ModifyValue: 29 }
+    - { RefitID: 5, ModifyValue: 40 }
+    - { RefitID: 6, ModifyValue: 40 }
+    - { RefitID: 7, ModifyValue: 40 }
+  Latest12025829And40: &Latest12025829And40
+    - { RefitID: 1, ModifyValue: 29 }
+    - { RefitID: 2, ModifyValue: 29 }
+    - { RefitID: 3, ModifyValue: 29 }
+    - { RefitID: 4, ModifyValue: 29 }
+    - { RefitID: 8, ModifyValue: 29 }
+    - { RefitID: 5, ModifyValue: 40 }
+    - { RefitID: 6, ModifyValue: 40 }
+  OfficialFirstFive29: &OfficialFirstFive29
+    - { RefitID: 1, ModifyValue: 29 }
+    - { RefitID: 2, ModifyValue: 29 }
+    - { RefitID: 3, ModifyValue: 29 }
+    - { RefitID: 4, ModifyValue: 29 }
+    - { RefitID: 8, ModifyValue: 29 }
+
+Profiles:
+  # Preserved legacy layout. It is selected only when SelectedVersion is 3.
+  Config3:
+    SwitchFlag1: 0x0331BC24
+    MaxQuickLerpThreshold: 60
+    QuickLerpStepCounts: 10
+    LerpSyncFrequency: 12
+    ClientItemOpenConfigs: []
+    CollisionPowerOtherInfos:
+      - { Power: 0, Ratio: 100, Add: 0 }
+    CollisionMinPower: 400
+    ItemExtendLimit: 5300
+    ChattingTalkLevelLimit: 50
+    ChattingSpecialOp: 0
+    ForbidMaps: []
+    MaxBuySpeedNum: 20000
+    ClientItemIcons: []
+    TDCBlackCars: []
+    TDCBlackCarTypes: []
+    TDCBlackCarTypes2nd: []
+    ClientFrameRate:
+      MinFrameRate: 30000
+      MaxFrameRate: 120000
+      FrameStep: 10
+      CurrentFrameRate: 120000
+    ReportFrameRateValue: 16
+    FrameOpSpan: 10
+    VideoSwitch: 0
+    KartRefitCards:
+      - { RefitCardID: 133698, Effects: *Standard20, Karts: [133693], KartTypes: [] }
+      - { RefitCardID: 135162, Effects: *Standard29, Karts: [135181, 135182], KartTypes: [] }
+      - { RefitCardID: 136859, Effects: *Standard20, Karts: [135174, 135173], KartTypes: [] }
+      - { RefitCardID: 136822, Effects: *FirstFive20LastZero, Karts: [11376], KartTypes: [] }
+      - { RefitCardID: 136475, Effects: *Standard20, Karts: [71456, 69209, 84871], KartTypes: [] }
+      - { RefitCardID: 120259, Effects: *Standard20, Karts: [12720, 109569], KartTypes: [] }
+      - { RefitCardID: 139752, Effects: *Standard20, Karts: [65686, 78299, 84870], KartTypes: [] }
+      - { RefitCardID: 139892, Effects: *Standard20, Karts: [139751], KartTypes: [] }
+      - { RefitCardID: 139894, Effects: *Standard20, Karts: [138424], KartTypes: [] }
+      - { RefitCardID: 139893, Effects: *Standard20, Karts: [138422], KartTypes: [] }
+      - { RefitCardID: 144323, Effects: *Standard20, Karts: [144549], KartTypes: [] }
+      - { RefitCardID: 144322, Effects: *Standard20, Karts: [144554], KartTypes: [] }
+    MaxHostSpeedAfterCollision: 6536
+    NeedShowOrderItems: []
+    SceneSettingTypes: []
+    ClientFlag: []
+
+  # Exact latest captured official msg25066 layout (dump 25880, 2026-07-23),
+  # exposed server-side as Config4. No legacy fallback or profile auto-merge.
+  Config4:
+    SwitchFlag1: 0x01B1BC25
+    MaxQuickLerpThreshold: 60
+    QuickLerpStepCounts: 10
+    LerpSyncFrequency: 12
+    ClientItemOpenConfigs:
+      - { OpenType: 0, Items: [78022] }
+      - { OpenType: 1, Items: [80292, 80293] }
+      - { OpenType: 2, Items: [81019, 81020, 81021] }
+      - { OpenType: 3, Items: [83073] }
+      - { OpenType: 4, Items: [83074, 83075, 83076] }
+      - { OpenType: 5, Items: [88856] }
+      - { OpenType: 6, Items: [95456] }
+      - OpenType: 8
+        Items:
+          - 174996
+          - 174995
+          - 146212
+          - 150498
+          - 168331
+          - 157858
+          - 157857
+          - 152284
+          - 110907
+          - 136705
+          - 116759
+          - 127350
+          - 136709
+          - 126538
+          - 148382
+          - 112186
+          - 96433
+          - 96434
+          - 75642
+          - 75643
+          - 144340
+          - 144344
+          - 132232
+          - 135110
+          - 123492
+          - 139993
+          - 112187
+          - 132231
+          - 138122
+          - 138123
+          - 130540
+          - 116760
+          - 127351
+          - 127627
+          - 127624
+          - 127628
+          - 127625
+          - 127626
+          - 81012
+          - 133417
+          - 127642
+          - 129187
+          - 99600
+          - 98635
+          - 95442
+          - 99605
+          - 124675
+          - 124676
+          - 110908
+          - 120211
+          - 100877
+          - 88857
+          - 88858
+          - 88861
+          - 88859
+          - 88862
+          - 88860
+          - 102071
+          - 106487
+          - 106670
+          - 120210
+          - 95443
+      - { OpenType: 9, Items: [99662] }
+      - OpenType: 10
+        Items:
+          - 93343
+          - 93344
+          - 95451
+          - 95453
+          - 95452
+          - 95454
+          - 99521
+          - 99673
+          - 95455
+          - 101012
+          - 100731
+          - 93345
+          - 103334
+          - 103244
+          - 104676
+          - 104628
+          - 106765
+          - 104677
+          - 104678
+          - 104659
+          - 107159
+          - 107154
+          - 108491
+          - 107290
+          - 110851
+          - 110877
+          - 108494
+          - 110876
+          - 112794
+          - 113917
+          - 114037
+          - 113940
+          - 113926
+          - 115499
+          - 113961
+          - 115521
+          - 115548
+          - 93341
+          - 123455
+          - 139981
+          - 139998
+          - 139995
+          - 139992
+          - 140005
+          - 140013
+          - 144363
+          - 144364
+          - 144371
+          - 144374
+          - 144383
+          - 144400
+          - 144410
+          - 146482
+          - 146477
+          - 146484
+          - 146497
+          - 146500
+          - 146456
+          - 146467
+          - 146461
+          - 146514
+          - 148324
+          - 148354
+          - 148360
+          - 148373
+          - 148376
+          - 150389
+          - 152479
+          - 152481
+          - 152506
+          - 152509
+          - 152510
+          - 152514
+          - 152537
+          - 157797
+          - 157801
+          - 153965
+          - 136689
+          - 153973
+          - 157943
+          - 127653
+          - 153975
+          - 157799
+          - 153977
+          - 152499
+          - 153982
+          - 153996
+          - 154000
+          - 154001
+          - 154014
+          - 154019
+          - 154028
+          - 150401
+          - 158323
+          - 155978
+          - 158319
+          - 157802
+          - 162562
+          - 162561
+          - 162560
+          - 165108
+          - 158329
+          - 127684
+          - 163220
+          - 152500
+          - 136631
+          - 136628
+          - 130743
+          - 166067
+          - 158332
+          - 162559
+          - 166122
+          - 163222
+          - 166128
+          - 168302
+          - 158379
+          - 166126
+          - 163190
+          - 168312
+          - 158387
+          - 168284
+          - 156030
+          - 163251
+          - 174893
+          - 166063
+          - 174886
+      - OpenType: 11
+        Items:
+          - 109716
+          - 109717
+          - 109718
+          - 109652
+          - 109678
+          - 109677
+          - 109661
+          - 109690
+          - 109694
+          - 109663
+          - 109734
+          - 109662
+          - 109692
+          - 118998
+          - 109703
+          - 109697
+          - 109731
+          - 109732
+          - 109730
+          - 112801
+          - 113915
+          - 115584
+          - 115563
+          - 115622
+          - 117799
+          - 119020
+          - 119006
+          - 119023
+          - 119046
+          - 120567
+          - 122038
+          - 123452
+          - 122097
+          - 122113
+          - 120545
+          - 127654
+          - 127718
+          - 120421
+          - 120531
+          - 120532
+          - 120544
+          - 122030
+          - 122039
+          - 122052
+          - 133638
+          - 123429
+          - 122117
+          - 123469
+          - 125988
+          - 125989
+          - 125998
+          - 126021
+          - 126025
+          - 148363
+          - 148366
+          - 150385
+          - 162568
+      - { OpenType: 12, Items: [] }
+      - { OpenType: 14, Items: [158336, 165064, 163232, 163233] }
+    CollisionPowerOtherInfos:
+      - { Power: 0, Ratio: 100, Add: 0 }
+    CollisionMinPower: 400
+    ItemExtendLimit: 5800
+    ChattingTalkLevelLimit: 50
+    ChattingSpecialOp: 2
+    ForbidMaps:
+      - 115
+      - 116
+      - 155
+      - 313
+      - 335
+      - 413
+      - 431
+      - 432
+      - 425
+      - 437
+      - 440
+      - 442
+      - 443
+      - 444
+      - 451
+      - 454
+      - 457
+      - 464
+      - 468
+      - 497
+      - 498
+      - 499
+    MaxBuySpeedNum: 20000
+    ClientItemIcons:
+      - { ItemID: 133435, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 146483, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 150387, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 157801, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 150397, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 165064, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 150403, IconPath: "res/uires/shop/open.gsa" }
+      - { ItemID: 150405, IconPath: "res/uires/shop/open.gsa" }
+    TDCBlackCars: [146565, 157744, 168664]
+    TDCBlackCarTypes: []
+    TDCBlackCarTypes2nd: []
+    ClientFrameRate:
+      MinFrameRate: 30000
+      MaxFrameRate: 120000
+      FrameStep: 10
+      CurrentFrameRate: 120000
+    ReportFrameRateValue: 16
+    FrameOpSpan: 10
+    VideoSwitch: 0
+    KartRefitCards:
+      - { RefitCardID: 136822, Effects: *FirstFive20LastZero, Karts: [11376], KartTypes: [] }
+      - { RefitCardID: 136475, Effects: *Standard20, Karts: [77238, 84871, 91961], KartTypes: [] }
+      - { RefitCardID: 120259, Effects: *Standard20, Karts: [12720, 109569], KartTypes: [] }
+      - { RefitCardID: 139752, Effects: *Standard20, Karts: [65686, 78912, 88866], KartTypes: [] }
+      - { RefitCardID: 139892, Effects: *Standard20, Karts: [139751], KartTypes: [] }
+      - { RefitCardID: 139894, Effects: *Standard20, Karts: [138424], KartTypes: [] }
+      - { RefitCardID: 152204, Effects: *Standard20, Karts: [148409], KartTypes: [] }
+      - { RefitCardID: 152283, Effects: *FirstFive20, Karts: [74362], KartTypes: [] }
+      - { RefitCardID: 155364, Effects: *FirstFive20, Karts: [81293], KartTypes: [] }
+      - { RefitCardID: 120258, Effects: *Latest12025829And40, Karts: [12720, 90945, 74362, 109574], KartTypes: [] }
+      - { RefitCardID: 157855, Effects: *FirstFive20, Karts: [157743], KartTypes: [] }
+      - { RefitCardID: 157855, Effects: *FirstFive20, Karts: [157743], KartTypes: [] }
+      - { RefitCardID: 155843, Effects: *Standard20, Karts: [157741], KartTypes: [] }
+      - { RefitCardID: 158200, Effects: *Standard20, Karts: [158398], KartTypes: [] }
+      - { RefitCardID: 160037, Effects: *Standard20, Karts: [158389, 158390, 158391, 158392, 158393, 158394, 158395], KartTypes: [] }
+      - { RefitCardID: 160038, Effects: *Standard20, Karts: [162507], KartTypes: [] }
+      - { RefitCardID: 165184, Effects: *Standard20, Karts: [21901], KartTypes: [] }
+      - { RefitCardID: 165185, Effects: *FirstFive20, Karts: [88865], KartTypes: [] }
+      - { RefitCardID: 174773, Effects: *FirstFive20, Karts: [19951, 119067, 124678, 124677, 122206, 34850, 60429], KartTypes: [] }
+      - { RefitCardID: 174774, Effects: *FirstFive20, Karts: [22526, 126347, 73697, 100048, 113412], KartTypes: [] }
+      - { RefitCardID: 160781, Effects: *Official29And40, Karts: [], KartTypes: [1539] }
+      - { RefitCardID: 160783, Effects: *Official29And40, Karts: [], KartTypes: [1557] }
+      - { RefitCardID: 160784, Effects: *Official29And40, Karts: [], KartTypes: [1556] }
+      - { RefitCardID: 160782, Effects: *OfficialFirstFive29, Karts: [], KartTypes: [1543] }
+      - { RefitCardID: 160785, Effects: *Official29And40, Karts: [], KartTypes: [1539, 1540, 1543, 1556, 1557, 1558, 1567] }
+    MaxHostSpeedAfterCollision: 6536
+    NeedShowOrderItems: [135172, 136738, 150538, 152271]
+    SceneSettingTypes: [0, 0, 0, 0, 0]
+    ClientFlag: [242, 1]

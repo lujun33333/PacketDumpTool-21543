@@ -1,0 +1,9784 @@
+SchemaVersion: 1
+SourceDump: packet_dumps_2620
+GeneratedFrom:
+- network_bin_2620_854_parser_queue_dispatch_body_msg20100_len26.bin
+- network_bin_2620_855_parser_queue_dispatch_body_msg28228_len23002.bin
+- network_bin_2620_856_parser_queue_dispatch_body_msg28228_len21122.bin
+- network_bin_2620_857_parser_queue_dispatch_body_msg28228_len21498.bin
+- network_bin_2620_858_parser_queue_dispatch_body_msg28228_len18498.bin
+- network_bin_2620_859_parser_queue_dispatch_body_msg28228_len15874.bin
+- network_bin_2620_860_parser_queue_dispatch_body_msg28228_len15794.bin
+- network_bin_2620_861_parser_queue_dispatch_body_msg24074_len762.bin
+- network_bin_2620_862_parser_queue_dispatch_body_msg24073_len6882.bin
+- network_bin_2620_1194_parser_queue_dispatch_body_msg21140_len13522.bin
+- network_bin_2620_1195_parser_queue_dispatch_body_msg21149_len23818.bin
+- network_bin_2620_1196_parser_queue_dispatch_body_msg21149_len23034.bin
+- network_bin_2620_1197_parser_queue_dispatch_body_msg21149_len15666.bin
+- network_bin_2620_1199_parser_queue_dispatch_body_msg24426_len16162.bin
+- network_bin_2620_1200_parser_queue_dispatch_body_msg24527_len15506.bin
+- network_bin_2620_1201_parser_queue_dispatch_body_msg24527_len11858.bin
+- network_bin_2620_1405_parser_queue_dispatch_body_msg440_len7210.bin
+- network_bin_2620_1406_parser_queue_dispatch_body_msg21140_len13522.bin
+- network_bin_2620_1407_parser_queue_dispatch_body_msg21149_len23818.bin
+- network_bin_2620_1408_parser_queue_dispatch_body_msg21149_len23034.bin
+- network_bin_2620_1409_parser_queue_dispatch_body_msg21149_len15666.bin
+Pets:
+- ID: 13710
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 13711
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 14314
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 14315
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 14336
+  SkillSlots:
+  - 3
+  - 4
+  - 5
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 500
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 14337
+  SkillSlots:
+  - 3
+  - 4
+  - 5
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 500
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 14725
+  SkillSlots:
+  - 0
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 14726
+  SkillSlots:
+  - 0
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 15234
+  SkillSlots:
+  - 1
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 40
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 40
+- ID: 15235
+  SkillSlots:
+  - 1
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 50
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 3
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 12
+- ID: 16332
+  SkillSlots:
+  - 0
+  - 1
+  - 4
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 32
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 153
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 16333
+  SkillSlots:
+  - 0
+  - 1
+  - 4
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 32
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 153
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 16713
+  SkillSlots:
+  - 1
+  - 8
+  - 9
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 16714
+  SkillSlots:
+  - 1
+  - 8
+  - 9
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17072
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17073
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17910
+  SkillSlots:
+  - 1
+  - 6
+  - 5
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 550
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17911
+  SkillSlots:
+  - 1
+  - 6
+  - 5
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 550
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17937
+  SkillSlots:
+  - 0
+  - 4
+  - 9
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 65
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17938
+  SkillSlots:
+  - 0
+  - 4
+  - 9
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 65
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 17919
+  SkillSlots:
+  - 3
+  - 9
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 10
+  - SkillID: 9
+    SkillFullLevelValue: 400
+    StrengthFullLevelValue: 100
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 60
+- ID: 18643
+  SkillSlots:
+  - 1
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 70
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 9
+    AddValue: 100
+  - OpenLevel: 10
+    SkillID: 9
+    AddValue: 300
+- ID: 18934
+  SkillSlots:
+  - 3
+  - 7
+  - 4
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 2
+  - SkillID: 7
+    SkillFullLevelValue: 65
+    StrengthFullLevelValue: 20
+  - SkillID: 4
+    SkillFullLevelValue: 75
+    StrengthFullLevelValue: 0
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 5
+- ID: 19390
+  SkillSlots:
+  - 3
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 19391
+  SkillSlots:
+  - 3
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 19701
+  SkillSlots:
+  - 0
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 19702
+  SkillSlots:
+  - 0
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20123
+  SkillSlots:
+  - 1
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20124
+  SkillSlots:
+  - 1
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20358
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 25
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 35
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 3
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 12
+- ID: 20359
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20771
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20772
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20664
+  SkillSlots:
+  - 1
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 70
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 9
+    AddValue: 100
+  - OpenLevel: 10
+    SkillID: 9
+    AddValue: 300
+- ID: 20360
+  SkillSlots: []
+  ShowBaseInfos: []
+  OpenNewSkills: []
+- ID: 20983
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 20985
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21327
+  SkillSlots:
+  - 3
+  - 4
+  - 5
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 500
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21328
+  SkillSlots:
+  - 3
+  - 4
+  - 5
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 500
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21586
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21587
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21887
+  SkillSlots:
+  - 12
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 12
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21888
+  SkillSlots:
+  - 12
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 12
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 21597
+  SkillSlots:
+  - 3
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 5
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 13
+- ID: 20125
+  SkillSlots:
+  - 0
+  - 14
+  - 15
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 25
+  - SkillID: 14
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 25
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 28
+- ID: 22346
+  SkillSlots:
+  - 13
+  - 11
+  - 14
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 20
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 2
+  - SkillID: 14
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 20
+- ID: 22345
+  SkillSlots:
+  - 13
+  - 11
+  - 14
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 20
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 2
+  - SkillID: 14
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 20
+- ID: 22790
+  SkillSlots:
+  - 0
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 22791
+  SkillSlots:
+  - 0
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 23019
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 40
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 23020
+  SkillSlots:
+  - 0
+  - 14
+  - 15
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 5
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 5
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 1
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 200
+- ID: 23227
+  SkillSlots:
+  - 13
+  - 11
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 18
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 3
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 70
+- ID: 23228
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 48
+- ID: 23379
+  SkillSlots:
+  - 1
+  - 6
+  - 5
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 5
+    SkillFullLevelValue: 550
+    StrengthFullLevelValue: 300
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 25
+- ID: 23380
+  SkillSlots:
+  - 17
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 18
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 70
+- ID: 23647
+  SkillSlots:
+  - 17
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 51
+- ID: 23832
+  SkillSlots:
+  - 13
+  - 0
+  - 7
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 0
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 23833
+  SkillSlots:
+  - 13
+  - 0
+  - 7
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 0
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 24144
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 24145
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 24328
+  SkillSlots:
+  - 17
+  - 4
+  - 9
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 24329
+  SkillSlots:
+  - 17
+  - 4
+  - 9
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 24586
+  SkillSlots:
+  - 12
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 12
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 24587
+  SkillSlots:
+  - 12
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 12
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 25336
+  SkillSlots:
+  - 0
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 11
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 80
+- ID: 25337
+  SkillSlots:
+  - 14
+  - 1
+  - 4
+  ShowBaseInfos:
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 40
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 300
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 800
+- ID: 25860
+  SkillSlots:
+  - 13
+  - 11
+  - 14
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 18
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 5
+  - SkillID: 14
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 45
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 11
+- ID: 25861
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 11
+- ID: 26111
+  SkillSlots:
+  - 17
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 51
+- ID: 26077
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 5
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+- ID: 26323
+  SkillSlots:
+  - 13
+  - 11
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 18
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 3
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 200
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 750
+- ID: 26324
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 11
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 0
+    AddValue: 40
+- ID: 26613
+  SkillSlots:
+  - 17
+  - 14
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 35
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 300
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 800
+- ID: 26900
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 26901
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 27449
+  SkillSlots:
+  - 3
+  - 9
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 48
+    StrengthFullLevelValue: 7
+  - SkillID: 9
+    SkillFullLevelValue: 410
+    StrengthFullLevelValue: 70
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 70
+- ID: 28094
+  SkillSlots:
+  - 17
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 28095
+  SkillSlots:
+  - 0
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 10
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 70
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 70
+- ID: 28096
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 6
+  - SkillID: 4
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 5
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 14
+- ID: 28097
+  SkillSlots:
+  - 13
+  - 11
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 28712
+  SkillSlots:
+  - 0
+  - 7
+  - 4
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 2
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 10
+- ID: 28713
+  SkillSlots:
+  - 17
+  - 11
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 1
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 1
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 400
+- ID: 29426
+  SkillSlots:
+  - 1
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 28
+- ID: 29427
+  SkillSlots:
+  - 17
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 30458
+  SkillSlots:
+  - 17
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 50
+  - SkillID: 3
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 80
+- ID: 30459
+  SkillSlots:
+  - 0
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 100
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 800
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 0
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 0
+- ID: 30460
+  SkillSlots:
+  - 13
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 22
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 250
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 800
+- ID: 30838
+  SkillSlots:
+  - 16
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 10
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 31179
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 10
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+- ID: 31905
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 50
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 31906
+  SkillSlots:
+  - 17
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 5
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 22
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 32266
+  SkillSlots:
+  - 0
+  - 11
+  - 9
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 500
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 32267
+  SkillSlots:
+  - 17
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 32268
+  SkillSlots:
+  - 17
+  - 14
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 32269
+  SkillSlots:
+  - 17
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 22
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 32422
+  SkillSlots:
+  - 17
+  - 16
+  - 13
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 22
+    StrengthFullLevelValue: 8
+  - SkillID: 13
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 51
+- ID: 32423
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 1
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 11
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 2
+- ID: 32829
+  SkillSlots:
+  - 3
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 10
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 6
+- ID: 33226
+  SkillSlots:
+  - 1
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 85
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 155
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 4
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 13
+- ID: 33227
+  SkillSlots:
+  - 17
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 1
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 30
+- ID: 33738
+  SkillSlots:
+  - 4
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 33739
+  SkillSlots:
+  - 16
+  - 3
+  - 9
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 2
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 5
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+- ID: 33740
+  SkillSlots:
+  - 17
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 3
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+- ID: 33741
+  SkillSlots:
+  - 3
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 170
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 34299
+  SkillSlots:
+  - 3
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 6
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 5
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 15
+- ID: 34300
+  SkillSlots:
+  - 17
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 320
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 800
+- ID: 34834
+  SkillSlots:
+  - 17
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 13
+  - SkillID: 15
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 0
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 0
+- ID: 34835
+  SkillSlots:
+  - 17
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 34836
+  SkillSlots:
+  - 2
+  - 3
+  - 1
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 52
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 34837
+  SkillSlots:
+  - 13
+  - 3
+  - 9
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 60059
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 60425
+  SkillSlots:
+  - 3
+  - 16
+  - 21
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 20
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 10
+  - SkillID: 21
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 0
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 5
+- ID: 60426
+  SkillSlots:
+  - 17
+  - 3
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 50
+- ID: 62747
+  SkillSlots:
+  - 17
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 5
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 22
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 50
+- ID: 62748
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 7
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 25
+- ID: 62749
+  SkillSlots:
+  - 3
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 62750
+  SkillSlots:
+  - 17
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 30
+- ID: 62751
+  SkillSlots:
+  - 13
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 5
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 0
+- ID: 62823
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 63391
+  SkillSlots:
+  - 17
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 3
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 0
+- ID: 63392
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 63393
+  SkillSlots:
+  - 13
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 63394
+  SkillSlots:
+  - 16
+  - 7
+  - 1
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 3
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 70
+- ID: 63689
+  SkillSlots:
+  - 3
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 48
+    StrengthFullLevelValue: 7
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 90
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 70
+- ID: 63691
+  SkillSlots:
+  - 13
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 8
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 63690
+  SkillSlots:
+  - 17
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 64870
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 140
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 65096
+  SkillSlots:
+  - 4
+  - 11
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 65097
+  SkillSlots:
+  - 16
+  - 13
+  - 1
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 65098
+  SkillSlots:
+  - 7
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 65099
+  SkillSlots:
+  - 3
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 10
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+- ID: 65100
+  SkillSlots:
+  - 17
+  - 13
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 70
+- ID: 65849
+  SkillSlots:
+  - 13
+  - 16
+  - 1
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 65850
+  SkillSlots:
+  - 17
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 66525
+  SkillSlots:
+  - 13
+  - 16
+  - 1
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 66585
+  SkillSlots:
+  - 17
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 66586
+  SkillSlots:
+  - 7
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 66587
+  SkillSlots:
+  - 17
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 2
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 90
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 70
+- ID: 66588
+  SkillSlots:
+  - 3
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 5
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 50
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 70
+- ID: 66589
+  SkillSlots:
+  - 3
+  - 13
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 5
+  - SkillID: 13
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 1
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 30
+- ID: 67487
+  SkillSlots:
+  - 1
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 67488
+  SkillSlots:
+  - 13
+  - 11
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 67489
+  SkillSlots:
+  - 16
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 67490
+  SkillSlots:
+  - 17
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 40
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+- ID: 68114
+  SkillSlots:
+  - 17
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 67492
+  SkillSlots:
+  - 13
+  - 16
+  - 9
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 67491
+  SkillSlots:
+  - 3
+  - 13
+  - 7
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 3
+  - SkillID: 13
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 4
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 80
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 0
+- ID: 68124
+  SkillSlots:
+  - 6
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 80
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 0
+- ID: 68713
+  SkillSlots:
+  - 17
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 68714
+  SkillSlots:
+  - 3
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 68715
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 5
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 11
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 20
+- ID: 68716
+  SkillSlots:
+  - 7
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 2
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 40
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 0
+- ID: 68717
+  SkillSlots:
+  - 4
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 400
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 68719
+  SkillSlots:
+  - 13
+  - 8
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 6
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 8
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 300
+- ID: 69194
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 69195
+  SkillSlots:
+  - 17
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 680
+    StrengthFullLevelValue: 20
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 5
+- ID: 69196
+  SkillSlots:
+  - 2
+  - 11
+  - 3
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 40
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 3
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 3
+- ID: 69197
+  SkillSlots:
+  - 16
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 69198
+  SkillSlots:
+  - 13
+  - 3
+  - 1
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 70019
+  SkillSlots:
+  - 1
+  - 3
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 52
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 70017
+  SkillSlots:
+  - 6
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 70018
+  SkillSlots:
+  - 13
+  - 11
+  - 7
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 10
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 2
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 0
+- ID: 70020
+  SkillSlots:
+  - 2
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 40
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 30
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 0
+- ID: 70021
+  SkillSlots:
+  - 3
+  - 9
+  - 4
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 410
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 70022
+  SkillSlots:
+  - 17
+  - 8
+  - 9
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71549
+  SkillSlots:
+  - 1
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 35
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 16
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71550
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 60
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 190
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 600
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 100
+- ID: 71551
+  SkillSlots:
+  - 2
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71552
+  SkillSlots:
+  - 3
+  - 14
+  - 15
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71553
+  SkillSlots:
+  - 3
+  - 9
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 450
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71556
+  SkillSlots:
+  - 7
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 50
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 3
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 0
+- ID: 71554
+  SkillSlots:
+  - 3
+  - 1
+  - 15
+  - 11
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 170
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 42
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71555
+  SkillSlots:
+  - 3
+  - 2
+  - 15
+  - 13
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 36
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 71557
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 72266
+  SkillSlots:
+  - 2
+  - 11
+  - 7
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 70
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 2
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 10
+- ID: 72267
+  SkillSlots:
+  - 13
+  - 3
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 72268
+  SkillSlots:
+  - 17
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 72719
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 72720
+  SkillSlots:
+  - 16
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 72721
+  SkillSlots:
+  - 4
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 2
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 50
+- ID: 72722
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 73674
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 73675
+  SkillSlots:
+  - 13
+  - 3
+  - 2
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 23
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 140
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 3
+  - OpenLevel: 10
+    SkillID: 8
+    AddValue: 7
+- ID: 73676
+  SkillSlots:
+  - 17
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 73677
+  SkillSlots:
+  - 1
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 205
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74153
+  SkillSlots:
+  - 17
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74348
+  SkillSlots:
+  - 0
+  - 11
+  - 9
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 65
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 48
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 520
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74349
+  SkillSlots:
+  - 17
+  - 3
+  - 15
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74350
+  SkillSlots:
+  - 22
+  - 2
+  - 3
+  - 11
+  ShowBaseInfos:
+  - SkillID: 22
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74351
+  SkillSlots:
+  - 13
+  - 3
+  - 9
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74733
+  SkillSlots:
+  - 0
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 0
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 5
+  - SkillID: 1
+    SkillFullLevelValue: 142
+    StrengthFullLevelValue: 58
+  - SkillID: 2
+    SkillFullLevelValue: 680
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 0
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 0
+- ID: 74732
+  SkillSlots:
+  - 1
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 5
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 11
+    AddValue: 15
+- ID: 74959
+  SkillSlots:
+  - 1
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 205
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74960
+  SkillSlots:
+  - 7
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 1
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 40
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 0
+- ID: 74961
+  SkillSlots:
+  - 2
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 140
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 8
+    AddValue: 80
+- ID: 74962
+  SkillSlots:
+  - 17
+  - 13
+  - 1
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 6
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 45
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 30
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 74963
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 74965
+  SkillSlots:
+  - 13
+  - 8
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 16
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 33
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 300
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 750
+- ID: 75771
+  SkillSlots:
+  - 2
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 75772
+  SkillSlots:
+  - 13
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 23
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 710
+    StrengthFullLevelValue: 140
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 9
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 15
+- ID: 75773
+  SkillSlots:
+  - 4
+  - 1
+  - 7
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 5
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 50
+- ID: 75774
+  SkillSlots:
+  - 17
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 76467
+  SkillSlots:
+  - 2
+  - 3
+  - 7
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 140
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 7
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 8
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 13
+- ID: 76483
+  SkillSlots:
+  - 17
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 800
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 76484
+  SkillSlots:
+  - 7
+  - 11
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 76468
+  SkillSlots:
+  - 13
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 2
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 0
+- ID: 76964
+  SkillSlots:
+  - 17
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 77192
+  SkillSlots:
+  - 17
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 140
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 22
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 48
+- ID: 77193
+  SkillSlots:
+  - 7
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 60
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 5
+- ID: 77194
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78105
+  SkillSlots:
+  - 17
+  - 13
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 4
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 15
+- ID: 78276
+  SkillSlots:
+  - 1
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 205
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78274
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78275
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 52
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78277
+  SkillSlots:
+  - 16
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78278
+  SkillSlots:
+  - 7
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 30
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 3
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 140
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 3
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 15
+- ID: 78279
+  SkillSlots:
+  - 17
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 680
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78280
+  SkillSlots:
+  - 17
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78281
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78282
+  SkillSlots:
+  - 13
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 10
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 90
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 3
+- ID: 78283
+  SkillSlots:
+  - 16
+  - 8
+  - 1
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78900
+  SkillSlots:
+  - 17
+  - 7
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78901
+  SkillSlots:
+  - 2
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 78902
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 15
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 10
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 6
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 200
+- ID: 80148
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 60
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 15
+- ID: 80149
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 36
+    StrengthFullLevelValue: 6
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 300
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 600
+- ID: 80150
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 80502
+  SkillSlots:
+  - 1
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 5
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 50
+- ID: 80503
+  SkillSlots:
+  - 16
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 80371
+  SkillSlots:
+  - 17
+  - 11
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 80504
+  SkillSlots:
+  - 17
+  - 13
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 2
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 30
+- ID: 81279
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 81280
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 81281
+  SkillSlots:
+  - 16
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 81282
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 81889
+  SkillSlots:
+  - 16
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 82211
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 82212
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 82213
+  SkillSlots:
+  - 17
+  - 13
+  - 1
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 82238
+  SkillSlots:
+  - 3
+  - 8
+  - 11
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 42
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 82239
+  SkillSlots:
+  - 3
+  - 7
+  - 13
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 36
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 83027
+  SkillSlots:
+  - 2
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 60
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 2
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 20
+- ID: 83028
+  SkillSlots:
+  - 3
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 140
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 11
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 25
+- ID: 83029
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 83975
+  SkillSlots:
+  - 1
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 205
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 83976
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 83977
+  SkillSlots:
+  - 13
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 84782
+  SkillSlots:
+  - 4
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 2
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 3
+- ID: 84783
+  SkillSlots:
+  - 1
+  - 6
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 84784
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 55
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 84785
+  SkillSlots:
+  - 16
+  - 13
+  - 3
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85672
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85919
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 45
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 180
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 28
+- ID: 85920
+  SkillSlots:
+  - 1
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 205
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85922
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85923
+  SkillSlots:
+  - 2
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 800
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85924
+  SkillSlots:
+  - 4
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85925
+  SkillSlots:
+  - 17
+  - 11
+  - 3
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85926
+  SkillSlots:
+  - 3
+  - 8
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85927
+  SkillSlots:
+  - 13
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85928
+  SkillSlots:
+  - 17
+  - 8
+  - 2
+  ShowBaseInfos:
+  - SkillID: 17
+    SkillFullLevelValue: 0
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 85933
+  SkillSlots:
+  - 16
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 86697
+  SkillSlots:
+  - 7
+  - 13
+  - 3
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 86703
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 86987
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 86988
+  SkillSlots:
+  - 3
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 86989
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 88071
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 88072
+  SkillSlots:
+  - 2
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 680
+    StrengthFullLevelValue: 200
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 30
+  - SkillID: 15
+    SkillFullLevelValue: 11
+    StrengthFullLevelValue: 9
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 80
+- ID: 88073
+  SkillSlots:
+  - 13
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 88074
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 88943
+  SkillSlots:
+  - 2
+  - 6
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 90
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 15
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 4
+- ID: 88944
+  SkillSlots:
+  - 7
+  - 11
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 88945
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 89922
+  SkillSlots:
+  - 2
+  - 4
+  - 3
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 89923
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 15
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 5
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 400
+- ID: 89924
+  SkillSlots:
+  - 13
+  - 3
+  - 1
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 89925
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 89732
+  SkillSlots:
+  - 16
+  - 13
+  - 3
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 27
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 28
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 89733
+  SkillSlots:
+  - 3
+  - 7
+  - 9
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 90932
+  SkillSlots:
+  - 7
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 90933
+  SkillSlots:
+  - 4
+  - 3
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 90644
+  SkillSlots:
+  - 13
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 90934
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 91945
+  SkillSlots:
+  - 1
+  - 6
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 91946
+  SkillSlots:
+  - 3
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 91947
+  SkillSlots:
+  - 13
+  - 16
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 91948
+  SkillSlots:
+  - 13
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 92809
+  SkillSlots:
+  - 1
+  - 6
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 92810
+  SkillSlots:
+  - 16
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 5
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 35
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+- ID: 92811
+  SkillSlots:
+  - 1
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 210
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 92812
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 92813
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 92814
+  SkillSlots:
+  - 16
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93403
+  SkillSlots:
+  - 13
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93549
+  SkillSlots:
+  - 3
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 17
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 5
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 25
+- ID: 93550
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93551
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93552
+  SkillSlots:
+  - 16
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93553
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93554
+  SkillSlots:
+  - 16
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 93555
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 55
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 4
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 450
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 850
+- ID: 94600
+  SkillSlots:
+  - 16
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 94811
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 94812
+  SkillSlots:
+  - 15
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 15
+    SkillFullLevelValue: 14
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 94813
+  SkillSlots:
+  - 2
+  - 4
+  - 3
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 140
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 100
+- ID: 94814
+  SkillSlots:
+  - 1
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 94815
+  SkillSlots:
+  - 7
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 120
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 25
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 48
+- ID: 94816
+  SkillSlots:
+  - 4
+  - 15
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 730
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 94827
+  SkillSlots:
+  - 7
+  - 4
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 94912
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 95671
+  SkillSlots:
+  - 1
+  - 8
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 95672
+  SkillSlots:
+  - 4
+  - 3
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 45
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 95673
+  SkillSlots:
+  - 13
+  - 4
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 96447
+  SkillSlots:
+  - 13
+  - 7
+  - 3
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 96771
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 96772
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 96773
+  SkillSlots:
+  - 3
+  - 7
+  - 15
+  ShowBaseInfos:
+  - SkillID: 3
+    SkillFullLevelValue: 38
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 96774
+  SkillSlots:
+  - 13
+  - 7
+  - 16
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 96775
+  SkillSlots:
+  - 16
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 21
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 98339
+  SkillSlots:
+  - 4
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 98340
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 100
+  - SkillID: 2
+    SkillFullLevelValue: 730
+    StrengthFullLevelValue: 120
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 16
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 16
+    AddValue: 35
+- ID: 98341
+  SkillSlots:
+  - 16
+  - 3
+  - 13
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 97556
+  SkillSlots:
+  - 16
+  - 8
+  - 13
+  ShowBaseInfos:
+  - SkillID: 16
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 98790
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 720
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 98791
+  SkillSlots:
+  - 4
+  - 9
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 9
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 100
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 55
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 13
+    AddValue: 8
+  - OpenLevel: 10
+    SkillID: 13
+    AddValue: 0
+- ID: 98792
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 98793
+  SkillSlots:
+  - 8
+  - 2
+  - 16
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 5
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 100037
+  SkillSlots:
+  - 6
+  - 2
+  - 13
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 50
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 100
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 0
+- ID: 100035
+  SkillSlots:
+  - 8
+  - 2
+  - 3
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 120
+  - SkillID: 3
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 150
+- ID: 100036
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 100853
+  SkillSlots:
+  - 1
+  - 6
+  - 13
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 210
+    StrengthFullLevelValue: 40
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 15
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 600
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 850
+- ID: 100855
+  SkillSlots:
+  - 7
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 770
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 100854
+  SkillSlots:
+  - 4
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102012
+  SkillSlots:
+  - 8
+  - 15
+  - 16
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102195
+  SkillSlots:
+  - 4
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102196
+  SkillSlots:
+  - 4
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 740
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102197
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 16
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 16
+    AddValue: 35
+- ID: 102198
+  SkillSlots:
+  - 6
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102199
+  SkillSlots:
+  - 8
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 110
+  - SkillID: 15
+    SkillFullLevelValue: 17
+    StrengthFullLevelValue: 15
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 100
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 250
+- ID: 102200
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102201
+  SkillSlots:
+  - 4
+  - 13
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102202
+  SkillSlots:
+  - 8
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 102937
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 220
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 103027
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 103404
+  SkillSlots:
+  - 4
+  - 9
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 50
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 8
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 16
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 16
+    AddValue: 35
+- ID: 103405
+  SkillSlots:
+  - 7
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 150
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 12
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 8
+    AddValue: 100
+- ID: 103406
+  SkillSlots:
+  - 6
+  - 1
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 50
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 104739
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 60
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 250
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 16
+    AddValue: 15
+  - OpenLevel: 10
+    SkillID: 16
+    AddValue: 35
+- ID: 104738
+  SkillSlots:
+  - 4
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 104740
+  SkillSlots:
+  - 6
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 350
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 106558
+  SkillSlots:
+  - 6
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 250
+    StrengthFullLevelValue: 5
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 60
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 100
+- ID: 106559
+  SkillSlots:
+  - 4
+  - 8
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 720
+    StrengthFullLevelValue: 140
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 60
+- ID: 106560
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 106561
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 106562
+  SkillSlots:
+  - 4
+  - 9
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 106563
+  SkillSlots:
+  - 6
+  - 15
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 10
+  - SkillID: 15
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 10
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 30
+- ID: 106938
+  SkillSlots:
+  - 6
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 107362
+  SkillSlots:
+  - 7
+  - 2
+  - 9
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 350
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 107363
+  SkillSlots:
+  - 4
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 107364
+  SkillSlots:
+  - 6
+  - 9
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 108454
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 140
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 60
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 60
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 108455
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 108456
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 90
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 500
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 850
+- ID: 108457
+  SkillSlots:
+  - 4
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 108458
+  SkillSlots:
+  - 6
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 60
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 250
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 10
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 30
+- ID: 108459
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 109419
+  SkillSlots:
+  - 6
+  - 16
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 109553
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 230
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 109554
+  SkillSlots:
+  - 4
+  - 6
+  - 14
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 109555
+  SkillSlots:
+  - 4
+  - 8
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 155
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 109556
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 190
+    StrengthFullLevelValue: 65
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 110
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 30
+- ID: 109557
+  SkillSlots:
+  - 7
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 75
+  - SkillID: 9
+    SkillFullLevelValue: 400
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 60
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 80
+- ID: 112107
+  SkillSlots:
+  - 6
+  - 2
+  - 8
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 800
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 112108
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 112109
+  SkillSlots:
+  - 7
+  - 16
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 112695
+  SkillSlots:
+  - 4
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 112894
+  SkillSlots:
+  - 6
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 150
+  - SkillID: 15
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 50
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 250
+- ID: 112895
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 112896
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 100
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 240
+- ID: 113906
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 200
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 255
+- ID: 113907
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 75
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 15
+    AddValue: 20
+  - OpenLevel: 10
+    SkillID: 15
+    AddValue: 40
+- ID: 113908
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 113909
+  SkillSlots:
+  - 7
+  - 1
+  - 3
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 113910
+  SkillSlots:
+  - 7
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 190
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 100
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 255
+- ID: 113911
+  SkillSlots:
+  - 8
+  - 15
+  - 2
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 115423
+  SkillSlots:
+  - 6
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 115749
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 190
+    StrengthFullLevelValue: 50
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 110
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 115750
+  SkillSlots:
+  - 4
+  - 2
+  - 16
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 115751
+  SkillSlots:
+  - 7
+  - 15
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116904
+  SkillSlots:
+  - 6
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 800
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116907
+  SkillSlots:
+  - 6
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116908
+  SkillSlots:
+  - 7
+  - 1
+  - 6
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116909
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 95
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 260
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 116910
+  SkillSlots:
+  - 7
+  - 8
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116911
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 90
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 200
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 4
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 4
+    AddValue: 80
+- ID: 116912
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 190
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 50
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 50
+- ID: 116913
+  SkillSlots:
+  - 8
+  - 1
+  - 16
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 118402
+  SkillSlots:
+  - 4
+  - 3
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 25
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 118739
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 118740
+  SkillSlots:
+  - 4
+  - 3
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 3
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 13
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 118968
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 90
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 118969
+  SkillSlots:
+  - 7
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 30
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 260
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 150
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 255
+- ID: 118970
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 600
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 850
+- ID: 119077
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 220
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 119078
+  SkillSlots:
+  - 8
+  - 16
+  - 2
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116905
+  SkillSlots:
+  - 1
+  - 6
+  - 15
+  ShowBaseInfos:
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 116906
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 120280
+  SkillSlots:
+  - 6
+  - 16
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 120281
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 12
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 120639
+  SkillSlots:
+  - 2
+  - 6
+  - 15
+  ShowBaseInfos:
+  - SkillID: 2
+    SkillFullLevelValue: 660
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 120640
+  SkillSlots:
+  - 7
+  - 11
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 120641
+  SkillSlots:
+  - 6
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 122192
+  SkillSlots:
+  - 4
+  - 1
+  - 6
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 122193
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 105
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 260
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 122194
+  SkillSlots:
+  - 7
+  - 4
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 122195
+  SkillSlots:
+  - 6
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123229
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123230
+  SkillSlots:
+  - 4
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123396
+  SkillSlots:
+  - 7
+  - 6
+  - 4
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123397
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123398
+  SkillSlots:
+  - 4
+  - 2
+  - 15
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123399
+  SkillSlots:
+  - 6
+  - 4
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123400
+  SkillSlots:
+  - 4
+  - 1
+  - 16
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 30
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123401
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 245
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 800
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 123402
+  SkillSlots:
+  - 7
+  - 2
+  - 6
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 780
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 124708
+  SkillSlots:
+  - 4
+  - 16
+  - 14
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 124849
+  SkillSlots:
+  - 4
+  - 1
+  - 6
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 124850
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 124851
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 126427
+  SkillSlots:
+  - 4
+  - 9
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 400
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 126428
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 6
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 10
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 155
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 255
+- ID: 126429
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 45
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 110
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 8
+    AddValue: 50
+  - OpenLevel: 10
+    SkillID: 8
+    AddValue: 80
+- ID: 126430
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 126431
+  SkillSlots:
+  - 6
+  - 9
+  - 14
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 126432
+  SkillSlots:
+  - 7
+  - 2
+  - 13
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 100
+  - SkillID: 13
+    SkillFullLevelValue: 10
+    StrengthFullLevelValue: 30
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 170
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 240
+- ID: 126433
+  SkillSlots:
+  - 4
+  - 2
+  - 16
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 126434
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 90
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 220
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 820
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 127758
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 127759
+  SkillSlots:
+  - 6
+  - 16
+  - 2
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 127760
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 190
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 127761
+  SkillSlots:
+  - 4
+  - 8
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 127762
+  SkillSlots:
+  - 8
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 127763
+  SkillSlots:
+  - 6
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 129608
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 170
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 240
+- ID: 129609
+  SkillSlots:
+  - 7
+  - 2
+  - 13
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 129610
+  SkillSlots:
+  - 7
+  - 1
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 55
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 7
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 660
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 860
+- ID: 130638
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 130639
+  SkillSlots:
+  - 7
+  - 16
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 20
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 17
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 170
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 240
+- ID: 130640
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 200
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 131995
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 132178
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 132179
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 80
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 150
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 3
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 3
+    AddValue: 60
+- ID: 132180
+  SkillSlots:
+  - 4
+  - 16
+  - 14
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 132181
+  SkillSlots:
+  - 6
+  - 1
+  - 9
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 130
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 132182
+  SkillSlots:
+  - 7
+  - 11
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 132201
+  SkillSlots:
+  - 6
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 20
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 132202
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 133496
+  SkillSlots:
+  - 13
+  - 16
+  - 14
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 133622
+  SkillSlots:
+  - 7
+  - 8
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 133623
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 133624
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 250
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 170
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 240
+- ID: 135079
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 135081
+  SkillSlots:
+  - 4
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 190
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 135082
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 135083
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 90
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 600
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 850
+- ID: 135084
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 80
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 134942
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 134943
+  SkillSlots:
+  - 7
+  - 16
+  - 4
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 135080
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 90
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 160
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 136479
+  SkillSlots:
+  - 13
+  - 16
+  - 7
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 136604
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 136605
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 90
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 136606
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 250
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 200
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 255
+- ID: 136607
+  SkillSlots:
+  - 4
+  - 7
+  - 1
+  ShowBaseInfos:
+  - SkillID: 4
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 105
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 60
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 100
+- ID: 136608
+  SkillSlots:
+  - 6
+  - 8
+  - 1
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 136609
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 138184
+  SkillSlots:
+  - 7
+  - 14
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 14
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 138313
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 138314
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 138315
+  SkillSlots:
+  - 7
+  - 8
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 8
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 138316
+  SkillSlots:
+  - 7
+  - 2
+  - 9
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 220
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 200
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 200
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 255
+- ID: 138317
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 750
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 180
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 139879
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 140023
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 140024
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 140025
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 140026
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 144245
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 144425
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 144426
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 144427
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 144428
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 200
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 144429
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 144430
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 820
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 144431
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 146304
+  SkillSlots:
+  - 11
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 146445
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 146446
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 90
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 2
+    AddValue: 600
+  - OpenLevel: 10
+    SkillID: 2
+    AddValue: 850
+- ID: 146447
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 146448
+  SkillSlots:
+  - 6
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 20
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 200
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 7
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 7
+    AddValue: 100
+- ID: 148188
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 148202
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 260
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 150
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 250
+- ID: 148203
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 148204
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 148205
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 148206
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 80
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 200
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 820
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 150504
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 150521
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 152205
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 150251
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 152461
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 152462
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 200
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 152463
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 152464
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 153860
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 153934
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 153935
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 153936
+  SkillSlots:
+  - 7
+  - 2
+  - 9
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156067
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156068
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 30
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 260
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 150
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 250
+- ID: 156069
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156070
+  SkillSlots:
+  - 7
+  - 1
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 160
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156071
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156072
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156073
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156074
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 156075
+  SkillSlots:
+  - 11
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 158308
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 158309
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 210
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 100
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 6
+    AddValue: 40
+  - OpenLevel: 10
+    SkillID: 6
+    AddValue: 80
+- ID: 158310
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 158311
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 158312
+  SkillSlots:
+  - 7
+  - 2
+  - 9
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 9
+    SkillFullLevelValue: 300
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 158313
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 158314
+  SkillSlots:
+  - 11
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 11
+    SkillFullLevelValue: 40
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 160775
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 40
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 10
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 260
+  OpenNewSkills:
+  - OpenLevel: 5
+    SkillID: 1
+    AddValue: 600
+  - OpenLevel: 10
+    SkillID: 1
+    AddValue: 850
+- ID: 160776
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 160796
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 163367
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 163368
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 163369
+  SkillSlots:
+  - 7
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 166152
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 166153
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 168371
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 168372
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 168373
+  SkillSlots:
+  - 7
+  - 2
+  - 6
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 174771
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 174745
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 700
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 174746
+  SkillSlots:
+  - 7
+  - 6
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 174747
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 650
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 150
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 174753
+  SkillSlots:
+  - 7
+  - 2
+  - 1
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 100
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 850
+    StrengthFullLevelValue: 0
+  - SkillID: 1
+    SkillFullLevelValue: 240
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 177557
+  SkillSlots:
+  - 7
+  - 6
+  - 2
+  ShowBaseInfos:
+  - SkillID: 7
+    SkillFullLevelValue: 60
+    StrengthFullLevelValue: 0
+  - SkillID: 6
+    SkillFullLevelValue: 70
+    StrengthFullLevelValue: 0
+  - SkillID: 2
+    SkillFullLevelValue: 600
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []
+- ID: 177692
+  SkillSlots:
+  - 13
+  - 16
+  - 15
+  ShowBaseInfos:
+  - SkillID: 13
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  - SkillID: 16
+    SkillFullLevelValue: 18
+    StrengthFullLevelValue: 0
+  - SkillID: 15
+    SkillFullLevelValue: 15
+    StrengthFullLevelValue: 0
+  OpenNewSkills: []

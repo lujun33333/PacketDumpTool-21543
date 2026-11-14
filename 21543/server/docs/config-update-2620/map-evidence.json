@@ -1,0 +1,54 @@
+[
+  {
+    "ID": 474,
+    "Name": "猫梦浮屋",
+    "WordTxt": "本月3星新赛道：/C03【猫梦浮屋】/C00",
+    "ExistsInMapYaml": false,
+    "Evidence": [
+      {
+        "file": "network_bin_2620_145_parser_queue_dispatch_body_msg822_len4506.bin",
+        "offset": 3727,
+        "record_hex": "00 2b 00 00 01 da 00 23 b1 be d4 c2 33 d0 c7 d0 c2 c8 fc b5 c0 a3 ba 2f 43 30 33 a1 be c3 a8 c3 ce b8 a1 ce dd a1 bf 2f 43 30 30",
+        "sha256": "78f7cda18a6103988973d4d16e5c5ccdcbb41a23ed189aa92fd64d94b277fbbe"
+      },
+      {
+        "file": "network_bin_2620_1885_parser_queue_dispatch_body_msg822_len4506.bin",
+        "offset": 3727,
+        "record_hex": "00 2b 00 00 01 da 00 23 b1 be d4 c2 33 d0 c7 d0 c2 c8 fc b5 c0 a3 ba 2f 43 30 33 a1 be c3 a8 c3 ce b8 a1 ce dd a1 bf 2f 43 30 30",
+        "sha256": "091d4bd8917574b1e292932ebf34635fec9d0ef036db35d1eae877f5d2dfdbea"
+      },
+      {
+        "file": "network_bin_2620_740_parser_queue_dispatch_body_msg822_len3674.bin",
+        "offset": 2891,
+        "record_hex": "00 2b 00 00 01 da 00 23 b1 be d4 c2 33 d0 c7 d0 c2 c8 fc b5 c0 a3 ba 2f 43 30 33 a1 be c3 a8 c3 ce b8 a1 ce dd a1 bf 2f 43 30 30",
+        "sha256": "1b42c0efa2f8724868d75283351e0de9778a02bdf9c0b45053fdd210496e4800"
+      }
+    ]
+  },
+  {
+    "ID": 477,
+    "Name": "八闽山海",
+    "WordTxt": "本月3星新赛道：/C03【八闽山海】/C00",
+    "ExistsInMapYaml": false,
+    "Evidence": [
+      {
+        "file": "network_bin_2620_145_parser_queue_dispatch_body_msg822_len4506.bin",
+        "offset": 3770,
+        "record_hex": "00 2b 00 00 01 dd 00 23 b1 be d4 c2 33 d0 c7 d0 c2 c8 fc b5 c0 a3 ba 2f 43 30 33 a1 be b0 cb c3 f6 c9 bd ba a3 a1 bf 2f 43 30 30",
+        "sha256": "78f7cda18a6103988973d4d16e5c5ccdcbb41a23ed189aa92fd64d94b277fbbe"
+      },
+      {
+        "file": "network_bin_2620_1885_parser_queue_dispatch_body_msg822_len4506.bin",
+        "offset": 3770,
+        "record_hex": "00 2b 00 00 01 dd 00 23 b1 be d4 c2 33 d0 c7 d0 c2 c8 fc b5 c0 a3 ba 2f 43 30 33 a1 be b0 cb c3 f6 c9 bd ba a3 a1 bf 2f 43 30 30",
+        "sha256": "091d4bd8917574b1e292932ebf34635fec9d0ef036db35d1eae877f5d2dfdbea"
+      },
+      {
+        "file": "network_bin_2620_740_parser_queue_dispatch_body_msg822_len3674.bin",
+        "offset": 2934,
+        "record_hex": "00 2b 00 00 01 dd 00 23 b1 be d4 c2 33 d0 c7 d0 c2 c8 fc b5 c0 a3 ba 2f 43 30 33 a1 be b0 cb c3 f6 c9 bd ba a3 a1 bf 2f 43 30 30",
+        "sha256": "1b42c0efa2f8724868d75283351e0de9778a02bdf9c0b45053fdd210496e4800"
+      }
+    ]
+  }
+]

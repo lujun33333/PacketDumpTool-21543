@@ -1,0 +1,4402 @@
+# Generated from official decoded 28457/28459 SpeedLadder trophy config.
+# Source: C:/Users/lp/Desktop/new1/dll/pcaps/12/analysis/_tmp_login_dump_all_fullhex.json
+# 28457: MapCount=200 HasMore=1; 28459: MapCount=93 HasMore=0; total=293 maps.
+speed_ladder_maps:
+  enabled: true
+  season_id: 1
+  maps:
+    - map_id: 104
+      levels:
+        - { level: 1, best_time: 173000 }
+        - { level: 2, best_time: 171000 }
+        - { level: 3, best_time: 169000 }
+        - { level: 4, best_time: 167000 }
+        - { level: 5, best_time: 164700 }
+        - { level: 6, best_time: 162300 }
+        - { level: 7, best_time: 160000 }
+        - { level: 8, best_time: 158700 }
+        - { level: 9, best_time: 157300 }
+        - { level: 10, best_time: 156000 }
+        - { level: 11, best_time: 154300 }
+        - { level: 12, best_time: 152700 }
+        - { level: 13, best_time: 151000 }
+    - map_id: 112
+      levels:
+        - { level: 1, best_time: 121000 }
+        - { level: 2, best_time: 118700 }
+        - { level: 3, best_time: 116300 }
+        - { level: 4, best_time: 114000 }
+        - { level: 5, best_time: 112000 }
+        - { level: 6, best_time: 110000 }
+        - { level: 7, best_time: 108000 }
+        - { level: 8, best_time: 107000 }
+        - { level: 9, best_time: 106000 }
+        - { level: 10, best_time: 105000 }
+        - { level: 11, best_time: 103700 }
+        - { level: 12, best_time: 102300 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 134
+      levels:
+        - { level: 1, best_time: 182000 }
+        - { level: 2, best_time: 178700 }
+        - { level: 3, best_time: 175300 }
+        - { level: 4, best_time: 172000 }
+        - { level: 5, best_time: 168700 }
+        - { level: 6, best_time: 165300 }
+        - { level: 7, best_time: 162000 }
+        - { level: 8, best_time: 160000 }
+        - { level: 9, best_time: 158000 }
+        - { level: 10, best_time: 156000 }
+        - { level: 11, best_time: 153300 }
+        - { level: 12, best_time: 150700 }
+        - { level: 13, best_time: 148000 }
+    - map_id: 111
+      levels:
+        - { level: 1, best_time: 148000 }
+        - { level: 2, best_time: 144300 }
+        - { level: 3, best_time: 140700 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 134300 }
+        - { level: 6, best_time: 131700 }
+        - { level: 7, best_time: 129000 }
+        - { level: 8, best_time: 127000 }
+        - { level: 9, best_time: 125000 }
+        - { level: 10, best_time: 123000 }
+        - { level: 11, best_time: 120000 }
+        - { level: 12, best_time: 117000 }
+        - { level: 13, best_time: 114000 }
+    - map_id: 113
+      levels:
+        - { level: 1, best_time: 159000 }
+        - { level: 2, best_time: 154300 }
+        - { level: 3, best_time: 149700 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 142300 }
+        - { level: 6, best_time: 139700 }
+        - { level: 7, best_time: 137000 }
+        - { level: 8, best_time: 135000 }
+        - { level: 9, best_time: 133000 }
+        - { level: 10, best_time: 131000 }
+        - { level: 11, best_time: 127300 }
+        - { level: 12, best_time: 123700 }
+        - { level: 13, best_time: 120000 }
+    - map_id: 119
+      levels:
+        - { level: 1, best_time: 133000 }
+        - { level: 2, best_time: 129700 }
+        - { level: 3, best_time: 126300 }
+        - { level: 4, best_time: 123000 }
+        - { level: 5, best_time: 120700 }
+        - { level: 6, best_time: 118300 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 114300 }
+        - { level: 9, best_time: 112700 }
+        - { level: 10, best_time: 111000 }
+        - { level: 11, best_time: 108000 }
+        - { level: 12, best_time: 105000 }
+        - { level: 13, best_time: 102000 }
+    - map_id: 129
+      levels:
+        - { level: 1, best_time: 145000 }
+        - { level: 2, best_time: 139700 }
+        - { level: 3, best_time: 134300 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 126000 }
+        - { level: 6, best_time: 123000 }
+        - { level: 7, best_time: 120000 }
+        - { level: 8, best_time: 118000 }
+        - { level: 9, best_time: 116000 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 110700 }
+        - { level: 12, best_time: 107300 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 135
+      levels:
+        - { level: 1, best_time: 146000 }
+        - { level: 2, best_time: 141000 }
+        - { level: 3, best_time: 136000 }
+        - { level: 4, best_time: 131000 }
+        - { level: 5, best_time: 127700 }
+        - { level: 6, best_time: 124300 }
+        - { level: 7, best_time: 121000 }
+        - { level: 8, best_time: 118300 }
+        - { level: 9, best_time: 115700 }
+        - { level: 10, best_time: 113000 }
+        - { level: 11, best_time: 109300 }
+        - { level: 12, best_time: 105700 }
+        - { level: 13, best_time: 102000 }
+    - map_id: 138
+      levels:
+        - { level: 1, best_time: 143000 }
+        - { level: 2, best_time: 138700 }
+        - { level: 3, best_time: 134300 }
+        - { level: 4, best_time: 130000 }
+        - { level: 5, best_time: 126700 }
+        - { level: 6, best_time: 123300 }
+        - { level: 7, best_time: 120000 }
+        - { level: 8, best_time: 117000 }
+        - { level: 9, best_time: 114000 }
+        - { level: 10, best_time: 111000 }
+        - { level: 11, best_time: 106700 }
+        - { level: 12, best_time: 102300 }
+        - { level: 13, best_time: 98000 }
+    - map_id: 139
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 132000 }
+        - { level: 3, best_time: 127000 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 118000 }
+        - { level: 6, best_time: 114000 }
+        - { level: 7, best_time: 110000 }
+        - { level: 8, best_time: 105700 }
+        - { level: 9, best_time: 101300 }
+        - { level: 10, best_time: 97000 }
+        - { level: 11, best_time: 92700 }
+        - { level: 12, best_time: 88300 }
+        - { level: 13, best_time: 84000 }
+    - map_id: 143
+      levels:
+        - { level: 1, best_time: 162000 }
+        - { level: 2, best_time: 157000 }
+        - { level: 3, best_time: 152000 }
+        - { level: 4, best_time: 147000 }
+        - { level: 5, best_time: 144300 }
+        - { level: 6, best_time: 141700 }
+        - { level: 7, best_time: 139000 }
+        - { level: 8, best_time: 136300 }
+        - { level: 9, best_time: 133700 }
+        - { level: 10, best_time: 131000 }
+        - { level: 11, best_time: 126300 }
+        - { level: 12, best_time: 121700 }
+        - { level: 13, best_time: 117000 }
+    - map_id: 144
+      levels:
+        - { level: 1, best_time: 154000 }
+        - { level: 2, best_time: 148700 }
+        - { level: 3, best_time: 143300 }
+        - { level: 4, best_time: 138000 }
+        - { level: 5, best_time: 135000 }
+        - { level: 6, best_time: 132000 }
+        - { level: 7, best_time: 129000 }
+        - { level: 8, best_time: 126300 }
+        - { level: 9, best_time: 123700 }
+        - { level: 10, best_time: 121000 }
+        - { level: 11, best_time: 117700 }
+        - { level: 12, best_time: 114300 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 145
+      levels:
+        - { level: 1, best_time: 151000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 137000 }
+        - { level: 4, best_time: 130000 }
+        - { level: 5, best_time: 126300 }
+        - { level: 6, best_time: 122700 }
+        - { level: 7, best_time: 119000 }
+        - { level: 8, best_time: 117000 }
+        - { level: 9, best_time: 115000 }
+        - { level: 10, best_time: 113000 }
+        - { level: 11, best_time: 110000 }
+        - { level: 12, best_time: 107000 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 146
+      levels:
+        - { level: 1, best_time: 166000 }
+        - { level: 2, best_time: 161000 }
+        - { level: 3, best_time: 156000 }
+        - { level: 4, best_time: 151000 }
+        - { level: 5, best_time: 147300 }
+        - { level: 6, best_time: 143700 }
+        - { level: 7, best_time: 140000 }
+        - { level: 8, best_time: 137300 }
+        - { level: 9, best_time: 134700 }
+        - { level: 10, best_time: 132000 }
+        - { level: 11, best_time: 128700 }
+        - { level: 12, best_time: 125300 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 147
+      levels:
+        - { level: 1, best_time: 143000 }
+        - { level: 2, best_time: 139000 }
+        - { level: 3, best_time: 135000 }
+        - { level: 4, best_time: 131000 }
+        - { level: 5, best_time: 128300 }
+        - { level: 6, best_time: 125700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120700 }
+        - { level: 9, best_time: 118300 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 112700 }
+        - { level: 12, best_time: 109300 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 149
+      levels:
+        - { level: 1, best_time: 129000 }
+        - { level: 2, best_time: 125700 }
+        - { level: 3, best_time: 122300 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 116700 }
+        - { level: 6, best_time: 114300 }
+        - { level: 7, best_time: 112000 }
+        - { level: 8, best_time: 110000 }
+        - { level: 9, best_time: 108000 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 103000 }
+        - { level: 12, best_time: 100000 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 150
+      levels:
+        - { level: 1, best_time: 204000 }
+        - { level: 2, best_time: 198700 }
+        - { level: 3, best_time: 193300 }
+        - { level: 4, best_time: 188000 }
+        - { level: 5, best_time: 184300 }
+        - { level: 6, best_time: 180700 }
+        - { level: 7, best_time: 177000 }
+        - { level: 8, best_time: 173700 }
+        - { level: 9, best_time: 170300 }
+        - { level: 10, best_time: 167000 }
+        - { level: 11, best_time: 161700 }
+        - { level: 12, best_time: 156300 }
+        - { level: 13, best_time: 151000 }
+    - map_id: 152
+      levels:
+        - { level: 1, best_time: 123000 }
+        - { level: 2, best_time: 119000 }
+        - { level: 3, best_time: 115000 }
+        - { level: 4, best_time: 111000 }
+        - { level: 5, best_time: 108000 }
+        - { level: 6, best_time: 105000 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 99300 }
+        - { level: 9, best_time: 96700 }
+        - { level: 10, best_time: 94000 }
+        - { level: 11, best_time: 90700 }
+        - { level: 12, best_time: 87300 }
+        - { level: 13, best_time: 84000 }
+    - map_id: 154
+      levels:
+        - { level: 1, best_time: 130000 }
+        - { level: 2, best_time: 123700 }
+        - { level: 3, best_time: 117300 }
+        - { level: 4, best_time: 111000 }
+        - { level: 5, best_time: 108000 }
+        - { level: 6, best_time: 105000 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 99700 }
+        - { level: 9, best_time: 97300 }
+        - { level: 10, best_time: 95000 }
+        - { level: 11, best_time: 92000 }
+        - { level: 12, best_time: 89000 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 158
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 134700 }
+        - { level: 3, best_time: 128300 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 118300 }
+        - { level: 6, best_time: 114700 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 108700 }
+        - { level: 9, best_time: 106300 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 101000 }
+        - { level: 12, best_time: 98000 }
+        - { level: 13, best_time: 95000 }
+    - map_id: 159
+      levels:
+        - { level: 1, best_time: 140000 }
+        - { level: 2, best_time: 135700 }
+        - { level: 3, best_time: 131300 }
+        - { level: 4, best_time: 127000 }
+        - { level: 5, best_time: 124000 }
+        - { level: 6, best_time: 121000 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 115300 }
+        - { level: 9, best_time: 112700 }
+        - { level: 10, best_time: 110000 }
+        - { level: 11, best_time: 106700 }
+        - { level: 12, best_time: 103300 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 166
+      levels:
+        - { level: 1, best_time: 144000 }
+        - { level: 2, best_time: 138000 }
+        - { level: 3, best_time: 132000 }
+        - { level: 4, best_time: 126000 }
+        - { level: 5, best_time: 123000 }
+        - { level: 6, best_time: 120000 }
+        - { level: 7, best_time: 117000 }
+        - { level: 8, best_time: 114300 }
+        - { level: 9, best_time: 111700 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 104700 }
+        - { level: 12, best_time: 100300 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 169
+      levels:
+        - { level: 1, best_time: 153000 }
+        - { level: 2, best_time: 148300 }
+        - { level: 3, best_time: 143700 }
+        - { level: 4, best_time: 139000 }
+        - { level: 5, best_time: 135300 }
+        - { level: 6, best_time: 131700 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 125300 }
+        - { level: 9, best_time: 122700 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 117300 }
+        - { level: 12, best_time: 114700 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 174
+      levels:
+        - { level: 1, best_time: 166000 }
+        - { level: 2, best_time: 161300 }
+        - { level: 3, best_time: 156700 }
+        - { level: 4, best_time: 152000 }
+        - { level: 5, best_time: 149000 }
+        - { level: 6, best_time: 146000 }
+        - { level: 7, best_time: 143000 }
+        - { level: 8, best_time: 140700 }
+        - { level: 9, best_time: 138300 }
+        - { level: 10, best_time: 136000 }
+        - { level: 11, best_time: 132700 }
+        - { level: 12, best_time: 129300 }
+        - { level: 13, best_time: 126000 }
+    - map_id: 177
+      levels:
+        - { level: 1, best_time: 148000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 140000 }
+        - { level: 4, best_time: 136000 }
+        - { level: 5, best_time: 133000 }
+        - { level: 6, best_time: 130000 }
+        - { level: 7, best_time: 127000 }
+        - { level: 8, best_time: 125000 }
+        - { level: 9, best_time: 123000 }
+        - { level: 10, best_time: 121000 }
+        - { level: 11, best_time: 118000 }
+        - { level: 12, best_time: 115000 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 178
+      levels:
+        - { level: 1, best_time: 153000 }
+        - { level: 2, best_time: 149000 }
+        - { level: 3, best_time: 145000 }
+        - { level: 4, best_time: 141000 }
+        - { level: 5, best_time: 137700 }
+        - { level: 6, best_time: 134300 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 128300 }
+        - { level: 9, best_time: 125700 }
+        - { level: 10, best_time: 123000 }
+        - { level: 11, best_time: 119700 }
+        - { level: 12, best_time: 116300 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 179
+      levels:
+        - { level: 1, best_time: 151000 }
+        - { level: 2, best_time: 146700 }
+        - { level: 3, best_time: 142300 }
+        - { level: 4, best_time: 138000 }
+        - { level: 5, best_time: 135300 }
+        - { level: 6, best_time: 132700 }
+        - { level: 7, best_time: 130000 }
+        - { level: 8, best_time: 127700 }
+        - { level: 9, best_time: 125300 }
+        - { level: 10, best_time: 123000 }
+        - { level: 11, best_time: 119300 }
+        - { level: 12, best_time: 115700 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 182
+      levels:
+        - { level: 1, best_time: 178000 }
+        - { level: 2, best_time: 173000 }
+        - { level: 3, best_time: 168000 }
+        - { level: 4, best_time: 163000 }
+        - { level: 5, best_time: 159300 }
+        - { level: 6, best_time: 155700 }
+        - { level: 7, best_time: 152000 }
+        - { level: 8, best_time: 149000 }
+        - { level: 9, best_time: 146000 }
+        - { level: 10, best_time: 143000 }
+        - { level: 11, best_time: 139700 }
+        - { level: 12, best_time: 136300 }
+        - { level: 13, best_time: 133000 }
+    - map_id: 183
+      levels:
+        - { level: 1, best_time: 163000 }
+        - { level: 2, best_time: 158300 }
+        - { level: 3, best_time: 153700 }
+        - { level: 4, best_time: 149000 }
+        - { level: 5, best_time: 146000 }
+        - { level: 6, best_time: 143000 }
+        - { level: 7, best_time: 140000 }
+        - { level: 8, best_time: 138000 }
+        - { level: 9, best_time: 136000 }
+        - { level: 10, best_time: 134000 }
+        - { level: 11, best_time: 130700 }
+        - { level: 12, best_time: 127300 }
+        - { level: 13, best_time: 124000 }
+    - map_id: 186
+      levels:
+        - { level: 1, best_time: 155000 }
+        - { level: 2, best_time: 150700 }
+        - { level: 3, best_time: 146300 }
+        - { level: 4, best_time: 142000 }
+        - { level: 5, best_time: 139300 }
+        - { level: 6, best_time: 136700 }
+        - { level: 7, best_time: 134000 }
+        - { level: 8, best_time: 132000 }
+        - { level: 9, best_time: 130000 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 126000 }
+        - { level: 12, best_time: 124000 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 188
+      levels:
+        - { level: 1, best_time: 149000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 139000 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 130300 }
+        - { level: 6, best_time: 126700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120700 }
+        - { level: 9, best_time: 118300 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 112300 }
+        - { level: 12, best_time: 108700 }
+        - { level: 13, best_time: 105000 }
+    - map_id: 193
+      levels:
+        - { level: 1, best_time: 171000 }
+        - { level: 2, best_time: 164700 }
+        - { level: 3, best_time: 158300 }
+        - { level: 4, best_time: 152000 }
+        - { level: 5, best_time: 148000 }
+        - { level: 6, best_time: 144000 }
+        - { level: 7, best_time: 140000 }
+        - { level: 8, best_time: 136300 }
+        - { level: 9, best_time: 132700 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 124000 }
+        - { level: 12, best_time: 119000 }
+        - { level: 13, best_time: 114000 }
+    - map_id: 195
+      levels:
+        - { level: 1, best_time: 162000 }
+        - { level: 2, best_time: 155700 }
+        - { level: 3, best_time: 149300 }
+        - { level: 4, best_time: 143000 }
+        - { level: 5, best_time: 138300 }
+        - { level: 6, best_time: 133700 }
+        - { level: 7, best_time: 129000 }
+        - { level: 8, best_time: 125300 }
+        - { level: 9, best_time: 121700 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 113300 }
+        - { level: 12, best_time: 108700 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 211
+      levels:
+        - { level: 1, best_time: 128000 }
+        - { level: 2, best_time: 124700 }
+        - { level: 3, best_time: 121300 }
+        - { level: 4, best_time: 118000 }
+        - { level: 5, best_time: 116000 }
+        - { level: 6, best_time: 114000 }
+        - { level: 7, best_time: 112000 }
+        - { level: 8, best_time: 110000 }
+        - { level: 9, best_time: 108000 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 103000 }
+        - { level: 12, best_time: 100000 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 217
+      levels:
+        - { level: 1, best_time: 191000 }
+        - { level: 2, best_time: 185300 }
+        - { level: 3, best_time: 179700 }
+        - { level: 4, best_time: 174000 }
+        - { level: 5, best_time: 169700 }
+        - { level: 6, best_time: 165300 }
+        - { level: 7, best_time: 161000 }
+        - { level: 8, best_time: 157300 }
+        - { level: 9, best_time: 153700 }
+        - { level: 10, best_time: 150000 }
+        - { level: 11, best_time: 146000 }
+        - { level: 12, best_time: 142000 }
+        - { level: 13, best_time: 138000 }
+    - map_id: 232
+      levels:
+        - { level: 1, best_time: 174000 }
+        - { level: 2, best_time: 168700 }
+        - { level: 3, best_time: 163300 }
+        - { level: 4, best_time: 158000 }
+        - { level: 5, best_time: 154700 }
+        - { level: 6, best_time: 151300 }
+        - { level: 7, best_time: 148000 }
+        - { level: 8, best_time: 145000 }
+        - { level: 9, best_time: 142000 }
+        - { level: 10, best_time: 139000 }
+        - { level: 11, best_time: 134700 }
+        - { level: 12, best_time: 130300 }
+        - { level: 13, best_time: 126000 }
+    - map_id: 237
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 137700 }
+        - { level: 3, best_time: 133300 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 126300 }
+        - { level: 6, best_time: 123700 }
+        - { level: 7, best_time: 121000 }
+        - { level: 8, best_time: 118700 }
+        - { level: 9, best_time: 116300 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 110700 }
+        - { level: 12, best_time: 107300 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 243
+      levels:
+        - { level: 1, best_time: 196000 }
+        - { level: 2, best_time: 192300 }
+        - { level: 3, best_time: 188700 }
+        - { level: 4, best_time: 185000 }
+        - { level: 5, best_time: 181700 }
+        - { level: 6, best_time: 178300 }
+        - { level: 7, best_time: 175000 }
+        - { level: 8, best_time: 172300 }
+        - { level: 9, best_time: 169700 }
+        - { level: 10, best_time: 167000 }
+        - { level: 11, best_time: 163300 }
+        - { level: 12, best_time: 159700 }
+        - { level: 13, best_time: 156000 }
+    - map_id: 253
+      levels:
+        - { level: 1, best_time: 134000 }
+        - { level: 2, best_time: 129700 }
+        - { level: 3, best_time: 125300 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 118000 }
+        - { level: 6, best_time: 115000 }
+        - { level: 7, best_time: 112000 }
+        - { level: 8, best_time: 109000 }
+        - { level: 9, best_time: 106000 }
+        - { level: 10, best_time: 103000 }
+        - { level: 11, best_time: 100000 }
+        - { level: 12, best_time: 97000 }
+        - { level: 13, best_time: 94000 }
+    - map_id: 255
+      levels:
+        - { level: 1, best_time: 131000 }
+        - { level: 2, best_time: 126300 }
+        - { level: 3, best_time: 121700 }
+        - { level: 4, best_time: 117000 }
+        - { level: 5, best_time: 114000 }
+        - { level: 6, best_time: 111000 }
+        - { level: 7, best_time: 108000 }
+        - { level: 8, best_time: 105000 }
+        - { level: 9, best_time: 102000 }
+        - { level: 10, best_time: 99000 }
+        - { level: 11, best_time: 95700 }
+        - { level: 12, best_time: 92300 }
+        - { level: 13, best_time: 89000 }
+    - map_id: 268
+      levels:
+        - { level: 1, best_time: 150000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 138000 }
+        - { level: 4, best_time: 132000 }
+        - { level: 5, best_time: 128000 }
+        - { level: 6, best_time: 124000 }
+        - { level: 7, best_time: 120000 }
+        - { level: 8, best_time: 117000 }
+        - { level: 9, best_time: 114000 }
+        - { level: 10, best_time: 111000 }
+        - { level: 11, best_time: 108000 }
+        - { level: 12, best_time: 105000 }
+        - { level: 13, best_time: 102000 }
+    - map_id: 273
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 132000 }
+        - { level: 3, best_time: 128000 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 120700 }
+        - { level: 6, best_time: 117300 }
+        - { level: 7, best_time: 114000 }
+        - { level: 8, best_time: 111700 }
+        - { level: 9, best_time: 109300 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 104300 }
+        - { level: 12, best_time: 101700 }
+        - { level: 13, best_time: 99000 }
+    - map_id: 274
+      levels:
+        - { level: 1, best_time: 131000 }
+        - { level: 2, best_time: 127300 }
+        - { level: 3, best_time: 123700 }
+        - { level: 4, best_time: 120000 }
+        - { level: 5, best_time: 117000 }
+        - { level: 6, best_time: 114000 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 108700 }
+        - { level: 9, best_time: 106300 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 101000 }
+        - { level: 12, best_time: 98000 }
+        - { level: 13, best_time: 95000 }
+    - map_id: 330
+      levels:
+        - { level: 1, best_time: 161000 }
+        - { level: 2, best_time: 156000 }
+        - { level: 3, best_time: 151000 }
+        - { level: 4, best_time: 146000 }
+        - { level: 5, best_time: 142700 }
+        - { level: 6, best_time: 139300 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 133300 }
+        - { level: 9, best_time: 130700 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 124300 }
+        - { level: 12, best_time: 120700 }
+        - { level: 13, best_time: 117000 }
+    - map_id: 334
+      levels:
+        - { level: 1, best_time: 152000 }
+        - { level: 2, best_time: 148300 }
+        - { level: 3, best_time: 144700 }
+        - { level: 4, best_time: 141000 }
+        - { level: 5, best_time: 138000 }
+        - { level: 6, best_time: 135000 }
+        - { level: 7, best_time: 132000 }
+        - { level: 8, best_time: 129700 }
+        - { level: 9, best_time: 127300 }
+        - { level: 10, best_time: 125000 }
+        - { level: 11, best_time: 121700 }
+        - { level: 12, best_time: 118300 }
+        - { level: 13, best_time: 115000 }
+    - map_id: 347
+      levels:
+        - { level: 1, best_time: 104000 }
+        - { level: 2, best_time: 101000 }
+        - { level: 3, best_time: 98000 }
+        - { level: 4, best_time: 95000 }
+        - { level: 5, best_time: 93000 }
+        - { level: 6, best_time: 91000 }
+        - { level: 7, best_time: 89000 }
+        - { level: 8, best_time: 87300 }
+        - { level: 9, best_time: 85700 }
+        - { level: 10, best_time: 84000 }
+        - { level: 11, best_time: 81000 }
+        - { level: 12, best_time: 78000 }
+        - { level: 13, best_time: 75000 }
+    - map_id: 350
+      levels:
+        - { level: 1, best_time: 123000 }
+        - { level: 2, best_time: 119000 }
+        - { level: 3, best_time: 115000 }
+        - { level: 4, best_time: 111000 }
+        - { level: 5, best_time: 108300 }
+        - { level: 6, best_time: 105700 }
+        - { level: 7, best_time: 103000 }
+        - { level: 8, best_time: 100700 }
+        - { level: 9, best_time: 98300 }
+        - { level: 10, best_time: 96000 }
+        - { level: 11, best_time: 90700 }
+        - { level: 12, best_time: 85300 }
+        - { level: 13, best_time: 80000 }
+    - map_id: 352
+      levels:
+        - { level: 1, best_time: 140000 }
+        - { level: 2, best_time: 135700 }
+        - { level: 3, best_time: 131300 }
+        - { level: 4, best_time: 127000 }
+        - { level: 5, best_time: 124000 }
+        - { level: 6, best_time: 121000 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 115000 }
+        - { level: 9, best_time: 112000 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 103700 }
+        - { level: 12, best_time: 98300 }
+        - { level: 13, best_time: 93000 }
+    - map_id: 353
+      levels:
+        - { level: 1, best_time: 146000 }
+        - { level: 2, best_time: 141300 }
+        - { level: 3, best_time: 136700 }
+        - { level: 4, best_time: 132000 }
+        - { level: 5, best_time: 129000 }
+        - { level: 6, best_time: 126000 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120700 }
+        - { level: 9, best_time: 118300 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 113000 }
+        - { level: 12, best_time: 110000 }
+        - { level: 13, best_time: 107000 }
+    - map_id: 361
+      levels:
+        - { level: 1, best_time: 140000 }
+        - { level: 2, best_time: 136000 }
+        - { level: 3, best_time: 132000 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 124700 }
+        - { level: 6, best_time: 121300 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 115000 }
+        - { level: 9, best_time: 112000 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 102700 }
+        - { level: 12, best_time: 96300 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 420
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 143700 }
+        - { level: 3, best_time: 140300 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 135000 }
+        - { level: 6, best_time: 133000 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 129000 }
+        - { level: 9, best_time: 127000 }
+        - { level: 10, best_time: 125000 }
+        - { level: 11, best_time: 119300 }
+        - { level: 12, best_time: 113700 }
+        - { level: 13, best_time: 108000 }
+    - map_id: 458
+      levels:
+        - { level: 1, best_time: 135000 }
+        - { level: 2, best_time: 129700 }
+        - { level: 3, best_time: 124300 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 115700 }
+        - { level: 6, best_time: 112300 }
+        - { level: 7, best_time: 109000 }
+        - { level: 8, best_time: 106700 }
+        - { level: 9, best_time: 104300 }
+        - { level: 10, best_time: 102000 }
+        - { level: 11, best_time: 100300 }
+        - { level: 12, best_time: 98700 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 462
+      levels:
+        - { level: 1, best_time: 154000 }
+        - { level: 2, best_time: 147300 }
+        - { level: 3, best_time: 140700 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 130700 }
+        - { level: 6, best_time: 127300 }
+        - { level: 7, best_time: 124000 }
+        - { level: 8, best_time: 121300 }
+        - { level: 9, best_time: 118700 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 114700 }
+        - { level: 12, best_time: 113300 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 467
+      levels:
+        - { level: 1, best_time: 154000 }
+        - { level: 2, best_time: 150000 }
+        - { level: 3, best_time: 146000 }
+        - { level: 4, best_time: 142000 }
+        - { level: 5, best_time: 139300 }
+        - { level: 6, best_time: 136700 }
+        - { level: 7, best_time: 134000 }
+        - { level: 8, best_time: 132000 }
+        - { level: 9, best_time: 130000 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 126000 }
+        - { level: 12, best_time: 124000 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 105
+      levels:
+        - { level: 1, best_time: 127000 }
+        - { level: 2, best_time: 123700 }
+        - { level: 3, best_time: 120300 }
+        - { level: 4, best_time: 117000 }
+        - { level: 5, best_time: 115000 }
+        - { level: 6, best_time: 113000 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 108700 }
+        - { level: 9, best_time: 106300 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 99700 }
+        - { level: 12, best_time: 95300 }
+        - { level: 13, best_time: 91000 }
+    - map_id: 120
+      levels:
+        - { level: 1, best_time: 156000 }
+        - { level: 2, best_time: 152700 }
+        - { level: 3, best_time: 149300 }
+        - { level: 4, best_time: 146000 }
+        - { level: 5, best_time: 143300 }
+        - { level: 6, best_time: 140700 }
+        - { level: 7, best_time: 138000 }
+        - { level: 8, best_time: 135300 }
+        - { level: 9, best_time: 132700 }
+        - { level: 10, best_time: 130000 }
+        - { level: 11, best_time: 126000 }
+        - { level: 12, best_time: 122000 }
+        - { level: 13, best_time: 118000 }
+    - map_id: 121
+      levels:
+        - { level: 1, best_time: 131000 }
+        - { level: 2, best_time: 127000 }
+        - { level: 3, best_time: 123000 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 115700 }
+        - { level: 6, best_time: 112300 }
+        - { level: 7, best_time: 109000 }
+        - { level: 8, best_time: 105000 }
+        - { level: 9, best_time: 101000 }
+        - { level: 10, best_time: 97000 }
+        - { level: 11, best_time: 92700 }
+        - { level: 12, best_time: 88300 }
+        - { level: 13, best_time: 84000 }
+    - map_id: 131
+      levels:
+        - { level: 1, best_time: 166000 }
+        - { level: 2, best_time: 160300 }
+        - { level: 3, best_time: 154700 }
+        - { level: 4, best_time: 149000 }
+        - { level: 5, best_time: 143000 }
+        - { level: 6, best_time: 137000 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 122700 }
+        - { level: 9, best_time: 114300 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 101300 }
+        - { level: 12, best_time: 96700 }
+        - { level: 13, best_time: 92000 }
+    - map_id: 136
+      levels:
+        - { level: 1, best_time: 155000 }
+        - { level: 2, best_time: 151300 }
+        - { level: 3, best_time: 147700 }
+        - { level: 4, best_time: 144000 }
+        - { level: 5, best_time: 141300 }
+        - { level: 6, best_time: 138700 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 133000 }
+        - { level: 9, best_time: 130000 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 119300 }
+        - { level: 12, best_time: 111700 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 137
+      levels:
+        - { level: 1, best_time: 189000 }
+        - { level: 2, best_time: 183300 }
+        - { level: 3, best_time: 177700 }
+        - { level: 4, best_time: 172000 }
+        - { level: 5, best_time: 167300 }
+        - { level: 6, best_time: 162700 }
+        - { level: 7, best_time: 158000 }
+        - { level: 8, best_time: 152000 }
+        - { level: 9, best_time: 146000 }
+        - { level: 10, best_time: 140000 }
+        - { level: 11, best_time: 136300 }
+        - { level: 12, best_time: 132700 }
+        - { level: 13, best_time: 129000 }
+    - map_id: 140
+      levels:
+        - { level: 1, best_time: 162000 }
+        - { level: 2, best_time: 158000 }
+        - { level: 3, best_time: 154000 }
+        - { level: 4, best_time: 150000 }
+        - { level: 5, best_time: 146300 }
+        - { level: 6, best_time: 142700 }
+        - { level: 7, best_time: 139000 }
+        - { level: 8, best_time: 134700 }
+        - { level: 9, best_time: 130300 }
+        - { level: 10, best_time: 126000 }
+        - { level: 11, best_time: 120700 }
+        - { level: 12, best_time: 115300 }
+        - { level: 13, best_time: 110000 }
+    - map_id: 142
+      levels:
+        - { level: 1, best_time: 129000 }
+        - { level: 2, best_time: 123700 }
+        - { level: 3, best_time: 118300 }
+        - { level: 4, best_time: 113000 }
+        - { level: 5, best_time: 109700 }
+        - { level: 6, best_time: 106300 }
+        - { level: 7, best_time: 103000 }
+        - { level: 8, best_time: 99700 }
+        - { level: 9, best_time: 96300 }
+        - { level: 10, best_time: 93000 }
+        - { level: 11, best_time: 88000 }
+        - { level: 12, best_time: 83000 }
+        - { level: 13, best_time: 78000 }
+    - map_id: 148
+      levels:
+        - { level: 1, best_time: 139000 }
+        - { level: 2, best_time: 132000 }
+        - { level: 3, best_time: 125000 }
+        - { level: 4, best_time: 118000 }
+        - { level: 5, best_time: 115300 }
+        - { level: 6, best_time: 112700 }
+        - { level: 7, best_time: 110000 }
+        - { level: 8, best_time: 107700 }
+        - { level: 9, best_time: 105300 }
+        - { level: 10, best_time: 103000 }
+        - { level: 11, best_time: 98700 }
+        - { level: 12, best_time: 94300 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 151
+      levels:
+        - { level: 1, best_time: 125000 }
+        - { level: 2, best_time: 121700 }
+        - { level: 3, best_time: 118300 }
+        - { level: 4, best_time: 115000 }
+        - { level: 5, best_time: 113000 }
+        - { level: 6, best_time: 111000 }
+        - { level: 7, best_time: 109000 }
+        - { level: 8, best_time: 107300 }
+        - { level: 9, best_time: 105700 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 101300 }
+        - { level: 12, best_time: 98700 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 161
+      levels:
+        - { level: 1, best_time: 143000 }
+        - { level: 2, best_time: 139000 }
+        - { level: 3, best_time: 135000 }
+        - { level: 4, best_time: 131000 }
+        - { level: 5, best_time: 128000 }
+        - { level: 6, best_time: 125000 }
+        - { level: 7, best_time: 122000 }
+        - { level: 8, best_time: 119700 }
+        - { level: 9, best_time: 117300 }
+        - { level: 10, best_time: 115000 }
+        - { level: 11, best_time: 111700 }
+        - { level: 12, best_time: 108300 }
+        - { level: 13, best_time: 105000 }
+    - map_id: 163
+      levels:
+        - { level: 1, best_time: 178000 }
+        - { level: 2, best_time: 174700 }
+        - { level: 3, best_time: 171300 }
+        - { level: 4, best_time: 168000 }
+        - { level: 5, best_time: 165300 }
+        - { level: 6, best_time: 162700 }
+        - { level: 7, best_time: 160000 }
+        - { level: 8, best_time: 158000 }
+        - { level: 9, best_time: 156000 }
+        - { level: 10, best_time: 154000 }
+        - { level: 11, best_time: 150300 }
+        - { level: 12, best_time: 146700 }
+        - { level: 13, best_time: 143000 }
+    - map_id: 164
+      levels:
+        - { level: 1, best_time: 138000 }
+        - { level: 2, best_time: 133700 }
+        - { level: 3, best_time: 129300 }
+        - { level: 4, best_time: 125000 }
+        - { level: 5, best_time: 123000 }
+        - { level: 6, best_time: 121000 }
+        - { level: 7, best_time: 119000 }
+        - { level: 8, best_time: 117000 }
+        - { level: 9, best_time: 115000 }
+        - { level: 10, best_time: 113000 }
+        - { level: 11, best_time: 111000 }
+        - { level: 12, best_time: 109000 }
+        - { level: 13, best_time: 107000 }
+    - map_id: 165
+      levels:
+        - { level: 1, best_time: 134000 }
+        - { level: 2, best_time: 131300 }
+        - { level: 3, best_time: 128700 }
+        - { level: 4, best_time: 126000 }
+        - { level: 5, best_time: 123700 }
+        - { level: 6, best_time: 121300 }
+        - { level: 7, best_time: 119000 }
+        - { level: 8, best_time: 117000 }
+        - { level: 9, best_time: 115000 }
+        - { level: 10, best_time: 113000 }
+        - { level: 11, best_time: 110700 }
+        - { level: 12, best_time: 108300 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 168
+      levels:
+        - { level: 1, best_time: 195000 }
+        - { level: 2, best_time: 189700 }
+        - { level: 3, best_time: 184300 }
+        - { level: 4, best_time: 179000 }
+        - { level: 5, best_time: 175700 }
+        - { level: 6, best_time: 172300 }
+        - { level: 7, best_time: 169000 }
+        - { level: 8, best_time: 165300 }
+        - { level: 9, best_time: 161700 }
+        - { level: 10, best_time: 158000 }
+        - { level: 11, best_time: 152700 }
+        - { level: 12, best_time: 147300 }
+        - { level: 13, best_time: 142000 }
+    - map_id: 170
+      levels:
+        - { level: 1, best_time: 127000 }
+        - { level: 2, best_time: 124000 }
+        - { level: 3, best_time: 121000 }
+        - { level: 4, best_time: 118000 }
+        - { level: 5, best_time: 116000 }
+        - { level: 6, best_time: 114000 }
+        - { level: 7, best_time: 112000 }
+        - { level: 8, best_time: 110300 }
+        - { level: 9, best_time: 108700 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 104300 }
+        - { level: 12, best_time: 101700 }
+        - { level: 13, best_time: 99000 }
+    - map_id: 171
+      levels:
+        - { level: 1, best_time: 150000 }
+        - { level: 2, best_time: 146700 }
+        - { level: 3, best_time: 143300 }
+        - { level: 4, best_time: 140000 }
+        - { level: 5, best_time: 138000 }
+        - { level: 6, best_time: 136000 }
+        - { level: 7, best_time: 134000 }
+        - { level: 8, best_time: 132000 }
+        - { level: 9, best_time: 130000 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 125000 }
+        - { level: 12, best_time: 122000 }
+        - { level: 13, best_time: 119000 }
+    - map_id: 173
+      levels:
+        - { level: 1, best_time: 123000 }
+        - { level: 2, best_time: 119300 }
+        - { level: 3, best_time: 115700 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 109700 }
+        - { level: 6, best_time: 107300 }
+        - { level: 7, best_time: 105000 }
+        - { level: 8, best_time: 103300 }
+        - { level: 9, best_time: 101700 }
+        - { level: 10, best_time: 100000 }
+        - { level: 11, best_time: 97300 }
+        - { level: 12, best_time: 94700 }
+        - { level: 13, best_time: 92000 }
+    - map_id: 175
+      levels:
+        - { level: 1, best_time: 146000 }
+        - { level: 2, best_time: 143000 }
+        - { level: 3, best_time: 140000 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 135000 }
+        - { level: 6, best_time: 133000 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 129000 }
+        - { level: 9, best_time: 127000 }
+        - { level: 10, best_time: 125000 }
+        - { level: 11, best_time: 120300 }
+        - { level: 12, best_time: 115700 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 176
+      levels:
+        - { level: 1, best_time: 135000 }
+        - { level: 2, best_time: 131300 }
+        - { level: 3, best_time: 127700 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 121300 }
+        - { level: 6, best_time: 118700 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 113700 }
+        - { level: 9, best_time: 111300 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 106000 }
+        - { level: 12, best_time: 103000 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 184
+      levels:
+        - { level: 1, best_time: 160000 }
+        - { level: 2, best_time: 156300 }
+        - { level: 3, best_time: 152700 }
+        - { level: 4, best_time: 149000 }
+        - { level: 5, best_time: 146300 }
+        - { level: 6, best_time: 143700 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 138300 }
+        - { level: 9, best_time: 135700 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 129000 }
+        - { level: 12, best_time: 125000 }
+        - { level: 13, best_time: 121000 }
+    - map_id: 187
+      levels:
+        - { level: 1, best_time: 135000 }
+        - { level: 2, best_time: 130000 }
+        - { level: 3, best_time: 125000 }
+        - { level: 4, best_time: 120000 }
+        - { level: 5, best_time: 117000 }
+        - { level: 6, best_time: 114000 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 108300 }
+        - { level: 9, best_time: 105700 }
+        - { level: 10, best_time: 103000 }
+        - { level: 11, best_time: 99300 }
+        - { level: 12, best_time: 95700 }
+        - { level: 13, best_time: 92000 }
+    - map_id: 190
+      levels:
+        - { level: 1, best_time: 120000 }
+        - { level: 2, best_time: 116000 }
+        - { level: 3, best_time: 112000 }
+        - { level: 4, best_time: 108000 }
+        - { level: 5, best_time: 104700 }
+        - { level: 6, best_time: 101300 }
+        - { level: 7, best_time: 98000 }
+        - { level: 8, best_time: 94700 }
+        - { level: 9, best_time: 91300 }
+        - { level: 10, best_time: 88000 }
+        - { level: 11, best_time: 84000 }
+        - { level: 12, best_time: 80000 }
+        - { level: 13, best_time: 76000 }
+    - map_id: 192
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 138300 }
+        - { level: 3, best_time: 134700 }
+        - { level: 4, best_time: 131000 }
+        - { level: 5, best_time: 128300 }
+        - { level: 6, best_time: 125700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120300 }
+        - { level: 9, best_time: 117700 }
+        - { level: 10, best_time: 115000 }
+        - { level: 11, best_time: 110300 }
+        - { level: 12, best_time: 105700 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 196
+      levels:
+        - { level: 1, best_time: 195000 }
+        - { level: 2, best_time: 184300 }
+        - { level: 3, best_time: 173700 }
+        - { level: 4, best_time: 163000 }
+        - { level: 5, best_time: 156300 }
+        - { level: 6, best_time: 149700 }
+        - { level: 7, best_time: 143000 }
+        - { level: 8, best_time: 138000 }
+        - { level: 9, best_time: 133000 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 120700 }
+        - { level: 12, best_time: 113300 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 197
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 137300 }
+        - { level: 3, best_time: 133700 }
+        - { level: 4, best_time: 130000 }
+        - { level: 5, best_time: 127700 }
+        - { level: 6, best_time: 125300 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120000 }
+        - { level: 9, best_time: 117000 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 109300 }
+        - { level: 12, best_time: 104700 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 198
+      levels:
+        - { level: 1, best_time: 138000 }
+        - { level: 2, best_time: 133300 }
+        - { level: 3, best_time: 128700 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 120700 }
+        - { level: 6, best_time: 117300 }
+        - { level: 7, best_time: 114000 }
+        - { level: 8, best_time: 111000 }
+        - { level: 9, best_time: 108000 }
+        - { level: 10, best_time: 105000 }
+        - { level: 11, best_time: 99300 }
+        - { level: 12, best_time: 93700 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 199
+      levels:
+        - { level: 1, best_time: 154000 }
+        - { level: 2, best_time: 148300 }
+        - { level: 3, best_time: 142700 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 134000 }
+        - { level: 6, best_time: 131000 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 124700 }
+        - { level: 9, best_time: 121300 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 110300 }
+        - { level: 12, best_time: 102700 }
+        - { level: 13, best_time: 95000 }
+    - map_id: 200
+      levels:
+        - { level: 1, best_time: 160000 }
+        - { level: 2, best_time: 156000 }
+        - { level: 3, best_time: 152000 }
+        - { level: 4, best_time: 148000 }
+        - { level: 5, best_time: 145700 }
+        - { level: 6, best_time: 143300 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 138300 }
+        - { level: 9, best_time: 135700 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 129000 }
+        - { level: 12, best_time: 125000 }
+        - { level: 13, best_time: 121000 }
+    - map_id: 201
+      levels:
+        - { level: 1, best_time: 153000 }
+        - { level: 2, best_time: 150000 }
+        - { level: 3, best_time: 147000 }
+        - { level: 4, best_time: 144000 }
+        - { level: 5, best_time: 142000 }
+        - { level: 6, best_time: 140000 }
+        - { level: 7, best_time: 138000 }
+        - { level: 8, best_time: 136000 }
+        - { level: 9, best_time: 134000 }
+        - { level: 10, best_time: 132000 }
+        - { level: 11, best_time: 128700 }
+        - { level: 12, best_time: 125300 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 202
+      levels:
+        - { level: 1, best_time: 140000 }
+        - { level: 2, best_time: 136300 }
+        - { level: 3, best_time: 132700 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 125300 }
+        - { level: 6, best_time: 121700 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 113300 }
+        - { level: 9, best_time: 108700 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 101300 }
+        - { level: 12, best_time: 98700 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 203
+      levels:
+        - { level: 1, best_time: 155000 }
+        - { level: 2, best_time: 150000 }
+        - { level: 3, best_time: 145000 }
+        - { level: 4, best_time: 140000 }
+        - { level: 5, best_time: 137000 }
+        - { level: 6, best_time: 134000 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 128000 }
+        - { level: 9, best_time: 125000 }
+        - { level: 10, best_time: 122000 }
+        - { level: 11, best_time: 117700 }
+        - { level: 12, best_time: 113300 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 205
+      levels:
+        - { level: 1, best_time: 180000 }
+        - { level: 2, best_time: 176000 }
+        - { level: 3, best_time: 172000 }
+        - { level: 4, best_time: 168000 }
+        - { level: 5, best_time: 165300 }
+        - { level: 6, best_time: 162700 }
+        - { level: 7, best_time: 160000 }
+        - { level: 8, best_time: 157000 }
+        - { level: 9, best_time: 154000 }
+        - { level: 10, best_time: 151000 }
+        - { level: 11, best_time: 146000 }
+        - { level: 12, best_time: 141000 }
+        - { level: 13, best_time: 136000 }
+    - map_id: 206
+      levels:
+        - { level: 1, best_time: 167000 }
+        - { level: 2, best_time: 159300 }
+        - { level: 3, best_time: 151700 }
+        - { level: 4, best_time: 144000 }
+        - { level: 5, best_time: 139300 }
+        - { level: 6, best_time: 134700 }
+        - { level: 7, best_time: 130000 }
+        - { level: 8, best_time: 125700 }
+        - { level: 9, best_time: 121300 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 112300 }
+        - { level: 12, best_time: 107700 }
+        - { level: 13, best_time: 103000 }
+    - map_id: 207
+      levels:
+        - { level: 1, best_time: 170000 }
+        - { level: 2, best_time: 166000 }
+        - { level: 3, best_time: 162000 }
+        - { level: 4, best_time: 158000 }
+        - { level: 5, best_time: 155000 }
+        - { level: 6, best_time: 152000 }
+        - { level: 7, best_time: 149000 }
+        - { level: 8, best_time: 145300 }
+        - { level: 9, best_time: 141700 }
+        - { level: 10, best_time: 138000 }
+        - { level: 11, best_time: 133300 }
+        - { level: 12, best_time: 128700 }
+        - { level: 13, best_time: 124000 }
+    - map_id: 213
+      levels:
+        - { level: 1, best_time: 163000 }
+        - { level: 2, best_time: 159000 }
+        - { level: 3, best_time: 155000 }
+        - { level: 4, best_time: 151000 }
+        - { level: 5, best_time: 148000 }
+        - { level: 6, best_time: 145000 }
+        - { level: 7, best_time: 142000 }
+        - { level: 8, best_time: 139000 }
+        - { level: 9, best_time: 136000 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 128300 }
+        - { level: 12, best_time: 123700 }
+        - { level: 13, best_time: 119000 }
+    - map_id: 214
+      levels:
+        - { level: 1, best_time: 169000 }
+        - { level: 2, best_time: 164000 }
+        - { level: 3, best_time: 159000 }
+        - { level: 4, best_time: 154000 }
+        - { level: 5, best_time: 150700 }
+        - { level: 6, best_time: 147300 }
+        - { level: 7, best_time: 144000 }
+        - { level: 8, best_time: 141000 }
+        - { level: 9, best_time: 138000 }
+        - { level: 10, best_time: 135000 }
+        - { level: 11, best_time: 130700 }
+        - { level: 12, best_time: 126300 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 215
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 134000 }
+        - { level: 3, best_time: 131000 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 125700 }
+        - { level: 6, best_time: 123300 }
+        - { level: 7, best_time: 121000 }
+        - { level: 8, best_time: 118300 }
+        - { level: 9, best_time: 115700 }
+        - { level: 10, best_time: 113000 }
+        - { level: 11, best_time: 108300 }
+        - { level: 12, best_time: 103700 }
+        - { level: 13, best_time: 99000 }
+    - map_id: 216
+      levels:
+        - { level: 1, best_time: 144000 }
+        - { level: 2, best_time: 140700 }
+        - { level: 3, best_time: 137300 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 131300 }
+        - { level: 6, best_time: 128700 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 123700 }
+        - { level: 9, best_time: 121300 }
+        - { level: 10, best_time: 119000 }
+        - { level: 11, best_time: 115700 }
+        - { level: 12, best_time: 112300 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 218
+      levels:
+        - { level: 1, best_time: 143000 }
+        - { level: 2, best_time: 139700 }
+        - { level: 3, best_time: 136300 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 130700 }
+        - { level: 6, best_time: 128300 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 124000 }
+        - { level: 9, best_time: 122000 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 117000 }
+        - { level: 12, best_time: 114000 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 219
+      levels:
+        - { level: 1, best_time: 134000 }
+        - { level: 2, best_time: 129300 }
+        - { level: 3, best_time: 124700 }
+        - { level: 4, best_time: 120000 }
+        - { level: 5, best_time: 116700 }
+        - { level: 6, best_time: 113300 }
+        - { level: 7, best_time: 110000 }
+        - { level: 8, best_time: 107300 }
+        - { level: 9, best_time: 104700 }
+        - { level: 10, best_time: 102000 }
+        - { level: 11, best_time: 97300 }
+        - { level: 12, best_time: 92700 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 220
+      levels:
+        - { level: 1, best_time: 173000 }
+        - { level: 2, best_time: 167700 }
+        - { level: 3, best_time: 162300 }
+        - { level: 4, best_time: 157000 }
+        - { level: 5, best_time: 153300 }
+        - { level: 6, best_time: 149700 }
+        - { level: 7, best_time: 146000 }
+        - { level: 8, best_time: 143000 }
+        - { level: 9, best_time: 140000 }
+        - { level: 10, best_time: 137000 }
+        - { level: 11, best_time: 133300 }
+        - { level: 12, best_time: 129700 }
+        - { level: 13, best_time: 126000 }
+    - map_id: 221
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 138000 }
+        - { level: 3, best_time: 135000 }
+        - { level: 4, best_time: 132000 }
+        - { level: 5, best_time: 129700 }
+        - { level: 6, best_time: 127300 }
+        - { level: 7, best_time: 125000 }
+        - { level: 8, best_time: 122700 }
+        - { level: 9, best_time: 120300 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 115000 }
+        - { level: 12, best_time: 112000 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 224
+      levels:
+        - { level: 1, best_time: 162000 }
+        - { level: 2, best_time: 158300 }
+        - { level: 3, best_time: 154700 }
+        - { level: 4, best_time: 151000 }
+        - { level: 5, best_time: 147700 }
+        - { level: 6, best_time: 144300 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 137000 }
+        - { level: 9, best_time: 133000 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 123700 }
+        - { level: 12, best_time: 118300 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 225
+      levels:
+        - { level: 1, best_time: 148000 }
+        - { level: 2, best_time: 143300 }
+        - { level: 3, best_time: 138700 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 130000 }
+        - { level: 6, best_time: 126000 }
+        - { level: 7, best_time: 122000 }
+        - { level: 8, best_time: 118300 }
+        - { level: 9, best_time: 114700 }
+        - { level: 10, best_time: 111000 }
+        - { level: 11, best_time: 107700 }
+        - { level: 12, best_time: 104300 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 226
+      levels:
+        - { level: 1, best_time: 160000 }
+        - { level: 2, best_time: 155000 }
+        - { level: 3, best_time: 150000 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 141300 }
+        - { level: 6, best_time: 137700 }
+        - { level: 7, best_time: 134000 }
+        - { level: 8, best_time: 130700 }
+        - { level: 9, best_time: 127300 }
+        - { level: 10, best_time: 124000 }
+        - { level: 11, best_time: 120000 }
+        - { level: 12, best_time: 116000 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 227
+      levels:
+        - { level: 1, best_time: 163000 }
+        - { level: 2, best_time: 156700 }
+        - { level: 3, best_time: 150300 }
+        - { level: 4, best_time: 144000 }
+        - { level: 5, best_time: 136300 }
+        - { level: 6, best_time: 128700 }
+        - { level: 7, best_time: 121000 }
+        - { level: 8, best_time: 116300 }
+        - { level: 9, best_time: 111700 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 103300 }
+        - { level: 12, best_time: 99700 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 228
+      levels:
+        - { level: 1, best_time: 171000 }
+        - { level: 2, best_time: 167700 }
+        - { level: 3, best_time: 164300 }
+        - { level: 4, best_time: 161000 }
+        - { level: 5, best_time: 158700 }
+        - { level: 6, best_time: 156300 }
+        - { level: 7, best_time: 154000 }
+        - { level: 8, best_time: 152000 }
+        - { level: 9, best_time: 150000 }
+        - { level: 10, best_time: 148000 }
+        - { level: 11, best_time: 144000 }
+        - { level: 12, best_time: 140000 }
+        - { level: 13, best_time: 136000 }
+    - map_id: 229
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 158300 }
+        - { level: 3, best_time: 152700 }
+        - { level: 4, best_time: 147000 }
+        - { level: 5, best_time: 143000 }
+        - { level: 6, best_time: 139000 }
+        - { level: 7, best_time: 135000 }
+        - { level: 8, best_time: 131000 }
+        - { level: 9, best_time: 127000 }
+        - { level: 10, best_time: 123000 }
+        - { level: 11, best_time: 119700 }
+        - { level: 12, best_time: 116300 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 230
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 139000 }
+        - { level: 3, best_time: 136000 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 130700 }
+        - { level: 6, best_time: 128300 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 123700 }
+        - { level: 9, best_time: 121300 }
+        - { level: 10, best_time: 119000 }
+        - { level: 11, best_time: 114700 }
+        - { level: 12, best_time: 110300 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 233
+      levels:
+        - { level: 1, best_time: 169000 }
+        - { level: 2, best_time: 163700 }
+        - { level: 3, best_time: 158300 }
+        - { level: 4, best_time: 153000 }
+        - { level: 5, best_time: 148300 }
+        - { level: 6, best_time: 143700 }
+        - { level: 7, best_time: 139000 }
+        - { level: 8, best_time: 136000 }
+        - { level: 9, best_time: 133000 }
+        - { level: 10, best_time: 130000 }
+        - { level: 11, best_time: 126700 }
+        - { level: 12, best_time: 123300 }
+        - { level: 13, best_time: 120000 }
+    - map_id: 234
+      levels:
+        - { level: 1, best_time: 153000 }
+        - { level: 2, best_time: 148300 }
+        - { level: 3, best_time: 143700 }
+        - { level: 4, best_time: 139000 }
+        - { level: 5, best_time: 135000 }
+        - { level: 6, best_time: 131000 }
+        - { level: 7, best_time: 127000 }
+        - { level: 8, best_time: 124000 }
+        - { level: 9, best_time: 121000 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 114700 }
+        - { level: 12, best_time: 111300 }
+        - { level: 13, best_time: 108000 }
+    - map_id: 235
+      levels:
+        - { level: 1, best_time: 134000 }
+        - { level: 2, best_time: 129700 }
+        - { level: 3, best_time: 125300 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 118300 }
+        - { level: 6, best_time: 115700 }
+        - { level: 7, best_time: 113000 }
+        - { level: 8, best_time: 110300 }
+        - { level: 9, best_time: 107700 }
+        - { level: 10, best_time: 105000 }
+        - { level: 11, best_time: 102300 }
+        - { level: 12, best_time: 99700 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 238
+      levels:
+        - { level: 1, best_time: 108000 }
+        - { level: 2, best_time: 105700 }
+        - { level: 3, best_time: 103300 }
+        - { level: 4, best_time: 101000 }
+        - { level: 5, best_time: 99000 }
+        - { level: 6, best_time: 97000 }
+        - { level: 7, best_time: 95000 }
+        - { level: 8, best_time: 92300 }
+        - { level: 9, best_time: 89700 }
+        - { level: 10, best_time: 87000 }
+        - { level: 11, best_time: 83700 }
+        - { level: 12, best_time: 80300 }
+        - { level: 13, best_time: 77000 }
+    - map_id: 240
+      levels:
+        - { level: 1, best_time: 126000 }
+        - { level: 2, best_time: 122300 }
+        - { level: 3, best_time: 118700 }
+        - { level: 4, best_time: 115000 }
+        - { level: 5, best_time: 112000 }
+        - { level: 6, best_time: 109000 }
+        - { level: 7, best_time: 106000 }
+        - { level: 8, best_time: 103700 }
+        - { level: 9, best_time: 101300 }
+        - { level: 10, best_time: 99000 }
+        - { level: 11, best_time: 96300 }
+        - { level: 12, best_time: 93700 }
+        - { level: 13, best_time: 91000 }
+    - map_id: 244
+      levels:
+        - { level: 1, best_time: 138000 }
+        - { level: 2, best_time: 135000 }
+        - { level: 3, best_time: 132000 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 127000 }
+        - { level: 6, best_time: 125000 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 121000 }
+        - { level: 9, best_time: 119000 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 113700 }
+        - { level: 12, best_time: 110300 }
+        - { level: 13, best_time: 107000 }
+    - map_id: 245
+      levels:
+        - { level: 1, best_time: 167000 }
+        - { level: 2, best_time: 162000 }
+        - { level: 3, best_time: 157000 }
+        - { level: 4, best_time: 152000 }
+        - { level: 5, best_time: 148700 }
+        - { level: 6, best_time: 145300 }
+        - { level: 7, best_time: 142000 }
+        - { level: 8, best_time: 139300 }
+        - { level: 9, best_time: 136700 }
+        - { level: 10, best_time: 134000 }
+        - { level: 11, best_time: 131000 }
+        - { level: 12, best_time: 128000 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 246
+      levels:
+        - { level: 1, best_time: 128000 }
+        - { level: 2, best_time: 124700 }
+        - { level: 3, best_time: 121300 }
+        - { level: 4, best_time: 118000 }
+        - { level: 5, best_time: 115700 }
+        - { level: 6, best_time: 113300 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 108700 }
+        - { level: 9, best_time: 106300 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 100700 }
+        - { level: 12, best_time: 97300 }
+        - { level: 13, best_time: 94000 }
+    - map_id: 250
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 134300 }
+        - { level: 3, best_time: 131700 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 126700 }
+        - { level: 6, best_time: 124300 }
+        - { level: 7, best_time: 122000 }
+        - { level: 8, best_time: 120000 }
+        - { level: 9, best_time: 118000 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 112700 }
+        - { level: 12, best_time: 109300 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 251
+      levels:
+        - { level: 1, best_time: 132000 }
+        - { level: 2, best_time: 128700 }
+        - { level: 3, best_time: 125300 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 119700 }
+        - { level: 6, best_time: 117300 }
+        - { level: 7, best_time: 115000 }
+        - { level: 8, best_time: 113000 }
+        - { level: 9, best_time: 111000 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 106000 }
+        - { level: 12, best_time: 103000 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 256
+      levels:
+        - { level: 1, best_time: 125000 }
+        - { level: 2, best_time: 121300 }
+        - { level: 3, best_time: 117700 }
+        - { level: 4, best_time: 114000 }
+        - { level: 5, best_time: 111000 }
+        - { level: 6, best_time: 108000 }
+        - { level: 7, best_time: 105000 }
+        - { level: 8, best_time: 102700 }
+        - { level: 9, best_time: 100300 }
+        - { level: 10, best_time: 98000 }
+        - { level: 11, best_time: 94700 }
+        - { level: 12, best_time: 91300 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 257
+      levels:
+        - { level: 1, best_time: 144000 }
+        - { level: 2, best_time: 140700 }
+        - { level: 3, best_time: 137300 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 131700 }
+        - { level: 6, best_time: 129300 }
+        - { level: 7, best_time: 127000 }
+        - { level: 8, best_time: 124700 }
+        - { level: 9, best_time: 122300 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 117000 }
+        - { level: 12, best_time: 114000 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 258
+      levels:
+        - { level: 1, best_time: 146000 }
+        - { level: 2, best_time: 142000 }
+        - { level: 3, best_time: 138000 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 131300 }
+        - { level: 6, best_time: 128700 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 123700 }
+        - { level: 9, best_time: 121300 }
+        - { level: 10, best_time: 119000 }
+        - { level: 11, best_time: 115000 }
+        - { level: 12, best_time: 111000 }
+        - { level: 13, best_time: 107000 }
+    - map_id: 259
+      levels:
+        - { level: 1, best_time: 163000 }
+        - { level: 2, best_time: 158700 }
+        - { level: 3, best_time: 154300 }
+        - { level: 4, best_time: 150000 }
+        - { level: 5, best_time: 147000 }
+        - { level: 6, best_time: 144000 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 138300 }
+        - { level: 9, best_time: 135700 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 129300 }
+        - { level: 12, best_time: 125700 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 260
+      levels:
+        - { level: 1, best_time: 115000 }
+        - { level: 2, best_time: 112000 }
+        - { level: 3, best_time: 109000 }
+        - { level: 4, best_time: 106000 }
+        - { level: 5, best_time: 103700 }
+        - { level: 6, best_time: 101300 }
+        - { level: 7, best_time: 99000 }
+        - { level: 8, best_time: 96300 }
+        - { level: 9, best_time: 93700 }
+        - { level: 10, best_time: 91000 }
+        - { level: 11, best_time: 87300 }
+        - { level: 12, best_time: 83700 }
+        - { level: 13, best_time: 80000 }
+    - map_id: 261
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 132700 }
+        - { level: 3, best_time: 128300 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 121000 }
+        - { level: 6, best_time: 118000 }
+        - { level: 7, best_time: 115000 }
+        - { level: 8, best_time: 112700 }
+        - { level: 9, best_time: 110300 }
+        - { level: 10, best_time: 108000 }
+        - { level: 11, best_time: 103000 }
+        - { level: 12, best_time: 98000 }
+        - { level: 13, best_time: 93000 }
+    - map_id: 263
+      levels:
+        - { level: 1, best_time: 129000 }
+        - { level: 2, best_time: 126300 }
+        - { level: 3, best_time: 123700 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 119000 }
+        - { level: 6, best_time: 117000 }
+        - { level: 7, best_time: 115000 }
+        - { level: 8, best_time: 113000 }
+        - { level: 9, best_time: 111000 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 105000 }
+        - { level: 12, best_time: 101000 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 264
+      levels:
+        - { level: 1, best_time: 122000 }
+        - { level: 2, best_time: 119300 }
+        - { level: 3, best_time: 116700 }
+        - { level: 4, best_time: 114000 }
+        - { level: 5, best_time: 111700 }
+        - { level: 6, best_time: 109300 }
+        - { level: 7, best_time: 107000 }
+        - { level: 8, best_time: 104700 }
+        - { level: 9, best_time: 102300 }
+        - { level: 10, best_time: 100000 }
+        - { level: 11, best_time: 96700 }
+        - { level: 12, best_time: 93300 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 265
+      levels:
+        - { level: 1, best_time: 130000 }
+        - { level: 2, best_time: 127300 }
+        - { level: 3, best_time: 124700 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 119700 }
+        - { level: 6, best_time: 117300 }
+        - { level: 7, best_time: 115000 }
+        - { level: 8, best_time: 112300 }
+        - { level: 9, best_time: 109700 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 103700 }
+        - { level: 12, best_time: 100300 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 267
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 137300 }
+        - { level: 3, best_time: 132700 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 124700 }
+        - { level: 6, best_time: 121300 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 115000 }
+        - { level: 9, best_time: 112000 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 104300 }
+        - { level: 12, best_time: 99700 }
+        - { level: 13, best_time: 95000 }
+    - map_id: 269
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 134300 }
+        - { level: 3, best_time: 131700 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 126700 }
+        - { level: 6, best_time: 124300 }
+        - { level: 7, best_time: 122000 }
+        - { level: 8, best_time: 119300 }
+        - { level: 9, best_time: 116700 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 111000 }
+        - { level: 12, best_time: 108000 }
+        - { level: 13, best_time: 105000 }
+    - map_id: 270
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 133300 }
+        - { level: 3, best_time: 130700 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 126300 }
+        - { level: 6, best_time: 124700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120700 }
+        - { level: 9, best_time: 118300 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 112000 }
+        - { level: 12, best_time: 108000 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 275
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 141000 }
+        - { level: 4, best_time: 138000 }
+        - { level: 5, best_time: 135700 }
+        - { level: 6, best_time: 133300 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 128700 }
+        - { level: 9, best_time: 126300 }
+        - { level: 10, best_time: 124000 }
+        - { level: 11, best_time: 120700 }
+        - { level: 12, best_time: 117300 }
+        - { level: 13, best_time: 114000 }
+    - map_id: 278
+      levels:
+        - { level: 1, best_time: 129000 }
+        - { level: 2, best_time: 126000 }
+        - { level: 3, best_time: 123000 }
+        - { level: 4, best_time: 120000 }
+        - { level: 5, best_time: 117300 }
+        - { level: 6, best_time: 114700 }
+        - { level: 7, best_time: 112000 }
+        - { level: 8, best_time: 110000 }
+        - { level: 9, best_time: 108000 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 103300 }
+        - { level: 12, best_time: 100700 }
+        - { level: 13, best_time: 98000 }
+    - map_id: 279
+      levels:
+        - { level: 1, best_time: 129000 }
+        - { level: 2, best_time: 126300 }
+        - { level: 3, best_time: 123700 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 119000 }
+        - { level: 6, best_time: 117000 }
+        - { level: 7, best_time: 115000 }
+        - { level: 8, best_time: 112700 }
+        - { level: 9, best_time: 110300 }
+        - { level: 10, best_time: 108000 }
+        - { level: 11, best_time: 104000 }
+        - { level: 12, best_time: 100000 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 280
+      levels:
+        - { level: 1, best_time: 130000 }
+        - { level: 2, best_time: 127000 }
+        - { level: 3, best_time: 124000 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 118300 }
+        - { level: 6, best_time: 115700 }
+        - { level: 7, best_time: 113000 }
+        - { level: 8, best_time: 110700 }
+        - { level: 9, best_time: 108300 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 102300 }
+        - { level: 12, best_time: 98700 }
+        - { level: 13, best_time: 95000 }
+    - map_id: 281
+      levels:
+        - { level: 1, best_time: 110000 }
+        - { level: 2, best_time: 107700 }
+        - { level: 3, best_time: 105300 }
+        - { level: 4, best_time: 103000 }
+        - { level: 5, best_time: 101700 }
+        - { level: 6, best_time: 100300 }
+        - { level: 7, best_time: 99000 }
+        - { level: 8, best_time: 97300 }
+        - { level: 9, best_time: 95700 }
+        - { level: 10, best_time: 94000 }
+        - { level: 11, best_time: 91300 }
+        - { level: 12, best_time: 88700 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 282
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 144700 }
+        - { level: 3, best_time: 142300 }
+        - { level: 4, best_time: 140000 }
+        - { level: 5, best_time: 138000 }
+        - { level: 6, best_time: 136000 }
+        - { level: 7, best_time: 134000 }
+        - { level: 8, best_time: 132300 }
+        - { level: 9, best_time: 130700 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 126300 }
+        - { level: 12, best_time: 123700 }
+        - { level: 13, best_time: 121000 }
+    - map_id: 284
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 161300 }
+        - { level: 3, best_time: 158700 }
+        - { level: 4, best_time: 156000 }
+        - { level: 5, best_time: 154000 }
+        - { level: 6, best_time: 152000 }
+        - { level: 7, best_time: 150000 }
+        - { level: 8, best_time: 148000 }
+        - { level: 9, best_time: 146000 }
+        - { level: 10, best_time: 144000 }
+        - { level: 11, best_time: 141000 }
+        - { level: 12, best_time: 138000 }
+        - { level: 13, best_time: 135000 }
+    - map_id: 290
+      levels:
+        - { level: 1, best_time: 126000 }
+        - { level: 2, best_time: 123700 }
+        - { level: 3, best_time: 121300 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 117000 }
+        - { level: 6, best_time: 115000 }
+        - { level: 7, best_time: 113000 }
+        - { level: 8, best_time: 111300 }
+        - { level: 9, best_time: 109700 }
+        - { level: 10, best_time: 108000 }
+        - { level: 11, best_time: 105300 }
+        - { level: 12, best_time: 102700 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 294
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 132700 }
+        - { level: 3, best_time: 128300 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 121000 }
+        - { level: 6, best_time: 118000 }
+        - { level: 7, best_time: 115000 }
+        - { level: 8, best_time: 112300 }
+        - { level: 9, best_time: 109700 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 103700 }
+        - { level: 12, best_time: 100300 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 295
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 141000 }
+        - { level: 4, best_time: 138000 }
+        - { level: 5, best_time: 136000 }
+        - { level: 6, best_time: 134000 }
+        - { level: 7, best_time: 132000 }
+        - { level: 8, best_time: 129300 }
+        - { level: 9, best_time: 126700 }
+        - { level: 10, best_time: 124000 }
+        - { level: 11, best_time: 118700 }
+        - { level: 12, best_time: 113300 }
+        - { level: 13, best_time: 108000 }
+    - map_id: 296
+      levels:
+        - { level: 1, best_time: 148000 }
+        - { level: 2, best_time: 145000 }
+        - { level: 3, best_time: 142000 }
+        - { level: 4, best_time: 139000 }
+        - { level: 5, best_time: 137000 }
+        - { level: 6, best_time: 135000 }
+        - { level: 7, best_time: 133000 }
+        - { level: 8, best_time: 130700 }
+        - { level: 9, best_time: 128300 }
+        - { level: 10, best_time: 126000 }
+        - { level: 11, best_time: 122700 }
+        - { level: 12, best_time: 119300 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 297
+      levels:
+        - { level: 1, best_time: 197000 }
+        - { level: 2, best_time: 193000 }
+        - { level: 3, best_time: 189000 }
+        - { level: 4, best_time: 185000 }
+        - { level: 5, best_time: 182000 }
+        - { level: 6, best_time: 179000 }
+        - { level: 7, best_time: 176000 }
+        - { level: 8, best_time: 173700 }
+        - { level: 9, best_time: 171300 }
+        - { level: 10, best_time: 169000 }
+        - { level: 11, best_time: 165300 }
+        - { level: 12, best_time: 161700 }
+        - { level: 13, best_time: 158000 }
+    - map_id: 298
+      levels:
+        - { level: 1, best_time: 166000 }
+        - { level: 2, best_time: 162300 }
+        - { level: 3, best_time: 158700 }
+        - { level: 4, best_time: 155000 }
+        - { level: 5, best_time: 152300 }
+        - { level: 6, best_time: 149700 }
+        - { level: 7, best_time: 147000 }
+        - { level: 8, best_time: 145000 }
+        - { level: 9, best_time: 143000 }
+        - { level: 10, best_time: 141000 }
+        - { level: 11, best_time: 136700 }
+        - { level: 12, best_time: 132300 }
+        - { level: 13, best_time: 128000 }
+    - map_id: 299
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 132000 }
+        - { level: 3, best_time: 128000 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 121300 }
+        - { level: 6, best_time: 118700 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 113300 }
+        - { level: 9, best_time: 110700 }
+        - { level: 10, best_time: 108000 }
+        - { level: 11, best_time: 105300 }
+        - { level: 12, best_time: 102700 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 300
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 138300 }
+        - { level: 3, best_time: 135700 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 131300 }
+        - { level: 6, best_time: 129700 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 126000 }
+        - { level: 9, best_time: 124000 }
+        - { level: 10, best_time: 122000 }
+        - { level: 11, best_time: 119300 }
+        - { level: 12, best_time: 116700 }
+        - { level: 13, best_time: 114000 }
+    - map_id: 301
+      levels:
+        - { level: 1, best_time: 172000 }
+        - { level: 2, best_time: 167000 }
+        - { level: 3, best_time: 162000 }
+        - { level: 4, best_time: 157000 }
+        - { level: 5, best_time: 153700 }
+        - { level: 6, best_time: 150300 }
+        - { level: 7, best_time: 147000 }
+        - { level: 8, best_time: 144700 }
+        - { level: 9, best_time: 142300 }
+        - { level: 10, best_time: 140000 }
+        - { level: 11, best_time: 136000 }
+        - { level: 12, best_time: 132000 }
+        - { level: 13, best_time: 128000 }
+    - map_id: 302
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 133700 }
+        - { level: 3, best_time: 131300 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 127000 }
+        - { level: 6, best_time: 125000 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 120700 }
+        - { level: 9, best_time: 118300 }
+        - { level: 10, best_time: 116000 }
+        - { level: 11, best_time: 111700 }
+        - { level: 12, best_time: 107300 }
+        - { level: 13, best_time: 103000 }
+    - map_id: 303
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 133300 }
+        - { level: 3, best_time: 130700 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 126000 }
+        - { level: 6, best_time: 124000 }
+        - { level: 7, best_time: 122000 }
+        - { level: 8, best_time: 119300 }
+        - { level: 9, best_time: 116700 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 109700 }
+        - { level: 12, best_time: 105300 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 304
+      levels:
+        - { level: 1, best_time: 149000 }
+        - { level: 2, best_time: 146300 }
+        - { level: 3, best_time: 143700 }
+        - { level: 4, best_time: 141000 }
+        - { level: 5, best_time: 138700 }
+        - { level: 6, best_time: 136300 }
+        - { level: 7, best_time: 134000 }
+        - { level: 8, best_time: 131700 }
+        - { level: 9, best_time: 129300 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 123300 }
+        - { level: 12, best_time: 119700 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 307
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 131300 }
+        - { level: 3, best_time: 126700 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 118300 }
+        - { level: 6, best_time: 114700 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 107700 }
+        - { level: 9, best_time: 104300 }
+        - { level: 10, best_time: 101000 }
+        - { level: 11, best_time: 95300 }
+        - { level: 12, best_time: 89700 }
+        - { level: 13, best_time: 84000 }
+    - map_id: 308
+      levels:
+        - { level: 1, best_time: 131000 }
+        - { level: 2, best_time: 128700 }
+        - { level: 3, best_time: 126300 }
+        - { level: 4, best_time: 124000 }
+        - { level: 5, best_time: 122300 }
+        - { level: 6, best_time: 120700 }
+        - { level: 7, best_time: 119000 }
+        - { level: 8, best_time: 117300 }
+        - { level: 9, best_time: 115700 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 111000 }
+        - { level: 12, best_time: 108000 }
+        - { level: 13, best_time: 105000 }
+    - map_id: 309
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 134700 }
+        - { level: 3, best_time: 132300 }
+        - { level: 4, best_time: 130000 }
+        - { level: 5, best_time: 128000 }
+        - { level: 6, best_time: 126000 }
+        - { level: 7, best_time: 124000 }
+        - { level: 8, best_time: 121700 }
+        - { level: 9, best_time: 119300 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 111700 }
+        - { level: 12, best_time: 106300 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 310
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 145000 }
+        - { level: 3, best_time: 143000 }
+        - { level: 4, best_time: 141000 }
+        - { level: 5, best_time: 139000 }
+        - { level: 6, best_time: 137000 }
+        - { level: 7, best_time: 135000 }
+        - { level: 8, best_time: 132700 }
+        - { level: 9, best_time: 130300 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 124000 }
+        - { level: 12, best_time: 120000 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 311
+      levels:
+        - { level: 1, best_time: 155000 }
+        - { level: 2, best_time: 152300 }
+        - { level: 3, best_time: 149700 }
+        - { level: 4, best_time: 147000 }
+        - { level: 5, best_time: 145000 }
+        - { level: 6, best_time: 143000 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 138300 }
+        - { level: 9, best_time: 135700 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 127700 }
+        - { level: 12, best_time: 122300 }
+        - { level: 13, best_time: 117000 }
+    - map_id: 312
+      levels:
+        - { level: 1, best_time: 183000 }
+        - { level: 2, best_time: 180000 }
+        - { level: 3, best_time: 177000 }
+        - { level: 4, best_time: 174000 }
+        - { level: 5, best_time: 171700 }
+        - { level: 6, best_time: 169300 }
+        - { level: 7, best_time: 167000 }
+        - { level: 8, best_time: 164700 }
+        - { level: 9, best_time: 162300 }
+        - { level: 10, best_time: 160000 }
+        - { level: 11, best_time: 154700 }
+        - { level: 12, best_time: 149300 }
+        - { level: 13, best_time: 144000 }
+    - map_id: 314
+      levels:
+        - { level: 1, best_time: 143000 }
+        - { level: 2, best_time: 140700 }
+        - { level: 3, best_time: 138300 }
+        - { level: 4, best_time: 136000 }
+        - { level: 5, best_time: 134000 }
+        - { level: 6, best_time: 132000 }
+        - { level: 7, best_time: 130000 }
+        - { level: 8, best_time: 127300 }
+        - { level: 9, best_time: 124700 }
+        - { level: 10, best_time: 122000 }
+        - { level: 11, best_time: 117300 }
+        - { level: 12, best_time: 112700 }
+        - { level: 13, best_time: 108000 }
+    - map_id: 315
+      levels:
+        - { level: 1, best_time: 155000 }
+        - { level: 2, best_time: 151700 }
+        - { level: 3, best_time: 148300 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 142700 }
+        - { level: 6, best_time: 140300 }
+        - { level: 7, best_time: 138000 }
+        - { level: 8, best_time: 135300 }
+        - { level: 9, best_time: 132700 }
+        - { level: 10, best_time: 130000 }
+        - { level: 11, best_time: 125700 }
+        - { level: 12, best_time: 121300 }
+        - { level: 13, best_time: 117000 }
+    - map_id: 316
+      levels:
+        - { level: 1, best_time: 131000 }
+        - { level: 2, best_time: 128300 }
+        - { level: 3, best_time: 125700 }
+        - { level: 4, best_time: 123000 }
+        - { level: 5, best_time: 120700 }
+        - { level: 6, best_time: 118300 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 112300 }
+        - { level: 9, best_time: 108700 }
+        - { level: 10, best_time: 105000 }
+        - { level: 11, best_time: 98000 }
+        - { level: 12, best_time: 91000 }
+        - { level: 13, best_time: 84000 }
+    - map_id: 317
+      levels:
+        - { level: 1, best_time: 188000 }
+        - { level: 2, best_time: 185000 }
+        - { level: 3, best_time: 182000 }
+        - { level: 4, best_time: 179000 }
+        - { level: 5, best_time: 176300 }
+        - { level: 6, best_time: 173700 }
+        - { level: 7, best_time: 171000 }
+        - { level: 8, best_time: 168000 }
+        - { level: 9, best_time: 165000 }
+        - { level: 10, best_time: 162000 }
+        - { level: 11, best_time: 156700 }
+        - { level: 12, best_time: 151300 }
+        - { level: 13, best_time: 146000 }
+    - map_id: 318
+      levels:
+        - { level: 1, best_time: 196000 }
+        - { level: 2, best_time: 193000 }
+        - { level: 3, best_time: 190000 }
+        - { level: 4, best_time: 187000 }
+        - { level: 5, best_time: 184300 }
+        - { level: 6, best_time: 181700 }
+        - { level: 7, best_time: 179000 }
+        - { level: 8, best_time: 173300 }
+        - { level: 9, best_time: 167700 }
+        - { level: 10, best_time: 162000 }
+        - { level: 11, best_time: 155300 }
+        - { level: 12, best_time: 148700 }
+        - { level: 13, best_time: 142000 }
+    - map_id: 319
+      levels:
+        - { level: 1, best_time: 146000 }
+        - { level: 2, best_time: 142700 }
+        - { level: 3, best_time: 139300 }
+        - { level: 4, best_time: 136000 }
+        - { level: 5, best_time: 133300 }
+        - { level: 6, best_time: 130700 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 126000 }
+        - { level: 9, best_time: 124000 }
+        - { level: 10, best_time: 122000 }
+        - { level: 11, best_time: 118700 }
+        - { level: 12, best_time: 115300 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 322
+      levels:
+        - { level: 1, best_time: 129000 }
+        - { level: 2, best_time: 126700 }
+        - { level: 3, best_time: 124300 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 120000 }
+        - { level: 6, best_time: 118000 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 114000 }
+        - { level: 9, best_time: 112000 }
+        - { level: 10, best_time: 110000 }
+        - { level: 11, best_time: 105700 }
+        - { level: 12, best_time: 101300 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 323
+      levels:
+        - { level: 1, best_time: 154000 }
+        - { level: 2, best_time: 150700 }
+        - { level: 3, best_time: 147300 }
+        - { level: 4, best_time: 144000 }
+        - { level: 5, best_time: 141300 }
+        - { level: 6, best_time: 138700 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 132700 }
+        - { level: 9, best_time: 129300 }
+        - { level: 10, best_time: 126000 }
+        - { level: 11, best_time: 122000 }
+        - { level: 12, best_time: 118000 }
+        - { level: 13, best_time: 114000 }
+    - map_id: 324
+      levels:
+        - { level: 1, best_time: 158000 }
+        - { level: 2, best_time: 153700 }
+        - { level: 3, best_time: 149300 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 142300 }
+        - { level: 6, best_time: 139700 }
+        - { level: 7, best_time: 137000 }
+        - { level: 8, best_time: 134300 }
+        - { level: 9, best_time: 131700 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 124700 }
+        - { level: 12, best_time: 120300 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 325
+      levels:
+        - { level: 1, best_time: 156000 }
+        - { level: 2, best_time: 152300 }
+        - { level: 3, best_time: 148700 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 142000 }
+        - { level: 6, best_time: 139000 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 133000 }
+        - { level: 9, best_time: 130000 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 122300 }
+        - { level: 12, best_time: 117700 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 326
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 161000 }
+        - { level: 3, best_time: 158000 }
+        - { level: 4, best_time: 155000 }
+        - { level: 5, best_time: 152300 }
+        - { level: 6, best_time: 149700 }
+        - { level: 7, best_time: 147000 }
+        - { level: 8, best_time: 144300 }
+        - { level: 9, best_time: 141700 }
+        - { level: 10, best_time: 139000 }
+        - { level: 11, best_time: 133700 }
+        - { level: 12, best_time: 128300 }
+        - { level: 13, best_time: 123000 }
+    - map_id: 327
+      levels:
+        - { level: 1, best_time: 134000 }
+        - { level: 2, best_time: 131700 }
+        - { level: 3, best_time: 129300 }
+        - { level: 4, best_time: 127000 }
+        - { level: 5, best_time: 124700 }
+        - { level: 6, best_time: 122300 }
+        - { level: 7, best_time: 120000 }
+        - { level: 8, best_time: 117300 }
+        - { level: 9, best_time: 114700 }
+        - { level: 10, best_time: 112000 }
+        - { level: 11, best_time: 106700 }
+        - { level: 12, best_time: 101300 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 328
+      levels:
+        - { level: 1, best_time: 157000 }
+        - { level: 2, best_time: 152000 }
+        - { level: 3, best_time: 147000 }
+        - { level: 4, best_time: 142000 }
+        - { level: 5, best_time: 137300 }
+        - { level: 6, best_time: 132700 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 124300 }
+        - { level: 9, best_time: 120700 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 111300 }
+        - { level: 12, best_time: 105700 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 331
+      levels:
+        - { level: 1, best_time: 156000 }
+        - { level: 2, best_time: 153700 }
+        - { level: 3, best_time: 151300 }
+        - { level: 4, best_time: 149000 }
+        - { level: 5, best_time: 147000 }
+        - { level: 6, best_time: 145000 }
+        - { level: 7, best_time: 143000 }
+        - { level: 8, best_time: 140700 }
+        - { level: 9, best_time: 138300 }
+        - { level: 10, best_time: 136000 }
+        - { level: 11, best_time: 132300 }
+        - { level: 12, best_time: 128700 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 333
+      levels:
+        - { level: 1, best_time: 148000 }
+        - { level: 2, best_time: 144300 }
+        - { level: 3, best_time: 140700 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 133000 }
+        - { level: 6, best_time: 129000 }
+        - { level: 7, best_time: 125000 }
+        - { level: 8, best_time: 120000 }
+        - { level: 9, best_time: 115000 }
+        - { level: 10, best_time: 110000 }
+        - { level: 11, best_time: 104000 }
+        - { level: 12, best_time: 98000 }
+        - { level: 13, best_time: 92000 }
+    - map_id: 338
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 139000 }
+        - { level: 3, best_time: 136000 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 130300 }
+        - { level: 6, best_time: 127700 }
+        - { level: 7, best_time: 125000 }
+        - { level: 8, best_time: 121300 }
+        - { level: 9, best_time: 117700 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 106000 }
+        - { level: 12, best_time: 98000 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 340
+      levels:
+        - { level: 1, best_time: 163000 }
+        - { level: 2, best_time: 159700 }
+        - { level: 3, best_time: 156300 }
+        - { level: 4, best_time: 153000 }
+        - { level: 5, best_time: 150000 }
+        - { level: 6, best_time: 147000 }
+        - { level: 7, best_time: 144000 }
+        - { level: 8, best_time: 140700 }
+        - { level: 9, best_time: 137300 }
+        - { level: 10, best_time: 134000 }
+        - { level: 11, best_time: 128000 }
+        - { level: 12, best_time: 122000 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 343
+      levels:
+        - { level: 1, best_time: 187000 }
+        - { level: 2, best_time: 183700 }
+        - { level: 3, best_time: 180300 }
+        - { level: 4, best_time: 177000 }
+        - { level: 5, best_time: 174700 }
+        - { level: 6, best_time: 172300 }
+        - { level: 7, best_time: 170000 }
+        - { level: 8, best_time: 167300 }
+        - { level: 9, best_time: 164700 }
+        - { level: 10, best_time: 162000 }
+        - { level: 11, best_time: 155700 }
+        - { level: 12, best_time: 149300 }
+        - { level: 13, best_time: 143000 }
+    - map_id: 355
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 160300 }
+        - { level: 3, best_time: 156700 }
+        - { level: 4, best_time: 153000 }
+        - { level: 5, best_time: 150700 }
+        - { level: 6, best_time: 148300 }
+        - { level: 7, best_time: 146000 }
+        - { level: 8, best_time: 143300 }
+        - { level: 9, best_time: 140700 }
+        - { level: 10, best_time: 138000 }
+        - { level: 11, best_time: 131000 }
+        - { level: 12, best_time: 124000 }
+        - { level: 13, best_time: 117000 }
+    - map_id: 358
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 143700 }
+        - { level: 3, best_time: 140300 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 134300 }
+        - { level: 6, best_time: 131700 }
+        - { level: 7, best_time: 129000 }
+        - { level: 8, best_time: 125300 }
+        - { level: 9, best_time: 121700 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 110700 }
+        - { level: 12, best_time: 103300 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 359
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 134000 }
+        - { level: 3, best_time: 131000 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 126000 }
+        - { level: 6, best_time: 124000 }
+        - { level: 7, best_time: 122000 }
+        - { level: 8, best_time: 119700 }
+        - { level: 9, best_time: 117300 }
+        - { level: 10, best_time: 115000 }
+        - { level: 11, best_time: 110300 }
+        - { level: 12, best_time: 105700 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 363
+      levels:
+        - { level: 1, best_time: 145000 }
+        - { level: 2, best_time: 142300 }
+        - { level: 3, best_time: 139700 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 135300 }
+        - { level: 6, best_time: 133700 }
+        - { level: 7, best_time: 132000 }
+        - { level: 8, best_time: 130000 }
+        - { level: 9, best_time: 128000 }
+        - { level: 10, best_time: 126000 }
+        - { level: 11, best_time: 122300 }
+        - { level: 12, best_time: 118700 }
+        - { level: 13, best_time: 115000 }
+    - map_id: 367
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 138300 }
+        - { level: 3, best_time: 135700 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 131300 }
+        - { level: 6, best_time: 129700 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 125700 }
+        - { level: 9, best_time: 123300 }
+        - { level: 10, best_time: 121000 }
+        - { level: 11, best_time: 117000 }
+        - { level: 12, best_time: 113000 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 372
+      levels:
+        - { level: 1, best_time: 169000 }
+        - { level: 2, best_time: 165300 }
+        - { level: 3, best_time: 161700 }
+        - { level: 4, best_time: 158000 }
+        - { level: 5, best_time: 155300 }
+        - { level: 6, best_time: 152700 }
+        - { level: 7, best_time: 150000 }
+        - { level: 8, best_time: 147300 }
+        - { level: 9, best_time: 144700 }
+        - { level: 10, best_time: 142000 }
+        - { level: 11, best_time: 137000 }
+        - { level: 12, best_time: 132000 }
+        - { level: 13, best_time: 127000 }
+    - map_id: 373
+      levels:
+        - { level: 1, best_time: 161000 }
+        - { level: 2, best_time: 157000 }
+        - { level: 3, best_time: 153000 }
+        - { level: 4, best_time: 149000 }
+        - { level: 5, best_time: 146300 }
+        - { level: 6, best_time: 143700 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 137700 }
+        - { level: 9, best_time: 134300 }
+        - { level: 10, best_time: 131000 }
+        - { level: 11, best_time: 125000 }
+        - { level: 12, best_time: 119000 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 374
+      levels:
+        - { level: 1, best_time: 158000 }
+        - { level: 2, best_time: 154300 }
+        - { level: 3, best_time: 150700 }
+        - { level: 4, best_time: 147000 }
+        - { level: 5, best_time: 144700 }
+        - { level: 6, best_time: 142300 }
+        - { level: 7, best_time: 140000 }
+        - { level: 8, best_time: 137700 }
+        - { level: 9, best_time: 135300 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 130300 }
+        - { level: 12, best_time: 127700 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 376
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 156000 }
+        - { level: 3, best_time: 148000 }
+        - { level: 4, best_time: 140000 }
+        - { level: 5, best_time: 134700 }
+        - { level: 6, best_time: 129300 }
+        - { level: 7, best_time: 124000 }
+        - { level: 8, best_time: 119700 }
+        - { level: 9, best_time: 115300 }
+        - { level: 10, best_time: 111000 }
+        - { level: 11, best_time: 107000 }
+        - { level: 12, best_time: 103000 }
+        - { level: 13, best_time: 99000 }
+    - map_id: 377
+      levels:
+        - { level: 1, best_time: 183000 }
+        - { level: 2, best_time: 179300 }
+        - { level: 3, best_time: 175700 }
+        - { level: 4, best_time: 172000 }
+        - { level: 5, best_time: 169300 }
+        - { level: 6, best_time: 166700 }
+        - { level: 7, best_time: 164000 }
+        - { level: 8, best_time: 157300 }
+        - { level: 9, best_time: 150700 }
+        - { level: 10, best_time: 144000 }
+        - { level: 11, best_time: 137300 }
+        - { level: 12, best_time: 130700 }
+        - { level: 13, best_time: 124000 }
+    - map_id: 378
+      levels:
+        - { level: 1, best_time: 178000 }
+        - { level: 2, best_time: 173700 }
+        - { level: 3, best_time: 169300 }
+        - { level: 4, best_time: 165000 }
+        - { level: 5, best_time: 162000 }
+        - { level: 6, best_time: 159000 }
+        - { level: 7, best_time: 156000 }
+        - { level: 8, best_time: 152700 }
+        - { level: 9, best_time: 149300 }
+        - { level: 10, best_time: 146000 }
+        - { level: 11, best_time: 140700 }
+        - { level: 12, best_time: 135300 }
+        - { level: 13, best_time: 130000 }
+    - map_id: 380
+      levels:
+        - { level: 1, best_time: 176000 }
+        - { level: 2, best_time: 171700 }
+        - { level: 3, best_time: 167300 }
+        - { level: 4, best_time: 163000 }
+        - { level: 5, best_time: 159700 }
+        - { level: 6, best_time: 156300 }
+        - { level: 7, best_time: 153000 }
+        - { level: 8, best_time: 150000 }
+        - { level: 9, best_time: 147000 }
+        - { level: 10, best_time: 144000 }
+        - { level: 11, best_time: 139000 }
+        - { level: 12, best_time: 134000 }
+        - { level: 13, best_time: 129000 }
+    - map_id: 382
+      levels:
+        - { level: 1, best_time: 148000 }
+        - { level: 2, best_time: 144300 }
+        - { level: 3, best_time: 140700 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 134000 }
+        - { level: 6, best_time: 131000 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 125300 }
+        - { level: 9, best_time: 122700 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 116300 }
+        - { level: 12, best_time: 112700 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 384
+      levels:
+        - { level: 1, best_time: 179000 }
+        - { level: 2, best_time: 173700 }
+        - { level: 3, best_time: 168300 }
+        - { level: 4, best_time: 163000 }
+        - { level: 5, best_time: 159000 }
+        - { level: 6, best_time: 155000 }
+        - { level: 7, best_time: 151000 }
+        - { level: 8, best_time: 147300 }
+        - { level: 9, best_time: 143700 }
+        - { level: 10, best_time: 140000 }
+        - { level: 11, best_time: 137000 }
+        - { level: 12, best_time: 134000 }
+        - { level: 13, best_time: 131000 }
+    - map_id: 385
+      levels:
+        - { level: 1, best_time: 153000 }
+        - { level: 2, best_time: 149700 }
+        - { level: 3, best_time: 146300 }
+        - { level: 4, best_time: 143000 }
+        - { level: 5, best_time: 140300 }
+        - { level: 6, best_time: 137700 }
+        - { level: 7, best_time: 135000 }
+        - { level: 8, best_time: 132300 }
+        - { level: 9, best_time: 129700 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 121700 }
+        - { level: 12, best_time: 116300 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 386
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 143700 }
+        - { level: 3, best_time: 140300 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 134300 }
+        - { level: 6, best_time: 131700 }
+        - { level: 7, best_time: 129000 }
+        - { level: 8, best_time: 126000 }
+        - { level: 9, best_time: 123000 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 115300 }
+        - { level: 12, best_time: 110700 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 387
+      levels:
+        - { level: 1, best_time: 158000 }
+        - { level: 2, best_time: 154300 }
+        - { level: 3, best_time: 150700 }
+        - { level: 4, best_time: 147000 }
+        - { level: 5, best_time: 144300 }
+        - { level: 6, best_time: 141700 }
+        - { level: 7, best_time: 139000 }
+        - { level: 8, best_time: 136300 }
+        - { level: 9, best_time: 133700 }
+        - { level: 10, best_time: 131000 }
+        - { level: 11, best_time: 127300 }
+        - { level: 12, best_time: 123700 }
+        - { level: 13, best_time: 120000 }
+    - map_id: 389
+      levels:
+        - { level: 1, best_time: 122000 }
+        - { level: 2, best_time: 118300 }
+        - { level: 3, best_time: 114700 }
+        - { level: 4, best_time: 111000 }
+        - { level: 5, best_time: 108000 }
+        - { level: 6, best_time: 105000 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 99000 }
+        - { level: 9, best_time: 96000 }
+        - { level: 10, best_time: 93000 }
+        - { level: 11, best_time: 91300 }
+        - { level: 12, best_time: 89700 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 390
+      levels:
+        - { level: 1, best_time: 139000 }
+        - { level: 2, best_time: 136000 }
+        - { level: 3, best_time: 133000 }
+        - { level: 4, best_time: 130000 }
+        - { level: 5, best_time: 128000 }
+        - { level: 6, best_time: 126000 }
+        - { level: 7, best_time: 124000 }
+        - { level: 8, best_time: 122000 }
+        - { level: 9, best_time: 120000 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 114000 }
+        - { level: 12, best_time: 110000 }
+        - { level: 13, best_time: 106000 }
+    - map_id: 392
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 161300 }
+        - { level: 3, best_time: 158700 }
+        - { level: 4, best_time: 156000 }
+        - { level: 5, best_time: 154000 }
+        - { level: 6, best_time: 152000 }
+        - { level: 7, best_time: 150000 }
+        - { level: 8, best_time: 147700 }
+        - { level: 9, best_time: 145300 }
+        - { level: 10, best_time: 143000 }
+        - { level: 11, best_time: 138700 }
+        - { level: 12, best_time: 134300 }
+        - { level: 13, best_time: 130000 }
+    - map_id: 395
+      levels:
+        - { level: 1, best_time: 124000 }
+        - { level: 2, best_time: 121300 }
+        - { level: 3, best_time: 118700 }
+        - { level: 4, best_time: 116000 }
+        - { level: 5, best_time: 114000 }
+        - { level: 6, best_time: 112000 }
+        - { level: 7, best_time: 110000 }
+        - { level: 8, best_time: 108000 }
+        - { level: 9, best_time: 106000 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 100700 }
+        - { level: 12, best_time: 97300 }
+        - { level: 13, best_time: 94000 }
+    - map_id: 396
+      levels:
+        - { level: 1, best_time: 121000 }
+        - { level: 2, best_time: 118000 }
+        - { level: 3, best_time: 115000 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 109300 }
+        - { level: 6, best_time: 106700 }
+        - { level: 7, best_time: 104000 }
+        - { level: 8, best_time: 100300 }
+        - { level: 9, best_time: 96700 }
+        - { level: 10, best_time: 93000 }
+        - { level: 11, best_time: 90700 }
+        - { level: 12, best_time: 88300 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 398
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 138700 }
+        - { level: 3, best_time: 135300 }
+        - { level: 4, best_time: 132000 }
+        - { level: 5, best_time: 129000 }
+        - { level: 6, best_time: 126000 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 119700 }
+        - { level: 9, best_time: 116300 }
+        - { level: 10, best_time: 113000 }
+        - { level: 11, best_time: 108700 }
+        - { level: 12, best_time: 104300 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 400
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 144000 }
+        - { level: 3, best_time: 141000 }
+        - { level: 4, best_time: 138000 }
+        - { level: 5, best_time: 135700 }
+        - { level: 6, best_time: 133300 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 128300 }
+        - { level: 9, best_time: 125700 }
+        - { level: 10, best_time: 123000 }
+        - { level: 11, best_time: 119000 }
+        - { level: 12, best_time: 115000 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 404
+      levels:
+        - { level: 1, best_time: 159000 }
+        - { level: 2, best_time: 154300 }
+        - { level: 3, best_time: 149700 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 142000 }
+        - { level: 6, best_time: 139000 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 133700 }
+        - { level: 9, best_time: 131300 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 126700 }
+        - { level: 12, best_time: 124300 }
+        - { level: 13, best_time: 122000 }
+    - map_id: 406
+      levels:
+        - { level: 1, best_time: 121000 }
+        - { level: 2, best_time: 118000 }
+        - { level: 3, best_time: 115000 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 110000 }
+        - { level: 6, best_time: 108000 }
+        - { level: 7, best_time: 106000 }
+        - { level: 8, best_time: 104700 }
+        - { level: 9, best_time: 103300 }
+        - { level: 10, best_time: 102000 }
+        - { level: 11, best_time: 99700 }
+        - { level: 12, best_time: 97300 }
+        - { level: 13, best_time: 95000 }
+    - map_id: 415
+      levels:
+        - { level: 1, best_time: 177000 }
+        - { level: 2, best_time: 171300 }
+        - { level: 3, best_time: 165700 }
+        - { level: 4, best_time: 160000 }
+        - { level: 5, best_time: 155000 }
+        - { level: 6, best_time: 150000 }
+        - { level: 7, best_time: 145000 }
+        - { level: 8, best_time: 141000 }
+        - { level: 9, best_time: 137000 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 130300 }
+        - { level: 12, best_time: 127700 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 418
+      levels:
+        - { level: 1, best_time: 145000 }
+        - { level: 2, best_time: 141000 }
+        - { level: 3, best_time: 137000 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 130300 }
+        - { level: 6, best_time: 127700 }
+        - { level: 7, best_time: 125000 }
+        - { level: 8, best_time: 122300 }
+        - { level: 9, best_time: 119700 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 114300 }
+        - { level: 12, best_time: 111700 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 421
+      levels:
+        - { level: 1, best_time: 170000 }
+        - { level: 2, best_time: 165700 }
+        - { level: 3, best_time: 161300 }
+        - { level: 4, best_time: 157000 }
+        - { level: 5, best_time: 153700 }
+        - { level: 6, best_time: 150300 }
+        - { level: 7, best_time: 147000 }
+        - { level: 8, best_time: 144300 }
+        - { level: 9, best_time: 141700 }
+        - { level: 10, best_time: 139000 }
+        - { level: 11, best_time: 136000 }
+        - { level: 12, best_time: 133000 }
+        - { level: 13, best_time: 130000 }
+    - map_id: 422
+      levels:
+        - { level: 1, best_time: 162000 }
+        - { level: 2, best_time: 157300 }
+        - { level: 3, best_time: 152700 }
+        - { level: 4, best_time: 148000 }
+        - { level: 5, best_time: 144300 }
+        - { level: 6, best_time: 140700 }
+        - { level: 7, best_time: 137000 }
+        - { level: 8, best_time: 134300 }
+        - { level: 9, best_time: 131700 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 125700 }
+        - { level: 12, best_time: 122300 }
+        - { level: 13, best_time: 119000 }
+    - map_id: 423
+      levels:
+        - { level: 1, best_time: 150000 }
+        - { level: 2, best_time: 145300 }
+        - { level: 3, best_time: 140700 }
+        - { level: 4, best_time: 136000 }
+        - { level: 5, best_time: 132700 }
+        - { level: 6, best_time: 129300 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 122300 }
+        - { level: 9, best_time: 118700 }
+        - { level: 10, best_time: 115000 }
+        - { level: 11, best_time: 112700 }
+        - { level: 12, best_time: 110300 }
+        - { level: 13, best_time: 108000 }
+    - map_id: 427
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 138300 }
+        - { level: 3, best_time: 135700 }
+        - { level: 4, best_time: 133000 }
+        - { level: 5, best_time: 130700 }
+        - { level: 6, best_time: 128300 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 123700 }
+        - { level: 9, best_time: 121300 }
+        - { level: 10, best_time: 119000 }
+        - { level: 11, best_time: 117000 }
+        - { level: 12, best_time: 115000 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 428
+      levels:
+        - { level: 1, best_time: 126000 }
+        - { level: 2, best_time: 122300 }
+        - { level: 3, best_time: 118700 }
+        - { level: 4, best_time: 115000 }
+        - { level: 5, best_time: 112000 }
+        - { level: 6, best_time: 109000 }
+        - { level: 7, best_time: 106000 }
+        - { level: 8, best_time: 102700 }
+        - { level: 9, best_time: 99300 }
+        - { level: 10, best_time: 96000 }
+        - { level: 11, best_time: 93000 }
+        - { level: 12, best_time: 90000 }
+        - { level: 13, best_time: 87000 }
+    - map_id: 434
+      levels:
+        - { level: 1, best_time: 167000 }
+        - { level: 2, best_time: 163000 }
+        - { level: 3, best_time: 159000 }
+        - { level: 4, best_time: 155000 }
+        - { level: 5, best_time: 151700 }
+        - { level: 6, best_time: 148300 }
+        - { level: 7, best_time: 145000 }
+        - { level: 8, best_time: 139300 }
+        - { level: 9, best_time: 133700 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 121000 }
+        - { level: 12, best_time: 114000 }
+        - { level: 13, best_time: 107000 }
+    - map_id: 435
+      levels:
+        - { level: 1, best_time: 116000 }
+        - { level: 2, best_time: 113000 }
+        - { level: 3, best_time: 110000 }
+        - { level: 4, best_time: 107000 }
+        - { level: 5, best_time: 104000 }
+        - { level: 6, best_time: 101000 }
+        - { level: 7, best_time: 98000 }
+        - { level: 8, best_time: 95000 }
+        - { level: 9, best_time: 92000 }
+        - { level: 10, best_time: 89000 }
+        - { level: 11, best_time: 85700 }
+        - { level: 12, best_time: 82300 }
+        - { level: 13, best_time: 79000 }
+    - map_id: 436
+      levels:
+        - { level: 1, best_time: 207000 }
+        - { level: 2, best_time: 199300 }
+        - { level: 3, best_time: 191700 }
+        - { level: 4, best_time: 184000 }
+        - { level: 5, best_time: 178000 }
+        - { level: 6, best_time: 172000 }
+        - { level: 7, best_time: 166000 }
+        - { level: 8, best_time: 160700 }
+        - { level: 9, best_time: 155300 }
+        - { level: 10, best_time: 150000 }
+        - { level: 11, best_time: 145700 }
+        - { level: 12, best_time: 141300 }
+        - { level: 13, best_time: 137000 }
+    - map_id: 438
+      levels:
+        - { level: 1, best_time: 158000 }
+        - { level: 2, best_time: 153300 }
+        - { level: 3, best_time: 148700 }
+        - { level: 4, best_time: 144000 }
+        - { level: 5, best_time: 141000 }
+        - { level: 6, best_time: 138000 }
+        - { level: 7, best_time: 135000 }
+        - { level: 8, best_time: 132300 }
+        - { level: 9, best_time: 129700 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 123700 }
+        - { level: 12, best_time: 120300 }
+        - { level: 13, best_time: 117000 }
+    - map_id: 439
+      levels:
+        - { level: 1, best_time: 120000 }
+        - { level: 2, best_time: 116700 }
+        - { level: 3, best_time: 113300 }
+        - { level: 4, best_time: 110000 }
+        - { level: 5, best_time: 107300 }
+        - { level: 6, best_time: 104700 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 99700 }
+        - { level: 9, best_time: 97300 }
+        - { level: 10, best_time: 95000 }
+        - { level: 11, best_time: 93300 }
+        - { level: 12, best_time: 91700 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 450
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 143700 }
+        - { level: 3, best_time: 140300 }
+        - { level: 4, best_time: 137000 }
+        - { level: 5, best_time: 134300 }
+        - { level: 6, best_time: 131700 }
+        - { level: 7, best_time: 129000 }
+        - { level: 8, best_time: 126000 }
+        - { level: 9, best_time: 123000 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 117700 }
+        - { level: 12, best_time: 115300 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 453
+      levels:
+        - { level: 1, best_time: 120000 }
+        - { level: 2, best_time: 117300 }
+        - { level: 3, best_time: 114700 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 110300 }
+        - { level: 6, best_time: 108700 }
+        - { level: 7, best_time: 107000 }
+        - { level: 8, best_time: 105300 }
+        - { level: 9, best_time: 103700 }
+        - { level: 10, best_time: 102000 }
+        - { level: 11, best_time: 100300 }
+        - { level: 12, best_time: 98700 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 455
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 160700 }
+        - { level: 3, best_time: 157300 }
+        - { level: 4, best_time: 154000 }
+        - { level: 5, best_time: 151700 }
+        - { level: 6, best_time: 149300 }
+        - { level: 7, best_time: 147000 }
+        - { level: 8, best_time: 142000 }
+        - { level: 9, best_time: 137000 }
+        - { level: 10, best_time: 132000 }
+        - { level: 11, best_time: 129700 }
+        - { level: 12, best_time: 127300 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 456
+      levels:
+        - { level: 1, best_time: 173000 }
+        - { level: 2, best_time: 167300 }
+        - { level: 3, best_time: 161700 }
+        - { level: 4, best_time: 156000 }
+        - { level: 5, best_time: 152000 }
+        - { level: 6, best_time: 148000 }
+        - { level: 7, best_time: 144000 }
+        - { level: 8, best_time: 141300 }
+        - { level: 9, best_time: 138700 }
+        - { level: 10, best_time: 136000 }
+        - { level: 11, best_time: 132700 }
+        - { level: 12, best_time: 129300 }
+        - { level: 13, best_time: 126000 }
+    - map_id: 460
+      levels:
+        - { level: 1, best_time: 177000 }
+        - { level: 2, best_time: 170300 }
+        - { level: 3, best_time: 163700 }
+        - { level: 4, best_time: 157000 }
+        - { level: 5, best_time: 153000 }
+        - { level: 6, best_time: 149000 }
+        - { level: 7, best_time: 145000 }
+        - { level: 8, best_time: 141000 }
+        - { level: 9, best_time: 137000 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 128300 }
+        - { level: 12, best_time: 123700 }
+        - { level: 13, best_time: 119000 }
+    - map_id: 461
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 159300 }
+        - { level: 3, best_time: 154700 }
+        - { level: 4, best_time: 150000 }
+        - { level: 5, best_time: 147300 }
+        - { level: 6, best_time: 144700 }
+        - { level: 7, best_time: 142000 }
+        - { level: 8, best_time: 139300 }
+        - { level: 9, best_time: 136700 }
+        - { level: 10, best_time: 134000 }
+        - { level: 11, best_time: 132000 }
+        - { level: 12, best_time: 130000 }
+        - { level: 13, best_time: 128000 }
+    - map_id: 463
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 131300 }
+        - { level: 3, best_time: 126700 }
+        - { level: 4, best_time: 122000 }
+        - { level: 5, best_time: 118300 }
+        - { level: 6, best_time: 114700 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 108700 }
+        - { level: 9, best_time: 106300 }
+        - { level: 10, best_time: 104000 }
+        - { level: 11, best_time: 101300 }
+        - { level: 12, best_time: 98700 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 466
+      levels:
+        - { level: 1, best_time: 157000 }
+        - { level: 2, best_time: 152300 }
+        - { level: 3, best_time: 147700 }
+        - { level: 4, best_time: 143000 }
+        - { level: 5, best_time: 139000 }
+        - { level: 6, best_time: 135000 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 128000 }
+        - { level: 9, best_time: 125000 }
+        - { level: 10, best_time: 122000 }
+        - { level: 11, best_time: 119300 }
+        - { level: 12, best_time: 116700 }
+        - { level: 13, best_time: 114000 }
+    - map_id: 469
+      levels:
+        - { level: 1, best_time: 137000 }
+        - { level: 2, best_time: 134000 }
+        - { level: 3, best_time: 131000 }
+        - { level: 4, best_time: 128000 }
+        - { level: 5, best_time: 126300 }
+        - { level: 6, best_time: 124700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 121000 }
+        - { level: 9, best_time: 119000 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 111700 }
+        - { level: 12, best_time: 106300 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 471
+      levels:
+        - { level: 1, best_time: 135000 }
+        - { level: 2, best_time: 131000 }
+        - { level: 3, best_time: 127000 }
+        - { level: 4, best_time: 123000 }
+        - { level: 5, best_time: 120700 }
+        - { level: 6, best_time: 118300 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 113700 }
+        - { level: 9, best_time: 111300 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 107300 }
+        - { level: 12, best_time: 105700 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 472
+      levels:
+        - { level: 1, best_time: 141000 }
+        - { level: 2, best_time: 136000 }
+        - { level: 3, best_time: 131000 }
+        - { level: 4, best_time: 126000 }
+        - { level: 5, best_time: 122700 }
+        - { level: 6, best_time: 119300 }
+        - { level: 7, best_time: 116000 }
+        - { level: 8, best_time: 112700 }
+        - { level: 9, best_time: 109300 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 102700 }
+        - { level: 12, best_time: 99300 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 108
+      levels:
+        - { level: 1, best_time: 146000 }
+        - { level: 2, best_time: 142300 }
+        - { level: 3, best_time: 138700 }
+        - { level: 4, best_time: 135000 }
+        - { level: 5, best_time: 132000 }
+        - { level: 6, best_time: 129000 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 122000 }
+        - { level: 9, best_time: 118000 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 110000 }
+        - { level: 12, best_time: 106000 }
+        - { level: 13, best_time: 102000 }
+    - map_id: 118
+      levels:
+        - { level: 1, best_time: 204000 }
+        - { level: 2, best_time: 199300 }
+        - { level: 3, best_time: 194700 }
+        - { level: 4, best_time: 190000 }
+        - { level: 5, best_time: 186300 }
+        - { level: 6, best_time: 182700 }
+        - { level: 7, best_time: 179000 }
+        - { level: 8, best_time: 171000 }
+        - { level: 9, best_time: 163000 }
+        - { level: 10, best_time: 155000 }
+        - { level: 11, best_time: 148000 }
+        - { level: 12, best_time: 141000 }
+        - { level: 13, best_time: 134000 }
+    - map_id: 122
+      levels:
+        - { level: 1, best_time: 114000 }
+        - { level: 2, best_time: 110700 }
+        - { level: 3, best_time: 107300 }
+        - { level: 4, best_time: 104000 }
+        - { level: 5, best_time: 101000 }
+        - { level: 6, best_time: 98000 }
+        - { level: 7, best_time: 95000 }
+        - { level: 8, best_time: 91000 }
+        - { level: 9, best_time: 87000 }
+        - { level: 10, best_time: 83000 }
+        - { level: 11, best_time: 78700 }
+        - { level: 12, best_time: 74300 }
+        - { level: 13, best_time: 70000 }
+    - map_id: 124
+      levels:
+        - { level: 1, best_time: 151000 }
+        - { level: 2, best_time: 147000 }
+        - { level: 3, best_time: 143000 }
+        - { level: 4, best_time: 139000 }
+        - { level: 5, best_time: 135300 }
+        - { level: 6, best_time: 131700 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 123300 }
+        - { level: 9, best_time: 118700 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 108700 }
+        - { level: 12, best_time: 103300 }
+        - { level: 13, best_time: 98000 }
+    - map_id: 130
+      levels:
+        - { level: 1, best_time: 174000 }
+        - { level: 2, best_time: 167300 }
+        - { level: 3, best_time: 160700 }
+        - { level: 4, best_time: 154000 }
+        - { level: 5, best_time: 148000 }
+        - { level: 6, best_time: 142000 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 127300 }
+        - { level: 9, best_time: 118700 }
+        - { level: 10, best_time: 110000 }
+        - { level: 11, best_time: 103300 }
+        - { level: 12, best_time: 96700 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 141
+      levels:
+        - { level: 1, best_time: 143000 }
+        - { level: 2, best_time: 138300 }
+        - { level: 3, best_time: 133700 }
+        - { level: 4, best_time: 129000 }
+        - { level: 5, best_time: 125300 }
+        - { level: 6, best_time: 121700 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 113000 }
+        - { level: 9, best_time: 108000 }
+        - { level: 10, best_time: 103000 }
+        - { level: 11, best_time: 97700 }
+        - { level: 12, best_time: 92300 }
+        - { level: 13, best_time: 87000 }
+    - map_id: 160
+      levels:
+        - { level: 1, best_time: 155000 }
+        - { level: 2, best_time: 151700 }
+        - { level: 3, best_time: 148300 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 142700 }
+        - { level: 6, best_time: 140300 }
+        - { level: 7, best_time: 138000 }
+        - { level: 8, best_time: 134700 }
+        - { level: 9, best_time: 131300 }
+        - { level: 10, best_time: 128000 }
+        - { level: 11, best_time: 124700 }
+        - { level: 12, best_time: 121300 }
+        - { level: 13, best_time: 118000 }
+    - map_id: 162
+      levels:
+        - { level: 1, best_time: 117000 }
+        - { level: 2, best_time: 113700 }
+        - { level: 3, best_time: 110300 }
+        - { level: 4, best_time: 107000 }
+        - { level: 5, best_time: 104700 }
+        - { level: 6, best_time: 102300 }
+        - { level: 7, best_time: 100000 }
+        - { level: 8, best_time: 97700 }
+        - { level: 9, best_time: 95300 }
+        - { level: 10, best_time: 93000 }
+        - { level: 11, best_time: 88300 }
+        - { level: 12, best_time: 83700 }
+        - { level: 13, best_time: 79000 }
+    - map_id: 185
+      levels:
+        - { level: 1, best_time: 121000 }
+        - { level: 2, best_time: 117700 }
+        - { level: 3, best_time: 114300 }
+        - { level: 4, best_time: 111000 }
+        - { level: 5, best_time: 108000 }
+        - { level: 6, best_time: 105000 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 97700 }
+        - { level: 9, best_time: 93300 }
+        - { level: 10, best_time: 89000 }
+        - { level: 11, best_time: 86000 }
+        - { level: 12, best_time: 83000 }
+        - { level: 13, best_time: 80000 }
+    - map_id: 189
+      levels:
+        - { level: 1, best_time: 132000 }
+        - { level: 2, best_time: 128300 }
+        - { level: 3, best_time: 124700 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 117700 }
+        - { level: 6, best_time: 114300 }
+        - { level: 7, best_time: 111000 }
+        - { level: 8, best_time: 106700 }
+        - { level: 9, best_time: 102300 }
+        - { level: 10, best_time: 98000 }
+        - { level: 11, best_time: 94000 }
+        - { level: 12, best_time: 90000 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 191
+      levels:
+        - { level: 1, best_time: 170000 }
+        - { level: 2, best_time: 164000 }
+        - { level: 3, best_time: 158000 }
+        - { level: 4, best_time: 152000 }
+        - { level: 5, best_time: 143300 }
+        - { level: 6, best_time: 134700 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 120700 }
+        - { level: 9, best_time: 115300 }
+        - { level: 10, best_time: 110000 }
+        - { level: 11, best_time: 103300 }
+        - { level: 12, best_time: 96700 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 204
+      levels:
+        - { level: 1, best_time: 178000 }
+        - { level: 2, best_time: 172000 }
+        - { level: 3, best_time: 166000 }
+        - { level: 4, best_time: 160000 }
+        - { level: 5, best_time: 154000 }
+        - { level: 6, best_time: 148000 }
+        - { level: 7, best_time: 142000 }
+        - { level: 8, best_time: 132700 }
+        - { level: 9, best_time: 123300 }
+        - { level: 10, best_time: 114000 }
+        - { level: 11, best_time: 108000 }
+        - { level: 12, best_time: 102000 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 208
+      levels:
+        - { level: 1, best_time: 183000 }
+        - { level: 2, best_time: 178700 }
+        - { level: 3, best_time: 174300 }
+        - { level: 4, best_time: 170000 }
+        - { level: 5, best_time: 165300 }
+        - { level: 6, best_time: 160700 }
+        - { level: 7, best_time: 156000 }
+        - { level: 8, best_time: 149300 }
+        - { level: 9, best_time: 142700 }
+        - { level: 10, best_time: 136000 }
+        - { level: 11, best_time: 129300 }
+        - { level: 12, best_time: 122700 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 262
+      levels:
+        - { level: 1, best_time: 144000 }
+        - { level: 2, best_time: 140700 }
+        - { level: 3, best_time: 137300 }
+        - { level: 4, best_time: 134000 }
+        - { level: 5, best_time: 130300 }
+        - { level: 6, best_time: 126700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 117700 }
+        - { level: 9, best_time: 112300 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 101300 }
+        - { level: 12, best_time: 95700 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 277
+      levels:
+        - { level: 1, best_time: 98000 }
+        - { level: 2, best_time: 95300 }
+        - { level: 3, best_time: 92700 }
+        - { level: 4, best_time: 90000 }
+        - { level: 5, best_time: 87300 }
+        - { level: 6, best_time: 84700 }
+        - { level: 7, best_time: 82000 }
+        - { level: 8, best_time: 78000 }
+        - { level: 9, best_time: 74000 }
+        - { level: 10, best_time: 70000 }
+        - { level: 11, best_time: 66000 }
+        - { level: 12, best_time: 62000 }
+        - { level: 13, best_time: 58000 }
+    - map_id: 283
+      levels:
+        - { level: 1, best_time: 118000 }
+        - { level: 2, best_time: 114700 }
+        - { level: 3, best_time: 111300 }
+        - { level: 4, best_time: 108000 }
+        - { level: 5, best_time: 105700 }
+        - { level: 6, best_time: 103300 }
+        - { level: 7, best_time: 101000 }
+        - { level: 8, best_time: 97300 }
+        - { level: 9, best_time: 93700 }
+        - { level: 10, best_time: 90000 }
+        - { level: 11, best_time: 87700 }
+        - { level: 12, best_time: 85300 }
+        - { level: 13, best_time: 83000 }
+    - map_id: 305
+      levels:
+        - { level: 1, best_time: 118000 }
+        - { level: 2, best_time: 116000 }
+        - { level: 3, best_time: 114000 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 110300 }
+        - { level: 6, best_time: 108700 }
+        - { level: 7, best_time: 107000 }
+        - { level: 8, best_time: 102300 }
+        - { level: 9, best_time: 97700 }
+        - { level: 10, best_time: 93000 }
+        - { level: 11, best_time: 88700 }
+        - { level: 12, best_time: 84300 }
+        - { level: 13, best_time: 80000 }
+    - map_id: 321
+      levels:
+        - { level: 1, best_time: 194000 }
+        - { level: 2, best_time: 189300 }
+        - { level: 3, best_time: 184700 }
+        - { level: 4, best_time: 180000 }
+        - { level: 5, best_time: 176300 }
+        - { level: 6, best_time: 172700 }
+        - { level: 7, best_time: 169000 }
+        - { level: 8, best_time: 162700 }
+        - { level: 9, best_time: 156300 }
+        - { level: 10, best_time: 150000 }
+        - { level: 11, best_time: 143300 }
+        - { level: 12, best_time: 136700 }
+        - { level: 13, best_time: 130000 }
+    - map_id: 332
+      levels:
+        - { level: 1, best_time: 126000 }
+        - { level: 2, best_time: 121300 }
+        - { level: 3, best_time: 116700 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 106000 }
+        - { level: 6, best_time: 100000 }
+        - { level: 7, best_time: 94000 }
+        - { level: 8, best_time: 90700 }
+        - { level: 9, best_time: 87300 }
+        - { level: 10, best_time: 84000 }
+        - { level: 11, best_time: 81700 }
+        - { level: 12, best_time: 79300 }
+        - { level: 13, best_time: 77000 }
+    - map_id: 341
+      levels:
+        - { level: 1, best_time: 197000 }
+        - { level: 2, best_time: 192700 }
+        - { level: 3, best_time: 188300 }
+        - { level: 4, best_time: 184000 }
+        - { level: 5, best_time: 181000 }
+        - { level: 6, best_time: 178000 }
+        - { level: 7, best_time: 175000 }
+        - { level: 8, best_time: 165000 }
+        - { level: 9, best_time: 155000 }
+        - { level: 10, best_time: 145000 }
+        - { level: 11, best_time: 136700 }
+        - { level: 12, best_time: 128300 }
+        - { level: 13, best_time: 120000 }
+    - map_id: 345
+      levels:
+        - { level: 1, best_time: 187000 }
+        - { level: 2, best_time: 183300 }
+        - { level: 3, best_time: 179700 }
+        - { level: 4, best_time: 176000 }
+        - { level: 5, best_time: 173300 }
+        - { level: 6, best_time: 170700 }
+        - { level: 7, best_time: 168000 }
+        - { level: 8, best_time: 160000 }
+        - { level: 9, best_time: 152000 }
+        - { level: 10, best_time: 144000 }
+        - { level: 11, best_time: 137000 }
+        - { level: 12, best_time: 130000 }
+        - { level: 13, best_time: 123000 }
+    - map_id: 346
+      levels:
+        - { level: 1, best_time: 154000 }
+        - { level: 2, best_time: 149700 }
+        - { level: 3, best_time: 145300 }
+        - { level: 4, best_time: 141000 }
+        - { level: 5, best_time: 135700 }
+        - { level: 6, best_time: 130300 }
+        - { level: 7, best_time: 125000 }
+        - { level: 8, best_time: 118300 }
+        - { level: 9, best_time: 111700 }
+        - { level: 10, best_time: 105000 }
+        - { level: 11, best_time: 102300 }
+        - { level: 12, best_time: 99700 }
+        - { level: 13, best_time: 97000 }
+    - map_id: 349
+      levels:
+        - { level: 1, best_time: 153000 }
+        - { level: 2, best_time: 149700 }
+        - { level: 3, best_time: 146300 }
+        - { level: 4, best_time: 143000 }
+        - { level: 5, best_time: 140700 }
+        - { level: 6, best_time: 138300 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 130000 }
+        - { level: 9, best_time: 124000 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 113000 }
+        - { level: 12, best_time: 108000 }
+        - { level: 13, best_time: 103000 }
+    - map_id: 354
+      levels:
+        - { level: 1, best_time: 177000 }
+        - { level: 2, best_time: 173000 }
+        - { level: 3, best_time: 169000 }
+        - { level: 4, best_time: 165000 }
+        - { level: 5, best_time: 162300 }
+        - { level: 6, best_time: 159700 }
+        - { level: 7, best_time: 157000 }
+        - { level: 8, best_time: 153700 }
+        - { level: 9, best_time: 150300 }
+        - { level: 10, best_time: 147000 }
+        - { level: 11, best_time: 139700 }
+        - { level: 12, best_time: 132300 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 356
+      levels:
+        - { level: 1, best_time: 187000 }
+        - { level: 2, best_time: 183700 }
+        - { level: 3, best_time: 180300 }
+        - { level: 4, best_time: 177000 }
+        - { level: 5, best_time: 174700 }
+        - { level: 6, best_time: 172300 }
+        - { level: 7, best_time: 170000 }
+        - { level: 8, best_time: 165300 }
+        - { level: 9, best_time: 160700 }
+        - { level: 10, best_time: 156000 }
+        - { level: 11, best_time: 148000 }
+        - { level: 12, best_time: 140000 }
+        - { level: 13, best_time: 132000 }
+    - map_id: 360
+      levels:
+        - { level: 1, best_time: 125000 }
+        - { level: 2, best_time: 122700 }
+        - { level: 3, best_time: 120300 }
+        - { level: 4, best_time: 118000 }
+        - { level: 5, best_time: 116000 }
+        - { level: 6, best_time: 114000 }
+        - { level: 7, best_time: 112000 }
+        - { level: 8, best_time: 108000 }
+        - { level: 9, best_time: 104000 }
+        - { level: 10, best_time: 100000 }
+        - { level: 11, best_time: 95000 }
+        - { level: 12, best_time: 90000 }
+        - { level: 13, best_time: 85000 }
+    - map_id: 364
+      levels:
+        - { level: 1, best_time: 108000 }
+        - { level: 2, best_time: 106000 }
+        - { level: 3, best_time: 104000 }
+        - { level: 4, best_time: 102000 }
+        - { level: 5, best_time: 100000 }
+        - { level: 6, best_time: 98000 }
+        - { level: 7, best_time: 96000 }
+        - { level: 8, best_time: 94000 }
+        - { level: 9, best_time: 92000 }
+        - { level: 10, best_time: 90000 }
+        - { level: 11, best_time: 86000 }
+        - { level: 12, best_time: 82000 }
+        - { level: 13, best_time: 78000 }
+    - map_id: 365
+      levels:
+        - { level: 1, best_time: 172000 }
+        - { level: 2, best_time: 167300 }
+        - { level: 3, best_time: 162700 }
+        - { level: 4, best_time: 158000 }
+        - { level: 5, best_time: 148000 }
+        - { level: 6, best_time: 138000 }
+        - { level: 7, best_time: 128000 }
+        - { level: 8, best_time: 121300 }
+        - { level: 9, best_time: 114700 }
+        - { level: 10, best_time: 108000 }
+        - { level: 11, best_time: 102000 }
+        - { level: 12, best_time: 96000 }
+        - { level: 13, best_time: 90000 }
+    - map_id: 366
+      levels:
+        - { level: 1, best_time: 108000 }
+        - { level: 2, best_time: 105700 }
+        - { level: 3, best_time: 103300 }
+        - { level: 4, best_time: 101000 }
+        - { level: 5, best_time: 99300 }
+        - { level: 6, best_time: 97700 }
+        - { level: 7, best_time: 96000 }
+        - { level: 8, best_time: 94000 }
+        - { level: 9, best_time: 92000 }
+        - { level: 10, best_time: 90000 }
+        - { level: 11, best_time: 85700 }
+        - { level: 12, best_time: 81300 }
+        - { level: 13, best_time: 77000 }
+    - map_id: 368
+      levels:
+        - { level: 1, best_time: 118000 }
+        - { level: 2, best_time: 115000 }
+        - { level: 3, best_time: 112000 }
+        - { level: 4, best_time: 109000 }
+        - { level: 5, best_time: 107000 }
+        - { level: 6, best_time: 105000 }
+        - { level: 7, best_time: 103000 }
+        - { level: 8, best_time: 97300 }
+        - { level: 9, best_time: 91700 }
+        - { level: 10, best_time: 86000 }
+        - { level: 11, best_time: 83000 }
+        - { level: 12, best_time: 80000 }
+        - { level: 13, best_time: 77000 }
+    - map_id: 369
+      levels:
+        - { level: 1, best_time: 132000 }
+        - { level: 2, best_time: 129000 }
+        - { level: 3, best_time: 126000 }
+        - { level: 4, best_time: 123000 }
+        - { level: 5, best_time: 121000 }
+        - { level: 6, best_time: 119000 }
+        - { level: 7, best_time: 117000 }
+        - { level: 8, best_time: 113000 }
+        - { level: 9, best_time: 109000 }
+        - { level: 10, best_time: 105000 }
+        - { level: 11, best_time: 99300 }
+        - { level: 12, best_time: 93700 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 370
+      levels:
+        - { level: 1, best_time: 183000 }
+        - { level: 2, best_time: 178000 }
+        - { level: 3, best_time: 173000 }
+        - { level: 4, best_time: 168000 }
+        - { level: 5, best_time: 163700 }
+        - { level: 6, best_time: 159300 }
+        - { level: 7, best_time: 155000 }
+        - { level: 8, best_time: 147700 }
+        - { level: 9, best_time: 140300 }
+        - { level: 10, best_time: 133000 }
+        - { level: 11, best_time: 125700 }
+        - { level: 12, best_time: 118300 }
+        - { level: 13, best_time: 111000 }
+    - map_id: 371
+      levels:
+        - { level: 1, best_time: 158000 }
+        - { level: 2, best_time: 154000 }
+        - { level: 3, best_time: 150000 }
+        - { level: 4, best_time: 146000 }
+        - { level: 5, best_time: 143300 }
+        - { level: 6, best_time: 140700 }
+        - { level: 7, best_time: 138000 }
+        - { level: 8, best_time: 131300 }
+        - { level: 9, best_time: 124700 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 113300 }
+        - { level: 12, best_time: 108700 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 379
+      levels:
+        - { level: 1, best_time: 164000 }
+        - { level: 2, best_time: 160300 }
+        - { level: 3, best_time: 156700 }
+        - { level: 4, best_time: 153000 }
+        - { level: 5, best_time: 150000 }
+        - { level: 6, best_time: 147000 }
+        - { level: 7, best_time: 144000 }
+        - { level: 8, best_time: 139000 }
+        - { level: 9, best_time: 134000 }
+        - { level: 10, best_time: 129000 }
+        - { level: 11, best_time: 120700 }
+        - { level: 12, best_time: 112300 }
+        - { level: 13, best_time: 104000 }
+    - map_id: 381
+      levels:
+        - { level: 1, best_time: 159000 }
+        - { level: 2, best_time: 154300 }
+        - { level: 3, best_time: 149700 }
+        - { level: 4, best_time: 145000 }
+        - { level: 5, best_time: 141700 }
+        - { level: 6, best_time: 138300 }
+        - { level: 7, best_time: 135000 }
+        - { level: 8, best_time: 130000 }
+        - { level: 9, best_time: 125000 }
+        - { level: 10, best_time: 120000 }
+        - { level: 11, best_time: 116700 }
+        - { level: 12, best_time: 113300 }
+        - { level: 13, best_time: 110000 }
+    - map_id: 391
+      levels:
+        - { level: 1, best_time: 140000 }
+        - { level: 2, best_time: 137300 }
+        - { level: 3, best_time: 134700 }
+        - { level: 4, best_time: 132000 }
+        - { level: 5, best_time: 130000 }
+        - { level: 6, best_time: 128000 }
+        - { level: 7, best_time: 126000 }
+        - { level: 8, best_time: 121000 }
+        - { level: 9, best_time: 116000 }
+        - { level: 10, best_time: 111000 }
+        - { level: 11, best_time: 106000 }
+        - { level: 12, best_time: 101000 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 393
+      levels:
+        - { level: 1, best_time: 130000 }
+        - { level: 2, best_time: 126300 }
+        - { level: 3, best_time: 122700 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 115300 }
+        - { level: 6, best_time: 111700 }
+        - { level: 7, best_time: 108000 }
+        - { level: 8, best_time: 103300 }
+        - { level: 9, best_time: 98700 }
+        - { level: 10, best_time: 94000 }
+        - { level: 11, best_time: 90000 }
+        - { level: 12, best_time: 86000 }
+        - { level: 13, best_time: 82000 }
+    - map_id: 394
+      levels:
+        - { level: 1, best_time: 166000 }
+        - { level: 2, best_time: 160700 }
+        - { level: 3, best_time: 155300 }
+        - { level: 4, best_time: 150000 }
+        - { level: 5, best_time: 145300 }
+        - { level: 6, best_time: 140700 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 131700 }
+        - { level: 9, best_time: 127300 }
+        - { level: 10, best_time: 123000 }
+        - { level: 11, best_time: 118700 }
+        - { level: 12, best_time: 114300 }
+        - { level: 13, best_time: 110000 }
+    - map_id: 397
+      levels:
+        - { level: 1, best_time: 124000 }
+        - { level: 2, best_time: 120300 }
+        - { level: 3, best_time: 116700 }
+        - { level: 4, best_time: 113000 }
+        - { level: 5, best_time: 109300 }
+        - { level: 6, best_time: 105700 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 98300 }
+        - { level: 9, best_time: 94700 }
+        - { level: 10, best_time: 91000 }
+        - { level: 11, best_time: 89000 }
+        - { level: 12, best_time: 87000 }
+        - { level: 13, best_time: 85000 }
+    - map_id: 399
+      levels:
+        - { level: 1, best_time: 103000 }
+        - { level: 2, best_time: 100300 }
+        - { level: 3, best_time: 97700 }
+        - { level: 4, best_time: 95000 }
+        - { level: 5, best_time: 92700 }
+        - { level: 6, best_time: 90300 }
+        - { level: 7, best_time: 88000 }
+        - { level: 8, best_time: 85700 }
+        - { level: 9, best_time: 83300 }
+        - { level: 10, best_time: 81000 }
+        - { level: 11, best_time: 77000 }
+        - { level: 12, best_time: 73000 }
+        - { level: 13, best_time: 69000 }
+    - map_id: 416
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 132300 }
+        - { level: 3, best_time: 128700 }
+        - { level: 4, best_time: 125000 }
+        - { level: 5, best_time: 122300 }
+        - { level: 6, best_time: 119700 }
+        - { level: 7, best_time: 117000 }
+        - { level: 8, best_time: 112000 }
+        - { level: 9, best_time: 107000 }
+        - { level: 10, best_time: 102000 }
+        - { level: 11, best_time: 98700 }
+        - { level: 12, best_time: 95300 }
+        - { level: 13, best_time: 92000 }
+    - map_id: 424
+      levels:
+        - { level: 1, best_time: 109000 }
+        - { level: 2, best_time: 106300 }
+        - { level: 3, best_time: 103700 }
+        - { level: 4, best_time: 101000 }
+        - { level: 5, best_time: 99000 }
+        - { level: 6, best_time: 97000 }
+        - { level: 7, best_time: 95000 }
+        - { level: 8, best_time: 92700 }
+        - { level: 9, best_time: 90300 }
+        - { level: 10, best_time: 88000 }
+        - { level: 11, best_time: 84700 }
+        - { level: 12, best_time: 81300 }
+        - { level: 13, best_time: 78000 }
+    - map_id: 429
+      levels:
+        - { level: 1, best_time: 120000 }
+        - { level: 2, best_time: 116700 }
+        - { level: 3, best_time: 113300 }
+        - { level: 4, best_time: 110000 }
+        - { level: 5, best_time: 107300 }
+        - { level: 6, best_time: 104700 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 99700 }
+        - { level: 9, best_time: 97300 }
+        - { level: 10, best_time: 95000 }
+        - { level: 11, best_time: 92000 }
+        - { level: 12, best_time: 89000 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 430
+      levels:
+        - { level: 1, best_time: 135000 }
+        - { level: 2, best_time: 132000 }
+        - { level: 3, best_time: 129000 }
+        - { level: 4, best_time: 126000 }
+        - { level: 5, best_time: 123300 }
+        - { level: 6, best_time: 120700 }
+        - { level: 7, best_time: 118000 }
+        - { level: 8, best_time: 114300 }
+        - { level: 9, best_time: 110700 }
+        - { level: 10, best_time: 107000 }
+        - { level: 11, best_time: 103300 }
+        - { level: 12, best_time: 99700 }
+        - { level: 13, best_time: 96000 }
+    - map_id: 441
+      levels:
+        - { level: 1, best_time: 127000 }
+        - { level: 2, best_time: 123300 }
+        - { level: 3, best_time: 119700 }
+        - { level: 4, best_time: 116000 }
+        - { level: 5, best_time: 113300 }
+        - { level: 6, best_time: 110700 }
+        - { level: 7, best_time: 108000 }
+        - { level: 8, best_time: 104700 }
+        - { level: 9, best_time: 101300 }
+        - { level: 10, best_time: 98000 }
+        - { level: 11, best_time: 94000 }
+        - { level: 12, best_time: 90000 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 446
+      levels:
+        - { level: 1, best_time: 170000 }
+        - { level: 2, best_time: 165700 }
+        - { level: 3, best_time: 161300 }
+        - { level: 4, best_time: 157000 }
+        - { level: 5, best_time: 153700 }
+        - { level: 6, best_time: 150300 }
+        - { level: 7, best_time: 147000 }
+        - { level: 8, best_time: 140300 }
+        - { level: 9, best_time: 133700 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 122000 }
+        - { level: 12, best_time: 117000 }
+        - { level: 13, best_time: 112000 }
+    - map_id: 447
+      levels:
+        - { level: 1, best_time: 178000 }
+        - { level: 2, best_time: 173000 }
+        - { level: 3, best_time: 168000 }
+        - { level: 4, best_time: 163000 }
+        - { level: 5, best_time: 160000 }
+        - { level: 6, best_time: 157000 }
+        - { level: 7, best_time: 154000 }
+        - { level: 8, best_time: 149000 }
+        - { level: 9, best_time: 144000 }
+        - { level: 10, best_time: 139000 }
+        - { level: 11, best_time: 136000 }
+        - { level: 12, best_time: 133000 }
+        - { level: 13, best_time: 130000 }
+    - map_id: 449
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 137000 }
+        - { level: 3, best_time: 132000 }
+        - { level: 4, best_time: 127000 }
+        - { level: 5, best_time: 122300 }
+        - { level: 6, best_time: 117700 }
+        - { level: 7, best_time: 113000 }
+        - { level: 8, best_time: 109300 }
+        - { level: 9, best_time: 105700 }
+        - { level: 10, best_time: 102000 }
+        - { level: 11, best_time: 96700 }
+        - { level: 12, best_time: 91300 }
+        - { level: 13, best_time: 86000 }
+    - map_id: 465
+      levels:
+        - { level: 1, best_time: 142000 }
+        - { level: 2, best_time: 138300 }
+        - { level: 3, best_time: 134700 }
+        - { level: 4, best_time: 131000 }
+        - { level: 5, best_time: 128300 }
+        - { level: 6, best_time: 125700 }
+        - { level: 7, best_time: 123000 }
+        - { level: 8, best_time: 118000 }
+        - { level: 9, best_time: 113000 }
+        - { level: 10, best_time: 108000 }
+        - { level: 11, best_time: 105300 }
+        - { level: 12, best_time: 102700 }
+        - { level: 13, best_time: 100000 }
+    - map_id: 254
+      levels:
+        - { level: 1, best_time: 118000 }
+        - { level: 2, best_time: 115000 }
+        - { level: 3, best_time: 112000 }
+        - { level: 4, best_time: 109000 }
+        - { level: 5, best_time: 106000 }
+        - { level: 6, best_time: 103000 }
+        - { level: 7, best_time: 100000 }
+        - { level: 8, best_time: 95700 }
+        - { level: 9, best_time: 91300 }
+        - { level: 10, best_time: 87000 }
+        - { level: 11, best_time: 85000 }
+        - { level: 12, best_time: 83000 }
+        - { level: 13, best_time: 81000 }
+    - map_id: 123
+      levels:
+        - { level: 1, best_time: 167000 }
+        - { level: 2, best_time: 162300 }
+        - { level: 3, best_time: 157700 }
+        - { level: 4, best_time: 153000 }
+        - { level: 5, best_time: 147300 }
+        - { level: 6, best_time: 141700 }
+        - { level: 7, best_time: 136000 }
+        - { level: 8, best_time: 127000 }
+        - { level: 9, best_time: 118000 }
+        - { level: 10, best_time: 109000 }
+        - { level: 11, best_time: 106300 }
+        - { level: 12, best_time: 103700 }
+        - { level: 13, best_time: 101000 }
+    - map_id: 132
+      levels:
+        - { level: 1, best_time: 174000 }
+        - { level: 2, best_time: 168700 }
+        - { level: 3, best_time: 163300 }
+        - { level: 4, best_time: 158000 }
+        - { level: 5, best_time: 152300 }
+        - { level: 6, best_time: 146700 }
+        - { level: 7, best_time: 141000 }
+        - { level: 8, best_time: 133000 }
+        - { level: 9, best_time: 125000 }
+        - { level: 10, best_time: 117000 }
+        - { level: 11, best_time: 114000 }
+        - { level: 12, best_time: 111000 }
+        - { level: 13, best_time: 108000 }
+    - map_id: 133
+      levels:
+        - { level: 1, best_time: 117000 }
+        - { level: 2, best_time: 114000 }
+        - { level: 3, best_time: 111000 }
+        - { level: 4, best_time: 108000 }
+        - { level: 5, best_time: 104700 }
+        - { level: 6, best_time: 101300 }
+        - { level: 7, best_time: 98000 }
+        - { level: 8, best_time: 93700 }
+        - { level: 9, best_time: 89300 }
+        - { level: 10, best_time: 85000 }
+        - { level: 11, best_time: 82300 }
+        - { level: 12, best_time: 79700 }
+        - { level: 13, best_time: 77000 }
+    - map_id: 167
+      levels:
+        - { level: 1, best_time: 126000 }
+        - { level: 2, best_time: 121300 }
+        - { level: 3, best_time: 116700 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 109000 }
+        - { level: 6, best_time: 106000 }
+        - { level: 7, best_time: 103000 }
+        - { level: 8, best_time: 100000 }
+        - { level: 9, best_time: 97000 }
+        - { level: 10, best_time: 94000 }
+        - { level: 11, best_time: 91700 }
+        - { level: 12, best_time: 89300 }
+        - { level: 13, best_time: 87000 }
+    - map_id: 181
+      levels:
+        - { level: 1, best_time: 115000 }
+        - { level: 2, best_time: 112300 }
+        - { level: 3, best_time: 109700 }
+        - { level: 4, best_time: 107000 }
+        - { level: 5, best_time: 104000 }
+        - { level: 6, best_time: 101000 }
+        - { level: 7, best_time: 98000 }
+        - { level: 8, best_time: 93700 }
+        - { level: 9, best_time: 89300 }
+        - { level: 10, best_time: 85000 }
+        - { level: 11, best_time: 81000 }
+        - { level: 12, best_time: 77000 }
+        - { level: 13, best_time: 73000 }
+    - map_id: 194
+      levels:
+        - { level: 1, best_time: 112000 }
+        - { level: 2, best_time: 109000 }
+        - { level: 3, best_time: 106000 }
+        - { level: 4, best_time: 103000 }
+        - { level: 5, best_time: 99700 }
+        - { level: 6, best_time: 96300 }
+        - { level: 7, best_time: 93000 }
+        - { level: 8, best_time: 88700 }
+        - { level: 9, best_time: 84300 }
+        - { level: 10, best_time: 80000 }
+        - { level: 11, best_time: 77300 }
+        - { level: 12, best_time: 74700 }
+        - { level: 13, best_time: 72000 }
+    - map_id: 212
+      levels:
+        - { level: 1, best_time: 130000 }
+        - { level: 2, best_time: 126300 }
+        - { level: 3, best_time: 122700 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 115300 }
+        - { level: 6, best_time: 111700 }
+        - { level: 7, best_time: 108000 }
+        - { level: 8, best_time: 103300 }
+        - { level: 9, best_time: 98700 }
+        - { level: 10, best_time: 94000 }
+        - { level: 11, best_time: 90000 }
+        - { level: 12, best_time: 86000 }
+        - { level: 13, best_time: 82000 }
+    - map_id: 222
+      levels:
+        - { level: 1, best_time: 122000 }
+        - { level: 2, best_time: 119000 }
+        - { level: 3, best_time: 116000 }
+        - { level: 4, best_time: 113000 }
+        - { level: 5, best_time: 110000 }
+        - { level: 6, best_time: 107000 }
+        - { level: 7, best_time: 104000 }
+        - { level: 8, best_time: 99300 }
+        - { level: 9, best_time: 94700 }
+        - { level: 10, best_time: 90000 }
+        - { level: 11, best_time: 86300 }
+        - { level: 12, best_time: 82700 }
+        - { level: 13, best_time: 79000 }
+    - map_id: 231
+      levels:
+        - { level: 1, best_time: 126000 }
+        - { level: 2, best_time: 122000 }
+        - { level: 3, best_time: 118000 }
+        - { level: 4, best_time: 114000 }
+        - { level: 5, best_time: 110000 }
+        - { level: 6, best_time: 106000 }
+        - { level: 7, best_time: 102000 }
+        - { level: 8, best_time: 97300 }
+        - { level: 9, best_time: 92700 }
+        - { level: 10, best_time: 88000 }
+        - { level: 11, best_time: 86300 }
+        - { level: 12, best_time: 84700 }
+        - { level: 13, best_time: 83000 }
+    - map_id: 239
+      levels:
+        - { level: 1, best_time: 185000 }
+        - { level: 2, best_time: 180000 }
+        - { level: 3, best_time: 175000 }
+        - { level: 4, best_time: 170000 }
+        - { level: 5, best_time: 164700 }
+        - { level: 6, best_time: 159300 }
+        - { level: 7, best_time: 154000 }
+        - { level: 8, best_time: 146700 }
+        - { level: 9, best_time: 139300 }
+        - { level: 10, best_time: 132000 }
+        - { level: 11, best_time: 126700 }
+        - { level: 12, best_time: 121300 }
+        - { level: 13, best_time: 116000 }
+    - map_id: 266
+      levels:
+        - { level: 1, best_time: 121000 }
+        - { level: 2, best_time: 118000 }
+        - { level: 3, best_time: 115000 }
+        - { level: 4, best_time: 112000 }
+        - { level: 5, best_time: 109300 }
+        - { level: 6, best_time: 106700 }
+        - { level: 7, best_time: 104000 }
+        - { level: 8, best_time: 99300 }
+        - { level: 9, best_time: 94700 }
+        - { level: 10, best_time: 90000 }
+        - { level: 11, best_time: 87000 }
+        - { level: 12, best_time: 84000 }
+        - { level: 13, best_time: 81000 }
+    - map_id: 276
+      levels:
+        - { level: 1, best_time: 127000 }
+        - { level: 2, best_time: 124000 }
+        - { level: 3, best_time: 121000 }
+        - { level: 4, best_time: 118000 }
+        - { level: 5, best_time: 115300 }
+        - { level: 6, best_time: 112700 }
+        - { level: 7, best_time: 110000 }
+        - { level: 8, best_time: 105300 }
+        - { level: 9, best_time: 100700 }
+        - { level: 10, best_time: 96000 }
+        - { level: 11, best_time: 93300 }
+        - { level: 12, best_time: 90700 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 320
+      levels:
+        - { level: 1, best_time: 114000 }
+        - { level: 2, best_time: 111700 }
+        - { level: 3, best_time: 109300 }
+        - { level: 4, best_time: 107000 }
+        - { level: 5, best_time: 104300 }
+        - { level: 6, best_time: 101700 }
+        - { level: 7, best_time: 99000 }
+        - { level: 8, best_time: 91300 }
+        - { level: 9, best_time: 83700 }
+        - { level: 10, best_time: 76000 }
+        - { level: 11, best_time: 74700 }
+        - { level: 12, best_time: 73300 }
+        - { level: 13, best_time: 72000 }
+    - map_id: 329
+      levels:
+        - { level: 1, best_time: 133000 }
+        - { level: 2, best_time: 129000 }
+        - { level: 3, best_time: 125000 }
+        - { level: 4, best_time: 121000 }
+        - { level: 5, best_time: 115300 }
+        - { level: 6, best_time: 109700 }
+        - { level: 7, best_time: 104000 }
+        - { level: 8, best_time: 99300 }
+        - { level: 9, best_time: 94700 }
+        - { level: 10, best_time: 90000 }
+        - { level: 11, best_time: 88300 }
+        - { level: 12, best_time: 86700 }
+        - { level: 13, best_time: 85000 }
+    - map_id: 339
+      levels:
+        - { level: 1, best_time: 147000 }
+        - { level: 2, best_time: 143300 }
+        - { level: 3, best_time: 139700 }
+        - { level: 4, best_time: 136000 }
+        - { level: 5, best_time: 130300 }
+        - { level: 6, best_time: 124700 }
+        - { level: 7, best_time: 119000 }
+        - { level: 8, best_time: 112300 }
+        - { level: 9, best_time: 105700 }
+        - { level: 10, best_time: 99000 }
+        - { level: 11, best_time: 95700 }
+        - { level: 12, best_time: 92300 }
+        - { level: 13, best_time: 89000 }
+    - map_id: 348
+      levels:
+        - { level: 1, best_time: 136000 }
+        - { level: 2, best_time: 132700 }
+        - { level: 3, best_time: 129300 }
+        - { level: 4, best_time: 126000 }
+        - { level: 5, best_time: 122000 }
+        - { level: 6, best_time: 118000 }
+        - { level: 7, best_time: 114000 }
+        - { level: 8, best_time: 107300 }
+        - { level: 9, best_time: 100700 }
+        - { level: 10, best_time: 94000 }
+        - { level: 11, best_time: 90700 }
+        - { level: 12, best_time: 87300 }
+        - { level: 13, best_time: 84000 }
+    - map_id: 351
+      levels:
+        - { level: 1, best_time: 175000 }
+        - { level: 2, best_time: 170000 }
+        - { level: 3, best_time: 165000 }
+        - { level: 4, best_time: 160000 }
+        - { level: 5, best_time: 150300 }
+        - { level: 6, best_time: 140700 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 126700 }
+        - { level: 9, best_time: 122300 }
+        - { level: 10, best_time: 118000 }
+        - { level: 11, best_time: 113700 }
+        - { level: 12, best_time: 109300 }
+        - { level: 13, best_time: 105000 }
+    - map_id: 448
+      levels:
+        - { level: 1, best_time: 171000 }
+        - { level: 2, best_time: 164300 }
+        - { level: 3, best_time: 157700 }
+        - { level: 4, best_time: 151000 }
+        - { level: 5, best_time: 144300 }
+        - { level: 6, best_time: 137700 }
+        - { level: 7, best_time: 131000 }
+        - { level: 8, best_time: 125700 }
+        - { level: 9, best_time: 120300 }
+        - { level: 10, best_time: 115000 }
+        - { level: 11, best_time: 114300 }
+        - { level: 12, best_time: 113700 }
+        - { level: 13, best_time: 113000 }
+    - map_id: 470
+      levels:
+        - { level: 1, best_time: 130000 }
+        - { level: 2, best_time: 126300 }
+        - { level: 3, best_time: 122700 }
+        - { level: 4, best_time: 119000 }
+        - { level: 5, best_time: 117000 }
+        - { level: 6, best_time: 115000 }
+        - { level: 7, best_time: 113000 }
+        - { level: 8, best_time: 110700 }
+        - { level: 9, best_time: 108300 }
+        - { level: 10, best_time: 106000 }
+        - { level: 11, best_time: 100000 }
+        - { level: 12, best_time: 94000 }
+        - { level: 13, best_time: 88000 }
+    - map_id: 153
+      levels:
+        - { level: 1, best_time: 169000 }
+        - { level: 2, best_time: 165700 }
+        - { level: 3, best_time: 162300 }
+        - { level: 4, best_time: 159000 }
+        - { level: 5, best_time: 155700 }
+        - { level: 6, best_time: 152300 }
+        - { level: 7, best_time: 149000 }
+        - { level: 8, best_time: 141700 }
+        - { level: 9, best_time: 134300 }
+        - { level: 10, best_time: 127000 }
+        - { level: 11, best_time: 121000 }
+        - { level: 12, best_time: 115000 }
+        - { level: 13, best_time: 109000 }
+    - map_id: 291
+      levels:
+        - { level: 1, best_time: 203000 }
+        - { level: 2, best_time: 199300 }
+        - { level: 3, best_time: 195700 }
+        - { level: 4, best_time: 192000 }
+        - { level: 5, best_time: 189000 }
+        - { level: 6, best_time: 186000 }
+        - { level: 7, best_time: 183000 }
+        - { level: 8, best_time: 179700 }
+        - { level: 9, best_time: 176300 }
+        - { level: 10, best_time: 173000 }
+        - { level: 11, best_time: 160300 }
+        - { level: 12, best_time: 147700 }
+        - { level: 13, best_time: 135000 }
+    - map_id: 292
+      levels:
+        - { level: 1, best_time: 132000 }
+        - { level: 2, best_time: 129000 }
+        - { level: 3, best_time: 126000 }
+        - { level: 4, best_time: 123000 }
+        - { level: 5, best_time: 119700 }
+        - { level: 6, best_time: 116300 }
+        - { level: 7, best_time: 113000 }
+        - { level: 8, best_time: 105700 }
+        - { level: 9, best_time: 98300 }
+        - { level: 10, best_time: 91000 }
+        - { level: 11, best_time: 89000 }
+        - { level: 12, best_time: 87000 }
+        - { level: 13, best_time: 85000 }
+    - map_id: 342
+      levels:
+        - { level: 1, best_time: 207000 }
+        - { level: 2, best_time: 201700 }
+        - { level: 3, best_time: 196300 }
+        - { level: 4, best_time: 191000 }
+        - { level: 5, best_time: 186000 }
+        - { level: 6, best_time: 181000 }
+        - { level: 7, best_time: 176000 }
+        - { level: 8, best_time: 162300 }
+        - { level: 9, best_time: 148700 }
+        - { level: 10, best_time: 135000 }
+        - { level: 11, best_time: 131700 }
+        - { level: 12, best_time: 128300 }
+        - { level: 13, best_time: 125000 }
+    - map_id: 433
+      levels:
+        - { level: 1, best_time: 211000 }
+        - { level: 2, best_time: 204700 }
+        - { level: 3, best_time: 198300 }
+        - { level: 4, best_time: 192000 }
+        - { level: 5, best_time: 187300 }
+        - { level: 6, best_time: 182700 }
+        - { level: 7, best_time: 178000 }
+        - { level: 8, best_time: 171700 }
+        - { level: 9, best_time: 165300 }
+        - { level: 10, best_time: 159000 }
+        - { level: 11, best_time: 148300 }
+        - { level: 12, best_time: 137700 }
+        - { level: 13, best_time: 127000 }
+    - map_id: 459
+      levels:
+        - { level: 1, best_time: 221000 }
+        - { level: 2, best_time: 212700 }
+        - { level: 3, best_time: 204300 }
+        - { level: 4, best_time: 196000 }
+        - { level: 5, best_time: 188700 }
+        - { level: 6, best_time: 181300 }
+        - { level: 7, best_time: 174000 }
+        - { level: 8, best_time: 167000 }
+        - { level: 9, best_time: 160000 }
+        - { level: 10, best_time: 153000 }
+        - { level: 11, best_time: 143000 }
+        - { level: 12, best_time: 133000 }
+        - { level: 13, best_time: 123000 }

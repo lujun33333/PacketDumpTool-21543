@@ -1,0 +1,63 @@
+# 贵族及结算奖励运行配置；GameServer 启动时读取本文件。
+# 修改后需要重启 GameServer。配置错误会阻止服务启动，避免带错奖励运行。
+#
+# 数字键是“最低成长值”，不是 NobleLevel 等等级字段；这是当前源码原有判断方式。
+# 同一身份达到多个门槛时逐条累计，所以可以只写一个门槛，也可以写任意多个门槛。
+# SuperMoneyAdd=点券；ExperienceAdd=经验；HonorAdd=荣誉；SpeedCoinAdd=飞车币。
+# 奖励字段直接写在模式下面：完成该模式就发；写在身份/成长值下面：满足门槛后再累计。
+# OnlyFinished=true：未完成比赛时，本模式下本文件配置的全部奖励（含结算盒子）都不发。
+# 不写 GameEndBoxAwardAddNum：本模式不发结算盲盒。
+# GameEndBoxAwardAddNum=0：按 Treasure.yml 原数量发；填30：在原数量上再加30（原50最终80）。
+# 特殊UIN及时段倍数先按 Treasure.yml 计算，再叠加这里的数量；物品池及抽取逻辑不变。
+# 空对象 {}：该模式不配置贵族加成，且默认不发结算盒子。
+
+Modes:
+  BorderRace:                                  # 边境匹配：matchQueueType=0
+    OnlyFinished: true                         # 只有完成比赛才发以下奖励
+    SpeedCoinAdd: 0                            # 每局飞车币+0；后续改成需要的数量即可
+
+    Noble:                                     # 皇族；读取 Client->NoblePoint
+      30000: { SuperMoneyAdd: 500, ExperienceAdd: 0, HonorAdd: 0 }   # 成长值>=30000：点券+500
+      60000: { SuperMoneyAdd: 500, ExperienceAdd: 0, HonorAdd: 0 }   # 成长值>=60000：再+500，累计点券+1000
+
+    Emperor:                                   # 钻皇；读取 Client->EmperorPoint
+      30000: { SuperMoneyAdd: 1000, ExperienceAdd: 0, HonorAdd: 0 }  # 成长值>=30000：点券+1000
+      60000: { SuperMoneyAdd: 1000, ExperienceAdd: 0, HonorAdd: 0 }  # 成长值>=60000：再+1000，累计点券+2000
+
+    LoverVip:                                  # 情侣贵族；读取 Client->LoverVipPoint
+      60000: { SuperMoneyAdd: 1000, ExperienceAdd: 0, HonorAdd: 0 }  # 成长值>=60000：点券+1000
+
+    GuildVip:                                  # 车队贵族；读取 Client->GuildVipPoint
+      60000: { SuperMoneyAdd: 500, ExperienceAdd: 0, HonorAdd: 0 }   # 成长值>=60000：点券+500
+
+    Garden:                                    # 后花园；读取 Client->GardenPoint
+      60000: { SuperMoneyAdd: 1000, ExperienceAdd: 0, HonorAdd: 10000 } # 成长值>=60000：点券+1000、荣誉+10000
+
+    LoverBabyEquipped:                         # 情侣宝宝1或2任意一个处于装备状态
+      SuperMoneyAdd: 500                       # 点券+500
+      ExperienceAdd: 0                         # 经验+0
+      HonorAdd: 0                              # 荣誉+0
+
+    Engaged:                                   # Client->EngageUin != 0，即已有婚姻关系
+      SuperMoneyAdd: 500                       # 点券+500
+      ExperienceAdd: 0                         # 经验+0
+      HonorAdd: 0                              # 荣誉+0
+
+  RankedRace:                                  # 排位匹配：matchQueueType=10
+    OnlyFinished: true                         # 只有完成排位比赛才发以下加成
+    SpeedCoinAdd: 0                            # 每局飞车币+0；后续改成需要的数量即可
+    Noble:
+      0: { SuperMoneyAdd: 0, ExperienceAdd: 0, HonorAdd: 0 }     # 所有玩家：原结算点券+1000
+  NormalRace: {}                               # 普通立即竞速/人机：matchQueueType=1；当前不配置任何额外奖励
+  AuroraRace: {}                               # 极光赛道：AuroraUGC且matchQueueType=8；当前不配置任何额外奖励
+  QueueType12: {}                              # matchQueueType=12、BaseGameMode=17；当前不配置任何额外奖励
+
+  RoomRace:                                    # 普通房间结算（非匹配队列）
+    OnlyFinished: false                        # 保留当前源码行为：未完成也会走结算盒子调用
+    GameEndBoxAwardAddNum: 0                   # 保留原数量：当前普通配置50+0=50
+
+  CustomRace:                                  # 自定义方案/多阶段房间：Room->HasCustomScheme
+    OnlyFinished: false                        # 保留当前源码行为
+    GameEndBoxAwardAddNum: 0                   # 保留原数量：当前普通配置50+0=50
+
+  OtherRace: {}                                # 未识别的其他结算模式；默认无加成、无结算盒子

@@ -1,0 +1,6197 @@
+﻿#include "Message.h"
+#include "Msg28346Builder.h"
+#include "Msg100LoginPlain.h"
+#include "Item.h"
+#include "pet.h"
+
+#include <algorithm>
+#include <array>
+#include <cstdint>
+#include <cstdlib>
+#include <cstring>
+#include <exception>
+#include <limits>
+#include <mutex>
+#include <random>
+#include <utility>
+
+namespace qqspeed::build323
+{
+    inline constexpr std::size_t kNotifyGameBegin509FixedRawSize = 0xAB03;
+
+    bool EncodeNotifyGameBegin509(
+        const std::uint8_t* fixedRaw,
+        std::size_t fixedRawSize,
+        std::mt19937_64& paddingRng,
+        std::vector<std::uint8_t>& safeOut,
+        std::string* error);
+
+    bool DecodeNotifyGameBegin509LegacyBody(
+        const std::uint8_t* bodyWithoutRootLength,
+        std::size_t bodySize,
+        std::array<std::uint8_t, kNotifyGameBegin509FixedRawSize>& fixedRaw,
+        std::string* error);
+}
+
+#include "Msg509Build21669.generated.inc"
+#include "Msg509BuildCurrentNormal.generated.inc"
+
+namespace
+{
+    constexpr USHORT kInnerMsgLoginMoreInfo = 223;
+    constexpr USHORT kInnerMsgPlayerItems = 437;
+    constexpr USHORT kInnerMsgPlayerItemsMore = 438;
+    constexpr size_t kOfficial28346HeaderLen = 0x0C;
+    constexpr size_t kOfficial28346WorkspaceLen = 32213;
+    constexpr size_t kOfficial28346MaxInnerLen = kOfficial28346WorkspaceLen - kOfficial28346HeaderLen - 1;
+    constexpr size_t kOfficialSafe223MaxPetPage = 50;
+    constexpr size_t kOfficialInventoryPageSize = 1000;
+    // 当前 21487 Network.dll 与 PID=15588 官服抓包均表明：safe 页校验值
+    // 绑定本次 LoginClientPID，不能照抄其它客户端进程的抓包值。
+    constexpr DWORD kClientPidCheckXor = 0x3A3A3A3Au;
+
+#include "Msg100SafeCodecData.inc"
+
+    static constexpr BYTE kB30[256] = {
+        0x3E, 0xD3, 0x05, 0xA7, 0x09, 0x14, 0xBD, 0x1E, 0xE0, 0x5D, 0xB0, 0x6E, 0x9B, 0xD6, 0x32, 0xEE,
+        0x51, 0x72, 0x68, 0x5A, 0x97, 0xA9, 0xA0, 0x67, 0xC5, 0x42, 0x59, 0x55, 0x7F, 0x37, 0xC9, 0xAC,
+        0x8D, 0x0A, 0x5C, 0x46, 0x2C, 0xA3, 0xD9, 0xD4, 0xD1, 0x07, 0x7D, 0x39, 0x24, 0xED, 0xFE, 0x8E,
+        0x61, 0x99, 0xE3, 0x3D, 0x1B, 0x08, 0x92, 0x73, 0xF4, 0xAD, 0xF0, 0xFC, 0xCA, 0xA2, 0xEC, 0x38,
+        0x18, 0x2A, 0xCD, 0x87, 0xAF, 0xD7, 0x4A, 0x1D, 0xC6, 0x7A, 0x2E, 0x30, 0xBC, 0x4F, 0x58, 0xBE,
+        0x4D, 0x13, 0xFB, 0x8A, 0xCE, 0x3F, 0x01, 0x85, 0xE9, 0x8C, 0x20, 0x1C, 0xAA, 0x35, 0x26, 0x2D,
+        0xB4, 0x2B, 0x3B, 0x19, 0xB8, 0xB5, 0x45, 0xA8, 0xFF, 0x47, 0x12, 0xE5, 0xCC, 0x50, 0x27, 0x16,
+        0x98, 0x0B, 0x83, 0xF5, 0x91, 0x29, 0xB2, 0xF9, 0x1F, 0x0C, 0x86, 0x84, 0x75, 0x64, 0x1A, 0x0F,
+        0xE6, 0x7C, 0x02, 0x04, 0x9A, 0x94, 0x34, 0x4E, 0x53, 0xEF, 0xDC, 0xB1, 0xF8, 0x81, 0x52, 0x06,
+        0xFA, 0xC7, 0x0E, 0xB6, 0xCF, 0x77, 0x21, 0x11, 0x6F, 0x25, 0x82, 0xA6, 0x4C, 0x60, 0x0D, 0x7E,
+        0x93, 0xAE, 0xC4, 0xEB, 0x5F, 0x9D, 0x62, 0x96, 0x8F, 0x89, 0x2F, 0xDD, 0x43, 0x5E, 0xA1, 0xE2,
+        0xF1, 0xA4, 0x9C, 0x88, 0xCB, 0x56, 0x78, 0xBF, 0x22, 0x23, 0x36, 0x6C, 0x48, 0x71, 0x54, 0x70,
+        0x74, 0xBA, 0x69, 0xE8, 0xE1, 0xE4, 0xE7, 0x15, 0xBB, 0x66, 0x40, 0x10, 0x5B, 0xA5, 0xC8, 0x31,
+        0xF7, 0x28, 0xF2, 0xF3, 0x33, 0xB9, 0xFD, 0x00, 0xF6, 0xDE, 0x57, 0x9E, 0x03, 0x79, 0xB3, 0x3A,
+        0xC2, 0x6B, 0xDB, 0xD0, 0x8B, 0x63, 0x17, 0x6D, 0x9F, 0xD2, 0xAB, 0x49, 0xD5, 0xC0, 0xEA, 0xDA,
+        0x3C, 0x95, 0xB7, 0x44, 0x7B, 0xDF, 0x90, 0x76, 0x4B, 0xC3, 0x65, 0x80, 0x41, 0x6A, 0xC1, 0xD8
+    };
+
+    static constexpr BYTE kC30[256] = {
+        0xD7, 0x56, 0x82, 0xDC, 0x83, 0x02, 0x8F, 0x29, 0x35, 0x04, 0x21, 0x71, 0x79, 0x9E, 0x92, 0x7F,
+        0xCB, 0x97, 0x6A, 0x51, 0x05, 0xC7, 0x6F, 0xE6, 0x40, 0x63, 0x7E, 0x34, 0x5B, 0x47, 0x07, 0x78,
+        0x5A, 0x96, 0xB8, 0xB9, 0x2C, 0x99, 0x5E, 0x6E, 0xD1, 0x75, 0x41, 0x61, 0x24, 0x5F, 0x4A, 0xAA,
+        0x4B, 0xCF, 0x0E, 0xD4, 0x86, 0x5D, 0xBA, 0x1D, 0x3F, 0x2B, 0xDF, 0x62, 0xF0, 0x33, 0x00, 0x55,
+        0xCA, 0xFC, 0x19, 0xAC, 0xF3, 0x66, 0x23, 0x69, 0xBC, 0xEB, 0x46, 0xF8, 0x9C, 0x50, 0x87, 0x4D,
+        0x6D, 0x10, 0x8E, 0x88, 0xBE, 0x1B, 0xB5, 0xDA, 0x4E, 0x1A, 0x13, 0xCC, 0x22, 0x09, 0xAD, 0xA4,
+        0x9D, 0x30, 0xA6, 0xE5, 0x7D, 0xFA, 0xC9, 0x17, 0x12, 0xC2, 0xFD, 0xE1, 0xBB, 0xE7, 0x0B, 0x98,
+        0xBF, 0xBD, 0x11, 0x37, 0xC0, 0x7C, 0xF7, 0x95, 0xB6, 0xDD, 0x49, 0xF4, 0x81, 0x2A, 0x9F, 0x1C,
+        0xFB, 0x8D, 0x9A, 0x72, 0x7B, 0x57, 0x7A, 0x43, 0xB3, 0xA9, 0x53, 0xE4, 0x59, 0x20, 0x2F, 0xA8,
+        0xF6, 0x74, 0x36, 0xA0, 0x85, 0xF1, 0xA7, 0x14, 0x70, 0x31, 0x84, 0x0C, 0xB2, 0xA5, 0xDB, 0xE8,
+        0x16, 0xAE, 0x3D, 0x25, 0xB1, 0xCD, 0x9B, 0x03, 0x67, 0x15, 0x5C, 0xEA, 0x1F, 0x39, 0xA1, 0x44,
+        0x0A, 0x8B, 0x76, 0xDE, 0x60, 0x65, 0x93, 0xF2, 0x64, 0xD5, 0xC1, 0xC8, 0x4C, 0x06, 0x4F, 0xB7,
+        0xED, 0xFE, 0xE0, 0xF9, 0xA2, 0x18, 0x48, 0x91, 0xCE, 0x1E, 0x3C, 0xB4, 0x6C, 0x42, 0x54, 0x94,
+        0xE3, 0x28, 0xE9, 0x01, 0x27, 0xEC, 0x0D, 0x45, 0xFF, 0x26, 0xEF, 0xE2, 0x8A, 0xAB, 0xD9, 0xF5,
+        0x08, 0xC4, 0xAF, 0x32, 0xC5, 0x6B, 0x80, 0xC6, 0xC3, 0x58, 0xEE, 0xA3, 0x3E, 0x2D, 0x0F, 0x89,
+        0x3A, 0xB0, 0xD2, 0xD3, 0x38, 0x73, 0xD8, 0xD0, 0x8C, 0x77, 0x90, 0x52, 0x3B, 0xD6, 0x2E, 0x68
+    };
+
+    enum class VarKind
+    {
+        Safe223Check,
+        Safe223TaskCount,
+        Safe223ItemCount,
+        Safe223PetCount,
+        Safe223KartStoneCount,
+        Safe223Count500,
+        ItemAvailPeriod,
+        ItemNum,
+        ItemObtainTime,
+        ItemOtherAttribute,
+        ItemID,
+        ItemType,
+    };
+
+    enum class PostKind
+    {
+        Safe223Check,
+        Safe223TaskCount,
+        Safe223ItemCount,
+        Safe223PetCount,
+        Safe223KartStoneCount,
+        Safe223Count500,
+        ItemAvailPeriod,
+        ItemNum,
+        ItemObtainTime,
+        ItemOtherAttribute,
+        ItemID,
+        ItemType,
+    };
+
+    static BYTE U8(unsigned int x) { return static_cast<BYTE>(x & 0xFFu); }
+    static BYTE Ror8(BYTE x, unsigned int n) { n &= 7; return U8((x >> n) | (x << (8 - n))); }
+    static BYTE Rol8(BYTE x, unsigned int n) { n &= 7; return U8((x << n) | (x >> (8 - n))); }
+    static BYTE Not8(BYTE x) { return U8(~x); }
+
+    static BYTE Swap55(BYTE x)
+    {
+        return U8(((x >> 1) & 0x55u) | (2u * (x & 0xD5u)));
+    }
+
+    static BYTE Perm(BYTE x)
+    {
+        const unsigned int v = ((32800u * x) & 0x88440u) | ((2050u * x) & 0x22110u);
+        return U8((65793u * v) >> 16);
+    }
+
+    // safe scalar fields use transforms separate from the varint fields below.
+    // Generate wire bytes from the decoded value; captured bytes are only valid
+    // for the exact captured value.
+    static BYTE EncodeRecordCount(BYTE count)
+    {
+        return U8((Ror8(U8(kB30[U8(count ^ 0x9Fu)] ^ 0xF8u), 5) - 0x30u) ^ 0x62u);
+    }
+
+    static BYTE EncodeItemStatus(BYTE status)
+    {
+        return U8(kB30[Rol8(U8(Ror8(kB30[status], 2) ^ 0x23u), 6)] - 0x68u);
+    }
+
+    static BYTE EncodeItemPadCount(BYTE count)
+    {
+        return kB30[Rol8(U8(Swap55(U8(U8(count + 0x36u) ^ 0xCDu)) ^ 0x73u), 7)];
+    }
+
+    static BYTE EncodeItemPadValue(BYTE transformedVarByte)
+    {
+        return U8(Rol8(U8(kB30[kB30[transformedVarByte]] ^ 0xF1u), 2) - 0x69u);
+    }
+
+    static BYTE EncodeTailPadCount(BYTE count)
+    {
+        return U8(kB30[kB30[U8(Swap55(U8(count - 17u)) - 78u)]] ^ 0xE5u);
+    }
+
+    static BYTE EncodeTailPadValue(BYTE transformedVarByte)
+    {
+        return U8((Swap55(Rol8(kB30[Swap55(transformedVarByte)], 1)) ^ 0x0Du) + 69u);
+    }
+
+    static BYTE EncodeHasNext(BYTE value)
+    {
+        const BYTE a = Rol8(value, 1);
+        const BYTE b = Rol8(Not8(a), 4);
+        const BYTE c = Rol8(Not8(b), 5);
+        return Not8(Rol8(Perm(c), 5));
+    }
+
+    static BYTE EncodeLastPadCount(BYTE count)
+    {
+        return kB30[U8(Ror8(Swap55(Rol8(U8(count ^ 0x9Du), 2)), 4) ^ 0xC6u)];
+    }
+
+    static BYTE EncodeLastPadValue(BYTE transformedVarByte)
+    {
+        return Perm(U8(Rol8(Perm(transformedVarByte), 1) - 91u));
+    }
+
+    enum class PaddingField
+    {
+        Item,
+        Tail,
+        Last,
+    };
+
+    static void WriteBE16(std::vector<BYTE>& out, USHORT v)
+    {
+        out.push_back(U8(v >> 8));
+        out.push_back(U8(v));
+    }
+
+    static void WriteBE32(std::vector<BYTE>& out, UINT v)
+    {
+        out.push_back(U8(v >> 24));
+        out.push_back(U8(v >> 16));
+        out.push_back(U8(v >> 8));
+        out.push_back(U8(v));
+    }
+
+    static bool DecodeVarByte(VarKind kind, BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        BYTE y = 0;
+        switch (kind)
+        {
+        case VarKind::Safe223Check:
+        {
+            const BYTE t = U8(wire - 75u);
+            const BYTE v13 = kC30[U8(U8(Swap55(t) - 39u) ^ 0xE7u)];
+            y = Ror8(U8(v13 ^ 0x0Du), 6);
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::Safe223TaskCount:
+        {
+            const BYTE v22 = Ror8(U8(wire - 119u), 7);
+            const BYTE v23 = Ror8(Perm(v22), 6);
+            y = Perm(v23);
+            sevenBits = U8(Not8(y) & 0x7Fu);
+            stop = (y & 0x80u) != 0;
+            return true;
+        }
+        case VarKind::Safe223ItemCount:
+        {
+            const BYTE v47 = U8((wire ^ 0x14u) + 95u);
+            y = kC30[U8(U8(Swap55(v47) - 45u) ^ 0x3Cu)];
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::Safe223PetCount:
+        {
+            const BYTE v79 = Perm(wire);
+            const BYTE v80 = Ror8(Perm(v79), 4);
+            const BYTE v81 = Perm(v80);
+            const BYTE v82 = Perm(v81);
+            y = Perm(v82);
+            sevenBits = U8(Not8(y) & 0x7Fu);
+            stop = (y & 0x80u) != 0;
+            return true;
+        }
+        case VarKind::Safe223KartStoneCount:
+        {
+            const BYTE v106 = kC30[Rol8(wire, 4)];
+            const BYTE v107 = U8(Swap55(v106) ^ 0xCBu);
+            y = kC30[U8(Swap55(v107) ^ 0xDFu)];
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::Safe223Count500:
+        {
+            const BYTE v119 = kC30[U8(Ror8(U8(wire ^ 0x96u), 6) - 5u)];
+            y = U8(Ror8(Swap55(v119), 5) ^ 0x89u);
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::ItemAvailPeriod:
+        {
+            const BYTE v11 = kC30[U8(wire ^ 0xE8u)];
+            const BYTE v12 = kC30[U8(Ror8(v11, 1) ^ 0x5Cu)];
+            y = Ror8(Swap55(v12), 7);
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::ItemNum:
+        {
+            const BYTE v20 = Ror8(Not8(Ror8(Not8(Ror8(wire, 7)), 2)), 1);
+            y = Perm(Not8(v20));
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::ItemObtainTime:
+        {
+            const BYTE v28 = U8(kC30[wire] + 7u);
+            const BYTE v29 = Swap55(Rol8(v28, 4));
+            y = Rol8(v29, 1);
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::ItemOtherAttribute:
+        {
+            const BYTE v34 = Perm(wire);
+            const BYTE v35 = Perm(v34);
+            const BYTE v36 = Perm(v35);
+            y = U8(-121 - Perm(v36));
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::ItemID:
+        {
+            const BYTE t = U8(wire ^ 0xBAu);
+            const BYTE idx = U8(U8((Swap55(t) + 120u) ^ 0x05u) - 73u);
+            const BYTE v47 = kC30[idx];
+            y = U8(Ror8(v47, 6) - 103u);
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        case VarKind::ItemType:
+        {
+            y = U8(Ror8(U8(Swap55(wire) - 125u) ^ 0x6Du, 1) ^ 0x7Au);
+            sevenBits = U8(y & 0x7Fu);
+            stop = (y & 0x80u) == 0;
+            return true;
+        }
+        default:
+            return false;
+        }
+    }
+
+    static BYTE PostTransform(PostKind kind, BYTE pre)
+    {
+        switch (kind)
+        {
+        case PostKind::Safe223Check:
+        {
+            const BYTE v17 = U8((kB30[U8(Ror8(pre, 2) ^ 0x0Du)] ^ 0xE7u) + 39u);
+            return U8(Swap55(v17) + 75u);
+        }
+        case PostKind::Safe223TaskCount:
+        {
+            const BYTE v26 = Ror8(Perm(Not8(pre)), 2);
+            return U8(Ror8(Perm(v26), 1) + 119u);
+        }
+        case PostKind::Safe223ItemCount:
+        {
+            const BYTE v51 = Ror8(pre, 1);
+            const BYTE v52 = U8((kB30[Rol8(v51, 1)] ^ 0x3Cu) + 45u);
+            return U8((Swap55(v52) - 95u) ^ 0x14u);
+        }
+        case PostKind::Safe223PetCount:
+        {
+            const BYTE v84 = Perm(Not8(pre));
+            const BYTE v85 = Perm(v84);
+            const BYTE v86 = Ror8(Perm(v85), 4);
+            const BYTE v87 = Perm(v86);
+            return Perm(v87);
+        }
+        case PostKind::Safe223KartStoneCount:
+        {
+            const BYTE v109 = U8(kB30[pre] ^ 0xDFu);
+            const BYTE idx = U8(Swap55(U8(Swap55(v109) ^ 0xCBu)));
+            return Ror8(kB30[idx], 4);
+        }
+        case PostKind::Safe223Count500:
+        {
+            // Native decoder applies ROL8(x, 5); using 3 only happens to work
+            // for a subset of symmetric byte values and corrupts general data.
+            const BYTE x = U8(Rol8(U8(pre ^ 0x89u), 5));
+            const BYTE idx = Swap55(x);
+            return U8(Ror8(U8(kB30[idx] + 5u), 2) ^ 0x96u);
+        }
+        case PostKind::ItemAvailPeriod:
+        {
+            const BYTE v14 = Ror8(pre, 1);
+            const BYTE v15 = U8(kB30[Swap55(v14)] ^ 0x5Cu);
+            return U8(kB30[Rol8(v15, 1)] ^ 0xE8u);
+        }
+        case PostKind::ItemNum:
+        {
+            return Ror8(Not8(Ror8(Not8(Ror8(Not8(Perm(pre)), 7)), 6)), 1);
+        }
+        case PostKind::ItemObtainTime:
+        {
+            const BYTE mixed = U8(pre & 0xAAu) | U8((Ror8(pre, 1) >> 1) & 0x55u);
+            return kB30[U8(Ror8(mixed, 4) - 7u)];
+        }
+        case PostKind::ItemOtherAttribute:
+        {
+            const BYTE v39 = Perm(U8(-121 - pre));
+            const BYTE v40 = Perm(v39);
+            const BYTE v41 = Perm(v40);
+            return Perm(v41);
+        }
+        case PostKind::ItemID:
+        {
+            const BYTE v49 = U8((U8(kB30[Ror8(U8(pre + 103u), 2)] + 73u) ^ 0x05u) - 120u);
+            return U8(Swap55(v49) ^ 0xBAu);
+        }
+        case PostKind::ItemType:
+        {
+            const BYTE v57 = U8((Ror8(U8(pre ^ 0x7Au), 7) ^ 0x6Du) + 125u);
+            return Swap55(v57);
+        }
+        default:
+            return pre;
+        }
+    }
+
+    static bool FindPreByte(PostKind kind, BYTE target, BYTE& pre)
+    {
+        for (unsigned int b = 0; b < 256; ++b)
+        {
+            if (PostTransform(kind, static_cast<BYTE>(b)) == target)
+            {
+                pre = static_cast<BYTE>(b);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static bool StoredToDecodedByte(PostKind kind, BYTE storage, BYTE& decoded)
+    {
+        switch (kind)
+        {
+        case PostKind::Safe223Check:
+        {
+            const BYTE v13 = kC30[U8(U8(Swap55(U8(storage - 75u)) - 39u) ^ 0xE7u)];
+            decoded = Ror8(U8(v13 ^ 0x0Du), 6);
+            return true;
+        }
+        case PostKind::Safe223TaskCount:
+        {
+            const BYTE v6 = Ror8(U8(storage - 119u), 7);
+            const BYTE v7 = Ror8(Perm(v6), 6);
+            decoded = Not8(Perm(v7));
+            return true;
+        }
+        case PostKind::Safe223ItemCount:
+        {
+            const BYTE v47 = U8((storage ^ 0x14u) + 95u);
+            decoded = kC30[U8(U8(Swap55(v47) - 45u) ^ 0x3Cu)];
+            return true;
+        }
+        case PostKind::Safe223PetCount:
+        {
+            const BYTE v62 = Perm(storage);
+            const BYTE v63 = Ror8(Perm(v62), 4);
+            const BYTE v64 = Perm(v63);
+            const BYTE v65 = Perm(v64);
+            decoded = Not8(Perm(v65));
+            return true;
+        }
+        case PostKind::Safe223KartStoneCount:
+        {
+            const BYTE v118 = kC30[Rol8(storage, 4)];
+            const BYTE v119 = U8(Swap55(v118) ^ 0xCBu);
+            decoded = kC30[U8(Swap55(v119) ^ 0xDFu)];
+            return true;
+        }
+        case PostKind::Safe223Count500:
+        {
+            const BYTE v134 = Ror8(U8(storage ^ 0x96u), 6);
+            decoded = U8(Ror8(Swap55(kC30[U8(v134 - 5u)]), 5) ^ 0x89u);
+            return true;
+        }
+        case PostKind::ItemAvailPeriod:
+        {
+            const BYTE v11 = kC30[U8(storage ^ 0xE8u)];
+            const BYTE v12 = kC30[U8(Ror8(v11, 1) ^ 0x5Cu)];
+            decoded = Ror8(Swap55(v12), 7);
+            return true;
+        }
+        case PostKind::ItemNum:
+        {
+            const BYTE v20 = Ror8(Not8(Ror8(Not8(Ror8(storage, 7)), 2)), 1);
+            decoded = Perm(Not8(v20));
+            return true;
+        }
+        case PostKind::ItemObtainTime:
+        {
+            const BYTE v28 = U8(kC30[storage] + 7u);
+            const BYTE v29 = Swap55(Rol8(v28, 4));
+            decoded = Rol8(v29, 1);
+            return true;
+        }
+        case PostKind::ItemOtherAttribute:
+        {
+            const BYTE v34 = Perm(storage);
+            const BYTE v35 = Perm(v34);
+            const BYTE v36 = Perm(v35);
+            decoded = U8(-121 - Perm(v36));
+            return true;
+        }
+        case PostKind::ItemID:
+        {
+            const BYTE t = U8(storage ^ 0xBAu);
+            const BYTE idx = U8(U8((Swap55(t) + 120u) ^ 0x05u) - 73u);
+            const BYTE v47 = kC30[idx];
+            decoded = U8(Ror8(v47, 6) - 103u);
+            return true;
+        }
+        case PostKind::ItemType:
+        {
+            decoded = U8(Ror8(U8(Swap55(storage) - 125u) ^ 0x6Du, 1) ^ 0x7Au);
+            return true;
+        }
+        default:
+            return false;
+        }
+    }
+
+    static bool FindStoredByteForDecoded(PostKind kind, BYTE decoded, BYTE& storage)
+    {
+        BYTE got = 0;
+        for (unsigned int b = 0; b < 256; ++b)
+        {
+            if (StoredToDecodedByte(kind, static_cast<BYTE>(b), got) && got == decoded)
+            {
+                storage = static_cast<BYTE>(b);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static bool FindWireVarByte(VarKind kind, BYTE sevenBits, bool stop, BYTE& wire)
+    {
+        BYTE got = 0;
+        bool gotStop = false;
+        for (unsigned int b = 0; b < 256; ++b)
+        {
+            if (DecodeVarByte(kind, static_cast<BYTE>(b), got, gotStop) && got == sevenBits && gotStop == stop)
+            {
+                wire = static_cast<BYTE>(b);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static bool EncodeVarUIntRaw(VarKind kind, uint32_t rawValue, std::vector<BYTE>& out)
+    {
+        do
+        {
+            BYTE chunk = U8(rawValue & 0x7Fu);
+            rawValue >>= 7;
+            const bool stop = (rawValue == 0);
+            BYTE wire = 0;
+            if (!FindWireVarByte(kind, chunk, stop, wire))
+                return false;
+            out.push_back(wire);
+        } while (rawValue != 0);
+        return true;
+    }
+
+    static bool EncodeVarStoredField(VarKind varKind, PostKind postKind, uint32_t targetValue, size_t byteCount, std::vector<BYTE>& out)
+    {
+        uint32_t rawValue = 0;
+        for (size_t i = 0; i < byteCount; ++i)
+        {
+            BYTE pre = 0;
+            if (!FindPreByte(postKind, U8(targetValue >> (8 * i)), pre))
+                return false;
+            rawValue |= (static_cast<uint32_t>(pre) << (8 * i));
+        }
+        return EncodeVarUIntRaw(varKind, rawValue, out);
+    }
+
+    static bool EncodeVarDecodedField(VarKind varKind, PostKind postKind, uint32_t decodedValue, size_t byteCount, std::vector<BYTE>& out)
+    {
+        uint32_t rawValue = 0;
+        for (size_t i = 0; i < byteCount; ++i)
+        {
+            const BYTE wantDecoded = U8(decodedValue >> (8 * i));
+            BYTE storage = 0;
+            if (!FindStoredByteForDecoded(postKind, wantDecoded, storage))
+                return false;
+
+            BYTE pre = 0;
+            if (!FindPreByte(postKind, storage, pre))
+                return false;
+
+            rawValue |= (static_cast<uint32_t>(pre) << (8 * i));
+        }
+        return EncodeVarUIntRaw(varKind, rawValue, out);
+    }
+
+    using VarByteDecoder = bool (*)(BYTE wire, BYTE& sevenBits, bool& stop);
+    using ByteDecoder = BYTE (*)(BYTE value);
+
+    static bool FindWireVarByteGeneric(VarByteDecoder decoder, BYTE sevenBits, bool stop, BYTE& wire)
+    {
+        BYTE got = 0;
+        bool gotStop = false;
+        for (unsigned int b = 0; b < 256; ++b)
+        {
+            if (decoder(static_cast<BYTE>(b), got, gotStop) && got == sevenBits && gotStop == stop)
+            {
+                wire = static_cast<BYTE>(b);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static bool EncodeRawVarGeneric(VarByteDecoder decoder, uint32_t rawValue, std::vector<BYTE>& out)
+    {
+        do
+        {
+            const BYTE chunk = U8(rawValue & 0x7Fu);
+            rawValue >>= 7;
+            const bool stop = rawValue == 0;
+            BYTE wire = 0;
+            if (!FindWireVarByteGeneric(decoder, chunk, stop, wire))
+                return false;
+            out.push_back(wire);
+        } while (rawValue != 0);
+        return true;
+    }
+
+    static bool EncodeDecodedVarGeneric(
+        VarByteDecoder wireDecoder,
+        ByteDecoder postDecoder,
+        ByteDecoder expandDecoder,
+        uint32_t decodedValue,
+        size_t byteCount,
+        std::vector<BYTE>& out)
+    {
+        uint32_t rawValue = 0;
+        for (size_t i = 0; i < byteCount; ++i)
+        {
+            const BYTE wanted = U8(decodedValue >> (8 * i));
+            BYTE storage = 0;
+            bool foundStorage = false;
+            for (unsigned int b = 0; b < 256; ++b)
+            {
+                if (expandDecoder(static_cast<BYTE>(b)) == wanted)
+                {
+                    storage = static_cast<BYTE>(b);
+                    foundStorage = true;
+                    break;
+                }
+            }
+            if (!foundStorage)
+                return false;
+
+            BYTE raw = 0;
+            bool foundRaw = false;
+            for (unsigned int b = 0; b < 256; ++b)
+            {
+                if (postDecoder(static_cast<BYTE>(b)) == storage)
+                {
+                    raw = static_cast<BYTE>(b);
+                    foundRaw = true;
+                    break;
+                }
+            }
+            if (!foundRaw)
+                return false;
+
+            rawValue |= static_cast<uint32_t>(raw) << (8 * i);
+        }
+        return EncodeRawVarGeneric(wireDecoder, rawValue, out);
+    }
+
+    static bool EncodeDecodedByteGeneric(ByteDecoder decoder, BYTE value, std::vector<BYTE>& out)
+    {
+        for (unsigned int b = 0; b < 256; ++b)
+        {
+            if (decoder(static_cast<BYTE>(b)) == value)
+            {
+                out.push_back(static_cast<BYTE>(b));
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static bool DecodeVarResult(BYTE value, BYTE& sevenBits, bool& stop)
+    {
+        sevenBits = U8(value & 0x7Fu);
+        stop = (value & 0x80u) == 0;
+        return true;
+    }
+
+    // 21487 Network.dll: CSSafeCPetInfo::ReadFromStream
+    // (sub_18039C750), CSSafeCPetSkillInfo::ReadFromStream
+    // (sub_18039DC10) and CSSafeCPetCommonInfo::ReadFromStream
+    // (sub_1803896C0).  These are the current-client field transforms; the
+    // old generated PacketStruct files are deliberately not used here.
+    static BYTE DecodePetTopStatus(BYTE wire)
+    {
+        return Swap55(kC30[Rol8(kC30[U8(Swap55(U8(wire ^ 0x84u)) ^ 0xEAu)], 2)]);
+    }
+
+    static bool DecodePetIDVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(U8(Perm(U8(wire + 61u)) + 73u), sevenBits, stop);
+    }
+
+    static bool DecodePetMaxExpVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(Perm(Perm(Perm(U8(29u - wire)))), sevenBits, stop);
+    }
+
+    static bool DecodePetTotalPLVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(Perm(U8(Perm(Ror8(Perm(wire), 6)) - 8u)), sevenBits, stop);
+    }
+
+    static bool DecodePetExpVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE index = U8(U8(U8(Ror8(U8(wire + 84u), 5) ^ 0x23u) - 64u) ^ 0x8Cu);
+        return DecodeVarResult(kC30[U8(index - 117u)], sevenBits, stop);
+    }
+
+    static BYTE DecodePetNameByte(BYTE wire)
+    {
+        const BYTE a = Ror8(Perm(Not8(wire)), 3);
+        return Perm(Not8(Ror8(Perm(a), 5)));
+    }
+
+    static bool DecodePetLevelVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(Ror8(Not8(Ror8(U8(wire + 111u), 3)), 1), sevenBits, stop);
+    }
+
+    static bool DecodePetStrengthVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(U8(Perm(Ror8(Not8(wire), 4)) - 17u), sevenBits, stop);
+    }
+
+    static bool DecodePetLevelLimitVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(U8(Perm(U8(30u - Ror8(Not8(wire), 2))) + 46u), sevenBits, stop);
+    }
+
+    static BYTE DecodePetIsProper(BYTE wire)
+    {
+        return U8(Ror8(Ror8(U8(Swap55(wire) + 67u) ^ 0x02u, 1), 6) ^ 0xB6u);
+    }
+
+    static bool DecodePetUinVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        BYTE value = Perm(U8(wire - 4u));
+        value = Ror8(value, 5);
+        value = U8(Perm(value) - 30u);
+        value = Ror8(value, 7);
+        value = Perm(value);
+        return DecodeVarResult(Ror8(value, 1), sevenBits, stop);
+    }
+
+    static BYTE DecodePetStatus(BYTE wire)
+    {
+        return U8(Ror8(U8(wire - 88u), 6) + 99u);
+    }
+
+    static bool DecodePetSkillCountVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = U8(Ror8(Ror8(wire, 3), 6) + 74u);
+        const BYTE b = U8(kC30[kC30[a]] + 85u);
+        return DecodeVarResult(U8(kC30[b] + 9u), sevenBits, stop);
+    }
+
+    static bool DecodePetPLVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = U8(U8(kC30[kC30[U8(wire ^ 0x03u)]] - 107u) ^ 0x05u);
+        return DecodeVarResult(Swap55(kC30[Ror8(a, 1)]), sevenBits, stop);
+    }
+
+    static BYTE DecodePetPadding1Count(BYTE wire)
+    {
+        const BYTE a = U8(Ror8(U8(wire - 41u), 2) ^ 0xECu);
+        return kC30[Rol8(U8(Swap55(U8(a - 18u)) ^ 0xFDu), 2)];
+    }
+
+    static bool DecodePetPadding1ValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(Not8(Perm(Ror8(wire, 7))), sevenBits, stop);
+    }
+
+    static BYTE DecodePetPadding2Count(BYTE wire)
+    {
+        return Perm(U8(Ror8(U8(wire + 49u), 2) + 98u));
+    }
+
+    static bool DecodePetPadding2ValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(U8(Ror8(U8(U8(wire ^ 0x8Bu) + 56u), 1) ^ 0xF1u), sevenBits, stop);
+    }
+
+    static BYTE DecodePetPadding3Count(BYTE wire)
+    {
+        BYTE value = kC30[kC30[kC30[U8(wire + 13u)]]];
+        value = U8(value ^ 0xDDu);
+        return kC30[kC30[value]];
+    }
+
+    static bool DecodePetPadding3ValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = U8(Swap55(wire) ^ 0xECu);
+        const BYTE b = U8(Swap55(a) + 29u);
+        const BYTE value = Swap55(U8(Ror8(kC30[b], 5) ^ 0xB5u));
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static BYTE DecodePetCommonCanHuanHua(BYTE wire)
+    {
+        BYTE value = U8(Swap55(U8(wire - 116u)) - 14u);
+        value = Ror8(U8(value ^ 0x75u), 6);
+        return Ror8(Ror8(U8(value + 49u), 3), 3);
+    }
+
+    static BYTE DecodePetCommonCanDrive(BYTE wire)
+    {
+        return Swap55(kC30[Ror8(Swap55(kC30[wire]), 1)]);
+    }
+
+    static BYTE DecodePetCommonDrive(BYTE wire)
+    {
+        const BYTE value = U8(Swap55(U8(Ror8(wire, 3) - 15u)) ^ 0x73u);
+        return Swap55(Ror8(value, 1));
+    }
+
+    static bool DecodePetHuanHuaLevelVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodeVarResult(Not8(Perm(Ror8(wire, 7))), sevenBits, stop);
+    }
+
+    static BYTE DecodePetCommonPaddingCount(BYTE wire)
+    {
+        const BYTE a = U8(Swap55(U8(wire - 10u)) - 2u);
+        return kC30[Rol8(Swap55(kC30[a]), 1)];
+    }
+
+    static bool DecodePetCommonPaddingValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        BYTE value = Swap55(U8(Ror8(U8(wire ^ 0x59u), 2) ^ 0xC2u));
+        value = U8(Ror8(Ror8(value, 5), 5) + 111u);
+        return DecodeVarResult(Swap55(value), sevenBits, stop);
+    }
+
+    static BYTE DecodePetSkillStatus(BYTE wire)
+    {
+        return Ror8(kC30[U8(Ror8(U8(wire ^ 0x41u), 4) - 116u)], 4);
+    }
+
+    static BYTE DecodePetSkillActive(BYTE wire)
+    {
+        return Not8(Ror8(U8(wire + 117u), 5));
+    }
+
+    static bool DecodePetSkillIDVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        return DecodePetLevelLimitVar(wire, sevenBits, stop);
+    }
+
+    static bool DecodePetSkillValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Ror8(wire, 4);
+        const BYTE b = Ror8(Swap55(U8(a ^ 0x64u)), 7);
+        const BYTE c = Ror8(U8(b ^ 0x3Bu), 2);
+        return DecodeVarResult(Swap55(Rol8(c, 1)), sevenBits, stop);
+    }
+
+    static BYTE DecodePetSkillPaddingCount(BYTE wire)
+    {
+        const BYTE value = Perm(U8(Ror8(wire, 7) + 120u));
+        return Ror8(U8(0u - Ror8(value, 2) - 46u), 1);
+    }
+
+    static bool DecodePetSkillPaddingValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Ror8(wire, 3);
+        const BYTE b = kC30[Ror8(U8(a ^ 0x35u), 1)];
+        return DecodeVarResult(Swap55(U8(Swap55(b) ^ 0x74u)), sevenBits, stop);
+    }
+
+    static bool AppendSafePadding(
+        ByteDecoder countDecoder,
+        VarByteDecoder valueDecoder,
+        std::vector<BYTE>& out)
+    {
+        const BYTE count = static_cast<BYTE>((std::rand() % 16) + 1);
+        if (!EncodeDecodedByteGeneric(countDecoder, count, out))
+            return false;
+        for (BYTE i = 0; i < count; ++i)
+        {
+            if (!EncodeRawVarGeneric(valueDecoder, 0, out))
+                return false;
+        }
+        return true;
+    }
+
+    static bool EncodeSafePetCommon(const PetInfo& pet, std::vector<BYTE>& out)
+    {
+        if (!EncodeDecodedByteGeneric(DecodePetCommonCanHuanHua, pet.CanHuanHua, out)) return false;
+        if (!EncodeDecodedByteGeneric(DecodePetCommonCanDrive, pet.CanDrive, out)) return false;
+        if (!EncodeDecodedByteGeneric(DecodePetCommonDrive, pet.Drive, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetHuanHuaLevelVar, pet.HuanHuaLevel, out)) return false;
+        return AppendSafePadding(DecodePetCommonPaddingCount, DecodePetCommonPaddingValueVar, out);
+    }
+
+    static bool EncodeSafePetSkill(const QQSPetConfig::Skill& skill, std::vector<BYTE>& out)
+    {
+        if (!EncodeDecodedByteGeneric(DecodePetSkillStatus, skill.Status, out)) return false;
+        if (!EncodeDecodedByteGeneric(DecodePetSkillActive, skill.Active, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetSkillIDVar, skill.SkillID, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetSkillValueVar, skill.Value, out)) return false;
+        return AppendSafePadding(DecodePetSkillPaddingCount, DecodePetSkillPaddingValueVar, out);
+    }
+
+    static bool EncodeSafePet(UINT uin, const PetInfo& pet, std::vector<BYTE>& out)
+    {
+        std::vector<QQSPetConfig::Skill> skills;
+        if (!QQSPetConfig::GetBaseSkills(pet.ID, skills) || skills.size() > 16)
+            return false;
+
+        if (!EncodeDecodedByteGeneric(DecodePetTopStatus, pet.TopStatus, out)) return false;
+        if (!AppendSafePadding(DecodePetPadding1Count, DecodePetPadding1ValueVar, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetIDVar, pet.ID, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetMaxExpVar, pet.MaxExp, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetTotalPLVar, pet.TotalPL, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetExpVar, pet.Exp, out)) return false;
+        if (!EncodeSafePetCommon(pet, out)) return false;
+        for (char ch : pet.Name)
+        {
+            if (!EncodeDecodedByteGeneric(DecodePetNameByte, static_cast<BYTE>(ch), out)) return false;
+        }
+        if (!EncodeRawVarGeneric(DecodePetLevelVar, pet.Level, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetStrengthVar, pet.StrengLevel, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetLevelLimitVar, pet.LevelLimit, out)) return false;
+        if (!EncodeDecodedByteGeneric(DecodePetIsProper, pet.IsProper, out)) return false;
+        if (!AppendSafePadding(DecodePetPadding2Count, DecodePetPadding2ValueVar, out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetUinVar, uin, out)) return false;
+        if (!EncodeDecodedByteGeneric(DecodePetStatus, static_cast<BYTE>(pet.Status), out)) return false;
+        if (!EncodeRawVarGeneric(DecodePetSkillCountVar, static_cast<uint32_t>(skills.size()), out)) return false;
+        for (const auto& skill : skills)
+        {
+            if (!EncodeSafePetSkill(skill, out)) return false;
+        }
+        if (!EncodeRawVarGeneric(DecodePetPLVar, pet.PL, out)) return false;
+        return AppendSafePadding(DecodePetPadding3Count, DecodePetPadding3ValueVar, out);
+    }
+
+    static bool Decode437TotalVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Swap55(wire);
+        const BYTE b = kC30[kC30[U8(Swap55(a) ^ 0x51u)]];
+        const BYTE y = Ror8(Swap55(b), 2);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post437Total(BYTE raw)
+    {
+        return U8(kB30[kB30[Swap55(Rol8(raw, 2))]] ^ 0x51u);
+    }
+
+    static BYTE Expand437Total(BYTE storage)
+    {
+        const BYTE a = Swap55(storage);
+        const BYTE b = kC30[kC30[U8(Swap55(a) ^ 0x51u)]];
+        return Ror8(Swap55(b), 2);
+    }
+
+    static bool Decode437ItemCountVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = U8(Swap55(wire) ^ 0x91u);
+        const BYTE b = Swap55(a);
+        const BYTE y = kC30[kC30[Swap55(b)]];
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post437ItemCount(BYTE raw)
+    {
+        return Swap55(U8(kB30[kB30[raw]] ^ 0x91u));
+    }
+
+    static BYTE Expand437ItemCount(BYTE storage)
+    {
+        const BYTE a = U8(Swap55(storage) ^ 0x91u);
+        return kC30[kC30[a]];
+    }
+
+    static bool Decode437CheckVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Not8(wire);
+        const BYTE b = U8(9u - Perm(a));
+        const BYTE y = Perm(b);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post437Check(BYTE raw)
+    {
+        const BYTE a = U8(9u - Perm(raw));
+        return Not8(Perm(a));
+    }
+
+    static BYTE Expand437Check(BYTE storage)
+    {
+        const BYTE a = U8(9u - Perm(Not8(storage)));
+        return Perm(a);
+    }
+
+    static bool Decode437UinVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Ror8(wire, 7);
+        const BYTE y = U8(Ror8(Not8(Ror8(Perm(Not8(a)), 3)), 5) - 75u);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post437Uin(BYTE raw)
+    {
+        const BYTE a = Ror8(Not8(Ror8(U8(raw + 75u), 3)), 5);
+        return Ror8(Not8(Perm(a)), 1);
+    }
+
+    static BYTE Expand437Uin(BYTE storage)
+    {
+        const BYTE a = Ror8(storage, 7);
+        return U8(Ror8(Not8(Ror8(Perm(Not8(a)), 3)), 5) - 75u);
+    }
+
+    static BYTE Transform437HasMore(BYTE value)
+    {
+        const BYTE a = U8(Ror8(U8(U8(value - 72u) ^ 0x3Bu), 2) + 91u);
+        return Ror8(U8(kC30[kC30[a]] + 56u), 3);
+    }
+
+    static BYTE Post437HasMore(BYTE value)
+    {
+        const BYTE a = U8(Ror8(value, 5) - 56u);
+        return U8((Ror8(U8(kB30[kB30[a]] - 91u), 6) ^ 0x3Bu) + 72u);
+    }
+
+    static BYTE Decode437HasMore(BYTE wire)
+    {
+        return Transform437HasMore(Post437HasMore(Transform437HasMore(wire)));
+    }
+
+    static BYTE Transform437PaddingCount(BYTE value)
+    {
+        return U8(Ror8(U8(value + 87u), 7) + 108u);
+    }
+
+    static BYTE Post437PaddingCount(BYTE value)
+    {
+        return U8(Ror8(U8(value - 108u), 1) - 87u);
+    }
+
+    static BYTE Decode437PaddingCount(BYTE wire)
+    {
+        return Transform437PaddingCount(Post437PaddingCount(Transform437PaddingCount(wire)));
+    }
+
+    static bool Decode437PaddingValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Rol8(U8(wire + 81u), 1);
+        const BYTE b = U8(Ror8(Ror8(kC30[Rol8(a, 5)], 7), 7) - 4u);
+        const BYTE y = Swap55(b);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Transform438HasNext(BYTE value)
+    {
+        return Ror8(Not8(Ror8(Ror8(Not8(Ror8(U8(87u - value), 3)), 1), 3)), 4);
+    }
+
+    static BYTE Post438HasNext(BYTE value)
+    {
+        return U8(87u - Ror8(Not8(Ror8(Ror8(Not8(Ror8(value, 4)), 5), 7)), 5));
+    }
+
+    static BYTE Decode438HasNext(BYTE wire)
+    {
+        return Transform438HasNext(Post438HasNext(Transform438HasNext(wire)));
+    }
+
+    static bool Decode438ItemCountVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = U8(kC30[kC30[wire]] - 116u);
+        const BYTE b = kC30[Rol8(Ror8(a, 1), 3)];
+        const BYTE y = U8(Swap55(b) + 96u);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post438ItemCount(BYTE raw)
+    {
+        const BYTE a = kB30[Swap55(U8(raw - 96u))];
+        return kB30[kB30[U8(Ror8(Ror8(a, 3), 7) + 116u)]];
+    }
+
+    static BYTE Expand438ItemCount(BYTE storage)
+    {
+        const BYTE a = U8(kC30[kC30[storage]] - 116u);
+        const BYTE b = kC30[Rol8(Ror8(a, 1), 3)];
+        return U8(Swap55(b) + 96u);
+    }
+
+    static bool Decode438UinVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = kC30[U8(U8(U8(wire ^ 0x37u) + 58u) ^ 0x5Cu)];
+        const BYTE y = Ror8(a, 3);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post438Uin(BYTE raw)
+    {
+        return U8(U8(U8(kB30[Rol8(raw, 3)] ^ 0x5Cu) - 58u) ^ 0x37u);
+    }
+
+    static BYTE Expand438Uin(BYTE storage)
+    {
+        const BYTE a = kC30[U8(U8(U8(storage ^ 0x37u) + 58u) ^ 0x5Cu)];
+        return Ror8(a, 3);
+    }
+
+    static bool Decode438CheckVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = U8(59u - wire);
+        const BYTE b = Ror8(Ror8(Perm(a), 4), 5);
+        const BYTE y = Not8(Perm(b));
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static BYTE Post438Check(BYTE raw)
+    {
+        const BYTE a = Ror8(Ror8(Perm(Not8(raw)), 3), 4);
+        return U8(59u - Perm(a));
+    }
+
+    static BYTE Expand438Check(BYTE storage)
+    {
+        const BYTE a = Ror8(Ror8(Perm(U8(59u - storage)), 4), 5);
+        return Not8(Perm(a));
+    }
+
+    static BYTE Transform438PaddingCount(BYTE value)
+    {
+        const BYTE a = Ror8(U8(kC30[value] - 77u), 4);
+        return U8(U8(Swap55(U8(U8(a ^ 0x60u) - 82u)) + 60u) ^ 0xF4u);
+    }
+
+    static BYTE Post438PaddingCount(BYTE value)
+    {
+        const BYTE a = U8(Swap55(U8(U8(value ^ 0xF4u) - 60u)) + 82u);
+        return kB30[U8(Ror8(U8(a ^ 0x60u), 4) + 77u)];
+    }
+
+    static BYTE Decode438PaddingCount(BYTE wire)
+    {
+        return Transform438PaddingCount(Post438PaddingCount(Transform438PaddingCount(wire)));
+    }
+
+    static bool Decode438PaddingValueVar(BYTE wire, BYTE& sevenBits, bool& stop)
+    {
+        const BYTE a = Perm(wire);
+        const BYTE b = U8(Perm(a) - 13u);
+        const BYTE y = U8(Perm(b) - 121u);
+        sevenBits = U8(y & 0x7Fu);
+        stop = (y & 0x80u) == 0;
+        return true;
+    }
+
+    static void AppendOfficialRandomPadding(std::vector<BYTE>& out, PaddingField field)
+    {
+        const BYTE count = static_cast<BYTE>((std::rand() % 16) + 1);
+        BYTE marker = 0;
+        BYTE encodedZero = 0;
+        switch (field)
+        {
+        case PaddingField::Item:
+            marker = EncodeItemPadCount(count);
+            encodedZero = EncodeItemPadValue(0);
+            break;
+        case PaddingField::Tail:
+            marker = EncodeTailPadCount(count);
+            encodedZero = EncodeTailPadValue(0);
+            break;
+        case PaddingField::Last:
+            marker = EncodeLastPadCount(count);
+            encodedZero = EncodeLastPadValue(0);
+            break;
+        }
+
+        out.push_back(marker);
+        out.insert(out.end(), count, encodedZero);
+    }
+
+    static bool EncodeSafeItemWithType(
+        const ItemInfo& item,
+        UINT wireType,
+        std::vector<BYTE>& inner)
+    {
+        if (!EncodeVarDecodedField(VarKind::ItemAvailPeriod, PostKind::ItemAvailPeriod, static_cast<uint32_t>(item.AvailPeriod), 4, inner)) return false;
+        if (!EncodeVarDecodedField(VarKind::ItemNum, PostKind::ItemNum, static_cast<uint32_t>(item.ItemNum), 4, inner)) return false;
+        if (!EncodeVarDecodedField(VarKind::ItemObtainTime, PostKind::ItemObtainTime, static_cast<uint32_t>(item.ObtainTime), 4, inner)) return false;
+        if (!EncodeVarDecodedField(VarKind::ItemOtherAttribute, PostKind::ItemOtherAttribute, static_cast<uint32_t>(item.OtherAttribute), 4, inner)) return false;
+        if (!EncodeVarDecodedField(VarKind::ItemID, PostKind::ItemID, static_cast<uint32_t>(item.ItemID), 4, inner)) return false;
+        if (!EncodeVarDecodedField(VarKind::ItemType, PostKind::ItemType, static_cast<uint32_t>(wireType), 2, inner)) return false;
+        inner.push_back(EncodeItemStatus(item.Status ? 1 : 0));
+        AppendOfficialRandomPadding(inner, PaddingField::Item);
+        return true;
+    }
+
+    static bool EncodeSafeItem(const ItemInfo& item, std::vector<BYTE>& inner)
+    {
+        // 官服 28346(inner437/438) 的 expanded item record 末尾 ItemType
+        // 按当前 dump 是原样 0；不要在安全流里用 GetItemType() 推断成非 0。
+        return EncodeSafeItemWithType(item, 0, inner);
+    }
+
+    static uint32_t ReadLogin100LE(const BYTE* data, size_t offset, size_t width)
+    {
+        uint32_t value = 0;
+        for (size_t index = 0; index < width; ++index)
+            value |= static_cast<uint32_t>(data[offset + index]) << (index * 8);
+        return value;
+    }
+
+    static void WriteLogin100LE32(BYTE* data, size_t offset, uint32_t value)
+    {
+        data[offset + 0] = U8(value);
+        data[offset + 1] = U8(value >> 8);
+        data[offset + 2] = U8(value >> 16);
+        data[offset + 3] = U8(value >> 24);
+    }
+
+    static void AppendLogin100RawVarLut(
+        const std::array<BYTE, 256>& rawLut,
+        uint32_t value,
+        std::vector<BYTE>& inner)
+    {
+        do
+        {
+            const BYTE chunk = U8(value & 0x7Fu);
+            value >>= 7;
+            inner.push_back(rawLut[U8(chunk | (value == 0 ? 0 : 0x80u))]);
+        } while (value != 0);
+    }
+
+    static bool EmitLogin100StaticEvent(
+        const Login100StaticEvent& event,
+        const BYTE* fixed,
+        std::vector<BYTE>& inner)
+    {
+        switch (event.kind)
+        {
+        case 0:
+            inner.push_back(U8(event.value));
+            return true;
+        case 1:
+            if (event.lut >= kLogin100ByteRawLuts.size())
+                return false;
+            inner.push_back(kLogin100ByteRawLuts[event.lut][fixed[event.value]]);
+            return true;
+        case 2:
+        case 3:
+        {
+            if (event.lut >= kLogin100VarRawLuts.size())
+                return false;
+            uint32_t value = event.kind == 2
+                ? event.value
+                : ReadLogin100LE(fixed, event.value, event.width);
+            do
+            {
+                const BYTE chunk = U8(value & 0x7Fu);
+                value >>= 7;
+                const BYTE transformed = U8(chunk | (value == 0 ? 0 : 0x80u));
+                inner.push_back(kLogin100VarRawLuts[event.lut][transformed]);
+            } while (value != 0);
+            return true;
+        }
+        default:
+            return false;
+        }
+    }
+
+    static bool EncodeLogin100MapRecord(
+        const BYTE* record,
+        std::vector<BYTE>& inner)
+    {
+        // Native ToPlain swaps the first two safe fields:
+        // safe+0x0C -> fixed Record, safe+0x14 -> fixed MapID.
+        AppendLogin100RawVarLut(
+            kLogin100MapVarRawLuts[0],
+            ReadLogin100LE(record, 4, 4),
+            inner);
+        AppendLogin100RawVarLut(
+            kLogin100MapVarRawLuts[1],
+            ReadLogin100LE(record, 0, 4),
+            inner);
+        AppendLogin100RawVarLut(
+            kLogin100MapVarRawLuts[2],
+            ReadLogin100LE(record, 8, 4),
+            inner);
+        inner.push_back(kLogin100MapMarkerWire);
+        inner.push_back(kLogin100MapPaddingZeroWire);
+        return true;
+    }
+
+    static bool EncodeLogin100OverdueFixedVar(
+        size_t lutIndex,
+        uint32_t fixedValue,
+        std::vector<BYTE>& inner)
+    {
+        if (lutIndex >= kLogin100OverdueFixedToPreVar.size() ||
+            lutIndex >= kLogin100OverdueVarRawLuts.size())
+            return false;
+        uint32_t preValue = 0;
+        for (size_t index = 0; index < 4; ++index)
+        {
+            preValue |= static_cast<uint32_t>(
+                kLogin100OverdueFixedToPreVar[lutIndex][
+                    U8(fixedValue >> (index * 8))]) << (index * 8);
+        }
+        AppendLogin100RawVarLut(
+            kLogin100OverdueVarRawLuts[lutIndex],
+            preValue,
+            inner);
+        return true;
+    }
+
+    static bool EncodeLogin100OverdueRecord(
+        const BYTE* record,
+        std::vector<BYTE>& inner)
+    {
+        // Native ToPlain order: safe+0x0C -> OverdueTime,
+        // safe+0x14 -> ItemID, safe+0x1C -> OtherAttr.
+        if (!EncodeLogin100OverdueFixedVar(
+                0,
+                ReadLogin100LE(record, 4, 4),
+                inner) ||
+            !EncodeLogin100OverdueFixedVar(
+                1,
+                ReadLogin100LE(record, 0, 4),
+                inner) ||
+            !EncodeLogin100OverdueFixedVar(
+                2,
+                ReadLogin100LE(record, 8, 4),
+                inner))
+        {
+            return false;
+        }
+
+        inner.push_back(kLogin100OverdueMarkerWire);
+        inner.push_back(kLogin100OverduePaddingZeroWire);
+        return true;
+    }
+
+    static bool EncodeLogin100ItemRecord(
+        const BYTE* record,
+        std::vector<BYTE>& inner)
+    {
+        ItemInfo item = {};
+        item.ItemID = ReadLogin100LE(record, 0, 4);
+        item.ItemNum = static_cast<int>(ReadLogin100LE(record, 4, 4));
+        item.AvailPeriod = static_cast<int>(ReadLogin100LE(record, 8, 4));
+        item.Status = record[12] != 0;
+        item.ObtainTime = static_cast<int>(ReadLogin100LE(record, 13, 4));
+        item.OtherAttribute = static_cast<int>(ReadLogin100LE(record, 17, 4));
+        item.ItemType = static_cast<int>(ReadLogin100LE(record, 21, 2));
+        return EncodeSafeItemWithType(
+            item,
+            static_cast<UINT>(item.ItemType),
+            inner);
+    }
+
+    static bool EncodeLogin100Inner(
+        UINT outerUin,
+        const BYTE* fixed,
+        const std::vector<PetInfo>& pets,
+        std::vector<BYTE>& inner,
+        std::string* diag)
+    {
+        const size_t itemCount = ReadLogin100LE(
+            fixed,
+            qqspeed::login100::kLoginPlainItemNumOffset,
+            2);
+        const size_t petCount = ReadLogin100LE(
+            fixed,
+            qqspeed::login100::kLoginPlainPetNumOffset,
+            2);
+        const size_t mapCount = ReadLogin100LE(
+            fixed,
+            qqspeed::login100::kLoginPlainMapNumOffset,
+            2);
+        const size_t overdueCount =
+            fixed[qqspeed::login100::kLoginPlainOverdueNumOffset];
+
+        inner.clear();
+        inner.reserve(1024 + itemCount * 32 + petCount * 180 +
+            mapCount * 24 + overdueCount * 28);
+        for (size_t index = 0; index < kLogin100StaticEvents.size(); ++index)
+        {
+            if (!EmitLogin100StaticEvent(
+                    kLogin100StaticEvents[index],
+                    fixed,
+                    inner))
+            {
+                if (diag) *diag = "static event encode failed";
+                return false;
+            }
+
+            if (index == 194)
+            {
+                for (size_t itemIndex = 0; itemIndex < itemCount; ++itemIndex)
+                {
+                    const BYTE* record =
+                        fixed + qqspeed::login100::kLoginPlainItemArrayOffset +
+                        itemIndex * 23;
+                    if (!EncodeLogin100ItemRecord(record, inner))
+                    {
+                        if (diag) *diag = "item record encode failed";
+                        return false;
+                    }
+                }
+            }
+            else if (index == 224)
+            {
+                for (size_t petIndex = 0; petIndex < petCount; ++petIndex)
+                {
+                    if (!EncodeSafePet(outerUin, pets[petIndex], inner))
+                    {
+                        if (diag) *diag = "pet record encode failed";
+                        return false;
+                    }
+                }
+            }
+            else if (index == 241)
+            {
+                for (size_t mapIndex = 0; mapIndex < mapCount; ++mapIndex)
+                {
+                    const BYTE* record =
+                        fixed + qqspeed::login100::kLoginPlainMapArrayOffset +
+                        mapIndex * 12;
+                    if (!EncodeLogin100MapRecord(record, inner))
+                    {
+                        if (diag) *diag = "map record encode failed";
+                        return false;
+                    }
+                }
+            }
+            else if (index == 323)
+            {
+                for (size_t overdueIndex = 0;
+                    overdueIndex < overdueCount;
+                    ++overdueIndex)
+                {
+                    const BYTE* record =
+                        fixed + qqspeed::login100::kLoginPlainOverdueNumOffset +
+                        1 + overdueIndex * 12;
+                    if (!EncodeLogin100OverdueRecord(record, inner))
+                    {
+                        if (diag) *diag = "overdue record encode failed";
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
+    static bool Append437Padding(std::vector<BYTE>& inner)
+    {
+        const BYTE count = static_cast<BYTE>((std::rand() % 16) + 1);
+        if (!EncodeDecodedByteGeneric(Decode437PaddingCount, count, inner))
+            return false;
+        for (BYTE i = 0; i < count; ++i)
+        {
+            if (!EncodeRawVarGeneric(Decode437PaddingValueVar, 0, inner))
+                return false;
+        }
+        return true;
+    }
+
+    static bool Append438Padding(std::vector<BYTE>& inner)
+    {
+        const BYTE count = static_cast<BYTE>((std::rand() % 16) + 1);
+        if (!EncodeDecodedByteGeneric(Decode438PaddingCount, count, inner))
+            return false;
+        for (BYTE i = 0; i < count; ++i)
+        {
+            if (!EncodeRawVarGeneric(Decode438PaddingValueVar, 0, inner))
+                return false;
+        }
+        return true;
+    }
+
+    static bool FinishOfficial28346Body(
+        UINT outerUin,
+        UINT context,
+        USHORT innerMsg,
+        const std::vector<BYTE>& inner,
+        std::vector<BYTE>& outBody,
+        std::string* diag)
+    {
+        if (inner.empty() || inner.size() > 0xFFFFu || inner.size() > kOfficial28346MaxInnerLen)
+        {
+            if (diag) *diag = "inner length overflow";
+            return false;
+        }
+
+        outBody.clear();
+        outBody.reserve(kOfficial28346HeaderLen + inner.size() + 1);
+        // 客户端工作区内是主机序；serialize_body 上线时把 28346 外壳转为网络序。
+        // 服务端直接发送 body，因此这里必须生成与官服线上抓包一致的大端字段。
+        WriteBE32(outBody, outerUin);
+        WriteBE32(outBody, context);
+        WriteBE16(outBody, innerMsg);
+        WriteBE16(outBody, static_cast<USHORT>(inner.size()));
+        outBody.insert(outBody.end(), inner.begin(), inner.end());
+        outBody.push_back(1);
+        if (diag) *diag = "ok";
+        return true;
+    }
+}
+
+bool BuildOfficialSafeLogin100(
+    UINT outerUin,
+    UINT requestTime,
+    DWORD clientPid,
+    const BYTE* compactBody,
+    size_t compactBodyLen,
+    const std::vector<ItemInfo>& items,
+    const std::vector<PetInfo>& pets,
+    std::vector<BYTE>& outBody,
+    std::string* diag,
+    USHORT innerMsg)
+{
+    outBody.clear();
+    auto fail = [&](const std::string& reason) {
+        if (diag) *diag = reason;
+        return false;
+    };
+
+    if (outerUin == 0)
+        return fail("outer uin zero");
+    if (innerMsg != 100 && innerMsg != 98)
+        return fail("unsupported login inner msg");
+    if (requestTime == 0)
+        return fail("request time zero");
+    if (clientPid == 0)
+        return fail("client PID is zero");
+    if (!compactBody || compactBodyLen == 0)
+        return fail("compact body empty");
+    if (compactBodyLen + 2 > 0xFFFFu ||
+        compactBodyLen > static_cast<size_t>((std::numeric_limits<int>::max)() - 2))
+    {
+        return fail("compact body length overflow");
+    }
+
+    std::vector<BYTE> framed(compactBodyLen + 2);
+    const USHORT framedLen = static_cast<USHORT>(framed.size());
+    framed[0] = U8(framedLen >> 8);
+    framed[1] = U8(framedLen);
+    memcpy(framed.data() + 2, compactBody, compactBodyLen);
+
+    std::vector<BYTE> fixed(
+        static_cast<size_t>(qqspeed::login100::kMsg100LoginPlainLen));
+    int fixedLen = 0;
+    qqspeed::login100::Msg100ExpandSnapshot snapshot = {};
+    if (!qqspeed::login100::TryExpandDirectMsg100LoginPlain(
+            framed.data(),
+            static_cast<int>(framed.size()),
+            fixed.data(),
+            &fixedLen,
+            snapshot))
+    {
+        return fail(std::string("compact expand failed: ") +
+            (snapshot.reason[0] ? snapshot.reason : "unknown"));
+    }
+    if (fixedLen != qqspeed::login100::kMsg100LoginPlainLen)
+        return fail("expanded fixed length mismatch");
+
+    auto readFixed = [&](size_t offset, size_t width) {
+        return ReadLogin100LE(fixed.data(), offset, width);
+    };
+    auto requireValue = [&](size_t offset, size_t width, uint32_t expected, const char* name) {
+        if (readFixed(offset, width) == expected)
+            return true;
+        if (diag)
+            *diag = std::string("unsupported fixed field: ") + name;
+        return false;
+    };
+
+    if (!requireValue(0x02, 1, 16, "KeyLen") ||
+        !requireValue(0x2D496, 2, 0, "TaskNum") ||
+        !requireValue(0x33BBD, 1, 0, "ReasonLen") ||
+        !requireValue(0x33D80, 4, 0, "RelationPost1") ||
+        !requireValue(0x33D88, 4, 0, "RelationPost3") ||
+        !requireValue(0x4CEDF, 4, 0, "StoneKartNum") ||
+        !requireValue(0x4CF3D, 1, 0, "HasLDMInfo") ||
+        !requireValue(0x4CF77, 1, 0, "HasCheerAddition") ||
+        !requireValue(0x4CFFF, 1, 1, "HasRankedMatchInfo") ||
+        !requireValue(0x4D014, 1, 0, "HasHuanLing") ||
+        !requireValue(0x4D01D, 1, 0, "VersionURLLen") ||
+        !requireValue(0x4D0E6, 1, 0, "PrivacyURLLen") ||
+        !requireValue(0x4D1B8, 1, 0, "IpCityLen") ||
+        !requireValue(0x4D281, 1, 0, "OpenIDLen") ||
+        !requireValue(0x4D2C2, 1, 0, "AccessTokenLen") ||
+        !requireValue(0x4D38F, 2, 0, "TssTicketLen"))
+    {
+        return false;
+    }
+
+    if (readFixed(qqspeed::login100::kLoginPlainUinOffset, 4) != outerUin)
+        return fail("fixed uin mismatch");
+
+    const size_t itemCount = readFixed(
+        qqspeed::login100::kLoginPlainItemNumOffset,
+        2);
+    if (itemCount != items.size() || itemCount > 8050)
+        return fail("item count mismatch or overflow");
+    for (size_t index = 0; index < itemCount; ++index)
+    {
+        const BYTE* record =
+            fixed.data() + qqspeed::login100::kLoginPlainItemArrayOffset +
+            index * 23;
+        const ItemInfo& item = items[index];
+        if (ReadLogin100LE(record, 0, 4) != item.ItemID ||
+            ReadLogin100LE(record, 4, 4) != static_cast<uint32_t>(item.ItemNum) ||
+            ReadLogin100LE(record, 8, 4) != static_cast<uint32_t>(item.AvailPeriod) ||
+            record[12] != static_cast<BYTE>(item.Status ? 1 : 0) ||
+            ReadLogin100LE(record, 13, 4) != static_cast<uint32_t>(item.ObtainTime) ||
+            ReadLogin100LE(record, 17, 4) != static_cast<uint32_t>(item.OtherAttribute) ||
+            ReadLogin100LE(record, 21, 2) !=
+                (static_cast<uint32_t>(item.ItemType) & 0xFFFFu))
+        {
+            return fail("item record mismatch");
+        }
+    }
+
+    const size_t petCount = readFixed(
+        qqspeed::login100::kLoginPlainPetNumOffset,
+        2);
+    const size_t expectedPetCount =
+        (std::min)(kOfficialSafe223MaxPetPage, pets.size());
+    if (petCount != expectedPetCount)
+        return fail("pet count mismatch");
+    for (size_t index = 0; index < petCount; ++index)
+    {
+        const BYTE* record =
+            fixed.data() + qqspeed::login100::kLoginPlainPetNumOffset +
+            2 + index * 191;
+        if (ReadLogin100LE(record, 0, 4) != outerUin ||
+            ReadLogin100LE(record, 4, 4) != pets[index].ID)
+        {
+            return fail("pet record identity mismatch");
+        }
+    }
+
+    const size_t mapCount = readFixed(
+        qqspeed::login100::kLoginPlainMapNumOffset,
+        2);
+    if (mapCount > 500)
+        return fail("map count overflow");
+    const size_t overdueCount =
+        fixed[qqspeed::login100::kLoginPlainOverdueNumOffset];
+    if (overdueCount > 100)
+        return fail("overdue count overflow");
+
+    WriteLogin100LE32(
+        fixed.data(),
+        0x4D383,
+        clientPid ^ kClientPidCheckXor);
+
+    std::vector<BYTE> inner;
+    if (!EncodeLogin100Inner(
+            outerUin,
+            fixed.data(),
+            pets,
+            inner,
+            diag))
+    {
+        return false;
+    }
+    return FinishOfficial28346Body(
+        outerUin,
+        requestTime,
+        innerMsg,
+        inner,
+        outBody,
+        diag);
+}
+
+bool BuildOfficialSafeLoginMoreInfo223(
+    UINT outerUin,
+    UINT requestTime,
+    DWORD clientPid,
+    const std::vector<PetInfo>& pets,
+    bool hasNext,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0)
+    {
+        if (diag) *diag = "outer uin zero";
+        return false;
+    }
+    if (clientPid == 0)
+    {
+        if (diag) *diag = "client PID is zero";
+        return false;
+    }
+    if (pets.size() > kOfficialSafe223MaxPetPage)
+    {
+        if (diag) *diag = "pet page overflow";
+        return false;
+    }
+    const DWORD decodeCheck = clientPid ^ kClientPidCheckXor;
+    std::vector<BYTE> inner;
+    inner.reserve(64 + pets.size() * 160);
+
+    if (!EncodeVarUIntRaw(VarKind::Safe223Check, decodeCheck, inner)) { if (diag) *diag = "encode check failed"; return false; }
+    if (!EncodeVarDecodedField(VarKind::Safe223TaskCount, PostKind::Safe223TaskCount, 0, 2, inner)) { if (diag) *diag = "encode task count failed"; return false; }
+    inner.push_back(EncodeRecordCount(0));
+    // Current official 223 pages never carry backpack items.
+    if (!EncodeVarDecodedField(VarKind::Safe223ItemCount, PostKind::Safe223ItemCount, 0, 2, inner)) { if (diag) *diag = "encode item count failed"; return false; }
+    AppendOfficialRandomPadding(inner, PaddingField::Tail);
+    if (!EncodeVarDecodedField(VarKind::Safe223PetCount, PostKind::Safe223PetCount, static_cast<uint32_t>(pets.size()), 2, inner)) { if (diag) *diag = "encode pet count failed"; return false; }
+    for (const auto& pet : pets)
+    {
+        if (!EncodeSafePet(outerUin, pet, inner))
+        {
+            if (diag) *diag = "encode pet failed";
+            return false;
+        }
+    }
+    inner.push_back(EncodeHasNext(hasNext ? 1 : 0));
+    if (!EncodeVarDecodedField(VarKind::Safe223KartStoneCount, PostKind::Safe223KartStoneCount, 0, 4, inner)) { if (diag) *diag = "encode stone count failed"; return false; }
+    if (!EncodeVarDecodedField(VarKind::Safe223Count500, PostKind::Safe223Count500, 0, 2, inner)) { if (diag) *diag = "encode count500 failed"; return false; }
+    AppendOfficialRandomPadding(inner, PaddingField::Last);
+
+    return FinishOfficial28346Body(outerUin, requestTime, kInnerMsgLoginMoreInfo, inner, outBody, diag);
+}
+
+bool BuildOfficialSafePlayerItems437(
+    UINT outerUin,
+    UINT requestTime,
+    DWORD clientPid,
+    const std::vector<ItemInfo>& items,
+    bool hasMore,
+    USHORT totalItemNum,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0) { if (diag) *diag = "outer uin zero"; return false; }
+    if (clientPid == 0) { if (diag) *diag = "client PID is zero"; return false; }
+    if (items.size() > kOfficialInventoryPageSize) { if (diag) *diag = "item page overflow"; return false; }
+    if (totalItemNum < items.size()) { if (diag) *diag = "total item count smaller than page"; return false; }
+
+    const DWORD decodeCheck = clientPid ^ kClientPidCheckXor;
+    std::vector<BYTE> inner;
+    inner.reserve(64 + items.size() * 32);
+
+    if (!EncodeDecodedVarGeneric(Decode437TotalVar, Post437Total, Expand437Total, totalItemNum, 2, inner)) { if (diag) *diag = "encode total item count failed"; return false; }
+    if (!EncodeDecodedVarGeneric(Decode437ItemCountVar, Post437ItemCount, Expand437ItemCount, static_cast<uint32_t>(items.size()), 2, inner)) { if (diag) *diag = "encode item count failed"; return false; }
+    for (const auto& item : items)
+    {
+        if (!EncodeSafeItem(item, inner)) { if (diag) *diag = "encode item failed"; return false; }
+    }
+    if (!EncodeDecodedVarGeneric(Decode437CheckVar, Post437Check, Expand437Check, decodeCheck, 4, inner)) { if (diag) *diag = "encode check failed"; return false; }
+    if (!EncodeDecodedVarGeneric(Decode437UinVar, Post437Uin, Expand437Uin, outerUin, 4, inner)) { if (diag) *diag = "encode uin failed"; return false; }
+    if (!EncodeDecodedByteGeneric(Decode437HasMore, hasMore ? 1 : 0, inner)) { if (diag) *diag = "encode has-more failed"; return false; }
+    if (!Append437Padding(inner)) { if (diag) *diag = "encode padding failed"; return false; }
+
+    return FinishOfficial28346Body(outerUin, requestTime, kInnerMsgPlayerItems, inner, outBody, diag);
+}
+
+bool BuildOfficialSafePlayerItems438(
+    UINT outerUin,
+    UINT requestTime,
+    DWORD clientPid,
+    const std::vector<ItemInfo>& items,
+    bool hasNext,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0) { if (diag) *diag = "outer uin zero"; return false; }
+    if (clientPid == 0) { if (diag) *diag = "client PID is zero"; return false; }
+    if (items.size() > kOfficialInventoryPageSize) { if (diag) *diag = "item page overflow"; return false; }
+
+    const DWORD decodeCheck = clientPid ^ kClientPidCheckXor;
+    std::vector<BYTE> inner;
+    inner.reserve(64 + items.size() * 32);
+
+    if (!EncodeDecodedByteGeneric(Decode438HasNext, hasNext ? 1 : 0, inner)) { if (diag) *diag = "encode has-next failed"; return false; }
+    if (!EncodeDecodedVarGeneric(Decode438ItemCountVar, Post438ItemCount, Expand438ItemCount, static_cast<uint32_t>(items.size()), 2, inner)) { if (diag) *diag = "encode item count failed"; return false; }
+    for (const auto& item : items)
+    {
+        if (!EncodeSafeItem(item, inner)) { if (diag) *diag = "encode item failed"; return false; }
+    }
+    if (!EncodeDecodedVarGeneric(Decode438UinVar, Post438Uin, Expand438Uin, outerUin, 4, inner)) { if (diag) *diag = "encode uin failed"; return false; }
+    if (!EncodeDecodedVarGeneric(Decode438CheckVar, Post438Check, Expand438Check, decodeCheck, 4, inner)) { if (diag) *diag = "encode check failed"; return false; }
+    if (!Append438Padding(inner)) { if (diag) *diag = "encode padding failed"; return false; }
+
+    return FinishOfficial28346Body(outerUin, requestTime, kInnerMsgPlayerItemsMore, inner, outBody, diag);
+}
+
+// 21487 Network.dll Build323：首个 Msg271 页在安全内层可容纳时使用
+// mode=1 的 28346，超过 32200 字节工作区时使用原生 compact 271；
+// Msg318 后续页使用 mode=1 的 28346。
+namespace QQSpeedMsg271Build323
+{
+    constexpr std::size_t kExpandedSize = 135282;
+
+    struct NoiseCounts
+    {
+        std::array<std::uint8_t, 9> kart{{1, 1, 1, 1, 1, 1, 1, 1, 1}};
+    };
+}
+
+namespace QQSpeedMsg271Build323 { namespace {
+using Byte = std::uint8_t;
+using Table = std::array<Byte, 256>;
+using CountTable = std::array<Byte, 17>;
+
+static constexpr Table V_k_v0 = {{
+    0x98, 0x58, 0xD8, 0x38, 0xB8, 0x78, 0xF8, 0x04, 0x84, 0x44, 0xC4, 0x24, 0xA4, 0x64, 0xE4, 0x14,
+    0x94, 0x54, 0xD4, 0x34, 0xB4, 0x74, 0xF4, 0x0C, 0x8C, 0x4C, 0xCC, 0x2C, 0xAC, 0x6C, 0xEC, 0x1C,
+    0x9C, 0x5C, 0xDC, 0x3C, 0xBC, 0x7C, 0xFC, 0x02, 0x82, 0x42, 0xC2, 0x22, 0xA2, 0x62, 0xE2, 0x12,
+    0x92, 0x52, 0xD2, 0x32, 0xB2, 0x72, 0xF2, 0x0A, 0x8A, 0x4A, 0xCA, 0x2A, 0xAA, 0x6A, 0xEA, 0x1A,
+    0x9A, 0x5A, 0xDA, 0x3A, 0xBA, 0x7A, 0xFA, 0x06, 0x86, 0x46, 0xC6, 0x26, 0xA6, 0x66, 0xE6, 0x16,
+    0x96, 0x56, 0xD6, 0x36, 0xB6, 0x76, 0xF6, 0x0E, 0x8E, 0x4E, 0xCE, 0x2E, 0xAE, 0x6E, 0xEE, 0x1E,
+    0x9E, 0x5E, 0xDE, 0x3E, 0xBE, 0x7E, 0xFE, 0x01, 0x81, 0x41, 0xC1, 0x21, 0xA1, 0x61, 0xE1, 0x11,
+    0x91, 0x51, 0xD1, 0x31, 0xB1, 0x71, 0xF1, 0x09, 0x89, 0x49, 0xC9, 0x29, 0xA9, 0x69, 0xE9, 0x19,
+    0x99, 0x59, 0xD9, 0x39, 0xB9, 0x79, 0xF9, 0x05, 0x85, 0x45, 0xC5, 0x25, 0xA5, 0x65, 0xE5, 0x15,
+    0x95, 0x55, 0xD5, 0x35, 0xB5, 0x75, 0xF5, 0x0D, 0x8D, 0x4D, 0xCD, 0x2D, 0xAD, 0x6D, 0xED, 0x1D,
+    0x9D, 0x5D, 0xDD, 0x3D, 0xBD, 0x7D, 0xFD, 0x03, 0x83, 0x43, 0xC3, 0x23, 0xA3, 0x63, 0xE3, 0x13,
+    0x93, 0x53, 0xD3, 0x33, 0xB3, 0x73, 0xF3, 0x0B, 0x8B, 0x4B, 0xCB, 0x2B, 0xAB, 0x6B, 0xEB, 0x1B,
+    0x9B, 0x5B, 0xDB, 0x3B, 0xBB, 0x7B, 0xFB, 0x07, 0x87, 0x47, 0xC7, 0x27, 0xA7, 0x67, 0xE7, 0x17,
+    0x97, 0x57, 0xD7, 0x37, 0xB7, 0x77, 0xF7, 0x0F, 0x8F, 0x4F, 0xCF, 0x2F, 0xAF, 0x6F, 0xEF, 0x1F,
+    0x9F, 0x5F, 0xDF, 0x3F, 0xBF, 0x7F, 0xFF, 0x00, 0x80, 0x40, 0xC0, 0x20, 0xA0, 0x60, 0xE0, 0x10,
+    0x90, 0x50, 0xD0, 0x30, 0xB0, 0x70, 0xF0, 0x08, 0x88, 0x48, 0xC8, 0x28, 0xA8, 0x68, 0xE8, 0x18
+}};
+
+static constexpr Table V_k_v12 = {{
+    0x79, 0x1A, 0x62, 0x98, 0xCC, 0xEA, 0x27, 0x52, 0x63, 0xED, 0x7F, 0xEE, 0x9A, 0xBD, 0xA4, 0xDB,
+    0x7A, 0xF0, 0x0D, 0xF6, 0xE6, 0x54, 0x61, 0xA0, 0xAD, 0x43, 0x3F, 0xF4, 0x41, 0x99, 0x51, 0x57,
+    0x06, 0xBC, 0x16, 0xC6, 0x5C, 0xA6, 0xC2, 0x2C, 0xD8, 0x2F, 0xD2, 0x29, 0xAC, 0x4B, 0x8A, 0x87,
+    0x7E, 0xA7, 0x90, 0x2A, 0x30, 0x48, 0xE7, 0x5B, 0x28, 0x0F, 0xE4, 0x40, 0x7B, 0x1C, 0x6C, 0xB9,
+    0x8E, 0xD6, 0x02, 0xCE, 0x92, 0xE3, 0xF1, 0xC1, 0x68, 0xD9, 0x8D, 0x59, 0x34, 0xFB, 0x03, 0xAE,
+    0xDD, 0x88, 0x85, 0xBA, 0xB5, 0xE9, 0xFE, 0xD4, 0x64, 0x66, 0x8C, 0xD5, 0x3C, 0xBB, 0x18, 0xAB,
+    0xF9, 0x15, 0x01, 0x5F, 0x97, 0xF3, 0xEB, 0xB0, 0x38, 0x5A, 0x07, 0x6E, 0xCF, 0x75, 0x60, 0xA1,
+    0x23, 0xD1, 0x3A, 0x77, 0x00, 0x7D, 0x56, 0x39, 0x89, 0x83, 0xE0, 0x25, 0x8B, 0x36, 0x19, 0xE5,
+    0x49, 0x72, 0x78, 0x70, 0x53, 0xC9, 0x96, 0x33, 0x42, 0x94, 0xDC, 0xC3, 0xDF, 0x58, 0x09, 0x21,
+    0xF7, 0x3E, 0x44, 0xB2, 0xAF, 0x37, 0x4E, 0x8F, 0x4A, 0xA8, 0x20, 0xF5, 0xA2, 0xA9, 0x9F, 0x50,
+    0xB6, 0x31, 0x65, 0x10, 0x95, 0x5D, 0xEC, 0x24, 0xCB, 0xC8, 0x4F, 0xC7, 0x6F, 0x82, 0x17, 0x2D,
+    0x69, 0x3D, 0x76, 0x84, 0xCA, 0xE2, 0xC5, 0x22, 0x81, 0x11, 0x13, 0x55, 0x2B, 0x6B, 0x91, 0xB1,
+    0xE1, 0x0A, 0x32, 0x1F, 0x4C, 0x71, 0x14, 0xDE, 0xFC, 0xD3, 0x80, 0x9C, 0x04, 0x1B, 0x05, 0x3B,
+    0x9E, 0x6A, 0xB7, 0xFA, 0xBF, 0x2E, 0xA5, 0xD7, 0xAA, 0x93, 0xFF, 0x0E, 0xD0, 0x6D, 0x47, 0x67,
+    0xEF, 0xB4, 0xA3, 0x0B, 0x46, 0xFD, 0x35, 0xC0, 0x1D, 0x08, 0xF8, 0xB8, 0x9B, 0x7C, 0xDA, 0x26,
+    0xF2, 0x0C, 0xB3, 0x12, 0xE8, 0xBE, 0x86, 0x4D, 0x1E, 0x73, 0xCD, 0xC4, 0x5E, 0x9D, 0x45, 0x74
+}};
+
+static constexpr Table V_k_v14 = {{
+    0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9, 0xF8, 0xF7, 0xF6, 0xF5, 0xF4, 0xF3, 0xF2, 0xF1, 0xF0,
+    0xEF, 0xEE, 0xED, 0xEC, 0xEB, 0xEA, 0xE9, 0xE8, 0xE7, 0xE6, 0xE5, 0xE4, 0xE3, 0xE2, 0xE1, 0xE0,
+    0xDF, 0xDE, 0xDD, 0xDC, 0xDB, 0xDA, 0xD9, 0xD8, 0xD7, 0xD6, 0xD5, 0xD4, 0xD3, 0xD2, 0xD1, 0xD0,
+    0xCF, 0xCE, 0xCD, 0xCC, 0xCB, 0xCA, 0xC9, 0xC8, 0xC7, 0xC6, 0xC5, 0xC4, 0xC3, 0xC2, 0xC1, 0xC0,
+    0xBF, 0xBE, 0xBD, 0xBC, 0xBB, 0xBA, 0xB9, 0xB8, 0xB7, 0xB6, 0xB5, 0xB4, 0xB3, 0xB2, 0xB1, 0xB0,
+    0xAF, 0xAE, 0xAD, 0xAC, 0xAB, 0xAA, 0xA9, 0xA8, 0xA7, 0xA6, 0xA5, 0xA4, 0xA3, 0xA2, 0xA1, 0xA0,
+    0x9F, 0x9E, 0x9D, 0x9C, 0x9B, 0x9A, 0x99, 0x98, 0x97, 0x96, 0x95, 0x94, 0x93, 0x92, 0x91, 0x90,
+    0x8F, 0x8E, 0x8D, 0x8C, 0x8B, 0x8A, 0x89, 0x88, 0x87, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80,
+    0x7F, 0x7E, 0x7D, 0x7C, 0x7B, 0x7A, 0x79, 0x78, 0x77, 0x76, 0x75, 0x74, 0x73, 0x72, 0x71, 0x70,
+    0x6F, 0x6E, 0x6D, 0x6C, 0x6B, 0x6A, 0x69, 0x68, 0x67, 0x66, 0x65, 0x64, 0x63, 0x62, 0x61, 0x60,
+    0x5F, 0x5E, 0x5D, 0x5C, 0x5B, 0x5A, 0x59, 0x58, 0x57, 0x56, 0x55, 0x54, 0x53, 0x52, 0x51, 0x50,
+    0x4F, 0x4E, 0x4D, 0x4C, 0x4B, 0x4A, 0x49, 0x48, 0x47, 0x46, 0x45, 0x44, 0x43, 0x42, 0x41, 0x40,
+    0x3F, 0x3E, 0x3D, 0x3C, 0x3B, 0x3A, 0x39, 0x38, 0x37, 0x36, 0x35, 0x34, 0x33, 0x32, 0x31, 0x30,
+    0x2F, 0x2E, 0x2D, 0x2C, 0x2B, 0x2A, 0x29, 0x28, 0x27, 0x26, 0x25, 0x24, 0x23, 0x22, 0x21, 0x20,
+    0x1F, 0x1E, 0x1D, 0x1C, 0x1B, 0x1A, 0x19, 0x18, 0x17, 0x16, 0x15, 0x14, 0x13, 0x12, 0x11, 0x10,
+    0x0F, 0x0E, 0x0D, 0x0C, 0x0B, 0x0A, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00
+}};
+
+static constexpr Table V_k_v16 = {{
+    0xD0, 0xAE, 0xDF, 0xEC, 0x67, 0xE9, 0x42, 0xA1, 0x70, 0x9D, 0x72, 0xF4, 0x31, 0xDD, 0x09, 0xF5,
+    0xCA, 0x81, 0x1A, 0x41, 0xBF, 0x3B, 0x90, 0x0E, 0xA6, 0xAA, 0x59, 0x8C, 0xC6, 0x5C, 0xBD, 0x63,
+    0xA2, 0xB1, 0xCB, 0x0D, 0x6B, 0x56, 0xBB, 0x12, 0x94, 0xA5, 0x79, 0xCF, 0x50, 0x9B, 0x22, 0x9F,
+    0x4E, 0x05, 0x5D, 0xC8, 0x1C, 0x53, 0x6E, 0x91, 0xAC, 0x89, 0xD7, 0xAF, 0xE6, 0xE8, 0x69, 0x4F,
+    0xC9, 0xB5, 0x99, 0x80, 0x7C, 0x8F, 0x5A, 0xC4, 0x1D, 0x30, 0x20, 0xA7, 0xA4, 0x7D, 0x32, 0xFB,
+    0xD6, 0x4C, 0xED, 0xAB, 0x55, 0x3A, 0xB6, 0x73, 0x10, 0x2C, 0x6D, 0x03, 0x19, 0x1E, 0x35, 0xC1,
+    0x8E, 0x23, 0x14, 0xF1, 0xCD, 0x3F, 0x76, 0xFE, 0xF7, 0x45, 0xF3, 0x33, 0x02, 0x4A, 0x00, 0xF9,
+    0x78, 0x17, 0x97, 0xE7, 0x74, 0x7A, 0x93, 0x2B, 0x37, 0x26, 0xE0, 0x47, 0x8A, 0x54, 0x9E, 0x6F,
+    0xE2, 0x0B, 0x46, 0x1F, 0x18, 0xDE, 0xAD, 0x52, 0xBE, 0x36, 0xEE, 0x83, 0xFD, 0x4D, 0xD1, 0xF2,
+    0xF8, 0x5E, 0x13, 0x39, 0xC5, 0x51, 0xB2, 0xA8, 0xF0, 0xFC, 0x9C, 0x84, 0xDC, 0x34, 0xB0, 0xB8,
+    0x92, 0x66, 0x58, 0x6C, 0x27, 0x04, 0xA9, 0xB4, 0xD3, 0x3E, 0x44, 0xC7, 0x61, 0xB3, 0x7F, 0x11,
+    0x24, 0x15, 0x75, 0x96, 0x5F, 0xEB, 0xD8, 0xDB, 0xCE, 0x4B, 0xD4, 0xD2, 0x85, 0x2E, 0x2A, 0x77,
+    0xFF, 0x8B, 0xE1, 0x57, 0xCC, 0xA0, 0xC0, 0xD5, 0x21, 0xDA, 0x86, 0xEA, 0x1B, 0x29, 0xE5, 0x3C,
+    0x87, 0xC3, 0x0C, 0x49, 0x82, 0x95, 0x98, 0x25, 0x9A, 0x40, 0x48, 0xBA, 0xC2, 0xE4, 0x0F, 0xD9,
+    0x64, 0x07, 0x6A, 0x7B, 0x62, 0xEF, 0x16, 0x71, 0x43, 0xFA, 0x88, 0xB7, 0x60, 0xB9, 0xF6, 0x2F,
+    0x3D, 0xE3, 0xBC, 0x01, 0x06, 0x28, 0x68, 0x38, 0x0A, 0x5B, 0x08, 0x65, 0x7E, 0x2D, 0x8D, 0xA3
+}};
+
+static constexpr Table V_k_v18 = {{
+    0x53, 0x93, 0x13, 0xE3, 0x63, 0xA3, 0x23, 0xC3, 0x43, 0x83, 0x03, 0xFD, 0x7D, 0xBD, 0x3D, 0xDD,
+    0x5D, 0x9D, 0x1D, 0xED, 0x6D, 0xAD, 0x2D, 0xCD, 0x4D, 0x8D, 0x0D, 0xF5, 0x75, 0xB5, 0x35, 0xD5,
+    0x55, 0x95, 0x15, 0xE5, 0x65, 0xA5, 0x25, 0xC5, 0x45, 0x85, 0x05, 0xF9, 0x79, 0xB9, 0x39, 0xD9,
+    0x59, 0x99, 0x19, 0xE9, 0x69, 0xA9, 0x29, 0xC9, 0x49, 0x89, 0x09, 0xF1, 0x71, 0xB1, 0x31, 0xD1,
+    0x51, 0x91, 0x11, 0xE1, 0x61, 0xA1, 0x21, 0xC1, 0x41, 0x81, 0x01, 0xFE, 0x7E, 0xBE, 0x3E, 0xDE,
+    0x5E, 0x9E, 0x1E, 0xEE, 0x6E, 0xAE, 0x2E, 0xCE, 0x4E, 0x8E, 0x0E, 0xF6, 0x76, 0xB6, 0x36, 0xD6,
+    0x56, 0x96, 0x16, 0xE6, 0x66, 0xA6, 0x26, 0xC6, 0x46, 0x86, 0x06, 0xFA, 0x7A, 0xBA, 0x3A, 0xDA,
+    0x5A, 0x9A, 0x1A, 0xEA, 0x6A, 0xAA, 0x2A, 0xCA, 0x4A, 0x8A, 0x0A, 0xF2, 0x72, 0xB2, 0x32, 0xD2,
+    0x52, 0x92, 0x12, 0xE2, 0x62, 0xA2, 0x22, 0xC2, 0x42, 0x82, 0x02, 0xFC, 0x7C, 0xBC, 0x3C, 0xDC,
+    0x5C, 0x9C, 0x1C, 0xEC, 0x6C, 0xAC, 0x2C, 0xCC, 0x4C, 0x8C, 0x0C, 0xF4, 0x74, 0xB4, 0x34, 0xD4,
+    0x54, 0x94, 0x14, 0xE4, 0x64, 0xA4, 0x24, 0xC4, 0x44, 0x84, 0x04, 0xF8, 0x78, 0xB8, 0x38, 0xD8,
+    0x58, 0x98, 0x18, 0xE8, 0x68, 0xA8, 0x28, 0xC8, 0x48, 0x88, 0x08, 0xF0, 0x70, 0xB0, 0x30, 0xD0,
+    0x50, 0x90, 0x10, 0xE0, 0x60, 0xA0, 0x20, 0xC0, 0x40, 0x80, 0x00, 0xFF, 0x7F, 0xBF, 0x3F, 0xDF,
+    0x5F, 0x9F, 0x1F, 0xEF, 0x6F, 0xAF, 0x2F, 0xCF, 0x4F, 0x8F, 0x0F, 0xF7, 0x77, 0xB7, 0x37, 0xD7,
+    0x57, 0x97, 0x17, 0xE7, 0x67, 0xA7, 0x27, 0xC7, 0x47, 0x87, 0x07, 0xFB, 0x7B, 0xBB, 0x3B, 0xDB,
+    0x5B, 0x9B, 0x1B, 0xEB, 0x6B, 0xAB, 0x2B, 0xCB, 0x4B, 0x8B, 0x0B, 0xF3, 0x73, 0xB3, 0x33, 0xD3
+}};
+
+static constexpr Table V_k_v20 = {{
+    0xCA, 0xD3, 0xD5, 0xD4, 0xD6, 0xDB, 0xDD, 0xDC, 0xCE, 0xBF, 0xC1, 0xC0, 0xC2, 0xC7, 0xC9, 0xC8,
+    0xEA, 0xC3, 0xC5, 0xC4, 0xC6, 0xCB, 0xCD, 0xCC, 0xEE, 0xDF, 0xE1, 0xE0, 0xE2, 0xE7, 0xE9, 0xE8,
+    0x7A, 0xE3, 0xE5, 0xE4, 0xE6, 0xEB, 0xED, 0xEC, 0x7E, 0x6F, 0x71, 0x70, 0x72, 0x77, 0x79, 0x78,
+    0x9A, 0x73, 0x75, 0x74, 0x76, 0x7B, 0x7D, 0x7C, 0x9E, 0x8F, 0x91, 0x90, 0x92, 0x97, 0x99, 0x98,
+    0x8A, 0x93, 0x95, 0x94, 0x96, 0x9B, 0x9D, 0x9C, 0x8E, 0x7F, 0x81, 0x80, 0x82, 0x87, 0x89, 0x88,
+    0xAA, 0x83, 0x85, 0x84, 0x86, 0x8B, 0x8D, 0x8C, 0xAE, 0x9F, 0xA1, 0xA0, 0xA2, 0xA7, 0xA9, 0xA8,
+    0xFA, 0xA3, 0xA5, 0xA4, 0xA6, 0xAB, 0xAD, 0xAC, 0xFE, 0xEF, 0xF1, 0xF0, 0xF2, 0xF7, 0xF9, 0xF8,
+    0x1A, 0xF3, 0xF5, 0xF4, 0xF6, 0xFB, 0xFD, 0xFC, 0x1E, 0x0F, 0x11, 0x10, 0x12, 0x17, 0x19, 0x18,
+    0x0A, 0x13, 0x15, 0x14, 0x16, 0x1B, 0x1D, 0x1C, 0x0E, 0xFF, 0x01, 0x00, 0x02, 0x07, 0x09, 0x08,
+    0x2A, 0x03, 0x05, 0x04, 0x06, 0x0B, 0x0D, 0x0C, 0x2E, 0x1F, 0x21, 0x20, 0x22, 0x27, 0x29, 0x28,
+    0x3A, 0x23, 0x25, 0x24, 0x26, 0x2B, 0x2D, 0x2C, 0x3E, 0x2F, 0x31, 0x30, 0x32, 0x37, 0x39, 0x38,
+    0x5A, 0x33, 0x35, 0x34, 0x36, 0x3B, 0x3D, 0x3C, 0x5E, 0x4F, 0x51, 0x50, 0x52, 0x57, 0x59, 0x58,
+    0x4A, 0x53, 0x55, 0x54, 0x56, 0x5B, 0x5D, 0x5C, 0x4E, 0x3F, 0x41, 0x40, 0x42, 0x47, 0x49, 0x48,
+    0x6A, 0x43, 0x45, 0x44, 0x46, 0x4B, 0x4D, 0x4C, 0x6E, 0x5F, 0x61, 0x60, 0x62, 0x67, 0x69, 0x68,
+    0xBA, 0x63, 0x65, 0x64, 0x66, 0x6B, 0x6D, 0x6C, 0xBE, 0xAF, 0xB1, 0xB0, 0xB2, 0xB7, 0xB9, 0xB8,
+    0xDA, 0xB3, 0xB5, 0xB4, 0xB6, 0xBB, 0xBD, 0xBC, 0xDE, 0xCF, 0xD1, 0xD0, 0xD2, 0xD7, 0xD9, 0xD8
+}};
+
+static constexpr Table V_k_v22 = {{
+    0x9C, 0x8C, 0x94, 0x84, 0x98, 0x88, 0x90, 0x80, 0x1F, 0x0F, 0x17, 0x07, 0x1B, 0x0B, 0x13, 0x03,
+    0x1D, 0x0D, 0x15, 0x05, 0x19, 0x09, 0x11, 0x01, 0x1E, 0x0E, 0x16, 0x06, 0x1A, 0x0A, 0x12, 0x02,
+    0x1C, 0x0C, 0x14, 0x04, 0x18, 0x08, 0x10, 0x00, 0xEF, 0xF7, 0xE7, 0xFB, 0xEB, 0xF3, 0xE3, 0xFF,
+    0xED, 0xF5, 0xE5, 0xF9, 0xE9, 0xF1, 0xE1, 0xFD, 0xEE, 0xF6, 0xE6, 0xFA, 0xEA, 0xF2, 0xE2, 0xFE,
+    0xEC, 0xF4, 0xE4, 0xF8, 0xE8, 0xF0, 0xE0, 0xFC, 0x6F, 0x77, 0x67, 0x7B, 0x6B, 0x73, 0x63, 0x7F,
+    0x6D, 0x75, 0x65, 0x79, 0x69, 0x71, 0x61, 0x7D, 0x6E, 0x76, 0x66, 0x7A, 0x6A, 0x72, 0x62, 0x7E,
+    0x6C, 0x74, 0x64, 0x78, 0x68, 0x70, 0x60, 0x7C, 0xAF, 0xB7, 0xA7, 0xBB, 0xAB, 0xB3, 0xA3, 0xBF,
+    0xAD, 0xB5, 0xA5, 0xB9, 0xA9, 0xB1, 0xA1, 0xBD, 0xAE, 0xB6, 0xA6, 0xBA, 0xAA, 0xB2, 0xA2, 0xBE,
+    0xAC, 0xB4, 0xA4, 0xB8, 0xA8, 0xB0, 0xA0, 0xBC, 0x2F, 0x37, 0x27, 0x3B, 0x2B, 0x33, 0x23, 0x3F,
+    0x2D, 0x35, 0x25, 0x39, 0x29, 0x31, 0x21, 0x3D, 0x2E, 0x36, 0x26, 0x3A, 0x2A, 0x32, 0x22, 0x3E,
+    0x2C, 0x34, 0x24, 0x38, 0x28, 0x30, 0x20, 0x3C, 0xCF, 0xD7, 0xC7, 0xDB, 0xCB, 0xD3, 0xC3, 0xDF,
+    0xCD, 0xD5, 0xC5, 0xD9, 0xC9, 0xD1, 0xC1, 0xDD, 0xCE, 0xD6, 0xC6, 0xDA, 0xCA, 0xD2, 0xC2, 0xDE,
+    0xCC, 0xD4, 0xC4, 0xD8, 0xC8, 0xD0, 0xC0, 0xDC, 0x4F, 0x57, 0x47, 0x5B, 0x4B, 0x53, 0x43, 0x5F,
+    0x4D, 0x55, 0x45, 0x59, 0x49, 0x51, 0x41, 0x5D, 0x4E, 0x56, 0x46, 0x5A, 0x4A, 0x52, 0x42, 0x5E,
+    0x4C, 0x54, 0x44, 0x58, 0x48, 0x50, 0x40, 0x5C, 0x8F, 0x97, 0x87, 0x9B, 0x8B, 0x93, 0x83, 0x9F,
+    0x8D, 0x95, 0x85, 0x99, 0x89, 0x91, 0x81, 0x9D, 0x8E, 0x96, 0x86, 0x9A, 0x8A, 0x92, 0x82, 0x9E
+}};
+
+static constexpr Table V_k_v24 = {{
+    0x61, 0x69, 0x41, 0x49, 0x51, 0x59, 0x01, 0x09, 0x11, 0x19, 0x21, 0x29, 0x31, 0x39, 0xFE, 0xF1,
+    0xE1, 0xE9, 0xC1, 0xC9, 0xD1, 0xD9, 0x81, 0x89, 0x91, 0x99, 0xA1, 0xA9, 0xB1, 0xB9, 0x7E, 0x71,
+    0x67, 0x6F, 0x47, 0x4F, 0x57, 0x5F, 0x07, 0x0F, 0x17, 0x1F, 0x27, 0x2F, 0x37, 0x3F, 0xFB, 0xF7,
+    0xE7, 0xEF, 0xC7, 0xCF, 0xD7, 0xDF, 0x87, 0x8F, 0x97, 0x9F, 0xA7, 0xAF, 0xB7, 0xBF, 0x7B, 0x77,
+    0x66, 0x6E, 0x46, 0x4E, 0x56, 0x5E, 0x06, 0x0E, 0x16, 0x1E, 0x26, 0x2E, 0x36, 0x3E, 0xFA, 0xF6,
+    0xE6, 0xEE, 0xC6, 0xCE, 0xD6, 0xDE, 0x86, 0x8E, 0x96, 0x9E, 0xA6, 0xAE, 0xB6, 0xBE, 0x7A, 0x76,
+    0x64, 0x6C, 0x44, 0x4C, 0x54, 0x5C, 0x04, 0x0C, 0x14, 0x1C, 0x24, 0x2C, 0x34, 0x3C, 0xF8, 0xF4,
+    0xE4, 0xEC, 0xC4, 0xCC, 0xD4, 0xDC, 0x84, 0x8C, 0x94, 0x9C, 0xA4, 0xAC, 0xB4, 0xBC, 0x78, 0x74,
+    0x65, 0x6D, 0x45, 0x4D, 0x55, 0x5D, 0x05, 0x0D, 0x15, 0x1D, 0x25, 0x2D, 0x35, 0x3D, 0xF9, 0xF5,
+    0xE5, 0xED, 0xC5, 0xCD, 0xD5, 0xDD, 0x85, 0x8D, 0x95, 0x9D, 0xA5, 0xAD, 0xB5, 0xBD, 0x79, 0x75,
+    0x6B, 0x43, 0x4B, 0x53, 0x5B, 0x03, 0x0B, 0x13, 0x1B, 0x23, 0x2B, 0x33, 0x3B, 0xFD, 0xF3, 0xE3,
+    0xEB, 0xC3, 0xCB, 0xD3, 0xDB, 0x83, 0x8B, 0x93, 0x9B, 0xA3, 0xAB, 0xB3, 0xBB, 0x7D, 0x73, 0x63,
+    0x6A, 0x42, 0x4A, 0x52, 0x5A, 0x02, 0x0A, 0x12, 0x1A, 0x22, 0x2A, 0x32, 0x3A, 0xFC, 0xF2, 0xE2,
+    0xEA, 0xC2, 0xCA, 0xD2, 0xDA, 0x82, 0x8A, 0x92, 0x9A, 0xA2, 0xAA, 0xB2, 0xBA, 0x7C, 0x72, 0x62,
+    0x68, 0x40, 0x48, 0x50, 0x58, 0x00, 0x08, 0x10, 0x18, 0x20, 0x28, 0x30, 0x38, 0xFF, 0xF0, 0xE0,
+    0xE8, 0xC0, 0xC8, 0xD0, 0xD8, 0x80, 0x88, 0x90, 0x98, 0xA0, 0xA8, 0xB0, 0xB8, 0x7F, 0x70, 0x60
+}};
+
+static constexpr Table V_k_v28 = {{
+    0xB0, 0x30, 0x70, 0xF0, 0x90, 0x10, 0x50, 0xD0, 0xA0, 0x20, 0x60, 0xE0, 0x80, 0x00, 0x40, 0xC0,
+    0xA8, 0x28, 0x68, 0xE8, 0x88, 0x08, 0x48, 0xC8, 0x98, 0x18, 0x58, 0xD8, 0x78, 0xF8, 0x38, 0xB8,
+    0xAC, 0x2C, 0x6C, 0xEC, 0x8C, 0x0C, 0x4C, 0xCC, 0x9C, 0x1C, 0x5C, 0xDC, 0x7C, 0xFC, 0x3C, 0xBC,
+    0xA4, 0x24, 0x64, 0xE4, 0x84, 0x04, 0x44, 0xC4, 0x94, 0x14, 0x54, 0xD4, 0x74, 0xF4, 0x34, 0xB4,
+    0xAE, 0x2E, 0x6E, 0xEE, 0x8E, 0x0E, 0x4E, 0xCE, 0x9E, 0x1E, 0x5E, 0xDE, 0x7E, 0xFE, 0x3E, 0xBE,
+    0xA6, 0x26, 0x66, 0xE6, 0x86, 0x06, 0x46, 0xC6, 0x96, 0x16, 0x56, 0xD6, 0x76, 0xF6, 0x36, 0xB6,
+    0xAA, 0x2A, 0x6A, 0xEA, 0x8A, 0x0A, 0x4A, 0xCA, 0x9A, 0x1A, 0x5A, 0xDA, 0x7A, 0xFA, 0x3A, 0xBA,
+    0xA2, 0x22, 0x62, 0xE2, 0x82, 0x02, 0x42, 0xC2, 0x92, 0x12, 0x52, 0xD2, 0x72, 0xF2, 0x32, 0xB2,
+    0xAF, 0x2F, 0x6F, 0xEF, 0x8F, 0x0F, 0x4F, 0xCF, 0x9F, 0x1F, 0x5F, 0xDF, 0x7F, 0xFF, 0x3F, 0xBF,
+    0xA7, 0x27, 0x67, 0xE7, 0x87, 0x07, 0x47, 0xC7, 0x97, 0x17, 0x57, 0xD7, 0x77, 0xF7, 0x37, 0xB7,
+    0xAB, 0x2B, 0x6B, 0xEB, 0x8B, 0x0B, 0x4B, 0xCB, 0x9B, 0x1B, 0x5B, 0xDB, 0x7B, 0xFB, 0x3B, 0xBB,
+    0xA3, 0x23, 0x63, 0xE3, 0x83, 0x03, 0x43, 0xC3, 0x93, 0x13, 0x53, 0xD3, 0x73, 0xF3, 0x33, 0xB3,
+    0xAD, 0x2D, 0x6D, 0xED, 0x8D, 0x0D, 0x4D, 0xCD, 0x9D, 0x1D, 0x5D, 0xDD, 0x7D, 0xFD, 0x3D, 0xBD,
+    0xA5, 0x25, 0x65, 0xE5, 0x85, 0x05, 0x45, 0xC5, 0x95, 0x15, 0x55, 0xD5, 0x75, 0xF5, 0x35, 0xB5,
+    0xA9, 0x29, 0x69, 0xE9, 0x89, 0x09, 0x49, 0xC9, 0x99, 0x19, 0x59, 0xD9, 0x79, 0xF9, 0x39, 0xB9,
+    0xA1, 0x21, 0x61, 0xE1, 0x81, 0x01, 0x41, 0xC1, 0x91, 0x11, 0x51, 0xD1, 0x71, 0xF1, 0x31, 0xB1
+}};
+
+static constexpr Table V_k_v32 = {{
+    0x00, 0x40, 0x20, 0x60, 0x10, 0x50, 0x30, 0x70, 0x08, 0x48, 0x28, 0x68, 0x18, 0x58, 0x38, 0x78,
+    0x04, 0x44, 0x24, 0x64, 0x14, 0x54, 0x34, 0x74, 0x0C, 0x4C, 0x2C, 0x6C, 0x1C, 0x5C, 0x3C, 0x7C,
+    0x02, 0x42, 0x22, 0x62, 0x12, 0x52, 0x32, 0x72, 0x0A, 0x4A, 0x2A, 0x6A, 0x1A, 0x5A, 0x3A, 0x7A,
+    0x06, 0x46, 0x26, 0x66, 0x16, 0x56, 0x36, 0x76, 0x0E, 0x4E, 0x2E, 0x6E, 0x1E, 0x5E, 0x3E, 0x7E,
+    0x01, 0x41, 0x21, 0x61, 0x11, 0x51, 0x31, 0x71, 0x09, 0x49, 0x29, 0x69, 0x19, 0x59, 0x39, 0x79,
+    0x05, 0x45, 0x25, 0x65, 0x15, 0x55, 0x35, 0x75, 0x0D, 0x4D, 0x2D, 0x6D, 0x1D, 0x5D, 0x3D, 0x7D,
+    0x03, 0x43, 0x23, 0x63, 0x13, 0x53, 0x33, 0x73, 0x0B, 0x4B, 0x2B, 0x6B, 0x1B, 0x5B, 0x3B, 0x7B,
+    0x07, 0x47, 0x27, 0x67, 0x17, 0x57, 0x37, 0x77, 0x0F, 0x4F, 0x2F, 0x6F, 0x1F, 0x5F, 0x3F, 0x7F,
+    0x80, 0xC0, 0xA0, 0xE0, 0x90, 0xD0, 0xB0, 0xF0, 0x88, 0xC8, 0xA8, 0xE8, 0x98, 0xD8, 0xB8, 0xF8,
+    0x84, 0xC4, 0xA4, 0xE4, 0x94, 0xD4, 0xB4, 0xF4, 0x8C, 0xCC, 0xAC, 0xEC, 0x9C, 0xDC, 0xBC, 0xFC,
+    0x82, 0xC2, 0xA2, 0xE2, 0x92, 0xD2, 0xB2, 0xF2, 0x8A, 0xCA, 0xAA, 0xEA, 0x9A, 0xDA, 0xBA, 0xFA,
+    0x86, 0xC6, 0xA6, 0xE6, 0x96, 0xD6, 0xB6, 0xF6, 0x8E, 0xCE, 0xAE, 0xEE, 0x9E, 0xDE, 0xBE, 0xFE,
+    0x81, 0xC1, 0xA1, 0xE1, 0x91, 0xD1, 0xB1, 0xF1, 0x89, 0xC9, 0xA9, 0xE9, 0x99, 0xD9, 0xB9, 0xF9,
+    0x85, 0xC5, 0xA5, 0xE5, 0x95, 0xD5, 0xB5, 0xF5, 0x8D, 0xCD, 0xAD, 0xED, 0x9D, 0xDD, 0xBD, 0xFD,
+    0x83, 0xC3, 0xA3, 0xE3, 0x93, 0xD3, 0xB3, 0xF3, 0x8B, 0xCB, 0xAB, 0xEB, 0x9B, 0xDB, 0xBB, 0xFB,
+    0x87, 0xC7, 0xA7, 0xE7, 0x97, 0xD7, 0xB7, 0xF7, 0x8F, 0xCF, 0xAF, 0xEF, 0x9F, 0xDF, 0xBF, 0xFF
+}};
+
+static constexpr Table V_k_v36 = {{
+    0x41, 0xF2, 0x82, 0x4D, 0x32, 0x26, 0xFF, 0xF7, 0xD7, 0x39, 0xAA, 0x54, 0x07, 0x5A, 0x7A, 0xA4,
+    0xF3, 0x1F, 0xD2, 0x3C, 0x97, 0x90, 0x3F, 0xC5, 0x89, 0xDC, 0x56, 0x0A, 0xF1, 0x81, 0x27, 0x15,
+    0x38, 0x48, 0x62, 0xBB, 0x30, 0xA3, 0xDE, 0x7E, 0x7F, 0x46, 0xEE, 0x14, 0x67, 0x16, 0xA9, 0x72,
+    0xEA, 0x5B, 0xC6, 0xCD, 0x02, 0x57, 0xCA, 0x91, 0x74, 0x58, 0x13, 0xBC, 0x3E, 0xB4, 0x2A, 0xC7,
+    0xC4, 0xCF, 0x80, 0xD0, 0x63, 0xE9, 0x42, 0x95, 0xFC, 0xE8, 0xB2, 0x05, 0x44, 0x28, 0x09, 0xAF,
+    0x66, 0x2F, 0xA6, 0xCB, 0x4F, 0x8D, 0xC0, 0x8C, 0xAC, 0x3B, 0xEB, 0x0C, 0x3A, 0xAB, 0x6C, 0x0E,
+    0x8E, 0x0F, 0x00, 0x61, 0xF4, 0x6A, 0x70, 0xD6, 0x88, 0x45, 0x0B, 0x5D, 0xDF, 0x2B, 0x8B, 0xC2,
+    0x37, 0x18, 0x84, 0x51, 0x59, 0xDA, 0xBE, 0x99, 0x11, 0x69, 0xFE, 0x03, 0x86, 0xB0, 0xCC, 0x73,
+    0xF0, 0x68, 0x53, 0x24, 0xAE, 0x1A, 0x1C, 0x55, 0x9B, 0xB8, 0x83, 0x01, 0xC9, 0x76, 0x77, 0x3D,
+    0xB6, 0x06, 0x17, 0x22, 0x87, 0xDB, 0xBD, 0xB5, 0xB3, 0x35, 0x33, 0x2E, 0xD9, 0x4E, 0x85, 0xE6,
+    0x96, 0x29, 0x98, 0x12, 0xC3, 0x8A, 0x64, 0xE5, 0xFA, 0xFD, 0x0D, 0xD3, 0x9A, 0x94, 0xC1, 0xFB,
+    0xBF, 0xF6, 0xA8, 0x7B, 0x5F, 0xD8, 0x23, 0x4C, 0x6B, 0xA1, 0x40, 0xB1, 0xF5, 0x31, 0x5C, 0x4B,
+    0x9E, 0x75, 0x52, 0x9F, 0x08, 0xF9, 0xB9, 0x2D, 0xA7, 0x6D, 0x1D, 0x71, 0xDD, 0x49, 0xE3, 0xC8,
+    0x9D, 0x78, 0x93, 0xE1, 0x34, 0x65, 0x9C, 0x6F, 0xEF, 0xA5, 0xCE, 0x43, 0x7C, 0x1B, 0x4A, 0x21,
+    0x2C, 0xE4, 0x50, 0xAD, 0xEC, 0xED, 0xE7, 0xD4, 0xE2, 0xB7, 0x7D, 0x6E, 0xE0, 0xA0, 0x92, 0x25,
+    0x19, 0x79, 0x20, 0xD1, 0x47, 0x36, 0xD5, 0x1E, 0x5E, 0x8F, 0xF8, 0xBA, 0xA2, 0x04, 0x10, 0x60
+}};
+
+static constexpr Table V_k_v4 = {{
+    0xF5, 0xE7, 0xD7, 0xDF, 0x15, 0x07, 0xF7, 0xFF, 0x35, 0x27, 0x17, 0x1F, 0x55, 0x47, 0x37, 0x3F,
+    0x75, 0x67, 0x57, 0x5F, 0x95, 0x87, 0x77, 0x7F, 0xB4, 0xA6, 0x97, 0x9F, 0xD4, 0xC6, 0xB6, 0xBE,
+    0xF4, 0xE6, 0xD6, 0xDE, 0x14, 0x06, 0xF6, 0xFE, 0x34, 0x26, 0x16, 0x1E, 0x54, 0x46, 0x36, 0x3E,
+    0x74, 0x66, 0x56, 0x5E, 0x94, 0x86, 0x76, 0x7E, 0xB5, 0xA7, 0x96, 0x9E, 0xD5, 0xC7, 0xB7, 0xBF,
+    0xF3, 0xE9, 0xD9, 0xE1, 0x13, 0x09, 0xF9, 0x01, 0x33, 0x29, 0x19, 0x21, 0x53, 0x49, 0x39, 0x41,
+    0x73, 0x69, 0x59, 0x61, 0x93, 0x89, 0x79, 0x81, 0xB2, 0xA8, 0x99, 0xA1, 0xD2, 0xC8, 0xB8, 0xC0,
+    0xF2, 0xE8, 0xD8, 0xE0, 0x12, 0x08, 0xF8, 0x00, 0x32, 0x28, 0x18, 0x20, 0x52, 0x48, 0x38, 0x40,
+    0x72, 0x68, 0x58, 0x60, 0x92, 0x88, 0x78, 0x80, 0xB3, 0xA9, 0x98, 0xA0, 0xD3, 0xC9, 0xB9, 0xC1,
+    0xEF, 0xEB, 0xDB, 0xE3, 0x0F, 0x0B, 0xFB, 0x03, 0x2F, 0x2B, 0x1B, 0x23, 0x4F, 0x4B, 0x3B, 0x43,
+    0x6F, 0x6B, 0x5B, 0x63, 0x8F, 0x8B, 0x7B, 0x83, 0xAE, 0xAA, 0x9B, 0xA3, 0xCE, 0xCA, 0xBA, 0xC2,
+    0xEE, 0xEA, 0xDA, 0xE2, 0x0E, 0x0A, 0xFA, 0x02, 0x2E, 0x2A, 0x1A, 0x22, 0x4E, 0x4A, 0x3A, 0x42,
+    0x6E, 0x6A, 0x5A, 0x62, 0x8E, 0x8A, 0x7A, 0x82, 0xAF, 0xAB, 0x9A, 0xA2, 0xCF, 0xCB, 0xBB, 0xC3,
+    0xF1, 0xED, 0xDD, 0xE5, 0x11, 0x0D, 0xFD, 0x05, 0x31, 0x2D, 0x1D, 0x25, 0x51, 0x4D, 0x3D, 0x45,
+    0x71, 0x6D, 0x5D, 0x65, 0x91, 0x8D, 0x7D, 0x85, 0xB0, 0xAC, 0x9D, 0xA5, 0xD0, 0xCC, 0xBC, 0xC4,
+    0xF0, 0xEC, 0xDC, 0xE4, 0x10, 0x0C, 0xFC, 0x04, 0x30, 0x2C, 0x1C, 0x24, 0x50, 0x4C, 0x3C, 0x44,
+    0x70, 0x6C, 0x5C, 0x64, 0x90, 0x8C, 0x7C, 0x84, 0xB1, 0xAD, 0x9C, 0xA4, 0xD1, 0xCD, 0xBD, 0xC5
+}};
+
+static constexpr Table V_k_v40 = {{
+    0x3F, 0xA7, 0xF0, 0x81, 0x48, 0x96, 0xDE, 0x0A, 0x70, 0x66, 0xDB, 0xA8, 0x49, 0x25, 0xC9, 0x90,
+    0x0E, 0x45, 0xD3, 0x7E, 0xAC, 0x6A, 0xCC, 0x21, 0x14, 0x24, 0x3D, 0x4B, 0x2E, 0xA3, 0x36, 0x64,
+    0xC5, 0xEC, 0xF6, 0xA9, 0xE5, 0xB8, 0xFB, 0x80, 0xB4, 0x2F, 0xB2, 0x52, 0x3A, 0x47, 0x16, 0x8E,
+    0x54, 0xFF, 0x51, 0x6F, 0x46, 0xAD, 0x17, 0xBC, 0xF3, 0xD1, 0xA0, 0x2C, 0x82, 0xFA, 0x20, 0xCB,
+    0xE0, 0x5B, 0xFD, 0xBA, 0xCD, 0x29, 0x08, 0x6E, 0xA2, 0x10, 0x5F, 0x8C, 0xD4, 0xA5, 0xC2, 0x38,
+    0xE9, 0x2B, 0x04, 0x06, 0xB9, 0x9A, 0xE1, 0xE2, 0x65, 0x58, 0xC8, 0x9D, 0x4C, 0x1E, 0xD8, 0xB0,
+    0x11, 0x62, 0x3C, 0x7B, 0x02, 0x34, 0xF2, 0x6D, 0x75, 0x93, 0xBF, 0x8D, 0xD5, 0x8F, 0x23, 0xA4,
+    0xEE, 0x1C, 0x43, 0x2D, 0x39, 0x86, 0x5E, 0x63, 0xAA, 0x09, 0xB3, 0xED, 0x84, 0x4D, 0x50, 0x72,
+    0x88, 0x42, 0xEF, 0xF8, 0x18, 0xC7, 0xC4, 0x35, 0x03, 0xD9, 0x79, 0xE4, 0x5C, 0x92, 0x69, 0x4A,
+    0x57, 0xE8, 0x07, 0x77, 0x59, 0x28, 0x0D, 0x68, 0xAB, 0xEB, 0x55, 0x0C, 0x9B, 0x3E, 0xAF, 0xD7,
+    0xC6, 0x87, 0x9C, 0x19, 0x5D, 0xD0, 0x12, 0xF9, 0x95, 0x26, 0x22, 0xD2, 0x89, 0xCA, 0x94, 0xBE,
+    0xBD, 0x91, 0x5A, 0xFC, 0x97, 0xBB, 0x99, 0xDF, 0x4F, 0xFE, 0xC0, 0xE6, 0x05, 0x1D, 0x6C, 0x9E,
+    0x9F, 0x7A, 0x32, 0x56, 0x8B, 0xF4, 0x0F, 0xF7, 0x3B, 0x40, 0xC1, 0xDC, 0x60, 0x0B, 0x1B, 0x73,
+    0x01, 0x78, 0x53, 0x71, 0xDD, 0xB6, 0xAE, 0x67, 0x33, 0xF1, 0x6B, 0xB7, 0xB1, 0x74, 0x76, 0xEA,
+    0x4E, 0xC3, 0x31, 0xD6, 0xA6, 0xCF, 0x00, 0x44, 0x61, 0x7D, 0xE7, 0x37, 0x27, 0x30, 0x41, 0x2A,
+    0x8A, 0xA1, 0x7F, 0xCE, 0xF5, 0x7C, 0x1F, 0x83, 0x13, 0x85, 0x1A, 0xB5, 0xE3, 0xDA, 0x98, 0x15
+}};
+
+static constexpr Table V_k_v52 = {{
+    0x1C, 0x5C, 0x3C, 0x7C, 0x2C, 0x6C, 0x4C, 0x0C, 0x24, 0x64, 0x44, 0x04, 0x34, 0x74, 0x54, 0x14,
+    0x20, 0x60, 0x40, 0x00, 0x30, 0x70, 0x50, 0x10, 0x28, 0x68, 0x48, 0x08, 0x38, 0x78, 0x58, 0x18,
+    0x1E, 0x5E, 0x3E, 0x7E, 0x2E, 0x6E, 0x4E, 0x0E, 0x26, 0x66, 0x46, 0x06, 0x36, 0x76, 0x56, 0x16,
+    0x22, 0x62, 0x42, 0x02, 0x32, 0x72, 0x52, 0x12, 0x2A, 0x6A, 0x4A, 0x0A, 0x3A, 0x7A, 0x5A, 0x1A,
+    0x1D, 0x5D, 0x3D, 0x7D, 0x2D, 0x6D, 0x4D, 0x0D, 0x25, 0x65, 0x45, 0x05, 0x35, 0x75, 0x55, 0x15,
+    0x21, 0x61, 0x41, 0x01, 0x31, 0x71, 0x51, 0x11, 0x29, 0x69, 0x49, 0x09, 0x39, 0x79, 0x59, 0x19,
+    0x1F, 0x5F, 0x3F, 0x7F, 0x2F, 0x6F, 0x4F, 0x0F, 0x27, 0x67, 0x47, 0x07, 0x37, 0x77, 0x57, 0x17,
+    0x23, 0x63, 0x43, 0x03, 0x33, 0x73, 0x53, 0x13, 0x2B, 0x6B, 0x4B, 0x0B, 0x3B, 0x7B, 0x5B, 0x1B,
+    0x9C, 0xDC, 0xBC, 0xFC, 0xAC, 0xEC, 0xCC, 0x8C, 0xA4, 0xE4, 0xC4, 0x84, 0xB4, 0xF4, 0xD4, 0x94,
+    0xA0, 0xE0, 0xC0, 0x80, 0xB0, 0xF0, 0xD0, 0x90, 0xA8, 0xE8, 0xC8, 0x88, 0xB8, 0xF8, 0xD8, 0x98,
+    0x9E, 0xDE, 0xBE, 0xFE, 0xAE, 0xEE, 0xCE, 0x8E, 0xA6, 0xE6, 0xC6, 0x86, 0xB6, 0xF6, 0xD6, 0x96,
+    0xA2, 0xE2, 0xC2, 0x82, 0xB2, 0xF2, 0xD2, 0x92, 0xAA, 0xEA, 0xCA, 0x8A, 0xBA, 0xFA, 0xDA, 0x9A,
+    0x9D, 0xDD, 0xBD, 0xFD, 0xAD, 0xED, 0xCD, 0x8D, 0xA5, 0xE5, 0xC5, 0x85, 0xB5, 0xF5, 0xD5, 0x95,
+    0xA1, 0xE1, 0xC1, 0x81, 0xB1, 0xF1, 0xD1, 0x91, 0xA9, 0xE9, 0xC9, 0x89, 0xB9, 0xF9, 0xD9, 0x99,
+    0x9F, 0xDF, 0xBF, 0xFF, 0xAF, 0xEF, 0xCF, 0x8F, 0xA7, 0xE7, 0xC7, 0x87, 0xB7, 0xF7, 0xD7, 0x97,
+    0xA3, 0xE3, 0xC3, 0x83, 0xB3, 0xF3, 0xD3, 0x93, 0xAB, 0xEB, 0xCB, 0x8B, 0xBB, 0xFB, 0xDB, 0x9B
+}};
+
+static constexpr Table V_k_v56 = {{
+    0x62, 0x97, 0x80, 0xB9, 0xDC, 0xA6, 0x57, 0xCA, 0x01, 0x66, 0xF3, 0xA1, 0x03, 0xF0, 0x56, 0x50,
+    0xFA, 0xAF, 0x4F, 0xE7, 0x79, 0xC9, 0xCF, 0xDD, 0x73, 0x09, 0x9C, 0x1C, 0x2C, 0x3A, 0xC3, 0x5A,
+    0x75, 0x6F, 0x5F, 0xF2, 0x43, 0x2F, 0xDA, 0xA9, 0x90, 0xC5, 0x02, 0xB2, 0x52, 0xBE, 0x53, 0xC8,
+    0x4C, 0x19, 0x5E, 0x99, 0x89, 0xA8, 0x93, 0x21, 0x49, 0x35, 0x9F, 0xD7, 0x1A, 0xAB, 0x6A, 0xF7,
+    0x3B, 0x6B, 0x34, 0x39, 0xEE, 0x42, 0xAD, 0x78, 0x0D, 0xCC, 0x84, 0xC2, 0xBB, 0xB0, 0x95, 0xC4,
+    0x05, 0xAA, 0xFE, 0x1F, 0x23, 0x7B, 0xD2, 0x36, 0x9D, 0x0C, 0xD4, 0x40, 0x86, 0x10, 0x38, 0xB8,
+    0x8D, 0x8F, 0xDE, 0x65, 0xD9, 0x4B, 0x26, 0xD8, 0x3F, 0x5B, 0x72, 0x28, 0x74, 0x67, 0x46, 0x45,
+    0x58, 0xFD, 0xE9, 0x55, 0x31, 0x54, 0x82, 0xF6, 0x47, 0x25, 0xEB, 0x59, 0x9E, 0xD0, 0x00, 0x30,
+    0x2E, 0x85, 0xA0, 0x77, 0x3D, 0x8A, 0xDF, 0x0B, 0xBF, 0x63, 0xAE, 0x83, 0xB7, 0xDB, 0xC1, 0x4D,
+    0x08, 0x70, 0xE6, 0x4E, 0xD5, 0xBD, 0x22, 0x5D, 0xF1, 0x7C, 0xFF, 0xA4, 0xF8, 0x94, 0xB3, 0x06,
+    0xCB, 0xBC, 0x0E, 0x0F, 0x1E, 0x33, 0x4A, 0xE4, 0x8E, 0x24, 0x7D, 0x87, 0x0A, 0xE3, 0xD6, 0x96,
+    0x9A, 0x60, 0xC0, 0x91, 0x69, 0x1B, 0xD1, 0x18, 0x71, 0x5C, 0x6E, 0x92, 0x88, 0xB6, 0x12, 0x61,
+    0x04, 0xB1, 0x2A, 0x29, 0xE1, 0x81, 0xD3, 0xE0, 0x7A, 0x98, 0xC6, 0xEF, 0xE2, 0x64, 0x07, 0x15,
+    0x2D, 0xEA, 0xF9, 0x37, 0xED, 0xB5, 0xFC, 0xCD, 0x8B, 0x68, 0x76, 0x3E, 0x51, 0x7E, 0x48, 0x3C,
+    0x16, 0x11, 0xE5, 0xF5, 0x2B, 0x9B, 0xA3, 0xA2, 0xA7, 0xAC, 0xEC, 0x13, 0x8C, 0x41, 0x6D, 0x32,
+    0x7F, 0xCE, 0x20, 0xC7, 0xA5, 0xBA, 0xF4, 0x6C, 0x17, 0x1D, 0x14, 0x44, 0x27, 0xE8, 0xB4, 0xFB
+}};
+
+static constexpr Table V_k_v58 = {{
+    0xA3, 0xDB, 0xD3, 0xCB, 0xC3, 0xBB, 0xB3, 0xAB, 0x63, 0x9B, 0x93, 0x8B, 0x83, 0x7B, 0x73, 0x6B,
+    0x22, 0x5A, 0x52, 0x4A, 0x42, 0x3A, 0x32, 0x2A, 0xE2, 0x1A, 0x12, 0x0A, 0x02, 0xFA, 0xF2, 0xEA,
+    0xA2, 0xDA, 0xD2, 0xCA, 0xC2, 0xBA, 0xB2, 0xAA, 0x62, 0x9A, 0x92, 0x8A, 0x82, 0x7A, 0x72, 0x6A,
+    0x61, 0x59, 0x51, 0x49, 0x41, 0x39, 0x31, 0x29, 0x21, 0x19, 0x11, 0x09, 0x01, 0xF9, 0xF1, 0xE9,
+    0xE1, 0xD9, 0xD1, 0xC9, 0xC1, 0xB9, 0xB1, 0xA9, 0xA1, 0x99, 0x91, 0x89, 0x81, 0x79, 0x71, 0x69,
+    0x60, 0x58, 0x50, 0x48, 0x40, 0x38, 0x30, 0x28, 0x20, 0x18, 0x10, 0x08, 0x00, 0xF8, 0xF0, 0xE8,
+    0xE0, 0xD8, 0xD0, 0xC8, 0xC0, 0xB8, 0xB0, 0xA8, 0xA0, 0x98, 0x90, 0x88, 0x80, 0x78, 0x70, 0x68,
+    0x5F, 0x57, 0x4F, 0x47, 0x3F, 0x37, 0x2F, 0x27, 0x1F, 0x17, 0x0F, 0x07, 0xFF, 0xF7, 0xEF, 0xE7,
+    0xDF, 0xD7, 0xCF, 0xC7, 0xBF, 0xB7, 0xAF, 0xA7, 0x9F, 0x97, 0x8F, 0x87, 0x7F, 0x77, 0x6F, 0x67,
+    0x5E, 0x56, 0x4E, 0x46, 0x3E, 0x36, 0x2E, 0x26, 0x1E, 0x16, 0x0E, 0x06, 0xFE, 0xF6, 0xEE, 0xE6,
+    0xDE, 0xD6, 0xCE, 0xC6, 0xBE, 0xB6, 0xAE, 0xA6, 0x9E, 0x96, 0x8E, 0x86, 0x7E, 0x76, 0x6E, 0x66,
+    0x5D, 0x55, 0x4D, 0x45, 0x3D, 0x35, 0x2D, 0x25, 0x1D, 0x15, 0x0D, 0x05, 0xFD, 0xF5, 0xED, 0xE5,
+    0xDD, 0xD5, 0xCD, 0xC5, 0xBD, 0xB5, 0xAD, 0xA5, 0x9D, 0x95, 0x8D, 0x85, 0x7D, 0x75, 0x6D, 0x65,
+    0x5C, 0x54, 0x4C, 0x44, 0x3C, 0x34, 0x2C, 0x24, 0x1C, 0x14, 0x0C, 0x04, 0xFC, 0xF4, 0xEC, 0xE4,
+    0xDC, 0xD4, 0xCC, 0xC4, 0xBC, 0xB4, 0xAC, 0xA4, 0x9C, 0x94, 0x8C, 0x84, 0x7C, 0x74, 0x6C, 0x64,
+    0x5B, 0x53, 0x4B, 0x43, 0x3B, 0x33, 0x2B, 0x23, 0x1B, 0x13, 0x0B, 0x03, 0xFB, 0xF3, 0xEB, 0xE3
+}};
+
+static constexpr Table V_k_v60 = {{
+    0x1E, 0xD3, 0xBF, 0xF2, 0x91, 0x6F, 0xB6, 0xB7, 0x88, 0x8A, 0x1B, 0xE4, 0xE2, 0xC0, 0xC2, 0x9F,
+    0x19, 0xF6, 0x93, 0x6B, 0xEF, 0x18, 0x54, 0x73, 0x6C, 0x9C, 0x6E, 0xD8, 0x10, 0xA3, 0x15, 0x12,
+    0x74, 0xEA, 0x24, 0x2E, 0x25, 0xF4, 0x79, 0x13, 0xF5, 0x2C, 0x4A, 0x20, 0x76, 0x0D, 0xF8, 0xA4,
+    0x26, 0x28, 0x4B, 0x8F, 0xD9, 0xFC, 0x40, 0xB0, 0xC7, 0xC3, 0x9D, 0x57, 0xDC, 0x65, 0xDD, 0x0E,
+    0x31, 0xEC, 0x41, 0x0B, 0xA8, 0x03, 0x5B, 0xE5, 0x37, 0x86, 0x80, 0xB5, 0xFA, 0xF9, 0x2B, 0x61,
+    0xBC, 0x34, 0x8E, 0x7B, 0xE7, 0xE1, 0xF7, 0x01, 0x90, 0xCA, 0xE9, 0xFE, 0x70, 0x09, 0x58, 0xBD,
+    0x3D, 0x62, 0x30, 0x06, 0xBA, 0xFB, 0xCD, 0xB8, 0x38, 0x08, 0x22, 0x27, 0xED, 0x82, 0x94, 0xB2,
+    0x8C, 0x81, 0xC4, 0x0A, 0x14, 0xB1, 0xE6, 0xCB, 0x63, 0xAA, 0xA0, 0x02, 0x75, 0x11, 0x4F, 0x2D,
+    0x9B, 0x8B, 0x1C, 0xE0, 0x83, 0xD1, 0x7E, 0x87, 0x89, 0xAE, 0x1F, 0xAC, 0x8D, 0xAF, 0x0F, 0x68,
+    0xA5, 0x3C, 0x84, 0xF3, 0xAD, 0xCC, 0x5F, 0x5A, 0x43, 0xF0, 0x3B, 0x6D, 0xFD, 0x4D, 0x9E, 0xA1,
+    0x16, 0x2F, 0x47, 0xBB, 0xC5, 0xD2, 0x4C, 0x32, 0x42, 0xE8, 0x7A, 0x36, 0x97, 0x51, 0x60, 0x59,
+    0x55, 0x48, 0x45, 0xC1, 0x7F, 0x17, 0x5D, 0x7D, 0x3E, 0x46, 0x39, 0xC6, 0x96, 0x05, 0xEE, 0xDF,
+    0xB3, 0x0C, 0xDB, 0x33, 0x21, 0xCF, 0xD0, 0x98, 0xD4, 0xC8, 0x85, 0xB4, 0xC9, 0x95, 0x53, 0x52,
+    0x4E, 0xA2, 0x72, 0xD6, 0x66, 0x77, 0xFF, 0x92, 0x49, 0xD7, 0xA6, 0x67, 0xE3, 0x29, 0x6A, 0x69,
+    0xAB, 0xBE, 0x44, 0x1D, 0xA9, 0x78, 0x64, 0x71, 0x99, 0x3A, 0x07, 0x1A, 0x00, 0x04, 0x23, 0x9A,
+    0x2A, 0xCE, 0xF1, 0x56, 0x3F, 0xD5, 0xEB, 0x7C, 0x5E, 0xDE, 0xDA, 0x50, 0xB9, 0x5C, 0xA7, 0x35
+}};
+
+static constexpr Table V_k_v62 = {{
+    0xFF, 0xBF, 0x7F, 0x3F, 0xFE, 0xBE, 0x7E, 0x3E, 0xFD, 0xBD, 0x7D, 0x3D, 0xFC, 0xBC, 0x7C, 0x3C,
+    0xFB, 0xBB, 0x7B, 0x3B, 0xFA, 0xBA, 0x7A, 0x3A, 0xF9, 0xB9, 0x79, 0x39, 0xF8, 0xB8, 0x78, 0x38,
+    0xF7, 0xB7, 0x77, 0x37, 0xF6, 0xB6, 0x76, 0x36, 0xF5, 0xB5, 0x75, 0x35, 0xF4, 0xB4, 0x74, 0x34,
+    0xF3, 0xB3, 0x73, 0x33, 0xF2, 0xB2, 0x72, 0x32, 0xF1, 0xB1, 0x71, 0x31, 0xF0, 0xB0, 0x70, 0x30,
+    0xEF, 0xAF, 0x6F, 0x2F, 0xEE, 0xAE, 0x6E, 0x2E, 0xED, 0xAD, 0x6D, 0x2D, 0xEC, 0xAC, 0x6C, 0x2C,
+    0xEB, 0xAB, 0x6B, 0x2B, 0xEA, 0xAA, 0x6A, 0x2A, 0xE9, 0xA9, 0x69, 0x29, 0xE8, 0xA8, 0x68, 0x28,
+    0xE7, 0xA7, 0x67, 0x27, 0xE6, 0xA6, 0x66, 0x26, 0xE5, 0xA5, 0x65, 0x25, 0xE4, 0xA4, 0x64, 0x24,
+    0xE3, 0xA3, 0x63, 0x23, 0xE2, 0xA2, 0x62, 0x22, 0xE1, 0xA1, 0x61, 0x21, 0xE0, 0xA0, 0x60, 0x20,
+    0xDF, 0x9F, 0x5F, 0x1F, 0xDE, 0x9E, 0x5E, 0x1E, 0xDD, 0x9D, 0x5D, 0x1D, 0xDC, 0x9C, 0x5C, 0x1C,
+    0xDB, 0x9B, 0x5B, 0x1B, 0xDA, 0x9A, 0x5A, 0x1A, 0xD9, 0x99, 0x59, 0x19, 0xD8, 0x98, 0x58, 0x18,
+    0xD7, 0x97, 0x57, 0x17, 0xD6, 0x96, 0x56, 0x16, 0xD5, 0x95, 0x55, 0x15, 0xD4, 0x94, 0x54, 0x14,
+    0xD3, 0x93, 0x53, 0x13, 0xD2, 0x92, 0x52, 0x12, 0xD1, 0x91, 0x51, 0x11, 0xD0, 0x90, 0x50, 0x10,
+    0xCF, 0x8F, 0x4F, 0x0F, 0xCE, 0x8E, 0x4E, 0x0E, 0xCD, 0x8D, 0x4D, 0x0D, 0xCC, 0x8C, 0x4C, 0x0C,
+    0xCB, 0x8B, 0x4B, 0x0B, 0xCA, 0x8A, 0x4A, 0x0A, 0xC9, 0x89, 0x49, 0x09, 0xC8, 0x88, 0x48, 0x08,
+    0xC7, 0x87, 0x47, 0x07, 0xC6, 0x86, 0x46, 0x06, 0xC5, 0x85, 0x45, 0x05, 0xC4, 0x84, 0x44, 0x04,
+    0xC3, 0x83, 0x43, 0x03, 0xC2, 0x82, 0x42, 0x02, 0xC1, 0x81, 0x41, 0x01, 0xC0, 0x80, 0x40, 0x00
+}};
+
+static constexpr Table V_k_v64 = {{
+    0x6F, 0x6E, 0x6C, 0x6D, 0x68, 0x69, 0x6A, 0x6B, 0x60, 0x61, 0x62, 0x63, 0x64, 0x65, 0x66, 0x67,
+    0x7F, 0x7E, 0x7C, 0x7D, 0x78, 0x79, 0x7A, 0x7B, 0x70, 0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77,
+    0x5F, 0x5E, 0x5C, 0x5D, 0x58, 0x59, 0x5A, 0x5B, 0x50, 0x51, 0x52, 0x53, 0x54, 0x55, 0x56, 0x57,
+    0x40, 0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F,
+    0x1F, 0x1E, 0x1C, 0x1D, 0x18, 0x19, 0x1A, 0x1B, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+    0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
+    0x3F, 0x3E, 0x3C, 0x3D, 0x38, 0x39, 0x3A, 0x3B, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37,
+    0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F,
+    0xEF, 0xEE, 0xEC, 0xED, 0xE8, 0xE9, 0xEA, 0xEB, 0xE0, 0xE1, 0xE2, 0xE3, 0xE4, 0xE5, 0xE6, 0xE7,
+    0xFF, 0xFE, 0xFC, 0xFD, 0xF8, 0xF9, 0xFA, 0xFB, 0xF0, 0xF1, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7,
+    0xDF, 0xDE, 0xDC, 0xDD, 0xD8, 0xD9, 0xDA, 0xDB, 0xD0, 0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7,
+    0xC0, 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF,
+    0x9F, 0x9E, 0x9C, 0x9D, 0x98, 0x99, 0x9A, 0x9B, 0x90, 0x91, 0x92, 0x93, 0x94, 0x95, 0x96, 0x97,
+    0x80, 0x81, 0x82, 0x83, 0x84, 0x85, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F,
+    0xBF, 0xBE, 0xBC, 0xBD, 0xB8, 0xB9, 0xBA, 0xBB, 0xB0, 0xB1, 0xB2, 0xB3, 0xB4, 0xB5, 0xB6, 0xB7,
+    0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xAB, 0xAC, 0xAD, 0xAE, 0xAF
+}};
+
+static constexpr Table V_k_v66 = {{
+    0xBA, 0xB9, 0xB8, 0xB7, 0xB6, 0xB5, 0xB4, 0xB3, 0xB2, 0xB1, 0xB0, 0xAF, 0xAE, 0xAD, 0xAC, 0xAB,
+    0xAA, 0xA9, 0xA8, 0xA7, 0xA6, 0xA5, 0xA4, 0xA3, 0xA2, 0xA1, 0xA0, 0x9F, 0x9E, 0x9D, 0x9C, 0x9B,
+    0x9A, 0x99, 0x98, 0x97, 0x96, 0x95, 0x94, 0x93, 0x92, 0x91, 0x90, 0x8F, 0x8E, 0x8D, 0x8C, 0x8B,
+    0x8A, 0x89, 0x88, 0x87, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7E, 0x7D, 0x7C, 0x7B,
+    0x7A, 0x79, 0x78, 0x77, 0x76, 0x75, 0x74, 0x73, 0x72, 0x71, 0x70, 0x6F, 0x6E, 0x6D, 0x6C, 0x6B,
+    0x6A, 0x69, 0x68, 0x67, 0x66, 0x65, 0x64, 0x63, 0x62, 0x61, 0x60, 0x5F, 0x5E, 0x5D, 0x5C, 0x5B,
+    0x5A, 0x59, 0x58, 0x57, 0x56, 0x55, 0x54, 0x53, 0x52, 0x51, 0x50, 0x4F, 0x4E, 0x4D, 0x4C, 0x4B,
+    0x4A, 0x49, 0x48, 0x47, 0x46, 0x45, 0x44, 0x43, 0x42, 0x41, 0x40, 0x3F, 0x3E, 0x3D, 0x3C, 0x3B,
+    0x3A, 0x39, 0x38, 0x37, 0x36, 0x35, 0x34, 0x33, 0x32, 0x31, 0x30, 0x2F, 0x2E, 0x2D, 0x2C, 0x2B,
+    0x2A, 0x29, 0x28, 0x27, 0x26, 0x25, 0x24, 0x23, 0x22, 0x21, 0x20, 0x1F, 0x1E, 0x1D, 0x1C, 0x1B,
+    0x1A, 0x19, 0x18, 0x17, 0x16, 0x15, 0x14, 0x13, 0x12, 0x11, 0x10, 0x0F, 0x0E, 0x0D, 0x0C, 0x0B,
+    0x0A, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00, 0xFF, 0xFE, 0xFD, 0xFC, 0xFB,
+    0xFA, 0xF9, 0xF8, 0xF7, 0xF6, 0xF5, 0xF4, 0xF3, 0xF2, 0xF1, 0xF0, 0xEF, 0xEE, 0xED, 0xEC, 0xEB,
+    0xEA, 0xE9, 0xE8, 0xE7, 0xE6, 0xE5, 0xE4, 0xE3, 0xE2, 0xE1, 0xE0, 0xDF, 0xDE, 0xDD, 0xDC, 0xDB,
+    0xDA, 0xD9, 0xD8, 0xD7, 0xD6, 0xD5, 0xD4, 0xD3, 0xD2, 0xD1, 0xD0, 0xCF, 0xCE, 0xCD, 0xCC, 0xCB,
+    0xCA, 0xC9, 0xC8, 0xC7, 0xC6, 0xC5, 0xC4, 0xC3, 0xC2, 0xC1, 0xC0, 0xBF, 0xBE, 0xBD, 0xBC, 0xBB
+}};
+
+static constexpr Table V_k_v68 = {{
+    0xD0, 0xF7, 0x81, 0x00, 0x5C, 0x58, 0xBF, 0x31, 0xDE, 0xC2, 0xFF, 0x70, 0xB7, 0x9F, 0xC9, 0x07,
+    0x68, 0xC1, 0xEE, 0xB3, 0xD9, 0xBA, 0x22, 0xD6, 0x60, 0xAB, 0xA1, 0x13, 0xBD, 0x46, 0x4E, 0xCA,
+    0x2D, 0xFE, 0xCF, 0x39, 0xF1, 0xE4, 0x66, 0x9B, 0x4D, 0x61, 0x97, 0xE8, 0x45, 0xA9, 0x5E, 0x30,
+    0xD7, 0xAF, 0x53, 0x1A, 0x05, 0x86, 0x19, 0x41, 0x2E, 0x5B, 0xC3, 0xE6, 0xE5, 0x6B, 0x24, 0x27,
+    0x28, 0x6D, 0xDF, 0x3B, 0x6E, 0x2C, 0x57, 0x0D, 0x96, 0xD4, 0x82, 0x7A, 0x3A, 0xFA, 0x25, 0xB6,
+    0x33, 0x5F, 0x80, 0x3C, 0x79, 0x2F, 0xD8, 0x94, 0xB9, 0x65, 0xF8, 0x63, 0x3F, 0x21, 0x6F, 0x56,
+    0x37, 0x78, 0xF0, 0xDC, 0xAE, 0x89, 0x73, 0xBE, 0x87, 0x32, 0xAD, 0x75, 0xB5, 0xF5, 0xAA, 0x3D,
+    0x4C, 0x71, 0x7B, 0x54, 0x1B, 0x4F, 0x0E, 0x7F, 0x0A, 0xC0, 0x55, 0x18, 0x4A, 0x8D, 0xCE, 0x36,
+    0x17, 0xA8, 0x35, 0xEC, 0x10, 0x42, 0xF3, 0x8B, 0x62, 0xE7, 0xE9, 0x5A, 0x88, 0xF9, 0xB2, 0xFB,
+    0x12, 0xED, 0x9E, 0x1C, 0x7E, 0x84, 0x16, 0x01, 0xF6, 0x1F, 0x76, 0xCC, 0xE1, 0x77, 0x1D, 0xD5,
+    0x83, 0xA5, 0x64, 0xBC, 0xB4, 0x6A, 0xDA, 0x50, 0x06, 0x40, 0xEB, 0x23, 0x74, 0x49, 0xF4, 0x20,
+    0x7C, 0x8E, 0x26, 0x8C, 0x9C, 0x72, 0xA6, 0xC8, 0x7D, 0x43, 0x2A, 0x67, 0xA0, 0x95, 0xA2, 0x4B,
+    0xE3, 0x85, 0xDD, 0x51, 0xC7, 0x08, 0x04, 0xD1, 0x90, 0x15, 0xFC, 0x47, 0xD2, 0x11, 0xEF, 0xF2,
+    0xAC, 0xFD, 0xD3, 0x59, 0xCD, 0xB1, 0x52, 0x09, 0x02, 0xDB, 0x2B, 0x03, 0x14, 0xA7, 0xB8, 0x1E,
+    0x3E, 0xC6, 0x29, 0x38, 0xE2, 0xBB, 0xA4, 0x44, 0x9A, 0x93, 0x5D, 0x9D, 0x0C, 0x99, 0x8A, 0x92,
+    0x48, 0xC4, 0x69, 0xC5, 0xB0, 0xA3, 0xE0, 0x6C, 0x98, 0x34, 0xEA, 0x0F, 0x91, 0x8F, 0x0B, 0xCB
+}};
+
+static constexpr Table V_k_v73 = {{
+    0xB1, 0xB2, 0xB3, 0xB4, 0xB5, 0xB6, 0xB7, 0xB8, 0xB9, 0xBA, 0xBB, 0xBC, 0xBD, 0xBE, 0xBF, 0xC0,
+    0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0,
+    0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7, 0xD8, 0xD9, 0xDA, 0xDB, 0xDC, 0xDD, 0xDE, 0xDF, 0xE0,
+    0xE1, 0xE2, 0xE3, 0xE4, 0xE5, 0xE6, 0xE7, 0xE8, 0xE9, 0xEA, 0xEB, 0xEC, 0xED, 0xEE, 0xEF, 0xF0,
+    0xF1, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFD, 0xFE, 0xFF, 0x00,
+    0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10,
+    0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x20,
+    0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F, 0x30,
+    0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40,
+    0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F, 0x50,
+    0x51, 0x52, 0x53, 0x54, 0x55, 0x56, 0x57, 0x58, 0x59, 0x5A, 0x5B, 0x5C, 0x5D, 0x5E, 0x5F, 0x60,
+    0x61, 0x62, 0x63, 0x64, 0x65, 0x66, 0x67, 0x68, 0x69, 0x6A, 0x6B, 0x6C, 0x6D, 0x6E, 0x6F, 0x70,
+    0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F, 0x80,
+    0x81, 0x82, 0x83, 0x84, 0x85, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F, 0x90,
+    0x91, 0x92, 0x93, 0x94, 0x95, 0x96, 0x97, 0x98, 0x99, 0x9A, 0x9B, 0x9C, 0x9D, 0x9E, 0x9F, 0xA0,
+    0xA1, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xAB, 0xAC, 0xAD, 0xAE, 0xAF, 0xB0
+}};
+
+static constexpr Table V_k_v77 = {{
+    0x28, 0x38, 0x20, 0x30, 0x24, 0x34, 0x3C, 0x2C, 0x2B, 0x3B, 0x23, 0x33, 0x27, 0x37, 0x3F, 0x2F,
+    0x2A, 0x3A, 0x22, 0x32, 0x26, 0x36, 0x3E, 0x2E, 0x25, 0x35, 0x3D, 0x2D, 0x21, 0x31, 0x39, 0x29,
+    0xAA, 0xBA, 0xA2, 0xB2, 0xA6, 0xB6, 0xBE, 0xAE, 0xA5, 0xB5, 0xBD, 0xAD, 0xA1, 0xB1, 0xB9, 0xA9,
+    0xAB, 0xBB, 0xA3, 0xB3, 0xA7, 0xB7, 0xBF, 0xAF, 0xA4, 0xB4, 0xBC, 0xAC, 0xA0, 0xB0, 0xB8, 0xA8,
+    0x48, 0x58, 0x40, 0x50, 0x44, 0x54, 0x5C, 0x4C, 0x4B, 0x5B, 0x43, 0x53, 0x47, 0x57, 0x5F, 0x4F,
+    0x4A, 0x5A, 0x42, 0x52, 0x46, 0x56, 0x5E, 0x4E, 0x45, 0x55, 0x5D, 0x4D, 0x41, 0x51, 0x59, 0x49,
+    0xCA, 0xDA, 0xC2, 0xD2, 0xC6, 0xD6, 0xDE, 0xCE, 0xC5, 0xD5, 0xDD, 0xCD, 0xC1, 0xD1, 0xD9, 0xC9,
+    0xCB, 0xDB, 0xC3, 0xD3, 0xC7, 0xD7, 0xDF, 0xCF, 0xC4, 0xD4, 0xDC, 0xCC, 0xC0, 0xD0, 0xD8, 0xC8,
+    0x68, 0x78, 0x60, 0x70, 0x64, 0x74, 0x7C, 0x6C, 0x6B, 0x7B, 0x63, 0x73, 0x67, 0x77, 0x7F, 0x6F,
+    0x6A, 0x7A, 0x62, 0x72, 0x66, 0x76, 0x7E, 0x6E, 0x65, 0x75, 0x7D, 0x6D, 0x61, 0x71, 0x79, 0x69,
+    0xEA, 0xFA, 0xE2, 0xF2, 0xE6, 0xF6, 0xFE, 0xEE, 0xE5, 0xF5, 0xFD, 0xED, 0xE1, 0xF1, 0xF9, 0xE9,
+    0xEB, 0xFB, 0xE3, 0xF3, 0xE7, 0xF7, 0xFF, 0xEF, 0xE4, 0xF4, 0xFC, 0xEC, 0xE0, 0xF0, 0xF8, 0xE8,
+    0x9A, 0x86, 0x92, 0x8A, 0x96, 0x8E, 0x81, 0x9E, 0x95, 0x8D, 0x83, 0x9D, 0x91, 0x89, 0x85, 0x99,
+    0x9B, 0x87, 0x93, 0x8B, 0x97, 0x8F, 0x80, 0x9F, 0x94, 0x8C, 0x82, 0x9C, 0x90, 0x88, 0x84, 0x98,
+    0x1A, 0x06, 0x12, 0x0A, 0x16, 0x0E, 0x01, 0x1E, 0x15, 0x0D, 0x03, 0x1D, 0x11, 0x09, 0x05, 0x19,
+    0x1B, 0x07, 0x13, 0x0B, 0x17, 0x0F, 0x00, 0x1F, 0x14, 0x0C, 0x02, 0x1C, 0x10, 0x08, 0x04, 0x18
+}};
+
+static constexpr Table V_k_v8 = {{
+    0xCA, 0xDA, 0xEA, 0xFA, 0x0B, 0x1B, 0x2B, 0x3B, 0x4B, 0x5B, 0x6B, 0x7B, 0x8B, 0x9B, 0xAB, 0xBB,
+    0xCB, 0xDB, 0xEB, 0xFB, 0x0C, 0x1C, 0x2C, 0x3C, 0x4C, 0x5C, 0x6C, 0x7C, 0x8C, 0x9C, 0xAC, 0xBC,
+    0xCC, 0xDC, 0xEC, 0xFC, 0x0D, 0x1D, 0x2D, 0x3D, 0x4D, 0x5D, 0x6D, 0x7D, 0x8D, 0x9D, 0xAD, 0xBD,
+    0xCD, 0xDD, 0xED, 0xFD, 0x0E, 0x1E, 0x2E, 0x3E, 0x4E, 0x5E, 0x6E, 0x7E, 0x8E, 0x9E, 0xAE, 0xBE,
+    0xCE, 0xDE, 0xEE, 0xFE, 0x0F, 0x1F, 0x2F, 0x3F, 0x4F, 0x5F, 0x6F, 0x7F, 0x8F, 0x9F, 0xAF, 0xBF,
+    0xCF, 0xDF, 0xEF, 0xFF, 0x00, 0x10, 0x20, 0x30, 0x40, 0x50, 0x60, 0x70, 0x80, 0x90, 0xA0, 0xB0,
+    0xC0, 0xD0, 0xE0, 0xF0, 0x01, 0x11, 0x21, 0x31, 0x41, 0x51, 0x61, 0x71, 0x81, 0x91, 0xA1, 0xB1,
+    0xC1, 0xD1, 0xE1, 0xF1, 0x02, 0x12, 0x22, 0x32, 0x42, 0x52, 0x62, 0x72, 0x82, 0x92, 0xA2, 0xB2,
+    0xC2, 0xD2, 0xE2, 0xF2, 0x03, 0x13, 0x23, 0x33, 0x43, 0x53, 0x63, 0x73, 0x83, 0x93, 0xA3, 0xB3,
+    0xC3, 0xD3, 0xE3, 0xF3, 0x04, 0x14, 0x24, 0x34, 0x44, 0x54, 0x64, 0x74, 0x84, 0x94, 0xA4, 0xB4,
+    0xC4, 0xD4, 0xE4, 0xF4, 0x05, 0x15, 0x25, 0x35, 0x45, 0x55, 0x65, 0x75, 0x85, 0x95, 0xA5, 0xB5,
+    0xC5, 0xD5, 0xE5, 0xF5, 0x06, 0x16, 0x26, 0x36, 0x46, 0x56, 0x66, 0x76, 0x86, 0x96, 0xA6, 0xB6,
+    0xC6, 0xD6, 0xE6, 0xF6, 0x07, 0x17, 0x27, 0x37, 0x47, 0x57, 0x67, 0x77, 0x87, 0x97, 0xA7, 0xB7,
+    0xC7, 0xD7, 0xE7, 0xF7, 0x08, 0x18, 0x28, 0x38, 0x48, 0x58, 0x68, 0x78, 0x88, 0x98, 0xA8, 0xB8,
+    0xC8, 0xD8, 0xE8, 0xF8, 0x09, 0x19, 0x29, 0x39, 0x49, 0x59, 0x69, 0x79, 0x89, 0x99, 0xA9, 0xB9,
+    0xC9, 0xD9, 0xE9, 0xF9, 0x0A, 0x1A, 0x2A, 0x3A, 0x4A, 0x5A, 0x6A, 0x7A, 0x8A, 0x9A, 0xAA, 0xBA
+}};
+
+static constexpr Table V_k_v82 = {{
+    0x98, 0xFA, 0xF1, 0xF7, 0x3C, 0x51, 0x61, 0x13, 0x0B, 0xC7, 0xA4, 0x28, 0xDF, 0xA9, 0x08, 0x01,
+    0xB2, 0x21, 0x78, 0xFD, 0x90, 0xA0, 0x92, 0xBE, 0x16, 0x06, 0xE2, 0x31, 0x49, 0x6E, 0x39, 0xBC,
+    0xCC, 0xF8, 0x43, 0x5B, 0xD5, 0x9B, 0x24, 0x4F, 0x50, 0x81, 0x5E, 0xA5, 0x95, 0x72, 0x99, 0xFB,
+    0x83, 0x0E, 0x9C, 0xF2, 0xB7, 0x68, 0xE3, 0x30, 0xE5, 0xB1, 0xDD, 0x10, 0x6D, 0x1E, 0xD4, 0xC6,
+    0xFF, 0x53, 0x8F, 0xBB, 0x9F, 0xE0, 0xD1, 0x7A, 0x47, 0xEF, 0x89, 0x66, 0xC0, 0xD6, 0xED, 0x58,
+    0x27, 0x52, 0xA1, 0xC8, 0xEA, 0x32, 0xFE, 0x1D, 0xA8, 0x4E, 0x96, 0x15, 0xD0, 0xA7, 0x46, 0xAF,
+    0xB8, 0x9A, 0x5F, 0xE1, 0x8B, 0x09, 0x2C, 0xD7, 0xB5, 0x94, 0x9D, 0xE4, 0xD2, 0x5D, 0x07, 0x2E,
+    0x12, 0xDC, 0x2F, 0x40, 0xAB, 0xB0, 0x7D, 0x87, 0x19, 0x04, 0xEB, 0xE8, 0x3A, 0xD8, 0xAC, 0x18,
+    0xB4, 0xE6, 0x93, 0x74, 0xC2, 0x3E, 0x8D, 0x2A, 0x2B, 0x7C, 0xAE, 0xBA, 0x63, 0x14, 0xA3, 0x4A,
+    0x45, 0x34, 0x62, 0xE7, 0x17, 0xBD, 0xD9, 0x38, 0x2D, 0x0F, 0x7E, 0x70, 0x80, 0x55, 0xFC, 0xAA,
+    0x75, 0x4C, 0x48, 0x03, 0x41, 0x7F, 0xCA, 0x35, 0x64, 0x60, 0x71, 0x79, 0x6B, 0xD3, 0x0A, 0xCD,
+    0x3B, 0x02, 0xC4, 0x69, 0xDB, 0x05, 0x5C, 0x1C, 0x84, 0xA6, 0x6C, 0x9E, 0x76, 0x67, 0x73, 0xE9,
+    0x1F, 0x6F, 0x22, 0xF6, 0x4B, 0xC5, 0xF4, 0x8C, 0x0C, 0x25, 0x23, 0xDE, 0x6A, 0x37, 0xA2, 0x26,
+    0x1A, 0x0D, 0x54, 0xB3, 0xC1, 0xC9, 0xEC, 0x85, 0xF9, 0x11, 0xBF, 0x00, 0x44, 0x5A, 0x3D, 0xCE,
+    0x91, 0xCF, 0xCB, 0x33, 0x7B, 0x97, 0x1B, 0x3F, 0x29, 0x77, 0x56, 0xB9, 0xC3, 0x42, 0xAD, 0x20,
+    0x86, 0x82, 0x36, 0x57, 0x65, 0x59, 0xF0, 0x8A, 0xF5, 0xB6, 0x88, 0xF3, 0xDA, 0xEE, 0x8E, 0x4D
+}};
+
+static constexpr Table D_k_d44 = {{
+    0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40, 0x41, 0x42,
+    0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F, 0x50, 0x51, 0x52,
+    0x53, 0x54, 0x55, 0x56, 0x57, 0x58, 0x59, 0x5A, 0x5B, 0x5C, 0x5D, 0x5E, 0x5F, 0x60, 0x61, 0x62,
+    0x63, 0x64, 0x65, 0x66, 0x67, 0x68, 0x69, 0x6A, 0x6B, 0x6C, 0x6D, 0x6E, 0x6F, 0x70, 0x71, 0x72,
+    0x73, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F, 0x00, 0x01, 0x02,
+    0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12,
+    0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x20, 0x21, 0x22,
+    0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F, 0x30, 0x31, 0x32,
+    0xB3, 0xB4, 0xB5, 0xB6, 0xB7, 0xB8, 0xB9, 0xBA, 0xBB, 0xBC, 0xBD, 0xBE, 0xBF, 0xC0, 0xC1, 0xC2,
+    0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2,
+    0xD3, 0xD4, 0xD5, 0xD6, 0xD7, 0xD8, 0xD9, 0xDA, 0xDB, 0xDC, 0xDD, 0xDE, 0xDF, 0xE0, 0xE1, 0xE2,
+    0xE3, 0xE4, 0xE5, 0xE6, 0xE7, 0xE8, 0xE9, 0xEA, 0xEB, 0xEC, 0xED, 0xEE, 0xEF, 0xF0, 0xF1, 0xF2,
+    0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFD, 0xFE, 0xFF, 0x80, 0x81, 0x82,
+    0x83, 0x84, 0x85, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F, 0x90, 0x91, 0x92,
+    0x93, 0x94, 0x95, 0x96, 0x97, 0x98, 0x99, 0x9A, 0x9B, 0x9C, 0x9D, 0x9E, 0x9F, 0xA0, 0xA1, 0xA2,
+    0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xAB, 0xAC, 0xAD, 0xAE, 0xAF, 0xB0, 0xB1, 0xB2
+}};
+
+static constexpr Table D_k_d45 = {{
+    0xE8, 0xE0, 0xE4, 0xDC, 0x08, 0x00, 0x04, 0xFC, 0xD8, 0xD0, 0xD4, 0xCC, 0xF8, 0xF0, 0xF4, 0xEC,
+    0x65, 0x5D, 0x61, 0x59, 0x85, 0x7D, 0x81, 0x79, 0x55, 0x4D, 0x51, 0x49, 0x75, 0x6D, 0x71, 0x69,
+    0x28, 0x20, 0x24, 0x1C, 0x45, 0x3D, 0x41, 0x3C, 0x18, 0x10, 0x14, 0x0C, 0x38, 0x30, 0x34, 0x2C,
+    0xA5, 0x9D, 0xA1, 0x99, 0xC5, 0xBD, 0xC1, 0xB9, 0x95, 0x8D, 0x91, 0x89, 0xB5, 0xAD, 0xB1, 0xA9,
+    0xE6, 0xDE, 0xE2, 0xDA, 0x06, 0xFE, 0x02, 0xFA, 0xD6, 0xCE, 0xD2, 0xCA, 0xF6, 0xEE, 0xF2, 0xEA,
+    0x67, 0x5F, 0x63, 0x5B, 0x87, 0x7F, 0x83, 0x7B, 0x57, 0x4F, 0x53, 0x4B, 0x77, 0x6F, 0x73, 0x6B,
+    0x26, 0x1E, 0x22, 0x1A, 0x47, 0x3F, 0x43, 0x3A, 0x16, 0x0E, 0x12, 0x0A, 0x36, 0x2E, 0x32, 0x2A,
+    0xA7, 0x9F, 0xA3, 0x9B, 0xC7, 0xBF, 0xC3, 0xBB, 0x97, 0x8F, 0x93, 0x8B, 0xB7, 0xAF, 0xB3, 0xAB,
+    0xE5, 0xDD, 0xE1, 0xD9, 0x05, 0xFD, 0x01, 0xF9, 0xD5, 0xCD, 0xD1, 0xC9, 0xF5, 0xED, 0xF1, 0xE9,
+    0x66, 0x5E, 0x62, 0x5A, 0x86, 0x7E, 0x82, 0x7A, 0x56, 0x4E, 0x52, 0x4A, 0x76, 0x6E, 0x72, 0x6A,
+    0x25, 0x1D, 0x21, 0x19, 0x46, 0x3E, 0x42, 0x39, 0x15, 0x0D, 0x11, 0x09, 0x35, 0x2D, 0x31, 0x29,
+    0xA6, 0x9E, 0xA2, 0x9A, 0xC6, 0xBE, 0xC2, 0xBA, 0x96, 0x8E, 0x92, 0x8A, 0xB6, 0xAE, 0xB2, 0xAA,
+    0xE7, 0xDF, 0xE3, 0xDB, 0x07, 0xFF, 0x03, 0xFB, 0xD7, 0xCF, 0xD3, 0xCB, 0xF7, 0xEF, 0xF3, 0xEB,
+    0x68, 0x60, 0x64, 0x5C, 0x88, 0x80, 0x84, 0x7C, 0x58, 0x50, 0x54, 0x4C, 0x78, 0x70, 0x74, 0x6C,
+    0x27, 0x1F, 0x23, 0x1B, 0x48, 0x40, 0x44, 0x3B, 0x17, 0x0F, 0x13, 0x0B, 0x37, 0x2F, 0x33, 0x2B,
+    0xA8, 0xA0, 0xA4, 0x9C, 0xC8, 0xC0, 0xC4, 0xBC, 0x98, 0x90, 0x94, 0x8C, 0xB8, 0xB0, 0xB4, 0xAC
+}};
+
+static constexpr Table D_k_d46 = {{
+    0x42, 0xE8, 0x8F, 0xC2, 0x13, 0x4F, 0xE7, 0xBF, 0xA8, 0x9E, 0xD6, 0x37, 0x05, 0xE3, 0x4A, 0xD1,
+    0xCE, 0x63, 0x91, 0x6F, 0xF3, 0x41, 0x8D, 0xB7, 0x8A, 0x72, 0x65, 0x1A, 0x6B, 0x3E, 0x0E, 0xAE,
+    0x29, 0x09, 0x24, 0x17, 0xA0, 0xEC, 0x18, 0x84, 0xD2, 0x1C, 0x9B, 0xF4, 0x6D, 0xB5, 0xFB, 0x5B,
+    0xDF, 0xE6, 0x20, 0xCD, 0xFF, 0x30, 0x76, 0x3A, 0x78, 0x69, 0x3D, 0x68, 0xA6, 0x4E, 0xD8, 0xF1,
+    0x16, 0x27, 0x50, 0x3C, 0x7B, 0x54, 0xA9, 0xB9, 0xE5, 0x79, 0x49, 0xD4, 0xFD, 0x6E, 0x2E, 0x75,
+    0x02, 0x38, 0xDD, 0xAA, 0x70, 0x2C, 0xFA, 0x8C, 0xC4, 0x5D, 0xF8, 0xFE, 0x06, 0x62, 0xBA, 0x04,
+    0x8B, 0xE0, 0x93, 0x46, 0xC0, 0x14, 0xBB, 0x74, 0x28, 0xB8, 0x0D, 0x2D, 0xFC, 0x2B, 0xF2, 0x47,
+    0x32, 0x9F, 0x7F, 0xB6, 0xAB, 0x52, 0xC9, 0x83, 0xDB, 0x99, 0xF7, 0xCB, 0x56, 0x03, 0xF0, 0x1F,
+    0xC5, 0x0A, 0xDA, 0x97, 0x81, 0x89, 0x55, 0xF5, 0x80, 0x53, 0xB0, 0xF9, 0x33, 0x4B, 0x4D, 0x0C,
+    0x35, 0xEA, 0x7C, 0xDC, 0xC1, 0x92, 0x1D, 0x82, 0xC8, 0xC3, 0x5F, 0x07, 0x6C, 0xCF, 0x1B, 0x96,
+    0x51, 0x5C, 0x3B, 0x98, 0xC6, 0xED, 0x39, 0xBD, 0xAC, 0x0B, 0x21, 0x15, 0x10, 0xB4, 0x31, 0xAD,
+    0x61, 0xA1, 0x11, 0xE2, 0x44, 0xA4, 0xA3, 0xA7, 0xB1, 0x77, 0x12, 0x4C, 0x2A, 0x19, 0x7E, 0x00,
+    0xD3, 0x48, 0xE4, 0x85, 0x90, 0x23, 0x64, 0xA5, 0x88, 0x2F, 0x22, 0xD9, 0x45, 0x36, 0xCA, 0x9C,
+    0x94, 0xCC, 0x5E, 0xDE, 0x1E, 0x40, 0xE9, 0xAF, 0x01, 0x25, 0xEE, 0xBE, 0x26, 0xD5, 0x8E, 0x7D,
+    0x59, 0xB2, 0x3F, 0xB3, 0x34, 0x95, 0xBC, 0xD7, 0xC7, 0x0F, 0x7A, 0xD0, 0x6A, 0x87, 0x08, 0x71,
+    0x67, 0x9A, 0x5A, 0x73, 0x60, 0xE1, 0x57, 0x9D, 0x58, 0xEF, 0xA2, 0x43, 0x86, 0xEB, 0x66, 0xF6
+}};
+
+static constexpr Table D_k_d47 = {{
+    0xF8, 0xFB, 0xFF, 0xFD, 0xF0, 0xF3, 0xF7, 0xF5, 0xE8, 0xEB, 0xEF, 0xED, 0xE0, 0xE3, 0xE7, 0xE5,
+    0xD8, 0xDB, 0xDF, 0xDD, 0xD0, 0xD3, 0xD7, 0xD5, 0xC8, 0xCB, 0xCF, 0xCD, 0xC0, 0xC3, 0xC7, 0xC5,
+    0xB8, 0xBB, 0xBF, 0xBD, 0xB0, 0xB3, 0xB7, 0xB5, 0xA8, 0xAB, 0xAF, 0xAD, 0xA0, 0xA3, 0xA7, 0xA5,
+    0x98, 0x9B, 0x9F, 0x9D, 0x90, 0x93, 0x97, 0x95, 0x88, 0x8B, 0x8F, 0x8D, 0x80, 0x83, 0x87, 0x85,
+    0x78, 0x7B, 0x7F, 0x7D, 0x70, 0x73, 0x77, 0x75, 0x68, 0x6B, 0x6F, 0x6D, 0x60, 0x63, 0x67, 0x65,
+    0x58, 0x5B, 0x5F, 0x5D, 0x50, 0x53, 0x57, 0x55, 0x48, 0x4B, 0x4F, 0x4D, 0x40, 0x43, 0x47, 0x45,
+    0x38, 0x3B, 0x3F, 0x3D, 0x30, 0x33, 0x37, 0x35, 0x28, 0x2B, 0x2F, 0x2D, 0x20, 0x23, 0x27, 0x25,
+    0x18, 0x1B, 0x1F, 0x1D, 0x10, 0x13, 0x17, 0x15, 0x08, 0x0B, 0x0F, 0x0D, 0x00, 0x03, 0x07, 0x05,
+    0xF9, 0xFA, 0xFE, 0xFC, 0xF1, 0xF2, 0xF6, 0xF4, 0xE9, 0xEA, 0xEE, 0xEC, 0xE1, 0xE2, 0xE6, 0xE4,
+    0xD9, 0xDA, 0xDE, 0xDC, 0xD1, 0xD2, 0xD6, 0xD4, 0xC9, 0xCA, 0xCE, 0xCC, 0xC1, 0xC2, 0xC6, 0xC4,
+    0xB9, 0xBA, 0xBE, 0xBC, 0xB1, 0xB2, 0xB6, 0xB4, 0xA9, 0xAA, 0xAE, 0xAC, 0xA1, 0xA2, 0xA6, 0xA4,
+    0x99, 0x9A, 0x9E, 0x9C, 0x91, 0x92, 0x96, 0x94, 0x89, 0x8A, 0x8E, 0x8C, 0x81, 0x82, 0x86, 0x84,
+    0x79, 0x7A, 0x7E, 0x7C, 0x71, 0x72, 0x76, 0x74, 0x69, 0x6A, 0x6E, 0x6C, 0x61, 0x62, 0x66, 0x64,
+    0x59, 0x5A, 0x5E, 0x5C, 0x51, 0x52, 0x56, 0x54, 0x49, 0x4A, 0x4E, 0x4C, 0x41, 0x42, 0x46, 0x44,
+    0x39, 0x3A, 0x3E, 0x3C, 0x31, 0x32, 0x36, 0x34, 0x29, 0x2A, 0x2E, 0x2C, 0x21, 0x22, 0x26, 0x24,
+    0x19, 0x1A, 0x1E, 0x1C, 0x11, 0x12, 0x16, 0x14, 0x09, 0x0A, 0x0E, 0x0C, 0x01, 0x02, 0x06, 0x04
+}};
+
+static constexpr Table D_k_d48 = {{
+    0x90, 0x80, 0x70, 0x60, 0x50, 0x40, 0x30, 0x20, 0x10, 0x00, 0xF0, 0xE0, 0xD0, 0xC0, 0xB0, 0xA0,
+    0x8F, 0x7F, 0x6F, 0x5F, 0x4F, 0x3F, 0x2F, 0x1F, 0x0F, 0xFF, 0xEF, 0xDF, 0xCF, 0xBF, 0xAF, 0x9F,
+    0x8E, 0x7E, 0x6E, 0x5E, 0x4E, 0x3E, 0x2E, 0x1E, 0x0E, 0xFE, 0xEE, 0xDE, 0xCE, 0xBE, 0xAE, 0x9E,
+    0x8D, 0x7D, 0x6D, 0x5D, 0x4D, 0x3D, 0x2D, 0x1D, 0x0D, 0xFD, 0xED, 0xDD, 0xCD, 0xBD, 0xAD, 0x9D,
+    0x8C, 0x7C, 0x6C, 0x5C, 0x4C, 0x3C, 0x2C, 0x1C, 0x0C, 0xFC, 0xEC, 0xDC, 0xCC, 0xBC, 0xAC, 0x9C,
+    0x8B, 0x7B, 0x6B, 0x5B, 0x4B, 0x3B, 0x2B, 0x1B, 0x0B, 0xFB, 0xEB, 0xDB, 0xCB, 0xBB, 0xAB, 0x9B,
+    0x8A, 0x7A, 0x6A, 0x5A, 0x4A, 0x3A, 0x2A, 0x1A, 0x0A, 0xFA, 0xEA, 0xDA, 0xCA, 0xBA, 0xAA, 0x9A,
+    0x89, 0x79, 0x69, 0x59, 0x49, 0x39, 0x29, 0x19, 0x09, 0xF9, 0xE9, 0xD9, 0xC9, 0xB9, 0xA9, 0x99,
+    0x88, 0x78, 0x68, 0x58, 0x48, 0x38, 0x28, 0x18, 0x08, 0xF8, 0xE8, 0xD8, 0xC8, 0xB8, 0xA8, 0x98,
+    0x87, 0x77, 0x67, 0x57, 0x47, 0x37, 0x27, 0x17, 0x07, 0xF7, 0xE7, 0xD7, 0xC7, 0xB7, 0xA7, 0x97,
+    0x86, 0x76, 0x66, 0x56, 0x46, 0x36, 0x26, 0x16, 0x06, 0xF6, 0xE6, 0xD6, 0xC6, 0xB6, 0xA6, 0x96,
+    0x85, 0x75, 0x65, 0x55, 0x45, 0x35, 0x25, 0x15, 0x05, 0xF5, 0xE5, 0xD5, 0xC5, 0xB5, 0xA5, 0x95,
+    0x84, 0x74, 0x64, 0x54, 0x44, 0x34, 0x24, 0x14, 0x04, 0xF4, 0xE4, 0xD4, 0xC4, 0xB4, 0xA4, 0x94,
+    0x83, 0x73, 0x63, 0x53, 0x43, 0x33, 0x23, 0x13, 0x03, 0xF3, 0xE3, 0xD3, 0xC3, 0xB3, 0xA3, 0x93,
+    0x82, 0x72, 0x62, 0x52, 0x42, 0x32, 0x22, 0x12, 0x02, 0xF2, 0xE2, 0xD2, 0xC2, 0xB2, 0xA2, 0x92,
+    0x81, 0x71, 0x61, 0x51, 0x41, 0x31, 0x21, 0x11, 0x01, 0xF1, 0xE1, 0xD1, 0xC1, 0xB1, 0xA1, 0x91
+}};
+
+static constexpr Table D_k_d49 = {{
+    0xFF, 0x7F, 0xBF, 0x3F, 0xDF, 0x5F, 0x9F, 0x1F, 0xEF, 0x6F, 0xAF, 0x2F, 0xCF, 0x4F, 0x8F, 0x0F,
+    0xF7, 0x77, 0xB7, 0x37, 0xD7, 0x57, 0x97, 0x17, 0xE7, 0x67, 0xA7, 0x27, 0xC7, 0x47, 0x87, 0x07,
+    0xFB, 0x7B, 0xBB, 0x3B, 0xDB, 0x5B, 0x9B, 0x1B, 0xEB, 0x6B, 0xAB, 0x2B, 0xCB, 0x4B, 0x8B, 0x0B,
+    0xF3, 0x73, 0xB3, 0x33, 0xD3, 0x53, 0x93, 0x13, 0xE3, 0x63, 0xA3, 0x23, 0xC3, 0x43, 0x83, 0x03,
+    0xFD, 0x7D, 0xBD, 0x3D, 0xDD, 0x5D, 0x9D, 0x1D, 0xED, 0x6D, 0xAD, 0x2D, 0xCD, 0x4D, 0x8D, 0x0D,
+    0xF5, 0x75, 0xB5, 0x35, 0xD5, 0x55, 0x95, 0x15, 0xE5, 0x65, 0xA5, 0x25, 0xC5, 0x45, 0x85, 0x05,
+    0xF9, 0x79, 0xB9, 0x39, 0xD9, 0x59, 0x99, 0x19, 0xE9, 0x69, 0xA9, 0x29, 0xC9, 0x49, 0x89, 0x09,
+    0xF1, 0x71, 0xB1, 0x31, 0xD1, 0x51, 0x91, 0x11, 0xE1, 0x61, 0xA1, 0x21, 0xC1, 0x41, 0x81, 0x01,
+    0xFE, 0x7E, 0xBE, 0x3E, 0xDE, 0x5E, 0x9E, 0x1E, 0xEE, 0x6E, 0xAE, 0x2E, 0xCE, 0x4E, 0x8E, 0x0E,
+    0xF6, 0x76, 0xB6, 0x36, 0xD6, 0x56, 0x96, 0x16, 0xE6, 0x66, 0xA6, 0x26, 0xC6, 0x46, 0x86, 0x06,
+    0xFA, 0x7A, 0xBA, 0x3A, 0xDA, 0x5A, 0x9A, 0x1A, 0xEA, 0x6A, 0xAA, 0x2A, 0xCA, 0x4A, 0x8A, 0x0A,
+    0xF2, 0x72, 0xB2, 0x32, 0xD2, 0x52, 0x92, 0x12, 0xE2, 0x62, 0xA2, 0x22, 0xC2, 0x42, 0x82, 0x02,
+    0xFC, 0x7C, 0xBC, 0x3C, 0xDC, 0x5C, 0x9C, 0x1C, 0xEC, 0x6C, 0xAC, 0x2C, 0xCC, 0x4C, 0x8C, 0x0C,
+    0xF4, 0x74, 0xB4, 0x34, 0xD4, 0x54, 0x94, 0x14, 0xE4, 0x64, 0xA4, 0x24, 0xC4, 0x44, 0x84, 0x04,
+    0xF8, 0x78, 0xB8, 0x38, 0xD8, 0x58, 0x98, 0x18, 0xE8, 0x68, 0xA8, 0x28, 0xC8, 0x48, 0x88, 0x08,
+    0xF0, 0x70, 0xB0, 0x30, 0xD0, 0x50, 0x90, 0x10, 0xE0, 0x60, 0xA0, 0x20, 0xC0, 0x40, 0x80, 0x00
+}};
+
+static constexpr Table D_k_d50 = {{
+    0x51, 0xAF, 0x50, 0xAE, 0x59, 0x57, 0x58, 0x56, 0xAD, 0xAB, 0xAC, 0xAA, 0x55, 0x53, 0x54, 0x52,
+    0xB1, 0x8F, 0xB0, 0x8E, 0xB9, 0xB7, 0xB8, 0xB6, 0x8D, 0x8B, 0x8C, 0x8A, 0xB5, 0xB3, 0xB4, 0xB2,
+    0xA1, 0xBF, 0xA0, 0xBE, 0xA9, 0xA7, 0xA8, 0xA6, 0xBD, 0xBB, 0xBC, 0xBA, 0xA5, 0xA3, 0xA4, 0xA2,
+    0x81, 0x9F, 0x80, 0x9E, 0x89, 0x87, 0x88, 0x86, 0x9D, 0x9B, 0x9C, 0x9A, 0x85, 0x83, 0x84, 0x82,
+    0xD1, 0x2F, 0xD0, 0x2E, 0xD9, 0xD7, 0xD8, 0xD6, 0x2D, 0x2B, 0x2C, 0x2A, 0xD5, 0xD3, 0xD4, 0xD2,
+    0x31, 0x0F, 0x30, 0x0E, 0x39, 0x37, 0x38, 0x36, 0x0D, 0x0B, 0x0C, 0x0A, 0x35, 0x33, 0x34, 0x32,
+    0x21, 0x3F, 0x20, 0x3E, 0x29, 0x27, 0x28, 0x26, 0x3D, 0x3B, 0x3C, 0x3A, 0x25, 0x23, 0x24, 0x22,
+    0x01, 0x1F, 0x00, 0x1E, 0x09, 0x07, 0x08, 0x06, 0x1D, 0x1B, 0x1C, 0x1A, 0x05, 0x03, 0x04, 0x02,
+    0x11, 0x6F, 0x10, 0x6E, 0x19, 0x17, 0x18, 0x16, 0x6D, 0x6B, 0x6C, 0x6A, 0x15, 0x13, 0x14, 0x12,
+    0x71, 0x4F, 0x70, 0x4E, 0x79, 0x77, 0x78, 0x76, 0x4D, 0x4B, 0x4C, 0x4A, 0x75, 0x73, 0x74, 0x72,
+    0x61, 0x7F, 0x60, 0x7E, 0x69, 0x67, 0x68, 0x66, 0x7D, 0x7B, 0x7C, 0x7A, 0x65, 0x63, 0x64, 0x62,
+    0x41, 0x5F, 0x40, 0x5E, 0x49, 0x47, 0x48, 0x46, 0x5D, 0x5B, 0x5C, 0x5A, 0x45, 0x43, 0x44, 0x42,
+    0x91, 0xEF, 0x90, 0xEE, 0x99, 0x97, 0x98, 0x96, 0xED, 0xEB, 0xEC, 0xEA, 0x95, 0x93, 0x94, 0x92,
+    0xF1, 0xCF, 0xF0, 0xCE, 0xF9, 0xF7, 0xF8, 0xF6, 0xCD, 0xCB, 0xCC, 0xCA, 0xF5, 0xF3, 0xF4, 0xF2,
+    0xE1, 0xFF, 0xE0, 0xFE, 0xE9, 0xE7, 0xE8, 0xE6, 0xFD, 0xFB, 0xFC, 0xFA, 0xE5, 0xE3, 0xE4, 0xE2,
+    0xC1, 0xDF, 0xC0, 0xDE, 0xC9, 0xC7, 0xC8, 0xC6, 0xDD, 0xDB, 0xDC, 0xDA, 0xC5, 0xC3, 0xC4, 0xC2
+}};
+
+static constexpr Table D_k_d51 = {{
+    0x7A, 0xFB, 0xFA, 0x3B, 0x3A, 0xBB, 0xBA, 0x5B, 0x5A, 0xDB, 0xDA, 0x1B, 0x1A, 0x9B, 0x9A, 0x6B,
+    0x6A, 0xEB, 0xEA, 0x2B, 0x2A, 0xAB, 0xAA, 0x4B, 0x4A, 0xCB, 0xCA, 0x0B, 0x0A, 0x8B, 0x8A, 0x72,
+    0x73, 0xF2, 0xF3, 0x32, 0x33, 0xB2, 0xB3, 0x52, 0x53, 0xD2, 0xD3, 0x12, 0x13, 0x92, 0x93, 0x62,
+    0x63, 0xE2, 0xE3, 0x22, 0x23, 0xA2, 0xA3, 0x42, 0x43, 0xC2, 0xC3, 0x02, 0x03, 0x82, 0x83, 0x76,
+    0x77, 0xF6, 0xF7, 0x36, 0x37, 0xB6, 0xB7, 0x56, 0x57, 0xD6, 0xD7, 0x16, 0x17, 0x96, 0x97, 0x66,
+    0x67, 0xE6, 0xE7, 0x26, 0x27, 0xA6, 0xA7, 0x46, 0x47, 0xC6, 0xC7, 0x06, 0x07, 0x86, 0x87, 0x6E,
+    0x6F, 0xEE, 0xEF, 0x2E, 0x2F, 0xAE, 0xAF, 0x4E, 0x4F, 0xCE, 0xCF, 0x0E, 0x0F, 0x8E, 0x8F, 0x5E,
+    0x5F, 0xDE, 0xDF, 0x1E, 0x1F, 0x9E, 0x9F, 0x3E, 0x3F, 0xBE, 0xBF, 0xFE, 0xFF, 0x7E, 0x7F, 0x78,
+    0x79, 0xF8, 0xF9, 0x38, 0x39, 0xB8, 0xB9, 0x58, 0x59, 0xD8, 0xD9, 0x18, 0x19, 0x98, 0x99, 0x68,
+    0x69, 0xE8, 0xE9, 0x28, 0x29, 0xA8, 0xA9, 0x48, 0x49, 0xC8, 0xC9, 0x08, 0x09, 0x88, 0x89, 0x70,
+    0x71, 0xF0, 0xF1, 0x30, 0x31, 0xB0, 0xB1, 0x50, 0x51, 0xD0, 0xD1, 0x10, 0x11, 0x90, 0x91, 0x60,
+    0x61, 0xE0, 0xE1, 0x20, 0x21, 0xA0, 0xA1, 0x40, 0x41, 0xC0, 0xC1, 0x00, 0x01, 0x80, 0x81, 0x74,
+    0x75, 0xF4, 0xF5, 0x34, 0x35, 0xB4, 0xB5, 0x54, 0x55, 0xD4, 0xD5, 0x14, 0x15, 0x94, 0x95, 0x64,
+    0x65, 0xE4, 0xE5, 0x24, 0x25, 0xA4, 0xA5, 0x44, 0x45, 0xC4, 0xC5, 0x04, 0x05, 0x84, 0x85, 0x6C,
+    0x6D, 0xEC, 0xED, 0x2C, 0x2D, 0xAC, 0xAD, 0x4C, 0x4D, 0xCC, 0xCD, 0x0C, 0x0D, 0x8C, 0x8D, 0x5C,
+    0x5D, 0xDC, 0xDD, 0x1C, 0x1D, 0x9C, 0x9D, 0x3C, 0x3D, 0xBC, 0xBD, 0xFC, 0xFD, 0x7C, 0x7D, 0x7B
+}};
+
+static constexpr Table D_k_d72 = {{
+    0x24, 0x04, 0xE3, 0xC3, 0xA3, 0x83, 0x63, 0x43, 0x23, 0x03, 0xE2, 0xC2, 0xA2, 0x82, 0x62, 0x42,
+    0x22, 0x02, 0xE1, 0xC1, 0xA1, 0x81, 0x61, 0x41, 0x21, 0x01, 0xE0, 0xC0, 0xA0, 0x80, 0x60, 0x40,
+    0x20, 0x00, 0xFF, 0xDF, 0xBF, 0x9F, 0x7F, 0x5F, 0x3F, 0x1F, 0xFE, 0xDE, 0xBE, 0x9E, 0x7E, 0x5E,
+    0x3E, 0x1E, 0xFD, 0xDD, 0xBD, 0x9D, 0x7D, 0x5D, 0x3D, 0x1D, 0xFC, 0xDC, 0xBC, 0x9C, 0x7C, 0x5C,
+    0x3C, 0x1C, 0xFB, 0xDB, 0xBB, 0x9B, 0x7B, 0x5B, 0x3B, 0x1B, 0xFA, 0xDA, 0xBA, 0x9A, 0x7A, 0x5A,
+    0x3A, 0x1A, 0xF9, 0xD9, 0xB9, 0x99, 0x79, 0x59, 0x39, 0x19, 0xF8, 0xD8, 0xB8, 0x98, 0x78, 0x58,
+    0x38, 0x18, 0xF7, 0xD7, 0xB7, 0x97, 0x77, 0x57, 0x37, 0x17, 0xF6, 0xD6, 0xB6, 0x96, 0x76, 0x56,
+    0x36, 0x16, 0xF5, 0xD5, 0xB5, 0x95, 0x75, 0x55, 0x35, 0x15, 0xF4, 0xD4, 0xB4, 0x94, 0x74, 0x54,
+    0x34, 0x14, 0xF3, 0xD3, 0xB3, 0x93, 0x73, 0x53, 0x33, 0x13, 0xF2, 0xD2, 0xB2, 0x92, 0x72, 0x52,
+    0x32, 0x12, 0xF1, 0xD1, 0xB1, 0x91, 0x71, 0x51, 0x31, 0x11, 0xF0, 0xD0, 0xB0, 0x90, 0x70, 0x50,
+    0x30, 0x10, 0xEF, 0xCF, 0xAF, 0x8F, 0x6F, 0x4F, 0x2F, 0x0F, 0xEE, 0xCE, 0xAE, 0x8E, 0x6E, 0x4E,
+    0x2E, 0x0E, 0xED, 0xCD, 0xAD, 0x8D, 0x6D, 0x4D, 0x2D, 0x0D, 0xEC, 0xCC, 0xAC, 0x8C, 0x6C, 0x4C,
+    0x2C, 0x0C, 0xEB, 0xCB, 0xAB, 0x8B, 0x6B, 0x4B, 0x2B, 0x0B, 0xEA, 0xCA, 0xAA, 0x8A, 0x6A, 0x4A,
+    0x2A, 0x0A, 0xE9, 0xC9, 0xA9, 0x89, 0x69, 0x49, 0x29, 0x09, 0xE8, 0xC8, 0xA8, 0x88, 0x68, 0x48,
+    0x28, 0x08, 0xE7, 0xC7, 0xA7, 0x87, 0x67, 0x47, 0x27, 0x07, 0xE6, 0xC6, 0xA6, 0x86, 0x66, 0x46,
+    0x26, 0x06, 0xE5, 0xC5, 0xA5, 0x85, 0x65, 0x45, 0x25, 0x05, 0xE4, 0xC4, 0xA4, 0x84, 0x64, 0x44
+}};
+
+static constexpr Table D_k_d81 = {{
+    0x6A, 0x5A, 0x4A, 0x3A, 0x2A, 0x1A, 0x0A, 0xFA, 0xEA, 0xDA, 0xCA, 0xBA, 0xAA, 0x9A, 0x8A, 0x7A,
+    0x69, 0x59, 0x49, 0x39, 0x29, 0x19, 0x09, 0xF9, 0xE9, 0xD9, 0xC9, 0xB9, 0xA9, 0x99, 0x89, 0x79,
+    0x68, 0x58, 0x48, 0x38, 0x28, 0x18, 0x08, 0xF8, 0xE8, 0xD8, 0xC8, 0xB8, 0xA8, 0x98, 0x88, 0x78,
+    0x67, 0x57, 0x47, 0x37, 0x27, 0x17, 0x07, 0xF7, 0xE7, 0xD7, 0xC7, 0xB7, 0xA7, 0x97, 0x87, 0x77,
+    0x66, 0x56, 0x46, 0x36, 0x26, 0x16, 0x06, 0xF6, 0xE6, 0xD6, 0xC6, 0xB6, 0xA6, 0x96, 0x86, 0x76,
+    0x65, 0x55, 0x45, 0x35, 0x25, 0x15, 0x05, 0xF5, 0xE5, 0xD5, 0xC5, 0xB5, 0xA5, 0x95, 0x85, 0x75,
+    0x64, 0x54, 0x44, 0x34, 0x24, 0x14, 0x04, 0xF4, 0xE4, 0xD4, 0xC4, 0xB4, 0xA4, 0x94, 0x84, 0x74,
+    0x63, 0x53, 0x43, 0x33, 0x23, 0x13, 0x03, 0xF3, 0xE3, 0xD3, 0xC3, 0xB3, 0xA3, 0x93, 0x83, 0x73,
+    0x62, 0x52, 0x42, 0x32, 0x22, 0x12, 0x02, 0xF2, 0xE2, 0xD2, 0xC2, 0xB2, 0xA2, 0x92, 0x82, 0x72,
+    0x61, 0x51, 0x41, 0x31, 0x21, 0x11, 0x01, 0xF1, 0xE1, 0xD1, 0xC1, 0xB1, 0xA1, 0x91, 0x81, 0x71,
+    0x60, 0x50, 0x40, 0x30, 0x20, 0x10, 0x00, 0xF0, 0xE0, 0xD0, 0xC0, 0xB0, 0xA0, 0x90, 0x80, 0x70,
+    0x5F, 0x4F, 0x3F, 0x2F, 0x1F, 0x0F, 0xFF, 0xEF, 0xDF, 0xCF, 0xBF, 0xAF, 0x9F, 0x8F, 0x7F, 0x6F,
+    0x5E, 0x4E, 0x3E, 0x2E, 0x1E, 0x0E, 0xFE, 0xEE, 0xDE, 0xCE, 0xBE, 0xAE, 0x9E, 0x8E, 0x7E, 0x6E,
+    0x5D, 0x4D, 0x3D, 0x2D, 0x1D, 0x0D, 0xFD, 0xED, 0xDD, 0xCD, 0xBD, 0xAD, 0x9D, 0x8D, 0x7D, 0x6D,
+    0x5C, 0x4C, 0x3C, 0x2C, 0x1C, 0x0C, 0xFC, 0xEC, 0xDC, 0xCC, 0xBC, 0xAC, 0x9C, 0x8C, 0x7C, 0x6C,
+    0x5B, 0x4B, 0x3B, 0x2B, 0x1B, 0x0B, 0xFB, 0xEB, 0xDB, 0xCB, 0xBB, 0xAB, 0x9B, 0x8B, 0x7B, 0x6B
+}};
+
+// Build323 Msg271 top-level and lucky-value inverse tables.
+static constexpr Table V_l_v0 = {{
+    0xDE, 0xE6, 0xE2, 0xEA, 0xE0, 0xE8, 0xE4, 0xEC, 0xDF, 0xE7, 0xE3, 0xEB, 0xE1, 0xE9, 0xE5, 0xED,
+    0x5E, 0x66, 0x62, 0x6A, 0x60, 0x68, 0x64, 0x6C, 0x5F, 0x67, 0x63, 0x6B, 0x61, 0x69, 0x65, 0x6D,
+    0x1E, 0x26, 0x22, 0x2A, 0x20, 0x28, 0x24, 0x2C, 0x1F, 0x27, 0x23, 0x2B, 0x21, 0x29, 0x25, 0x2D,
+    0x9E, 0xA6, 0xA2, 0xAA, 0xA0, 0xA8, 0xA4, 0xAC, 0x9F, 0xA7, 0xA3, 0xAB, 0xA1, 0xA9, 0xA5, 0xAD,
+    0xFE, 0x06, 0x02, 0x0A, 0x00, 0x08, 0x04, 0x0C, 0xFF, 0x07, 0x03, 0x0B, 0x01, 0x09, 0x05, 0x0D,
+    0x7E, 0x86, 0x82, 0x8A, 0x80, 0x88, 0x84, 0x8C, 0x7F, 0x87, 0x83, 0x8B, 0x81, 0x89, 0x85, 0x8D,
+    0x3E, 0x46, 0x42, 0x4A, 0x40, 0x48, 0x44, 0x4C, 0x3F, 0x47, 0x43, 0x4B, 0x41, 0x49, 0x45, 0x4D,
+    0xBE, 0xC6, 0xC2, 0xCA, 0xC0, 0xC8, 0xC4, 0xCC, 0xBF, 0xC7, 0xC3, 0xCB, 0xC1, 0xC9, 0xC5, 0xCD,
+    0xEE, 0xF6, 0xF2, 0xFA, 0xF0, 0xF8, 0xF4, 0xFC, 0xEF, 0xF7, 0xF3, 0xFB, 0xF1, 0xF9, 0xF5, 0xFD,
+    0x6E, 0x76, 0x72, 0x7A, 0x70, 0x78, 0x74, 0x7C, 0x6F, 0x77, 0x73, 0x7B, 0x71, 0x79, 0x75, 0x7D,
+    0x2E, 0x36, 0x32, 0x3A, 0x30, 0x38, 0x34, 0x3C, 0x2F, 0x37, 0x33, 0x3B, 0x31, 0x39, 0x35, 0x3D,
+    0xAE, 0xB6, 0xB2, 0xBA, 0xB0, 0xB8, 0xB4, 0xBC, 0xAF, 0xB7, 0xB3, 0xBB, 0xB1, 0xB9, 0xB5, 0xBD,
+    0x0E, 0x16, 0x12, 0x1A, 0x10, 0x18, 0x14, 0x1C, 0x0F, 0x17, 0x13, 0x1B, 0x11, 0x19, 0x15, 0x1D,
+    0x8E, 0x96, 0x92, 0x9A, 0x90, 0x98, 0x94, 0x9C, 0x8F, 0x97, 0x93, 0x9B, 0x91, 0x99, 0x95, 0x9D,
+    0x4E, 0x56, 0x52, 0x5A, 0x50, 0x58, 0x54, 0x5C, 0x4F, 0x57, 0x53, 0x5B, 0x51, 0x59, 0x55, 0x5D,
+    0xCE, 0xD6, 0xD2, 0xDA, 0xD0, 0xD8, 0xD4, 0xDC, 0xCF, 0xD7, 0xD3, 0xDB, 0xD1, 0xD9, 0xD5, 0xDD
+}};
+
+static constexpr Table V_l_v4 = {{
+    0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9, 0xF8, 0xF7, 0xF6, 0xF5, 0xF4, 0xF3, 0xF2, 0xF1, 0xF0,
+    0xEF, 0xEE, 0xED, 0xEC, 0xEB, 0xEA, 0xE9, 0xE8, 0xE7, 0xE6, 0xE5, 0xE4, 0xE3, 0xE2, 0xE1, 0xE0,
+    0xDF, 0xDE, 0xDD, 0xDC, 0xDB, 0xDA, 0xD9, 0xD8, 0xD7, 0xD6, 0xD5, 0xD4, 0xD3, 0xD2, 0xD1, 0xD0,
+    0xCF, 0xCE, 0xCD, 0xCC, 0xCB, 0xCA, 0xC9, 0xC8, 0xC7, 0xC6, 0xC5, 0xC4, 0xC3, 0xC2, 0xC1, 0xC0,
+    0xBF, 0xBE, 0xBD, 0xBC, 0xBB, 0xBA, 0xB9, 0xB8, 0xB7, 0xB6, 0xB5, 0xB4, 0xB3, 0xB2, 0xB1, 0xB0,
+    0xAF, 0xAE, 0xAD, 0xAC, 0xAB, 0xAA, 0xA9, 0xA8, 0xA7, 0xA6, 0xA5, 0xA4, 0xA3, 0xA2, 0xA1, 0xA0,
+    0x9F, 0x9E, 0x9D, 0x9C, 0x9B, 0x9A, 0x99, 0x98, 0x97, 0x96, 0x95, 0x94, 0x93, 0x92, 0x91, 0x90,
+    0x8F, 0x8E, 0x8D, 0x8C, 0x8B, 0x8A, 0x89, 0x88, 0x87, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80,
+    0x7F, 0x7E, 0x7D, 0x7C, 0x7B, 0x7A, 0x79, 0x78, 0x77, 0x76, 0x75, 0x74, 0x73, 0x72, 0x71, 0x70,
+    0x6F, 0x6E, 0x6D, 0x6C, 0x6B, 0x6A, 0x69, 0x68, 0x67, 0x66, 0x65, 0x64, 0x63, 0x62, 0x61, 0x60,
+    0x5F, 0x5E, 0x5D, 0x5C, 0x5B, 0x5A, 0x59, 0x58, 0x57, 0x56, 0x55, 0x54, 0x53, 0x52, 0x51, 0x50,
+    0x4F, 0x4E, 0x4D, 0x4C, 0x4B, 0x4A, 0x49, 0x48, 0x47, 0x46, 0x45, 0x44, 0x43, 0x42, 0x41, 0x40,
+    0x3F, 0x3E, 0x3D, 0x3C, 0x3B, 0x3A, 0x39, 0x38, 0x37, 0x36, 0x35, 0x34, 0x33, 0x32, 0x31, 0x30,
+    0x2F, 0x2E, 0x2D, 0x2C, 0x2B, 0x2A, 0x29, 0x28, 0x27, 0x26, 0x25, 0x24, 0x23, 0x22, 0x21, 0x20,
+    0x1F, 0x1E, 0x1D, 0x1C, 0x1B, 0x1A, 0x19, 0x18, 0x17, 0x16, 0x15, 0x14, 0x13, 0x12, 0x11, 0x10,
+    0x0F, 0x0E, 0x0D, 0x0C, 0x0B, 0x0A, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00
+}};
+
+static constexpr Table V_t_v0 = {{
+    0x46, 0xAD, 0x6A, 0x6F, 0xEE, 0x1D, 0x7E, 0x18, 0xA4, 0x28, 0xD1, 0xF0, 0x06, 0xAE, 0x63, 0xC6,
+    0x42, 0xFB, 0x8A, 0xB6, 0x15, 0x44, 0xFD, 0x08, 0xD4, 0xA8, 0x5B, 0xC8, 0x70, 0xE4, 0x6B, 0x9E,
+    0x30, 0x96, 0x09, 0x11, 0xCD, 0x2B, 0xEA, 0x9D, 0x69, 0xFC, 0xE8, 0xB0, 0xCF, 0x6E, 0x9C, 0x29,
+    0xC4, 0x5A, 0x5F, 0x68, 0xF1, 0x05, 0x3B, 0x10, 0xE9, 0x0C, 0xC1, 0x9A, 0x86, 0x73, 0x92, 0xAA,
+    0x4C, 0xD8, 0x01, 0xB3, 0xE3, 0x1C, 0xFE, 0xDA, 0xB8, 0x97, 0x98, 0x21, 0x4A, 0x83, 0x8C, 0x0B,
+    0x32, 0x95, 0x5E, 0xB7, 0x2D, 0x7C, 0xE2, 0x25, 0x22, 0xD3, 0x37, 0x55, 0x3E, 0x88, 0xA0, 0x34,
+    0x93, 0x87, 0x78, 0xA1, 0x0E, 0x3A, 0x7D, 0x81, 0x67, 0x51, 0xF4, 0x23, 0x85, 0xC2, 0x26, 0xDF,
+    0xB1, 0x4D, 0xE6, 0xE5, 0x8D, 0x31, 0xE0, 0x76, 0xD9, 0x3F, 0x00, 0x99, 0xF6, 0x89, 0x13, 0xEF,
+    0xC3, 0x6C, 0x71, 0x75, 0xC7, 0xEC, 0x07, 0x2E, 0x5D, 0x91, 0xF3, 0xB5, 0x39, 0xD5, 0x59, 0x24,
+    0x80, 0xED, 0xD7, 0x14, 0xB2, 0x3D, 0xE1, 0xB9, 0x19, 0x33, 0x54, 0x1A, 0x5C, 0xA2, 0x0A, 0x3C,
+    0xE7, 0x66, 0xD2, 0xCC, 0x16, 0xBA, 0xFF, 0x36, 0xA3, 0x58, 0xFA, 0x65, 0x9F, 0x2F, 0xF9, 0xBB,
+    0xCA, 0x7B, 0xAB, 0xC0, 0x35, 0x72, 0x50, 0x43, 0x60, 0x4E, 0x17, 0x20, 0x0D, 0x1B, 0x0F, 0xD0,
+    0x8B, 0xF5, 0xDC, 0xBC, 0xD6, 0x74, 0x03, 0x49, 0xB4, 0xDD, 0x64, 0x47, 0xA6, 0x90, 0xBD, 0x1F,
+    0x2A, 0x8F, 0x57, 0x6D, 0xBE, 0x48, 0x4B, 0x79, 0x84, 0x77, 0x94, 0x82, 0x53, 0xCE, 0x27, 0x62,
+    0xF2, 0x04, 0x41, 0x45, 0xAF, 0xCB, 0xC5, 0xEB, 0x40, 0xA7, 0x56, 0x7F, 0x4F, 0xAC, 0x8E, 0xC9,
+    0x9B, 0x7A, 0xDE, 0x02, 0xDB, 0xBF, 0x61, 0x12, 0xA9, 0xF8, 0xA5, 0x52, 0xF7, 0x38, 0x1E, 0x2C
+}};
+
+static constexpr Table V_t_v135008 = {{
+    0x96, 0x17, 0x67, 0xA8, 0x13, 0x32, 0x70, 0x56, 0xFF, 0x99, 0x42, 0xE4, 0xE3, 0xAE, 0xD0, 0x43,
+    0x72, 0xEB, 0x98, 0x4C, 0x3E, 0x79, 0x93, 0x0F, 0xF1, 0x68, 0xE5, 0x34, 0x44, 0x09, 0xC6, 0x8A,
+    0xDC, 0x53, 0x40, 0x86, 0x5F, 0xF9, 0xC1, 0x24, 0x6A, 0x1F, 0x9B, 0x4A, 0xED, 0x89, 0x50, 0xA1,
+    0x8E, 0x3C, 0x2D, 0xFC, 0xFE, 0x66, 0x5E, 0xBF, 0x77, 0x6B, 0x08, 0x19, 0xDE, 0x60, 0xEA, 0x76,
+    0x65, 0xB6, 0x23, 0x15, 0x61, 0x25, 0xBE, 0x3F, 0xE8, 0x0A, 0xBC, 0xC2, 0x81, 0x8C, 0x90, 0xE1,
+    0xD5, 0xB3, 0x7D, 0xD2, 0x94, 0xCA, 0x11, 0xF7, 0x31, 0xCB, 0xBB, 0x5C, 0x64, 0x2E, 0x8D, 0x0E,
+    0x8F, 0x92, 0x80, 0xC9, 0xF8, 0xEE, 0xD6, 0x22, 0xFD, 0x30, 0x36, 0xC0, 0xA4, 0x0C, 0xD4, 0xCF,
+    0x57, 0x9C, 0x1D, 0xA2, 0x05, 0x37, 0x7E, 0x00, 0xCC, 0xB4, 0x02, 0x26, 0xDB, 0x2F, 0xD3, 0x47,
+    0x58, 0x71, 0x7B, 0xE2, 0x87, 0x6F, 0xF6, 0x12, 0xF3, 0xBA, 0x75, 0x5D, 0x69, 0x28, 0xAC, 0x38,
+    0x41, 0x74, 0xC8, 0x9A, 0x33, 0x01, 0xA7, 0x6E, 0xE0, 0xBD, 0x27, 0xD1, 0xB5, 0x54, 0x9F, 0x07,
+    0x7A, 0x82, 0xF4, 0xC3, 0x4E, 0x35, 0x4B, 0xEC, 0xAB, 0xDA, 0xCD, 0xDD, 0x48, 0xE6, 0xAA, 0x95,
+    0x45, 0xFA, 0xF0, 0xA3, 0x62, 0xE7, 0x51, 0xB0, 0x4F, 0xE9, 0x06, 0xD7, 0x91, 0xA6, 0x83, 0xA5,
+    0x6D, 0x6C, 0x1A, 0xAD, 0xB2, 0xFB, 0x88, 0xCE, 0x5A, 0x18, 0x29, 0x5B, 0x78, 0x4D, 0x10, 0x1B,
+    0xB1, 0x85, 0x8B, 0x3B, 0x2C, 0x63, 0x7C, 0x52, 0x3A, 0x84, 0xAF, 0xDF, 0x9E, 0x59, 0x1E, 0x9D,
+    0xC7, 0x21, 0xA0, 0xB7, 0x2A, 0xF2, 0x0D, 0x14, 0x1C, 0x73, 0x16, 0x46, 0xB8, 0xEF, 0x2B, 0x39,
+    0x03, 0xF5, 0xB9, 0x49, 0xA9, 0xD9, 0x7F, 0x20, 0xD8, 0x97, 0xC5, 0x0B, 0x3D, 0x55, 0x04, 0xC4
+}};
+
+static constexpr Table V_t_v135012 = {{
+    0x4C, 0x2C, 0x3C, 0x1C, 0xCC, 0xAC, 0xBC, 0x9C, 0x0C, 0xEC, 0xFD, 0xDC, 0x8C, 0x6D, 0x7C, 0x5D,
+    0x4E, 0x2E, 0x3E, 0x1E, 0xCE, 0xAE, 0xBE, 0x9E, 0x0E, 0xEE, 0xFF, 0xDE, 0x8E, 0x6F, 0x7E, 0x5F,
+    0x4D, 0x2D, 0x3D, 0x1D, 0xD3, 0xB3, 0xC3, 0xA3, 0x0D, 0xF3, 0xFC, 0xE3, 0x93, 0x72, 0x83, 0x62,
+    0x4F, 0x2F, 0x3F, 0x1F, 0xCD, 0xAD, 0xBD, 0x9D, 0x0F, 0xED, 0xFE, 0xDD, 0x8D, 0x6C, 0x7D, 0x5C,
+    0x44, 0x24, 0x74, 0x54, 0xC4, 0xA4, 0xF4, 0xD4, 0x04, 0xE4, 0x34, 0x14, 0x84, 0x65, 0xB4, 0x94,
+    0x46, 0x26, 0x76, 0x56, 0xC6, 0xA6, 0xF6, 0xD6, 0x06, 0xE6, 0x36, 0x16, 0x86, 0x67, 0xB6, 0x96,
+    0x45, 0x25, 0x75, 0x55, 0xCB, 0xAB, 0xFB, 0xDB, 0x05, 0xEB, 0x35, 0x15, 0x8B, 0x6A, 0xBB, 0x9B,
+    0x47, 0x27, 0x77, 0x57, 0xC5, 0xA5, 0xF5, 0xD5, 0x07, 0xE5, 0x37, 0x17, 0x85, 0x64, 0xB5, 0x95,
+    0x50, 0x30, 0x40, 0x20, 0xD0, 0xB0, 0xC0, 0xA0, 0x10, 0xF0, 0x00, 0xE0, 0x90, 0x71, 0x80, 0x61,
+    0x52, 0x32, 0x42, 0x22, 0xD2, 0xB2, 0xC2, 0xA2, 0x12, 0xF2, 0x02, 0xE2, 0x92, 0x73, 0x82, 0x63,
+    0x51, 0x31, 0x41, 0x21, 0xCF, 0xAF, 0xBF, 0x9F, 0x11, 0xEF, 0x01, 0xDF, 0x8F, 0x6E, 0x7F, 0x5E,
+    0x53, 0x33, 0x43, 0x23, 0xD1, 0xB1, 0xC1, 0xA1, 0x13, 0xF1, 0x03, 0xE1, 0x91, 0x70, 0x81, 0x60,
+    0x48, 0x28, 0x78, 0x58, 0xC8, 0xA8, 0xF8, 0xD8, 0x08, 0xE8, 0x38, 0x18, 0x88, 0x69, 0xB8, 0x98,
+    0x4A, 0x2A, 0x7A, 0x5A, 0xCA, 0xAA, 0xFA, 0xDA, 0x0A, 0xEA, 0x3A, 0x1A, 0x8A, 0x6B, 0xBA, 0x9A,
+    0x49, 0x29, 0x79, 0x59, 0xC7, 0xA7, 0xF7, 0xD7, 0x09, 0xE7, 0x39, 0x19, 0x87, 0x66, 0xB7, 0x97,
+    0x4B, 0x2B, 0x7B, 0x5B, 0xC9, 0xA9, 0xF9, 0xD9, 0x0B, 0xE9, 0x3B, 0x1B, 0x89, 0x68, 0xB9, 0x99
+}};
+
+static constexpr Table V_t_v135016 = {{
+    0x3E, 0x7E, 0x5E, 0x9E, 0x36, 0x76, 0x56, 0x96, 0x46, 0x86, 0x66, 0xA6, 0x2C, 0x6C, 0x4C, 0x8C,
+    0x3C, 0x7C, 0x5C, 0x9C, 0x34, 0x74, 0x54, 0x94, 0x44, 0x84, 0x64, 0xA4, 0x30, 0x70, 0x50, 0x90,
+    0x40, 0x80, 0x60, 0xA0, 0x38, 0x78, 0x58, 0x98, 0x48, 0x88, 0x68, 0xA8, 0x2B, 0x6B, 0x4B, 0x8B,
+    0x3B, 0x7B, 0x5B, 0x9B, 0x33, 0x73, 0x53, 0x93, 0x43, 0x83, 0x63, 0xA3, 0x2F, 0x6F, 0x4F, 0x8F,
+    0x3F, 0x7F, 0x5F, 0x9F, 0x37, 0x77, 0x57, 0x97, 0x47, 0x87, 0x67, 0xA7, 0x2D, 0x6D, 0x4D, 0x8D,
+    0x3D, 0x7D, 0x5D, 0x9D, 0x35, 0x75, 0x55, 0x95, 0x45, 0x85, 0x65, 0xA5, 0x31, 0x71, 0x51, 0x91,
+    0x41, 0x81, 0x61, 0xA1, 0x39, 0x79, 0x59, 0x99, 0x49, 0x89, 0x69, 0xA9, 0xAA, 0xEA, 0xCA, 0x0A,
+    0xBA, 0xFA, 0xDA, 0x1A, 0xB2, 0xF2, 0xD2, 0x12, 0xC2, 0x02, 0xE2, 0x22, 0xAE, 0xEE, 0xCE, 0x0E,
+    0xBE, 0xFE, 0xDE, 0x1E, 0xB6, 0xF6, 0xD6, 0x16, 0xC6, 0x06, 0xE6, 0x26, 0xAC, 0xEC, 0xCC, 0x0C,
+    0xBC, 0xFC, 0xDC, 0x1C, 0xB4, 0xF4, 0xD4, 0x14, 0xC4, 0x04, 0xE4, 0x24, 0xB0, 0xF0, 0xD0, 0x10,
+    0xC0, 0x00, 0xE0, 0x20, 0xB8, 0xF8, 0xD8, 0x18, 0xC8, 0x08, 0xE8, 0x28, 0xAB, 0xEB, 0xCB, 0x0B,
+    0xBB, 0xFB, 0xDB, 0x1B, 0xB3, 0xF3, 0xD3, 0x13, 0xC3, 0x03, 0xE3, 0x23, 0xAF, 0xEF, 0xCF, 0x0F,
+    0xBF, 0xFF, 0xDF, 0x1F, 0xB7, 0xF7, 0xD7, 0x17, 0xC7, 0x07, 0xE7, 0x27, 0xAD, 0xED, 0xCD, 0x0D,
+    0xBD, 0xFD, 0xDD, 0x1D, 0xB5, 0xF5, 0xD5, 0x15, 0xC5, 0x05, 0xE5, 0x25, 0xB1, 0xF1, 0xD1, 0x11,
+    0xC1, 0x01, 0xE1, 0x21, 0xB9, 0xF9, 0xD9, 0x19, 0xC9, 0x09, 0xE9, 0x29, 0x2A, 0x6A, 0x4A, 0x8A,
+    0x3A, 0x7A, 0x5A, 0x9A, 0x32, 0x72, 0x52, 0x92, 0x42, 0x82, 0x62, 0xA2, 0x2E, 0x6E, 0x4E, 0x8E
+}};
+
+static constexpr Table V_t_v135278 = {{
+    0x17, 0x1F, 0x0F, 0x00, 0x37, 0x3F, 0x2F, 0x20, 0x57, 0x5F, 0x4F, 0x40, 0x77, 0x7F, 0x6F, 0x60,
+    0x97, 0x9F, 0x8F, 0x80, 0xB7, 0xBF, 0xAF, 0xA0, 0xD7, 0xDF, 0xCF, 0xC0, 0xF7, 0xFF, 0xEF, 0xE0,
+    0x16, 0x1E, 0x0E, 0x01, 0x36, 0x3E, 0x2E, 0x21, 0x56, 0x5E, 0x4E, 0x41, 0x76, 0x7E, 0x6E, 0x61,
+    0x96, 0x9E, 0x8E, 0x81, 0xB6, 0xBE, 0xAE, 0xA1, 0xD6, 0xDE, 0xCE, 0xC1, 0xF6, 0xFE, 0xEE, 0xE1,
+    0x14, 0x1C, 0x0C, 0x02, 0x34, 0x3C, 0x2C, 0x22, 0x54, 0x5C, 0x4C, 0x42, 0x74, 0x7C, 0x6C, 0x62,
+    0x94, 0x9C, 0x8C, 0x82, 0xB4, 0xBC, 0xAC, 0xA2, 0xD4, 0xDC, 0xCC, 0xC2, 0xF4, 0xFC, 0xEC, 0xE2,
+    0x15, 0x1D, 0x0D, 0x03, 0x35, 0x3D, 0x2D, 0x23, 0x55, 0x5D, 0x4D, 0x43, 0x75, 0x7D, 0x6D, 0x63,
+    0x95, 0x9D, 0x8D, 0x83, 0xB5, 0xBD, 0xAD, 0xA3, 0xD5, 0xDD, 0xCD, 0xC3, 0xF5, 0xFD, 0xED, 0xE3,
+    0x10, 0x18, 0x08, 0x04, 0x30, 0x38, 0x28, 0x24, 0x50, 0x58, 0x48, 0x44, 0x70, 0x78, 0x68, 0x64,
+    0x90, 0x98, 0x88, 0x84, 0xB0, 0xB8, 0xA8, 0xA4, 0xD0, 0xD8, 0xC8, 0xC4, 0xF0, 0xF8, 0xE8, 0xE4,
+    0x11, 0x19, 0x09, 0x05, 0x31, 0x39, 0x29, 0x25, 0x51, 0x59, 0x49, 0x45, 0x71, 0x79, 0x69, 0x65,
+    0x91, 0x99, 0x89, 0x85, 0xB1, 0xB9, 0xA9, 0xA5, 0xD1, 0xD9, 0xC9, 0xC5, 0xF1, 0xF9, 0xE9, 0xE5,
+    0x12, 0x1A, 0x0A, 0x06, 0x32, 0x3A, 0x2A, 0x26, 0x52, 0x5A, 0x4A, 0x46, 0x72, 0x7A, 0x6A, 0x66,
+    0x92, 0x9A, 0x8A, 0x86, 0xB2, 0xBA, 0xAA, 0xA6, 0xD2, 0xDA, 0xCA, 0xC6, 0xF2, 0xFA, 0xEA, 0xE6,
+    0x13, 0x1B, 0x0B, 0x07, 0x33, 0x3B, 0x2B, 0x27, 0x53, 0x5B, 0x4B, 0x47, 0x73, 0x7B, 0x6B, 0x67,
+    0x93, 0x9B, 0x8B, 0x87, 0xB3, 0xBB, 0xAB, 0xA7, 0xD3, 0xDB, 0xCB, 0xC7, 0xF3, 0xFB, 0xEB, 0xE7
+}};
+
+static constexpr Table V_t_v2 = {{
+    0xDB, 0xD7, 0xDF, 0x30, 0x38, 0x34, 0x3C, 0x32, 0x3A, 0x36, 0x3E, 0x31, 0x39, 0x35, 0x3D, 0x33,
+    0x3B, 0x37, 0x3F, 0xB0, 0xB8, 0xB4, 0xBC, 0xB2, 0xBA, 0xB6, 0xBE, 0xB1, 0xB9, 0xB5, 0xBD, 0xB3,
+    0xBB, 0xB7, 0xBF, 0x70, 0x78, 0x74, 0x7C, 0x72, 0x7A, 0x76, 0x7E, 0x71, 0x79, 0x75, 0x7D, 0x73,
+    0x7B, 0x77, 0x7F, 0xF0, 0xF8, 0xF4, 0xFC, 0xF2, 0xFA, 0xF6, 0xFE, 0xF1, 0xF9, 0xF5, 0xFD, 0xF3,
+    0xFB, 0xF7, 0xFF, 0x00, 0x08, 0x04, 0x0C, 0x02, 0x0A, 0x06, 0x0E, 0x01, 0x09, 0x05, 0x0D, 0x03,
+    0x0B, 0x07, 0x0F, 0x80, 0x88, 0x84, 0x8C, 0x82, 0x8A, 0x86, 0x8E, 0x81, 0x89, 0x85, 0x8D, 0x83,
+    0x8B, 0x87, 0x8F, 0x40, 0x48, 0x44, 0x4C, 0x42, 0x4A, 0x46, 0x4E, 0x41, 0x49, 0x45, 0x4D, 0x43,
+    0x4B, 0x47, 0x4F, 0xC0, 0xC8, 0xC4, 0xCC, 0xC2, 0xCA, 0xC6, 0xCE, 0xC1, 0xC9, 0xC5, 0xCD, 0xC3,
+    0xCB, 0xC7, 0xCF, 0x20, 0x28, 0x24, 0x2C, 0x22, 0x2A, 0x26, 0x2E, 0x21, 0x29, 0x25, 0x2D, 0x23,
+    0x2B, 0x27, 0x2F, 0xA0, 0xA8, 0xA4, 0xAC, 0xA2, 0xAA, 0xA6, 0xAE, 0xA1, 0xA9, 0xA5, 0xAD, 0xA3,
+    0xAB, 0xA7, 0xAF, 0x60, 0x68, 0x64, 0x6C, 0x62, 0x6A, 0x66, 0x6E, 0x61, 0x69, 0x65, 0x6D, 0x63,
+    0x6B, 0x67, 0x6F, 0xE0, 0xE8, 0xE4, 0xEC, 0xE2, 0xEA, 0xE6, 0xEE, 0xE1, 0xE9, 0xE5, 0xED, 0xE3,
+    0xEB, 0xE7, 0xEF, 0x10, 0x18, 0x14, 0x1C, 0x12, 0x1A, 0x16, 0x1E, 0x11, 0x19, 0x15, 0x1D, 0x13,
+    0x1B, 0x17, 0x1F, 0x90, 0x98, 0x94, 0x9C, 0x92, 0x9A, 0x96, 0x9E, 0x91, 0x99, 0x95, 0x9D, 0x93,
+    0x9B, 0x97, 0x9F, 0x50, 0x58, 0x54, 0x5C, 0x52, 0x5A, 0x56, 0x5E, 0x51, 0x59, 0x55, 0x5D, 0x53,
+    0x5B, 0x57, 0x5F, 0xD0, 0xD8, 0xD4, 0xDC, 0xD2, 0xDA, 0xD6, 0xDE, 0xD1, 0xD9, 0xD5, 0xDD, 0xD3
+}};
+
+static constexpr Table V_t_v6 = {{
+    0xCB, 0x2B, 0x8B, 0x4B, 0xAB, 0x6B, 0x1B, 0xEB, 0xD3, 0x33, 0x93, 0x53, 0xB3, 0x73, 0x0B, 0xF3,
+    0xDB, 0x3B, 0x9B, 0x5B, 0xBB, 0x7B, 0x07, 0xFB, 0xA7, 0x67, 0x17, 0xE7, 0x87, 0x47, 0x27, 0xC7,
+    0xDF, 0x3F, 0x9F, 0x5F, 0xBF, 0x7F, 0x00, 0xFF, 0xA0, 0x60, 0x10, 0xE0, 0x80, 0x40, 0x20, 0xC0,
+    0xD7, 0x37, 0x97, 0x57, 0xB7, 0x77, 0x0F, 0xF7, 0xAF, 0x6F, 0x1F, 0xEF, 0x8F, 0x4F, 0x2F, 0xCF,
+    0xC9, 0x29, 0x89, 0x49, 0xA9, 0x69, 0x19, 0xE9, 0xD1, 0x31, 0x91, 0x51, 0xB1, 0x71, 0x09, 0xF1,
+    0xD9, 0x39, 0x99, 0x59, 0xB9, 0x79, 0x05, 0xF9, 0xA5, 0x65, 0x15, 0xE5, 0x85, 0x45, 0x25, 0xC5,
+    0xDD, 0x3D, 0x9D, 0x5D, 0xBD, 0x7D, 0x03, 0xFD, 0xA3, 0x63, 0x13, 0xE3, 0x83, 0x43, 0x23, 0xC3,
+    0xD5, 0x35, 0x95, 0x55, 0xB5, 0x75, 0x0D, 0xF5, 0xAD, 0x6D, 0x1D, 0xED, 0x8D, 0x4D, 0x2D, 0xCD,
+    0xCA, 0x2A, 0x8A, 0x4A, 0xAA, 0x6A, 0x1A, 0xEA, 0xD2, 0x32, 0x92, 0x52, 0xB2, 0x72, 0x0A, 0xF2,
+    0xDA, 0x3A, 0x9A, 0x5A, 0xBA, 0x7A, 0x06, 0xFA, 0xA6, 0x66, 0x16, 0xE6, 0x86, 0x46, 0x26, 0xC6,
+    0xDE, 0x3E, 0x9E, 0x5E, 0xBE, 0x7E, 0x01, 0xFE, 0xA1, 0x61, 0x11, 0xE1, 0x81, 0x41, 0x21, 0xC1,
+    0xD6, 0x36, 0x96, 0x56, 0xB6, 0x76, 0x0E, 0xF6, 0xAE, 0x6E, 0x1E, 0xEE, 0x8E, 0x4E, 0x2E, 0xCE,
+    0xC8, 0x28, 0x88, 0x48, 0xA8, 0x68, 0x18, 0xE8, 0xD0, 0x30, 0x90, 0x50, 0xB0, 0x70, 0x08, 0xF0,
+    0xD8, 0x38, 0x98, 0x58, 0xB8, 0x78, 0x04, 0xF8, 0xA4, 0x64, 0x14, 0xE4, 0x84, 0x44, 0x24, 0xC4,
+    0xDC, 0x3C, 0x9C, 0x5C, 0xBC, 0x7C, 0x02, 0xFC, 0xA2, 0x62, 0x12, 0xE2, 0x82, 0x42, 0x22, 0xC2,
+    0xD4, 0x34, 0x94, 0x54, 0xB4, 0x74, 0x0C, 0xF4, 0xAC, 0x6C, 0x1C, 0xEC, 0x8C, 0x4C, 0x2C, 0xCC
+}};
+
+static constexpr Table D_t_d135277 = {{
+    0x1D, 0x72, 0xBE, 0xDC, 0x8E, 0x60, 0x6D, 0xE6, 0xB9, 0x15, 0x92, 0xC9, 0x2D, 0x1A, 0x50, 0x67,
+    0x16, 0x0A, 0x0E, 0xEC, 0x1B, 0x48, 0x41, 0x22, 0x93, 0x02, 0x13, 0xA0, 0xF4, 0x2E, 0x1C, 0x4D,
+    0xB7, 0xD7, 0x9E, 0x83, 0x6B, 0x97, 0xBB, 0x35, 0x34, 0x56, 0xDF, 0xC8, 0x58, 0x7F, 0x9F, 0x7A,
+    0x82, 0x31, 0xF8, 0x6F, 0xFD, 0x6A, 0x78, 0x5B, 0x81, 0x24, 0x0B, 0x2C, 0xD8, 0xDD, 0x7C, 0x9C,
+    0x11, 0x20, 0xCE, 0x26, 0x25, 0x52, 0xBF, 0xA7, 0x9D, 0xA8, 0x91, 0xCF, 0xE7, 0xAE, 0xB1, 0xF9,
+    0xED, 0xBA, 0xAD, 0x45, 0xA1, 0x76, 0xD6, 0x8D, 0x8F, 0x12, 0x7B, 0x06, 0xAC, 0xD1, 0x39, 0x87,
+    0x6C, 0xA9, 0x51, 0xB0, 0xAB, 0x05, 0x65, 0x71, 0x09, 0x90, 0x23, 0x04, 0x3F, 0xA3, 0xC3, 0x44,
+    0xE3, 0x5A, 0xEF, 0x19, 0x3C, 0x1F, 0x88, 0x38, 0x3D, 0x0C, 0x47, 0xBC, 0xE5, 0x75, 0x61, 0x5E,
+    0x43, 0x36, 0x69, 0x4C, 0xF2, 0x84, 0x62, 0x99, 0x21, 0xE1, 0x01, 0xEA, 0x4B, 0xC6, 0x00, 0x17,
+    0x2F, 0xCD, 0x98, 0x96, 0x64, 0xC4, 0x66, 0x6E, 0x0D, 0xE2, 0xD3, 0x10, 0xBD, 0xA4, 0x33, 0xC5,
+    0x28, 0x7D, 0xE4, 0xB6, 0xCA, 0xE0, 0x46, 0x32, 0xCB, 0xF0, 0x49, 0xC0, 0xEB, 0xDE, 0x63, 0xE9,
+    0xAF, 0x3E, 0xF6, 0xF7, 0x94, 0x42, 0x27, 0x89, 0x68, 0x73, 0x74, 0xFF, 0x54, 0xA5, 0x4F, 0x29,
+    0xAA, 0xC7, 0x70, 0xC2, 0x40, 0xCC, 0xB2, 0x55, 0x14, 0x07, 0x85, 0x18, 0x9A, 0xB4, 0x0F, 0x86,
+    0xD2, 0xB3, 0xB5, 0x4A, 0x57, 0x8A, 0xF3, 0x5D, 0xFA, 0x80, 0xA6, 0xD9, 0x1E, 0x8C, 0x4E, 0xA2,
+    0x2A, 0x2B, 0x3B, 0x95, 0xD4, 0xF1, 0xFC, 0x37, 0xB8, 0x79, 0xF5, 0xEE, 0xFE, 0xFB, 0x03, 0x3A,
+    0x53, 0x30, 0x77, 0xC1, 0x5F, 0xE8, 0x9B, 0xDA, 0x59, 0xDB, 0x7E, 0x08, 0x5C, 0xD0, 0xD5, 0x8B
+}};
+
+static constexpr CountTable C_l_c1 = {{0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9, 0xF8, 0xF7, 0xF6, 0xF5, 0xF4, 0xF3, 0xF2, 0xF1, 0xF0, 0xEF}};
+
+static constexpr CountTable C_t_c1 = {{0xDF, 0x4E, 0x11, 0x96, 0xBF, 0x4A, 0x01, 0x45, 0xB2, 0x14, 0xA9, 0xA3, 0x08, 0xE7, 0xFD, 0x17, 0x90}};
+
+static constexpr CountTable C_t_c2 = {{0x64, 0x1F, 0xD7, 0xF1, 0x97, 0x6E, 0x4C, 0xB6, 0xEE, 0xDA, 0x12, 0x54, 0xD6, 0x52, 0x58, 0x33, 0x3E}};
+
+static constexpr CountTable C_t_c3 = {{0x80, 0x00, 0xFF, 0x7F, 0xFE, 0x7E, 0xFD, 0x7D, 0xFC, 0x7C, 0xFB, 0x7B, 0xFA, 0x7A, 0xF9, 0x79, 0xF8}};
+
+static constexpr CountTable C_k_c1 = {{0xC5, 0x26, 0x9A, 0xB3, 0xC3, 0x68, 0x9F, 0xCB, 0xD6, 0x4A, 0xBB, 0x13, 0x19, 0x06, 0x48, 0x65, 0x52}};
+
+static constexpr CountTable C_k_c2 = {{0x04, 0x14, 0x64, 0x74, 0x44, 0x54, 0xA4, 0xB4, 0x84, 0x94, 0xE4, 0xF4, 0xC4, 0xD4, 0x25, 0x35, 0x07}};
+
+static constexpr CountTable C_k_c3 = {{0x6A, 0xAA, 0x8B, 0xCB, 0xEA, 0x2B, 0x8A, 0xCA, 0xED, 0x2E, 0x0F, 0x4F, 0x6B, 0xAB, 0x0E, 0x4E, 0x6E}};
+
+static constexpr CountTable C_k_c4 = {{0x5C, 0x68, 0x7D, 0x59, 0xDB, 0xF2, 0xAB, 0x57, 0xCD, 0xE3, 0x2E, 0xF0, 0x05, 0xB7, 0xB0, 0x65, 0x46}};
+
+static constexpr CountTable C_k_c5 = {{0xF0, 0x88, 0xCA, 0x86, 0x07, 0xDF, 0xED, 0xB4, 0x4C, 0x0E, 0xCB, 0xDA, 0x2A, 0xA1, 0xF7, 0x7A, 0xA9}};
+
+static constexpr CountTable C_k_c6 = {{0x4F, 0xF1, 0x14, 0x08, 0xBB, 0x18, 0xF8, 0x9B, 0x50, 0x52, 0xF6, 0xD0, 0x9E, 0x10, 0x24, 0x6A, 0x75}};
+
+static constexpr CountTable C_k_c7 = {{0x04, 0x14, 0x64, 0x74, 0x44, 0x54, 0xA4, 0xB4, 0x84, 0x94, 0xE4, 0xF4, 0xC4, 0xD4, 0x25, 0x35, 0x07}};
+
+static constexpr CountTable C_k_ex_c1 = {{0x58, 0x7C, 0x45, 0x60, 0x44, 0xD2, 0x48, 0x36, 0xBC, 0xFF, 0x62, 0x4C, 0x8B, 0x16, 0x17, 0x02, 0xE9}};
+
+static constexpr CountTable C_k_ex_c2 = {{0x86, 0x2F, 0x2D, 0x0C, 0x67, 0x3D, 0x72, 0x60, 0xDB, 0xFB, 0xDC, 0x22, 0x7C, 0x35, 0xAA, 0x54, 0x82}};
+
+static constexpr Byte F_l_c1 = 0xDC;
+static constexpr Byte F_t_c1 = 0x51;
+static constexpr Byte F_t_c2 = 0xEA;
+static constexpr Byte F_t_c3 = 0xFF;
+
+static constexpr Byte F_k_c1 = 0x19;
+static constexpr Byte F_k_c2 = 0xEF;
+static constexpr Byte F_k_c3 = 0x58;
+static constexpr Byte F_k_c4 = 0xFE;
+static constexpr Byte F_k_c5 = 0x28;
+static constexpr Byte F_k_c6 = 0xCB;
+static constexpr Byte F_k_c7 = 0x88;
+static constexpr Byte F_k_ex_c1 = 0x6C;
+static constexpr Byte F_k_ex_c2 = 0x23;
+
+static std::uint64_t ReadLE(const Byte* in, std::size_t off, std::size_t width) {
+    std::uint64_t value = 0;
+    for (std::size_t i = 0; i < width; ++i) value |= std::uint64_t(in[off + i]) << (i * 8);
+    return value;
+}
+
+static std::uint64_t ReadBE(const Byte* in, std::size_t off, std::size_t width) {
+    std::uint64_t value = 0;
+    for (std::size_t i = 0; i < width; ++i) value = (value << 8) | in[off + i];
+    return value;
+}
+
+static void WriteLE(Byte* out, std::size_t off, std::uint64_t value, std::size_t width) {
+    for (std::size_t i = 0; i < width; ++i) out[off + i] = static_cast<Byte>(value >> (i * 8));
+}
+
+static void CopyBEToLE(Byte* out, std::size_t outOff, const Byte* in, std::size_t inOff,
+                       std::size_t width) {
+    WriteLE(out, outOff, ReadBE(in, inOff, width), width);
+}
+
+static void AppendVar(std::vector<Byte>& out, std::uint64_t value, const Table& inverse) {
+    do {
+        Byte chunk = static_cast<Byte>(value & 0x7F);
+        value >>= 7;
+        out.push_back(inverse[chunk | (value ? 0x80 : 0)]);
+    } while (value);
+}
+
+static void AppendDirect(std::vector<Byte>& out, Byte value, const Table& inverse) {
+    out.push_back(inverse[value]);
+}
+
+static void AppendNoise(std::vector<Byte>& out, Byte count, const CountTable& inverse,
+                        Byte filler) {
+    out.push_back(inverse[count]);
+    out.insert(out.end(), count, filler);
+}
+
+static Byte MakeOfficialNoiseCount() {
+    return static_cast<Byte>((std::rand() % 16) + 1);
+}
+
+static NoiseCounts MakeOfficialNoiseCounts() {
+    NoiseCounts noise;
+    for (auto& count : noise.kart)
+        count = MakeOfficialNoiseCount();
+    return noise;
+}
+
+static void AppendLucky(std::vector<Byte>& out, const Byte* p, std::size_t base) {
+    AppendVar(out, ReadLE(p, base, 4), V_l_v0);
+    AppendVar(out, ReadLE(p, base + 4, 4), V_l_v4);
+    AppendNoise(out, MakeOfficialNoiseCount(), C_l_c1, F_l_c1);
+}
+
+static void AppendKart(std::vector<Byte>& out, const Byte* e, const NoiseCounts& n) {
+    AppendDirect(out,e[81],D_k_d81); AppendNoise(out,n.kart[0],C_k_c1,F_k_c1);
+    AppendVar(out,ReadLE(e,64,2),V_k_v64); AppendDirect(out,e[72],D_k_d72);
+    AppendVar(out,ReadLE(e,66,2),V_k_v66); AppendVar(out,ReadLE(e,68,4),V_k_v68);
+    AppendVar(out,ReadLE(e,28,4),V_k_v28); AppendNoise(out,n.kart[1],C_k_c2,F_k_c2);
+    AppendVar(out,ReadLE(e,8,4),V_k_v8); AppendVar(out,ReadLE(e,4,4),V_k_v4);
+    AppendVar(out,ReadLE(e,58,2),V_k_v58); AppendVar(out,ReadLE(e,56,2),V_k_v56);
+    AppendVar(out,ReadLE(e,14,2),V_k_v14); AppendNoise(out,n.kart[2],C_k_c3,F_k_c3);
+    AppendVar(out,ReadLE(e,52,4),V_k_v52); AppendVar(out,ReadLE(e,20,2),V_k_v20);
+    AppendVar(out,ReadLE(e,36,4),V_k_v36); AppendVar(out,ReadLE(e,62,2),V_k_v62);
+    AppendVar(out,ReadLE(e,40,4),V_k_v40); AppendNoise(out,n.kart[3],C_k_c4,F_k_c4);
+    AppendVar(out,ReadLE(e,77,4),V_k_v77); AppendVar(out,ReadLE(e,60,2),V_k_v60);
+    AppendVar(out,ReadLE(e,82,8),V_k_v82);
+    AppendDirect(out,e[49],D_k_d49); AppendDirect(out,e[44],D_k_d44);
+    AppendDirect(out,e[51],D_k_d51); AppendDirect(out,e[48],D_k_d48);
+    AppendNoise(out,n.kart[4],C_k_ex_c1,F_k_ex_c1);
+    AppendDirect(out,e[45],D_k_d45); AppendDirect(out,e[47],D_k_d47);
+    AppendDirect(out,e[50],D_k_d50); AppendDirect(out,e[46],D_k_d46);
+    AppendNoise(out,n.kart[5],C_k_ex_c2,F_k_ex_c2);
+    AppendVar(out,ReadLE(e,12,2),V_k_v12); AppendNoise(out,n.kart[6],C_k_c5,F_k_c5);
+    AppendVar(out,ReadLE(e,16,2),V_k_v16); AppendVar(out,ReadLE(e,73,4),V_k_v73);
+    AppendVar(out,ReadLE(e,24,4),V_k_v24); AppendVar(out,ReadLE(e,22,2),V_k_v22);
+    AppendVar(out,ReadLE(e,18,2),V_k_v18); AppendNoise(out,n.kart[7],C_k_c6,F_k_c6);
+    AppendVar(out,ReadLE(e,32,4),V_k_v32); AppendVar(out,ReadLE(e,0,4),V_k_v0);
+    AppendNoise(out,n.kart[8],C_k_c7,F_k_c7);
+}
+
+static bool Fail(std::string* error, const char* text) {
+    if (error) *error = text;
+    return false;
+}
+
+static bool EncodeExpanded271(const Byte* p, std::size_t size,
+                              std::vector<Byte>& out, std::string* error) {
+    out.clear();
+    if (!p || size != kExpandedSize)
+        return Fail(error, "Msg271 expanded body must be exactly 135282 bytes");
+
+    const auto kartCount = static_cast<std::uint16_t>(ReadLE(p, 6, 2));
+    const auto luckyCount = p[135020];
+    if (kartCount > 1500 || luckyCount > 32)
+        return Fail(error, "Msg271 semantic count outside Build323 bounds");
+
+    out.reserve(32 + static_cast<std::size_t>(kartCount) * 160
+        + static_cast<std::size_t>(luckyCount) * 24);
+    AppendVar(out, ReadLE(p, 135012, 4), V_t_v135012);
+    AppendNoise(out, MakeOfficialNoiseCount(), C_t_c1, F_t_c1);
+    AppendVar(out, ReadLE(p, 135016, 4), V_t_v135016);
+    out.push_back(static_cast<Byte>(luckyCount + 95));
+    for (std::size_t i = 0; i < luckyCount; ++i)
+        AppendLucky(out, p, 135021 + i * 8);
+    AppendVar(out, ReadLE(p, 135008, 4), V_t_v135008);
+    AppendVar(out, kartCount, V_t_v6);
+    for (std::size_t i = 0; i < kartCount; ++i)
+        AppendKart(out, p + 8 + i * 90, MakeOfficialNoiseCounts());
+    AppendVar(out, ReadLE(p, 2, 4), V_t_v2);
+    AppendNoise(out, MakeOfficialNoiseCount(), C_t_c2, F_t_c2);
+    AppendVar(out, ReadLE(p, 0, 2), V_t_v0);
+    AppendVar(out, ReadLE(p, 135278, 4), V_t_v135278);
+    AppendDirect(out, p[135277], D_t_d135277);
+    AppendNoise(out, MakeOfficialNoiseCount(), C_t_c3, F_t_c3);
+    if (error)
+        *error = "ok";
+    return true;
+}
+} // namespace
+
+bool ExpandCurrentServerBody(const Byte* in, std::size_t size, std::vector<Byte>& out,
+                             std::string* error) {
+    out.clear();
+    const auto fail = [&](const char* text) { out.clear(); return Fail(error,text); };
+    if (!in || size < 8) return fail("current Msg271 body is shorter than 8-byte header");
+    out.assign(kExpandedSize, 0);
+
+    // Player.cpp:6559-6563 uses Write16/Write32 (network byte order).
+    WriteLE(out.data(),0,ReadBE(in,0,2),2);       // ResultID
+    WriteLE(out.data(),2,ReadBE(in,2,4),4);       // UIN
+    const auto kartCount = static_cast<std::uint16_t>(ReadBE(in,6,2));
+    if (kartCount > 1500) return fail("current Msg271 KartNum exceeds 1500");
+    WriteLE(out.data(),6,kartCount,2);
+
+    std::size_t pos = 8;
+    for (std::size_t i=0;i<kartCount;++i) {
+        if (pos + 2 > size) return fail("current Msg271 item length is truncated");
+        const auto itemLen = static_cast<std::uint16_t>(ReadBE(in,pos,2));
+        if (itemLen != 94 || itemLen > size-pos)
+            return fail("current Msg271 item must be the exact 94-byte Player.cpp layout");
+        const Byte* src = in+pos+2; // skip outer BE length
+        if (ReadBE(src,44,2) != 10)
+            return fail("current Msg271 nested KartRefitExInfo length must be 10");
+        Byte* dst = out.data()+8+i*90;
+
+        CopyBEToLE(dst,0,src,0,4);   CopyBEToLE(dst,4,src,4,4);
+        CopyBEToLE(dst,8,src,8,4);   CopyBEToLE(dst,12,src,12,2);
+        CopyBEToLE(dst,14,src,14,2); CopyBEToLE(dst,16,src,16,2);
+        CopyBEToLE(dst,18,src,18,2); CopyBEToLE(dst,20,src,20,2);
+        CopyBEToLE(dst,22,src,22,2); CopyBEToLE(dst,24,src,24,4);
+        CopyBEToLE(dst,28,src,28,4); CopyBEToLE(dst,32,src,32,4);
+        CopyBEToLE(dst,36,src,36,4); CopyBEToLE(dst,40,src,40,4);
+        std::copy(src+46,src+54,dst+44); // skip nested BE length, copy 8 one-byte fields
+        CopyBEToLE(dst,52,src,54,4); CopyBEToLE(dst,56,src,58,2);
+        CopyBEToLE(dst,58,src,60,2); CopyBEToLE(dst,60,src,62,2);
+        CopyBEToLE(dst,62,src,64,2); CopyBEToLE(dst,64,src,66,2);
+        CopyBEToLE(dst,66,src,68,2); CopyBEToLE(dst,68,src,70,4);
+        dst[72] = src[74];
+        CopyBEToLE(dst,73,src,75,4); CopyBEToLE(dst,77,src,79,4);
+        dst[81] = src[83];
+        CopyBEToLE(dst,82,src,84,4); CopyBEToLE(dst,86,src,88,4);
+        pos += itemLen;
+    }
+
+    // Three BE u32 values, followed by up to 32 length-prefixed LuckyValueInfo
+    // records, HasMoreInfo and the BE client-PID check.
+    if (size-pos < 18) return fail("current Msg271 tail is truncated");
+    CopyBEToLE(out.data(),135008,in,pos,4); pos += 4;
+    CopyBEToLE(out.data(),135012,in,pos,4); pos += 4;
+    CopyBEToLE(out.data(),135016,in,pos,4); pos += 4;
+    const Byte levelNum = in[pos++];
+    if (levelNum > 32)
+        return fail("current Msg271 LevelNum exceeds 32");
+    out[135020] = levelNum;
+    for (std::size_t i = 0; i < levelNum; ++i) {
+        if (pos + 2 > size)
+            return fail("current Msg271 LuckyValueInfo length is truncated");
+        const auto recordLen = static_cast<std::uint16_t>(ReadBE(in,pos,2));
+        if (recordLen != 10 || recordLen > size-pos)
+            return fail("current Msg271 LuckyValueInfo must be exactly 10 bytes");
+        const Byte* src = in+pos+2;
+        CopyBEToLE(out.data(),135021+i*8,src,0,4);
+        CopyBEToLE(out.data(),135025+i*8,src,4,4);
+        pos += recordLen;
+    }
+    if (size-pos != 5)
+        return fail("current Msg271 tail size does not match LevelNum");
+    out[135277] = in[pos++];
+    CopyBEToLE(out.data(),135278,in,pos,4); pos += 4;
+    if (pos != size) return fail("current Msg271 internal size mismatch");
+    if (error) *error = "ok";
+    return true;
+}
+
+} // namespace QQSpeedMsg271Build323
+
+namespace QQSpeedMsg271Build323
+{
+namespace
+{
+    constexpr std::size_t kExpanded318Size = 135011;
+    constexpr USHORT kInnerMsgKartRefit = 271;
+    constexpr USHORT kInnerMsgKartRefitMore = 318;
+
+    static bool Decode318UinVar(Byte wire, Byte& sevenBits, bool& stop)
+    {
+        const Byte value = U8(Perm(Ror8(U8(Perm(wire) + 42u), 4)) - 14u);
+        sevenBits = U8(value & 0x7Fu);
+        stop = (value & 0x80u) == 0;
+        return true;
+    }
+
+    static Byte Post318Uin(Byte raw)
+    {
+        return Perm(U8(Ror8(Perm(U8(raw + 14u)), 4) - 42u));
+    }
+
+    static Byte Expand318Uin(Byte storage)
+    {
+        return U8(Perm(Ror8(U8(Perm(storage) + 42u), 4)) - 14u);
+    }
+
+    static bool Decode318CheckVar(Byte wire, Byte& sevenBits, bool& stop)
+    {
+        const Byte value = Perm(Perm(Not8(U8(wire + 99u))));
+        sevenBits = U8(value & 0x7Fu);
+        stop = (value & 0x80u) == 0;
+        return true;
+    }
+
+    static Byte Post318Check(Byte raw)
+    {
+        return U8(0u - Perm(Perm(raw)) - 100u);
+    }
+
+    static Byte Expand318Check(Byte storage)
+    {
+        return Perm(Perm(Not8(U8(storage + 99u))));
+    }
+
+    static bool Decode318CountVar(Byte wire, Byte& sevenBits, bool& stop)
+    {
+        const Byte first = Ror8(wire, 7);
+        const Byte second = Ror8(Perm(first), 5);
+        const Byte value = Perm(U8(Perm(second) - 75u));
+        sevenBits = U8(value & 0x7Fu);
+        stop = (value & 0x80u) == 0;
+        return true;
+    }
+
+    static Byte Post318Count(Byte raw)
+    {
+        const Byte first = U8(Perm(raw) + 75u);
+        const Byte second = Ror8(Perm(first), 3);
+        return Ror8(Perm(second), 1);
+    }
+
+    static Byte Expand318Count(Byte storage)
+    {
+        const Byte first = Ror8(storage, 7);
+        const Byte second = Ror8(Perm(first), 5);
+        return Perm(U8(Perm(second) - 75u));
+    }
+
+    static Byte Transform318HasNext(Byte value)
+    {
+        const Byte first = kC30[kC30[value]];
+        const Byte second = U8(kC30[U8(Ror8(first, 1) ^ 0x41u)] + 23u);
+        return U8(Swap55(second) + 36u);
+    }
+
+    static Byte Post318HasNext(Byte value)
+    {
+        const Byte first = U8(Swap55(U8(value - 36u)) - 23u);
+        const Byte second = U8(kB30[first] ^ 0x41u);
+        return kB30[kB30[Rol8(second, 1)]];
+    }
+
+    static Byte Decode318HasNext(Byte wire)
+    {
+        return Transform318HasNext(Post318HasNext(Transform318HasNext(wire)));
+    }
+
+    static Byte Transform318PaddingCount(Byte value)
+    {
+        return U8(Perm(Ror8(Perm(Not8(value)), 2)) + 11u);
+    }
+
+    static Byte Post318PaddingCount(Byte value)
+    {
+        return Not8(Perm(Ror8(Perm(U8(value - 11u)), 6)));
+    }
+
+    static Byte Decode318PaddingCount(Byte wire)
+    {
+        return Transform318PaddingCount(Post318PaddingCount(Transform318PaddingCount(wire)));
+    }
+
+    static bool Decode318PaddingValueVar(Byte wire, Byte& sevenBits, bool& stop)
+    {
+        const Byte first = kC30[kC30[U8(wire ^ 0x88u)]];
+        const Byte value = kC30[U8(U8(Swap55(first) + 20u) ^ 0x56u)];
+        sevenBits = U8(value & 0x7Fu);
+        stop = (value & 0x80u) == 0;
+        return true;
+    }
+
+    static bool ExpandCurrentServerBody318(
+        const Byte* in,
+        std::size_t size,
+        std::vector<Byte>& out,
+        std::string* error)
+    {
+        out.clear();
+        const auto fail = [&](const char* text)
+        {
+            out.clear();
+            return Fail(error, text);
+        };
+        if (!in || size < 11)
+            return fail("current Msg318 body is shorter than 11 bytes");
+
+        out.assign(kExpanded318Size, 0);
+        WriteLE(out.data(), 0, ReadBE(in, 0, 4), 4);
+        const auto kartCount = static_cast<std::uint16_t>(ReadBE(in, 4, 2));
+        if (kartCount > 1500)
+            return fail("current Msg318 KartNum exceeds 1500");
+        WriteLE(out.data(), 4, kartCount, 2);
+
+        std::size_t pos = 6;
+        for (std::size_t i = 0; i < kartCount; ++i)
+        {
+            if (pos + 2 > size)
+                return fail("current Msg318 item length is truncated");
+            const auto itemLen = static_cast<std::uint16_t>(ReadBE(in, pos, 2));
+            if (itemLen != 94 || itemLen > size - pos)
+                return fail("current Msg318 item must be the exact 94-byte Player.cpp layout");
+            const Byte* src = in + pos + 2;
+            if (ReadBE(src, 44, 2) != 10)
+                return fail("current Msg318 nested KartRefitExInfo length must be 10");
+            Byte* dst = out.data() + 6 + i * 90;
+
+            CopyBEToLE(dst, 0, src, 0, 4);   CopyBEToLE(dst, 4, src, 4, 4);
+            CopyBEToLE(dst, 8, src, 8, 4);   CopyBEToLE(dst, 12, src, 12, 2);
+            CopyBEToLE(dst, 14, src, 14, 2); CopyBEToLE(dst, 16, src, 16, 2);
+            CopyBEToLE(dst, 18, src, 18, 2); CopyBEToLE(dst, 20, src, 20, 2);
+            CopyBEToLE(dst, 22, src, 22, 2); CopyBEToLE(dst, 24, src, 24, 4);
+            CopyBEToLE(dst, 28, src, 28, 4); CopyBEToLE(dst, 32, src, 32, 4);
+            CopyBEToLE(dst, 36, src, 36, 4); CopyBEToLE(dst, 40, src, 40, 4);
+            std::copy(src + 46, src + 54, dst + 44);
+            CopyBEToLE(dst, 52, src, 54, 4); CopyBEToLE(dst, 56, src, 58, 2);
+            CopyBEToLE(dst, 58, src, 60, 2); CopyBEToLE(dst, 60, src, 62, 2);
+            CopyBEToLE(dst, 62, src, 64, 2); CopyBEToLE(dst, 64, src, 66, 2);
+            CopyBEToLE(dst, 66, src, 68, 2); CopyBEToLE(dst, 68, src, 70, 4);
+            dst[72] = src[74];
+            CopyBEToLE(dst, 73, src, 75, 4); CopyBEToLE(dst, 77, src, 79, 4);
+            dst[81] = src[83];
+            CopyBEToLE(dst, 82, src, 84, 4); CopyBEToLE(dst, 86, src, 88, 4);
+            pos += itemLen;
+        }
+
+        if (size - pos != 5)
+            return fail("current Msg318 tail must be exactly 5 bytes");
+        out[135006] = in[pos++];
+        CopyBEToLE(out.data(), 135007, in, pos, 4);
+        pos += 4;
+        if (pos != size)
+            return fail("current Msg318 internal size mismatch");
+        if (error)
+            *error = "ok";
+        return true;
+    }
+
+    static bool EncodeExpanded318(
+        const Byte* expanded,
+        std::size_t expandedSize,
+        std::vector<Byte>& inner,
+        std::string* error)
+    {
+        inner.clear();
+        if (!expanded || expandedSize != kExpanded318Size)
+            return Fail(error, "Msg318 expanded body must be exactly 135011 bytes");
+
+        const auto kartCount = static_cast<std::uint16_t>(ReadLE(expanded, 4, 2));
+        if (kartCount > 1500)
+            return Fail(error, "Msg318 semantic count outside Build323 bounds");
+
+        inner.reserve(48 + static_cast<std::size_t>(kartCount) * 160);
+        if (!EncodeDecodedVarGeneric(
+                Decode318UinVar, Post318Uin, Expand318Uin,
+                static_cast<std::uint32_t>(ReadLE(expanded, 0, 4)), 4, inner))
+            return Fail(error, "encode Msg318 Uin failed");
+        if (!EncodeDecodedVarGeneric(
+                Decode318CheckVar, Post318Check, Expand318Check,
+                static_cast<std::uint32_t>(ReadLE(expanded, 135007, 4)), 4, inner))
+            return Fail(error, "encode Msg318 check failed");
+        if (!EncodeDecodedVarGeneric(
+                Decode318CountVar, Post318Count, Expand318Count,
+                kartCount, 2, inner))
+            return Fail(error, "encode Msg318 KartNum failed");
+
+        for (std::size_t i = 0; i < kartCount; ++i)
+            AppendKart(inner, expanded + 6 + i * 90, MakeOfficialNoiseCounts());
+
+        if (!EncodeDecodedByteGeneric(Decode318HasNext, expanded[135006], inner))
+            return Fail(error, "encode Msg318 HasNext failed");
+
+        const Byte paddingCount = static_cast<Byte>((std::rand() % 16) + 1);
+        if (!EncodeDecodedByteGeneric(Decode318PaddingCount, paddingCount, inner))
+            return Fail(error, "encode Msg318 padding count failed");
+        for (Byte i = 0; i < paddingCount; ++i)
+        {
+            if (!EncodeRawVarGeneric(Decode318PaddingValueVar, 0, inner))
+                return Fail(error, "encode Msg318 padding value failed");
+        }
+
+        if (error)
+            *error = "ok";
+        return true;
+    }
+}
+}
+
+OfficialKartRefit271BuildResult BuildOfficialSafeKartRefit271(
+    UINT outerUin,
+    UINT responseContext,
+    DWORD clientPid,
+    const BYTE* plainBody,
+    size_t plainBodyLen,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0)
+    {
+        if (diag) *diag = "outer uin zero";
+        return OfficialKartRefit271BuildResult::Failed;
+    }
+    if (responseContext == 0)
+    {
+        if (diag) *diag = "response context zero";
+        return OfficialKartRefit271BuildResult::Failed;
+    }
+    if (clientPid == 0)
+    {
+        if (diag) *diag = "client PID is zero";
+        return OfficialKartRefit271BuildResult::Failed;
+    }
+    if (!plainBody || plainBodyLen < 26)
+    {
+        if (diag) *diag = "Msg271 plain body is missing";
+        return OfficialKartRefit271BuildResult::Failed;
+    }
+    if (QQSpeedMsg271Build323::ReadBE(plainBody, 2, 4) != outerUin)
+    {
+        if (diag) *diag = "Msg271 Uin mismatch";
+        return OfficialKartRefit271BuildResult::Failed;
+    }
+    if (QQSpeedMsg271Build323::ReadBE(plainBody, plainBodyLen - 4, 4) !=
+        (clientPid ^ kClientPidCheckXor))
+    {
+        if (diag) *diag = "Msg271 client PID check mismatch";
+        return OfficialKartRefit271BuildResult::Failed;
+    }
+
+    std::vector<BYTE> expanded;
+    if (!QQSpeedMsg271Build323::ExpandCurrentServerBody(
+            plainBody, plainBodyLen, expanded, diag))
+        return OfficialKartRefit271BuildResult::Failed;
+
+    // 官服每段 kart noise 均为 1..16。300 辆首页编码后超过 32213
+    // 工作区时，官服直接发送原生 Msg271，而不是缩减或清零 noise。
+    std::vector<BYTE> inner;
+    if (!QQSpeedMsg271Build323::EncodeExpanded271(
+            expanded.data(), expanded.size(), inner, diag))
+        return OfficialKartRefit271BuildResult::Failed;
+    if (inner.size() > kOfficial28346MaxInnerLen)
+    {
+        if (diag) *diag = "inner length overflow";
+        return OfficialKartRefit271BuildResult::Direct271Required;
+    }
+    if (!FinishOfficial28346Body(
+            outerUin,
+            responseContext,
+            QQSpeedMsg271Build323::kInnerMsgKartRefit,
+            inner,
+            outBody,
+            diag))
+        return OfficialKartRefit271BuildResult::Failed;
+    return OfficialKartRefit271BuildResult::Safe28346;
+}
+
+bool BuildOfficialSafeKartRefit318(
+    UINT outerUin,
+    UINT responseContext,
+    DWORD clientPid,
+    const BYTE* plainBody,
+    size_t plainBodyLen,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0)
+    {
+        if (diag) *diag = "outer uin zero";
+        return false;
+    }
+    if (clientPid == 0)
+    {
+        if (diag) *diag = "client PID is zero";
+        return false;
+    }
+    if (!plainBody || plainBodyLen < 11)
+    {
+        if (diag) *diag = "Msg318 plain body is missing";
+        return false;
+    }
+    if (QQSpeedMsg271Build323::ReadBE(plainBody, 0, 4) != outerUin)
+    {
+        if (diag) *diag = "Msg318 Uin mismatch";
+        return false;
+    }
+    if (QQSpeedMsg271Build323::ReadBE(plainBody, plainBodyLen - 4, 4) !=
+        (clientPid ^ kClientPidCheckXor))
+    {
+        if (diag) *diag = "Msg318 client PID check mismatch";
+        return false;
+    }
+
+    std::vector<BYTE> expanded;
+    if (!QQSpeedMsg271Build323::ExpandCurrentServerBody318(
+            plainBody, plainBodyLen, expanded, diag))
+        return false;
+
+    // 官服使用完整的 1..16 kart noise；分页方必须按这次实际编码结果
+    // 控制在 32213 工作区内，不能通过缩减或清零 noise 强塞更多车辆。
+    std::vector<BYTE> inner;
+    if (!QQSpeedMsg271Build323::EncodeExpanded318(
+            expanded.data(), expanded.size(), inner, diag))
+        return false;
+
+    return FinishOfficial28346Body(
+        outerUin,
+        responseContext,
+        QQSpeedMsg271Build323::kInnerMsgKartRefitMore,
+        inner,
+        outBody,
+        diag);
+}
+
+// 21543 CNotifyGameBeginPara (Msg509) 官服逆向写流：固定对象布局 -> CSSafe。
+// 仅编码已由当前 Network.dll 与官服样本验证过的模式分支。
+namespace qqspeed::build323 {
+namespace {
+enum class CodecKind : std::uint8_t { Direct, Varint };
+enum class OpKind : std::uint8_t { Field, Padding, Array, SkillArray };
+struct Op { OpKind kind; std::uint16_t a; std::uint16_t b; std::uint16_t c; std::uint16_t d; std::uint16_t e; std::uint32_t off; std::uint8_t size; std::uint8_t elemSize; std::uint8_t maxCount; };
+#include "Msg509SafeCodec21529Tables.inc"
+constexpr std::array<Op,256> kOps = {{
+    {OpKind::Field,0,0,0,0,0,0x8E11,4,0,0},
+    {OpKind::Field,1,0,0,0,0,0x588,1,0,0},
+    {OpKind::Field,2,0,0,0,0,0xA7C2,1,0,0},
+    {OpKind::Padding,3,4,0,0,0,0,1,4,16},
+    {OpKind::Field,5,0,0,0,0,0xA7B0,4,0,0},
+    {OpKind::Field,6,0,0,0,0,0x915F,2,0,0},
+    {OpKind::Field,7,0,0,0,0,0x73A,1,0,0},
+    {OpKind::Field,8,0,0,0,0,0x8B,1,0,0},
+    {OpKind::Field,9,0,0,0,0,0x785,4,0,0},
+    {OpKind::Field,10,0,0,0,0,0xA7C1,1,0,0},
+    {OpKind::Field,11,0,0,0,0,0x8E6E,4,0,0},
+    {OpKind::Field,12,0,0,0,0,0x9B0C,1,0,0},
+    {OpKind::Field,13,0,0,0,0,0x916D,4,0,0},
+    {OpKind::Field,14,0,0,0,0,0xA060,1,0,0},
+    {OpKind::Field,170,0,0,0,0,0xA061,2,0,0},
+    {OpKind::Field,171,0,0,0,0,0xA063,1,0,0},
+    {OpKind::Field,174,0,0,0,0,0xA064,2,0,0},
+    {OpKind::Array,175,176,0,0,0,0xA066,1,4,5},
+    {OpKind::Padding,177,178,0,0,0,0,1,4,16},
+    {OpKind::Field,174,0,0,0,0,0xA07F,2,0,0},
+    {OpKind::Array,175,176,0,0,0,0xA081,1,4,5},
+    {OpKind::Padding,177,178,0,0,0,0,1,4,16},
+    {OpKind::Padding,172,173,0,0,0,0,1,4,16},
+    {OpKind::Field,170,0,0,0,0,0xA0D0,2,0,0},
+    {OpKind::Field,171,0,0,0,0,0xA0D2,1,0,0},
+    {OpKind::Field,174,0,0,0,0,0xA0D3,2,0,0},
+    {OpKind::Array,175,176,0,0,0,0xA0D5,1,4,5},
+    {OpKind::Padding,177,178,0,0,0,0,1,4,16},
+    {OpKind::Field,174,0,0,0,0,0xA0EE,2,0,0},
+    {OpKind::Array,175,176,0,0,0,0xA0F0,1,4,6},
+    {OpKind::Padding,177,178,0,0,0,0,1,4,16},
+    {OpKind::Padding,172,173,0,0,0,0,1,4,16},
+    {OpKind::Field,170,0,0,0,0,0xA13F,2,0,0},
+    {OpKind::Field,171,0,0,0,0,0xA141,1,0,0},
+    {OpKind::Field,174,0,0,0,0,0xA142,2,0,0},
+    {OpKind::Field,175,0,0,0,0,0xA144,1,0,0},
+    {OpKind::Field,176,0,0,0,0,0xA145,4,0,0},
+    {OpKind::Padding,177,178,0,0,0,0,1,4,16},
+    {OpKind::Padding,172,173,0,0,0,0,1,4,16},
+    {OpKind::Padding,15,16,0,0,0,0,1,4,16},
+    {OpKind::Field,17,0,0,0,0,0x6724,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6728,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x672C,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6730,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6734,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6738,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x673C,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6740,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6744,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6748,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x674C,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6750,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6754,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6758,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x675C,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6760,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6764,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6768,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x676C,4,0,0},
+    {OpKind::Field,17,0,0,0,0,0x6770,4,0,0},
+    {OpKind::Field,18,0,0,0,0,0x8EC6,1,0,0},
+    {OpKind::Field,19,0,0,0,0,0x92BA,2,0,0},
+    {OpKind::Field,20,0,0,0,0,0x83,4,0,0},
+    {OpKind::Field,21,0,0,0,0,0x732,4,0,0},
+    {OpKind::Field,22,0,0,0,0,0x72E,4,0,0},
+    {OpKind::Field,23,0,0,0,0,0x6633,1,0,0},
+    {OpKind::Field,24,0,0,0,0,0x8E1E,2,0,0},
+    {OpKind::Field,25,0,0,0,0,0x341F,1,0,0},
+    {OpKind::Field,26,0,0,0,0,0xA3DE,1,0,0},
+    {OpKind::Padding,27,28,0,0,0,0,1,4,16},
+    {OpKind::Field,29,0,0,0,0,0x98FD,1,0,0},
+    {OpKind::Field,30,0,0,0,0,0x113,1,0,0},
+    {OpKind::Field,179,0,0,0,0,0x118,4,0,0},
+    {OpKind::Field,180,0,0,0,0,0x11C,1,0,0},
+    {OpKind::Field,181,0,0,0,0,0x114,4,0,0},
+    {OpKind::Padding,182,183,0,0,0,0,1,4,16},
+    {OpKind::Field,31,0,0,0,0,0x8E65,2,0,0},
+    {OpKind::Array,32,33,0,0,0,0x62F,1,2,8},
+    {OpKind::Field,34,0,0,0,0,0x9169,4,0,0},
+    {OpKind::Field,35,0,0,0,0,0x9F6B,1,0,0},
+    {OpKind::Field,36,0,0,0,0,0x30,1,0,0},
+    {OpKind::Field,37,0,0,0,0,0x768,1,0,0},
+    {OpKind::Field,38,0,0,0,0,0x8E0D,4,0,0},
+    {OpKind::Field,39,0,0,0,0,0x9069,1,0,0},
+    {OpKind::Padding,40,41,0,0,0,0,1,4,16},
+    {OpKind::Array,42,43,0,0,0,0xA41A,1,4,4},
+    {OpKind::Field,44,0,0,0,0,0x8E0C,1,0,0},
+    {OpKind::Field,45,0,0,0,0,0xA05E,1,0,0},
+    {OpKind::Field,46,0,0,0,0,0x8E19,4,0,0},
+    {OpKind::Field,47,0,0,0,0,0x9171,1,0,0},
+    {OpKind::Field,48,0,0,0,0,0x5B2,1,0,0},
+    {OpKind::Field,49,0,0,0,0,0x8E5F,2,0,0},
+    {OpKind::Field,50,0,0,0,0,0x792,4,0,0},
+    {OpKind::Field,51,0,0,0,0,0x72C,2,0,0},
+    {OpKind::Field,52,0,0,0,0,0xA870,8,0,0},
+    {OpKind::Padding,53,54,0,0,0,0,1,4,16},
+    {OpKind::Field,55,0,0,0,0,0x73F,1,0,0},
+    {OpKind::Field,56,0,0,0,0,0xA7C3,1,0,0},
+    {OpKind::Field,57,0,0,0,0,0x6BD1,1,0,0},
+    {OpKind::Field,58,0,0,0,0,0x8E5D,2,0,0},
+    {OpKind::Field,59,0,0,0,0,0x73B,4,0,0},
+    {OpKind::Field,60,0,0,0,0,0xAAFF,4,0,0},
+    {OpKind::Field,61,0,0,0,0,0x78E,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x31,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x35,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x39,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x3D,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x41,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x45,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x49,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x4D,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x51,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x55,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x59,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x5D,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x61,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x65,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x69,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x6D,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x71,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x75,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x79,4,0,0},
+    {OpKind::Field,62,0,0,0,0,0x7D,4,0,0},
+    {OpKind::Field,63,0,0,0,0,0x5B3,1,0,0},
+    {OpKind::Field,64,0,0,0,0,0x6774,1,0,0},
+    {OpKind::Padding,65,66,0,0,0,0,1,4,16},
+    {OpKind::Field,67,0,0,0,0,0x736,4,0,0},
+    {OpKind::Field,68,0,0,0,0,0xA7AC,4,0,0},
+    {OpKind::Field,69,0,0,0,0,0x28,4,0,0},
+    {OpKind::Field,70,0,0,0,0,0x8E62,1,0,0},
+    {OpKind::Field,71,0,0,0,0,0x8E61,1,0,0},
+    {OpKind::Field,72,0,0,0,0,0x34D2,1,0,0},
+    {OpKind::Array,73,74,0,0,0,0x61A,1,2,8},
+    {OpKind::Field,75,0,0,0,0,0x789,1,0,0},
+    {OpKind::Field,76,0,0,0,0,0x8E69,1,0,0},
+    {OpKind::Field,77,0,0,0,0,0x796,1,0,0},
+    {OpKind::Field,149,0,0,0,0,0x9B0,1,0,0},
+    {OpKind::Field,150,0,0,0,0,0x7D0,4,0,0},
+    {OpKind::SkillArray,151,145,146,147,148,0x79F,1,8,6},
+    {OpKind::Field,152,0,0,0,0,0x797,4,0,0},
+    {OpKind::Field,153,0,0,0,0,0x9AC,4,0,0},
+    {OpKind::Field,166,0,0,0,0,0x7D4,1,0,0},
+    {OpKind::Field,167,0,0,0,0,0x7D5,1,0,0},
+    {OpKind::Padding,168,169,0,0,0,0,1,4,16},
+    {OpKind::Field,154,0,0,0,0,0x957,4,0,0},
+    {OpKind::Field,155,0,0,0,0,0x95B,1,0,0},
+    {OpKind::Padding,156,157,0,0,0,0,1,4,16},
+    {OpKind::Field,158,0,0,0,0,0x79B,4,0,0},
+    {OpKind::Field,159,0,0,0,0,0x7D6,1,0,0},
+    {OpKind::Padding,160,161,0,0,0,0,1,4,16},
+    {OpKind::Padding,78,79,0,0,0,0,1,4,16},
+    {OpKind::Field,80,0,0,0,0,0x92B8,2,0,0},
+    {OpKind::Field,81,0,0,0,0,0x34CE,4,0,0},
+    {OpKind::Field,82,0,0,0,0,0x8E75,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x8,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x9,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0xA,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0xB,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0xC,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0xD,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0xE,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0xF,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x10,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x11,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x12,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x13,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x14,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x15,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x16,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x17,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x18,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x19,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x1A,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x1B,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x1C,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x1D,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x1E,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x1F,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x20,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x21,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x22,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x23,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x24,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x25,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x26,1,0,0},
+    {OpKind::Field,83,0,0,0,0,0x27,1,0,0},
+    {OpKind::Field,84,0,0,0,0,0x906C,1,0,0},
+    {OpKind::Array,85,86,0,0,0,0x5B4,1,1,74},
+    {OpKind::Field,87,0,0,0,0,0x644,1,0,0},
+    {OpKind::Field,88,0,0,0,0,0x8E67,2,0,0},
+    {OpKind::Field,89,0,0,0,0,0x8D6F,1,0,0},
+    {OpKind::Field,90,0,0,0,0,0x4,4,0,0},
+    {OpKind::Padding,91,92,0,0,0,0,1,4,16},
+    {OpKind::Field,93,0,0,0,0,0x78A,4,0,0},
+    {OpKind::Field,94,0,0,0,0,0x74A,1,0,0},
+    {OpKind::Field,95,0,0,0,0,0x8E1D,1,0,0},
+    {OpKind::Field,96,0,0,0,0,0x9F6A,1,0,0},
+    {OpKind::Field,97,0,0,0,0,0x2C,4,0,0},
+    {OpKind::Field,98,0,0,0,0,0xA49B,1,0,0},
+    {OpKind::Field,99,0,0,0,0,0x8E15,4,0,0},
+    {OpKind::Field,100,0,0,0,0,0x8E63,2,0,0},
+    {OpKind::Field,101,0,0,0,0,0xA3D9,4,0,0},
+    {OpKind::Field,102,0,0,0,0,0x9161,4,0,0},
+    {OpKind::Padding,103,104,0,0,0,0,1,4,16},
+    {OpKind::Field,105,0,0,0,0,0xA418,2,0,0},
+    {OpKind::Field,106,0,0,0,0,0x0,4,0,0},
+    {OpKind::Field,107,0,0,0,0,0x8EC7,1,0,0},
+    {OpKind::Field,108,0,0,0,0,0xA3DD,1,0,0},
+    {OpKind::Field,109,0,0,0,0,0x8E74,1,0,0},
+    {OpKind::Field,110,0,0,0,0,0x8E6A,2,0,0},
+    {OpKind::Field,111,0,0,0,0,0xA878,1,0,0},
+    {OpKind::Field,112,0,0,0,0,0x9B0D,1,0,0},
+    {OpKind::Field,113,0,0,0,0,0x8E6C,2,0,0},
+    {OpKind::Field,114,0,0,0,0,0x619,1,0,0},
+    {OpKind::Padding,115,116,0,0,0,0,1,4,16},
+    {OpKind::Field,117,0,0,0,0,0xA7B4,1,0,0},
+    {OpKind::Field,118,0,0,0,0,0x8E20,1,0,0},
+    {OpKind::Field,119,0,0,0,0,0xA8F9,4,0,0},
+    {OpKind::Field,120,0,0,0,0,0x92FC,1,0,0},
+    {OpKind::Field,121,0,0,0,0,0xA05F,1,0,0},
+    {OpKind::Field,122,0,0,0,0,0x87,4,0,0},
+    {OpKind::Field,123,0,0,0,0,0x74B,1,0,0},
+    {OpKind::Field,136,0,0,0,0,0x758,4,0,0},
+    {OpKind::Field,137,0,0,0,0,0x74C,4,0,0},
+    {OpKind::Field,138,0,0,0,0,0x760,4,0,0},
+    {OpKind::Field,139,0,0,0,0,0x754,4,0,0},
+    {OpKind::Field,140,0,0,0,0,0x750,4,0,0},
+    {OpKind::Field,141,0,0,0,0,0x764,4,0,0},
+    {OpKind::Field,142,0,0,0,0,0x75C,4,0,0},
+    {OpKind::Padding,143,144,0,0,0,0,1,4,16},
+    {OpKind::Field,124,0,0,0,0,0xA7A8,4,0,0},
+    {OpKind::Field,125,0,0,0,0,0x72B,1,0,0},
+    {OpKind::Field,126,0,0,0,0,0x589,1,0,0},
+    {OpKind::Field,162,0,0,0,0,0x58A,2,0,0},
+    {OpKind::Field,163,0,0,0,0,0x58C,2,0,0},
+    {OpKind::Padding,164,165,0,0,0,0,1,4,16},
+    {OpKind::Field,162,0,0,0,0,0x58E,2,0,0},
+    {OpKind::Field,163,0,0,0,0,0x590,2,0,0},
+    {OpKind::Padding,164,165,0,0,0,0,1,4,16},
+    {OpKind::Field,162,0,0,0,0,0x592,2,0,0},
+    {OpKind::Field,163,0,0,0,0,0x594,2,0,0},
+    {OpKind::Padding,164,165,0,0,0,0,1,4,16},
+    {OpKind::Field,162,0,0,0,0,0x596,2,0,0},
+    {OpKind::Field,163,0,0,0,0,0x598,2,0,0},
+    {OpKind::Padding,164,165,0,0,0,0,1,4,16},
+    {OpKind::Field,162,0,0,0,0,0x59A,2,0,0},
+    {OpKind::Field,163,0,0,0,0,0x59C,2,0,0},
+    {OpKind::Padding,164,165,0,0,0,0,1,4,16},
+    {OpKind::Padding,127,128,0,0,0,0,1,4,16},
+    {OpKind::Field,129,0,0,0,0,0x81,2,0,0},
+    {OpKind::Field,130,0,0,0,0,0x9165,4,0,0},
+    {OpKind::Field,131,0,0,0,0,0x8E72,2,0,0},
+    {OpKind::Field,132,0,0,0,0,0xA8FD,2,0,0},
+    {OpKind::Field,133,0,0,0,0,0x3450,1,0,0},
+    {OpKind::Field,184,0,0,0,0,0xA7BD,4,0,0},
+    {OpKind::Padding,134,135,0,0,0,0,1,4,16},
+}};
+
+enum class Extra509Codec : std::uint8_t {
+    SchemeMod,
+    SchemeAlloc,
+    SchemeN2oMode,
+    SchemeSmall,
+    SchemeN2oEffect,
+    SchemeSub,
+    SchemeGem,
+    SchemeMap0,
+    SchemeMap1,
+    SchemeMap2,
+    SchemeCostume,
+    SchemeNoCollision,
+    SchemeMapCount,
+    SchemeCreateTime,
+    SchemeElimRank,
+    SchemeNameByte,
+    SchemeBase,
+    SchemeId,
+    SchemeUpdateTime,
+    SchemeRound,
+    SchemeCollision,
+    SchemeElimInterval,
+    BaseExParameter,
+    ShuttleType,
+    ShuttleMap,
+    ShuttleBeginCheckpoint,
+    ShuttleBegin,
+    ShuttleEnd,
+    ShuttleProbability,
+    ShuttleReverse,
+    GlType,
+    GlParameter0,
+    AnonymousUin,
+    AnonymousField5,
+    AnonymousHair,
+    AnonymousAvatar9,
+    AnonymousAvatar14,
+    AnonymousAvatar1,
+    AnonymousAvatar5,
+    AnonymousAvatar4,
+    AnonymousAvatar8,
+    AnonymousAvatar2,
+    AnonymousAvatar0,
+    AnonymousAvatar7,
+    AnonymousAvatar13,
+    AnonymousAvatar6,
+    AnonymousAvatar11,
+    AnonymousAvatar12,
+    AnonymousAvatar3,
+    AnonymousAvatar16,
+    AnonymousAvatar10,
+    AnonymousAvatar15,
+    AnonymousTrousers,
+    AnonymousCoat,
+    AnonymousField4,
+};
+
+#include "Msg509SafeCodec21529ExtraTables.inc"
+bool Fail(std::string* e,const char* m) { if(e)*e=m; return false; }
+std::uint64_t ReadLE(const std::uint8_t* p,std::size_t n) { std::uint64_t v=0; for(std::size_t i=0;i<n;++i)v|=std::uint64_t(p[i])<<(8*i); return v; }
+bool Emit(std::uint16_t codec,std::uint64_t value,std::uint8_t width,std::vector<std::uint8_t>& out,std::string* e) {
+ if(width==0||width>8)return Fail(e,"invalid field width");
+ if(width<8 && value >= (std::uint64_t{1}<<(width*8)))return Fail(e,"field overflow");
+ const auto& inv=kInverse[codec];
+ if(kCodecKinds[codec]==CodecKind::Direct) { if(value>255)return Fail(e,"direct field overflow"); out.push_back(inv[static_cast<std::uint8_t>(value)]); return true; }
+ do { std::uint8_t token=static_cast<std::uint8_t>(value&0x7F); value>>=7; if(value)token|=0x80; out.push_back(inv[token]); } while(value);
+ return true;
+}
+
+bool EmitExtra(
+    Extra509Codec codec,
+    std::uint64_t value,
+    std::uint8_t width,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    if (width == 0U || width > 8U)
+        return Fail(error, "invalid extra field width");
+    if (width < 8U && value >= (std::uint64_t{1} << (width * 8U)))
+        return Fail(error, "extra field overflow");
+
+    const std::size_t codecIndex = static_cast<std::size_t>(codec);
+    const auto& inverse = kExtra509Inverse[codecIndex];
+    if (kExtra509CodecKinds[codecIndex] == CodecKind::Direct)
+    {
+        if (value > 255U)
+            return Fail(error, "extra direct field overflow");
+        out.push_back(inverse[static_cast<std::uint8_t>(value)]);
+        return true;
+    }
+
+    do
+    {
+        std::uint8_t token = static_cast<std::uint8_t>(value & 0x7FU);
+        value >>= 7U;
+        if (value != 0U)
+            token |= 0x80U;
+        out.push_back(inverse[token]);
+    } while (value != 0U);
+    return true;
+}
+
+constexpr std::array<std::uint8_t, 16> kGlPaddingACount{{
+    0x9C,0x1C,0x5C,0xDC,0x7C,0xFC,0x3C,0xBC,
+    0xA4,0x24,0x64,0xE4,0x84,0x04,0x44,0xC4,
+}};
+constexpr std::array<std::uint8_t, 16> kGlPaddingBCount{{
+    0xD7,0xDF,0x30,0x38,0x34,0x3C,0x32,0x3A,
+    0x36,0x3E,0x31,0x39,0x35,0x3D,0x33,0x3B,
+}};
+constexpr std::array<std::uint8_t, 16> kSchemePaddingACount{{
+    0x84,0x24,0xD6,0x7E,0x45,0x96,0xA1,0x63,
+    0xC0,0x3F,0x0B,0x4C,0x6D,0xA7,0xBC,0x31,
+}};
+constexpr std::array<std::uint8_t, 16> kSchemePaddingBCount{{
+    0x37,0x2F,0x3F,0x2B,0x3B,0x33,0x43,0x29,
+    0x39,0x31,0x41,0x2D,0x3D,0x35,0x45,0x28,
+}};
+constexpr std::array<std::uint8_t, 16> kSchemePaddingCCount{{
+    0x6A,0x42,0x37,0x5D,0xD6,0x07,0xED,0x0C,
+    0x64,0x25,0x60,0xEF,0x81,0x89,0x5E,0xAD,
+}};
+constexpr std::array<std::uint8_t, 16> kShuttlePaddingCount{{
+    0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F,
+    0x50,0x51,0x52,0x53,0x54,0x55,0x56,0x57,
+}};
+constexpr std::array<std::uint8_t, 16> kAnonymousAvatarPaddingACount{{
+    0xBF,0xDF,0x9F,0xEF,0xAF,0xCF,0x8F,0xF7,
+    0xB7,0xD7,0x97,0xE7,0xA7,0xC7,0x87,0xFB,
+}};
+constexpr std::array<std::uint8_t, 16> kAnonymousAvatarPaddingBCount{{
+    0x04,0x08,0x0C,0x10,0x14,0x18,0x1C,0x20,
+    0x24,0x28,0x2C,0x30,0x34,0x38,0x3C,0x40,
+}};
+constexpr std::array<std::uint8_t, 16> kAnonymousPaddingCCount{{
+    0xFE,0x0D,0xFF,0x14,0x06,0x15,0x07,0x00,
+    0x02,0x01,0x03,0x08,0x0A,0x09,0x0B,0xEC,
+}};
+constexpr std::array<std::uint8_t, 16> kAnonymousPaddingDCount{{
+    0x9D,0xB3,0xDB,0xD8,0xCA,0x2A,0xBA,0x68,
+    0xE0,0xB1,0x4E,0x4F,0x14,0x66,0xB5,0xBF,
+}};
+
+void EmitRecoveredPadding(
+    const std::array<std::uint8_t, 16>& countInverse,
+    std::uint8_t encodedZero,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out)
+{
+    const std::uint8_t count =
+        static_cast<std::uint8_t>((rng() & 0x0FU) + 1U);
+    out.push_back(countInverse[count - 1U]);
+    out.insert(out.end(), count, encodedZero);
+}
+
+constexpr std::size_t kNotifyGameBegin509PlayerCapacity = 20U;
+constexpr std::size_t kNotifyGameBegin509SyncPlayerBase = 0x114U;
+constexpr std::size_t kNotifyGameBegin509SyncPlayerStride = 57U;
+constexpr std::size_t kNotifyGameBegin509GamePlayerBase = 0x797U;
+constexpr std::size_t kNotifyGameBegin509GamePlayerStride = 570U;
+constexpr std::size_t kNotifyGameBegin509MapCheckCapacity = 10U;
+constexpr std::size_t kNotifyGameBegin509GlEffectBaseDelta = 538U;
+constexpr std::size_t kNotifyGameBegin509GlEffectStride = 8U;
+constexpr std::size_t kNotifyGameBegin509GlEffectCapacity = 4U;
+constexpr std::size_t kNotifyGameBegin509ShuttleBase = 0x3451U;
+constexpr std::size_t kNotifyGameBegin509ShuttleStride = 25U;
+constexpr std::size_t kNotifyGameBegin509ShuttleCapacity = 5U;
+constexpr std::size_t kNotifyGameBegin509BaseExParameterBase = 0x8E76U;
+constexpr std::size_t kNotifyGameBegin509BaseExParameterCapacity = 20U;
+constexpr std::size_t kNotifyGameBegin509AnonymousBase = 0x9B0EU;
+constexpr std::size_t kNotifyGameBegin509AnonymousStride = 93U;
+constexpr std::size_t kNotifyGameBegin509AnonymousCapacity = 12U;
+constexpr std::size_t kNotifyGameBegin509CustomSchemeBase = 0xA7C4U;
+
+bool EmitOperation(
+    const Op& op,
+    std::size_t offsetDelta,
+    const std::uint8_t* raw,
+    std::size_t rawSize,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    const std::size_t offset = static_cast<std::size_t>(op.off) + offsetDelta;
+    if (op.kind == OpKind::Field)
+    {
+        if (offset > rawSize || op.size > rawSize - offset)
+            return Fail(error, "field outside fixed raw");
+        return Emit(op.a, ReadLE(raw + offset, op.size), op.size, out, error);
+    }
+    if (op.kind == OpKind::Padding)
+    {
+        // 官服样本中的 padding 元素值均为零，只有 1..16 的元素个数会变化。
+        const std::uint8_t count =
+            static_cast<std::uint8_t>((rng() & 0x0FU) + 1U);
+        if (!Emit(op.a, count, 1U, out, error))
+            return false;
+        for (std::uint8_t index = 0; index < count; ++index)
+        {
+            if (!Emit(op.b, 0U, op.elemSize, out, error))
+                return false;
+        }
+        return true;
+    }
+
+    if (offset > rawSize || op.size > rawSize - offset)
+        return Fail(error, "array count outside fixed raw");
+    const std::uint64_t count = ReadLE(raw + offset, op.size);
+    if (count > op.maxCount)
+        return Fail(error, "array count exceeds recovered normal-branch capacity");
+    if (!Emit(op.a, count, op.size, out, error))
+        return false;
+
+    const std::size_t dataOffset = offset + op.size;
+    if (count > (rawSize - dataOffset) / op.elemSize)
+        return Fail(error, "array data outside fixed raw");
+    if (op.kind == OpKind::Array)
+    {
+        for (std::uint64_t index = 0; index < count; ++index)
+        {
+            if (!Emit(
+                    op.b,
+                    ReadLE(raw + dataOffset + index * op.elemSize, op.elemSize),
+                    op.elemSize,
+                    out,
+                    error))
+                return false;
+        }
+        return true;
+    }
+
+    for (std::uint64_t index = 0; index < count; ++index)
+    {
+        const std::size_t itemOffset =
+            dataOffset + static_cast<std::size_t>(index) * op.elemSize;
+        if (!Emit(op.b, ReadLE(raw + itemOffset + 4U, 4U), 4U, out, error) ||
+            !Emit(op.c, ReadLE(raw + itemOffset, 4U), 4U, out, error))
+            return false;
+
+        const std::uint8_t paddingCount =
+            static_cast<std::uint8_t>((rng() & 0x0FU) + 1U);
+        if (!Emit(op.d, paddingCount, 1U, out, error))
+            return false;
+        for (std::uint8_t padding = 0; padding < paddingCount; ++padding)
+        {
+            if (!Emit(op.e, 0U, 4U, out, error))
+                return false;
+        }
+    }
+    return true;
+}
+
+bool EncodeGameLogicSpecialEffect(
+    const std::uint8_t* raw,
+    std::size_t base,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    EmitRecoveredPadding(kGlPaddingACount, 0x2BU, rng, out);
+    if (!EmitExtra(
+            Extra509Codec::GlType,
+            ReadLE(raw + base, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::GlParameter0,
+            ReadLE(raw + base + 4U, 4U),
+            4U,
+            out,
+            error))
+        return false;
+    EmitRecoveredPadding(kGlPaddingBCount, 0x58U, rng, out);
+    return true;
+}
+
+bool EncodeCustomScheme(
+    const std::uint8_t* raw,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    const std::size_t base = kNotifyGameBegin509CustomSchemeBase;
+    if (!EmitExtra(Extra509Codec::SchemeMod, raw[base + 157U], 1U, out, error) ||
+        !EmitExtra(Extra509Codec::SchemeAlloc, raw[base + 144U], 1U, out, error) ||
+        !EmitExtra(Extra509Codec::SchemeN2oMode, raw[base + 148U], 1U, out, error))
+        return false;
+
+    EmitRecoveredPadding(kSchemePaddingACount, 0x8FU, rng, out);
+    if (!EmitExtra(Extra509Codec::SchemeSmall, raw[base + 153U], 1U, out, error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeN2oEffect,
+            ReadLE(raw + base + 149U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeSub,
+            ReadLE(raw + base + 142U, 2U),
+            2U,
+            out,
+            error) ||
+        !EmitExtra(Extra509Codec::SchemeGem, raw[base + 155U], 1U, out, error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeMap0,
+            ReadLE(raw + base + 159U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeMap1,
+            ReadLE(raw + base + 163U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeMap2,
+            ReadLE(raw + base + 167U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeCostume,
+            raw[base + 156U],
+            1U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeNoCollision,
+            raw[base + 171U],
+            1U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeMapCount,
+            raw[base + 158U],
+            1U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeCreateTime,
+            ReadLE(raw + base + 132U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeElimRank,
+            raw[base + 146U],
+            1U,
+            out,
+            error))
+        return false;
+
+    EmitRecoveredPadding(kSchemePaddingBCount, 0xFFU, rng, out);
+    for (std::size_t index = 0; index < 128U; ++index)
+    {
+        if (!EmitExtra(
+                Extra509Codec::SchemeNameByte,
+                raw[base + 4U + index],
+                1U,
+                out,
+                error))
+            return false;
+    }
+
+    if (!EmitExtra(
+            Extra509Codec::SchemeBase,
+            ReadLE(raw + base + 140U, 2U),
+            2U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeId,
+            ReadLE(raw + base, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeUpdateTime,
+            ReadLE(raw + base + 136U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(Extra509Codec::SchemeRound, raw[base + 147U], 1U, out, error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeCollision,
+            raw[base + 154U],
+            1U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::SchemeElimInterval,
+            raw[base + 145U],
+            1U,
+            out,
+            error))
+        return false;
+
+    EmitRecoveredPadding(kSchemePaddingCCount, 0xD1U, rng, out);
+    return true;
+}
+
+bool EncodeShuttleMap(
+    const std::uint8_t* raw,
+    std::size_t base,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    if (raw[base + 19U] != 0U)
+        return Fail(error, "Build323 official shuttle samples require zero tags");
+
+    if (!EmitExtra(Extra509Codec::ShuttleType, raw[base + 24U], 1U, out, error))
+        return false;
+    // CSSafeSTShuttleMapInfo tag-count codec, recovered value 0.
+    out.push_back(0xB2U);
+    if (!EmitExtra(
+            Extra509Codec::ShuttleMap,
+            ReadLE(raw + base, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::ShuttleBeginCheckpoint,
+            ReadLE(raw + base + 13U, 2U),
+            2U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::ShuttleBegin,
+            ReadLE(raw + base + 4U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::ShuttleEnd,
+            ReadLE(raw + base + 8U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::ShuttleProbability,
+            ReadLE(raw + base + 15U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::ShuttleReverse,
+            raw[base + 12U],
+            1U,
+            out,
+            error))
+        return false;
+
+    EmitRecoveredPadding(kShuttlePaddingCount, 0x04U, rng, out);
+    return true;
+}
+
+bool EncodeAnonymousPlayer(
+    const std::uint8_t* raw,
+    std::size_t base,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    if (raw[base + 24U] != 1U)
+        return Fail(error, "Build323 anonymous avatar count must be one");
+
+    if (!EmitExtra(
+            Extra509Codec::AnonymousField5,
+            ReadLE(raw + base + 20U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::AnonymousHair,
+            ReadLE(raw + base + 4U, 4U),
+            4U,
+            out,
+            error))
+        return false;
+
+    // CSSafeSTAvatarChangeGameBeginInfo one-element avatar list.
+    out.push_back(0xF8U);
+    EmitRecoveredPadding(
+        kAnonymousAvatarPaddingACount,
+        0xDBU,
+        rng,
+        out);
+
+    constexpr std::array<std::pair<Extra509Codec, std::size_t>, 10>
+        kFirstAvatarFields{{
+            {Extra509Codec::AnonymousAvatar9, 9U},
+            {Extra509Codec::AnonymousAvatar14, 14U},
+            {Extra509Codec::AnonymousAvatar1, 1U},
+            {Extra509Codec::AnonymousAvatar5, 5U},
+            {Extra509Codec::AnonymousAvatar4, 4U},
+            {Extra509Codec::AnonymousAvatar8, 8U},
+            {Extra509Codec::AnonymousAvatar2, 2U},
+            {Extra509Codec::AnonymousAvatar0, 0U},
+            {Extra509Codec::AnonymousAvatar7, 7U},
+            {Extra509Codec::AnonymousAvatar13, 13U},
+        }};
+    for (const auto& field : kFirstAvatarFields)
+    {
+        if (!EmitExtra(
+                field.first,
+                ReadLE(raw + base + 25U + field.second * 4U, 4U),
+                4U,
+                out,
+                error))
+            return false;
+    }
+
+    EmitRecoveredPadding(
+        kAnonymousAvatarPaddingBCount,
+        0x11U,
+        rng,
+        out);
+    constexpr std::array<std::pair<Extra509Codec, std::size_t>, 7>
+        kLastAvatarFields{{
+            {Extra509Codec::AnonymousAvatar6, 6U},
+            {Extra509Codec::AnonymousAvatar11, 11U},
+            {Extra509Codec::AnonymousAvatar12, 12U},
+            {Extra509Codec::AnonymousAvatar3, 3U},
+            {Extra509Codec::AnonymousAvatar16, 16U},
+            {Extra509Codec::AnonymousAvatar10, 10U},
+            {Extra509Codec::AnonymousAvatar15, 15U},
+        }};
+    for (const auto& field : kLastAvatarFields)
+    {
+        if (!EmitExtra(
+                field.first,
+                ReadLE(raw + base + 25U + field.second * 4U, 4U),
+                4U,
+                out,
+                error))
+            return false;
+    }
+
+    EmitRecoveredPadding(kAnonymousPaddingCCount, 0xDCU, rng, out);
+    if (!EmitExtra(
+            Extra509Codec::AnonymousTrousers,
+            ReadLE(raw + base + 12U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::AnonymousCoat,
+            ReadLE(raw + base + 8U, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::AnonymousUin,
+            ReadLE(raw + base, 4U),
+            4U,
+            out,
+            error) ||
+        !EmitExtra(
+            Extra509Codec::AnonymousField4,
+            ReadLE(raw + base + 16U, 4U),
+            4U,
+            out,
+            error))
+        return false;
+
+    EmitRecoveredPadding(kAnonymousPaddingDCount, 0x1CU, rng, out);
+    return true;
+}
+} // namespace
+
+bool EncodeNotifyGameBegin509(
+    const std::uint8_t* raw,
+    std::size_t rawSize,
+    std::mt19937_64& rng,
+    std::vector<std::uint8_t>& out,
+    std::string* error)
+{
+    out.clear();
+    if (!raw || rawSize != kNotifyGameBegin509FixedRawSize)
+        return Fail(error, "fixed raw size must be 0xAB03");
+
+    const std::uint64_t baseMode = ReadLE(raw + 0x8E65U, 2U);
+    const std::uint64_t subMode = ReadLE(raw + 0x8E67U, 2U);
+    const bool isNormalProfile = baseMode == 1U && subMode == 1U;
+    const bool isCarGodProfile = baseMode == 10U && subMode == 1U;
+    const bool isRankedProfile = baseMode == 40U && subMode == 1U;
+    const bool isCustomProfile = baseMode == 42U && subMode == 27U;
+    const bool isAuroraProfile = baseMode == 42U && subMode == 29U;
+    if (!isNormalProfile && !isCarGodProfile && !isRankedProfile && !isCustomProfile &&
+        !isAuroraProfile)
+        return Fail(error, "unsupported BaseMode/SubMode branch");
+
+    const std::size_t currentPlayerCount = raw[0x30U];
+    const std::size_t syncPlayerCount = raw[0x113U];
+    const std::size_t gamePlayerCount = raw[0x796U];
+    if (currentPlayerCount == 0U ||
+        currentPlayerCount > kNotifyGameBegin509PlayerCapacity ||
+        currentPlayerCount != syncPlayerCount ||
+        currentPlayerCount != gamePlayerCount)
+        return Fail(error, "normal current/sync/game-begin player counts differ or exceed capacity");
+    if (raw[0x589U] > kNotifyGameBegin509MapCheckCapacity)
+        return Fail(error, "map-check count exceeds fixed object capacity");
+    if (raw[0x74BU] > 1U)
+        return Fail(error, "invalid AntiDrift presence flag");
+
+    for (std::size_t index = 0; index < syncPlayerCount; ++index)
+    {
+        const std::size_t base =
+            kNotifyGameBegin509SyncPlayerBase +
+            index * kNotifyGameBegin509SyncPlayerStride;
+        if (raw[base + 8U] != 0U)
+            return Fail(error, "unsupported SyncCar stone branch");
+    }
+    for (std::size_t index = 0; index < gamePlayerCount; ++index)
+    {
+        const std::size_t base =
+            kNotifyGameBegin509GamePlayerBase +
+            index * kNotifyGameBegin509GamePlayerStride;
+        if (raw[base + 63U] != 0U ||
+            raw[base + 452U] != 0U)
+            return Fail(error, "unsupported effect/parameter player branch");
+        if (raw[base + 537U] > kNotifyGameBegin509GlEffectCapacity)
+            return Fail(error, "GL special-effect count exceeds fixed object capacity");
+    }
+
+    const std::size_t recordCheckCount = raw[0xA060U];
+    if (recordCheckCount != 0U && recordCheckCount != 3U)
+        return Fail(error, "unsupported RecordCheck shape");
+    if (recordCheckCount == 3U &&
+        (raw[0xA063U] != 2U ||
+         raw[0xA0D2U] != 2U ||
+         raw[0xA141U] != 1U ||
+         raw[0xA144U] != 1U))
+        return Fail(error, "unsupported RecordCheck shape");
+
+    const std::size_t shuttleCount = raw[0x3450U];
+    const std::size_t baseExParameterCount = raw[0x8E75U];
+    const std::size_t anonymousCount = raw[0x9B0DU];
+    const std::size_t customSchemeCount = raw[0xA7C3U];
+    if (shuttleCount > kNotifyGameBegin509ShuttleCapacity)
+        return Fail(error, "shuttle-map count exceeds fixed object capacity");
+    if (baseExParameterCount > kNotifyGameBegin509BaseExParameterCapacity)
+        return Fail(error, "BaseGameModeEx parameter count exceeds fixed object capacity");
+    if (anonymousCount > kNotifyGameBegin509AnonymousCapacity)
+        return Fail(error, "anonymous-player count exceeds fixed object capacity");
+    if (customSchemeCount > 1U)
+        return Fail(error, "custom-scheme presence count exceeds fixed object capacity");
+
+    if (isNormalProfile &&
+        (recordCheckCount != 3U ||
+         (anonymousCount != 0U && anonymousCount != gamePlayerCount) ||
+         customSchemeCount != 0U || shuttleCount != 0U ||
+         baseExParameterCount != 0U))
+        return Fail(error, "normal profile optional branches do not match supported shape");
+    if (isCarGodProfile &&
+        (currentPlayerCount != 1U || recordCheckCount != 3U ||
+         anonymousCount != 0U || customSchemeCount != 0U ||
+         shuttleCount != 0U || baseExParameterCount != 0U))
+        return Fail(error, "car-god profile optional branches do not match supported shape");
+    if (isRankedProfile &&
+        (recordCheckCount != 3U || anonymousCount != gamePlayerCount ||
+         customSchemeCount != 0U || shuttleCount != 0U ||
+         baseExParameterCount != 0U))
+        return Fail(error, "ranked profile optional branches do not match official shape");
+    if (isCustomProfile)
+    {
+        if (recordCheckCount != 0U || anonymousCount != 0U ||
+            customSchemeCount != 1U || shuttleCount == 0U)
+            return Fail(error, "custom profile optional branches do not match official shape");
+        if (raw[kNotifyGameBegin509CustomSchemeBase + 158U] != shuttleCount)
+            return Fail(error, "custom-scheme map count and shuttle-map count differ");
+    }
+    if (isAuroraProfile &&
+        (recordCheckCount != 3U || anonymousCount != 0U ||
+         customSchemeCount != 0U || shuttleCount != 0U ||
+         baseExParameterCount != 0U))
+        return Fail(error, "Aurora profile optional branches do not match official shape");
+
+    if (raw[0x8BU] != 0U || raw[0x644U] != 0U ||
+        raw[0x73FU] != 0U || raw[0x768U] != 0U ||
+        raw[0x341FU] != 0U ||
+        raw[0x34D2U] != 0U || raw[0x6633U] != 0U ||
+        raw[0x6774U] != 0U || raw[0x6BD1U] != 0U ||
+        raw[0x8D6FU] != 0U || raw[0x8E20U] != 0U ||
+        raw[0x8EC7U] != 0U || raw[0x9069U] != 0U ||
+        raw[0x906CU] != 0U || raw[0x9171U] != 0U ||
+        raw[0x92FCU] != 0U || raw[0x98FDU] != 0U ||
+        raw[0x9F6BU] != 0U ||
+        raw[0xA3DEU] != 0U || raw[0xA49BU] != 0U ||
+        raw[0xA7B4U] != 0U)
+        return Fail(error, "unsupported optional Build323 structure");
+    const std::size_t auroraWorkNameLength = raw[0xA878U];
+    const std::size_t renderDataUrlLength =
+        static_cast<std::size_t>(ReadLE(raw + 0xA8FDU, 2U));
+    if (isAuroraProfile)
+    {
+        if (ReadLE(raw + 0xA870U, 8U) == 0U ||
+            auroraWorkNameLength != 0U ||
+            ReadLE(raw + 0xA8F9U, 4U) == 0U ||
+            renderDataUrlLength == 0U || renderDataUrlLength > 0x200U)
+            return Fail(error, "Aurora tail does not match the official 21543 shape");
+    }
+    else if (renderDataUrlLength != 0U)
+    {
+        return Fail(error, "non-Aurora profile carries RenderDataURL");
+    }
+
+    const auto emitRange =
+        [&](std::size_t begin, std::size_t end, std::size_t offsetDelta) -> bool
+    {
+        for (std::size_t index = begin; index < end; ++index)
+        {
+            if (!EmitOperation(
+                    kOps[index],
+                    offsetDelta,
+                    raw,
+                    rawSize,
+                    rng,
+                    out,
+                    error))
+                return false;
+        }
+        return true;
+    };
+
+    out.reserve(2048U + gamePlayerCount * 256U);
+    if (!emitRange(0U, 14U, 0U))
+        return false;
+    if (recordCheckCount != 0U && !emitRange(14U, 39U, 0U))
+        return false;
+    if (!emitRange(39U, 72U, 0U))
+        return false;
+    for (std::size_t index = 0; index < syncPlayerCount; ++index)
+    {
+        const std::size_t offsetDelta =
+            index * kNotifyGameBegin509SyncPlayerStride;
+        if (!emitRange(72U, 76U, offsetDelta))
+            return false;
+    }
+    if (!emitRange(76U, 98U, 0U))
+        return false;
+    if (customSchemeCount != 0U &&
+        !EncodeCustomScheme(raw, rng, out, error))
+        return false;
+    if (!emitRange(98U, 136U, 0U))
+        return false;
+    for (std::size_t index = 0; index < gamePlayerCount; ++index)
+    {
+        const std::size_t playerDelta =
+            index * kNotifyGameBegin509GamePlayerStride;
+        if (!emitRange(136U, 137U, playerDelta))
+            return false;
+        const std::size_t playerBase =
+            kNotifyGameBegin509GamePlayerBase + playerDelta;
+        for (std::size_t effectIndex = 0;
+             effectIndex < raw[playerBase + 537U];
+             ++effectIndex)
+        {
+            if (!EncodeGameLogicSpecialEffect(
+                    raw,
+                    playerBase + kNotifyGameBegin509GlEffectBaseDelta +
+                        effectIndex * kNotifyGameBegin509GlEffectStride,
+                    rng,
+                    out,
+                    error))
+                return false;
+        }
+        if (!emitRange(137U, 150U, playerDelta))
+            return false;
+    }
+    if (!emitRange(150U, 154U, 0U))
+        return false;
+    for (std::size_t index = 0; index < baseExParameterCount; ++index)
+    {
+        if (!EmitExtra(
+                Extra509Codec::BaseExParameter,
+                ReadLE(
+                    raw + kNotifyGameBegin509BaseExParameterBase + index * 4U,
+                    4U),
+                4U,
+                out,
+                error))
+            return false;
+    }
+    if (!emitRange(154U, 211U, 0U))
+        return false;
+    // 21543 官服 Aurora 样本的作品名长度为零；非零名称的字节编解码尚无证据。
+    if (!emitRange(211U, 212U, 0U))
+        return false;
+    for (std::size_t index = 0; index < anonymousCount; ++index)
+    {
+        if (!EncodeAnonymousPlayer(
+                raw,
+                kNotifyGameBegin509AnonymousBase +
+                    index * kNotifyGameBegin509AnonymousStride,
+                rng,
+                out,
+                error))
+            return false;
+    }
+    if (!emitRange(212U, 222U, 0U))
+        return false;
+    if (raw[0x74BU] != 0U && !emitRange(222U, 230U, 0U))
+        return false;
+    if (!emitRange(230U, 233U, 0U))
+        return false;
+    for (std::size_t index = 0; index < raw[0x589U]; ++index)
+    {
+        if (!emitRange(233U, 236U, index * 4U))
+            return false;
+    }
+    if (!emitRange(248U, 253U, 0U))
+        return false;
+    if (isAuroraProfile)
+    {
+        out.insert(
+            out.end(),
+            raw + 0xA8FFU,
+            raw + 0xA8FFU + renderDataUrlLength);
+    }
+    if (!emitRange(253U, 254U, 0U))
+        return false;
+    for (std::size_t index = 0; index < shuttleCount; ++index)
+    {
+        if (!EncodeShuttleMap(
+                raw,
+                kNotifyGameBegin509ShuttleBase +
+                    index * kNotifyGameBegin509ShuttleStride,
+                rng,
+                out,
+                error))
+            return false;
+    }
+    return emitRange(254U, kOps.size(), 0U);
+}
+} // namespace qqspeed::build323
+
+// 当前服务端 direct Msg509 -> 21543 固定对象布局的严格适配器。
+namespace qqspeed::build323 {
+namespace {
+
+using FixedRaw = std::array<std::uint8_t, kNotifyGameBegin509FixedRawSize>;
+
+bool Fail(std::string* error, const std::string& message) {
+    if (error != nullptr) {
+        *error = message;
+    }
+    return false;
+}
+
+class Reader {
+public:
+    Reader() noexcept = default;
+
+    Reader(const std::uint8_t* data,
+           std::size_t size,
+           std::string* error,
+           std::string scope)
+        : data_(data), size_(size), error_(error), scope_(std::move(scope)) {}
+
+    bool ReadBytes(std::uint8_t* destination,
+                   std::size_t amount,
+                   const std::string& field) {
+        if (amount > size_ - position_) {
+            return Reject("truncated " + field + " at byte " +
+                          std::to_string(position_));
+        }
+        for (std::size_t index = 0; index < amount; ++index) {
+            destination[index] = data_[position_ + index];
+        }
+        position_ += amount;
+        return true;
+    }
+
+    bool ReadBigEndianU16(std::uint16_t& value, const std::string& field) {
+        std::uint8_t encoded[2]{};
+        if (!ReadBytes(encoded, sizeof(encoded), field)) {
+            return false;
+        }
+        value = static_cast<std::uint16_t>(
+            (static_cast<std::uint16_t>(encoded[0]) << 8U) |
+            static_cast<std::uint16_t>(encoded[1]));
+        return true;
+    }
+
+    bool OpenStruct(Reader& child, const std::string& field) {
+        std::uint16_t declaredSize = 0;
+        if (!ReadBigEndianU16(declaredSize, field + ".length")) {
+            return false;
+        }
+        if (declaredSize < 2U) {
+            return Reject(field + " has an invalid structure length");
+        }
+        const std::size_t bodySize = static_cast<std::size_t>(declaredSize) - 2U;
+        if (bodySize > size_ - position_) {
+            return Reject(field + " structure exceeds its parent at byte " +
+                          std::to_string(position_));
+        }
+        child = Reader(data_ + position_, bodySize, error_, scope_ + "." + field);
+        position_ += bodySize;
+        return true;
+    }
+
+    bool Finish() {
+        if (position_ != size_) {
+            return Reject("has " + std::to_string(size_ - position_) +
+                          " trailing byte(s)");
+        }
+        return true;
+    }
+
+    std::size_t Remaining() const noexcept {
+        return size_ - position_;
+    }
+
+    bool Reject(const std::string& reason) const {
+        return Fail(error_, scope_ + ": " + reason);
+    }
+
+private:
+    const std::uint8_t* data_ = nullptr;
+    std::size_t size_ = 0;
+    std::size_t position_ = 0;
+    std::string* error_ = nullptr;
+    std::string scope_;
+};
+
+enum class Wire : std::uint8_t { None, U8, U16, U32, U64, Bytes };
+
+struct RootField {
+    std::uint32_t offset;
+    Wire wire;
+    std::uint8_t width;
+};
+
+constexpr std::array<RootField, 179> kRootFields = {{
+    RootField{0x0U, Wire::U32, 4U},
+    RootField{0x4U, Wire::U32, 4U},
+    RootField{0x8U, Wire::Bytes, 32U},
+    RootField{0x28U, Wire::U32, 4U},
+    RootField{0x2CU, Wire::U32, 4U},
+    RootField{0x30U, Wire::U8, 1U},
+    RootField{0x31U, Wire::U32, 4U},
+    RootField{0x35U, Wire::U32, 4U},
+    RootField{0x39U, Wire::U32, 4U},
+    RootField{0x3DU, Wire::U32, 4U},
+    RootField{0x41U, Wire::U32, 4U},
+    RootField{0x45U, Wire::U32, 4U},
+    RootField{0x49U, Wire::U32, 4U},
+    RootField{0x4DU, Wire::U32, 4U},
+    RootField{0x51U, Wire::U32, 4U},
+    RootField{0x55U, Wire::U32, 4U},
+    RootField{0x59U, Wire::U32, 4U},
+    RootField{0x5DU, Wire::U32, 4U},
+    RootField{0x61U, Wire::U32, 4U},
+    RootField{0x65U, Wire::U32, 4U},
+    RootField{0x69U, Wire::U32, 4U},
+    RootField{0x6DU, Wire::U32, 4U},
+    RootField{0x71U, Wire::U32, 4U},
+    RootField{0x75U, Wire::U32, 4U},
+    RootField{0x79U, Wire::U32, 4U},
+    RootField{0x7DU, Wire::U32, 4U},
+    RootField{0x81U, Wire::U16, 2U},
+    RootField{0x83U, Wire::U32, 4U},
+    RootField{0x87U, Wire::U32, 4U},
+    RootField{0x8BU, Wire::U8, 1U},
+    RootField{0x113U, Wire::U8, 1U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0x588U, Wire::U8, 1U},
+    RootField{0x589U, Wire::U8, 1U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0x5B2U, Wire::U8, 1U},
+    RootField{0x5B3U, Wire::U8, 1U},
+    RootField{0x5B4U, Wire::U8, 1U},
+    RootField{0x5B5U, Wire::Bytes, 74U},
+    RootField{0x619U, Wire::U8, 1U},
+    RootField{0x61AU, Wire::U8, 1U},
+    RootField{0x61BU, Wire::U16, 2U},
+    RootField{0x61DU, Wire::U16, 2U},
+    RootField{0x61FU, Wire::U16, 2U},
+    RootField{0x621U, Wire::U16, 2U},
+    RootField{0x623U, Wire::U16, 2U},
+    RootField{0x625U, Wire::U16, 2U},
+    RootField{0x627U, Wire::U16, 2U},
+    RootField{0x629U, Wire::U16, 2U},
+    RootField{0x62FU, Wire::U8, 1U},
+    RootField{0x630U, Wire::U16, 2U},
+    RootField{0x632U, Wire::U16, 2U},
+    RootField{0x634U, Wire::U16, 2U},
+    RootField{0x636U, Wire::U16, 2U},
+    RootField{0x638U, Wire::U16, 2U},
+    RootField{0x63AU, Wire::U16, 2U},
+    RootField{0x63CU, Wire::U16, 2U},
+    RootField{0x63EU, Wire::U16, 2U},
+    RootField{0x644U, Wire::U8, 1U},
+    RootField{0x72BU, Wire::U8, 1U},
+    RootField{0x72CU, Wire::U16, 2U},
+    RootField{0x72EU, Wire::U32, 4U},
+    RootField{0x732U, Wire::U32, 4U},
+    RootField{0x736U, Wire::U32, 4U},
+    RootField{0x73AU, Wire::U8, 1U},
+    RootField{0x73BU, Wire::U32, 4U},
+    RootField{0x73FU, Wire::U8, 1U},
+    RootField{0x74AU, Wire::U8, 1U},
+    RootField{0x74BU, Wire::U8, 1U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0x768U, Wire::U8, 1U},
+    RootField{0x785U, Wire::U32, 4U},
+    RootField{0x789U, Wire::U8, 1U},
+    RootField{0x78AU, Wire::U32, 4U},
+    RootField{0x78EU, Wire::U32, 4U},
+    RootField{0x792U, Wire::U32, 4U},
+    RootField{0x796U, Wire::U8, 1U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0x341FU, Wire::U8, 1U},
+    RootField{0x3450U, Wire::U8, 1U},
+    RootField{0x34CEU, Wire::U32, 4U},
+    RootField{0x34D2U, Wire::U8, 1U},
+    RootField{0x6633U, Wire::U8, 1U},
+    RootField{0x6724U, Wire::U32, 4U},
+    RootField{0x6728U, Wire::U32, 4U},
+    RootField{0x672CU, Wire::U32, 4U},
+    RootField{0x6730U, Wire::U32, 4U},
+    RootField{0x6734U, Wire::U32, 4U},
+    RootField{0x6738U, Wire::U32, 4U},
+    RootField{0x673CU, Wire::U32, 4U},
+    RootField{0x6740U, Wire::U32, 4U},
+    RootField{0x6744U, Wire::U32, 4U},
+    RootField{0x6748U, Wire::U32, 4U},
+    RootField{0x674CU, Wire::U32, 4U},
+    RootField{0x6750U, Wire::U32, 4U},
+    RootField{0x6754U, Wire::U32, 4U},
+    RootField{0x6758U, Wire::U32, 4U},
+    RootField{0x675CU, Wire::U32, 4U},
+    RootField{0x6760U, Wire::U32, 4U},
+    RootField{0x6764U, Wire::U32, 4U},
+    RootField{0x6768U, Wire::U32, 4U},
+    RootField{0x676CU, Wire::U32, 4U},
+    RootField{0x6770U, Wire::U32, 4U},
+    RootField{0x6774U, Wire::U8, 1U},
+    RootField{0x6BD1U, Wire::U8, 1U},
+    RootField{0x8D6FU, Wire::U8, 1U},
+    RootField{0x8E0CU, Wire::U8, 1U},
+    RootField{0x8E0DU, Wire::U32, 4U},
+    RootField{0x8E11U, Wire::U32, 4U},
+    RootField{0x8E15U, Wire::U32, 4U},
+    RootField{0x8E19U, Wire::U32, 4U},
+    RootField{0x8E1DU, Wire::U8, 1U},
+    RootField{0x8E1EU, Wire::U16, 2U},
+    RootField{0x8E20U, Wire::U8, 1U},
+    RootField{0x8E5DU, Wire::U16, 2U},
+    RootField{0x8E5FU, Wire::U16, 2U},
+    RootField{0x8E61U, Wire::U8, 1U},
+    RootField{0x8E62U, Wire::U8, 1U},
+    RootField{0x8E63U, Wire::U16, 2U},
+    RootField{0x8E65U, Wire::U16, 2U},
+    RootField{0x8E67U, Wire::U16, 2U},
+    RootField{0x8E69U, Wire::U8, 1U},
+    RootField{0x8E6AU, Wire::U16, 2U},
+    RootField{0x8E6CU, Wire::U16, 2U},
+    RootField{0x8E6EU, Wire::U32, 4U},
+    RootField{0x8E72U, Wire::U16, 2U},
+    RootField{0x8E74U, Wire::U8, 1U},
+    RootField{0x8E75U, Wire::U8, 1U},
+    RootField{0x8EC6U, Wire::U8, 1U},
+    RootField{0x8EC7U, Wire::U8, 1U},
+    RootField{0x9069U, Wire::U8, 1U},
+    RootField{0x906CU, Wire::U8, 1U},
+    RootField{0x915FU, Wire::U16, 2U},
+    RootField{0x9161U, Wire::U32, 4U},
+    RootField{0x9165U, Wire::U32, 4U},
+    RootField{0x9169U, Wire::U32, 4U},
+    RootField{0x916DU, Wire::U32, 4U},
+    RootField{0x9171U, Wire::U8, 1U},
+    RootField{0x92B8U, Wire::U16, 2U},
+    RootField{0x92BAU, Wire::U16, 2U},
+    RootField{0x92FCU, Wire::U8, 1U},
+    RootField{0x98FDU, Wire::U8, 1U},
+    RootField{0x9B0CU, Wire::U8, 1U},
+    RootField{0x9B0DU, Wire::U8, 1U},
+    RootField{0x9F6AU, Wire::U8, 1U},
+    RootField{0x9F6BU, Wire::U8, 1U},
+    RootField{0xA05EU, Wire::U8, 1U},
+    RootField{0xA05FU, Wire::U8, 1U},
+    RootField{0xA060U, Wire::U8, 1U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0U, Wire::None, 0U},
+    RootField{0xA3D9U, Wire::U32, 4U},
+    RootField{0xA3DDU, Wire::U8, 1U},
+    RootField{0xA3DEU, Wire::U8, 1U},
+    RootField{0xA418U, Wire::U16, 2U},
+    RootField{0xA41AU, Wire::U8, 1U},
+    RootField{0xA41BU, Wire::U32, 4U},
+    RootField{0xA41FU, Wire::U32, 4U},
+    RootField{0xA423U, Wire::U32, 4U},
+    RootField{0xA427U, Wire::U32, 4U},
+    RootField{0xA49BU, Wire::U8, 1U},
+    RootField{0xA7A8U, Wire::U32, 4U},
+    RootField{0xA7ACU, Wire::U32, 4U},
+    RootField{0xA7B0U, Wire::U32, 4U},
+    RootField{0xA7B4U, Wire::U8, 1U},
+    RootField{0xA7BDU, Wire::U32, 4U},
+    RootField{0xA7C1U, Wire::U8, 1U},
+    RootField{0xA7C2U, Wire::U8, 1U},
+    RootField{0xA7C3U, Wire::U8, 1U},
+    RootField{0xA870U, Wire::U64, 8U},
+    RootField{0xA878U, Wire::U8, 1U},
+    RootField{0xA8F9U, Wire::U32, 4U},
+    RootField{0xA8FDU, Wire::U16, 2U},
+    RootField{0xAAFFU, Wire::U32, 4U},
+}};
+
+bool StoreNumber(Reader& reader,
+                 FixedRaw& raw,
+                 std::size_t offset,
+                 std::size_t width,
+                 const std::string& field) {
+    if (width != 1U && width != 2U && width != 4U && width != 8U) {
+        return reader.Reject("internal invalid numeric width for " + field);
+    }
+    if (offset > raw.size() || width > raw.size() - offset) {
+        return reader.Reject("internal fixed-raw range error for " + field);
+    }
+    std::uint8_t encoded[8]{};
+    if (!reader.ReadBytes(encoded, width, field)) {
+        return false;
+    }
+    for (std::size_t index = 0; index < width; ++index) {
+        raw[offset + index] = encoded[width - 1U - index];
+    }
+    return true;
+}
+
+bool StoreBytes(Reader& reader,
+                FixedRaw& raw,
+                std::size_t offset,
+                std::size_t width,
+                const std::string& field) {
+    if (offset > raw.size() || width > raw.size() - offset) {
+        return reader.Reject("internal fixed-raw range error for " + field);
+    }
+    return reader.ReadBytes(raw.data() + offset, width, field);
+}
+
+bool StoreRootField(Reader& reader,
+                    FixedRaw& raw,
+                    std::size_t fieldIndex) {
+    const RootField& field = kRootFields[fieldIndex];
+    const std::string name = "root[" + std::to_string(fieldIndex) + "]";
+    switch (field.wire) {
+    case Wire::U8:
+    case Wire::U16:
+    case Wire::U32:
+    case Wire::U64:
+        return StoreNumber(reader, raw, field.offset, field.width, name);
+    case Wire::Bytes:
+        return StoreBytes(reader, raw, field.offset, field.width, name);
+    case Wire::None:
+        return reader.Reject("internal attempt to parse a child as a scalar");
+    }
+    return reader.Reject("internal unknown wire type");
+}
+
+std::uint16_t LoadLittleEndianU16(const FixedRaw& raw, std::size_t offset) {
+    return static_cast<std::uint16_t>(
+        static_cast<std::uint16_t>(raw[offset]) |
+        (static_cast<std::uint16_t>(raw[offset + 1U]) << 8U));
+}
+
+bool ParseSyncCar(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "SyncCar")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 4U, "SyncCar.field0") ||
+        !StoreNumber(child, raw, base + 4U, 4U, "SyncCar.field1") ||
+        !StoreNumber(child, raw, base + 8U, 1U, "SyncCar.HasStone")) {
+        return false;
+    }
+    if (raw[base + 8U] != 0U) {
+        return child.Reject("unsupported SyncCar stone branch");
+    }
+    return child.Finish();
+}
+
+bool ParseMapCheck(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "MapCheckDiv")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 2U, "MapCheckDiv.field0") ||
+        !StoreNumber(child, raw, base + 2U, 2U, "MapCheckDiv.field1")) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseAntiDrift(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "AntiDrift")) {
+        return false;
+    }
+    for (std::size_t index = 0; index < 7U; ++index) {
+        if (!StoreNumber(child,
+                         raw,
+                         base + index * 4U,
+                         4U,
+                         "AntiDrift[" + std::to_string(index) + "]")) {
+            return false;
+        }
+    }
+    return child.Finish();
+}
+
+bool ParseSkill(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "ChumCircleSkill")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 4U, "ChumCircleSkill.id") ||
+        !StoreNumber(child, raw, base + 4U, 4U, "ChumCircleSkill.level")) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseProfessionLicense(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "ProfessionLicense")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 1U, "ProfessionLicense.field0") ||
+        !StoreNumber(child, raw, base + 1U, 1U, "ProfessionLicense.field1")) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseGameLogicSpecialEffect(
+    Reader& parent,
+    FixedRaw& raw,
+    std::size_t base)
+{
+    Reader child;
+    if (!parent.OpenStruct(child, "GameLogicSpecialEffect")) {
+        return false;
+    }
+    if (!StoreNumber(
+            child,
+            raw,
+            base,
+            4U,
+            "GameLogicSpecialEffect.type") ||
+        !StoreNumber(
+            child,
+            raw,
+            base + 4U,
+            4U,
+            "GameLogicSpecialEffect.parameter0")) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseGameBeginPlayer(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "GameBeginPlayerInfo")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 4U, "GameBeginPlayerInfo.field0") ||
+        !StoreNumber(child, raw, base + 4U, 4U, "GameBeginPlayerInfo.field1") ||
+        !StoreNumber(child, raw, base + 8U, 1U, "GameBeginPlayerInfo.SkillNums")) {
+        return false;
+    }
+
+    const std::size_t skillCount = raw[base + 8U];
+    constexpr std::size_t kSkillCapacity = 6U;
+    if (skillCount > kSkillCapacity) {
+        return child.Reject("SkillNums exceeds the recovered capacity of 6");
+    }
+    for (std::size_t index = 0; index < skillCount; ++index) {
+        if (!ParseSkill(child, raw, base + 9U + index * 8U)) {
+            return false;
+        }
+    }
+
+    if (!StoreNumber(child,
+                     raw,
+                     base + 57U,
+                     4U,
+                     "GameBeginPlayerInfo.WorldEscapeFlag")) {
+        return false;
+    }
+    if (!ParseProfessionLicense(child, raw, base + 61U)) {
+        return false;
+    }
+    if (!StoreNumber(child,
+                     raw,
+                     base + 63U,
+                     1U,
+                     "GameBeginPlayerInfo.EffectBuffCount")) {
+        return false;
+    }
+    if (raw[base + 63U] != 0U) {
+        return child.Reject("unsupported player effect-buff branch");
+    }
+    if (!StoreNumber(child,
+                     raw,
+                     base + 448U,
+                     4U,
+                     "GameBeginPlayerInfo.Stars") ||
+        !StoreNumber(child,
+                     raw,
+                     base + 452U,
+                     1U,
+                     "GameBeginPlayerInfo.ParaNum")) {
+        return false;
+    }
+    if (raw[base + 452U] != 0U) {
+        return child.Reject("unsupported player Para branch");
+    }
+    if (!StoreNumber(child,
+                     raw,
+                     base + 533U,
+                     4U,
+                     "GameBeginPlayerInfo.Equip") ||
+        !StoreNumber(child,
+                     raw,
+                     base + 537U,
+                     1U,
+                     "GameBeginPlayerInfo.GLSpeclEffectCount")) {
+        return false;
+    }
+    if (raw[base + 537U] > kNotifyGameBegin509GlEffectCapacity) {
+        return child.Reject("GLSpeclEffect count exceeds fixed object capacity");
+    }
+    for (std::size_t index = 0; index < raw[base + 537U]; ++index) {
+        if (!ParseGameLogicSpecialEffect(
+                child,
+                raw,
+                base + kNotifyGameBegin509GlEffectBaseDelta +
+                    index * kNotifyGameBegin509GlEffectStride)) {
+            return false;
+        }
+    }
+    return child.Finish();
+}
+
+bool ParseShuttleMap(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "ShuttleMap")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 4U, "ShuttleMap.mapId") ||
+        !StoreNumber(child, raw, base + 4U, 4U, "ShuttleMap.beginIndex") ||
+        !StoreNumber(child, raw, base + 8U, 4U, "ShuttleMap.endIndex") ||
+        !StoreNumber(child, raw, base + 12U, 1U, "ShuttleMap.reverse") ||
+        !StoreNumber(
+            child,
+            raw,
+            base + 13U,
+            2U,
+            "ShuttleMap.beginCheckPointIndex") ||
+        !StoreNumber(child, raw, base + 15U, 4U, "ShuttleMap.probability") ||
+        !StoreNumber(child, raw, base + 19U, 1U, "ShuttleMap.tagCount")) {
+        return false;
+    }
+    if (raw[base + 19U] != 0U) {
+        return child.Reject("Build323 official shuttle samples require zero tags");
+    }
+    if (!StoreNumber(child, raw, base + 24U, 1U, "ShuttleMap.shuttleType")) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseAnonymousAvatar(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "AnonymousAvatar")) {
+        return false;
+    }
+    for (std::size_t index = 0; index < 17U; ++index) {
+        if (!StoreNumber(
+                child,
+                raw,
+                base + index * 4U,
+                4U,
+                "AnonymousAvatar[" + std::to_string(index) + "]")) {
+            return false;
+        }
+    }
+    return child.Finish();
+}
+
+bool ParseAnonymousPlayer(Reader& parent, FixedRaw& raw, std::size_t base) {
+    Reader child;
+    if (!parent.OpenStruct(child, "AnonymousPlayer")) {
+        return false;
+    }
+    for (std::size_t index = 0; index < 6U; ++index) {
+        if (!StoreNumber(
+                child,
+                raw,
+                base + index * 4U,
+                4U,
+                "AnonymousPlayer.scalar[" + std::to_string(index) + "]")) {
+            return false;
+        }
+    }
+    if (!StoreNumber(
+            child,
+            raw,
+            base + 24U,
+            1U,
+            "AnonymousPlayer.avatarCount")) {
+        return false;
+    }
+    if (raw[base + 24U] != 1U) {
+        return child.Reject("Build323 anonymous avatar count must be one");
+    }
+    if (!ParseAnonymousAvatar(child, raw, base + 25U)) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseCustomScheme(Reader& parent, FixedRaw& raw) {
+    constexpr std::size_t base = kNotifyGameBegin509CustomSchemeBase;
+    Reader child;
+    if (!parent.OpenStruct(child, "CustomScheme")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 4U, "CustomScheme.id") ||
+        !StoreBytes(child, raw, base + 4U, 128U, "CustomScheme.name") ||
+        !StoreNumber(child, raw, base + 132U, 4U, "CustomScheme.createTime") ||
+        !StoreNumber(child, raw, base + 136U, 4U, "CustomScheme.updateTime") ||
+        !StoreNumber(child, raw, base + 140U, 2U, "CustomScheme.baseMode") ||
+        !StoreNumber(child, raw, base + 142U, 2U, "CustomScheme.subMode") ||
+        !StoreNumber(child, raw, base + 144U, 1U, "CustomScheme.allocServerType") ||
+        !StoreNumber(
+            child,
+            raw,
+            base + 145U,
+            1U,
+            "CustomScheme.eliminationInterval") ||
+        !StoreNumber(
+            child,
+            raw,
+            base + 146U,
+            1U,
+            "CustomScheme.eliminationRanking") ||
+        !StoreNumber(child, raw, base + 147U, 1U, "CustomScheme.roundCount") ||
+        !StoreNumber(child, raw, base + 148U, 1U, "CustomScheme.n2oMode") ||
+        !StoreNumber(child, raw, base + 149U, 4U, "CustomScheme.n2oEffect") ||
+        !StoreNumber(child, raw, base + 153U, 1U, "CustomScheme.smallSpray") ||
+        !StoreNumber(child, raw, base + 154U, 1U, "CustomScheme.collision") ||
+        !StoreNumber(child, raw, base + 155U, 1U, "CustomScheme.gem") ||
+        !StoreNumber(child, raw, base + 156U, 1U, "CustomScheme.costume") ||
+        !StoreNumber(child, raw, base + 157U, 1U, "CustomScheme.modification") ||
+        !StoreNumber(child, raw, base + 158U, 1U, "CustomScheme.mapCount")) {
+        return false;
+    }
+    if (raw[base + 158U] == 0U || raw[base + 158U] > 3U) {
+        return child.Reject("custom-scheme map count is outside official capacity");
+    }
+    for (std::size_t index = 0; index < 3U; ++index) {
+        if (!StoreNumber(
+                child,
+                raw,
+                base + 159U + index * 4U,
+                4U,
+                "CustomScheme.mapIds[" + std::to_string(index) + "]")) {
+            return false;
+        }
+    }
+    if (!StoreNumber(
+            child,
+            raw,
+            base + 171U,
+            1U,
+            "CustomScheme.noCollisionSeconds")) {
+        return false;
+    }
+    return child.Finish();
+}
+
+bool ParseRecordCondition(Reader& parent,
+                          FixedRaw& raw,
+                          std::size_t base,
+                          std::size_t parameterCapacity,
+                          bool requireCapacity) {
+    Reader child;
+    if (!parent.OpenStruct(child, "RecordCondition")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 2U, "RecordCondition.type") ||
+        !StoreNumber(child, raw, base + 2U, 1U, "RecordCondition.paramCount")) {
+        return false;
+    }
+    const std::size_t parameterCount = raw[base + 2U];
+    if (parameterCount > parameterCapacity) {
+        return child.Reject("record condition parameter count exceeds recovered capacity");
+    }
+    if (requireCapacity && parameterCount != parameterCapacity) {
+        return child.Reject("unsupported final record condition parameter shape");
+    }
+    for (std::size_t index = 0; index < parameterCount; ++index) {
+        if (!StoreNumber(child,
+                         raw,
+                         base + 3U + index * 4U,
+                         4U,
+                         "RecordCondition.params[" + std::to_string(index) + "]")) {
+            return false;
+        }
+    }
+    return child.Finish();
+}
+
+bool ParseRecord(Reader& parent,
+                 FixedRaw& raw,
+                 std::size_t base,
+                 std::size_t recordIndex) {
+    constexpr std::array<std::size_t, 3> kConditionCounts{{2U, 2U, 1U}};
+    constexpr std::array<std::array<std::size_t, 2>, 3> kParameterCaps{{
+        {{5U, 5U}},
+        {{5U, 6U}},
+        {{1U, 0U}},
+    }};
+
+    Reader child;
+    if (!parent.OpenStruct(child, "RecordCheck")) {
+        return false;
+    }
+    if (!StoreNumber(child, raw, base, 2U, "RecordCheck.type") ||
+        !StoreNumber(child, raw, base + 2U, 1U, "RecordCheck.conditionCount")) {
+        return false;
+    }
+    const std::size_t conditionCount = raw[base + 2U];
+    if (conditionCount != kConditionCounts[recordIndex]) {
+        return child.Reject("unsupported RecordCheck condition shape");
+    }
+    for (std::size_t index = 0; index < conditionCount; ++index) {
+        const bool isFinalStaticCondition = recordIndex == 2U && index == 0U;
+        if (!ParseRecordCondition(child,
+                                  raw,
+                                  base + 3U + index * 27U,
+                                  kParameterCaps[recordIndex][index],
+                                  isFinalStaticCondition)) {
+            return false;
+        }
+    }
+    return child.Finish();
+}
+
+bool ParseRoot(Reader& root, FixedRaw& decoded) {
+    constexpr std::array<std::size_t, 3> kRecordBases{{0xA061U, 0xA0D0U, 0xA13FU}};
+
+    for (std::size_t fieldIndex = 0; fieldIndex < kRootFields.size();) {
+        switch (fieldIndex) {
+        case 5U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x30U] == 0U ||
+                decoded[0x30U] > kNotifyGameBegin509PlayerCapacity) {
+                return root.Reject(
+                    "current-player count is outside the recovered capacity");
+            }
+            ++fieldIndex;
+            break;
+
+        case 29U:
+        case 62U:
+        case 70U:
+        case 74U:
+        case 82U:
+        case 85U:
+        case 86U:
+        case 107U:
+        case 108U:
+        case 109U:
+        case 117U:
+        case 133U:
+        case 134U:
+        case 135U:
+        case 141U:
+        case 144U:
+        case 145U:
+        case 149U:
+        case 158U:
+        case 165U:
+        case 169U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[kRootFields[fieldIndex].offset] != 0U) {
+                return root.Reject(
+                    "unsupported optional branch at fixed-raw offset " +
+                    std::to_string(kRootFields[fieldIndex].offset));
+            }
+            ++fieldIndex;
+            break;
+
+        case 30U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x113U] == 0U ||
+                decoded[0x113U] > kNotifyGameBegin509PlayerCapacity) {
+                return root.Reject(
+                    "SyncCar count is outside the recovered capacity");
+            }
+            for (std::size_t index = 0; index < decoded[0x113U]; ++index) {
+                if (!ParseSyncCar(
+                        root,
+                        decoded,
+                        kNotifyGameBegin509SyncPlayerBase +
+                            index * kNotifyGameBegin509SyncPlayerStride)) {
+                    return false;
+                }
+            }
+            fieldIndex = 32U;
+            break;
+
+        case 33U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x589U] > kNotifyGameBegin509MapCheckCapacity) {
+                return root.Reject(
+                    "MapCheckDiv count exceeds the recovered capacity");
+            }
+            for (std::size_t index = 0; index < decoded[0x589U]; ++index) {
+                if (!ParseMapCheck(root, decoded, 0x58AU + index * 4U)) {
+                    return false;
+                }
+            }
+            fieldIndex = 39U;
+            break;
+
+        case 41U: {
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            const std::size_t count = decoded[0x5B4U];
+            if (count > 74U) {
+                return root.Reject("MultiInfo length exceeds recovered capacity of 74");
+            }
+            if (!StoreBytes(root, decoded, 0x5B5U, count, "MultiInfo")) {
+                return false;
+            }
+            fieldIndex = 43U;
+            break;
+        }
+
+        case 44U: {
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            const std::size_t count = decoded[0x61AU];
+            if (count > 8U) {
+                return root.Reject("SpeedSection count exceeds recovered capacity of 8");
+            }
+            for (std::size_t index = 0; index < count; ++index) {
+                if (!StoreNumber(root,
+                                 decoded,
+                                 0x61BU + index * 2U,
+                                 2U,
+                                 "SpeedSection[" + std::to_string(index) + "]")) {
+                    return false;
+                }
+            }
+            fieldIndex = 53U;
+            break;
+        }
+
+        case 53U: {
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            const std::size_t count = decoded[0x62FU];
+            if (count > 8U) {
+                return root.Reject("NormalSpeed count exceeds recovered capacity of 8");
+            }
+            for (std::size_t index = 0; index < count; ++index) {
+                if (!StoreNumber(root,
+                                 decoded,
+                                 0x630U + index * 2U,
+                                 2U,
+                                 "NormalSpeed[" + std::to_string(index) + "]")) {
+                    return false;
+                }
+            }
+            fieldIndex = 62U;
+            break;
+        }
+
+        case 72U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x74BU] > 1U) {
+                return root.Reject("invalid AntiDrift presence flag");
+            }
+            if (decoded[0x74BU] != 0U &&
+                !ParseAntiDrift(root, decoded, 0x74CU)) {
+                return false;
+            }
+            fieldIndex = 74U;
+            break;
+
+        case 80U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x796U] == 0U ||
+                decoded[0x796U] > kNotifyGameBegin509PlayerCapacity) {
+                return root.Reject(
+                    "game-begin player count is outside the recovered capacity");
+            }
+            for (std::size_t index = 0; index < decoded[0x796U]; ++index) {
+                if (!ParseGameBeginPlayer(
+                        root,
+                        decoded,
+                        kNotifyGameBegin509GamePlayerBase +
+                            index * kNotifyGameBegin509GamePlayerStride)) {
+                    return false;
+                }
+            }
+            fieldIndex = 82U;
+            break;
+
+        case 83U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x3450U] > kNotifyGameBegin509ShuttleCapacity) {
+                return root.Reject(
+                    "shuttle-map count exceeds fixed object capacity");
+            }
+            for (std::size_t index = 0; index < decoded[0x3450U]; ++index) {
+                if (!ParseShuttleMap(
+                        root,
+                        decoded,
+                        kNotifyGameBegin509ShuttleBase +
+                            index * kNotifyGameBegin509ShuttleStride)) {
+                    return false;
+                }
+            }
+            ++fieldIndex;
+            break;
+
+        case 131U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x8E75U] >
+                kNotifyGameBegin509BaseExParameterCapacity) {
+                return root.Reject(
+                    "BaseGameModeEx parameter count exceeds fixed object capacity");
+            }
+            for (std::size_t index = 0; index < decoded[0x8E75U]; ++index) {
+                if (!StoreNumber(
+                        root,
+                        decoded,
+                        kNotifyGameBegin509BaseExParameterBase + index * 4U,
+                        4U,
+                        "BaseGameModeEx.parameters[" +
+                            std::to_string(index) + "]")) {
+                    return false;
+                }
+            }
+            ++fieldIndex;
+            break;
+
+        case 147U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0x9B0DU] > kNotifyGameBegin509AnonymousCapacity) {
+                return root.Reject(
+                    "anonymous-player count exceeds fixed object capacity");
+            }
+            for (std::size_t index = 0; index < decoded[0x9B0DU]; ++index) {
+                if (!ParseAnonymousPlayer(
+                        root,
+                        decoded,
+                        kNotifyGameBegin509AnonymousBase +
+                            index * kNotifyGameBegin509AnonymousStride)) {
+                    return false;
+                }
+            }
+            ++fieldIndex;
+            break;
+
+        case 152U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0xA060U] != 0U && decoded[0xA060U] != 3U) {
+                return root.Reject(
+                    "RecordCheck count is neither zero nor the official three-record shape");
+            }
+            if (decoded[0xA060U] != 0U) {
+                for (std::size_t index = 0; index < kRecordBases.size(); ++index) {
+                    if (!ParseRecord(root, decoded, kRecordBases[index], index)) {
+                        return false;
+                    }
+                }
+            }
+            fieldIndex = 156U;
+            break;
+
+        case 160U: {
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            const std::size_t count = decoded[0xA41AU];
+            if (count > 4U) {
+                return root.Reject("RaceSync count exceeds recovered capacity of 4");
+            }
+            for (std::size_t index = 0; index < count; ++index) {
+                if (!StoreNumber(root,
+                                 decoded,
+                                 0xA41BU + index * 4U,
+                                 4U,
+                                 "RaceSync[" + std::to_string(index) + "]")) {
+                    return false;
+                }
+            }
+            fieldIndex = 165U;
+            break;
+        }
+
+        case 173U: {
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (decoded[0xA7C3U] > 1U) {
+                return root.Reject(
+                    "custom-scheme presence count exceeds fixed object capacity");
+            }
+            const std::uint16_t baseMode =
+                LoadLittleEndianU16(decoded, 0x8E65U);
+            const std::uint16_t subMode =
+                LoadLittleEndianU16(decoded, 0x8E67U);
+            if (baseMode == 42U && subMode == 29U) {
+                if (decoded[0xA7C3U] != 0U) {
+                    return root.Reject(
+                        "Aurora profile carries a custom-scheme branch");
+                }
+                if (!StoreRootField(root, decoded, 174U) ||
+                    !StoreRootField(root, decoded, 175U)) {
+                    return false;
+                }
+                if (decoded[0xA878U] != 0U) {
+                    return root.Reject(
+                        "Aurora WorkName is not the verified zero-length shape");
+                }
+                if (!StoreRootField(root, decoded, 176U) ||
+                    !StoreRootField(root, decoded, 177U)) {
+                    return false;
+                }
+                const std::size_t urlLength =
+                    LoadLittleEndianU16(decoded, 0xA8FDU);
+                if (urlLength == 0U || urlLength > 0x200U) {
+                    return root.Reject(
+                        "Aurora RenderDataURL length is outside 1..512");
+                }
+                if (!root.ReadBytes(
+                        decoded.data() + 0xA8FFU,
+                        urlLength,
+                        "Aurora.RenderDataURL")) {
+                    return false;
+                }
+                fieldIndex = kRootFields.size();
+                break;
+            }
+            if (decoded[0xA7C3U] != 0U &&
+                !ParseCustomScheme(root, decoded)) {
+                return false;
+            }
+            // 21529 起在旧尾部之后新增 GameBeginSwitchFlag2；21543 原生读取器仍
+            // 接受没有该字段的旧 direct body，存在尾部时则严格读取四字节。
+            fieldIndex = root.Remaining() == 0U
+                ? kRootFields.size()
+                : kRootFields.size() - 1U;
+            break;
+        }
+
+        case 177U:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            if (LoadLittleEndianU16(decoded, 0xA8FDU) != 0U) {
+                return root.Reject("normal branch does not carry RenderDataURL");
+            }
+            ++fieldIndex;
+            break;
+
+        default:
+            if (!StoreRootField(root, decoded, fieldIndex)) {
+                return false;
+            }
+            ++fieldIndex;
+            break;
+        }
+    }
+
+    const std::uint16_t baseMode =
+        LoadLittleEndianU16(decoded, 0x8E65U);
+    const std::uint16_t subMode =
+        LoadLittleEndianU16(decoded, 0x8E67U);
+    const bool isNormalProfile = baseMode == 1U && subMode == 1U;
+    const bool isCarGodProfile = baseMode == 10U && subMode == 1U;
+    const bool isRankedProfile = baseMode == 40U && subMode == 1U;
+    const bool isCustomProfile = baseMode == 42U && subMode == 27U;
+    const bool isAuroraProfile = baseMode == 42U && subMode == 29U;
+    if (!isNormalProfile && !isCarGodProfile && !isRankedProfile && !isCustomProfile &&
+        !isAuroraProfile) {
+        return root.Reject("unsupported BaseMode/SubMode branch");
+    }
+    if (decoded[0x30U] != decoded[0x113U] ||
+        decoded[0x30U] != decoded[0x796U]) {
+        return root.Reject(
+            "current/sync/game-begin player counts do not match");
+    }
+    if (isNormalProfile &&
+        (decoded[0xA060U] != 3U ||
+         (decoded[0x9B0DU] != 0U &&
+          decoded[0x9B0DU] != decoded[0x796U]) ||
+         decoded[0xA7C3U] != 0U || decoded[0x3450U] != 0U ||
+         decoded[0x8E75U] != 0U)) {
+        return root.Reject(
+            "normal profile optional branches do not match supported shape");
+    }
+    if (isCarGodProfile &&
+        (decoded[0x30U] != 1U || decoded[0xA060U] != 3U ||
+         decoded[0x9B0DU] != 0U || decoded[0xA7C3U] != 0U ||
+         decoded[0x3450U] != 0U || decoded[0x8E75U] != 0U)) {
+        return root.Reject(
+            "car-god profile optional branches do not match supported shape");
+    }
+    if (isRankedProfile &&
+        (decoded[0xA060U] != 3U ||
+         decoded[0x9B0DU] != decoded[0x796U] ||
+         decoded[0xA7C3U] != 0U || decoded[0x3450U] != 0U ||
+         decoded[0x8E75U] != 0U)) {
+        return root.Reject(
+            "ranked profile optional branches do not match official shape");
+    }
+    if (isCustomProfile) {
+        if (decoded[0xA060U] != 0U || decoded[0x9B0DU] != 0U ||
+            decoded[0xA7C3U] != 1U || decoded[0x3450U] == 0U) {
+            return root.Reject(
+                "custom profile optional branches do not match official shape");
+        }
+        if (decoded[kNotifyGameBegin509CustomSchemeBase + 158U] !=
+            decoded[0x3450U]) {
+            return root.Reject(
+                "custom-scheme map count and shuttle-map count differ");
+        }
+    }
+    if (isAuroraProfile) {
+        const std::size_t urlLength =
+            LoadLittleEndianU16(decoded, 0xA8FDU);
+        if (decoded[0xA060U] != 3U || decoded[0x9B0DU] != 0U ||
+            decoded[0xA7C3U] != 0U || decoded[0x3450U] != 0U ||
+            decoded[0x8E75U] != 0U ||
+            ReadLE(decoded.data() + 0xA870U, 8U) == 0U ||
+            decoded[0xA878U] != 0U ||
+            ReadLE(decoded.data() + 0xA8F9U, 4U) == 0U ||
+            urlLength == 0U || urlLength > 0x200U) {
+            return root.Reject(
+                "Aurora profile does not match the official 21543 shape");
+        }
+    }
+    return root.Finish();
+}
+
+}  // namespace
+
+bool DecodeNotifyGameBegin509LegacyBody(
+    const std::uint8_t* bodyWithoutRootLength,
+    std::size_t bodySize,
+    std::array<std::uint8_t, kNotifyGameBegin509FixedRawSize>& fixedRaw,
+    std::string* error) {
+    if (error != nullptr) {
+        error->clear();
+    }
+    if (bodyWithoutRootLength == nullptr) {
+        return Fail(error, "legacy msg509 body is null");
+    }
+    constexpr std::size_t kMaximumRootBody =
+        static_cast<std::size_t>((std::numeric_limits<std::uint16_t>::max)()) - 2U;
+    if (bodySize > kMaximumRootBody) {
+        return Fail(error, "legacy msg509 body cannot be represented by its root u16 length");
+    }
+
+    FixedRaw decoded{};
+    Reader root(bodyWithoutRootLength, bodySize, error, "NotifyGameBegin509");
+    if (!ParseRoot(root, decoded)) {
+        return false;
+    }
+    fixedRaw = decoded;
+    return true;
+}
+
+bool EncodeNotifyGameBegin509FromLegacyBody(
+    const std::uint8_t* bodyWithoutRootLength,
+    std::size_t bodySize,
+    std::mt19937_64& paddingRng,
+    std::vector<std::uint8_t>& safeOut,
+    std::string* error) {
+    safeOut.clear();
+    FixedRaw fixedRaw{};
+    if (!DecodeNotifyGameBegin509LegacyBody(
+            bodyWithoutRootLength, bodySize, fixedRaw, error)) {
+        return false;
+    }
+    return EncodeNotifyGameBegin509(
+        fixedRaw.data(), fixedRaw.size(), paddingRng, safeOut, error);
+}
+
+}  // namespace qqspeed::build323
+
+bool BuildOfficialSafeGameBegin509(
+    UINT outerUin,
+    UINT context,
+    DWORD clientPid,
+    const BYTE* plainBody,
+    size_t plainBodyLen,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0)
+    {
+        if (diag) *diag = "outer uin zero";
+        return false;
+    }
+    if (context == 0)
+    {
+        if (diag) *diag = "outer context zero";
+        return false;
+    }
+    if (clientPid == 0)
+    {
+        if (diag) *diag = "client PID is zero";
+        return false;
+    }
+    if (!plainBody || plainBodyLen == 0)
+    {
+        if (diag) *diag = "Msg509 plain body is missing";
+        return false;
+    }
+
+    std::array<std::uint8_t,
+        qqspeed::build323::kNotifyGameBegin509FixedRawSize> fixedRaw{};
+    if (!qqspeed::build323::DecodeNotifyGameBegin509LegacyBody(
+            reinterpret_cast<const std::uint8_t*>(plainBody),
+            plainBodyLen,
+            fixedRaw,
+            diag))
+        return false;
+
+    const auto readFixedLE32 = [&fixedRaw](std::size_t offset) -> std::uint32_t
+    {
+        return static_cast<std::uint32_t>(fixedRaw[offset]) |
+            (static_cast<std::uint32_t>(fixedRaw[offset + 1]) << 8u) |
+            (static_cast<std::uint32_t>(fixedRaw[offset + 2]) << 16u) |
+            (static_cast<std::uint32_t>(fixedRaw[offset + 3]) << 24u);
+    };
+
+    constexpr std::size_t kTrackOrderBase = 0x31U;
+    constexpr std::size_t kTrackOrderCapacity = 20U;
+    constexpr std::size_t kSyncPlayerBase = 0x114U;
+    constexpr std::size_t kSyncPlayerStride = 57U;
+    constexpr std::size_t kGamePlayerBase = 0x797U;
+    constexpr std::size_t kGamePlayerStride = 570U;
+    const std::size_t playerCount = fixedRaw[0x796U];
+    std::size_t recipientMatches = 0U;
+    for (std::size_t playerIndex = 0; playerIndex < playerCount; ++playerIndex)
+    {
+        const std::uint32_t playerUin =
+            readFixedLE32(kGamePlayerBase + playerIndex * kGamePlayerStride);
+        const std::uint32_t syncUin =
+            readFixedLE32(kSyncPlayerBase + playerIndex * kSyncPlayerStride);
+        if (playerUin == 0U || playerUin != syncUin)
+        {
+            if (diag) *diag = "Msg509 sync/game-begin roster mismatch";
+            return false;
+        }
+
+        for (std::size_t previous = 0; previous < playerIndex; ++previous)
+        {
+            if (readFixedLE32(
+                    kGamePlayerBase + previous * kGamePlayerStride) ==
+                playerUin)
+            {
+                if (diag) *diag = "Msg509 game-begin roster contains duplicate UIN";
+                return false;
+            }
+        }
+
+        std::size_t trackMatches = 0U;
+        for (std::size_t slot = 0; slot < kTrackOrderCapacity; ++slot)
+        {
+            if (readFixedLE32(kTrackOrderBase + slot * 4U) == playerUin)
+                ++trackMatches;
+        }
+        if (trackMatches != 1U)
+        {
+            if (diag) *diag = "Msg509 track/game-begin roster mismatch";
+            return false;
+        }
+        if (playerUin == outerUin)
+            ++recipientMatches;
+    }
+
+    std::size_t trackPlayerCount = 0U;
+    for (std::size_t slot = 0; slot < kTrackOrderCapacity; ++slot)
+    {
+        if (readFixedLE32(kTrackOrderBase + slot * 4U) != 0U)
+            ++trackPlayerCount;
+    }
+    if (trackPlayerCount != playerCount)
+    {
+        if (diag) *diag = "Msg509 track roster count mismatch";
+        return false;
+    }
+    if (recipientMatches != 1U)
+    {
+        if (diag) *diag = "Msg509 recipient is not present exactly once in roster";
+        return false;
+    }
+    if (readFixedLE32(0xA7BD) != (clientPid ^ kClientPidCheckXor))
+    {
+        if (diag) *diag = "Msg509 client PID check mismatch";
+        return false;
+    }
+
+    std::vector<BYTE> inner;
+    const std::size_t encodedPlayerCount = fixedRaw[0x796U];
+    const std::uint16_t baseMode = static_cast<std::uint16_t>(fixedRaw[0x8E65U]) |
+        static_cast<std::uint16_t>(fixedRaw[0x8E66U]) << 8U;
+    const std::uint16_t subMode = static_cast<std::uint16_t>(fixedRaw[0x8E67U]) |
+        static_cast<std::uint16_t>(fixedRaw[0x8E68U]) << 8U;
+    const std::size_t anonymousCount = fixedRaw[0x9B0DU];
+    // The current-client oracle is byte-exact for ordinary non-anonymous
+    // profiles (including map/speed telemetry).  Its synthetic traces for
+    // custom/ranked/border/anonymous/aurora are rejected by Network.dll
+    // 2.0.203.20, while the established 21669 encoder remains accepted.
+    const bool currentCodecProfile =
+        anonymousCount == 0U && fixedRaw[0x74BU] != 0U &&
+        ((baseMode == 1U && subMode == 1U) ||
+         (baseMode == 10U && subMode == 1U));
+    const bool useCurrentCodec = currentCodecProfile &&
+        qqspeed::buildCurrentNormal::EncodeNotifyGameBegin509(
+            fixedRaw.data(), fixedRaw.size(), inner, nullptr);
+    const bool encoded = useCurrentCodec ||
+        qqspeed::build21669::EncodeNotifyGameBegin509(
+            fixedRaw.data(), fixedRaw.size(), inner, diag);
+    if (!encoded)
+        return false;
+
+    QQS_DebugPrintf10001(
+        "[FLOW][509-CODEC] Uin=%u Players=%zu Codec=%s InnerLen=%zu\n",
+        outerUin,
+        encodedPlayerCount,
+        useCurrentCodec ? "current-all-modes" : "21669-fallback",
+        inner.size());
+
+    static bool loggedUin10001 = false;
+    if (outerUin == 10001U && !loggedUin10001)
+    {
+        loggedUin10001 = true;
+        QQS_DebugPrintf10001(
+            "[FLOW][509-SAFE-VALIDATE] Uin=%u PlainLen=%zu FixedRawHex=%s InnerHex=%s\n",
+            outerUin,
+            plainBodyLen,
+            bytes_to_hex(fixedRaw.data(), fixedRaw.size()).c_str(),
+            bytes_to_hex(inner.data(), inner.size()).c_str());
+    }
+
+    return FinishOfficial28346Body(
+        outerUin,
+        context,
+        509,
+        inner,
+        outBody,
+        diag);
+}
+
+namespace
+{
+    // 21487 Network.dll::CSSafeCNotifyRaceBeginPara::ReadFromStream
+    // (sub_18037A910).  Each function below is the exact wire-byte decoder
+    // used by one scalar in the official safe stream; the generic inverse
+    // helpers above recover the corresponding writer byte.
+    static BYTE DecodeRaceBegin511UseNewCountDownTime(BYTE wire)
+    {
+        const BYTE first = Perm(wire);
+        const BYTE second = Ror8(Perm(first), 6);
+        return U8(Perm(second) + 102u);
+    }
+
+    static bool DecodeRaceBegin511ServerMicroSecondVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        const BYTE first = U8((kC30[U8(wire + 115u)] ^ 0xCDu) - 74u);
+        const BYTE second = U8(Ror8(first, 5) - 105u);
+        return DecodeVarResult(
+            U8(Ror8(second, 2) - 118u),
+            sevenBits,
+            stop);
+    }
+
+    static bool DecodeRaceBegin511NewCountDownTimeVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        const BYTE first = U8(Ror8(Swap55(wire), 4) ^ 0x11u);
+        return DecodeVarResult(
+            U8(U8(Swap55(first) + 46u) ^ 0x90u),
+            sevenBits,
+            stop);
+    }
+
+    static BYTE DecodeRaceBegin511StageIndex(BYTE wire)
+    {
+        const BYTE first = U8(U8(wire - 117u) ^ 0xE8u);
+        return U8(Swap55(U8(first - 7u)) ^ 0x67u);
+    }
+
+    static BYTE DecodeRaceBegin511Padding1Count(BYTE wire)
+    {
+        const BYTE first = Ror8(Perm(wire), 6);
+        return Ror8(Not8(Perm(first)), 6);
+    }
+
+    static bool DecodeRaceBegin511Padding1ValueVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = Ror8(U8(wire + 84u), 5);
+        value = U8(value ^ 0x23u);
+        value = U8(value - 64u);
+        value = U8(value ^ 0x8Cu);
+        value = kC30[U8(value - 117u)];
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511RaceStartMicroSecondVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        const BYTE value = Ror8(
+            U8(-103 - Ror8(Ror8(Not8(wire), 5), 2)),
+            1);
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511RaceBeginSecondVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        const BYTE rotated = Rol8(wire, 4);
+        const BYTE restored = Rol8(Ror8(rotated, 1), 1);
+        const BYTE value =
+            Swap55(U8(kC30[U8(restored ^ 0x90u)] ^ 0x65u));
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511Para1Var(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = Ror8(wire, 2);
+        value = Ror8(value, 3);
+        value = Ror8(value, 1);
+        value = Not8(U8(Perm(value) + 116u));
+        return DecodeVarResult(Perm(value), sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511RaceStartTimeVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        const BYTE value =
+            U8(Ror8(U8(wire + 68u), 6) + 107u) ^ 0x55u;
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511RaceCountDownTimeVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = Perm(Not8(wire));
+        value = U8(Perm(value) + 19u);
+        value = U8(Perm(value) + 11u);
+        value = U8(Perm(value) - 14u);
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static BYTE DecodeRaceBegin511Padding2Count(BYTE wire)
+    {
+        const BYTE first = Ror8(wire, 4);
+        const BYTE second = Perm(Not8(first));
+        return Ror8(U8(Perm(second) + 82u), 4);
+    }
+
+    static bool DecodeRaceBegin511Padding2ValueVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = Swap55(Swap55(wire));
+        value = kC30[kC30[kC30[value]]];
+        value = U8(value ^ 0x4Cu);
+        value = kC30[Rol8(value, 2)];
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511DelayTimeVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        const BYTE swapped = Swap55(wire);
+        const BYTE mixed = U8(2u * (wire & 0xD5u)) |
+            U8((Ror8(swapped, 1) >> 1) & 0x55u);
+        return DecodeVarResult(Ror8(mixed, 2), sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511RaceCountDownDisVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = Perm(Ror8(wire, 4));
+        value = Rol8(Not8(value), 2);
+        value = Ror8(value, 6);
+        value = Ror8(value, 3);
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511ServerSecondVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = U8(wire ^ 0x11u);
+        value = U8(value - 58u);
+        value = U8(value ^ 0xF0u);
+        value = Ror8(value, 4);
+        value = kC30[U8(value - 104u)];
+        return DecodeVarResult(U8(value + 44u), sevenBits, stop);
+    }
+
+    static bool DecodeRaceBegin511RaceBeginMicroSecondVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = U8(kC30[U8(wire - 36u)] - 91u);
+        value = U8(Ror8(value, 3) + 110u);
+        return DecodeVarResult(
+            U8(Swap55(value) - 3u),
+            sevenBits,
+            stop);
+    }
+
+    static bool DecodeRaceBegin511CountDownTimeVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = U8(wire + 107u);
+        value = U8(Swap55(value) + 127u);
+        value = Ror8(kC30[value], 6);
+        value = U8(value ^ 0x54u);
+        return DecodeVarResult(Swap55(value), sevenBits, stop);
+    }
+
+    static BYTE DecodeRaceBegin511Padding3Count(BYTE wire)
+    {
+        const BYTE first = U8(Ror8(kC30[wire], 1) + 40u);
+        return U8(U8(kC30[first] + 52u) ^ 0xB8u);
+    }
+
+    static bool DecodeRaceBegin511Padding3ValueVar(
+        BYTE wire,
+        BYTE& sevenBits,
+        bool& stop)
+    {
+        BYTE value = Rol8(U8(wire ^ 0x5Cu), 1);
+        value = Swap55(value);
+        value = U8(value ^ 0x63u);
+        value = U8(value - 118u);
+        value = U8(value ^ 0x7Du);
+        value = kC30[U8(value - 2u)];
+        return DecodeVarResult(value, sevenBits, stop);
+    }
+
+    static bool EncodeRaceBegin511Inner(
+        const qqspeed::msg511::CNotifyRaceBeginPara& plain,
+        const std::array<BYTE, 3>& paddingCounts,
+        std::vector<BYTE>& inner,
+        std::string* diag)
+    {
+        inner.clear();
+        inner.reserve(76);
+
+        const auto failField = [diag](const char* field)
+        {
+            if (diag)
+                *diag = std::string("Msg511 safe encode failed at ") + field;
+            return false;
+        };
+        const auto appendDirect =
+            [&inner, &failField](ByteDecoder decoder, BYTE value, const char* field)
+        {
+            return EncodeDecodedByteGeneric(decoder, value, inner) ||
+                failField(field);
+        };
+        const auto appendVar =
+            [&inner, &failField](
+                VarByteDecoder decoder,
+                std::uint32_t value,
+                const char* field)
+        {
+            return EncodeRawVarGeneric(decoder, value, inner) ||
+                failField(field);
+        };
+        const auto appendPadding =
+            [&inner, &failField](
+                ByteDecoder countDecoder,
+                VarByteDecoder valueDecoder,
+                BYTE count,
+                const char* field)
+        {
+            if (count == 0 || count > 16)
+                return failField(field);
+            if (!EncodeDecodedByteGeneric(countDecoder, count, inner))
+                return failField(field);
+            for (BYTE index = 0; index < count; ++index)
+            {
+                if (!EncodeRawVarGeneric(valueDecoder, 0, inner))
+                    return failField(field);
+            }
+            return true;
+        };
+
+        // sub_18037A910 field order.  This is intentionally not the packed
+        // CNotifyRaceBeginPara member order.
+        if (!appendDirect(
+                DecodeRaceBegin511UseNewCountDownTime,
+                plain.UseNewCountDownTime,
+                "UseNewCountDownTime") ||
+            !appendVar(
+                DecodeRaceBegin511ServerMicroSecondVar,
+                plain.ServerMicroSecond,
+                "ServerMicroSecond") ||
+            !appendVar(
+                DecodeRaceBegin511NewCountDownTimeVar,
+                plain.NewCountDownTime,
+                "NewCountDownTime") ||
+            !appendDirect(
+                DecodeRaceBegin511StageIndex,
+                plain.StageIndex,
+                "StageIndex") ||
+            !appendPadding(
+                DecodeRaceBegin511Padding1Count,
+                DecodeRaceBegin511Padding1ValueVar,
+                paddingCounts[0],
+                "padding1") ||
+            !appendVar(
+                DecodeRaceBegin511RaceStartMicroSecondVar,
+                plain.RaceStartMicroSecond,
+                "RaceStartMicroSecond") ||
+            !appendVar(
+                DecodeRaceBegin511RaceBeginSecondVar,
+                plain.RaceBeginSecond,
+                "RaceBeginSecond") ||
+            !appendVar(
+                DecodeRaceBegin511Para1Var,
+                plain.Para1,
+                "Para1") ||
+            !appendVar(
+                DecodeRaceBegin511RaceStartTimeVar,
+                plain.RaceStartTime,
+                "RaceStartTime") ||
+            !appendVar(
+                DecodeRaceBegin511RaceCountDownTimeVar,
+                plain.RaceCountDownTime,
+                "RaceCountDownTime") ||
+            !appendPadding(
+                DecodeRaceBegin511Padding2Count,
+                DecodeRaceBegin511Padding2ValueVar,
+                paddingCounts[1],
+                "padding2") ||
+            !appendVar(
+                DecodeRaceBegin511DelayTimeVar,
+                plain.DelayTime,
+                "DelayTime") ||
+            !appendVar(
+                DecodeRaceBegin511RaceCountDownDisVar,
+                plain.RaceCountDownDis,
+                "RaceCountDownDis") ||
+            !appendVar(
+                DecodeRaceBegin511ServerSecondVar,
+                plain.ServerSecond,
+                "ServerSecond") ||
+            !appendVar(
+                DecodeRaceBegin511RaceBeginMicroSecondVar,
+                plain.RaceBeginMicroSecond,
+                "RaceBeginMicroSecond") ||
+            !appendVar(
+                DecodeRaceBegin511CountDownTimeVar,
+                plain.CountDownTime,
+                "CountDownTime") ||
+            !appendPadding(
+                DecodeRaceBegin511Padding3Count,
+                DecodeRaceBegin511Padding3ValueVar,
+                paddingCounts[2],
+                "padding3"))
+        {
+            inner.clear();
+            return false;
+        }
+
+        return true;
+    }
+}
+
+bool BuildOfficialSafeRaceBegin511(
+    UINT outerUin,
+    UINT context,
+    DWORD clientPid,
+    const qqspeed::msg511::CNotifyRaceBeginPara& plain,
+    std::vector<BYTE>& outBody,
+    std::string* diag)
+{
+    outBody.clear();
+    if (outerUin == 0)
+    {
+        if (diag) *diag = "outer uin zero";
+        return false;
+    }
+    if (context == 0)
+    {
+        if (diag) *diag = "Msg511 outer context is zero";
+        return false;
+    }
+    if (clientPid == 0)
+    {
+        if (diag) *diag = "client PID is zero";
+        return false;
+    }
+    if (plain.ServerMicroSecond >= 1000000u)
+    {
+        if (diag) *diag = "Msg511 ServerMicroSecond is outside [0,999999]";
+        return false;
+    }
+    if (plain.Para1 !=
+        (clientPid ^ qqspeed::msg511::kClientPidCheckXor))
+    {
+        if (diag) *diag = "Msg511 client PID check mismatch";
+        return false;
+    }
+
+    std::vector<BYTE> inner;
+    try
+    {
+        static std::mutex paddingRngMutex;
+        std::lock_guard<std::mutex> paddingRngLock(paddingRngMutex);
+        static std::mt19937_64 paddingRng = []
+        {
+            std::random_device entropySource;
+            std::array<std::uint32_t, 8> entropy{};
+            for (std::uint32_t& word : entropy)
+                word = static_cast<std::uint32_t>(entropySource());
+            std::seed_seq seed(entropy.begin(), entropy.end());
+            return std::mt19937_64(seed);
+        }();
+
+        const std::array<BYTE, 3> paddingCounts = {
+            static_cast<BYTE>((paddingRng() & 0x0Fu) + 1u),
+            static_cast<BYTE>((paddingRng() & 0x0Fu) + 1u),
+            static_cast<BYTE>((paddingRng() & 0x0Fu) + 1u),
+        };
+        if (!EncodeRaceBegin511Inner(
+                plain,
+                paddingCounts,
+                inner,
+                diag))
+        {
+            return false;
+        }
+    }
+    catch (const std::exception& exception)
+    {
+        outBody.clear();
+        if (diag)
+            *diag = std::string("Msg511 padding RNG initialization failed: ") +
+                exception.what();
+        return false;
+    }
+    catch (...)
+    {
+        outBody.clear();
+        if (diag) *diag = "Msg511 padding RNG initialization failed";
+        return false;
+    }
+
+    return FinishOfficial28346Body(
+        outerUin,
+        context,
+        511,
+        inner,
+        outBody,
+        diag);
+}

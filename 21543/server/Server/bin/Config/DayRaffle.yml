@@ -1,0 +1,24 @@
+﻿- ItemId: 127748 #道具id
+  ItemNum: 100 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: 0 #0显示数量 -1显示永久
+- ItemId: 127748 #道具id
+  ItemNum: 300 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: 0 #0显示数量 -1显示永久
+- ItemId: 127748 #道具id
+  ItemNum: 600 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: 0 #0显示数量 -1显示永久
+- ItemId: 127748 #道具id
+  ItemNum: 1200 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: 0 #0显示数量 -1显示永久
+- ItemId: 127748 #道具id
+  ItemNum: 2400 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: 0 #0显示数量 -1显示永久
+- ItemId: 127748 #道具id
+  ItemNum: 4800 #数量
+  ObtainTime: 1 #时间
+  AvailPeriod: 0 #0显示数量 -1显示永久

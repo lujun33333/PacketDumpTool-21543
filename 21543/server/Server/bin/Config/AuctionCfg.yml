@@ -1,0 +1,11 @@
+##拍卖配置
+Open: 1 #开放拍卖
+Content: "S101拍卖会"
+Items:
+  - ItemId: 146555 #道具id
+    ItemNum: 1 #数量
+    AvailPeriod: -1 #0显示数量 -1显示永久
+    StartingPrice: 5000000 #初始价格
+    IncreasePrice: 1000000 #每次增加的价格
+    CommodityId: 0 #当前商品索引 每个索引不同 0开始 不超过255
+    Time: "2025-11-23 24:00:00" #结束时间

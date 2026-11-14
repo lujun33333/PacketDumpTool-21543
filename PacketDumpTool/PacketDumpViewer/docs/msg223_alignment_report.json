@@ -1,0 +1,3447 @@
+{
+  "dump_root": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release",
+  "all_msg223_payloads": 725,
+  "recv_plain_full_samples": 129,
+  "unique_recv_plain_full_samples": 66,
+  "body_slice_samples": 258,
+  "full_14_to_end_body_slice_matches": 66,
+  "layout": [
+    {
+      "name": "m_ushItemNum",
+      "offset": "0x00000000",
+      "size": 2,
+      "type": "le:u16",
+      "note": "active item count"
+    },
+    {
+      "name": "m_astPlayerDBItemInfo[]",
+      "offset": "0x00000002",
+      "size": 185150,
+      "type": "array[8050] stride=23",
+      "note": "fixed item slots"
+    },
+    {
+      "name": "m_ushTaskNum",
+      "offset": "0x0002D340",
+      "size": 2,
+      "type": "le:u16",
+      "note": "active task count"
+    },
+    {
+      "name": "m_astPlayerDBTaskInfo[]",
+      "offset": "0x0002D342",
+      "size": 26400,
+      "type": "array[1100] stride=24",
+      "note": "fixed task slots"
+    },
+    {
+      "name": "m_usPetNum",
+      "offset": "0x00033A62",
+      "size": 2,
+      "type": "le:u16",
+      "note": "active pet count"
+    },
+    {
+      "name": "m_astPetInfo[]",
+      "offset": "0x00033A64",
+      "size": 95500,
+      "type": "array[500] stride=191",
+      "note": "fixed pet slots"
+    },
+    {
+      "name": "m_usMapNum",
+      "offset": "0x0004AF70",
+      "size": 2,
+      "type": "le:u16",
+      "note": "active map count"
+    },
+    {
+      "name": "m_astRecord[]",
+      "offset": "0x0004AF72",
+      "size": 6000,
+      "type": "array[500] stride=12",
+      "note": "fixed map records"
+    },
+    {
+      "name": "m_uchOverdueItemNum",
+      "offset": "0x0004C6E2",
+      "size": 1,
+      "type": "u8",
+      "note": "active overdue item count"
+    },
+    {
+      "name": "m_astOverdueItem[]",
+      "offset": "0x0004C6E3",
+      "size": 1200,
+      "type": "array[100] stride=12",
+      "note": "fixed overdue item slots"
+    },
+    {
+      "name": "m_iStoneKartNum",
+      "offset": "0x0004CB93",
+      "size": 4,
+      "type": "le:u32",
+      "note": "active stone-kart count"
+    },
+    {
+      "name": "m_astKartStoneGrooveInfo[]",
+      "offset": "0x0004CB97",
+      "size": 386400,
+      "type": "array[8050] stride=48",
+      "note": "fixed stone kart slots"
+    },
+    {
+      "name": "m_bHasNext",
+      "offset": "0x000AB0F7",
+      "size": 1,
+      "type": "u8",
+      "note": "more chunks flag"
+    },
+    {
+      "name": "DecodeCheckField",
+      "offset": "0x000AB0F8",
+      "size": 4,
+      "type": "le:u32",
+      "note": "special28346 decode check field; semantic not business"
+    }
+  ],
+  "counters": {
+    "item_num": {
+      "198": 1,
+      "200": 57,
+      "199": 6,
+      "99": 2
+    },
+    "task_num": {
+      "0": 66
+    },
+    "pet_num": {
+      "0": 57,
+      "5": 9
+    },
+    "map_num": {
+      "0": 66
+    },
+    "overdue_num": {
+      "0": 66
+    },
+    "stone_num": {
+      "0": 66
+    },
+    "has_next": {
+      "0": 12,
+      "1": 54
+    },
+    "check_field": {
+      "0x3A3A7C8A": 13,
+      "0x3A3A67DE": 8,
+      "0x3A3A5F62": 13,
+      "0x3A3A4AD6": 11,
+      "0x3A3ABD66": 8,
+      "0x3A3A2A26": 8,
+      "0x3A3A25BE": 5
+    }
+  },
+  "samples": [
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_107_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 107,
+      "item_num": 198,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "87faf8f13ed1225000dba5898d2ecbab4d26c44607ad0e44ca0cc21c52085848",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146770,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1728290205,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146778,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1728906941,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1151_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1151,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "4a33522275c63effbd8a0ba4723eb76b87cd11f30b006d43ff6e133c494a12de",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1162_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1162,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "d439026908f1953d7a1fe2b88f33a359237c25b05c6d07612950114b6d8bf688",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76281,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1615121320,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1173_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1173,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "e37e87f357b5f65a9c8fb42f168bdd87c6f941f9aee4aade3b6d451929527c18",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1184_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1184,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "fd941509a65f05c70de26541a0b7cfd2bedeae392a651c5cd0628cd620423065",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 102646,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1580488377,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 102725,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1598811170,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 102737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1583550113,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1195_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1195,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "0e77b7df518bd3f8f0c304be66db6bf7f766d748a278fe74958fcc50e429c5e6",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 109021,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 109022,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 109030,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1205_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1205,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "40c428cf7b7e44c0bfe19f2f822d49e605f5d3f0afb51013998c61b70baf56a5",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 116842,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1635609094,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 116909,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1653054557,
+          "other_attribute": 536870912,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 116931,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1644848925,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1216_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1216,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "2e7c6c08cd30d425e73d7bbb97a7b9c8df1811f6d23d02476aab6e8a66fc2579",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_1226_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 1226,
+      "item_num": 199,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "328d317dd5c6d309f53ac00e1ec8fa3f4ba8fc219367e9be4f274213b8fc89f2",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146770,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1728290205,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_33_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 33,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "a3104ee1d7f15990f80e6924cd1b9ae72241831bcf03a75edc19394792583f4e",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_43_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 43,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "c68cb7c38f9046c6d2ec63560010ec0bde1ee4929490a537be1a488bf4fe740f",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76373,
+          "item_num": 50,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1779530860,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_54_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 54,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "454ad620eef3e110018e899ebc254832ef2da71d4929345ce5d6157d447fc091",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_18096\\payloads\\network_bin_18096_97_recv_plain_full_msg223_len700668.bin",
+      "pid": 18096,
+      "seq": 97,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A7C8A",
+      "full_sha256": "df6f09dde242ac04e2c944a3b7f2dd9c47b62896657911ce9fcd657c5bcc970a",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_100_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 100,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "a59db3c0af02338e1ab6a6aefa13e7ce7e4e1899de7dcde89f1de6c92bf2b88a",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146372,
+          "item_num": 6125,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1726140665,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_25_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 25,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "52918f0152ee56fc888bd0de0213ce99c5eeebd9dc3017a5cb216f13b483de31",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_2947_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 2947,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "abe5b61aec95bf12ab8198aedb9ce407ee903d2ba3375de9caf45908795ac6e1",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76281,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1615121320,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_2958_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 2958,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "f445dc39da07d7937362f396c161dc1e4bc0c380de9d63370b78160399817288",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_2969_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 2969,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "0cb2951cf398e572168ff6d29ec0d8572a2d50fba5b980c6b9642849c5bdaa2a",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 102646,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1580488377,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 102725,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1598811170,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 102737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1583550113,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_2980_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 2980,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "616c69b8c26e9b399ed3eee214e5f92e10668eb0082d4faa9072de4b61dd2cea",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 109021,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 109022,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 109030,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_2990_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 2990,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "5d3e4bf652708cc1da31865f2d62d5947beeb8a4f7875589ce5f417fc3db8881",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 116842,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1635609094,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 116909,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1653054557,
+          "other_attribute": 536870912,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 116931,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1644848925,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_24036\\payloads\\network_bin_24036_3001_recv_plain_full_msg223_len700668.bin",
+      "pid": 24036,
+      "seq": 3001,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A67DE",
+      "full_sha256": "6db8188cb97828557330382de2e073b0941f5fe3da5831445203555956f69c24",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1007_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1007,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "6c2945aa7896366136e9e1dd7ad0e5c2f556d020dfff5f19e923861cc37dc35e",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1018_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1018,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "c3bcf2d41cfde381f296b8d1b8fa95b5d35e8d70fb393c012b8fa5ba8173a5ce",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76281,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1615121320,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1029_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1029,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "483a99502652a9d63ed4dde0cef5b0a11feb86bb62b3afd79175097413d40e13",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1040_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1040,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "195fd86b108d440779e10de37a492f5a40efc2e0198235b038916d796b11bc51",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 102646,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1580488377,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 102725,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1598811170,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 102737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1583550113,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1051_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1051,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "8913ae03764919c41a21dbc6a26ff2e8fd9af0b30afb7eebc1021af6bbbcc805",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 109021,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 109022,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 109030,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1061_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1061,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "3b97c75068876848c5ca3a199632ce2ae2524b44cfa545d417a6892947bd47bf",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 116842,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1635609094,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 116909,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1653054557,
+          "other_attribute": 536870912,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 116931,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1644848925,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1072_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1072,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "450f900cad1cf3e7c975e9618c7765a66bc5a3cf5acb9b30593e60037eb2081f",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_1082_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 1082,
+      "item_num": 199,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "bf757f015bd0c62a1e524fef3e6d0b0b07a878eac689153826112a6731b5ba87",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146372,
+          "item_num": 6125,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1726140665,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_108_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 108,
+      "item_num": 199,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "dad9608dc3cc2d7b5bc26cc38071ca5d344e0859ee33e52230ae0b8c799a2093",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146770,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1728290205,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_3272_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 3272,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "479f3c260e9f186153cca2bd5307bd0c3bf60a2aee0834be53c558d6a14e1b7a",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_3325_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 3325,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "2cf1e81649d88d56451f3f988a086208fb8411fceef8bf24690396e96a614673",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146372,
+          "item_num": 6125,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1726140665,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_33_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 33,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "3dcf9ec56e44390b629d63fcd5e5f0dd612127622625cdb14c242eecdc798fb6",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_25944\\payloads\\network_bin_25944_98_recv_plain_full_msg223_len700668.bin",
+      "pid": 25944,
+      "seq": 98,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A5F62",
+      "full_sha256": "1c580dc94a8dcf75d919c312459a4014d003979c92a43b859ce13e9739050c1a",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1002_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1002,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "8da8a7197975b474de69a3a08325fed230bd5b7d4ddb159330a59913610944b0",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1013_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1013,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "35c1410300442f2f62a512202680bb67a265f63f59cfaee209dd861f28afa29c",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76281,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1615121320,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1024_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1024,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "ae7578cef19451e3dcea79241e520ec7dbbb65efc2c8024b1ea01c46f67d11df",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1036_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1036,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "7355e44672acc0ee80f9ec59e62bb14e10aee90ab15ea7a78c4b7f557e0ea37f",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 102646,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1580488377,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 102725,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1598811170,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 102737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1583550113,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1047_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1047,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "fdf8dd1bd2b2edab894ad5b13ef7781742ea8d6fce3210b92c3395b2602f3571",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 109021,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 109022,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 109030,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1057_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1057,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "5a583e0778969b668216f46dfdf1efdf5010754fd0420764ef27f3015be79aa1",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 116842,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1635609094,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 116909,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1653054557,
+          "other_attribute": 536870912,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 116931,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1644848925,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1068_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1068,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "569e4f62b30880b0ec9f3811ab99c3ef59a6d476748baa6b049181d689f79fba",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_1078_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 1078,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "3528087fb005b652ad650d8022c6085cfcd77a20130e5667ea4c3bfe9d71675d",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146371,
+          "item_num": 18,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1730555066,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146372,
+          "item_num": 6125,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1726140665,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_108_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 108,
+      "item_num": 199,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "27ea9ff37fe502a17731f287c5efc6dcc92fc839269ad753ead4588ab09e6f79",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146372,
+          "item_num": 6125,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1726140665,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_33_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 33,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "f2a629f0f2ba979650d58135c3b59776ade4c0ca3fceea26327bc2b99fd11fdc",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_28908\\payloads\\network_bin_28908_98_recv_plain_full_msg223_len700668.bin",
+      "pid": 28908,
+      "seq": 98,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A4AD6",
+      "full_sha256": "780e9b15c9674f4836aacd6e2af1b0299077061480538d2a007aee8348091752",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_100_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 100,
+      "item_num": 199,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "e2e3ff3d838de9a93f9ccf3567a8ed9b524ff1b3df90a17888fcac645a056866",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146770,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1728290205,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_25_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 25,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "d5c60103920e573edc2b63412f1868e960aa797c92ac486a1b55071bf189571c",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_36_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 36,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "a6f1425b386d4c068333917f027baa949215040b9b0d5d649eb0bb5a487f83af",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76281,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1615121320,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_47_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 47,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "db813250b41777aaea04baec02ade0822db8224d04e9ac8da103f7851cc1c6db",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_58_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 58,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "de6d57fe5c281a0ac4854ebe6dd4469cc54065610e45ea14eee4547f9fa6ae74",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 102646,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1580488377,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 102725,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1598811170,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 102737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1583550113,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_69_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 69,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "3fe629c314b432cc6e77d30a92113a655a5eebb903368fb28d692248de49839a",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 109021,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 109022,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 109030,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_79_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 79,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "dcbe87a87e49586d0b76d72306ca926d53205e99337a8d2e59413563ad5df1e2",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 116842,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1635609094,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 116909,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1653054557,
+          "other_attribute": 536870912,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 116931,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1644848925,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_34652\\payloads\\network_bin_34652_90_recv_plain_full_msg223_len700668.bin",
+      "pid": 34652,
+      "seq": 90,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3ABD66",
+      "full_sha256": "ab4fcb1b081386fbefb4a07e8dbe47e8c40bc1406582481fae96739a1abc626e",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_100_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 100,
+      "item_num": 199,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "01eb8095dd48098ac0faa42a8920a4e8758a2b9f6c4deb13a22c9eb1e32578ab",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 146537,
+          "item_num": 12,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1727715954,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 146543,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1769250489,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 146770,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1728290205,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_25_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 25,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 5,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "844f0bf44c370801ffeef72de8efbc224bab89bdd2de2c9b9341cbf1da323437",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 26621,
+          "item_num": 8,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1722522344,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 26622,
+          "item_num": 2,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1683577879,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 26642,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1346495770,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_36_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 36,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "f101940a32b8164a0a74379ad1a22d23cc5c3630043c2cbfa3796fb89849a468",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 76281,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1615121320,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 76603,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1596996607,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 76715,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1575562506,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_47_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 47,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "bbd510f3aedc8b1f3c6a314c6ca04a6f6ca13100dfc744cefbb8dc07f20c05e9",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 94228,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1579881753,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 94277,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1570033815,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 94842,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1568392108,
+          "other_attribute": 1073741824,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_58_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 58,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "9a5815921bc9be58f0441f29a5bb354a8821d062f396130158afd66179a2712b",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 102646,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1580488377,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 102725,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1598811170,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 102737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1583550113,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_69_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 69,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "73a527cb5777069220eeb2a8d565ecc7026675ff354c14058739b3a59db6ad15",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 109021,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 109022,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 109030,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1619358831,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_79_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 79,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "6bb6fa7311912845258fc6ff2c709273ba738247017bda1727e51010713bc451",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 116842,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1635609094,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 116909,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1653054557,
+          "other_attribute": 536870912,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 116931,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1644848925,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_4124\\payloads\\network_bin_4124_90_recv_plain_full_msg223_len700668.bin",
+      "pid": 4124,
+      "seq": 90,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A2A26",
+      "full_sha256": "96a525c51ef313838644f40dfa7a51abdcd8513eda13da42e51281c51f75dfd2",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 125333,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 125335,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 125343,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1670082505,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_8068\\payloads\\network_bin_8068_25_recv_plain_full_msg223_len700668.bin",
+      "pid": 8068,
+      "seq": 25,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A25BE",
+      "full_sha256": "48ee4c41de8e5a53c0e090d86dfb076da371a3a1cd9fd2036913122025392018",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 22517,
+          "item_num": 1,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1405476166,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 22644,
+          "item_num": 3,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1441266937,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 22737,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1415405494,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_8068\\payloads\\network_bin_8068_3027_recv_plain_full_msg223_len700668.bin",
+      "pid": 8068,
+      "seq": 3027,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A25BE",
+      "full_sha256": "6af7d023ccd76ffe3004a755ee04452f679df50e553593c03b86ce73075da5d5",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 66634,
+          "item_num": 1,
+          "avail_period": 720,
+          "status": 0,
+          "obtain_time": 1779800973,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 66647,
+          "item_num": 519,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1711809664,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 66648,
+          "item_num": 318,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1690382607,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_8068\\payloads\\network_bin_8068_3038_recv_plain_full_msg223_len700668.bin",
+      "pid": 8068,
+      "seq": 3038,
+      "item_num": 99,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A25BE",
+      "full_sha256": "b6a9e0b0722927b3ec3574ad39fbfd06d6577f617256181daa2b459eedfd96ad",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 136769,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1713693929,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 137313,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1712378963,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 137323,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1712378963,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_8068\\payloads\\network_bin_8068_36_recv_plain_full_msg223_len700668.bin",
+      "pid": 8068,
+      "seq": 36,
+      "item_num": 200,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 1,
+      "check_field": "0x3A3A25BE",
+      "full_sha256": "0ed066642ec316b41b7518c3516c4d821ea9fb7bada885b0bd45aa4068bd53d8",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 66634,
+          "item_num": 1,
+          "avail_period": 720,
+          "status": 0,
+          "obtain_time": 1779800973,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 66647,
+          "item_num": 519,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1711809664,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 66648,
+          "item_num": 318,
+          "avail_period": 0,
+          "status": 0,
+          "obtain_time": 1690382607,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    },
+    {
+      "file": "F:\\PacketDumpTool\\PacketDumpTool\\x64\\Release\\packet_dumps_8068\\payloads\\network_bin_8068_47_recv_plain_full_msg223_len700668.bin",
+      "pid": 8068,
+      "seq": 47,
+      "item_num": 99,
+      "task_num": 0,
+      "pet_num": 0,
+      "map_num": 0,
+      "overdue_num": 0,
+      "stone_num": 0,
+      "has_next": 0,
+      "check_field": "0x3A3A25BE",
+      "full_sha256": "755e0a1a4863ceb2760019c0b1b83c602760cf4322b8cc9fa1ab7e9107c43570",
+      "full_14_to_end_matches_body_slice": true,
+      "first_items": [
+        {
+          "index": 0,
+          "offset": "0x00000002",
+          "item_id": 136769,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1713693929,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 1,
+          "offset": "0x00000019",
+          "item_id": 137313,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1712378963,
+          "other_attribute": 0,
+          "item_type": 0
+        },
+        {
+          "index": 2,
+          "offset": "0x00000030",
+          "item_id": 137323,
+          "item_num": 1,
+          "avail_period": 4294967295,
+          "status": 0,
+          "obtain_time": 1712378963,
+          "other_attribute": 0,
+          "item_type": 0
+        }
+      ]
+    }
+  ]
+}

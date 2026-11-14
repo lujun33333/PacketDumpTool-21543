@@ -1,0 +1,115 @@
+#匹配地图配置
+- MapID: 122 #老街迷宫
+  Round: 2
+- MapID: 124 #敦煌石窟
+  Round: 2
+- MapID: 132 #老街工地
+  Round: 2
+- MapID: 133 #海滨发卡
+  Round: 1
+- MapID: 137 #十一城
+  Round: 2  
+- MapID: 153 #瓦特厂房
+  Round: 1
+- MapID: 158 #玫瑰之恋
+  Round: 3  
+- MapID: 162 #彩虹风车岛
+  Round: 2   
+- MapID: 166 #鹊桥仙境
+  Round: 3
+- MapID: 167 #秋名山
+  Round: 1
+- MapID: 175 #琳琅天上
+  Round: 2
+- MapID: 181 #古城秘境
+  Round: 1  
+- MapID: 183 #法老金字塔
+  Round: 3  
+- MapID: 184 #暮光之城
+  Round: 2
+- MapID: 185 #港湾发卡
+  Round: 1
+- MapID: 187 #320冒险岛
+  Round: 2  
+- MapID: 189 #特区高速
+  Round: 2
+- MapID: 190 #燕子坞
+  Round: 2   
+- MapID: 191 #星际彩虹
+  Round: 2
+- MapID: 193 #海岸城
+  Round: 3
+- MapID: 194 #西部矿山
+  Round: 1
+- MapID: 195 #桃花坞
+  Round: 2
+- MapID: 196 #银月谷
+  Round: 3
+- MapID: 198 #瑞雪春堂
+  Round: 2
+- MapID: 199 #爱琴海
+  Round: 2  
+- MapID: 202 #迷雾沼泽
+  Round: 2
+- MapID: 203 #撒哈拉古墓
+  Round: 2
+- MapID: 205 #城市运动会
+  Round: 2
+- MapID: 207 #海滨仲夏
+  Round: 3
+- MapID: 208 #亚特兰蒂斯
+  Round: 2
+- MapID: 212 #赤城红叶
+  Round: 1
+- MapID: 213 #祖玛神殿
+  Round: 2
+- MapID: 216 #琳琅海湾
+  Round: 2
+- MapID: 217 #极速梦想
+  Round: 2
+- MapID: 218 #江南水乡
+  Round: 2
+- MapID: 219 #芝麻街
+  Round: 2
+- MapID: 220 #落日海港
+  Round: 2  
+- MapID: 238 #时之沙
+  Round: 1
+- MapID: 253 #马达加斯加
+  Round: 2
+- MapID: 255 #极地冰镇
+  Round: 2  
+- MapID: 256 #城市网吧
+  Round: 2
+- MapID: 260 #情迷法兰西
+  Round: 1
+- MapID: 261 #广寒仙境
+  Round: 2 
+- MapID: 267 #龙门新春
+  Round: 2  
+- MapID: 268 #我们恋爱吧
+  Round: 2
+- MapID: 273 #雪地大冒险
+  Round: 2
+- MapID: 275 #月光之城
+  Round: 2  
+- MapID: 278 #迷失之城
+  Round: 2 
+- MapID: 299 #小猪部落
+  Round: 2
+- MapID: 319 #香波岛
+  Round: 2  
+- MapID: 323 #冰雪企鹅岛
+  Round: 2  
+- MapID: 329 #霍比特之旅
+  Round: 1  
+- MapID: 330 #情迷爱琴海
+  Round: 2
+- MapID: 378 #英伦古堡
+  Round: 2  
+- MapID: 420 #山雪游龙
+  Round: 1
+- MapID: 433 #天机阁
+  Round: 1
+- MapID: 447 #伊甸掠影
+  Round: 2

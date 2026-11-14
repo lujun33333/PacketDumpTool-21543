@@ -1,0 +1,1544 @@
+enabled: true  # 通行证总开关
+
+activity:
+  activity_id: 20260754  # 私服数据库赛季隔离ID
+  season_id: 54  # 客户端显示的赛季编号
+  begin_time: 1782950400  # 开始时间：2026-07-02 08:00（北京时间）
+  end_time: 1787781600  # 结束时间：2026-09-27 06:00（北京时间）
+  max_level: 200  # 通行证最高等级
+  default_level: 1  # 新玩家初始等级
+  default_exp: 0  # 新玩家初始经验
+  need_exp: 100  # 每升一级所需经验
+  show_item_id: 171052  # 通行证入口展示道具
+  exchange_item_id: 160462  # 兑换商店积分对应的道具ID
+  interval_timer: 5000  # 客户端刷新间隔，单位毫秒
+  week_task_limit: 2000  # 每周任务经验上限
+  show_pass_award_max_count: 40  # 客户端每批加载的奖励等级数
+  free_award_max_num: 200  # 免费档奖励最高可领取到200级
+  award_max_num: 200  # 开通通行证后的奖励等级上限
+  buy_level_speed_coin_cost: 50  # 购买一级实际扣除的飞车币
+
+purchase:
+  enabled: true  # 是否允许购买等级、尊享通行证和典藏通行证
+
+entry_award: {item_id: 171052, item_num: 1, avail_period: -1, item_type: 1}  # 通行证入口固定展示奖励
+
+passes:
+  premium:  # 尊享通行证
+    default_unlocked: false  # 默认未开通
+    need_speed_coin_cost: 360  # 实际购买价格：360飞车币
+    old_speed_coin_cost: 1200  # 购买界面显示的飞车币原价（只展示）
+    inc_level: 15  # 购买成功后增加15级
+    show_unlock_awards:  # 开通尊享通行证后一次性发放，同时用于购买界面预览
+      - {item_id: 174746, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172482, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172490, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172562, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172570, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172582, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172590, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172522, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172530, item_num: 1, avail_period: -1, item_type: 2}
+  collection:  # 典藏通行证，同时解锁尊享档
+    default_unlocked: false  # 默认未开通
+    need_speed_coin_cost: 980  # 实际购买价格：980飞车币
+    old_speed_coin_cost: 4900  # 购买界面显示的飞车币原价（只展示）
+    inc_level: 40  # 购买成功后增加40级
+    show_unlock_awards:  # 开通典藏通行证后一次性发放，同时用于购买界面预览
+      - {item_id: 171052, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172542, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172550, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 174746, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172482, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172490, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172562, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172570, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172582, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172590, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172522, item_num: 1, avail_period: -1, item_type: 2}
+      - {item_id: 172530, item_num: 1, avail_period: -1, item_type: 2}
+
+rewards:
+# 免费档：1-200级每级奖励1个奇迹阁兑换道具160462。
+# 尊享档：75个永久服饰ID均匀分布到1-200级；每级最多1个尊享奖励，避免客户端格子溢出。
+# 典藏档：每级最多1个赛车/皮肤；购买典藏会同时解锁尊享，因此也能领取全部服饰。
+- level: 1
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 2
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 3
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150648, item_num: 1, avail_period: -1, item_type: 2}  # 鸿运财神
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 4
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 5
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 6
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154168, item_num: 1, avail_period: -1, item_type: 2}  # TJ警官
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 7
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 8
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154178, item_num: 1, avail_period: -1, item_type: 2}  # TJ警官
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 9
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 10
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 11
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150687, item_num: 1, avail_period: -1, item_type: 2}  # 盛夏之约
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 12
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 13
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 14
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154198, item_num: 1, avail_period: -1, item_type: 2}  # 夜巡先锋
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 15
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 16
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150727, item_num: 1, avail_period: -1, item_type: 2}  # 瑞韵新春
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 17
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 18
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 19
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154230, item_num: 1, avail_period: -1, item_type: 2}  # 一只耳
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 20
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 21
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 22
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154237, item_num: 1, avail_period: -1, item_type: 2}  # 一只耳
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 23
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 24
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150793, item_num: 1, avail_period: -1, item_type: 2}  # 灵蛇传说
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 25
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 26
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 27
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154244, item_num: 1, avail_period: -1, item_type: 2}  # 黑猫警长
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 28
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 29
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 30
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154251, item_num: 1, avail_period: -1, item_type: 2}  # 黑猫警长
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 31
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 32
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150813, item_num: 1, avail_period: -1, item_type: 2}  # 24年度车王
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 33
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 34
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 35
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150823, item_num: 1, avail_period: -1, item_type: 2}  # 24年度车王
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 36
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 37
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 38
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150850, item_num: 1, avail_period: -1, item_type: 2}  # 灵蛇幻梦
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 39
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 40
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154329, item_num: 1, avail_period: -1, item_type: 2}  # 旋风快餐
+  collection:
+    - {item_id: 150538, item_num: 1, avail_period: -1, item_type: 1}  # L-影之传说
+- level: 41
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 42
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 43
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154335, item_num: 1, avail_period: -1, item_type: 2}  # 旋风快餐
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 44
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 45
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 46
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154341, item_num: 1, avail_period: -1, item_type: 2}  # 绒暖街头
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 47
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 48
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154347, item_num: 1, avail_period: -1, item_type: 2}  # 绒暖街头
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 49
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 50
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 10, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 51
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150899, item_num: 1, avail_period: -1, item_type: 2}  # 神秘木乃伊
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 52
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 53
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 54
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150908, item_num: 1, avail_period: -1, item_type: 2}  # 神秘木乃伊
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 55
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 56
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154413, item_num: 1, avail_period: -1, item_type: 2}  # 黑兔萌语
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 57
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 58
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 59
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154419, item_num: 1, avail_period: -1, item_type: 2}  # 黑兔萌语
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 60
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 61
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 62
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 150914, item_num: 1, avail_period: -1, item_type: 2}  # 苹安喜乐
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 63
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 64
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154482, item_num: 1, avail_period: -1, item_type: 2}  # 漫香蝶舞
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 65
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 66
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 67
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154472, item_num: 1, avail_period: -1, item_type: 2}  # 漫香蝶舞
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 68
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 69
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 70
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151060, item_num: 1, avail_period: -1, item_type: 2}  # 红玫之诗
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 71
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 72
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154672, item_num: 1, avail_period: -1, item_type: 2}  # 次元魅影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 73
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 74
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 75
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154682, item_num: 1, avail_period: -1, item_type: 2}  # 次元魅影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 76
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 77
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 78
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151162, item_num: 1, avail_period: -1, item_type: 2}  # 映夜繁星
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 79
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 80
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154763, item_num: 1, avail_period: -1, item_type: 2}  # 云染羽歌
+  collection:
+    - {item_id: 152271, item_num: 1, avail_period: -1, item_type: 1}  # 影之传说-2024巅峰
+- level: 81
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 82
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 83
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151203, item_num: 1, avail_period: -1, item_type: 2}  # 霜雪金月
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 84
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 85
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 86
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151192, item_num: 1, avail_period: -1, item_type: 2}  # 霜雪金月
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 87
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 88
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151222, item_num: 1, avail_period: -1, item_type: 2}  # 蝶恋光影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 89
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 90
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 91
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151212, item_num: 1, avail_period: -1, item_type: 2}  # 蝶恋光影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 92
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 93
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 94
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154792, item_num: 1, avail_period: -1, item_type: 2}  # 花露晨光
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 95
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 96
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154823, item_num: 1, avail_period: -1, item_type: 2}  # 愈梦天使
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 97
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 98
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 99
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154812, item_num: 1, avail_period: -1, item_type: 2}  # 愈梦天使
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 100
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 20, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 101
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 102
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151242, item_num: 1, avail_period: -1, item_type: 2}  # 万千星河
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 103
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 104
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151232, item_num: 1, avail_period: -1, item_type: 2}  # 万千星河
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 105
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 106
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 107
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154842, item_num: 1, avail_period: -1, item_type: 2}  # 花漫清歌
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 108
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 109
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 110
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151252, item_num: 1, avail_period: -1, item_type: 2}  # 柔云雅梦
+  collection:
+    - {item_id: 119059, item_num: 1, avail_period: -1, item_type: 1}  # 至曜·影虎（本体）
+- level: 111
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 112
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154862, item_num: 1, avail_period: -1, item_type: 2}  # 莲韵芳华
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 113
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 114
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 115
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154852, item_num: 1, avail_period: -1, item_type: 2}  # 莲韵芳华
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 116
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 117
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 118
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151383, item_num: 1, avail_period: -1, item_type: 2}  # 糖果星喵
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 119
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 120
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151373, item_num: 1, avail_period: -1, item_type: 2}  # 糖果星喵
+  collection:
+    - {item_id: 146556, item_num: 1, avail_period: -1, item_type: 1}  # X次元-白虎
+- level: 121
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 122
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 123
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154883, item_num: 1, avail_period: -1, item_type: 2}  # 战争之神
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 124
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 125
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 126
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154873, item_num: 1, avail_period: -1, item_type: 2}  # 战争之神
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 127
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 128
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151402, item_num: 1, avail_period: -1, item_type: 2}  # 一生之约
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 129
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 130
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 131
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151392, item_num: 1, avail_period: -1, item_type: 2}  # 一生之约
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 132
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 133
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 134
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154903, item_num: 1, avail_period: -1, item_type: 2}  # 玄域幽影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 135
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 136
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154892, item_num: 1, avail_period: -1, item_type: 2}  # 玄域幽影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 137
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 138
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 139
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151412, item_num: 1, avail_period: -1, item_type: 2}  # 幻蝶恋曲
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 140
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 141
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 142
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 151422, item_num: 1, avail_period: -1, item_type: 2}  # 幻蝶恋曲
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 143
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 144
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 153629, item_num: 1, avail_period: -1, item_type: 2}  # 鹤羽墨翎
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 145
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 146
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 147
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 153639, item_num: 1, avail_period: -1, item_type: 2}  # 鹤羽墨翎
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 148
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 149
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 150
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154912, item_num: 1, avail_period: -1, item_type: 2}  # 琉璃纪元
+  collection: [{item_id: 174821, item_num: 10, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 151
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 152
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154922, item_num: 1, avail_period: -1, item_type: 2}  # 琉璃纪元
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 153
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 154
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 155
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154923, item_num: 1, avail_period: -1, item_type: 2}  # 琉璃纪元
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 156
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 157
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 158
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154952, item_num: 1, avail_period: -1, item_type: 2}  # 流光星语
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 159
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 160
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154962, item_num: 1, avail_period: -1, item_type: 2}  # 流光星语
+  collection:
+    - {item_id: 157762, item_num: 1, avail_period: -1, item_type: 1}  # 白虎-海滩派对
+- level: 161
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 162
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 163
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154963, item_num: 1, avail_period: -1, item_type: 2}  # 流光星语
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 164
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 165
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 166
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 153683, item_num: 1, avail_period: -1, item_type: 2}  # 魅果夜影
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 167
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 168
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154942, item_num: 1, avail_period: -1, item_type: 2}  # 冰霜蓝玫
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 169
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 170
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 171
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154932, item_num: 1, avail_period: -1, item_type: 2}  # 冰霜蓝玫
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 172
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 173
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 174
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 153730, item_num: 1, avail_period: -1, item_type: 2}  # 迪西
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 175
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 176
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154982, item_num: 1, avail_period: -1, item_type: 2}  # 赤蕴心缘
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 177
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 178
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 179
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154972, item_num: 1, avail_period: -1, item_type: 2}  # 赤蕴心缘
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 180
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection:
+    - {item_id: 150539, item_num: 1, avail_period: -1, item_type: 1}  # 超核·时空战舰
+- level: 181
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 182
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 153737, item_num: 1, avail_period: -1, item_type: 2}  # 小波
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 183
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 184
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 155042, item_num: 1, avail_period: -1, item_type: 2}  # 汐月幻蝶
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 185
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 186
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 187
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154088, item_num: 1, avail_period: -1, item_type: 2}  # 岚心执守
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 188
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 189
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 190
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154098, item_num: 1, avail_period: -1, item_type: 2}  # 岚心执守
+  collection: [{item_id: 174821, item_num: 5, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 191
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 192
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 127180, item_num: 1, avail_period: -1, item_type: 2}  # 帝皇铠甲
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 193
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 194
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 195
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 127167, item_num: 1, avail_period: -1, item_type: 2}  # 帝皇铠甲
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 196
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 197
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 198
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 154128, item_num: 1, avail_period: -1, item_type: 2}  # 月桂花神
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 199
+  special_flag: 0
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium: [{item_id: 160737, item_num: 50, avail_period: 0, item_type: 0}]  # 尊享空位填充，每次50个
+  collection: [{item_id: 174821, item_num: 1, avail_period: 0, item_type: 0}]  # 空天神鹰宝箱
+- level: 200
+  special_flag: 1
+  free: [{item_id: 160462, item_num: 1, avail_period: 0, item_type: 0}]
+  premium:
+    - {item_id: 155052, item_num: 1, avail_period: -1, item_type: 2}  # 织星绘梦
+  collection:
+    - {item_id: 163040, item_num: 1, avail_period: -1, item_type: 1}  # 白虎-合欢·琉璃主（最终大奖）
+
+tasks:
+- task_id: 5700  # 完成跑图或舞蹈1场（可重复任务）
+  tab_type: 2
+  pass_task_type: 0
+  target_type: race_or_dance_finish  # 跑图结算一次就自动获得5经验
+  target_count: 1
+  exp: 5
+  show_priority: 0
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: -1
+- task_id: 5702  # 每周完成跑图或舞蹈1场
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 1
+  exp: 200
+  show_priority: 10
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5666  # 子任务：完成跑图1场
+      target_type: race_finish  # 每完成一场跑图累计一次
+      target_count: 1
+      execute_period: 2
+      sh_execute_num: -1
+    - task_id: 5667  # 子任务：舞蹈1场中达成5次Perfect
+      target_type: dance_perfect  # 单场Perfect数量达到target_count后，给父任务5702累计1场
+      target_count: 5
+      execute_period: 2
+      sh_execute_num: -1
+- task_id: 5703  # 每周完成跑图或舞蹈3场
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 3
+  exp: 400
+  show_priority: 9
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5668  # 子任务：完成跑图；每完成1场，给父任务5703累计1场
+      target_type: race_finish
+      target_count: 1
+      execute_period: 2
+      sh_execute_num: -1
+    - task_id: 5669  # 子任务：完成3场舞蹈且每场达成5次Perfect
+      target_type: dance_perfect  # 每有1场达到5次Perfect，给父任务5703累计1场
+      target_count: 5
+      execute_period: 2
+      sh_execute_num: -1
+- task_id: 5704  # 每周完成排位赛或边境1场
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 1
+  exp: 200
+  show_priority: 8
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5670  # 子任务：完成排位赛1场
+      target_type: ranked_finish
+      target_count: 1
+      execute_period: 2
+      sh_execute_num: -1
+    - task_id: 5671  # 子任务：完成边境1场
+      target_type: border_finish
+      target_count: 1
+      execute_period: 2
+      sh_execute_num: -1
+- task_id: 5705  # 每周完成排位赛或边境3场
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 3
+  exp: 400
+  show_priority: 7
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5672  # 子任务：完成排位赛3场
+      target_type: ranked_finish
+      target_count: 1
+      execute_period: 2
+      sh_execute_num: -1
+    - task_id: 5673  # 子任务：完成边境3场
+      target_type: border_finish
+      target_count: 1
+      execute_period: 2
+      sh_execute_num: -1
+- task_id: 5674  # 每周进行赛车改装5次
+  tab_type: 2
+  pass_task_type: 0
+  target_type: kart_refit  # 普通改装和进阶改装实际消耗一次改装道具，累计一次
+  target_count: 5
+  exp: 150
+  show_priority: 6
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+- task_id: 5675  # 每周进行赛车改装20次
+  tab_type: 2
+  pass_task_type: 0
+  target_type: kart_refit
+  target_count: 20
+  exp: 300
+  show_priority: 5
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+- task_id: 5676  # 每周累计活跃度30（未接入：源码没有每日活跃度结算入口）
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 30
+  exp: 50
+  show_priority: 4
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+- task_id: 5677  # 每周累计活跃度150（未接入：源码没有每日活跃度结算入口）
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 150
+  exp: 120
+  show_priority: 3
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+- task_id: 5678  # 每周累计活跃度500（未接入：源码没有每日活跃度结算入口）
+  tab_type: 2
+  pass_task_type: 0
+  target_count: 500
+  exp: 180
+  show_priority: 2
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 2
+  sh_execute_num: 1
+- task_id: 5679  # 赛季累计登录5天
+  tab_type: 3
+  pass_task_type: 0
+  target_type: login_day  # 同一自然日重复登录只累计一次
+  target_count: 5
+  exp: 100
+  show_priority: 14
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5680  # 赛季累计登录10天
+  tab_type: 3
+  pass_task_type: 0
+  target_type: login_day
+  target_count: 10
+  exp: 200
+  show_priority: 13
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5681  # 赛季累计登录15天
+  tab_type: 3
+  pass_task_type: 0
+  target_type: login_day
+  target_count: 15
+  exp: 500
+  show_priority: 12
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5706  # 累计参与赛道工坊、冰雪飞驰或双人冲顶赛10场
+  tab_type: 3
+  pass_task_type: 0
+  target_count: 10
+  exp: 100
+  show_priority: 11
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5682  # 子任务：参与赛道工坊10场
+      target_type: track_workshop_finish  # 源码中的 Aurora UGC 赛道工坊结算
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5683  # 子任务：参与冰雪飞驰10场（未接入：源码没有该模式结算）
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5684  # 子任务：参与双人冲顶赛10场（未接入：源码没有该模式结算）
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+- task_id: 5707  # 累计参与赛道工坊、冰雪飞驰或双人冲顶赛30场
+  tab_type: 3
+  pass_task_type: 0
+  target_count: 30
+  exp: 200
+  show_priority: 10
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5685  # 子任务：参与赛道工坊30场
+      target_type: track_workshop_finish
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5686  # 子任务：参与冰雪飞驰30场（未接入：源码没有该模式结算）
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5687  # 子任务：参与双人冲顶赛30场（未接入：源码没有该模式结算）
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+- task_id: 5688  # 赛季累计获得冠军5场
+  tab_type: 3
+  pass_task_type: 0
+  target_type: race_champion
+  target_count: 5
+  exp: 100
+  show_priority: 9
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5689  # 赛季累计获得冠军15场
+  tab_type: 3
+  pass_task_type: 0
+  target_type: race_champion
+  target_count: 15
+  exp: 200
+  show_priority: 8
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5690  # 赛季累计获得冠军30场
+  tab_type: 3
+  pass_task_type: 0
+  target_type: race_champion
+  target_count: 30
+  exp: 500
+  show_priority: 7
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5708  # 排位赛胜利或边境冲线前三累计5场
+  tab_type: 3
+  pass_task_type: 0
+  target_count: 5
+  exp: 100
+  show_priority: 6
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5691  # 子任务：排位赛胜利5场
+      target_type: ranked_win
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5692  # 子任务：边境冲线前三5场
+      target_type: border_top3
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+- task_id: 5709  # 排位赛胜利或边境冲线前三累计25场
+  tab_type: 3
+  pass_task_type: 0
+  target_count: 25
+  exp: 200
+  show_priority: 5
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5693  # 子任务：排位赛胜利25场
+      target_type: ranked_win
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5694  # 子任务：边境冲线前三25场
+      target_type: border_top3
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+- task_id: 5710  # 排位赛胜利或边境冲线前三累计50场
+  tab_type: 3
+  pass_task_type: 0
+  target_count: 50
+  exp: 500
+  show_priority: 4
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+  child_tasks:
+    - task_id: 5695  # 子任务：排位赛胜利50场
+      target_type: ranked_win
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+    - task_id: 5696  # 子任务：边境冲线前三50场
+      target_type: border_top3
+      target_count: 1
+      execute_period: 0
+      sh_execute_num: -1
+- task_id: 5697  # 赛季进行宝石合成10次
+  tab_type: 3
+  pass_task_type: 0
+  target_type: gem_synthesis  # 合成成功或失败都算一次有效合成
+  target_count: 10
+  exp: 100
+  show_priority: 3
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5698  # 赛季进行赛车改装300次
+  tab_type: 3
+  pass_task_type: 0
+  target_type: kart_refit
+  target_count: 300
+  exp: 200
+  show_priority: 2
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5699  # 赛季进行赛车改装600次
+  tab_type: 3
+  pass_task_type: 0
+  target_type: kart_refit
+  target_count: 600
+  exp: 500
+  show_priority: 1
+  open_date: 20260702
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 1
+- task_id: 5701  # 特殊任务：8月21日至27日，每场跑图或舞蹈增加20经验（150级后失效）
+  tab_type: 3
+  pass_task_type: 1
+  target_type: race_or_dance_finish
+  target_count: 1
+  exp: 20
+  show_priority: 14
+  open_date: 20260821
+  close_date: 20260827
+  execute_period: 0
+  sh_execute_num: 16959
+  pass_task_num: 0
+  pass_task_max_level: 150
+  pass_task_status: 0  # 官服未开通值；玩家开通尊享或典藏后服务端实时下发1
+
+exchange_shop:
+  enabled: true
+  type: 437
+  display_item_id: 160462
+  begin_time: 1782950400
+  end_time: 1787781600
+  show_priority: 100
+  items:
+    - {item_id: 134054, item_num: 1, avail_period: -1, item_type: 1, price: 20, limit: 1}
+    - {item_id: 134062, item_num: 1, avail_period: -1, item_type: 1, price: 50, limit: 1}
+    - {item_id: 119883, item_num: 1, avail_period: -1, item_type: 1, price: 20, limit: 1}
+    - {item_id: 119891, item_num: 1, avail_period: -1, item_type: 1, price: 50, limit: 1}
+    - {item_id: 132552, item_num: 1, avail_period: -1, item_type: 1, price: 15, limit: 1}
+    - {item_id: 132560, item_num: 1, avail_period: -1, item_type: 1, price: 40, limit: 1}
+    - {item_id: 103767, item_num: 1, avail_period: -1, item_type: 1, price: 15, limit: 1}
+    - {item_id: 103775, item_num: 1, avail_period: -1, item_type: 1, price: 40, limit: 1}
+    - {item_id: 128212, item_num: 1, avail_period: -1, item_type: 1, price: 15, limit: 1}
+    - {item_id: 128220, item_num: 1, avail_period: -1, item_type: 1, price: 40, limit: 1}
+    - {item_id: 147974, item_num: 1, avail_period: 0, item_type: 0, price: 2, limit: 10}
+    - {item_id: 147975, item_num: 1, avail_period: 0, item_type: 0, price: 1, limit: 10}
+    - {item_id: 69947, item_num: 4, avail_period: 0, item_type: 0, price: 1, limit: 50}
+    - {item_id: 99662, item_num: 2, avail_period: 0, item_type: 0, price: 1, limit: 10}
+    - {item_id: 96650, item_num: 2, avail_period: 0, item_type: 0, price: 1, limit: 10}
+    - {item_id: 33772, item_num: 4, avail_period: 0, item_type: 0, price: 1, limit: 50}

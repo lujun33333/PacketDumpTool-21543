@@ -1,0 +1,169 @@
+﻿##终极魔法阵兑换奖励配置
+EAIT_CAR:
+  - ItemId: 16105
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 110709
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 30000
+  - ItemId: 129288
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 30000
+  - ItemId: 136721
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 30000
+  - ItemId: 138418
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 30000
+  - ItemId: 138407
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 30000
+  - ItemId: 132221
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 20000
+  - ItemId: 34393
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 20000
+  - ItemId: 132220
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 20000
+EAIT_PET:
+  - ItemId: 118970
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000  
+  - ItemId: 134942
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000  
+  - ItemId: 135081
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000  
+  - ItemId: 135082
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000  
+  - ItemId: 135083
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000  
+  - ItemId: 135084
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000  
+  - ItemId: 136609
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000 
+  - ItemId: 136606
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000 
+  - ItemId: 138313
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 15000 
+EAIT_SEAT:
+  - ItemId: 135078
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 138312
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 138311
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 136603
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 136602
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 136601
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 135078
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 133621
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 133620
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 132177
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 132176
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 130637
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 130636
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 129299
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000
+  - ItemId: 127757
+    ItemNum: 1
+    AvailPeriod: -1
+    ItemType: 2
+    ComsumeItemNum: 5000

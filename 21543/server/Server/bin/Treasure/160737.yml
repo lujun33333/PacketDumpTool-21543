@@ -1,0 +1,114 @@
+LuckyValue: 2999 # 极品保底：约第3000抽触发；命中极品后重新累计
+Pool: # Seed为1-10000000累计阈值，必须从小到大排列
+  - Seed: 100 # 极品：0.02%
+    ItemType: 1
+    Items:
+      - ItemId: 74362 #爆天雪
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+        
+      - ItemId: 88865 #至尊·麦凯伦
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 157774 #至曜·玄武
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 150528 #冥王·哈迪斯
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 144523 #智慧之神
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 132210 #至尊·爆天甲
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 116735 #终极众神之神
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 110709 #至尊·盘龙
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+      - ItemId: 157774 #至尊·麦凯伦
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: -1 # 永久
+
+
+
+
+  - Seed: 500000 # 稀有：4.98%（2001-500000）
+    ItemType: 2
+    Items:
+
+      - ItemId: 12387 #道具id
+        ItemNum: 1 #数量
+        ObtainTime: 1 #时间
+        AvailPeriod: 360  #时间
+
+      - ItemId: 12377 #道具id
+        ItemNum: 1 #数量
+        ObtainTime: 1 #时间
+        AvailPeriod: 360  #时间
+
+      - ItemId: 21930 #道具id
+        ItemNum: 1 #数量
+        ObtainTime: 1 #时间
+        AvailPeriod: 360  #时间
+
+  - Seed: 10000000 # 普通：95%（500001-10000000）
+    ItemType: 0
+    Items:
+      - ItemId: 21951 # 蓝色火焰漂移特效
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod:  168 # 显示限时
+
+      - ItemId: 74844 # 紫色火焰漂移特效
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod:  168 # 显示限时
+
+      - ItemId: 12386 # 闪电漂移特效
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod:  168 # 显示限时
+
+      - ItemId: 12381 # 喷云漂移特效
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod:  168 # 显示限时
+
+      - ItemId: 12376 # 水晶泡泡漂移特效
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: 168 # 显示限时
+
+      - ItemId: 74846 # 粉色音符漂移特效
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: 168 # 显示限时
+
+      - ItemId: 12378 # 黑色轮胎印
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: 168 # 显示限时
+
+      - ItemId: 12388 # 暗红轮胎印
+        ItemNum: 1 # 不用管
+        ObtainTime: 1 # 不用管
+        AvailPeriod: 168 # 显示限时

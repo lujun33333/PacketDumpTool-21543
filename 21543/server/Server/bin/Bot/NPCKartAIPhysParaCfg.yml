@@ -1,0 +1,771 @@
+#NPCKartAIPhysParaCfg NPC 赛车AI参数配置信息 固定12个等级
+
+NPCKartAIPhysParaInfo:
+ - NPCKartAIPhysPara: #NPCAILevel 1
+    NpcN2OIntervalTime: 20000
+    NpcTriggerN2ORate: 0
+    NpcRestCheckTime: 2000
+    NpcFixVelocity: 100
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 20
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4000
+    - Key: 5000
+      Value: 4000
+    - Key: 5700
+      Value: 4500
+    - Key: 9000
+      Value: 5000
+    - Key: 9300
+      Value: 5500
+    - Key: 11000
+      Value: 5500
+    - Key: 11800
+      Value: 5600
+    - Key: 15000
+      Value: 6000
+    - Key: 16000
+      Value: 6000
+    - Key: 20000
+      Value: 6000
+    - Key: 25000
+      Value: 6000
+    - Key: 30000
+      Value: 6000
+    - Key: 35000
+      Value: 6000 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 40  
+    NpcDriftRate: 60  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 2
+    NpcN2OIntervalTime: 18000
+    NpcTriggerN2ORate: 0
+    NpcRestCheckTime: 1950
+    NpcFixVelocity: 105
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 20
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4200
+    - Key: 5000
+      Value: 4200
+    - Key: 5700
+      Value: 4700
+    - Key: 9000
+      Value: 5200
+    - Key: 9300
+      Value: 5700
+    - Key: 11000
+      Value: 5700
+    - Key: 11800
+      Value: 5700
+    - Key: 15000
+      Value: 6200
+    - Key: 16000
+      Value: 6400
+    - Key: 20000
+      Value: 6400
+    - Key: 25000
+      Value: 6400
+    - Key: 30000
+      Value: 6400
+    - Key: 35000
+      Value: 6400 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 40  
+    NpcDriftRate: 65  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 3
+    NpcN2OIntervalTime: 16000
+    NpcTriggerN2ORate: 0
+    NpcRestCheckTime: 1900
+    NpcFixVelocity: 110
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 20
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4200
+    - Key: 5000
+      Value: 4200
+    - Key: 5700
+      Value: 4700
+    - Key: 9000
+      Value: 5200
+    - Key: 9300
+      Value: 5700
+    - Key: 11000
+      Value: 5700
+    - Key: 11800
+      Value: 5800
+    - Key: 15000
+      Value: 6600
+    - Key: 16000
+      Value: 6800
+    - Key: 20000
+      Value: 6800
+    - Key: 25000
+      Value: 6800
+    - Key: 30000
+      Value: 6800
+    - Key: 35000
+      Value: 6800 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 35  
+    NpcDriftRate: 70  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 4
+    NpcN2OIntervalTime: 12000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1850
+    NpcFixVelocity: 115
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 30
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4000
+    - Key: 5000
+      Value: 4000
+    - Key: 5700
+      Value: 4400
+    - Key: 9000
+      Value: 5000
+    - Key: 9300
+      Value: 5400
+    - Key: 11000
+      Value: 5600
+    - Key: 11800
+      Value: 5700
+    - Key: 15000
+      Value: 6800
+    - Key: 16000
+      Value: 7000
+    - Key: 20000
+      Value: 7000
+    - Key: 25000
+      Value: 7000
+    - Key: 30000
+      Value: 7000
+    - Key: 35000
+      Value: 7000 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 25  
+    NpcDriftRate: 80  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 5
+    NpcN2OIntervalTime: 11000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1800
+    NpcFixVelocity: 120
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 30
+    NpcTurnAjustDisHulanRate: 30
+    ForwardAccel:
+    - Key: 0
+      Value: 4100
+    - Key: 5000
+      Value: 4100
+    - Key: 5700
+      Value: 4500
+    - Key: 9000
+      Value: 5000
+    - Key: 9300
+      Value: 5700
+    - Key: 11000
+      Value: 5900
+    - Key: 11800
+      Value: 6000
+    - Key: 15000
+      Value: 7200
+    - Key: 16000
+      Value: 7200
+    - Key: 20000
+      Value: 7200
+    - Key: 25000
+      Value: 7200
+    - Key: 30000
+      Value: 7200
+    - Key: 35000
+      Value: 7200 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 25  
+    NpcDriftRate: 90  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 6
+    NpcN2OIntervalTime: 10000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1750
+    NpcFixVelocity: 125
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4100
+    - Key: 5000
+      Value: 4100
+    - Key: 5700
+      Value: 4600
+    - Key: 9000
+      Value: 5100
+    - Key: 9300
+      Value: 5600
+    - Key: 11000
+      Value: 6000
+    - Key: 11800
+      Value: 6100
+    - Key: 15000
+      Value: 7400
+    - Key: 16000
+      Value: 7400
+    - Key: 20000
+      Value: 7400
+    - Key: 25000
+      Value: 7400
+    - Key: 30000
+      Value: 7400
+    - Key: 35000
+      Value: 7400 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 25  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 7
+    NpcN2OIntervalTime: 9000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1700
+    NpcFixVelocity: 135
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4400
+    - Key: 5000
+      Value: 4300
+    - Key: 5700
+      Value: 4800
+    - Key: 9000
+      Value: 5000
+    - Key: 9300
+      Value: 5500
+    - Key: 11000
+      Value: 6200
+    - Key: 11800
+      Value: 6400
+    - Key: 15000
+      Value: 7600
+    - Key: 16000
+      Value: 7600
+    - Key: 20000
+      Value: 7600
+    - Key: 25000
+      Value: 7600
+    - Key: 30000
+      Value: 7600
+    - Key: 35000
+      Value: 7600 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 20  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 8
+    NpcN2OIntervalTime: 7000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1700
+    NpcFixVelocity: 135
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4300
+    - Key: 5000
+      Value: 4300
+    - Key: 5700
+      Value: 4600
+    - Key: 9000
+      Value: 5000
+    - Key: 9300
+      Value: 5600
+    - Key: 11000
+      Value: 6300
+    - Key: 11800
+      Value: 6500
+    - Key: 15000
+      Value: 7800
+    - Key: 16000
+      Value: 7800
+    - Key: 20000
+      Value: 7800
+    - Key: 25000
+      Value: 7800
+    - Key: 30000
+      Value: 7800
+    - Key: 35000
+      Value: 7800 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 20  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 9
+    NpcN2OIntervalTime: 6000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1700
+    NpcFixVelocity: 140
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 4400
+    - Key: 5000
+      Value: 4300
+    - Key: 5700
+      Value: 4900
+    - Key: 9000
+      Value: 5200
+    - Key: 9300
+      Value: 5900
+    - Key: 11000
+      Value: 6400
+    - Key: 11800
+      Value: 6700
+    - Key: 15000
+      Value: 8100
+    - Key: 16000
+      Value: 8100
+    - Key: 20000
+      Value: 8100
+    - Key: 25000
+      Value: 8100
+    - Key: 30000
+      Value: 8100
+    - Key: 35000
+      Value: 8100 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 20  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 10
+    NpcN2OIntervalTime: 6000
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1700
+    NpcFixVelocity: 145
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 7750
+    - Key: 5000
+      Value: 8000
+    - Key: 5700
+      Value: 8000
+    - Key: 9000
+      Value: 8000
+    - Key: 9300
+      Value: 8000
+    - Key: 11000
+      Value: 8500
+    - Key: 11800
+      Value: 8500
+    - Key: 15000
+      Value: 8500
+    - Key: 16000
+      Value: 9500
+    - Key: 20000
+      Value: 9500
+    - Key: 25000
+      Value: 9500
+    - Key: 30000
+      Value: 10000
+    - Key: 35000
+      Value: 10500 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 15  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 11
+    NpcN2OIntervalTime: 5500
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1700
+    NpcFixVelocity: 150
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 8500
+    - Key: 5000
+      Value: 8500
+    - Key: 5700
+      Value: 8500
+    - Key: 9000
+      Value: 8500
+    - Key: 9300
+      Value: 8500
+    - Key: 11000
+      Value: 8500
+    - Key: 11800
+      Value: 8500
+    - Key: 15000
+      Value: 9000
+    - Key: 16000
+      Value: 10500
+    - Key: 20000
+      Value: 10500
+    - Key: 25000
+      Value: 10500
+    - Key: 30000
+      Value: 10500
+    - Key: 35000
+      Value: 10500 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 15  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200
+ - NPCKartAIPhysPara: #NPCAILevel 12
+    NpcN2OIntervalTime: 5500
+    NpcTriggerN2ORate: 100
+    NpcRestCheckTime: 1700
+    NpcFixVelocity: 160
+    NpcFixVelocityRate: 100
+    NpcRunDisHulanThreshold: 1
+    NpcSJetRate: 100
+    NpcTurnAjustDisHulanRate: 100
+    ForwardAccel:
+    - Key: 0
+      Value: 9000
+    - Key: 5000
+      Value: 9000
+    - Key: 5700
+      Value: 9000
+    - Key: 9000
+      Value: 9000
+    - Key: 9300
+      Value: 9000
+    - Key: 11000
+      Value: 9000
+    - Key: 11800
+      Value: 9000
+    - Key: 15000
+      Value: 9500
+    - Key: 16000
+      Value: 11000
+    - Key: 20000
+      Value: 11000
+    - Key: 25000
+      Value: 11000
+    - Key: 30000
+      Value: 11000
+    - Key: 35000
+      Value: 11000 
+    BackwardAccel:
+    - Key: 0
+      Value: -5000
+    - Key: 3000
+      Value: -5000
+    - Key: 6000
+      Value: -5000
+    - Key: 10000
+      Value: -5500
+    - Key: 12000
+      Value: -5500
+    StraightLenThreshold: 15  
+    NpcDriftRate: 100  
+    CompensateParam:
+    - Percent: 2
+      Value: 1010
+    - Percent: 10
+      Value: 1010
+    - Percent: 20
+      Value: 1020
+    - Percent: 60
+      Value: 1080
+    - Percent: 120
+      Value: 1160
+    - Percent: 240
+      Value: 1200
+    - Percent: 900
+      Value: 1200

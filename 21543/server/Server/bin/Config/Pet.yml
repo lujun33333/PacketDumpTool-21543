@@ -1,0 +1,955 @@
+# Generated from official pet strengthen dump packet_dumps_13376.
+StrengthenCardID: 33772
+HasMoreInfo: 1
+StrengthenRule:
+  BatchOptions: [1, 10]
+  MaxBatch: 10
+  FailAwardExp: 150
+  CfgChunkSize: 30
+PetItem:
+  - ItemId: 33772
+    ItemNum: 1
+    SuperMoney: 150
+Levels: []
+PetStrengs:
+  - ID: 160775
+    Name: "芙芙"
+  - ID: 136605
+    Name: "小曹操"
+    MissingDetailDump: true
+  - ID: 113906
+    Name: "仙兽-白虎"
+  - ID: 158309
+    Name: "孙尚香"
+  - ID: 146445
+    Name: "小孙策"
+  - ID: 156068
+    Name: "幻海小灵主"
+  - ID: 153935
+    Name: "小孙权"
+  - ID: 126428
+    Name: "仙兽-麒麟"
+  - ID: 106558
+    Name: "游鸿蓝鲸"
+  - ID: 118968
+    Name: "小马超"
+  - ID: 144427
+    Name: "小典韦"
+  - ID: 148203
+    Name: "小昭君"
+  - ID: 152462
+    Name: "森之精灵"
+  - ID: 140023
+    Name: "小西施"
+  - ID: 148202
+    Name: "甜心公主"
+  - ID: 108454
+    Name: "双生幽狼"
+  - ID: 146448
+    Name: "喵呜星云"
+  - ID: 146446
+    Name: "阿勒泰之子"
+  - ID: 144428
+    Name: "人鱼公主"
+  - ID: 71550
+    Name: "齐天大圣"
+  - ID: 138313
+    Name: "小贵妃"
+  - ID: 136606
+    Name: "小刘备"
+  - ID: 144429
+    Name: "王牌怪咖"
+    MissingDetailDump: true
+  - ID: 115749
+    Name: "笔墨扶摇"
+  - ID: 135084
+    Name: "喜羊羊"
+  - ID: 138316
+    Name: "醉梦仙子"
+  - ID: 136607
+    Name: "花间少女"
+  - ID: 135080
+    Name: "小梅仙"
+  - ID: 135083
+    Name: "幻海之萤"
+  - ID: 136608
+    Name: "御术灵龙"
+    MissingDetailDump: true
+  - ID: 130640
+    Name: "星河绘画师"
+  - ID: 133624
+    Name: "酷喵设计师"
+  - ID: 129610
+    Name: "誓言守护者"
+  - ID: 132179
+    Name: "小菊仙"
+  - ID: 130639
+    Name: "小竹仙"
+  - ID: 126432
+    Name: "蔷薇公主"
+  - ID: 129608
+    Name: "小兰仙"
+  - ID: 126429
+    Name: "艾丽莎"
+  - ID: 113907
+    Name: "花木兰"
+  - ID: 116912
+    Name: "小张飞"
+  - ID: 112894
+    Name: "HelloKitty猫"
+  - ID: 116911
+    Name: "小赵云"
+  - ID: 116909
+    Name: "申公豹"
+  - ID: 118969
+    Name: "小黄忠"
+  - ID: 88072
+    Name: "樱花仙子"
+  - ID: 113910
+    Name: "小关羽"
+  - ID: 109556
+    Name: "哪吒三太子"
+  - ID: 109557
+    Name: "小白龙"
+  - ID: 118970
+    Name: "雪凝公主"
+  - ID: 103405
+    Name: "伊贺忍狐"
+  - ID: 88943
+    Name: "玉女潇潇"
+  - ID: 102199
+    Name: "浪漫花童"
+  - ID: 100853
+    Name: "极星公主米娜"
+  - ID: 106563
+    Name: "辛巴狮王"
+  - ID: 112896
+    Name: "白泽仙兽"
+  - ID: 106559
+    Name: "芙蓉仙子"
+  - ID: 108456
+    Name: "神笔牛牛"
+  - ID: 104739
+    Name: "小吕布"
+  - ID: 108458
+    Name: "小貂蝉"
+  - ID: 103404
+    Name: "喜乐汤圆"
+  - ID: 33226
+    Name: "苍冥神鸢"
+  - ID: 100037
+    Name: "海豹嘟嘟"
+  - ID: 98791
+    Name: "白翎雀王"
+  - ID: 15234
+    Name: "鶣"
+  - ID: 15235
+    Name: "鶣"
+  - ID: 17919
+    Name: "飞虎王"
+  - ID: 30838
+    Name: "海的女儿"
+  - ID: 21597
+    Name: "圣诞麋鹿"
+  - ID: 25337
+    Name: "飞火龙"
+  - ID: 20664
+    Name: "白金神兽"
+  - ID: 18643
+    Name: "黄金神兽"
+  - ID: 26111
+    Name: "美人鱼"
+  - ID: 63689
+    Name: "城邦守护兽"
+  - ID: 60425
+    Name: "白羊萝莉"
+  - ID: 25860
+    Name: "愚人小狐狸仙"
+  - ID: 25861
+    Name: "愚人小狐狸爷"
+  - ID: 23647
+    Name: "霹雳天使"
+  - ID: 25336
+    Name: "机器兔"
+  - ID: 26613
+    Name: "胜利天使"
+  - ID: 20125
+    Name: "光天使"
+  - ID: 27449
+    Name: "鶣"
+  - ID: 23227
+    Name: "海公主玛娜菲"
+  - ID: 23228
+    Name: "海精灵菲奥奈"
+  - ID: 23380
+    Name: "天使丘比特"
+  - ID: 23379
+    Name: "爱神丘比特"
+  - ID: 28713
+    Name: "熊星人小爱"
+  - ID: 28712
+    Name: "熊星人小宝"
+  - ID: 26900
+    Name: "凤凰精灵"
+  - ID: 26901
+    Name: "凤凰精灵"
+  - ID: 23019
+    Name: "姜饼小子"
+  - ID: 23020
+    Name: "姜饼女王"
+  - ID: 28095
+    Name: "烈焰魔甲龙"
+  - ID: 26324
+    Name: "考拉王子"
+  - ID: 26323
+    Name: "考拉公主"
+  - ID: 29426
+    Name: "飞天猪猪侠"
+  - ID: 29427
+    Name: "飞天猪小妹"
+  - ID: 65100
+    Name: "超能大白"
+  - ID: 66587
+    Name: "闪电皮卡丘"
+  - ID: 32422
+    Name: "情侣贵族专属宠"
+  - ID: 30458
+    Name: "小橘子天使"
+  - ID: 31905
+    Name: "变色炎龙"
+  - ID: 31179
+    Name: "囧囧背景"
+  - ID: 32423
+    Name: "双子宠物"
+  - ID: 34300
+    Name: "萌态小子"
+  - ID: 34835
+    Name: "紫蝶仙灵"
+    MissingDetailDump: true
+  - ID: 26077
+    Name: "红毛使者"
+  - ID: 74153
+    Name: "美人鱼至尊纪念版"
+    MissingDetailDump: true
+  - ID: 32829
+    Name: "飞天喵星人"
+  - ID: 63394
+    Name: "小黄人"
+  - ID: 74732
+    Name: "考拉王子珍藏版"
+  - ID: 33739
+    Name: "唐韵鼠小弟"
+  - ID: 66589
+    Name: "嗨皮猴"
+  - ID: 74965
+    Name: "熊本熊"
+  - ID: 30460
+    Name: "萌动小萝莉"
+  - ID: 28096
+    Name: "咕噜星"
+  - ID: 31906
+    Name: "蝴蝶仙子"
+  - ID: 66588
+    Name: "金狮燎原"
+  - ID: 76467
+    Name: "孔雀翎王"
+  - ID: 68719
+    Name: "熊猫萌宝"
+  - ID: 30459
+    Name: "帅气小正太"
+  - ID: 33740
+    Name: "粉恋小天使"
+  - ID: 34299
+    Name: "钢铁侠"
+  - ID: 71556
+    Name: "涵情双鱼"
+  - ID: 75772
+    Name: "万能叮当猫"
+  - ID: 74961
+    Name: "绿冥仙子"
+  - ID: 62747
+    Name: "海神奈伊"
+  - ID: 33227
+    Name: "灵尾狐"
+  - ID: 68124
+    Name: "仙灵处女"
+  - ID: 74960
+    Name: "蓝冥武士"
+  - ID: 70020
+    Name: "亦幻水瓶"
+  - ID: 62751
+    Name: "米娅公主"
+  - ID: 74733
+    Name: "战神熊猫"
+  - ID: 69196
+    Name: "小王子"
+  - ID: 75773
+    Name: "救世超人"
+  - ID: 78105
+    Name: "九周年纪念企鹅"
+  - ID: 78278
+    Name: "焰火朱雀"
+  - ID: 60426
+    Name: "南瓜宝宝"
+  - ID: 78282
+    Name: "小黄鸡"
+  - ID: 80502
+    Name: "甜心护士小爱"
+  - ID: 34834
+    Name: "莲爱天使"
+  - ID: 76468
+    Name: "森林先知"
+  - ID: 68716
+    Name: "铠甲天秤"
+  - ID: 70018
+    Name: "扑克鬼爵"
+  - ID: 63391
+    Name: "水灵天使"
+  - ID: 85919
+    Name: "寿司小太郎"
+  - ID: 83027
+    Name: "花楹公主"
+  - ID: 72721
+    Name: "战将金牛"
+  - ID: 22345
+    Name: "小兔仙"
+  - ID: 22346
+    Name: "兔爷儿"
+  - ID: 78902
+    Name: "萌鹿芮芮"
+  - ID: 67491
+    Name: "缘梦天使"
+  - ID: 18934
+    Name: "招财猫"
+  - ID: 80148
+    Name: "白雪公主"
+  - ID: 77193
+    Name: "萌兔绅士"
+  - ID: 80149
+    Name: "小狐女"
+  - ID: 68715
+    Name: "爱心王后"
+  - ID: 62748
+    Name: "白勇太"
+  - ID: 73675
+    Name: "青丘灵狐"
+  - ID: 80504
+    Name: "邮差尼柏"
+  - ID: 62750
+    Name: "乔治王子"
+  - ID: 93549
+    Name: "凝露精灵珞丽丝"
+  - ID: 77192
+    Name: "森林鹿后"
+  - ID: 83028
+    Name: "月宫小仙子"
+  - ID: 93555
+    Name: "梅灵婉香"
+  - ID: 94815
+    Name: "战甲机械猪"
+  - ID: 88945
+    Name: "机械皮卡喵"
+    MissingDetailDump: true
+  - ID: 69195
+    Name: "绯樱萝莉"
+  - ID: 20358
+    Name: "小飞象波波"
+  - ID: 20359
+    Name: "小飞象丹丹"
+    MissingDetailDump: true
+  - ID: 72266
+    Name: "樱本幻魂"
+  - ID: 84782
+    Name: "青鸾依依"
+  - ID: 89923
+    Name: "西瓜王子"
+  - ID: 74962
+    Name: "战斗小僵尸"
+  - ID: 100035
+    Name: "迷幻海妖"
+  - ID: 102197
+    Name: "子鼠灵韵"
+  - ID: 98340
+    Name: "绮梦精灵"
+  - ID: 65099
+    Name: "通灵忍者"
+  - ID: 92810
+    Name: "时光爱丽丝"
+  - ID: 67490
+    Name: "外星人憨豆"
+  - ID: 94813
+    Name: "暗豹法老"
+PetStrengDetails:
+  - ID: 160775
+    Name: "芙芙"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 113906
+    Name: "仙兽-白虎"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 129610
+    Name: "誓言守护者"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 156068
+    Name: "幻海小灵主"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 158309
+    Name: "孙尚香"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 146445
+    Name: "小孙策"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 153935
+    Name: "小孙权"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 135080
+    Name: "小梅仙"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 144427
+    Name: "小典韦"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 118968
+    Name: "小马超"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 126428
+    Name: "仙兽-麒麟"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 148203
+    Name: "小昭君"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 106558
+    Name: "游鸿蓝鲸"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 152462
+    Name: "森之精灵"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 140023
+    Name: "小西施"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 148202
+    Name: "甜心公主"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 146446
+    Name: "阿勒泰之子"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 108454
+    Name: "双生幽狼"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 146448
+    Name: "喵呜星云"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 138313
+    Name: "小贵妃"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 136606
+    Name: "小刘备"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 144428
+    Name: "人鱼公主"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 71550
+    Name: "齐天大圣"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 135084
+    Name: "喜羊羊"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 115749
+    Name: "笔墨扶摇"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 138316
+    Name: "醉梦仙子"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 135083
+    Name: "幻海之萤"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 136607
+    Name: "花间少女"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 130640
+    Name: "星河绘画师"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 133624
+    Name: "酷喵设计师"
+    SourcePacket: "01_seq1665_msg28228.bin"
+  - ID: 132179
+    Name: "小菊仙"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 130639
+    Name: "小竹仙"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 126432
+    Name: "蔷薇公主"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 129608
+    Name: "小兰仙"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 126429
+    Name: "艾丽莎"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 113907
+    Name: "花木兰"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 116912
+    Name: "小张飞"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 112894
+    Name: "HelloKitty猫"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 116911
+    Name: "小赵云"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 116909
+    Name: "申公豹"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 118969
+    Name: "小黄忠"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 113910
+    Name: "小关羽"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 109556
+    Name: "哪吒三太子"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 109557
+    Name: "小白龙"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 118970
+    Name: "雪凝公主"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 103405
+    Name: "伊贺忍狐"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 88943
+    Name: "玉女潇潇"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 102199
+    Name: "浪漫花童"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 100853
+    Name: "极星公主米娜"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 106563
+    Name: "辛巴狮王"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 112896
+    Name: "白泽仙兽"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 106559
+    Name: "芙蓉仙子"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 108456
+    Name: "神笔牛牛"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 104739
+    Name: "小吕布"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 108458
+    Name: "小貂蝉"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 94813
+    Name: "暗豹法老"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 67490
+    Name: "外星人憨豆"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 92810
+    Name: "时光爱丽丝"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 98340
+    Name: "绮梦精灵"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 65099
+    Name: "通灵忍者"
+    SourcePacket: "02_seq1670_msg28228.bin"
+  - ID: 15234
+    Name: "鶣"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 15235
+    Name: "鶣"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 17919
+    Name: "飞虎王"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 30838
+    Name: "海的女儿"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 21597
+    Name: "圣诞麋鹿"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 25337
+    Name: "飞火龙"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 20664
+    Name: "白金神兽"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 18643
+    Name: "黄金神兽"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 60425
+    Name: "白羊萝莉"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 23647
+    Name: "霹雳天使"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 20125
+    Name: "光天使"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 27449
+    Name: "鶣"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 28713
+    Name: "熊星人小爱"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 28712
+    Name: "熊星人小宝"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 26900
+    Name: "凤凰精灵"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 26901
+    Name: "凤凰精灵"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 23019
+    Name: "姜饼小子"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 23020
+    Name: "姜饼女王"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 28095
+    Name: "烈焰魔甲龙"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 26324
+    Name: "考拉王子"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 26323
+    Name: "考拉公主"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 29426
+    Name: "飞天猪猪侠"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 29427
+    Name: "飞天猪小妹"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 26111
+    Name: "美人鱼"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 65100
+    Name: "超能大白"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 66587
+    Name: "闪电皮卡丘"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 23380
+    Name: "天使丘比特"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 23379
+    Name: "爱神丘比特"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 32422
+    Name: "情侣贵族专属宠"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 30458
+    Name: "小橘子天使"
+    SourcePacket: "03_seq1675_msg28228.bin"
+  - ID: 78105
+    Name: "九周年纪念企鹅"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 75773
+    Name: "救世超人"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 25860
+    Name: "愚人小狐狸仙"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 25861
+    Name: "愚人小狐狸爷"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 31179
+    Name: "囧囧背景"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 63689
+    Name: "城邦守护兽"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 25336
+    Name: "机器兔"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 32423
+    Name: "双子宠物"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 34300
+    Name: "萌态小子"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 23227
+    Name: "海公主玛娜菲"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 23228
+    Name: "海精灵菲奥奈"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 26077
+    Name: "红毛使者"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 26613
+    Name: "胜利天使"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 32829
+    Name: "飞天喵星人"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 63394
+    Name: "小黄人"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 33740
+    Name: "粉恋小天使"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 78282
+    Name: "小黄鸡"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 80502
+    Name: "甜心护士小爱"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 34299
+    Name: "钢铁侠"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 78278
+    Name: "焰火朱雀"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 60426
+    Name: "南瓜宝宝"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 71556
+    Name: "涵情双鱼"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 74732
+    Name: "考拉王子珍藏版"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 31905
+    Name: "变色炎龙"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 33739
+    Name: "唐韵鼠小弟"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 66589
+    Name: "嗨皮猴"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 74965
+    Name: "熊本熊"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 30460
+    Name: "萌动小萝莉"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 28096
+    Name: "咕噜星"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 31906
+    Name: "蝴蝶仙子"
+    SourcePacket: "04_seq1680_msg28228.bin"
+  - ID: 66588
+    Name: "金狮燎原"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 76467
+    Name: "孔雀翎王"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 75772
+    Name: "万能叮当猫"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 62747
+    Name: "海神奈伊"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 74961
+    Name: "绿冥仙子"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 69196
+    Name: "小王子"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 33227
+    Name: "灵尾狐"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 68719
+    Name: "熊猫萌宝"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 30459
+    Name: "帅气小正太"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 68124
+    Name: "仙灵处女"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 74960
+    Name: "蓝冥武士"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 70020
+    Name: "亦幻水瓶"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 62751
+    Name: "米娅公主"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 74733
+    Name: "战神熊猫"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 34834
+    Name: "莲爱天使"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 76468
+    Name: "森林先知"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 68716
+    Name: "铠甲天秤"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 70018
+    Name: "扑克鬼爵"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 63391
+    Name: "水灵天使"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 85919
+    Name: "寿司小太郎"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 83027
+    Name: "花楹公主"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 72721
+    Name: "战将金牛"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 22345
+    Name: "小兔仙"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 22346
+    Name: "兔爷儿"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 78902
+    Name: "萌鹿芮芮"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 67491
+    Name: "缘梦天使"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 18934
+    Name: "招财猫"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 80148
+    Name: "白雪公主"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 77193
+    Name: "萌兔绅士"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 68715
+    Name: "爱心王后"
+    SourcePacket: "05_seq1685_msg28228.bin"
+  - ID: 80149
+    Name: "小狐女"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 62748
+    Name: "白勇太"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 73675
+    Name: "青丘灵狐"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 80504
+    Name: "邮差尼柏"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 62750
+    Name: "乔治王子"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 93549
+    Name: "凝露精灵珞丽丝"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 77192
+    Name: "森林鹿后"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 83028
+    Name: "月宫小仙子"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 93555
+    Name: "梅灵婉香"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 94815
+    Name: "战甲机械猪"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 69195
+    Name: "绯樱萝莉"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 20358
+    Name: "小飞象波波"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 72266
+    Name: "樱本幻魂"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 84782
+    Name: "青鸾依依"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 89923
+    Name: "西瓜王子"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 74962
+    Name: "战斗小僵尸"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 33226
+    Name: "苍冥神鸢"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 98791
+    Name: "白翎雀王"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 100037
+    Name: "海豹嘟嘟"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 88072
+    Name: "樱花仙子"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 100035
+    Name: "迷幻海妖"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 102197
+    Name: "子鼠灵韵"
+    SourcePacket: "06_seq1690_msg28228.bin"
+  - ID: 103404
+    Name: "喜乐汤圆"
+    SourcePacket: "06_seq1690_msg28228.bin"
+PetHuanHuas:
+  []
+PetAllStatus:
+  []
+OfficialDumpSummary:
+  PetItemYmlCount: 633
+  StrengthenIdCount: 180
+  StrengthenDetailCount: 173
+  MissingStrengthenDetailIDs:
+    - ID: 136605
+      Name: "小曹操"
+    - ID: 144429
+      Name: "王牌怪咖"
+    - ID: 136608
+      Name: "御术灵龙"
+    - ID: 34835
+      Name: "紫蝶仙灵"
+    - ID: 74153
+      Name: "美人鱼至尊纪念版"
+    - ID: 88945
+      Name: "机械皮卡喵"
+    - ID: 20359
+      Name: "小飞象丹丹"
+  Chunks:
+    - Packet: "01_seq1665_msg28228.bin"
+      SelfLength: 22987
+      PetStrengNum: 30
+      Parsed: 30
+      HasNext: 1
+    - Packet: "02_seq1670_msg28228.bin"
+      SelfLength: 20737
+      PetStrengNum: 30
+      Parsed: 30
+      HasNext: 1
+    - Packet: "03_seq1675_msg28228.bin"
+      SelfLength: 21862
+      PetStrengNum: 30
+      Parsed: 30
+      HasNext: 1
+    - Packet: "04_seq1680_msg28228.bin"
+      SelfLength: 18112
+      PetStrengNum: 30
+      Parsed: 30
+      HasNext: 1
+    - Packet: "05_seq1685_msg28228.bin"
+      SelfLength: 15487
+      PetStrengNum: 30
+      Parsed: 30
+      HasNext: 1
+    - Packet: "06_seq1690_msg28228.bin"
+      SelfLength: 15000
+      PetStrengNum: 23
+      Parsed: 23
+      HasNext: 0

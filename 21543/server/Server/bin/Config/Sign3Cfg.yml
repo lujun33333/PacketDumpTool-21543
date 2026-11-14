@@ -1,0 +1,74 @@
+﻿-  Experience: 0 #奖励经验 #第一天
+   SuperMoney: 0 #奖励点券
+   Items:  
+     - ItemId: 118970 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+
+-  Experience: 0 #奖励经验 #第二天
+   SuperMoney: 0 #奖励点券
+   Items:  
+     - ItemId: 135945 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+-  Experience: 0 #奖励经验 #第三天
+   SuperMoney: 0 #奖励点券
+   Items: 
+     - ItemId: 135795 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+-  Experience: 0 #奖励经验 #第四天
+   SuperMoney: 0 #奖励点券
+   Items:
+     - ItemId: 119711 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+     - ItemId: 126827 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+-  Experience: 0 #奖励经验 #第五天
+   SuperMoney: 0 #奖励点券
+   Items:
+     - ItemId: 116568 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+     - ItemId: 116578 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+-  Experience: 0 #奖励经验 #第六天
+   SuperMoney: 0 #奖励点券
+   Items:
+     - ItemId: 116036 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+     - ItemId: 150054 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+-  Experience: 0 #奖励经验 #第七天
+   SuperMoney: 0 #奖励点券
+   Items:
+     - ItemId: 126532 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+     - ItemId: 150537 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: -1 #0显示数量 -1显示永久
+       ItemType: 1
+-  Experience: 1 #奖励经验 #签到3周领取终极奖励
+   SuperMoney: 1 #奖励点券
+   Items: 
+     - ItemId: 127748 #道具id
+       ItemNum: 1 #数量
+       AvailPeriod: 0 #0显示数量 -1显示永久
+       ItemType: 2
+

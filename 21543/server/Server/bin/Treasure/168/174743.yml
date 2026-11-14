@@ -1,0 +1,153 @@
+OpenMode: Random # 打开后从Pool随机抽
+AllowDuplicatePermanent: true # true=允许重复出永久道具；false=不重复出；不写默认false，仅168目录生效
+BoxType: 0 # 普通打开箱
+Preview:
+  ExtraItemID: 0 # 多开额外奖励道具ID，0表示没有
+  ExtraItemNum: 0 # 多开额外奖励数量
+  ExtraItemPeriod: 0 # 多开额外奖励有效期
+  ExtraItemType: 2 # 官服无额外道具时仍写2
+LuckyValue: 10000000 # 保底值
+Pool:
+  - Seed: 10000000 # 大概率
+    ItemType: 0
+    Items:
+      - ItemId: 171078
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 171073
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 171070
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 168552
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163044
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163042
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163041
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163040
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163039
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163037
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163030
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 162917
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157776
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157763
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157762
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157761
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157760
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 153754
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 146559
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 146558
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 146556
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 146555
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 138413
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 138126
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 138127
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 138125
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 138124
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 136713
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 131937
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 127616
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 127617
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 127441
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 123501
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 119063
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 110710
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1

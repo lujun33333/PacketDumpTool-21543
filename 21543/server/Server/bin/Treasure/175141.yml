@@ -1,0 +1,118 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 175141；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00507%；1 件，每件 0.00507%
+  - Seed: 507
+    ItemType: 2
+    Items:
+      - ItemId: 98830 # 爆天雷诺
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.00614%；2 件，每件 0.00307%
+  - Seed: 1121
+    ItemType: 2
+    Items:
+      - ItemId: 168552 # 爆天雷诺-熔炉
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 131937 # 爆天雷诺-金刚
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.00907%；1 件，每件 0.00907%
+  - Seed: 2028
+    ItemType: 2
+    Items:
+      - ItemId: 140021 # 海滨沙滩城堡
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.10884%；6 件，每件 0.01814%
+  - Seed: 12912
+    ItemType: 1
+    Items:
+      - ItemId: 141145 # 燕携春语发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 141153 # 燕携春语服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 141154 # 燕携春语套装
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 141155 # 燕携春语发饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 141163 # 燕携春语服饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 141164 # 燕携春语套装
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.65304%；6 件，每件 0.10884%
+  - Seed: 78216
+    ItemType: 1
+    Items:
+      - ItemId: 141145 # 燕携春语发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 141153 # 燕携春语服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 141154 # 燕携春语套装
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 141155 # 燕携春语发饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 141163 # 燕携春语服饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 141164 # 燕携春语套装
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.21784%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

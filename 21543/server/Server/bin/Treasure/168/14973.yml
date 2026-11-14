@@ -1,0 +1,184 @@
+# 黄金粽 14973：每次等概率随机获得以下一项奖励
+OpenMode: Random
+AllowDuplicatePermanent: true
+BoxType: 0
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+LuckyValue: 10000000
+Pool:
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      # 宠物（3项）
+      - ItemId: 156070
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 156072
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 144431
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      # 车皮肤（6项）
+      - ItemId: 144524
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 144520
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 150533
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163036
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 168660
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 167868
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      # 皇冠、头发（11项）
+      - ItemId: 176744
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 173572
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 171852
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 171622
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 171153
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 95403
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 90548
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 114334
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 138446
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 135425
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 135426
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      # A车（5项）
+      - ItemId: 163050
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 167869
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157744
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 150543
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157777
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      # S车（4项）
+      - ItemId: 68643
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 81293
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 98830
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 109563
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      # 衣服（12项）
+      - ItemId: 176409
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 176419
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 173670
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 173270
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 173121
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 173111
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 172750
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 172760
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 172480
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 172470
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 172450
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 172460
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1

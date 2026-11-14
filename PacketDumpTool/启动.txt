@@ -1,0 +1,34 @@
+Set-Location 'F:\PacketDumpTool\PacketDumpTool\x64\Release'
+
+.\PacketDumpLauncher.exe `
+  --launcher 'F:\QQ飞车 - 21543\QQSpeedLauncher_x64.exe' `
+  --workdir 'F:\QQ飞车 - 21543' `
+  --process GameApp.exe `
+  --module Network.dll `
+  --dll 'F:\PacketDumpTool\PacketDumpTool\x64\Release\PacketDumpHook.dll' `
+  --timeout 300000
+
+
+
+
+Set-Location 'F:\PacketDumpTool\PacketDumpTool\x64\Release'
+
+.\PacketDumpLauncher.exe `
+  --launcher 'F:\QQ飞车\QQSpeedLauncher.exe' `
+  --workdir 'F:\QQ飞车' `
+  --process GameApp.exe `
+  --module Network.dll `
+  --dll 'F:\PacketDumpTool\PacketDumpTool\x64\Release\PacketDumpHook.dll' `
+  --timeout 300000
+
+
+
+Set-Location 'F:\PacketDumpTool\PacketDumpTool\x64\Release'
+
+.\PacketDumpLauncher.exe `
+  --launcher 'F:\QQ飞车 21431\QQSpeedLauncher_x64.exe' `
+  --workdir 'F:\QQ飞车 21431' `
+  --process GameApp.exe `
+  --module Network.dll `
+  --dll 'F:\PacketDumpTool\PacketDumpTool\x64\Release\PacketDumpHook.dll' `
+  --timeout 300000

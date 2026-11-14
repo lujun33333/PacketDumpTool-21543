@@ -1,0 +1,28 @@
+- ChatRoomID: 0 #琳琅湾
+  Eggs: #金蛋银蛋等信息
+    - Type: 0 #金蛋
+      Pos: 1 #休闲区摆放位置
+      KeyID: 12375 #砸蛋卡
+      UseNum: 3 #砸蛋消耗道具的数量
+    - Type: 1 #银蛋
+      Pos: 2
+      KeyID: 12375 #砸蛋卡
+      UseNum: 2 #砸蛋消耗道具的数量
+    - Type: 2 #绿蛋
+      Pos: 3
+      KeyID: 12375 #砸蛋卡
+      UseNum: 1 #砸蛋消耗道具的数量
+- ChatRoomID: 1 #琳琅镇
+  Eggs: #金蛋银蛋等信息
+    - Type: 0 #金蛋
+      Pos: 1 #休闲区摆放位置
+      KeyID: 12375 #砸蛋卡
+      UseNum: 3 #砸蛋消耗道具的数量
+    - Type: 1 #银蛋
+      Pos: 2
+      KeyID: 12375 #砸蛋卡
+      UseNum: 2 #砸蛋消耗道具的数量
+    - Type: 2 #绿蛋
+      Pos: 3
+      KeyID: 12375 #砸蛋卡
+      UseNum: 1 #砸蛋消耗道具的数量

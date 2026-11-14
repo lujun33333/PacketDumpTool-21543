@@ -1,0 +1,3412 @@
+SchemaVersion: 1
+SourceDump: packet_dumps_2620
+GeneratedFrom:
+- network_bin_2620_854_parser_queue_dispatch_body_msg20100_len26.bin
+- network_bin_2620_855_parser_queue_dispatch_body_msg28228_len23002.bin
+- network_bin_2620_856_parser_queue_dispatch_body_msg28228_len21122.bin
+- network_bin_2620_857_parser_queue_dispatch_body_msg28228_len21498.bin
+- network_bin_2620_858_parser_queue_dispatch_body_msg28228_len18498.bin
+- network_bin_2620_859_parser_queue_dispatch_body_msg28228_len15874.bin
+- network_bin_2620_860_parser_queue_dispatch_body_msg28228_len15794.bin
+- network_bin_2620_861_parser_queue_dispatch_body_msg24074_len762.bin
+- network_bin_2620_862_parser_queue_dispatch_body_msg24073_len6882.bin
+- network_bin_2620_1194_parser_queue_dispatch_body_msg21140_len13522.bin
+- network_bin_2620_1195_parser_queue_dispatch_body_msg21149_len23818.bin
+- network_bin_2620_1196_parser_queue_dispatch_body_msg21149_len23034.bin
+- network_bin_2620_1197_parser_queue_dispatch_body_msg21149_len15666.bin
+- network_bin_2620_1199_parser_queue_dispatch_body_msg24426_len16162.bin
+- network_bin_2620_1200_parser_queue_dispatch_body_msg24527_len15506.bin
+- network_bin_2620_1201_parser_queue_dispatch_body_msg24527_len11858.bin
+- network_bin_2620_1405_parser_queue_dispatch_body_msg440_len7210.bin
+- network_bin_2620_1406_parser_queue_dispatch_body_msg21140_len13522.bin
+- network_bin_2620_1407_parser_queue_dispatch_body_msg21149_len23818.bin
+- network_bin_2620_1408_parser_queue_dispatch_body_msg21149_len23034.bin
+- network_bin_2620_1409_parser_queue_dispatch_body_msg21149_len15666.bin
+ShowPacketSizes:
+- 200
+- 200
+- 153
+LevelExperience:
+- Level: 1
+  Exp: 0
+- Level: 2
+  Exp: 30
+- Level: 3
+  Exp: 70
+- Level: 4
+  Exp: 120
+- Level: 5
+  Exp: 180
+- Level: 6
+  Exp: 250
+- Level: 7
+  Exp: 330
+- Level: 8
+  Exp: 420
+- Level: 9
+  Exp: 520
+- Level: 10
+  Exp: 630
+- Level: 11
+  Exp: 750
+- Level: 12
+  Exp: 3350
+- Level: 13
+  Exp: 6430
+- Level: 14
+  Exp: 9990
+- Level: 15
+  Exp: 12830
+- Level: 16
+  Exp: 15910
+- Level: 17
+  Exp: 18990
+- Level: 18
+  Exp: 22070
+- Level: 19
+  Exp: 25150
+- Level: 20
+  Exp: 28230
+- Level: 21
+  Exp: 31310
+- Level: 22
+  Exp: 45650
+- Level: 23
+  Exp: 58760
+- Level: 24
+  Exp: 74550
+- Level: 25
+  Exp: 93550
+- Level: 26
+  Exp: 124550
+- Level: 27
+  Exp: 153550
+- Level: 28
+  Exp: 179550
+- Level: 29
+  Exp: 205500
+- Level: 30
+  Exp: 238966
+Pets:
+- ID: 13710
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 13711
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 14314
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 14315
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 14336
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 14337
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 14725
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 14726
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 15234
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 15235
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 16332
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 16333
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 16713
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 16714
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17072
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17073
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17910
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17911
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17937
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17938
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 17919
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 18643
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 18934
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 19390
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 19391
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 19701
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 19702
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20123
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20124
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20358
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 20359
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20771
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20772
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20664
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 20360
+  ShowConfig:
+    FullLevel: 0
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20983
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 20985
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21327
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21328
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21586
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21587
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21887
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21888
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 21597
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 20125
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 22346
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 22345
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 22790
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 22791
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 23019
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 23020
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 23227
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 23228
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 23379
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 23380
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 23647
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 23832
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 23833
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 24144
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 24145
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 24328
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 24329
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 24586
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 24587
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 25336
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 25337
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 25860
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 25861
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 26111
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 26077
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 26323
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 26324
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 26613
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 26900
+  ShowConfig:
+    FullLevel: 4
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 26901
+  ShowConfig:
+    FullLevel: 4
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 27449
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 28094
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 28095
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 28096
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 28097
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 28712
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 28713
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 29426
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 29427
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 30458
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 30459
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 30460
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 30838
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 31179
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 31905
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 31906
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 32266
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 32267
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 32268
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 32269
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 32422
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 32423
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 32829
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 33226
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 33227
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 33738
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 33739
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 33740
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 33741
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 34299
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 34300
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 34834
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 34835
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 34836
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 34837
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 60059
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 60425
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 1
+- ID: 60426
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 62747
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 62748
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 62749
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 62750
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 62751
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 62823
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 63391
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 63392
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 63393
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 63394
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 63689
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 63691
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 63690
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 64870
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 65096
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 65097
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 65098
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 65099
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 65100
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 65849
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 65850
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 66525
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 66585
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 66586
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 66587
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 66588
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 66589
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 67487
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 67488
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 67489
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 67490
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 68114
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 67492
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 67491
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 68124
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 68713
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 68714
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 68715
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 68716
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 68717
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 68719
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 69194
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 69195
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 69196
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 69197
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 69198
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 70019
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 70017
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 70018
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 70020
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 70021
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 70022
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71549
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71550
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 71551
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71552
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71553
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71556
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 71554
+  ShowConfig:
+    FullLevel: 5
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71555
+  ShowConfig:
+    FullLevel: 5
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 71557
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 72266
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 72267
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 72268
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 72719
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 72720
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 72721
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 72722
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 73674
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 73675
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 73676
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 73677
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74153
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74348
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74349
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74350
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74351
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74733
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 74732
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 74959
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74960
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 74961
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 74962
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 74963
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 74965
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 75771
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 75772
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 75773
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 75774
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 76467
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 76483
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 76484
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 76468
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 76964
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 77192
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 77193
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 77194
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78105
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 78276
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78274
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78275
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78277
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78278
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 78279
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78280
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78281
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78282
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 78283
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78900
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78901
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 78902
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 80148
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 80149
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 80150
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 80502
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 80503
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 80371
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 80504
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 81279
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 81280
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 81281
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 81282
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 81889
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 82211
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 82212
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 82213
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 82238
+  ShowConfig:
+    FullLevel: 5
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 82239
+  ShowConfig:
+    FullLevel: 5
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 83027
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 83028
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 83029
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 83975
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 83976
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 83977
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 84782
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 84783
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 84784
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 84785
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85672
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85919
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 85920
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85922
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85923
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85924
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85925
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85926
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85927
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85928
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 85933
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 86697
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 86703
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 86987
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 86988
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 86989
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 88071
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 88072
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 88073
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 88074
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 88943
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 88944
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 88945
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 89922
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 89923
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 89924
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 89925
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 89732
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 89733
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 90932
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 90933
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 90644
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 90934
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 91945
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 91946
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 91947
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 91948
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 92809
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 92810
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 92811
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 92812
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 92813
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 92814
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93403
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93549
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 93550
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93551
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93552
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93553
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93554
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 93555
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 94600
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 94811
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 94812
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 94813
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 94814
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 94815
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 94816
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 94827
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 94912
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 95671
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 95672
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 95673
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 96447
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 96771
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 96772
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 96773
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 96774
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 96775
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 98339
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 98340
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 98341
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 97556
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 98790
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 98791
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 98792
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 98793
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 100037
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 100035
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 100036
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 100853
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 100855
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 100854
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102012
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102195
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102196
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102197
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 102198
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102199
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 102200
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102201
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102202
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 102937
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 103027
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 103404
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 103405
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 103406
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 104739
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 104738
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 104740
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 106558
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 106559
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 106560
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 106561
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 106562
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 106563
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 106938
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 107362
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 107363
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 107364
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 108454
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 108455
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 108456
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 108457
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 108458
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 108459
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 109419
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 109553
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 109554
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 109555
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 109556
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 109557
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 112107
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 112108
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 112109
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 112695
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 112894
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 112895
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 112896
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 113906
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 113907
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 113908
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 113909
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 113910
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 113911
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 115423
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 115749
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 115750
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 115751
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116904
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116907
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116908
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116909
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 116910
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116911
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 116912
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 5
+    CanRide: 0
+    RidePetType: 0
+- ID: 116913
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 118402
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 118739
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 118740
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 118968
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 118969
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 118970
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 119077
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 119078
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116905
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 116906
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 120280
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 120281
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 120639
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 120640
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 120641
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 122192
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 122193
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 122194
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 122195
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123229
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123230
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123396
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123397
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123398
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123399
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123400
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123401
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 123402
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 124708
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 124849
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 124850
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 124851
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 126427
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 126428
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 126429
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 126430
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 126431
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 126432
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 126433
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 126434
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 127758
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 127759
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 127760
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 127761
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 127762
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 127763
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 129608
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 129609
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 129610
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 130638
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 130639
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 130640
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 131995
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 132178
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 132179
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 132180
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 132181
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 132182
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 132201
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 132202
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 133496
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 133622
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 133623
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 133624
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 135079
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 135081
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 135082
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 135083
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 135084
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 134942
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 134943
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 135080
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 136479
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 136604
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 136605
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 136606
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 136607
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 136608
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 136609
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 138184
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 138313
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 138314
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 138315
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 138316
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 138317
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 139879
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 140023
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 140024
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 140025
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 140026
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 144245
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 144425
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 144426
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 144427
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 144428
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 144429
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 144430
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 144431
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 146304
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 146445
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 146446
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 146447
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 146448
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 148188
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 148202
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 148203
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 148204
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 148205
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 148206
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 150504
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 150521
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 152205
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 150251
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 152461
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 152462
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 152463
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 152464
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 153860
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 153934
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 153935
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 153936
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156067
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156068
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 156069
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156070
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156071
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156072
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156073
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156074
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 156075
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 158308
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 158309
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 158310
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 158311
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 158312
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 158313
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 158314
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 160775
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 10
+    CanRide: 1
+    RidePetType: 2
+- ID: 160776
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 160796
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 163367
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 163368
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 163369
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 166152
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 166153
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 168371
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 168372
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 168373
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 174771
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 174745
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 174746
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 174747
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 174753
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 152465
+  ShowConfig: null
+- ID: 152466
+  ShowConfig: null
+- ID: 177557
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0
+- ID: 177692
+  ShowConfig:
+    FullLevel: 3
+    StrengthFullLevel: 0
+    CanRide: 0
+    RidePetType: 0

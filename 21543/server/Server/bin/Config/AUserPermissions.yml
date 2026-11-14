@@ -1,0 +1,75 @@
+UserPermissionsList:
+  # 三组：衣服 / 赛车 / 衣服+赛车。人按版本写在 Versions 下。
+  # 157000 那档来自你现在的 Clothes/Car；171054 那档来自 NewClothes/NewCar/NewClothesCar（含 10641）。
+  # 版本号 21543 / 24251 可改成你自己的号，只要键名对上即可。
+
+  ClothesGMUins: ##只能刷衣服
+    Mess: 套装，发饰，上装，下装，背饰，手饰，表情，护镜，尾饰，配饰，头饰，面饰，左手手环，右手手环，手套，前 景，背景，手 杖
+    Versions:
+      "21543":
+        MaxItemID: 157000
+        Uins:
+         ## - Uin: 10001
+          - Uin: 10097
+          - Uin: 10270
+          - Uin: 10028
+          - Uin: 10018
+          - Uin: 10967
+          - Uin: 10473
+          - Uin: 11059
+          - Uin: 10412
+      "24251":
+        MaxItemID: 171054
+        Uins:
+          - Uin: 10034
+          - Uin: 10634
+          - Uin: 10035
+
+  CarGMUins: ##只能刷车
+    Mess: 宠物，赛车皮肤，C级赛车，B级赛车，A级赛车，T1机甲赛车，T2机甲赛车，T3机甲赛车，S级赛车，R级赛车，M1级摩托，M2级摩托，M3级摩托，L0级滑板，L1级滑板，L2级滑板，L3级滑板，K0级轮滑，K1级轮滑，K2级轮滑，D级赛车
+    Versions:
+      "21543":
+        MaxItemID: 157000
+        Uins:
+         ## - Uin: 10001
+          - Uin: 10886
+          - Uin: 10002
+      "24251":
+        MaxItemID: 171054
+        Uins:
+         ##   - Uin: 10988
+          - Uin: 10284
+          - Uin: 10259
+          - Uin: 10608
+          - Uin: 10481
+          - Uin: 10641
+
+  ClothesCarGMUins: ##衣服+赛车
+    Mess: 宠物，赛车皮肤，C级赛车，B级赛车，A级赛车，T1机甲赛车，T2机甲赛车，T3机甲赛车，S级赛车，R级赛车，M1级摩托，M2级摩托，M3级摩托，L0级滑板，L1级滑板，L2级滑板，L3级滑板，K0级轮滑，K1级轮滑，K2级轮滑，D级赛车，套装，发饰，上装，下装，背饰，手饰，表情，护镜，尾饰，配饰，头饰，面饰，左手手环，右手手环，手套，前 景，背景，手 杖
+    Versions:
+      "24251":
+        MaxItemID: 171054
+        Uins:
+         ##   - Uin: 10002
+          - Uin: 10003
+          - Uin: 10011
+          - Uin: 10014
+          - Uin: 10017
+          - Uin: 10015
+          - Uin: 10024
+          - Uin: 10919
+          - Uin: 10114
+          - Uin: 10197
+          - Uin: 11197
+          - Uin: 10309
+          - Uin: 10025
+          - Uin: 66666
+          - Uin: 11221
+
+  AdminUins:
+    Uins:
+      - Uin: 10001 # 垫底
+
+  SpecialLoginUins:
+    Uins:
+      - Uin: 10001

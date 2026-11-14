@@ -1,0 +1,312 @@
+KartID: 32408
+KartName: 铁甲巨龙
+Plain551:
+  PhysInfo:
+  - PID: 1
+    AffectID: 100
+    Param: 6000
+    LifeTime: 3150
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - PID: 2001
+    AffectID: 100
+    Param: 6000
+    LifeTime: 620
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - PID: 2002
+    AffectID: 100
+    Param: 6000
+    LifeTime: 4000
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - PID: 99999
+    AffectID: 100
+    Param: 83000
+    LifeTime: 5000
+    CommonPara: []
+    Extra84Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  CompensateParam:
+  - Percent: 2
+    Value: 1010
+    ExtraValues: [0, 0, 0]
+  - Percent: 10
+    Value: 1010
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Percent: 20
+    Value: 1020
+    ExtraValues: [0, 0, 0, 0, 0]
+  - Percent: 60
+    Value: 1080
+    ExtraValues: [0]
+  - Percent: 120
+    Value: 1160
+    ExtraValues: [0, 0, 0, 0]
+  - Percent: 240
+    Value: 1200
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Percent: 900
+    Value: 1200
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0]
+  CollisionBoxParam:
+    m_iBoxLength: 300
+    m_iBoxWidth: 170
+    m_iBoxHeight: 240
+    m_iAdjustOffset: 250
+    m_iAdjustPickGap: 200
+    m_iAdjustRemoteOffset: 200
+    m_iAdjustBevelOffset: 200
+    m_iControllerOffset: -30
+    Extra20Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ExtraD4Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  CarToCarCollisionParam:
+    m_iCollisionRadius: 300
+    m_iCollisionLength: 300
+    m_iCollisionWidth: 200
+    m_iCollisionHeight: 250
+    m_iCollisionLostCtrlTime: 100000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  Scalars:
+    m_iBaseTurnRate: 1050
+    m_iVolatileTurnRate: 1150
+    m_iMaxTurnSpeed: 12200
+    m_iMinTurnSpeed: 5700
+    m_iMaxAccuTime: 500
+    m_iBaseAccuRate: 150
+    m_iMaxAffectSpeed: 19000
+    m_iGravity: -15000
+    m_iAdditionalLocalZSpeed: -2500
+    m_iStartVec: 18000
+    m_iEndVecFist: 50000
+    m_iEndVecSecon: 16000
+    m_iDirKeyForce: 1500
+    m_iDirKeyTwist: 9023
+    m_iBannerTwist: 4200
+    m_iBannerKeyTwist: 6000
+    m_iBannerVecForce: 6000
+    m_iBannerHeadForce: 5500
+    m_iSlidFricForce: 2600
+    m_iRollFricForce: 1000
+    m_iStartWec: 800
+    m_iMaxWec: 3500
+    m_iSuaiJianTwist: 5000
+    m_iDirUpKeyForce: 10000
+  WireScalars:
+    TopScalar: 976902782
+    Field26F4: 32408
+  AccelStatus: [1200, 1200, 800, 300, 2000, 1900]
+  ForwardAccel:
+  - Key: 0
+    Value: 4250
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 5000
+    Value: 4250
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 5700
+    Value: 4850
+    ExtraValues: [0]
+  - Key: 9000
+    Value: 5350
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 9300
+    Value: 5800
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 11000
+    Value: 6100
+    ExtraValues: [0, 0]
+  - Key: 11800
+    Value: 6300
+    ExtraValues: [0, 0, 0, 0, 0, 0]
+  - Key: 15000
+    Value: 6975
+    ExtraValues: [0, 0]
+  - Key: 16000
+    Value: 6975
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 20000
+    Value: 6975
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 25000
+    Value: 7200
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 30000
+    Value: 7250
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 35000
+    Value: 7300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ForwardDecel:
+  - Key: 0
+    Value: -8000
+    ExtraValues: [0, 0]
+  - Key: 2000
+    Value: -7000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 4000
+    Value: -6000
+    ExtraValues: [0, 0, 0, 0]
+  - Key: 6000
+    Value: -5000
+    ExtraValues: [0]
+  - Key: 18000
+    Value: -4000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  BackwardAccel:
+  - Key: 0
+    Value: -5000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 3000
+    Value: -5000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 6000
+    Value: -5000
+    ExtraValues: [0, 0]
+  - Key: 10000
+    Value: -5500
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 12000
+    Value: -5500
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  BackwardDecel:
+  - Key: 0
+    Value: 16000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 2000
+    Value: 16000
+    ExtraValues: [0, 0, 0, 0]
+  - Key: 4000
+    Value: 16000
+    ExtraValues: [0]
+  - Key: 6000
+    Value: 15000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 10000
+    Value: 15000
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Tail:
+    m_iCrashCompensatePower: 0
+    m_iDefenseRate: 0
+    m_uiUin: 1045335392
+    m_iSpeedupCardGenRate: 0
+    m_u32ExtraFuncFlag: 0
+    m_bSkatePara: 0
+    m_bHasBattleModeSkillInfoList: 0
+    m_iEnergyConvert: 0
+    m_usSuperN2ORate: 0
+    m_ushCollisionLoseRate: 0
+    m_uchNotInterruptDrift: 0
+    m_uchAddWeightNum: 0
+    m_uchWeightNum: 9
+    m_uchHasAntiCollisionCfg: 0
+    m_uchHasBoatParam: 1
+    m_uchBoatForwardAccelNum: 13
+    m_iDirUpKeyForceParamA: 0
+    m_iDirUpKeyForceParamB: 0
+  AddWeight: []
+  Weight: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  AntiCollisionCfg: []
+  BoatParam:
+  - m_iDirKeyForceParamC: 82
+    m_iDirKeyForceParamD: 0
+    m_iDTFLimitAngle: 0
+    m_iDTFRatio: 0
+    m_iUpKeyVecForce: 10000
+    m_iUpKeyVecForceParamA: 5000
+    m_iUpKeyVecForceParamB: -800
+    m_iLRKeyVecForce: 0
+    m_iLRKeyVecForceParamA: 2000
+    m_iLRKeyVecForceParamB: 70
+    m_iVecForce: 1000
+    m_iVecForceParamA: 0
+    m_iVecForceParamB: 300
+    m_iBoatShape: [250, 250, 1000]
+    m_iWecEffect: 2
+    m_iBannerKeyTwist: 4500
+    m_iBannerKeyTwistParamA: 0
+    m_iBannerKeyTwistParamB: 2000
+    m_iSuaiJianTwist: null
+    m_iBoatHeighRatio: 600
+    m_iBannerTwist: 5200
+    m_iBannerTwistParamA: 16398969
+    m_iDirUpKeyForce: 4000
+    m_iDirUpKeyForceParamA: 3500
+    m_iDirUpKeyForceParamB: 0
+    m_iDirKeyForce: 0
+    m_iDirKeyForceParamA: 0
+    m_iDirKeyForceParamB: 1000000
+    m_iAddNO2PerSec: 350000
+    m_iBoatAirValue: 375
+    m_ifSlidFricForce: 3000
+    List10: [0, 0, 0, 0, 0, 0, 0]
+    ArrayBC: [0]
+    Array168: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array214: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array2C0: [0, 0]
+    Array36C: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array430: [0, 0, 0]
+  BoatForwardAccel:
+  - Key: 0
+    Value: 5100
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 5000
+    Value: 5100
+    ExtraValues: [0, 0, 0]
+  - Key: 5700
+    Value: 5600
+    ExtraValues: [0]
+  - Key: 9000
+    Value: 6100
+    ExtraValues: [0, 0, 0, 0, 0]
+  - Key: 9300
+    Value: 6600
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 11000
+    Value: 7000
+    ExtraValues: [0, 0]
+  - Key: 11800
+    Value: 7100
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 15000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 16000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 20000
+    Value: 9350
+    ExtraValues: [0, 0, 0, 0, 0, 0]
+  - Key: 25000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  - Key: 30000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0]
+  - Key: 35000
+    Value: 9300
+    ExtraValues: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ZeroArrays:
+    TopSmallList: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List1398: [0, 0, 0, 0, 0, 0, 0, 0]
+    List2700: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List28C4: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List35F0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    List3CD0: [0]
+    Array4C34: [0, 0, 0, 0, 0, 0, 0, 0]
+    Array4CE8: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array7460: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Array750C: [0, 0, 0, 0, 0]
+    Array7700: [0, 0, 0, 0, 0, 0]
+    Array8A58: [0, 0, 0]
+    TopFinalScalar: 0
+    TopFinalList: [0, 0]
+  Group0Elements: []
+  Group1Elements: []
+  Group2Elements: []
+  RefitCalibration:
+    SchemaVersion: 1
+    ObservedWeight: [0, 15, 15, 15, 15, 0, 0, 0, 0]
+    CollisionLoseRate:
+      ZeroModValue: 0
+      ObservedAntiWeight: 0
+      ObservedValue: 0
+      Interpolation: round(observed_value * requested_weight / observed_weight); inferred between observed endpoints

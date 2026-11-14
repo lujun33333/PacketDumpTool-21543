@@ -1,0 +1,79 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 109745；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00905%；5 件，每件 0.00181%
+  - Seed: 905
+    ItemType: 2
+    Items:
+      - ItemId: 12720 # 雷诺
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 150533 # 雷诺-樱花
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177922 # 枢米尔
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 86998 # 疾影M18
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 84869 # 暗影龙骑
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.00243%；3 件，每件 0.00081%
+  - Seed: 1148
+    ItemType: 2
+    Items:
+      - ItemId: 177925 # 暗影龙骑-戏魂
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177926 # 疾影M18-镇煞
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 177928 # 枢米尔-琉璃
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 普通池合计 99.98852%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

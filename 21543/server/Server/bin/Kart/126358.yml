@@ -1,0 +1,193 @@
+
+# 萧然：免责声明及说明
+# 不得以任何方式售卖或盈利
+# 只限于学习交流以及个人娱乐使用
+# 如若侵犯权益烦请告知自当逐一删除
+# 联机一起跑图可加群：157343617 新群
+
+# 使用方法：把该数据文件重命名为要改的那辆车的代码然后放入Kart文件夹即可
+# 注：转发他人使用时其他文字可以删但第一条免责声明不能删非常时期没办法望见谅
+# 飞车单机相关更新资源会放到B站上传，如果视频没被强制下架的话都能看到分享链接
+# 访问方法复制访问该链接即可：https://b23.tv/oMlIvZO 跳转B站 最近很严暂时停更
+
+KartID: 10020   # 212梯队-新手赛车
+#——————————————————————————————————
+PhysInfo:          
+  - PID: 1          
+    AffectID: 100
+    Param: 5600
+    LifeTime: 2600
+#———————————————————
+  - PID: 2001       
+    AffectID: 100
+    Param: 5600
+    LifeTime: 490
+#———————————————————
+  - PID: 2002       
+    AffectID: 100
+    Param: 6000
+    LifeTime: 3900
+#———————————————————
+  - PID: 99999      
+    AffectID: 100
+    Param: 73200
+    LifeTime: 5000
+
+
+CompensateParam:         
+  - Percent: 2           
+    Value: 1010         
+  - Percent: 10         
+    Value: 1010       
+  - Percent: 20        
+    Value: 1020        
+  - Percent: 60         
+    Value: 1080        
+  - Percent: 120        
+    Value: 1160          
+  - Percent: 240       
+    Value: 1200         
+  - Percent: 900        
+    Value: 1200
+
+
+CollisionBoxParam:         
+  BoxLength: 300         
+  BoxWidth: 170            
+  BoxHeight: 240           
+  AdjustOffset: 230       
+  AdjustPickGap: 200       
+  AdjustRemoteOffset: 180  
+  AdjustBevelOffset: 200  
+  ControllerOffset: -30
+CarToCarCollisionParam:           
+  CollisionRadius: 300          
+  CollisionLength: 300           
+  CollisionWidth: 200            
+  CollisionHeight: 250           
+  CollisionLostCtrlTime: 100000   
+
+
+BaseTurnRate: 950
+VolatileTurnRate: 1020
+MaxTurnSpeed: 9820
+MinTurnSpeed: 5401
+MaxAccuTime: 490 
+BaseAccuRate: 100
+MaxAffectSpeed: 14000
+Gravity: -13420
+AdditionalLocalZSpeed: -3000  
+
+StartVec: 15500              
+EndVecFist: 45039             
+EndVecSecon: 14000            
+DirKeyForce: 750
+DirKeyTwist: 6030
+BannerTwist: 4330
+BannerKeyTwist: 6240         
+BannerVecForce: 6240         
+BannerHeadForce: 6900   
+SlidFricForce: 2450           
+RollFricForce: 1300
+StartWec: 690
+MaxWec: 3500
+SuaiJianTwist: 5000
+DirUpKeyForce: 9000
+
+
+AccelStatus: [1200,1200,800,300,2000,1900]   
+ForwardAccel:    
+  - Key: 0
+    Value: 4000
+  - Key: 5000
+    Value: 4000
+  - Key: 5700
+    Value: 4600
+  - Key: 9000
+    Value: 5000
+  - Key: 9300
+    Value: 5600
+  - Key: 11000
+    Value: 6100
+  - Key: 11800
+    Value: 6200
+  - Key: 15000
+    Value: 6150
+  - Key: 16000
+    Value: 5485
+  - Key: 20000
+    Value: 5485
+  - Key: 25000
+    Value: 5485
+  - Key: 30000
+    Value: 5485
+  - Key: 35000
+    Value: 5485
+
+
+ForwardDecel:      
+  - Key: 0          
+    Value: -8000   
+  - Key: 2000
+    Value: -7000
+  - Key: 4000
+    Value: -6000
+  - Key: 6000
+    Value: -5000
+  - Key: 18000
+    Value: -4000
+BackwardAccel:     
+  - Key: 0          
+    Value: -5000  
+  - Key: 3000
+    Value: -5000
+  - Key: 6000
+    Value: -5000
+  - Key: 10000
+    Value: -5500
+  - Key: 12000
+    Value: -5500
+BackwardDecel:     
+  - Key: 0         
+    Value: 16000   
+  - Key: 2000
+    Value: 16000
+  - Key: 4000
+    Value: 16000
+  - Key: 6000
+    Value: 15000
+  - Key: 10000
+    Value: 15000
+CollisionLoseRate: 29
+CrashCompensatePower: 435
+BoatParam:
+  DirKeyForceParamC: 0
+  DirKeyForceParamD: 0
+  DTFLimitAngle: 0
+  DTFRatio: 0
+  UpKeyVecForce: 0
+  UpKeyVecForceParamA: 0
+  UpKeyVecForceParamB: 0
+  LRKeyVecForce: 0
+  LRKeyVecForceParamA: 0
+  LRKeyVecForceParamB: 0
+  VecForce: 0
+  VecForceParamA: 0
+  VecForceParamB: 0
+  WecEffect: 0
+  BannerKeyTwist: 0
+  BannerKeyTwistParamA: 0
+  BannerKeyTwistParamB: 0
+  SuaiJianTwist: 0
+  BoatHeighRatio: 0
+  BannerTwist: 0
+  BannerTwistParamA: 0
+  DirUpKeyForce: 0
+  DirUpKeyForceParamA: 0
+  DirUpKeyForceParamB: 0
+  DirKeyForce: 0
+  DirKeyForceParamA: 0
+  DirKeyForceParamB: 0
+  AddNO2PerSec: 0
+  BoatAirValue: 0
+  ifSlidFricForce: 0

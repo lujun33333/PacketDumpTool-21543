@@ -1,0 +1,565 @@
+car_treasure:
+  enabled: true # 是否启用赛车夺宝活动；改 false 就关闭 24251 赛车夺宝请求
+  disabled_result_code: 123 # enabled=false 时返回给客户端的结果码
+  version: 20260501 # 配置版本，建议用活动开始日期
+  activity_id: 202605 # 活动期ID；换一期活动就改这里，影响自选车保存隔离
+  debug_fixed_draw: false # 是否强制使用抓包固定十连样本；正式服必须 false，否则十连每次一样
+  note: 正式运行配置；完整抓包样本见 24251/CarTreasure.sample.full.yml
+  protocol:
+    quickrpc_msgid: 24251 # QuickRPC 外层消息号
+    cfg_cmd: Co.RequestGetCarTreasureCfg # 打开界面/刷新配置接口
+    award_cmd: Co.RequestGetCarTreasureAward # 抽奖/分解接口
+    select_cmd: Co.Beta80_RequestSelectGroupIndex # 自选车保存接口
+    pre_box_msgid: 24465 # 兑换箱展示消息号
+    get_box_msgid: 24466 # 点击兑换/领取消息号
+  time:
+    open_date: 20260501 # 活动开始日期 YYYYMMDD
+    open_time: 0 # 活动开始时间 HHMMSS，0表示00:00:00
+    close_date: 20261231 # 活动结束日期 YYYYMMDD
+    close_time: 235959 # 活动结束时间 HHMMSS
+  cost:
+    item_id: 99662 # 抽奖消耗道具ID，老版夺宝券
+    once: 1 # 单抽消耗数量
+    ten: 10 # 十连消耗数量
+    ten_after_discount: 10 # 折扣后十连消耗数量
+    no_ticket_result_code: 123 # 券不足时返回给客户端的错误码
+  discount:
+    begin_date: 20230528
+    begin_time: 155959
+    close_date: 20230528
+    close_time: 160000
+    ten: 8
+  exchange:
+    piece_item_id: 94880 # 分解/兑换能量道具ID
+  select_car:
+    enabled: true # 是否启用自选车流程
+    need_to_select_default: true # 未保存自选车时是否强制先选车
+    s_count: 6 # S车可选数量；从下方S车列表中选择6辆
+    t_count: 2 # T车可选数量；从下方T车列表中选择2辆
+    a_count: 2 # A车可选数量；从下方A车列表中选择1辆
+    can_reset: 0 # 是否允许客户端重置自选，0=不允许
+  client_flags:
+    can_open_summer_car_treasure: 0
+    skin1_is_open: 12376
+    skin2_is_open: 12376
+    skin3_is_open: 12376
+    coupons_index: 0
+  operations:
+    draw: 0 # 抽奖操作码
+    decompose: 2 # 分解操作码
+    draw_count_once: 1 # 单抽次数
+    draw_count_ten: 10 # 十连次数
+  award_pool:
+    defaults: # award_pool.items 里没写的字段走这里；item_type/other_attribute/group 服务端自动补
+      item_num: 1 # 默认物品数量
+      can_exchange: 1 # 默认是否可分解/兑换能量
+      piece: 0 # 默认单个物品分解得到的能量数量
+      select_type: 0 # 默认自选车显示栏：0=非自选；1=第1栏S，3=第2栏T，2=第3栏A
+    items:
+    # S车自选奖池：同一 item_id 的永久/限时共用同一个 group；select_type=1 让S车排第1栏
+    - item_id: 157778  # 至臻·爆天甲 
+      period: -1 # 永久
+      probability: 1
+      select_type: 1
+      piece: 1500
+    - item_id: 157778  # 至臻·爆天甲 
+      period: 168 # 7天
+      probability: 10
+      select_type: 1
+      piece: 100
+    - item_id: 150525 # 至尊·玄冥
+      period: -1 # 永久
+      probability: 1
+      select_type: 1
+      piece: 1500
+    - item_id: 150525 # 至尊·玄冥
+      period: 168 # 7天
+      probability: 10
+      select_type: 1
+      piece: 100
+
+    - item_id: 163032 # 暴风战舰
+      period: -1 # 永久
+      probability: 1
+      select_type: 1
+      piece: 1500
+    - item_id: 163032 # 暴风战舰
+      period: 168 # 7天
+      probability: 10
+      select_type: 1
+      piece: 100
+
+    - item_id: 163029 # 星辰幻象
+      period: -1 # 永久
+      probability: 1
+      select_type: 1
+      piece: 1500
+    - item_id: 163029 # 星辰幻象
+      period: 168 # 7天
+      probability: 10
+      select_type: 1
+      piece: 100
+
+    - item_id: 150538 # L-影之传说
+      period: -1 # 永久
+      probability: 1
+      select_type: 1
+      piece: 1500
+    - item_id: 150538 # L-影之传说
+      period: 168 # 7天
+      probability: 10
+      select_type: 1
+      piece: 100
+
+    - item_id: 158396 # 绝壁千峰
+      period: -1 # 永久
+      probability: 1
+      select_type: 1
+      piece: 1500
+    - item_id: 158396 # 绝壁千峰
+      period: 168 # 7天
+      probability: 10
+      select_type: 1
+      piece: 100
+
+
+    # T车自选奖池：同一 item_id 的永久/限时共用同一个 group；select_type=3 让T车排第2栏
+    - item_id: 150535 # 创世女娲
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 150535 # 创世女娲
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 136712 # 龙腾九霄
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 136712 # 龙腾九霄
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 127438 # 六道神尊
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 127438 # 六道神尊
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 119058 # 上古之神
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 119058 # 上古之神
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 109560 # 圣域炽天使
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 109560 # 圣域炽天使
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 102219 # 圣殿剑魂
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 102219 # 圣殿剑魂
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 94838 # 上古魔尊
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 94838 # 上古魔尊
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 85942 # 圣域大天使
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 85942 # 圣域大天使
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 78292 # 创世之神
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 78292 # 创世之神
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 71452 # 神谕天尊
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 71452 # 神谕天尊
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 63429 # 终极幻影
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 63429 # 终极幻影
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 158402 # 哥斯拉机甲
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 158402 # 哥斯拉机甲
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 157738 # 卡布达巨人
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 157738 # 卡布达巨人
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 157737 # 鲨鱼辣椒巨人
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 157737 # 鲨鱼辣椒巨人
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 152474 # 神威泰坦
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 152474 # 神威泰坦
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    - item_id: 150536 # 九婴战神
+      period: -1
+      probability: 1
+      select_type: 3
+      piece: 30
+    - item_id: 150536 # 九婴战神
+      period: 168
+      probability: 10
+      select_type: 3
+      piece: 30
+    # A车自选奖池：group 继续自动递增；select_type=2 让A车排第3栏
+    - item_id: 168664 # 竹蜻蜓
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 167869 # 愚乐三轮车
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158395 # 炒粉摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158394 # 手打柠檬茶摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158393 # 酱板鸭摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158392 # 糖油粑粑摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158391 # 小龙虾摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158390 # 臭豆腐摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 158389 # 纯享版·臭豆腐摊
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    - item_id: 153749 # 站住不然开枪了
+      period: -1
+      probability: 3
+      select_type: 2
+      piece: 30
+    # 普通抽奖奖励：按原配置保留
+    - item_id: 123508
+      period: 168
+      probability: 8000
+      can_exchange: 0
+      piece: 1
+    - item_id: 126350
+      period: 168
+      probability: 8000
+      can_exchange: 0
+      piece: 1
+    - item_id: 126351
+      period: 168
+      probability: 8000
+      can_exchange: 0
+      piece: 1
+    - item_id: 126352
+      period: 168
+      probability: 8000
+      can_exchange: 0
+      piece: 1
+    - item_id: 127409
+      period: 168
+      probability: 8000
+      can_exchange: 0
+      piece: 1
+    - item_id: 127524
+      period: 168
+      probability: 8000
+      can_exchange: 0
+      piece: 1
+    - item_id: 66605
+      period: 168
+      probability: 12000
+      can_exchange: 0
+      piece: 1
+    - item_id: 66606
+      period: 168
+      probability: 12000
+      can_exchange: 0
+      piece: 1
+    - item_id: 66607
+      period: 168
+      probability: 12000
+      can_exchange: 0
+      piece: 1
+    - item_id: 68101
+      period: 168
+      probability: 12000
+      can_exchange: 0
+      piece: 1
+    - item_id: 68102
+      period: 168
+      probability: 12000
+      can_exchange: 0
+      piece: 1
+    - item_id: 68103
+      period: 168
+      probability: 12000
+      can_exchange: 0
+      piece: 1
+    - item_id: 21977
+      period: 0
+      probability: 14000
+      can_exchange: 0
+    - item_id: 12376
+      period: 0
+      probability: 18000
+      can_exchange: 0
+    - item_id: 12377
+      period: 0
+      probability: 18000
+      can_exchange: 0
+    - item_id: 12378
+      period: 0
+      probability: 18000
+      can_exchange: 0
+    - item_id: 12380
+      period: 0
+      probability: 18000
+      can_exchange: 0
+    - item_id: 96597
+      period: 0
+      probability: 18000
+      can_exchange: 0
+  exchange_shop:
+    type: 125 # 兑换商店 Type，客户端24465/24466使用
+    items: # 只保留永久兑换；不写 result_id/label_status，服务端按是否拥有动态返回 11498/11506
+    - cost: 999999
+      item_id: 170864 #竹蜻蜓-飞虎王
+      period: -1
+    - cost: 999999
+      item_id: 88865
+      period: -1
+    - cost: 2000
+      item_id: 88865
+      period: -1
+    - cost: 1500
+      item_id: 86998
+      period: -1
+    - cost: 550
+      item_id: 81292
+      period: -1
+    - cost: 550
+      item_id: 83039
+      period: -1
+    - cost: 550
+      item_id: 150534
+      period: -1
+    - cost: 350
+      item_id: 136818
+      period: -1
+    - cost: 350
+      item_id: 136819
+      period: -1
+    - cost: 350
+      item_id: 136820
+      period: -1
+    - cost: 350
+      item_id: 136821
+      period: -1
+    - cost: 350
+      item_id: 116736
+      period: -1
+    - cost: 350
+      item_id: 119076
+      period: -1
+    # 用户追加：500积分永久兑换车
+    - cost: 500
+      item_id: 107370 # 至尊・麦凯伦
+      period: -1
+    - cost: 500
+      item_id: 152474 # 神威泰坦
+      period: -1
+    - cost: 500
+      item_id: 117935 # 战争之神
+      period: -1
+    - cost: 500
+      item_id: 120646 # 镇海之戟
+      period: -1
+    - cost: 500
+      item_id: 138417 # 众神天后
+      period: -1
+    - cost: 500
+      item_id: 136722 # 雷诺之力
+      period: -1
+    - cost: 500
+      item_id: 26931 # 雷神之怒
+      period: -1
+    - cost: 500
+      item_id: 74362 # 爆天甲
+      period: -1
+    - cost: 500
+      item_id: 123512 # 悟空
+      period: -1
+    - cost: 500
+      item_id: 70047 # 终极麦凯伦
+      period: -1
+    - cost: 500
+      item_id: 84869 # 暗影龙骑
+      period: -1
+  select_car_display:
+    type: 365 # 自选车展示 Type，客户端24465请求会带这个值
+    items: # 自选车展示列表；不写 cost/result_id，服务端自动补 Type365 默认 11503
+    - item_id: 157778 # 至臻·爆天甲
+      period: -1
+    - item_id: 150525 # 至尊·玄冥
+      period: -1
+    - item_id: 163032 # 暴风战舰
+      period: -1
+    - item_id: 163029 # 星辰幻象
+      period: -1
+    - item_id: 150538 # L-影之传说
+      period: -1
+    - item_id: 158396 # 绝壁千峰
+      period: -1
+    - item_id: 150535 # 创世女娲
+      period: -1
+    - item_id: 136712 # 龙腾九霄
+      period: -1
+    - item_id: 127438 # 六道神尊
+      period: -1
+    - item_id: 119058 # 上古之神
+      period: -1
+    - item_id: 109560 # 圣域炽天使
+      period: -1
+    - item_id: 102219 # 圣殿剑魂
+      period: -1
+    - item_id: 94838 # 上古魔尊
+      period: -1
+    - item_id: 85942 # 圣域大天使
+      period: -1
+    - item_id: 78292 # 创世之神
+      period: -1
+    - item_id: 71452 # 神谕天尊
+      period: -1
+    - item_id: 63429 # 终极幻影
+      period: -1
+    - item_id: 158402 # 哥斯拉机甲
+      period: -1
+    - item_id: 157738 # 卡布达巨人
+      period: -1
+    - item_id: 157737 # 鲨鱼辣椒巨人
+      period: -1
+    - item_id: 152474 # 神威泰坦
+      period: -1
+    - item_id: 150536 # 九婴战神
+      period: -1
+    - item_id: 168664 # 竹蜻蜓
+      period: -1
+    - item_id: 167869 # 愚乐三轮车
+      period: -1
+    - item_id: 158395 # 炒粉摊
+      period: -1
+    - item_id: 158394 # 手打柠檬茶摊
+      period: -1
+    - item_id: 158393 # 酱板鸭摊
+      period: -1
+    - item_id: 158392 # 糖油粑粑摊
+      period: -1
+    - item_id: 158391 # 小龙虾摊
+      period: -1
+    - item_id: 158390 # 臭豆腐摊
+      period: -1
+    - item_id: 158389 # 纯享版·臭豆腐摊
+      period: -1
+    - item_id: 153749 # 站住不然开枪了
+      period: -1

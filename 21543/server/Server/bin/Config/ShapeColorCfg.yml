@@ -1,0 +1,146 @@
+- MainShapeSuitID: 110711
+  ColorShapeList:
+    - ShapeSuitID: 157745
+      KarName: 流火·众神麒麟
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157746
+      KarName: 虹光·众神麒麟
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157747
+      KarName: 紫夜·众神麒麟
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157748
+      KarName: 玄甲·众神麒麟
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+- MainShapeSuitID: 122200
+  ColorShapeList:
+    - ShapeSuitID: 157749
+      KarName: 流火·镇海敖丙
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157750
+      KarName: 虹光·镇海敖丙
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157751
+      KarName: 紫夜·镇海敖丙
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157752
+      KarName: 玄甲·镇海敖丙
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+- MainShapeSuitID: 130778
+  ColorShapeList:
+    - ShapeSuitID: 157753
+      KarName: 流火·众神吕布
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157754
+      KarName: 虹光·众神吕布
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157755
+      KarName: 紫夜·众神吕布
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+    - ShapeSuitID: 157756
+      KarName: 玄甲·众神吕布
+      Grade: 4
+      GradeResource: xuancai
+      CarLibraryCollectValue: 100
+- MainShapeSuitID: 138413
+  ColorShapeList:
+    - ShapeSuitID: 157760
+      KarName: 青龙-海滩派对
+      Grade: 4
+      GradeResource: xiarihaitan
+      CarLibraryCollectValue: 300
+- MainShapeSuitID: 146558
+  ColorShapeList:
+    - ShapeSuitID: 157761
+      KarName: 朱雀-海滩派对
+      Grade: 4
+      GradeResource: xiarihaitan
+      CarLibraryCollectValue: 300
+- MainShapeSuitID: 146556
+  ColorShapeList:
+    - ShapeSuitID: 157762
+      KarName: 白虎-海滩派对
+      Grade: 4
+      GradeResource: xiarihaitan
+      CarLibraryCollectValue: 300
+- MainShapeSuitID: 146559
+  ColorShapeList:
+    - ShapeSuitID: 157763
+      KarName: 玄武-海滩派对
+      Grade: 4
+      GradeResource: xiarihaitan
+      CarLibraryCollectValue: 300
+- MainShapeSuitID: 113413
+  ColorShapeList:
+    - ShapeSuitID: 168544
+      KarName: S青龙偃月刀-赤兔
+      Grade: 4
+      GradeResource: wuma
+      CarLibraryCollectValue: 120
+- MainShapeSuitID: 117934
+  ColorShapeList:
+    - ShapeSuitID: 168545
+      KarName: 终麦-照夜玉狮子
+      Grade: 4
+      GradeResource: wuma
+      CarLibraryCollectValue: 120
+- MainShapeSuitID: 115159
+  ColorShapeList:
+    - ShapeSuitID: 168546
+      KarName: 黑域电魔-乌云踏雪
+      Grade: 4
+      GradeResource: wuma
+      CarLibraryCollectValue: 120
+- MainShapeSuitID: 119062
+  ColorShapeList:
+    - ShapeSuitID: 168547
+      KarName: 针尖王者-里飞沙
+      Grade: 4
+      GradeResource: wuma
+      CarLibraryCollectValue: 120
+- MainShapeSuitID: 116735
+  ColorShapeList:
+    - ShapeSuitID: 168548
+      KarName: 爆天甲-燎原火
+      Grade: 4
+      GradeResource: wuma
+      CarLibraryCollectValue: 120
+
+- MainShapeSuitID: 163037
+  ColorShapeList:
+    - ShapeSuitID: 171055
+      KarName: 甜酷CP-麒麟
+      Grade: 4
+      GradeResource: xdxc
+      CarLibraryCollectValue: 500
+
+- MainShapeSuitID: 163039
+  ColorShapeList:
+    - ShapeSuitID: 171076
+      KarName: 甜酷CP-青龙
+      Grade: 4
+      GradeResource: xdxc
+      CarLibraryCollectValue: 500
+

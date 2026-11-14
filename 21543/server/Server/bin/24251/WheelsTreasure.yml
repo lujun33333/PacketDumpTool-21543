@@ -1,0 +1,218 @@
+# 王者四驱夺宝 / Beta102 WheelsTreasure
+# 协议字段和奖池来自 packet_dumps_30336；缺失的服务端行为位于 runtime_logic。
+# runtime_logic 使用普通池等概率随机及自定义暂存操作，不包含任何保底或强制稀有奖励。
+
+schema: wheels_treasure_official_capture_v1
+source: "F:/PacketDumpTool/PacketDumpTool/x64/Release/packet_dumps_30336"
+
+# 奖励行使用 idx/item_id/item_num/item_type/avail_period 等短字段；行尾名称来自 21487 官服 itemallnew。
+# 写 QuickRPC 时再映射回 award_idx/itemid/itemnum 等官服字段，不增加任何概率或暂存逻辑。
+# idx=列表序号；在奖池中也同时对应官服 award_idx。
+# avail_period：-1=永久，0=非期限道具，168=7天，360=15天，720=30天。
+# fenjie_num=该奖励放弃/分解时对应的夺宝币数量；already_got=false 是本次抓包值。
+
+capture_limits:
+  probability_present_in_packets: false
+  non_empty_temp_box_captured: false
+  temp_claim_request_captured: false
+  temp_decompose_request_captured: false
+  progress_claim_request_captured: false
+
+wheels_treasure:
+  # 抓包缺失部分按服主授权补充；明确不启用任何保底或强制稀有奖励。
+  runtime_logic:
+    enabled: true
+    state_namespace: 535
+    draw_selection: uniform_common_pool
+    hard_pity: false
+    ten_draw_guarantee: false
+    forced_rare_draw: false
+    direct_item_types: [0]
+    temp_item_types: [1, 2]
+    temp_claim_op: 2
+    temp_decompose_op: 3
+    milestone_claim_op: 6
+    invalid_result_code: 123
+    no_cost_result_code: 123
+
+  protocol:
+    wrapper_msgid: 28346
+    quickrpc_msgid: 24251
+    info_cmd: "Co.ReqBeta102WheelsTreasureInfo"
+    award_cmd: "Co.ReqBeta102WheelsTreasureAwardOpt"
+    cost_notify_cmd: "OnNofityActivityCostNumNotEnough"
+
+  # 去掉 QuickRPC context 后的官服请求参数。
+  observed_requests:
+    info: [0]
+    draw_once: [1, 1, []]
+    temp_box: [4, 0, []]
+    view_all_awards: [5]
+
+  # Info 请求期间实际收到的无 context 通知参数。
+  observed_cost_notify:
+    arguments: [1, 174780]
+
+  # Info 响应的第一个 FD 块。CostItemNum、DrawCount 是玩家动态值。
+  base_cfg:
+    show_item_id: 171047     # 天驭圣翼
+    theme_id: 1
+    luck_card_flag: 3
+    tiyan_flag: 0
+    cost_item_num: null       # 玩家当前拥有的王者四驱夺宝券数量
+    open_time: 90000
+    close_time: 235959
+    i_theme_id: 1            # 官服原字段 iThemeId
+    cost_item_id: 174780    # 王者四驱夺宝券
+    cost_once: 1
+    fenjie_item_id: 174781  # 王者四驱夺宝币
+    draw_count: null          # 玩家累计驱动次数
+    open_date: 20260702
+    cost_ten: 10
+    season_id: 1
+    close_date: 20260826
+
+  observed_info_states:
+    - { cost_item_num: 2, draw_count: 0 }
+    - { cost_item_num: 1, draw_count: 1 }
+    - { cost_item_num: 0, draw_count: 2 }
+
+  # Info 响应的第二个 FD 块，顺序和字段名保持官服原样。
+  featured_awards:
+    - { idx: 1,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 171047, fenjie_num: 100 } # 天驭圣翼
+    - { idx: 2,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 171047, fenjie_num: 5 } # 天驭圣翼
+    - { idx: 3,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 100049, fenjie_num: 100 } # 星际战舰
+    - { idx: 4,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 100049, fenjie_num: 5 } # 星际战舰
+    - { idx: 5,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 130776, fenjie_num: 100 } # 梦幻旋律
+    - { idx: 6,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 130776, fenjie_num: 5 } # 梦幻旋律
+    - { idx: 7,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 13902,  fenjie_num: 100 } # 圣骑士
+    - { idx: 8,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 13902,  fenjie_num: 5 } # 圣骑士
+    - { idx: 9,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 89936,  fenjie_num: 100 } # 终极烈焰新星
+    - { idx: 10, avail_period: 168, item_num: 1, item_type: 2, already_got: false, item_id: 89936,  fenjie_num: 5 } # 终极烈焰新星
+    - { idx: 11, avail_period: -1, item_num: 1, item_type: 2, already_got: false, item_id: 65864,  fenjie_num: 100 } # 巅峰战刀
+    - { idx: 12, avail_period: 168, item_num: 1, item_type: 2, already_got: false, item_id: 65864,  fenjie_num: 5 } # 巅峰战刀
+
+  # Info 响应的第三个 FD 块。
+  progress_rewards:
+    - idx: 1
+      item:
+        - { idx: 1, avail_period: 360, already_got: false, special_type: 1, item_id: 171047, item_type: 0, item_num: 1 } # 天驭圣翼
+        - { idx: 2, avail_period: -1,  already_got: false, special_type: 1, item_id: 174564, item_type: 0, item_num: 1 } # 天驭圣翼车牌
+      status: 0        # 0=抓包时未达到/不可领取
+      need_score: 10   # 累计驱动达到 10 次
+      special_flag: 1 # 第 1 档标识
+    - idx: 2
+      item:
+        - { idx: 1, avail_period: 720, already_got: false, special_type: 1, item_id: 171047, item_type: 0, item_num: 1 } # 天驭圣翼
+        - { idx: 2, avail_period: -1,  already_got: false, special_type: 1, item_id: 174578, item_type: 0, item_num: 1 } # 天驭圣翼胎印
+      status: 0        # 0=抓包时未达到/不可领取
+      need_score: 50   # 累计驱动达到 50 次
+      special_flag: 2 # 第 2 档标识
+    - idx: 3
+      item:
+        - { idx: 1, avail_period: -1, already_got: false, special_type: 1, item_id: 22640,  item_type: 0, item_num: 1 } # 激光
+        - { idx: 2, avail_period: -1, already_got: false, special_type: 1, item_id: 113418, item_type: 0, item_num: 1 } # 星夜之翼
+        - { idx: 3, avail_period: -1, already_got: false, special_type: 1, item_id: 93579,  item_type: 0, item_num: 1 } # 紫魅
+        - { idx: 4, avail_period: 0,  already_got: false, special_type: 1, item_id: 21978,  item_type: 0, item_num: 5 } # 效率宝珠LV2
+      status: 0        # 0=抓包时未达到/不可领取
+      need_score: 100   # 累计驱动达到 100 次
+      special_flag: 3 # 第 3 档标识
+    - idx: 4
+      item:
+        - { idx: 1, avail_period: -1, already_got: false, special_type: 1, item_id: 10024,  item_type: 0, item_num: 1 } # 战车
+        - { idx: 2, avail_period: -1, already_got: false, special_type: 1, item_id: 84664,  item_type: 0, item_num: 1 } # 超级战车
+        - { idx: 3, avail_period: -1, already_got: false, special_type: 1, item_id: 117938, item_type: 0, item_num: 1 } # 阿斯拉达
+        - { idx: 4, avail_period: -1, already_got: false, special_type: 1, item_id: 60031,  item_type: 0, item_num: 1 } # 黄金乘风
+        - { idx: 5, avail_period: -1, already_got: false, special_type: 1, item_id: 98833,  item_type: 0, item_num: 1 } # 嫦娥
+        - { idx: 6, avail_period: 0,  already_got: false, special_type: 1, item_id: 21979,  item_type: 0, item_num: 5 } # 效率宝珠LV3
+      status: 0        # 0=抓包时未达到/不可领取
+      need_score: 700   # 累计驱动达到 700 次
+      special_flag: 4 # 第 4 档标识
+    - idx: 5
+      item:
+        - { idx: 1, avail_period: -1, already_got: false, special_type: 1, item_id: 171047, item_type: 0, item_num: 1 } # 天驭圣翼
+        - { idx: 2, avail_period: -1, already_got: false, special_type: 1, item_id: 89936,  item_type: 0, item_num: 1 } # 终极烈焰新星
+        - { idx: 3, avail_period: -1, already_got: false, special_type: 1, item_id: 100049, item_type: 0, item_num: 1 } # 星际战舰
+        - { idx: 4, avail_period: -1, already_got: false, special_type: 1, item_id: 130776, item_type: 0, item_num: 1 } # 梦幻旋律
+        - { idx: 5, avail_period: -1, already_got: false, special_type: 1, item_id: 13902,  item_type: 0, item_num: 1 } # 圣骑士
+        - { idx: 6, avail_period: -1, already_got: false, special_type: 1, item_id: 65864,  item_type: 0, item_num: 1 } # 巅峰战刀
+      status: 0        # 0=抓包时未达到/不可领取
+      need_score: 2600   # 累计驱动达到 2600 次
+      special_flag: 5 # 第 5 档标识
+
+  # AwardOpt [5] 的完整响应。
+  view_all_awards:
+    CommonAwardPool:
+      - { idx: 1,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 171047, fenjie_num: 100 } # 天驭圣翼
+      - { idx: 2,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 171047, fenjie_num: 5 } # 天驭圣翼
+      - { idx: 3,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 65864,  fenjie_num: 100 } # 巅峰战刀
+      - { idx: 4,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 65864,  fenjie_num: 5 } # 巅峰战刀
+      - { idx: 5,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 100049, fenjie_num: 100 } # 星际战舰
+      - { idx: 6,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 100049, fenjie_num: 5 } # 星际战舰
+      - { idx: 7,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 130776, fenjie_num: 100 } # 梦幻旋律
+      - { idx: 8,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 130776, fenjie_num: 5 } # 梦幻旋律
+      - { idx: 9,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 13902,  fenjie_num: 100 } # 圣骑士
+      - { idx: 10, avail_period: 168, item_num: 1, item_type: 2, already_got: false, item_id: 13902,  fenjie_num: 5 } # 圣骑士
+      - { idx: 11, avail_period: -1, item_num: 1, item_type: 1, already_got: false, item_id: 10024,  fenjie_num: 30 } # 战车
+      - { idx: 12, avail_period: 360, item_num: 1, item_type: 1, already_got: false, item_id: 10024,  fenjie_num: 1 } # 战车
+      - { idx: 13, avail_period: -1, item_num: 1, item_type: 1, already_got: false, item_id: 84664,  fenjie_num: 30 } # 超级战车
+      - { idx: 14, avail_period: 360, item_num: 1, item_type: 1, already_got: false, item_id: 84664,  fenjie_num: 1 } # 超级战车
+      - { idx: 15, avail_period: -1, item_num: 1, item_type: 1, already_got: false, item_id: 117938, fenjie_num: 30 } # 阿斯拉达
+      - { idx: 16, avail_period: 360, item_num: 1, item_type: 1, already_got: false, item_id: 117938, fenjie_num: 1 } # 阿斯拉达
+      - { idx: 17, avail_period: -1, item_num: 1, item_type: 1, already_got: false, item_id: 60031,  fenjie_num: 30 } # 黄金乘风
+      - { idx: 18, avail_period: 360, item_num: 1, item_type: 1, already_got: false, item_id: 60031,  fenjie_num: 1 } # 黄金乘风
+      - { idx: 19, avail_period: -1, item_num: 1, item_type: 1, already_got: false, item_id: 98833,  fenjie_num: 30 } # 嫦娥
+      - { idx: 20, avail_period: 360, item_num: 1, item_type: 1, already_got: false, item_id: 98833,  fenjie_num: 1 } # 嫦娥
+      - { idx: 21, avail_period: 0, item_num: 2, item_type: 0, already_got: false, item_id: 21989, fenjie_num: 0 } # 坚韧宝珠LV1
+      - { idx: 22, avail_period: 0, item_num: 2, item_type: 0, already_got: false, item_id: 22025, fenjie_num: 0 } # 复仇之钻LV1
+      - { idx: 23, avail_period: 0, item_num: 2, item_type: 0, already_got: false, item_id: 21983, fenjie_num: 0 } # 重生宝珠LV1
+      - { idx: 24, avail_period: 0, item_num: 2, item_type: 0, already_got: false, item_id: 21977, fenjie_num: 0 } # 效率宝珠LV1
+      - { idx: 25, avail_period: 0, item_num: 5, item_type: 0, already_got: false, item_id: 12380, fenjie_num: 0 } # 引擎装置+1
+      - { idx: 26, avail_period: 0, item_num: 5, item_type: 0, already_got: false, item_id: 96597, fenjie_num: 0 } # 防护装置+1
+      - { idx: 27, avail_period: 0, item_num: 5, item_type: 0, already_got: false, item_id: 12376, fenjie_num: 0 } # 点火装置+1
+      - { idx: 28, avail_period: 0, item_num: 5, item_type: 0, already_got: false, item_id: 12377, fenjie_num: 0 } # 进气系统+1
+      - { idx: 29, avail_period: 0, item_num: 5, item_type: 0, already_got: false, item_id: 12378, fenjie_num: 0 } # 燃料系统+1
+      - { idx: 30, avail_period: 0, item_num: 1, item_type: 0, already_got: false, item_id: 69938, fenjie_num: 0 } # 普通能量源
+    RareAwardPool:
+      - { idx: 1,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 171047, fenjie_num: 100 } # 天驭圣翼
+      - { idx: 2,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 171047, fenjie_num: 5 } # 天驭圣翼
+      - { idx: 3,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 100049, fenjie_num: 100 } # 星际战舰
+      - { idx: 4,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 100049, fenjie_num: 5 } # 星际战舰
+      - { idx: 5,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 130776, fenjie_num: 100 } # 梦幻旋律
+      - { idx: 6,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 130776, fenjie_num: 5 } # 梦幻旋律
+      - { idx: 7,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 13902,  fenjie_num: 100 } # 圣骑士
+      - { idx: 8,  avail_period: 168,  item_num: 1, item_type: 2, already_got: false, item_id: 13902,  fenjie_num: 5 } # 圣骑士
+      - { idx: 9,  avail_period: -1,  item_num: 1, item_type: 2, already_got: false, item_id: 89936,  fenjie_num: 100 } # 终极烈焰新星
+      - { idx: 10, avail_period: 168, item_num: 1, item_type: 2, already_got: false, item_id: 89936,  fenjie_num: 5 } # 终极烈焰新星
+      - { idx: 11, avail_period: -1, item_num: 1, item_type: 2, already_got: false, item_id: 65864,  fenjie_num: 100 } # 巅峰战刀
+      - { idx: 12, avail_period: 168, item_num: 1, item_type: 2, already_got: false, item_id: 65864,  fenjie_num: 5 } # 巅峰战刀
+
+  # AwardOpt [4,0,{}] 两次都返回空暂存箱。
+  observed_empty_temp_box_response:
+    zancunInfo: {}
+    tiyanInfo: {}
+    tiyan_flag: 0
+    totalDecomposeNum: 0
+
+  # 两次实抽的完整业务字段。response_tail_value=1 也来自官服响应。
+  observed_draw_responses:
+    - draw_no: 1
+      result_code: 0
+      response:
+        m_sItemNum: 1
+        m_iSuperMoney: 0
+        m_iCoupons: 0
+        m_iSpeedCoin: 0
+        m_astItemInfo:
+          - { idx: 1, avail_period: 0, item_type: 0, item_id: 22025, award_type: 1, fenjie_num: 0, genderitem: [1, 22025], item_num: 2, _idx: 22 } # 复仇之钻LV1
+      response_tail_value: 1
+    - draw_no: 2
+      result_code: 0
+      response:
+        m_sItemNum: 1
+        m_iSuperMoney: 0
+        m_iCoupons: 0
+        m_iSpeedCoin: 0
+        m_astItemInfo:
+          - { idx: 1, avail_period: 0, item_type: 0, item_id: 21983, award_type: 1, fenjie_num: 0, genderitem: [1, 21983], item_num: 2, _idx: 23 } # 重生宝珠LV1
+      response_tail_value: 1

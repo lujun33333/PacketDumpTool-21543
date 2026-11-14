@@ -1,0 +1,4 @@
+BaseTurnRate: 1050----低速转向角度
+VolatileTurnRate: 1150----高速转向角度
+MaxTurnSpeed: 12200----转向半径
+MinTurnSpeed: 5700----最小转向半径

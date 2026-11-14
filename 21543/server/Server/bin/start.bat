@@ -1,0 +1,1 @@
+java -Dspring.config.location=file:./application.yaml -jar qqbot.jar

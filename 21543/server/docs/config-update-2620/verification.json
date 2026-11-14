@@ -1,0 +1,16 @@
+{
+  "skin_roundtrip_records": 213,
+  "skin_roundtrip_bytes": 36119,
+  "truncated_suit_records_rejected": 186,
+  "all_yaml_readback": "passed",
+  "merged_configs_equal_existing": true,
+  "script_ast_and_risky_api_scan": "passed",
+  "runtime_tested": false,
+  "config_sha256": {
+    "ShapeRefitCfg.yml": "f599c21c184c1e9dab22d34edc62961d5b1d779601db4163afa3aae9f0a52203",
+    "LegendarySkin.yml": "a315a0daa8afdbe205a0069450a077789c254bcd49f0cdb658033e3f0014f6a7",
+    "ShapeColorCfg.yml": "e406ccd0e95214dda41f9a8d0d56e47514bfbc7ae0c60e16c341c12bdf76f44e",
+    "Map.yml": "a2d6facf9082c51d7f770eeef4216513affc9c7ade58821ad40a112d10dd7f0f",
+    "AMapConfig.yml": "845a6834cdebb39de9621333e20613d1a27e5663afea49c72db3926022f771fc"
+  }
+}

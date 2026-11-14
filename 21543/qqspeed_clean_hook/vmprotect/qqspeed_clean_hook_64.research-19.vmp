@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document Version="2">
+    <Protection InputFileName="qqspeed_clean_hook_64.dll" Options="334592" VMCodeSectionName=".???" VMComplexity="60">
+        <Procedures>
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Redirect.Lock.Decode&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Redirect.Lock.ValidateConfig&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Redirect.Lock.VerifyVmp&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Redirect.Lock.Decide&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Redirect.BuildSockaddr&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Redirect.LoadTarget&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.NetworkProfile.Resolve&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.TopKartProfile.Resolve&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.Relation&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.PostOverdue&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.PlayerBase&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.Items&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.Maps&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.Pets&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.Overdue&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.Expand&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100_223.FilterProtocol&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg100.UnpackApply&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='VMProtectMarker &quot;Login.Msg551.CompactFeed&quot;' Options="0" CompilationType="2" />
+            <Procedure MapAddress='string &quot;Tu7oaFhOoS4ZPwbK6S9HsutGdYxTi4xMGnCNrm0osbVvdxNyGOMU/CvUrj9K7eZ1Z8RT/SXuyrsBnnkrVY5SeGyP+6ZTYrSrUpzia37iXVe8VmIgQRl5HRqXt40VHCZMBr0cAcgS63xR1tT2FmLzbg==&quot;' Index="0" Options="0" />
+            <Procedure MapAddress='string &quot;g7wAFC7RDCVRLxi/i69qpQ==&quot;' Index="0" Options="0" />
+        </Procedures>
+    </Protection>
+</Document>

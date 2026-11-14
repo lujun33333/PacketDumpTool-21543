@@ -1,0 +1,121 @@
+OpenMode: Random # 打开后从Pool随机抽
+AllowDuplicatePermanent: true # true=允许重复出永久道具；false=不重复出；不写默认false，仅168目录生效
+BoxType: 0 # 普通打开箱
+Preview:
+  ExtraItemID: 0 # 多开额外奖励道具ID，0表示没有
+  ExtraItemNum: 0 # 多开额外奖励数量
+  ExtraItemPeriod: 0 # 多开额外奖励有效期
+  ExtraItemType: 2 # 官服无额外道具时仍写2
+LuckyValue: 10000000 # 保底值
+Pool:
+  - Seed: 10000000 # 大概率
+    ItemType: 0
+    Items:
+      - ItemId: 171075
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 168551
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163043
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163029
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163028
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 163027
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 157778
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 150525
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 129099
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 127618
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 119059
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 116734
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 115166
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 115160
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 109563
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 107370
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 106676
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 106674
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 98830
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 98263
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 101885
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 150535
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 136712
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 127438
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 119058
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 109560
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1
+      - ItemId: 102219
+        ItemNum: 1
+        AvailPeriod: -1
+        ItemType: 1

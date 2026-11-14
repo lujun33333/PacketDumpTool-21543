@@ -1,0 +1,832 @@
+{
+  "257": {
+    "type": "EAIT_CLOTHES",
+    "mess": "头饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "258": {
+    "type": "EAIT_CLOTHES",
+    "mess": "护镜",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "259": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "261": {
+    "type": "EAIT_CLOTHES",
+    "mess": "头饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "262": {
+    "type": "EAIT_CLOTHES",
+    "mess": "上装",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "263": {
+    "type": "EAIT_CLOTHES",
+    "mess": "手套",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "264": {
+    "type": "EAIT_CLOTHES",
+    "mess": "刺青",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "265": {
+    "type": "EAIT_CLOTHES",
+    "mess": "下装",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "266": {
+    "type": "EAIT_CLOTHES",
+    "mess": "发饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "268": {
+    "type": "EAIT_CLOTHES",
+    "mess": "面饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "269": {
+    "type": "EAIT_CLOTHES",
+    "mess": "前景",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "271": {
+    "type": "EAIT_CLOTHES",
+    "mess": "头饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "272": {
+    "type": "EAIT_CLOTHES",
+    "mess": "车辆炫光",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "273": {
+    "type": "EAIT_CLOTHES",
+    "mess": "配饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "275": {
+    "type": "EAIT_CLOTHES",
+    "mess": "挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "276": {
+    "type": "EAIT_CLOTHES",
+    "mess": "面饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "277": {
+    "type": "EAIT_CLOTHES",
+    "mess": "背饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "278": {
+    "type": "EAIT_CLOTHES",
+    "mess": "脚底炫光",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "280": {
+    "type": "EAIT_CLOTHES",
+    "mess": "尾饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "287": {
+    "type": "EAIT_CLOTHES",
+    "mess": "手杖",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "288": {
+    "type": "EAIT_CLOTHES",
+    "mess": "手杖",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "289": {
+    "type": "EAIT_CLOTHES",
+    "mess": "上装光效",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "290": {
+    "type": "EAIT_CLOTHES",
+    "mess": "发饰光效",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "293": {
+    "type": "EAIT_CLOTHES",
+    "mess": "背部光效",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "295": {
+    "type": "EAIT_CLOTHES",
+    "mess": "左手手环",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "296": {
+    "type": "EAIT_CLOTHES",
+    "mess": "右手手环",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "300": {
+    "type": "EAIT_CLOTHES",
+    "mess": "肩饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "301": {
+    "type": "EAIT_CLOTHES",
+    "mess": "皮肤",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "303": {
+    "type": "EAIT_CLOTHES",
+    "mess": "坐骑",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "310": {
+    "type": "EAIT_CLOTHES",
+    "mess": "鞋子",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "317": {
+    "type": "EAIT_CLOTHES",
+    "mess": "飞饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "319": {
+    "type": "EAIT_CLOTHES",
+    "mess": "头像",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "320": {
+    "type": "EAIT_CLOTHES",
+    "mess": "头像框",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "324": {
+    "type": "EAIT_CLOTHES",
+    "mess": "名片",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "325": {
+    "type": "EAIT_CLOTHES",
+    "mess": "背景",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "326": {
+    "type": "EAIT_CLOTHES",
+    "mess": "全景名片",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "327": {
+    "type": "EAIT_CLOTHES",
+    "mess": "精简名片",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "330": {
+    "type": "EAIT_CLOTHES",
+    "mess": "开场展示",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "331": {
+    "type": "EAIT_CLOTHES",
+    "mess": "起点秀",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "332": {
+    "type": "EAIT_CLOTHES",
+    "mess": "冲线秀",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "333": {
+    "type": "EAIT_CLOTHES",
+    "mess": "颁奖台",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "334": {
+    "type": "EAIT_CLOTHES",
+    "mess": "驾驶舱面板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "339": {
+    "type": "EAIT_CLOTHES",
+    "mess": "聊天气泡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "340": {
+    "type": "EAIT_CLOTHES",
+    "mess": "炫彩昵称",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "341": {
+    "type": "EAIT_CLOTHES",
+    "mess": "社交底板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "342": {
+    "type": "EAIT_CLOTHES",
+    "mess": "进房特效",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "514": {
+    "type": "EAIT_CLOTHES",
+    "mess": "喷漆",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "515": {
+    "type": "EAIT_CLOTHES",
+    "mess": "车牌",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "516": {
+    "type": "EAIT_CLOTHES",
+    "mess": "尾挂",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "521": {
+    "type": "EAIT_CLOTHES",
+    "mess": "车头",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "522": {
+    "type": "EAIT_CLOTHES",
+    "mess": "车尾",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "523": {
+    "type": "EAIT_CLOTHES",
+    "mess": "车翼",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "524": {
+    "type": "EAIT_CLOTHES",
+    "mess": "车轮",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "769": {
+    "type": "EAIT_CLOTHES",
+    "mess": "胎印",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "770": {
+    "type": "EAIT_CLOTHES",
+    "mess": "漂焰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "771": {
+    "type": "EAIT_Unknown",
+    "mess": "作废项",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1281": {
+    "type": "EAIT_CLOTHES",
+    "mess": "角色",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1282": {
+    "type": "EAIT_CLOTHES",
+    "mess": "角色",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1537": {
+    "type": "EAIT_CAR",
+    "mess": "特殊赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1538": {
+    "type": "EAIT_CAR",
+    "mess": "测试/任务赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1539": {
+    "type": "EAIT_CAR",
+    "mess": "A级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1540": {
+    "type": "EAIT_CAR",
+    "mess": "B级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1541": {
+    "type": "EAIT_CAR",
+    "mess": "C级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1542": {
+    "type": "EAIT_CAR",
+    "mess": "D级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1543": {
+    "type": "EAIT_CAR",
+    "mess": "S级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1544": {
+    "type": "EAIT_CAR",
+    "mess": "M级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1545": {
+    "type": "EAIT_CAR",
+    "mess": "M0级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1546": {
+    "type": "EAIT_CAR",
+    "mess": "M1级摩托",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1547": {
+    "type": "EAIT_CAR",
+    "mess": "M2级摩托",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1548": {
+    "type": "EAIT_CAR",
+    "mess": "M3级摩托",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1549": {
+    "type": "EAIT_CAR",
+    "mess": "M4级摩托",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1550": {
+    "type": "EAIT_CAR",
+    "mess": "L0级滑板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1551": {
+    "type": "EAIT_CAR",
+    "mess": "L1级滑板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1552": {
+    "type": "EAIT_CAR",
+    "mess": "L2级滑板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1553": {
+    "type": "EAIT_CAR",
+    "mess": "L3级滑板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1554": {
+    "type": "EAIT_CAR",
+    "mess": "L4级滑板",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1555": {
+    "type": "EAIT_CAR",
+    "mess": "T0机甲赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1556": {
+    "type": "EAIT_CAR",
+    "mess": "T1机甲赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1557": {
+    "type": "EAIT_CAR",
+    "mess": "T2机甲赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1558": {
+    "type": "EAIT_CAR",
+    "mess": "T3机甲赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1559": {
+    "type": "EAIT_CAR",
+    "mess": "T4机甲赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1560": {
+    "type": "EAIT_CAR",
+    "mess": "K0级轮滑",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1561": {
+    "type": "EAIT_CAR",
+    "mess": "K1级轮滑",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1562": {
+    "type": "EAIT_CAR",
+    "mess": "K2级轮滑",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1565": {
+    "type": "EAIT_CAR",
+    "mess": "R级赛车",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1566": {
+    "type": "EAIT_SKIN",
+    "mess": "赛车皮肤",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1567": {
+    "type": "EAIT_CAR",
+    "mess": "小机甲",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1793": {
+    "type": "EAIT_CLOTHES",
+    "mess": "套装",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "1794": {
+    "type": "EAIT_PROP",
+    "mess": "礼包",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2049": {
+    "type": "EAIT_Unknown",
+    "mess": "客户端内部项",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2050": {
+    "type": "EAIT_CLOTHES",
+    "mess": "G0级机枪",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2051": {
+    "type": "EAIT_CLOTHES",
+    "mess": "G1级机枪",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2052": {
+    "type": "EAIT_CLOTHES",
+    "mess": "G2级机枪",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2053": {
+    "type": "EAIT_CLOTHES",
+    "mess": "G3级机枪",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2305": {
+    "type": "EAIT_PROP",
+    "mess": "功能道具",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2306": {
+    "type": "EAIT_PROP",
+    "mess": "经验/积分加成卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2307": {
+    "type": "EAIT_PROP",
+    "mess": "更名卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2308": {
+    "type": "EAIT_PROP",
+    "mess": "抽奖卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2309": {
+    "type": "EAIT_PROP",
+    "mess": "战绩清零卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2310": {
+    "type": "EAIT_PROP",
+    "mess": "积分清零卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2311": {
+    "type": "EAIT_PROP",
+    "mess": "临时驾照",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2312": {
+    "type": "EAIT_PROP",
+    "mess": "户外特效",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2313": {
+    "type": "EAIT_PROP",
+    "mess": "操纵魔法",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2315": {
+    "type": "EAIT_PROP",
+    "mess": "聊天动作",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2316": {
+    "type": "EAIT_PROP",
+    "mess": "比赛道具",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2318": {
+    "type": "EAIT_PROP",
+    "mess": "车队徽章",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2319": {
+    "type": "EAIT_PROP",
+    "mess": "戒指",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2320": {
+    "type": "EAIT_PROP",
+    "mess": "倒计时加速卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2321": {
+    "type": "EAIT_PROP",
+    "mess": "自动防御卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2322": {
+    "type": "EAIT_PROP",
+    "mess": "锤子",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2323": {
+    "type": "EAIT_PROP",
+    "mess": "宝箱",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2324": {
+    "type": "EAIT_PROP",
+    "mess": "钥匙",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2325": {
+    "type": "EAIT_PROP",
+    "mess": "赛车配件",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2326": {
+    "type": "EAIT_PROP",
+    "mess": "砸蛋卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2327": {
+    "type": "EAIT_PROP",
+    "mess": "飞行卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2328": {
+    "type": "EAIT_PET",
+    "mess": "宠物",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2329": {
+    "type": "EAIT_PROP",
+    "mess": "宠物道具",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2331": {
+    "type": "EAIT_PROP",
+    "mess": "装备类糖果",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2332": {
+    "type": "EAIT_PROP",
+    "mess": "时间类糖果",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2333": {
+    "type": "EAIT_PROP",
+    "mess": "任务类糖果",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2334": {
+    "type": "EAIT_PROP",
+    "mess": "鱼儿",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2335": {
+    "type": "EAIT_PROP",
+    "mess": "鱼苗",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2336": {
+    "type": "EAIT_PROP",
+    "mess": "鱼饲料",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2338": {
+    "type": "EAIT_PROP",
+    "mess": "头像卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2339": {
+    "type": "EAIT_PROP",
+    "mess": "赠送道具",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2340": {
+    "type": "EAIT_PROP",
+    "mess": "兑换道具",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2341": {
+    "type": "EAIT_PROP",
+    "mess": "变形芯片/幻形卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2342": {
+    "type": "EAIT_PROP",
+    "mess": "高飞卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2343": {
+    "type": "EAIT_PROP",
+    "mess": "折扣卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2348": {
+    "type": "EAIT_PROP",
+    "mess": "精灵卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2349": {
+    "type": "EAIT_PROP",
+    "mess": "精灵道具",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2351": {
+    "type": "EAIT_PROP",
+    "mess": "奇幻卡片",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2352": {
+    "type": "EAIT_PROP",
+    "mess": "增值类",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2353": {
+    "type": "EAIT_PROP",
+    "mess": "增值类",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2354": {
+    "type": "EAIT_CLOTHES",
+    "mess": "名片夹",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2355": {
+    "type": "EAIT_CLOTHES",
+    "mess": "宠物头饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2356": {
+    "type": "EAIT_CLOTHES",
+    "mess": "宝宝头饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2357": {
+    "type": "EAIT_CLOTHES",
+    "mess": "宝宝炫光",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2358": {
+    "type": "EAIT_CLOTHES",
+    "mess": "宝宝服饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2372": {
+    "type": "EAIT_PROP",
+    "mess": "满减券",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2375": {
+    "type": "EAIT_PROP",
+    "mess": "代金券",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2376": {
+    "type": "EAIT_PROP",
+    "mess": "赛车觉醒经验卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2377": {
+    "type": "EAIT_PROP",
+    "mess": "活跃度加成卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2380": {
+    "type": "EAIT_PROP",
+    "mess": "特殊宝箱",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2382": {
+    "type": "EAIT_PROP",
+    "mess": "排位双倍积分卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2383": {
+    "type": "EAIT_PROP",
+    "mess": "排位积分保护卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2384": {
+    "type": "EAIT_PROP",
+    "mess": "改装加成卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2386": {
+    "type": "EAIT_PROP",
+    "mess": "乐器卡",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2387": {
+    "type": "EAIT_CLOTHES",
+    "mess": "面板场景",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2391": {
+    "type": "EAIT_PROP",
+    "mess": "语音包",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2817": {
+    "type": "EAIT_STONE",
+    "mess": "圆形竞速宝珠",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2818": {
+    "type": "EAIT_STONE",
+    "mess": "三角道具之钻",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2820": {
+    "type": "EAIT_STONE",
+    "mess": "祝福石",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2821": {
+    "type": "EAIT_STONE",
+    "mess": "幸运石",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2822": {
+    "type": "EAIT_STONE",
+    "mess": "雕刻刀",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2823": {
+    "type": "EAIT_STONE",
+    "mess": "宝石拆除刀",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2824": {
+    "type": "EAIT_PROP",
+    "mess": "进阶改装配件",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2834": {
+    "type": "EAIT_PROP",
+    "mess": "进阶改装碎片",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "2835": {
+    "type": "EAIT_PROP",
+    "mess": "能量源",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3000": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3001": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3002": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3003": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3004": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3005": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  },
+  "3006": {
+    "type": "EAIT_CLOTHES",
+    "mess": "表情挂饰",
+    "evidence": "official type code; server enum and category consumers reviewed"
+  }
+}

@@ -1,0 +1,101 @@
+LuckyValue: 10000000
+
+Preview:
+  ExtraItemID: 0
+  ExtraItemNum: 0
+  ExtraItemPeriod: 0
+  ExtraItemType: 2
+
+# BoxID 174908；Seed 总刻度 10000000；ItemType：2=稀有，1=极品，0=普通。
+# 同一池中的 Items 等概率；概率输入为每件道具的百分比。
+Pool:
+  # 稀有永久池合计 0.00454%；2 件，每件 0.00227%
+  - Seed: 454
+    ItemType: 2
+    Items:
+      - ItemId: 171075 # 至臻·黑曼巴
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 168551 # 至曜·众神之神
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 稀有永久池合计 0.00854%；2 件，每件 0.00427%
+  - Seed: 1308
+    ItemType: 2
+    Items:
+      - ItemId: 168543 # 酷洛米碰碰车
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 167869 # 愚乐三轮车
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品永久池合计 0.03416%；4 件，每件 0.00854%
+  - Seed: 4724
+    ItemType: 1
+    Items:
+      - ItemId: 163052 # 雪月风花背饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 163053 # 雪月风花背饰
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 163105 # 雪月风花订婚戒指
+        ItemNum: 1
+        AvailPeriod: -1
+      - ItemId: 163088 # 雪月风花手杖
+        ItemNum: 1
+        AvailPeriod: -1
+
+  # 极品限时池合计 0.20496%；4 件，每件 0.05124%
+  - Seed: 25220
+    ItemType: 1
+    Items:
+      - ItemId: 163052 # 雪月风花背饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 163053 # 雪月风花背饰
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 163105 # 雪月风花订婚戒指
+        ItemNum: 1
+        AvailPeriod: 720
+      - ItemId: 163088 # 雪月风花手杖
+        ItemNum: 1
+        AvailPeriod: 720
+
+  # 普通池合计 99.74780%
+  - Seed: 10000000
+    ItemType: 0
+    Items:
+      - ItemId: 12390 # 引擎装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12389 # 悬挂系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12388 # 燃料系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12387 # 进气系统+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12386 # 点火装置+2
+        ItemNum: 4
+        AvailPeriod: 0
+      - ItemId: 12380 # 引擎装置+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12379 # 悬挂系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12378 # 燃料系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12377 # 进气系统+1
+        ItemNum: 10
+        AvailPeriod: 0
+      - ItemId: 12376 # 点火装置+1
+        ItemNum: 10
+        AvailPeriod: 0

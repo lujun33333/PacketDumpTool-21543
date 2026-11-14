@@ -1,0 +1,96 @@
+# 西游探秘 / Beta82 Exploration
+# 命令：Co.Beta82_Exploration_MainDlg / Co.Beta82_Exploration_DoAward
+# 来源：F:\抓包\1\西游探秘 官方抓包解码
+
+xiyou_exploration:
+  enabled: true
+
+  methods:
+    main_dlg: "Co.Beta82_Exploration_MainDlg"
+    do_award: "Co.Beta82_Exploration_DoAward"
+    box_award: "Co.Beta82_Exploration_BoxAward"
+
+  cost:
+    item_id: 123493
+    once: 1
+    increase_per_draw: 1
+    strict_draw_cost: true
+
+  base:
+    pic_index: 3
+    open_date: 20260510
+    close_date: 20260621
+    freezing_date: 20260622
+    open_time: 0
+    close_time: 235959
+    offset_max_count: 9
+    season_id: 1
+
+  box:
+    min_draw_count: 9
+    initial_accumulate_count: 0
+    initial_spl_draw_count: 9
+    accumulate_add_per_draw: 2
+    spl_draw_decrement: 1
+
+  offset_info:
+    - { type: 1, value: 0 }
+    - { type: 2, value: 0 }
+    - { type: 3, value: 0 }
+    - { type: 4, value: 0 }
+
+  draw_response:
+    spl_best_draw_count: 4
+    award_infos:
+      - { status: 0, type: 1, energy_count: 1 }
+      - { status: 1, type: 2, energy_count: 2 }
+      - { status: 0, type: 3, energy_count: 3 }
+
+  draw:
+    # 抓包首抽：消耗 123493 x1，获得 12377 x1。
+    replay_draws:
+      - { draw_no: 1, award_idx: 16, item_id: 12377, item_num: 1, item_type: 0, avail_period: 0 }
+
+  award_cfg:
+    defaults: { item_num: 1, item_type: 0, super_money: 0, coupons: 0, weight: 100 }
+    items:
+      - { idx: 1,  item_id: 91957,  avail_period: -1, item_type: 1 }
+      - { idx: 2,  item_id: 85945,  avail_period: -1, item_type: 1 }
+      - { idx: 3,  item_id: 132181, avail_period: -1 }
+      - { idx: 4,  item_id: 158027, avail_period: -1 }
+      - { idx: 5,  item_id: 155901, avail_period: -1 }
+      - { idx: 6,  item_id: 157873, avail_period: -1 }
+      - { idx: 7,  item_id: 157881, avail_period: -1 }
+      - { idx: 8,  item_id: 157293, avail_period: -1 }
+      - { idx: 9,  item_id: 157285, avail_period: -1 }
+      - { idx: 10, item_id: 153751, avail_period: -1, item_type: 1 }
+      - { idx: 11, item_id: 98833,  avail_period: -1 }
+      - { idx: 12, item_id: 158035, avail_period: -1 }
+      - { idx: 13, item_id: 155861, avail_period: -1 }
+      - { idx: 14, item_id: 155882, avail_period: 0 }
+      - { idx: 15, item_id: 69938,  item_num: 2, avail_period: 0 }
+      - { idx: 16, item_id: 12377,  avail_period: 0 }
+
+
+  treasure:
+    add_per_draw: 2
+    boxes:
+      - { idx: 1, need_draw: 9,  award_group: 1 }
+      - { idx: 2, need_draw: 18, award_group: 2 }
+      - { idx: 3, need_draw: 27, award_group: 3 }
+      - { idx: 4, need_draw: 36, award_group: 4 }
+
+  box_awards:
+    defaults: { item_num: 1, item_type: 0, avail_period: 0, piece: 0 }
+    groups:
+      1:
+        - { item_id: 127438, item_num: 1, avail_period: 168, piece: 30 }
+      2:
+        - { item_id: 68103,  item_num: 1, avail_period: 168, piece: 1 }
+        - { item_id: 66606,  item_num: 1, avail_period: 168, piece: 1 }
+      3:
+        - { item_id: 96597,  item_num: 1, avail_period: 0,   piece: 0 }
+        - { item_id: 127409, item_num: 1, avail_period: 168, piece: 1 }
+      4:
+        - { item_id: 12380,  item_num: 1, avail_period: 0,   piece: 0 }
+        - { item_id: 126352, item_num: 1, avail_period: 168, piece: 1 }

@@ -1,0 +1,89 @@
+BackPlateItem:
+  - ActiveHeadId: 1
+    Method: "自动获得"
+    Desc: "默认名片底板"
+    Info: "默认"
+  - ActiveHeadId: 2
+    Method: "参与指定活动获得"
+    Desc: "小樱手持魔杖，身着白天鹅礼服，可爱优雅，头戴水晶冠，扬起自信的微笑，是最耀眼的存在，每时每刻都会被吸引视线。"
+    Info: "百变小樱名片底板"
+  - ActiveHeadId: 3
+    Method: "参与指定活动获得"
+    Desc: "闻人翊悬性格随性、张扬，带点痞气，表面亦正亦邪，实则非常正义，重情重义。"
+    Info: "雾山五行名片底板"
+  - ActiveHeadId: 4
+    Method: "参与指定活动获得"
+    Desc: "天高云淡映湖水粼粼，绿茵遍野衬微风习习，小橘子一席民族服饰明媚可人，风调皮地逗弄起她的碎发和裙摆，邀你共同领略边疆魅力。"
+    Info: "新疆文创底板"
+  - ActiveHeadId: 5
+    Method: "参与指定活动获得"
+    Desc: "大大的彩虹从云端中探出，给予最热烈的希冀与美好，兴高采烈的软萌大耳狗举着小手向你打招呼，好似邀请你回归一场童梦的狂欢。"
+    Info: "大耳狗名片底板"
+  - ActiveHeadId: 6
+    Method: "参与指定活动获得"
+    Desc: "王者荣耀联动专属名片底板。"
+    Info: "王者荣耀名片底板"
+  - ActiveHeadId: 7
+    Method: "参与指定活动获得"
+    Desc: "蜡笔小新联动专属名片底板。"
+    Info: "蜡笔小新名片底板"
+  - ActiveHeadId: 8
+    Method: "参与指定活动获得"
+    Desc: "门迎晓日财源广，戶纳春风吉庆多。"
+    Info: "蛇年新春名片底板"
+  - ActiveHeadId: 9
+    Method: "参与指定活动获得"
+    Desc: "拥有童年时光记忆的名片底板，小橘子乘坐宝宝车，欢快地驰骋在赛道上，天线宝宝紧跟其后，声声呐喊助威，车影穿梭，欢笑回荡。"
+    Info: "天线宝宝名片底板"
+  - ActiveHeadId: 10
+    Method: "参与正义警长活动获得"
+    Desc: "黑猫警长联动专属名片底板，使用后即可激活。"
+    Info: "黑猫警长名片底板"
+  - ActiveHeadId: 11
+    Method: "参与指定活动获得"
+    Desc: "暂无介绍......"
+    Info: "铁甲小宝名片底板"
+  - ActiveHeadId: 12
+    Method: "集齐夏日泳装4机娘后解锁"
+    Desc: "暂无介绍......"
+    Info: "夏日海滩名片底板"
+  - ActiveHeadId: 13
+    Method: "全国公开赛S7冠军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7冠军名片底板"
+  - ActiveHeadId: 14
+    Method: "全国公开赛S7季军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7季军名片底板"
+  - ActiveHeadId: 15
+    Method: "全国公开赛S7亚军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7亚军名片底板"
+  - ActiveHeadId: 16
+    Method: "全国公开赛S7竞速冠军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7竞速冠军名片底板"
+  - ActiveHeadId: 17
+    Method: "全国公开赛S7竞速季军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7竞速季军名片底板"
+  - ActiveHeadId: 18
+    Method: "全国公开赛S7竞速亚军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7竞速亚军名片底板"
+  - ActiveHeadId: 19
+    Method: "全国公开赛S7道具冠军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7道具冠军名片底板"
+  - ActiveHeadId: 20
+    Method: "全国公开赛S7道具季军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7道具季军名片底板"
+  - ActiveHeadId: 21
+    Method: "全国公开赛S7道具亚军获得"
+    Desc: "暂无介绍......"
+    Info: "全国公开赛S7道具亚军名片底板"
+  - ActiveHeadId: 22
+    Method: "免费获得"
+    Desc: "暂无介绍......"
+    Info: "湖南文创名片底板"
